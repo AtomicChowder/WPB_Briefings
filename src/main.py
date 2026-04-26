@@ -37,7 +37,6 @@ from config import USERS
 from context_store import ContextStore
 from html_generator import HTMLGenerator
 from news_fetcher import NewsFetcher
-from notion_publisher import NotionPublisher
 
 
 def generate_for_user(user_id: str, dry_run: bool = False) -> str:
@@ -86,36 +85,76 @@ def generate_for_user(user_id: str, dry_run: bool = False) -> str:
     generator = HTMLGenerator()
     html = generator.generate(user, analysis, articles, date_str)
 
-    if dry_run:
-        logger.info("  [dry-run] skipping file write, Notion, and context update")
-        preview_path = REPO_ROOT / f"output_{user_id}.html"
-        preview_path.write_text(html, encoding="utf-8")
-        logger.info(f"  Preview written to {preview_path}")
-        return html
-
-    # 5. Write HTML to docs/
+    # 5. Write HTML + structured JSON to docs/
     out_dir = DOCS_DIR / user_id
     out_dir.mkdir(parents=True, exist_ok=True)
     html_path = out_dir / "index.html"
+
+    if dry_run:
+        logger.info("  [dry-run] writing preview files only, skipping GCS/context update")
+        preview_path = REPO_ROOT / f"output_{user_id}.html"
+        preview_path.write_text(html, encoding="utf-8")
+        logger.info(f"  Preview written to {preview_path}")
+        _write_briefing_json(out_dir, user, analysis, url_to_article, date_str)
+        return html
     html_path.write_text(html, encoding="utf-8")
     logger.info(f"  HTML written → {html_path.relative_to(REPO_ROOT)}")
+
+    # Write structured JSON for Routine's Notion MCP step
+    url_to_article = {a.url: a for a in articles}
+    _write_briefing_json(out_dir, user, analysis, url_to_article, date_str)
 
     # Also mirror to GCS if configured
     _mirror_to_gcs(user_id, html, date_str)
 
-    # 6. Publish to Notion
-    logger.info("Publishing to Notion…")
-    try:
-        publisher = NotionPublisher()
-        publisher.publish_briefing(user, analysis, articles, date_str)
-    except Exception as e:
-        logger.warning(f"  Notion publish error (non-fatal): {e}")
-
-    # 7. Update deduplication context
+    # 6. Update deduplication context
     ctx_store.update_context(user_id, analysis, date_str)
     logger.info(f"  Context updated")
+    logger.info(f"  briefing_data.json written — Routine will publish to Notion via MCP")
 
     return html
+
+
+def _write_briefing_json(out_dir: Path, user, analysis, url_to_article: dict, date_str: str):
+    """Write briefing_data.json — consumed by the Routine's Notion MCP publishing step."""
+    import json as _json
+    data = {
+        "date": date_str,
+        "user_name": user.name,
+        "user_title": user.title,
+        "talking_points": [
+            {
+                "headline": tp.headline,
+                "context": tp.context,
+                "supporting_articles": [
+                    {
+                        "url": url,
+                        "title": url_to_article[url].title if url in url_to_article else url,
+                    }
+                    for url in tp.supporting_article_urls[:3]
+                ],
+                "is_update": tp.is_update,
+            }
+            for tp in analysis.talking_points
+        ],
+        "articles": [
+            {
+                "url": s.article_url,
+                "title": url_to_article[s.article_url].title if s.article_url in url_to_article else "",
+                "source": url_to_article[s.article_url].source if s.article_url in url_to_article else "",
+                "category": s.category,
+                "summary": s.summary,
+                "hsbc_relevancy": s.hsbc_relevancy,
+                "user_relevance": s.user_relevance,
+                "noise_level": s.noise_level,
+            }
+            for s in analysis.scored_articles
+            if s.article_url in url_to_article
+        ],
+    }
+    json_path = out_dir / "briefing_data.json"
+    json_path.write_text(_json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    logger.info(f"  briefing_data.json written → {json_path.relative_to(out_dir.parent.parent)}")
 
 
 def _mirror_to_gcs(user_id: str, html: str, date_str: str):
