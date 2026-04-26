@@ -1,0 +1,17 @@
+.env
+*.pyc
+__pycache__/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+*.key
+*.json
+!.env.example
+service-account*.json
+/output/
+/tmp/
+*.html.bak
