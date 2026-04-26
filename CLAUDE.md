@@ -222,11 +222,34 @@ Rules:
 ```
 templates/briefing.html   — Jinja2 HTML template (D3.js bubble chart, do not edit)
 src/render.py             — Reads briefing_data.json, renders HTML (no API calls)
+build.py                  — Data builder: generates both briefing_data.json files
 context/history.json      — Rolling 7-day coverage history (committed to repo)
-docs/adam/index.html      — Adam's generated briefing (committed, served by GitHub Pages)
+docs/adam/index.html      — Adam's generated briefing (committed, served by GitHub Pages + GCS)
 docs/adam/briefing_data.json
 docs/sirali/index.html
 docs/sirali/briefing_data.json
 ROUTINE.md                — Claude Code Routine setup instructions
 CLAUDE.md                 — This file (loaded automatically by Claude Code)
 ```
+
+## Publishing
+
+After rendering, publish via **both** channels every run:
+
+**GitHub Pages** (auto-triggered by push to `main`):
+```bash
+git add docs/ context/history.json
+git commit -m "briefing: YYYY-MM-DD daily intelligence update"
+git push origin main
+```
+
+**GCS static hosting**:
+```bash
+gsutil -m rsync -r -d docs/ gs://${GCS_BUCKET_NAME}/
+gsutil -m setmeta -h "Cache-Control:no-cache, max-age=0" \
+  "gs://${GCS_BUCKET_NAME}/adam/index.html" \
+  "gs://${GCS_BUCKET_NAME}/sirali/index.html"
+```
+
+Required env vars: `GCS_BUCKET_NAME`, `GOOGLE_CLOUD_PROJECT`.
+The `gcloud` CLI must be installed and authenticated before running.

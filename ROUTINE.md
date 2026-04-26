@@ -66,13 +66,25 @@ Using the Notion MCP connector, create a new page in the database
 Merge today's covered URLs and talking point headlines into `context/history.json`.
 Keep only the last 7 days of data per user.
 
-**9. Commit and push**
+**9. Commit and push to main**
 ```bash
 git add docs/ context/history.json
 git commit -m "briefing: YYYY-MM-DD daily intelligence update"
-git push
+git push origin main
 ```
 This triggers GitHub Pages to publish the updated briefings automatically.
+
+**10. Publish to GCS**
+```bash
+gsutil -m rsync -r -d docs/ gs://${GCS_BUCKET_NAME}/
+```
+This syncs the `docs/` folder to the GCS bucket for web hosting.
+Set `Cache-Control` headers so browsers pick up updates immediately:
+```bash
+gsutil -m setmeta -h "Cache-Control:no-cache, max-age=0" \
+  "gs://${GCS_BUCKET_NAME}/adam/index.html" \
+  "gs://${GCS_BUCKET_NAME}/sirali/index.html"
+```
 
 ---
 
@@ -88,16 +100,30 @@ This triggers GitHub Pages to publish the updated briefings automatically.
 
 ## Environment Variables
 
-None required. Everything runs on your Max subscription.
+Set these in the Claude Code Routine environment settings:
+
+| Variable | Description |
+|---|---|
+| `GCS_BUCKET_NAME` | GCS bucket name (e.g. `wpb-briefings-static`) |
+| `GOOGLE_CLOUD_PROJECT` | GCP project ID |
+| `GOOGLE_APPLICATION_CREDENTIALS` | Path to service account JSON key file, OR leave unset if using Workload Identity / Cloud Run default credentials |
+
+The `gcloud` CLI must be installed and authenticated in the runtime environment.
+To set up: `gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_CREDENTIALS`
 
 ---
 
 ## Public URLs
 
-Enable GitHub Pages on `main` branch, source: `/docs` folder.
-
+**GitHub Pages** (enable on `main` branch, source: `/docs` folder):
 - Adam → `https://atomicchowder.github.io/wpb_briefings/adam/`
 - Sirali → `https://atomicchowder.github.io/wpb_briefings/sirali/`
+
+**GCS static hosting** (enable on bucket with `allUsers` Storage Object Viewer):
+- Adam → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/adam/index.html`
+- Sirali → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/sirali/index.html`
+
+If using a custom domain with Cloud CDN or Firebase Hosting, point the CDN origin at the GCS bucket.
 
 ---
 
@@ -109,5 +135,5 @@ Enable GitHub Pages on `main` branch, source: `/docs` folder.
 4. **Repository**: `AtomicChowder/WPB_Briefings` (branch: `main`)
 5. **Schedule**: custom cron `0 23 * * *`
 6. **Connectors**: add your Notion connector
-7. No environment variables needed
+7. **Environment variables**: set `GCS_BUCKET_NAME`, `GOOGLE_CLOUD_PROJECT`, and `GOOGLE_APPLICATION_CREDENTIALS` (or ensure the runtime has default GCP credentials)
 8. **Create** → **Run now** to generate the first briefing
