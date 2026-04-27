@@ -14,8 +14,14 @@ Read `context/history.json`. Note the URLs and topics covered in the last 7 days
 don't repeat them unless there's a material update.
 
 **2. Search for news**
-Use your web search tool to run each of the search queries listed in CLAUDE.md. Collect
-all articles published in the last 48 hours. Aim for 20–40 articles across all queries.
+Use your web search tool to run each of the search queries listed in CLAUDE.md.
+
+**Freshness rule:**
+- If `covered_urls` is non-empty for this user → only collect articles published or updated
+  **within the past 48 hours**. Discard anything older.
+- If `covered_urls` is empty (first run) → relax to **7 days** to establish baseline coverage.
+
+Aim for 12–20 articles per user after applying the freshness filter.
 
 **3. Score and categorise**
 For each article, assign:
