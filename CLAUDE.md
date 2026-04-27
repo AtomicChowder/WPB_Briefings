@@ -20,10 +20,10 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
 - **Banks to monitor**: HSBC, DBS, Standard Chartered, Citibank, Hang Seng Bank (HASE), PayMe,
   UBS, JP Morgan, Bank of America, Deutsche Bank, Bank of China
 
-### Sirali Siriwardene
+### Surali Siriwardene
 - **Title**: COO & Global Head of Change Execution, WPS
 - **Organisation**: HSBC
-- **URL slug**: `sirali`
+- **URL slug**: `surali`
 - **Role focus**: Global COO strategy, operational efficiency, business management, and governing
   the worldwide change execution programme. Adam's direct manager.
 - **Interests**: WPS COO strategy, global change execution governance, business management &
@@ -130,7 +130,7 @@ headlines.
     "covered_urls": ["https://...", "https://..."],
     "covered_topics": ["DBS AI wealth platform", "HSBC Q1 results announcement"]
   },
-  "sirali": {
+  "surali": {
     "last_updated": "2026-04-26",
     "covered_urls": [],
     "covered_topics": []
@@ -142,7 +142,16 @@ headlines.
 
 ## briefing_data.json Schema
 
-Write this file to `docs/{user_id}/briefing_data.json` before running `python src/render.py`.
+Write this file to `docs/{user_id}/briefing_data.json` **using a Python one-liner via Bash**
+(not the Write tool — the file can exceed tool limits):
+
+```bash
+python3 -c "
+import json, pathlib
+data = { ... }
+pathlib.Path('docs/{user_id}/briefing_data.json').write_text(json.dumps(data, indent=2))
+"
+```
 
 ```json
 {
@@ -150,16 +159,22 @@ Write this file to `docs/{user_id}/briefing_data.json` before running `python sr
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Saturday, 26 April 2026",
+  "briefing_date": "Sunday, 26 April 2026",
   "date_str": "2026-04-26",
-  "generated_at": "26 Apr 2026, 23:05 UTC",
-  "total_articles": 18,
+  "generated_at": "26 Apr 2026, 10:00 UTC",
+  "total_articles": 12,
+  "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Sharp executive-level headline, max 120 characters",
-      "context_html": "2–3 sentences. Wrap person names: <strong>Name, Title</strong>. Why does this matter specifically to this user's role?",
+      "headline": "Sharp executive-level headline, max 100 characters",
+      "why_it_matters": "One sentence: why this is directly relevant to this user's specific role.",
+      "bullets": [
+        "Key fact or development — include <strong>Person Name, Title</strong> where relevant",
+        "Second key point with implications",
+        "Third point or call to action"
+      ],
       "source_links": [
-        { "url": "https://example.com/article", "title": "Article title max 60 chars" }
+        { "url": "https://example.com/article", "title": "Source label max 55 chars" }
       ],
       "is_update": false
     }
@@ -168,11 +183,11 @@ Write this file to `docs/{user_id}/briefing_data.json` before running `python sr
     "AI & Technology": [
       {
         "id": "art01",
-        "title": "Full article headline",
+        "title": "Full article headline (max 90 chars)",
         "url": "https://...",
         "source": "Financial Times",
         "published_at": "2026-04-26",
-        "summary": "2–3 sentence neutral summary of the article content.",
+        "summary": "One sentence: why should this user care? What is the direct implication?",
         "hsbc_relevancy": 7,
         "user_relevance": 9,
         "noise_level": 3,
@@ -191,7 +206,7 @@ Write this file to `docs/{user_id}/briefing_data.json` before running `python sr
         "user_relevance": 9,
         "noise_level": 3,
         "category": "AI & Technology",
-        "summary": "Brief summary"
+        "summary": "One sentence summary"
       }
     ],
     "categories": {
@@ -207,27 +222,29 @@ Write this file to `docs/{user_id}/briefing_data.json` before running `python sr
 ```
 
 Rules:
-- `articles_by_category`: max **5 articles per category**, only include categories with articles
+- `breaking_news`: list only if there is a truly urgent HSBC story (AI strategy shift, major regulatory action, CEO announcement). Otherwise set to `[]`.
+- `articles_by_category`: max **3 articles per category**, only include categories with articles
 - `chart_data.articles`: flat list of ALL articles across all categories (for the bubble chart)
 - `chart_data.categories`: only include categories that appear in the data
 - `id` values must be consistent between `articles_by_category` and `chart_data.articles`
 - Use sequential IDs: `art01`, `art02`, … across all categories
 - Only include articles with combined score (hsbc_relevancy + user_relevance) ≥ 6
 - Sort each category's articles by combined score descending
+- `summary` field: one concise sentence framed as "why should I care" — not a neutral description
 
 ---
 
 ## Repository Structure
 
 ```
-templates/briefing.html   — Jinja2 HTML template (D3.js bubble chart, do not edit)
+templates/briefing.html   — Jinja2 HTML template (D3.js bubble chart — do not edit)
 src/render.py             — Reads briefing_data.json, renders HTML (no API calls)
 build.py                  — Data builder: generates both briefing_data.json files
 context/history.json      — Rolling 7-day coverage history (committed to repo)
 docs/adam/index.html      — Adam's generated briefing (committed, served by GitHub Pages + GCS)
 docs/adam/briefing_data.json
-docs/sirali/index.html
-docs/sirali/briefing_data.json
+docs/surali/index.html
+docs/surali/briefing_data.json
 ROUTINE.md                — Claude Code Routine setup instructions
 CLAUDE.md                 — This file (loaded automatically by Claude Code)
 ```

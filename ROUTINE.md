@@ -5,9 +5,9 @@
 > Read CLAUDE.md first — it contains all user profiles, scoring rubrics, the JSON schema,
 > and context awareness instructions.
 
-Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Sirali Siriwardene**.
+Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Surali Siriwardene**.
 
-### For each user (run adam first, then sirali):
+### For each user (run adam first, then surali):
 
 **1. Check history**
 Read `context/history.json`. Note the URLs and topics covered in the last 7 days so you
@@ -117,7 +117,7 @@ To set up: `gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_
 
 **GitHub Pages** (enable on `main` branch, source: `/docs` folder):
 - Adam → `https://atomicchowder.github.io/wpb_briefings/adam/`
-- Sirali → `https://atomicchowder.github.io/wpb_briefings/sirali/`
+- Surali → `https://atomicchowder.github.io/wpb_briefings/surali/`
 
 **GCS static hosting** (enable on bucket with `allUsers` Storage Object Viewer):
 - Adam → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/adam/index.html`
