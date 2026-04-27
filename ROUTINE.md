@@ -25,14 +25,14 @@ For each article, assign:
 - `category` — one of the 6 categories in CLAUDE.md
 
 Discard articles with combined score (hsbc + relevance) below 6.
-Keep a maximum of 5 articles per category, sorted by combined score descending.
+Keep a maximum of **3 articles per category**, sorted by combined score descending.
 
 **4. Write 3 talking points**
 Select the 3 most strategically significant stories for this user. Each talking point needs:
-- A sharp headline (max 120 chars)
-- 2–3 sentences of context explaining why it matters *specifically* to this user's role
-- Wrap person names in `<strong>Name, Title</strong>` HTML tags
-- 1–3 supporting article URLs
+- `headline`: sharp, max 100 chars
+- `why_it_matters`: one sentence on why this matters *specifically* to this user's role
+- `bullets`: 3 concise bullet points. Wrap person names in `<strong>Name, Title</strong>` HTML tags.
+- `source_links`: 1–3 supporting URLs as `{"url": "...", "title": "..."}` objects
 
 Do not repeat talking points covered in the last 7 days unless there's a material update.
 
@@ -66,13 +66,23 @@ Using the Notion MCP connector, create a new page in the database
 Merge today's covered URLs and talking point headlines into `context/history.json`.
 Keep only the last 7 days of data per user.
 
-**9. Commit and push to main**
+**9. Commit, merge to main, and push**
 ```bash
 git add docs/ context/history.json
 git commit -m "briefing: YYYY-MM-DD daily intelligence update"
+
+# If running on a feature branch, merge into main to trigger GitHub Pages
+BRANCH=$(git branch --show-current)
+git push -u origin $BRANCH
+if [ "$BRANCH" != "main" ]; then
+  git fetch origin main
+  git checkout main
+  git merge --no-ff $BRANCH -m "briefing: YYYY-MM-DD daily intelligence update"
+fi
 git push origin main
 ```
 This triggers GitHub Pages to publish the updated briefings automatically.
+Pages deploys on every push to `main` that touches `docs/**` (see `.github/workflows/pages.yml`).
 
 **10. Publish to GCS**
 ```bash
@@ -83,7 +93,7 @@ Set `Cache-Control` headers so browsers pick up updates immediately:
 ```bash
 gsutil -m setmeta -h "Cache-Control:no-cache, max-age=0" \
   "gs://${GCS_BUCKET_NAME}/adam/index.html" \
-  "gs://${GCS_BUCKET_NAME}/sirali/index.html"
+  "gs://${GCS_BUCKET_NAME}/surali/index.html"
 ```
 
 ---
@@ -121,7 +131,7 @@ To set up: `gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_
 
 **GCS static hosting** (enable on bucket with `allUsers` Storage Object Viewer):
 - Adam → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/adam/index.html`
-- Sirali → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/sirali/index.html`
+- Sirali → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/surali/index.html`
 
 If using a custom domain with Cloud CDN or Firebase Hosting, point the CDN origin at the GCS bucket.
 
