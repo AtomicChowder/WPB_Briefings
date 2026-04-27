@@ -5,7 +5,7 @@ No API calls — pure Jinja2 templating.
 
 Usage:
     python src/render.py adam
-    python src/render.py sirali
+    python src/render.py surali
 """
 
 import json
