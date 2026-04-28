@@ -7,72 +7,85 @@
 
 Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Sirali Siriwardene**.
 
-### For each user (run adam first, then sirali):
+### Step 1 — Check history
 
-**1. Check history**
-Read `context/history.json`. Note the URLs and topics covered in the last 7 days so you
-don't repeat them unless there's a material update.
+Read `context/history.json`. Note covered URLs and topics for the last 7 days.
 
-**2. Search for news**
-Use your web search tool to run each of the search queries listed in CLAUDE.md. Collect
-all articles published in the last 48 hours. Aim for 20–40 articles across all queries.
+### Step 2 — Parallel research (spawn 5 Haiku agents simultaneously)
 
-**3. Score and categorise**
-For each article, assign:
-- `hsbc_relevancy` (0–10) — per the rubric in CLAUDE.md
-- `user_relevance` (0–10) — based on this specific user's role and interests
-- `noise_level` (1–5) — breadth of coverage
-- `category` — one of the 6 categories in CLAUDE.md
+Spawn the following 5 sub-agents **in a single message** using `model: "haiku"`.
+Each agent searches for recent articles and returns a JSON array. Collect all results before proceeding.
 
-Discard articles with combined score (hsbc + relevance) below 6.
-Keep a maximum of 5 articles per category, sorted by combined score descending.
+**Agent A** — queries:
+1. `HSBC WPB wealth management Asia Pacific strategy 2026`
+2. `HSBC competitor analysis wealth management April 2026`
 
-**4. Write 3 talking points**
-Select the 3 most strategically significant stories for this user. Each talking point needs:
-- A sharp headline (max 120 chars)
-- 2–3 sentences of context explaining why it matters *specifically* to this user's role
-- Wrap person names in `<strong>Name, Title</strong>` HTML tags
-- 1–3 supporting article URLs
+**Agent B** — queries:
+1. `DBS Standard Chartered Citibank private banking technology 2026`
+2. `HASE Hang Seng PayMe digital banking Hong Kong 2026`
 
-Do not repeat talking points covered in the last 7 days unless there's a material update.
+**Agent C** — queries:
+1. `UBS JP Morgan Deutsche Bank wealth management Asia 2026`
+2. `Hong Kong Singapore wealth management fintech April 2026`
 
-**5. Write `docs/{user_id}/briefing_data.json`**
-Write the complete JSON file following the exact schema in CLAUDE.md.
-Include `briefing_date` as a formatted string (e.g. "Saturday, 26 April 2026").
-Include `generated_at` as UTC time.
+**Agent D** — queries:
+1. `AI artificial intelligence private banking wealth advisory April 2026`
+2. `AI large language models banking finance enterprise 2026`
 
-**6. Render HTML**
-```bash
-pip install -r requirements.txt -q
-python src/render.py {user_id}
+**Agent E** — queries:
+1. `Banking change execution agile transformation financial services April 2026`
+2. `Wealth management regulatory Asia Pacific 2026`
+
+Each agent must return a JSON array:
+```json
+[
+  {
+    "title": "Article title",
+    "url": "https://...",
+    "source": "Publication name",
+    "published_at": "2026-04-27",
+    "summary": "2-3 sentence summary of article content.",
+    "category_hint": "AI & Technology"
+  }
+]
 ```
-This reads the JSON and writes `docs/{user_id}/index.html`.
 
-**7. Publish to Notion**
-Using the Notion MCP connector, create a new page in the database
-**"WPB Weekly Intelligence Briefings"** with:
-- Title: `[{display_name}] WPB Briefing — {date}` (e.g. `[Adam] WPB Briefing — 26 Apr 2026`)
-- A red callout with the user's name and title
-- A divider
-- Heading: "🎯 Key Talking Points" — then each talking point as Heading 3 + paragraph + bullet links
-- A divider
-- Heading: "📰 Intelligence Feed" — articles grouped by category as Heading 3 + bulleted links
-  with scores: `[HSBC 7/10 · Rel 9/10] Article title` linked to article URL,
-  followed by a grey paragraph for the summary
+### Step 3 — Score, select and write Adam's briefing
 
-### After both users are done:
+From the aggregated article pool:
+- Assign `hsbc_relevancy`, `user_relevance`, `noise_level`, `category` per CLAUDE.md rubrics for **Adam**
+- Discard combined score < 6; max 5 per category; sort descending
+- Select 3 talking points
+- Write `docs/adam/briefing_data.json` per the schema in CLAUDE.md
+- Run: `pip install -r requirements.txt -q && python src/render.py adam`
 
-**8. Update history**
-Merge today's covered URLs and talking point headlines into `context/history.json`.
-Keep only the last 7 days of data per user.
+### Step 4 — Score, select and write Sirali's briefing
 
-**9. Commit and push**
+Repeat Step 3 for **Sirali** with her role-specific scoring.
+- Write `docs/sirali/briefing_data.json`
+- Run: `python src/render.py sirali`
+
+### Step 5 — Publish both to Notion
+
+For each user, create a page in **"WPB Weekly Intelligence Briefings"**:
+- Title: `[{display_name}] WPB Briefing — {date}`
+- Red callout with user name and title
+- Divider
+- Heading: "🎯 Key Talking Points" → each as Heading 3 + paragraph + bullet links
+- Divider
+- Heading: "📰 Intelligence Feed" → articles grouped by category as Heading 3 + bulleted links
+  with scores: `[HSBC 7/10 · Rel 9/10] Article title` linked to URL, followed by grey summary paragraph
+
+### Step 6 — Update history and publish
+
 ```bash
+# Update context/history.json with today's covered URLs and talking point headlines
+# (keep only last 7 days per user)
+
 git add docs/ context/history.json
-git commit -m "briefing: YYYY-MM-DD daily intelligence update"
-git push
+git commit -m "briefing: $(date +%Y-%m-%d) daily intelligence update"
+git push -u origin claude/nifty-hawking-APWMo
 ```
-This triggers GitHub Pages to publish the updated briefings automatically.
 
 ---
 
