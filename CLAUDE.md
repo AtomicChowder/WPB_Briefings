@@ -280,7 +280,7 @@ git push origin main
 gsutil -m rsync -r -d docs/ gs://${GCS_BUCKET_NAME}/
 gsutil -m setmeta -h "Cache-Control:no-cache, max-age=0" \
   "gs://${GCS_BUCKET_NAME}/adam/index.html" \
-  "gs://${GCS_BUCKET_NAME}/sirali/index.html"
+  "gs://${GCS_BUCKET_NAME}/surali/index.html"
 ```
 
 Required env vars: `GCS_BUCKET_NAME`, `GOOGLE_CLOUD_PROJECT`.

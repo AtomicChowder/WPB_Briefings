@@ -1,5 +1,41 @@
 # WPB Daily Briefing — Claude Code Routine
 
+## ⚠️ Execution Model — Read First
+
+**Stream idle timeouts are the #1 failure mode.** They happen when Claude thinks for a long
+time before calling a tool — the token stream goes idle and the API drops the connection.
+
+**Rules to prevent timeouts:**
+1. **Fire tool calls immediately** — never deliberate for more than 2–3 sentences before acting.
+2. **Run all 10 search queries in one parallel batch** — do not search sequentially.
+3. **Break briefing JSON writes into stepped Edit passes** — DO NOT write the full file at
+   once. Pattern that worked on 2026-04-29:
+   1. `printf` a 3-line skeleton with a `"PLACEHOLDER": true` field.
+   2. `Read` once, then `Edit` to replace the placeholder with all metadata fields plus empty
+      containers (`talking_points: []`, `articles_by_category: {}`, `chart_data: {...}`).
+   3. `Edit` to add talking point #1 (replace the empty array).
+   4. `Edit` to append talking points #2 and #3.
+   5. `Edit` to seed `articles_by_category` with the AI & Technology array.
+   6. `Edit` to append HSBC News articles.
+   7. `Edit` to append Competitor Intelligence articles.
+   8. `Edit` to append Private Banking + Regulatory + Operations.
+   9. `Edit` to seed `chart_data.articles` with articles 1–8.
+   10. `Edit` to append chart articles 9–15.
+   11. Validate with `python3 -c "import json; json.load(open(...))"`.
+   Repeat for the second user. Each Edit call carries < ~150 lines and emits quickly,
+   so the API never sees an idle window long enough to time out.
+4. **Reduce output volume** — never run `git diff`, `git log`, or `cat` of large files in the
+   main context. Use `git status --short` only. Pipe `pip install` output to `tail -5`.
+5. **Limit task scope per response** — execute one numbered step per response when possible.
+   Each tool call should announce which step it is performing (e.g. "Step 7: add HSBC News").
+6. **Delegate Notion + git deploy to subagents only when context is large** — subagents have
+   independent streams that cannot idle-timeout the parent. For everyday runs, the stepped
+   Edit approach in the main context is sufficient.
+7. **If a subagent times out, re-launch it** — pass all computed data verbatim in the prompt
+   so it is fully self-contained and can resume without re-doing research.
+
+---
+
 ## Routine Prompt
 
 > Read CLAUDE.md first — it contains all user profiles, scoring rubrics, the JSON schema,
