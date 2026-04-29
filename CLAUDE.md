@@ -6,6 +6,23 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
 
 ---
 
+## Operational Lessons (durable, do not violate)
+
+1. **Spelling: `Surali` (not Sirali)**, with URL slug `surali` and JSON history key `surali`.
+   Per-article scores use `adam_rel` and `surali_rel`. There is no `sirali_rel` field.
+2. **Two output paths per run** — feature branch push **and** merge to `main`. GitHub Pages
+   only deploys from `main` (`.github/workflows/pages.yml`). A push to a feature branch alone
+   will NOT update the public URLs.
+3. **Stream-idle timeouts** are the dominant failure mode. Always use the stepped Edit pattern
+   for briefing JSON writes (see `ROUTINE.md` § Execution Model). Never write a full
+   `briefing_data.json` in a single Write tool call.
+4. **Run all 10 search queries in parallel** in a single batch — never sequentially.
+5. **Notion DB**: the workspace database is *WPB Weekly Intelligence Briefings*
+   (data source `3336f349-23b7-8053-9230-000b278a9f1a`). The `Recipient` select uses the
+   spelling **`Surali Siriwardene`**.
+
+---
+
 ## Users
 
 ### Adam Chow
@@ -204,6 +221,8 @@ pathlib.Path('docs/{user_id}/briefing_data.json').write_text(json.dumps(data, in
         "published_at": "2026-04-26",
         "summary": "One sentence: why should this user care? What is the direct implication?",
         "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "surali_rel": 7,
         "user_relevance": 9,
         "noise_level": 3,
         "category": "AI & Technology"
@@ -218,6 +237,8 @@ pathlib.Path('docs/{user_id}/briefing_data.json').write_text(json.dumps(data, in
         "url": "https://...",
         "source": "Financial Times",
         "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "surali_rel": 7,
         "user_relevance": 9,
         "noise_level": 3,
         "category": "AI & Technology",
