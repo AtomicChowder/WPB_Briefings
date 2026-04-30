@@ -41,6 +41,15 @@ Write the complete JSON file following the exact schema in CLAUDE.md.
 Include `briefing_date` as a formatted string (e.g. "Saturday, 26 April 2026").
 Include `generated_at` as UTC time.
 
+> **Output discipline rules (mandatory):**
+> - **Never write the entire JSON in one shot.** Use the `Write` tool for the skeleton (header +
+>   talking points + empty stubs), then use `Edit` to append one section at a time:
+>   Pass 1 skeleton → Pass 2 AI & Technology → Pass 3 HSBC News → Pass 4 Competitor Intelligence
+>   → Pass 5 remaining categories → Pass 6 chart_data. Validate JSON after each major pass.
+> - **Avoid large-output commands.** Do not run `git diff`, `git log`, or `cat` on large files.
+>   Use `git status` only before committing.
+> - **One numbered task at a time.** Complete and verify each step before starting the next.
+
 **6. Render HTML**
 ```bash
 pip install -r requirements.txt -q
