@@ -92,15 +92,53 @@ This reads the JSON and writes `docs/{user_id}/index.html`.
 
 **7. Publish to Notion**
 Using the Notion MCP connector, create a new page in the database
-**"WPB Weekly Intelligence Briefings"** with:
-- Title: `[{display_name}] WPB Briefing — {date}` (e.g. `[Adam] WPB Briefing — 26 Apr 2026`)
-- A red callout with the user's name and title
-- A divider
-- Heading: "🎯 Key Talking Points" — then each talking point as Heading 3 + paragraph + bullet links
-- A divider
-- Heading: "📰 Intelligence Feed" — articles grouped by category as Heading 3 + bulleted links
-  with scores: `[HSBC 7/10 · Rel 9/10] Article title` linked to article URL,
-  followed by a grey paragraph for the summary
+**"WPB Weekly Intelligence Briefings"** (data source `3336f349-23b7-8053-9230-000b278a9f1a`).
+
+Page properties:
+- `Headline`: `[{display_name}] WPB Briefing — {date}` (e.g. `[Adam] WPB Briefing — 1 May 2026`)
+- `icon`: `📊`
+- `Recipient`: `Adam Chow` or `Surali Siriwardene`
+- `Priority`: `High`
+- `Briefing Section`: `Talking Point`
+- `date:Briefing Date:start`: ISO date string
+
+Page content — use this exact Notion markdown structure:
+```
+> 🔴 **{Name}** — {Title}
+
+---
+
+# 🎯 Key Talking Points
+
+### {Talking Point 1 Headline}
+{context paragraph}
+- [{Source title}]({url})
+
+### {Talking Point 2 Headline}
+{context paragraph}
+- [{Source title}]({url})
+
+### {Talking Point 3 Headline}
+{context paragraph}
+- [{Source title}]({url})
+
+---
+
+# 📰 Intelligence Feed
+
+### {Category Name}
+- **[HSBC {n}/10 · Rel {n}/10]** [{Article title}]({url})
+	> {one-sentence summary}
+
+---
+*Generated {D Mon YYYY} · {N} articles across {C} categories · GitHub Pages: [{url}]({url})*
+```
+
+Rules:
+- Use `#` (H1) for "🎯 Key Talking Points" and "📰 Intelligence Feed" — not `##`
+- Scores must be **bold**: `**[HSBC 7/10 · Rel 9/10]**`
+- Article summary must be an indented blockquote: `\t> summary text`
+- Add the italic footer line at the very end with the GitHub Pages URL for this user
 
 ### After both users are done:
 
