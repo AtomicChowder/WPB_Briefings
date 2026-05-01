@@ -1,0 +1,481 @@
+{
+  "user_id": "adam",
+  "user_name": "Adam Chow",
+  "user_display_name": "Adam",
+  "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
+  "briefing_date": "Thursday, 30 April 2026",
+  "date_str": "2026-04-30",
+  "generated_at": "30 Apr 2026, 10:20 UTC",
+  "total_articles": 18,
+  "talking_points": [
+    {
+      "headline": "HSBC Secures One of HK's Inaugural Stablecoin Licences; HKD Coin to Launch on PayMe in H2 2026",
+      "context_html": "The HKMA granted HSBC one of Hong Kong's first stablecoin issuer licences on 10 April — with just a 5.6% approval rate from 36 applications — alongside a Standard Chartered-led consortium. HSBC plans to launch a fully-backed HKD stablecoin in H2 2026, integrated directly into PayMe and the HSBC HK Mobile Banking app, turning two of Hong Kong's most widely-used consumer platforms into stablecoin rails. For Adam's change execution mandate, this signals a major cross-functional programme spanning compliance, technology, and consumer product delivery that needs to be scoped, resourced, and sequenced urgently across APAC.",
+      "source_links": [
+        {"url": "https://www.bloomberg.com/news/articles/2026-04-10/hsbc-stanchart-get-first-hong-kong-stablecoin-issuer-licenses", "title": "HSBC, StanChart Get First HK Stablecoin Licences"},
+        {"url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-welcomes-hkmas-grant-of-a-hong-kong-stablecoin-issuer-licence", "title": "HSBC Welcomes HKMA Stablecoin Licence Grant"},
+        {"url": "https://www.coindesk.com/policy/2026/03/24/hong-kong-awards-first-stablecoin-licenses-to-hsbc-standard-chartered-led-group", "title": "HK Awards First Stablecoin Licenses — CoinDesk"}
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "Citi Sky: DeepMind-Powered AI Wealth Avatar Raises the Competitive Bar for HSBC WPB in APAC",
+      "context_html": "Citigroup's wealth division unveiled Citi Sky on 22 April — an always-on AI avatar built with Google DeepMind's Gemini Live API — designed to deliver real-time, multilingual financial guidance to Citigold clients alongside human advisors. This follows Bank of America's full-scale March 2026 rollout of an AI Meeting Journey for 15,000 Merrill advisors, saving up to four hours per client meeting. As Head of Change Execution for HSBC WPB across APAC, the immediate priority is assessing whether HSBC's RM-productivity programme can match these deployments in both capability and speed-to-scale.",
+      "source_links": [
+        {"url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies", "title": "Citi Wealth Unveils Citi Sky — Official Press Release"},
+        {"url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html", "title": "BofA Merrill Launches AI-Powered Meeting Journey"},
+        {"url": "https://seekingalpha.com/news/4577760-citis-wealth-unit-launches-ai-assistant-in-partnership-with-google-cloud-deepmind", "title": "Citi Launches AI Assistant with Google — Seeking Alpha"}
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "McKinsey: Agentic AI Delivers 3–15% Higher RM Revenue — Only for Banks That Rewire Ops End-to-End",
+      "context_html": "McKinsey's April 2026 research establishes that 50–60% of bank FTEs and 60–70% of total cost base reside in operations, and that embedding agentic AI enterprise-wide — rather than running isolated pilots — delivers 3–15% higher revenue per relationship manager and 20–40% lower cost-to-serve. A companion report focused specifically on Asia banking identifies regional institutions moving fastest on agentic AI as setting the new operational benchmark. This evidence base directly shapes the case for how HSBC WPB's change execution programme should be structured: prioritising end-to-end operational rewiring over experimental AI initiatives to avoid what McKinsey calls 'pilot purgatory'.",
+      "source_links": [
+        {"url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations", "title": "McKinsey: Agentic AI Redefining Banking Operations"},
+        {"url": "https://www.mckinsey.com/capabilities/operations/our-insights/ai-in-asia-reimagining-banking-operations-through-agentic-ai", "title": "McKinsey: Reimagining Banking Ops Through Agentic AI in Asia"}
+      ],
+      "is_update": false
+    }
+  ],
+  "articles_by_category": {
+    "AI & Technology": [
+      {
+        "id": "art01",
+        "title": "AI in Asia: Reimagining Banking Operations Through Agentic AI",
+        "url": "https://www.mckinsey.com/capabilities/operations/our-insights/ai-in-asia-reimagining-banking-operations-through-agentic-ai",
+        "source": "McKinsey & Company",
+        "published_at": "2026-04-25",
+        "summary": "McKinsey examines how Asian banks are deploying agentic AI to reimagine operations across customer service, compliance, and relationship management. Banks moving from narrow pilots to enterprise-wide embedding see dramatically higher RM revenues and significantly lower cost-to-serve, with specific case examples from the Asia-Pacific banking sector.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 9,
+        "noise_level": 3,
+        "category": "AI & Technology"
+      },
+      {
+        "id": "art02",
+        "title": "Merrill and Bank of America Private Bank Launch AI-Powered Meeting Journey",
+        "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html",
+        "source": "Bank of America Newsroom",
+        "published_at": "2026-03-26",
+        "summary": "Bank of America rolled out AI Meeting Journey to 15,000 Merrill and Private Bank advisors, integrating Salesforce and Zoom AI to automate meeting prep, summarisation, and follow-up — saving up to four hours per client meeting and freeing advisors to focus on strategic planning and relationship deepening.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 3,
+        "category": "AI & Technology"
+      },
+      {
+        "id": "art03",
+        "title": "AI in Wealth Management: Closing the Implementation Gap",
+        "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
+        "source": "Fintech Global",
+        "published_at": "2026-04-17",
+        "summary": "Only 35% of wealth management intermediaries actively use AI tools, with just 10.5% doing so daily, revealing a significant implementation gap. The report argues the fastest-growing firms will be those that build AI-enabled operating infrastructure in 2026, prioritising operationalisation over further experimentation.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "AI & Technology"
+      }
+    ],
+    "HSBC News": [
+      {
+        "id": "art04",
+        "title": "HSBC and Standard Chartered Receive Hong Kong's First Stablecoin Licences",
+        "url": "https://www.bloomberg.com/news/articles/2026-04-10/hsbc-stanchart-get-first-hong-kong-stablecoin-issuer-licenses",
+        "source": "Bloomberg",
+        "published_at": "2026-04-10",
+        "summary": "The HKMA granted Hong Kong's inaugural stablecoin issuer licences to HSBC and a Standard Chartered-led consortium, with a 5.6% approval rate from 36 applications. HSBC plans an HKD stablecoin launch in H2 2026, fully backed by liquid assets and integrated into PayMe and HSBC HK Mobile Banking.",
+        "hsbc_relevancy": 9,
+        "user_relevance": 8,
+        "noise_level": 4,
+        "category": "HSBC News"
+      },
+      {
+        "id": "art05",
+        "title": "HSBC Projects Strong Q1 2026 Earnings Growth Driven by Technology and Wealth",
+        "url": "https://www.gurufocus.com/news/8800820/hsbc-projects-strong-q1-2026-earnings-growth-driven-by-technology",
+        "source": "GuruFocus",
+        "published_at": "2026-04-17",
+        "summary": "HSBC's investment research team projects 13% EPS growth in Q1 2026, with wealth fee income expected up 20% year-on-year to $2.1 billion and IWPB forecast to report $80 billion in net new invested assets. Official Q1 results are scheduled for announcement on 5 May 2026.",
+        "hsbc_relevancy": 9,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "HSBC News"
+      },
+      {
+        "id": "art06",
+        "title": "HSBC Q1 2026 Outlook: Resilience in a Transforming World",
+        "url": "https://www.about.us.hsbc.com/newsroom/press-releases/hsbc-q1-2026-outlook-resilience-in-a-transforming-world",
+        "source": "HSBC USA Newsroom",
+        "published_at": "2026-04-15",
+        "summary": "HSBC's official Q1 2026 outlook highlights resilience through macro uncertainty, with technology-driven efficiency gains and continued wealth expansion in Asia as key themes. The bank reaffirms its strategic pivot to Asian wealth markets and expects sustained growth momentum through the year.",
+        "hsbc_relevancy": 8,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "HSBC News"
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art07",
+        "title": "Citi Wealth Unveils Citi Sky: AI-Powered Advisor Built on Google DeepMind",
+        "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies",
+        "source": "Citigroup",
+        "published_at": "2026-04-22",
+        "summary": "Citigroup launched Citi Sky, an always-on AI wealth advisor avatar built with Google DeepMind's real-time avatar technology and the Gemini Enterprise Agent Platform. Launching with Citigold clients in the US in summer 2026, the tool is designed to work alongside human advisors offering multilingual, real-time financial guidance.",
+        "hsbc_relevancy": 8,
+        "user_relevance": 9,
+        "noise_level": 4,
+        "category": "Competitor Intelligence"
+      },
+      {
+        "id": "art08",
+        "title": "DBS Wins Euromoney World's Best Private Bank 2026 — First Asia-Based Bank in 22-Year History",
+        "url": "https://www.dbs.com/newsroom/DBS_wins_Euromoneys_top_honour_as_the_Worlds_Best_Private_Bank_in_triple_global_award_sweep",
+        "source": "DBS Bank Newsroom",
+        "published_at": "2026-04-25",
+        "summary": "DBS Private Bank became the first Asia-headquartered institution to win Euromoney's World's Best Private Bank award in the programme's 22-year history, also sweeping the inaugural World's Best for Digital Assets and World's Safest Private Bank categories. DBS's digital assets platform — where UHNW clients traded $2.4 billion in crypto instruments in H1 2025 — was a defining differentiator.",
+        "hsbc_relevancy": 8,
+        "user_relevance": 8,
+        "noise_level": 4,
+        "category": "Competitor Intelligence"
+      },
+      {
+        "id": "art09",
+        "title": "Standard Chartered Appoints Marc van de Walle as New Global Head of Wealth Management",
+        "url": "https://www.caproasia.com/2026/03/28/standard-chartered-private-bank-hires-ex-dbs-bank-of-singapore-private-banker-chen-siyun-as-director-in-private-banking-covering-greater-china-20-years-private-banking-financial-industry-experien/",
+        "source": "Caproasia",
+        "published_at": "2026-03-28",
+        "summary": "Standard Chartered appointed former Bank of Singapore Head of Wealth Management <strong>Marc van de Walle</strong> as its new Global Head of Wealth Management, continuing a wave of senior hires into StanChart's wealth leadership. The bank also expanded its CIO team with two new global investment roles based in Singapore and Hong Kong.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence"
+      },
+      {
+        "id": "art10",
+        "title": "UBS Strengthens Wealth Management Leadership in Southeast Asia and Greater China",
+        "url": "https://www.hubbis.com/news/ubs-strengthens-wealth-management-leadership-in-southeast-asia-and-greater-china",
+        "source": "Hubbis",
+        "published_at": "2026-01-20",
+        "summary": "UBS Global Wealth Management hired <strong>James Cheo, former Regional CIO at HSBC Global Private Banking and Wealth for Southeast Asia and India</strong>, to join its APAC chief investment office. UBS also appointed <strong>Sherwin Wong, Head of Private Clients in Hong Kong</strong>, joining from J.P. Morgan — signalling an active talent buildout across the region.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence"
+      },
+      {
+        "id": "art11",
+        "title": "Standard Chartered Korea Rolls Out Next-Gen Private Banking Model",
+        "url": "https://www.koreaherald.com/article/10721098",
+        "source": "Korea Herald",
+        "published_at": "2026-04-28",
+        "summary": "Standard Chartered Korea launched a next-generation private banking model targeting clients with assets of ₩1 billion ($678,000) or more, incorporating asset management systems from global hubs in Singapore, Hong Kong, and the UAE. The model reflects StanChart's strategy to deepen premium banking services across Asia with a consistent global capability framework.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence"
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art12",
+        "title": "DBS Named World's Best for Digital Assets 2026 — Sets New Private Wealth Standard",
+        "url": "https://www.euromoney.com/article/48nu3trzjzeok0kswoww4k0o4/private-banking/the-worlds-best-for-digital-assets-2026-dbs-private-bank/",
+        "source": "Euromoney",
+        "published_at": "2026-04-25",
+        "summary": "Euromoney awarded DBS the inaugural World's Best for Digital Assets award, recognising its full-spectrum ecosystem of bank-grade custody, institutional trading, tokenisation capability, and integration with private wealth legacy planning. DBS Trustee is now the world's first bank-backed trust capable of holding digital assets — setting a benchmark HSBC WPB has yet to match.",
+        "hsbc_relevancy": 8,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth"
+      },
+      {
+        "id": "art13",
+        "title": "Hong Kong Overtakes Singapore in Wealthtech Adoption: 93% vs 85% of Investors Using Digital Wealth",
+        "url": "https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/",
+        "source": "Fintech News Hong Kong",
+        "published_at": "2025-06-28",
+        "summary": "A Quinlan & Associates and Allfunds Asia report found 93% of Hong Kong investors have accessed digital wealth services in the past two years, surpassing Singapore's 85%, with Hong Kong leading on robo-advisor use (74% vs 59%) and AI comfort (52% vs 27%). Hong Kong now stands as Asia's leading wealthtech hub, presenting a direct opportunity for HSBC WPB to accelerate its digital wealth capabilities in its home market.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth"
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "art14",
+        "title": "Asia Regulatory Update April 2026: HKMA, SFC and Regulators Launch GenAI Sandbox++",
+        "url": "https://www.greyspark.com/insights/asia-regulatory-update-april-2026/",
+        "source": "GreySpark Partners",
+        "published_at": "2026-04-28",
+        "summary": "Hong Kong's HKMA, SFC, Insurance Authority, and MPFA jointly launched GenAI Sandbox++, expanding formal regulatory oversight of AI deployments to cover banking, securities, asset management, insurance, MPF, and stored-value facilities. Governance and accountability were the dominant Q1 2026 regulatory theme across Asia-Pacific as regulators worked to strengthen institutional resilience.",
+        "hsbc_relevancy": 8,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Regulatory & Markets"
+      },
+      {
+        "id": "art15",
+        "title": "Asia Pacific Financial Services Regulatory Updates, Quarter One 2026",
+        "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-update-q1-2026.html",
+        "source": "Deloitte",
+        "published_at": "2026-04-15",
+        "summary": "Deloitte's Q1 2026 APAC regulatory review identifies governance and accountability as the dominant theme, with Japan, Taiwan, and Indonesia advancing cyber risk and IT governance requirements. Singapore and Hong Kong launched new sustainability frameworks and expanded digital assets and AI regulatory coverage significantly.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Regulatory & Markets"
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art16",
+        "title": "The Paradigm Shift: How Agentic AI Is Redefining Banking Operations",
+        "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations",
+        "source": "McKinsey & Company",
+        "published_at": "2026-04-20",
+        "summary": "McKinsey argues agentic AI represents the largest value unlock in banking since core digitisation, with 60–70% of cost base and 50–60% of FTEs in operations. Banks embedding agentic AI enterprise-wide — not in isolated pilots — see 3–15% higher RM revenues and 20–40% lower cost-to-serve; those running narrow experiments risk 'pilot purgatory'.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 9,
+        "noise_level": 3,
+        "category": "Operations & Change"
+      },
+      {
+        "id": "art17",
+        "title": "AI Transformation in Financial Services: 5 Predictors for Success in 2026",
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/financial-services/2025/12/18/ai-transformation-in-financial-services-5-predictors-for-success-in-2026/",
+        "source": "Microsoft Cloud Blog",
+        "published_at": "2025-12-18",
+        "summary": "Microsoft identifies five predictors for successful AI transformation in financial services: embedding AI in core workflows rather than as bolt-ons, integrating risk controls from the start, shifting to outcome-based metrics, investing in data quality infrastructure, and building human-AI collaboration capabilities at the frontline.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "Operations & Change"
+      },
+      {
+        "id": "art18",
+        "title": "Banking Process Transformation Roadmap for 2026",
+        "url": "https://www.dunnixer.com/insights/information/banking/us/banking-process-transformation-roadmap-for-2026",
+        "source": "Dunnixer",
+        "published_at": "2026-04-10",
+        "summary": "A practical 2026 banking transformation roadmap frames execution as a sequencing discipline: tightening the links between strategy, architecture, operations, and control evidence. Risk and compliance must be integrated into agile workflows from the start, and transformation scorecards must shift from activity metrics to outcome-based measures.",
+        "hsbc_relevancy": 5,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "Operations & Change"
+      }
+    ]
+  },
+  "chart_data": {
+    "articles": [
+      {
+        "id": "art01",
+        "title": "AI in Asia: Reimagining Banking Operations Through Agentic AI",
+        "url": "https://www.mckinsey.com/capabilities/operations/our-insights/ai-in-asia-reimagining-banking-operations-through-agentic-ai",
+        "source": "McKinsey & Company",
+        "hsbc_relevancy": 7,
+        "user_relevance": 9,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "summary": "McKinsey on how Asian banks deploy agentic AI across operations to boost RM revenues and lower cost-to-serve."
+      },
+      {
+        "id": "art02",
+        "title": "Merrill and Bank of America Private Bank Launch AI-Powered Meeting Journey",
+        "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html",
+        "source": "Bank of America Newsroom",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "summary": "BofA rolls out AI Meeting Journey to 15,000 Merrill advisors, saving up to 4 hours per client meeting."
+      },
+      {
+        "id": "art03",
+        "title": "AI in Wealth Management: Closing the Implementation Gap",
+        "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
+        "source": "Fintech Global",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "summary": "Only 35% of wealth management intermediaries actively use AI tools; operationalisation is the 2026 imperative."
+      },
+      {
+        "id": "art04",
+        "title": "HSBC and Standard Chartered Receive Hong Kong's First Stablecoin Licences",
+        "url": "https://www.bloomberg.com/news/articles/2026-04-10/hsbc-stanchart-get-first-hong-kong-stablecoin-issuer-licenses",
+        "source": "Bloomberg",
+        "hsbc_relevancy": 9,
+        "user_relevance": 8,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "summary": "HKMA grants inaugural stablecoin licences; HSBC to launch HKD stablecoin on PayMe in H2 2026."
+      },
+      {
+        "id": "art05",
+        "title": "HSBC Projects Strong Q1 2026 Earnings Growth Driven by Technology and Wealth",
+        "url": "https://www.gurufocus.com/news/8800820/hsbc-projects-strong-q1-2026-earnings-growth-driven-by-technology",
+        "source": "GuruFocus",
+        "hsbc_relevancy": 9,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "summary": "HSBC projects 13% EPS growth Q1 2026; wealth fee income +20% YoY; $80B NNIA expected."
+      },
+      {
+        "id": "art06",
+        "title": "HSBC Q1 2026 Outlook: Resilience in a Transforming World",
+        "url": "https://www.about.us.hsbc.com/newsroom/press-releases/hsbc-q1-2026-outlook-resilience-in-a-transforming-world",
+        "source": "HSBC USA Newsroom",
+        "hsbc_relevancy": 8,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "summary": "HSBC Q1 2026 outlook: resilience through macro uncertainty, tech-driven efficiency, Asia wealth growth on track."
+      },
+      {
+        "id": "art07",
+        "title": "Citi Wealth Unveils Citi Sky: AI-Powered Advisor Built on Google DeepMind",
+        "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies",
+        "source": "Citigroup",
+        "hsbc_relevancy": 8,
+        "user_relevance": 9,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "summary": "Citi Sky: always-on AI wealth advisor avatar built with Google DeepMind, launching with Citigold clients."
+      },
+      {
+        "id": "art08",
+        "title": "DBS Wins Euromoney World's Best Private Bank 2026 — First Asia-Based Bank",
+        "url": "https://www.dbs.com/newsroom/DBS_wins_Euromoneys_top_honour_as_the_Worlds_Best_Private_Bank_in_triple_global_award_sweep",
+        "source": "DBS Bank Newsroom",
+        "hsbc_relevancy": 8,
+        "user_relevance": 8,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "summary": "DBS first Asia-HQ bank to win Euromoney World's Best Private Bank in 22-year history; also won digital assets and safest bank."
+      },
+      {
+        "id": "art09",
+        "title": "Standard Chartered Appoints Marc van de Walle as New Global Head of Wealth",
+        "url": "https://www.caproasia.com/2026/03/28/standard-chartered-private-bank-hires-ex-dbs-bank-of-singapore-private-banker-chen-siyun-as-director-in-private-banking-covering-greater-china-20-years-private-banking-financial-industry-experien/",
+        "source": "Caproasia",
+        "hsbc_relevancy": 7,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "summary": "StanChart appoints ex-Bank of Singapore Marc van de Walle as new Global Head of Wealth Management."
+      },
+      {
+        "id": "art10",
+        "title": "UBS Strengthens Wealth Management Leadership in Southeast Asia and Greater China",
+        "url": "https://www.hubbis.com/news/ubs-strengthens-wealth-management-leadership-in-southeast-asia-and-greater-china",
+        "source": "Hubbis",
+        "hsbc_relevancy": 6,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "summary": "UBS hires James Cheo from HSBC Global Private Banking as APAC CIO; also appoints new HK private clients head from JPMorgan."
+      },
+      {
+        "id": "art11",
+        "title": "Standard Chartered Korea Rolls Out Next-Gen Private Banking Model",
+        "url": "https://www.koreaherald.com/article/10721098",
+        "source": "Korea Herald",
+        "hsbc_relevancy": 6,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "summary": "StanChart Korea launches next-gen private banking for ₩1B+ clients, leveraging global hubs in Singapore, HK and UAE."
+      },
+      {
+        "id": "art12",
+        "title": "DBS Named World's Best for Digital Assets 2026 — Sets New Private Wealth Standard",
+        "url": "https://www.euromoney.com/article/48nu3trzjzeok0kswoww4k0o4/private-banking/the-worlds-best-for-digital-assets-2026-dbs-private-bank/",
+        "source": "Euromoney",
+        "hsbc_relevancy": 8,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "summary": "DBS wins inaugural Euromoney digital assets award; DBS Trustee first bank-backed trust to hold digital assets."
+      },
+      {
+        "id": "art13",
+        "title": "Hong Kong Overtakes Singapore in Wealthtech Adoption: 93% vs 85%",
+        "url": "https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/",
+        "source": "Fintech News Hong Kong",
+        "hsbc_relevancy": 7,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "summary": "Quinlan & Associates: 93% of HK investors use digital wealth services vs 85% in SG; HK leads in AI comfort and robo-advisory."
+      },
+      {
+        "id": "art14",
+        "title": "Asia Regulatory Update April 2026: HKMA, SFC Launch GenAI Sandbox++",
+        "url": "https://www.greyspark.com/insights/asia-regulatory-update-april-2026/",
+        "source": "GreySpark Partners",
+        "hsbc_relevancy": 8,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "summary": "HK regulators launch GenAI Sandbox++, extending formal AI oversight to banking, insurance, MPF, and stored-value facilities."
+      },
+      {
+        "id": "art15",
+        "title": "Asia Pacific Financial Services Regulatory Updates, Quarter One 2026",
+        "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-update-q1-2026.html",
+        "source": "Deloitte",
+        "hsbc_relevancy": 7,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "summary": "Deloitte Q1 2026 APAC review: governance and accountability dominate, with new AI and sustainability frameworks in HK and SG."
+      },
+      {
+        "id": "art16",
+        "title": "The Paradigm Shift: How Agentic AI Is Redefining Banking Operations",
+        "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations",
+        "source": "McKinsey & Company",
+        "hsbc_relevancy": 7,
+        "user_relevance": 9,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "summary": "McKinsey: agentic AI unlocks 60–70% of bank cost base; enterprise-wide rewire delivers 3–15% higher RM revenue and 20–40% lower cost-to-serve."
+      },
+      {
+        "id": "art17",
+        "title": "AI Transformation in Financial Services: 5 Predictors for Success in 2026",
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/financial-services/2025/12/18/ai-transformation-in-financial-services-5-predictors-for-success-in-2026/",
+        "source": "Microsoft Cloud Blog",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "summary": "Microsoft identifies 5 predictors for AI success in FS: core embedding, built-in risk controls, outcome metrics, data quality, human-AI frontline collaboration."
+      },
+      {
+        "id": "art18",
+        "title": "Banking Process Transformation Roadmap for 2026",
+        "url": "https://www.dunnixer.com/insights/information/banking/us/banking-process-transformation-roadmap-for-2026",
+        "source": "Dunnixer",
+        "hsbc_relevancy": 5,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "summary": "2026 banking transformation roadmap: execution as sequencing discipline, integrating compliance into agile workflows, shifting to outcome-based scorecards."
+      }
+    ],
+    "categories": {
+      "AI & Technology": "#6366f1",
+      "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2",
+      "Private Banking & Wealth": "#059669",
+      "Regulatory & Markets": "#d97706",
+      "Operations & Change": "#7c3aed"
+    }
+  }
+}

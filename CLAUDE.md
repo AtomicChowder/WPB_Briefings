@@ -6,6 +6,17 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
 
 ---
 
+## Execution Rules (MUST follow every session)
+
+- **Split large writes**: Never write an entire `briefing_data.json` in one tool call. Build
+  the file in sections: write the skeleton first, then use `Edit` to append each category block.
+- **Reduce output volume**: Do not run `git diff`, `git log`, or any command that produces
+  large output. Use `git status` only before committing.
+- **One task at a time**: Complete each numbered step fully before starting the next. Do not
+  batch steps or narrate a plan for multiple steps ahead.
+
+---
+
 ## Users
 
 ### Adam Chow
