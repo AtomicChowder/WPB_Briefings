@@ -13,6 +13,7 @@ env/
 !.env.example
 !context/history.json
 !docs/**/briefing_data.json
+!briefing_input.example.json
 service-account*.json
 /output/
 /tmp/
