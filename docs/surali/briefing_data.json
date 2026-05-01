@@ -3,85 +3,517 @@
   "user_name": "Surali Siriwardene",
   "user_display_name": "Surali",
   "user_title": "COO & Global Head of Change Execution, WPS",
-  "briefing_date": "Wednesday, 29 April 2026",
-  "date_str": "2026-04-29",
-  "generated_at": "29 Apr 2026, 09:00 UTC",
+  "briefing_date": "Friday, 1 May 2026",
+  "date_str": "2026-05-01",
+  "generated_at": "1 May 2026, 04:06 UTC",
   "total_articles": 15,
+  "breaking_news": [],
   "talking_points": [
     {
-      "headline": "McKinsey: Agentic AI Could Cut Bank Operating Costs 20%+ — Pilot Purgatory Threatens Slow Movers",
-      "context_html": "McKinsey's latest research quantifies agentic AI's potential to reduce banking operational costs by 20% or more — equivalent to 9-15% of operating profits — by automating workflows across the 60-70% of total bank cost base tied to operations. The risk is equally stark: banks that stay in pilot mode will see competitors lock in structural cost advantages, with McKinsey naming the threat 'pilot purgatory'. As Global COO overseeing HSBC's WPS change execution programme, this frames both the financial opportunity benchmark and the governance urgency for 2026 AI investment decisions.",
+      "headline": "HSBC Board meets 5 May on Q1 results; market focus on NII and cost discipline",
+      "why_it_matters": "WPS operational efficiency and change delivery sit directly within investor scrutiny of HSBC's cost discipline narrative \u2014 any programme delays or cost overruns could attract negative analyst attention when results are published Monday.",
+      "bullets": [
+        "HSBC Holdings confirmed a Board committee meeting on 5 May 2026 to approve Q1 2026 earnings and the first 2026 interim dividend, payable 26 June to shareholders of record on 15 May",
+        "Analyst consensus EPS forecast is $2.17 for Q1; investor focus will be on HSBC's at-least-$45bn banking NII, ~1% cost growth constraint, and whether 17%+ RoTE guidance remains credible",
+        "WPB wealth AUM growth and private banking revenue delivery will be a key narrative in investor calls, benchmarked directly against DBS and UBS's record Q1 wealth results this week"
+      ],
       "source_links": [
-        {"url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations", "title": "McKinsey: Agentic AI Redefining Banking Operations"},
-        {"url": "https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/agentic-ai-will-shake-up-banking-shrinking-global-profit-pools", "title": "Agentic AI Will Shake Up Banking Profit Pools"}
+        {
+          "url": "https://www.marketscreener.com/news/hsbc-earnings-release-for-the-first-quarter-2026-and-consideration-of-first-quarter-dividend-for-2-ce7f59dfd988f022",
+          "title": "HSBC Q1 earnings preview \u2014 MarketScreener"
+        },
+        {
+          "url": "https://www.marketbeat.com/earnings/reports/2026-5-5-hsbc-holdings-plc-stock/",
+          "title": "HSBC Q1 2026 Earnings \u2014 MarketBeat"
+        }
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC Q1 2026: Wealth Income Up 18% as WPB Anchors the Group's Resilience Narrative",
-      "context_html": "HSBC's Q1 2026 results show wealth income rising 18% year-on-year to $1.659bn within IWPB, with fee and other income up 24% to $1.819bn — anchoring the group narrative against an overall pre-tax profit decline to $9.5bn driven by the non-recurrence of 2025 disposal gains. Net new invested assets of $80bn globally, including $19bn from Asia in Q4 alone, continue to validate the strategic rationale for WPB's APAC investment programme. As Global COO and Adam's direct manager, these results directly inform resource allocation, cost efficiency targets, and change execution priorities for the rest of 2026.",
+      "headline": "DBS, Deutsche Bank, UBS sweep Q1 with record profits \u2014 wealth management leads",
+      "why_it_matters": "All three major HSBC WPB global competitors posted record Q1 profits driven by wealth management strength, setting a high performance bar for HSBC's own Q1 results and reinforcing the strategic importance of WPS change delivery.",
+      "bullets": [
+        "DBS (S$5.95bn record income, S$907m wealth fees), Deutsche Bank (\u20ac2.2bn record post-tax profit, \u20ac1.8tn AUM), and UBS ($3bn, +80%) all beat analyst expectations in Q1 2026 on wealth and fee income strength",
+        "None of the three withdrew their 2026 full-year guidance; all cited Asia Pacific wealth as a priority growth corridor for the remainder of the year despite Iran war and tariff headwinds",
+        "Deutsche Bank's earnings highlighted disciplined cost management as central to sustaining 13% RoTE across all divisions \u2014 directly relevant to WPS's own cost efficiency and change governance mandate"
+      ],
       "source_links": [
-        {"url": "https://www.about.us.hsbc.com/newsroom/press-releases/hsbc-q1-2026-outlook-resilience-in-a-transforming-world", "title": "HSBC Q1 2026 Outlook: Resilience in a Transforming World"}
+        {
+          "url": "https://www.db.com/news/detail/20260429-deutsche-bank-reports-first-quarter-2026-results?language_id=1",
+          "title": "Deutsche Bank Q1 record results \u2014 db.com"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/04/29/ubs-swiss-bank-first-quarter-earnings-profit-switzerland-trading.html",
+          "title": "UBS profits rocket 80% \u2014 CNBC"
+        }
       ],
       "is_update": false
     },
     {
-      "headline": "APAC Regulators Tighten on Governance and Cyber Risk — Operational Resilience Enters Enforcement Phase",
-      "context_html": "Deloitte's Q1 2026 APAC regulatory update and EY's Global Outlook both confirm that governance, accountability, and operational resilience requirements are shifting from framework-setting into active enforcement across Japan, Indonesia, Singapore, and Hong Kong, with AI governance and third-party risk obligations tightening simultaneously. Singapore's new environmental risk guidelines and Hong Kong's Phase 2A Sustainable Finance Taxonomy add further compliance load on top of an already heavy APAC regulatory calendar. For Surali's global COO mandate, this elevates the control environment requirements that must be embedded into the WPS change execution framework, supplier governance model, and operational resilience standards.",
+      "headline": "Standard Chartered's AI Factory governance model: a blueprint for WPS change execution",
+      "why_it_matters": "Standard Chartered's AI Factory \u2014 combining platform consolidation, quantifiable KPIs, and risk-first governance across 41 markets \u2014 is a directly relevant change execution model for WPS to evaluate as it scales AI globally.",
+      "bullets": [
+        "Standard Chartered has consolidated AI development onto a unified AI Factory platform across 41 markets, applying repeatability principles to standardise governance and reduce deployment friction at scale",
+        "The bank measures AI effectiveness with explicit KPIs: financial crime false-positive/negative rates, cyber detection and response times, and A/B-tested client engagement metrics \u2014 making ROI trackable at programme level",
+        "The AI Factory approach directly addresses consistent governance of AI deployments across diverse regulatory environments \u2014 the same challenge WPS faces managing change execution programmes globally"
+      ],
       "source_links": [
-        {"url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-update-q1-2026.html", "title": "Deloitte APAC Q1 2026 Regulatory Update"},
-        {"url": "https://www.ey.com/en_gl/insights/financial-services/four-regulatory-shifts-financial-firms-must-watch-in-2026", "title": "EY: Four Regulatory Shifts to Watch in 2026"}
+        {
+          "url": "https://thedigitalbanker.com/standard-chartered-launches-ai-factory-to-unify-innovation-and-governance/",
+          "title": "StanChart AI Factory governance \u2014 Digital Banker"
+        },
+        {
+          "url": "https://www.theasianbanker.com/updates-and-articles/standard-chartered-s-risk-first-approach-to-scaling-ai-globally",
+          "title": "StanChart risk-first AI scaling \u2014 Asian Banker"
+        }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
+    "Competitor Intelligence": [
+      {
+        "id": "art01",
+        "title": "DBS Q1 2026: Record Total Income as Wealth Management Powers Through Rate Headwinds",
+        "url": "https://thesmartinvestor.com.sg/dbs-delivers-record-total-income-in-q1-2026-as-wealth-management-powers-through-rate-headwinds/",
+        "source": "The Smart Investor",
+        "published_at": "2026-04-30",
+        "summary": "DBS reported record total income of S$5.95bn in Q1 2026, with wealth management fees hitting S$907m and S$10bn net new money, beating analyst net profit consensus of S$2.83bn with S$2.93bn delivered.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "user_relevance": 7
+      },
+      {
+        "id": "art03",
+        "title": "UBS Profits Rocket 80% to $3 Billion for First Quarter Beat",
+        "url": "https://www.cnbc.com/2026/04/29/ubs-swiss-bank-first-quarter-earnings-profit-switzerland-trading.html",
+        "source": "CNBC",
+        "published_at": "2026-04-29",
+        "summary": "UBS reported net profit of $3bn in Q1 2026, up 80% YoY, with Global Wealth Management contributing $1.97bn profit before tax (+28%) and $37.4bn net new assets as Credit Suisse integration nears completion.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "user_relevance": 8
+      },
+      {
+        "id": "art02",
+        "title": "Deutsche Bank Reports Record First-Quarter Post-Tax Profit of \u20ac2.2 Billion",
+        "url": "https://www.db.com/news/detail/20260429-deutsche-bank-reports-first-quarter-2026-results?language_id=1",
+        "source": "Deutsche Bank",
+        "published_at": "2026-04-29",
+        "summary": "Deutsche Bank posted record Q1 post-tax profit of \u20ac2.2bn (+8% YoY) with all divisions hitting 13% RoTE targets. Assets under management rose 9% to \u20ac1.8tn on \u20ac22bn net inflows.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "user_relevance": 7
+      }
+    ],
     "AI & Technology": [
-      {"id": "art01", "title": "Citi Wealth Unveils Citi Sky — AI-Powered Wealth Advisor Built with Google DeepMind", "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies", "source": "Citigroup", "published_at": "2026-04-22", "category": "AI & Technology", "hsbc_relevancy": 7, "adam_rel": 9, "surali_rel": 8, "noise_level": 4, "summary": "Citi Wealth launched Citi Sky on 22 April — an always-on AI advisor using Google DeepMind's Gemini real-time avatar tech, rolling out to Citigold clients from summer 2026.", "user_relevance": 8},
-      {"id": "art02", "title": "McKinsey: Agentic AI Will Shake Up Banking, Shrinking Global Profit Pools", "url": "https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/agentic-ai-will-shake-up-banking-shrinking-global-profit-pools", "source": "McKinsey & Company", "published_at": "2026-04-01", "category": "AI & Technology", "hsbc_relevancy": 6, "adam_rel": 7, "surali_rel": 8, "noise_level": 3, "summary": "McKinsey warns agentic AI will compress profit pools as efficiency gains are competed away. Slow movers risk 'pilot purgatory' as competitors lock in structural cost benefits.", "user_relevance": 8},
-      {"id": "art03", "title": "Merrill and Bank of America Private Bank Launch AI-Powered Meeting Journey", "url": "https://www.prnewswire.com/news-releases/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeting-journey-302725593.html", "source": "PR Newswire / Bank of America", "published_at": "2026-03-26", "category": "AI & Technology", "hsbc_relevancy": 6, "adam_rel": 8, "surali_rel": 7, "noise_level": 3, "summary": "BofA gave 15,000 advisors integrated AI tools for meeting prep, real-time Zoom note-taking, and automated follow-up — saving up to four hours per client meeting.", "user_relevance": 7},
-      {"id": "art04", "title": "AI in Wealth Management: Closing the Implementation Gap", "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/", "source": "Fintech Global", "published_at": "2026-04-17", "category": "AI & Technology", "hsbc_relevancy": 5, "adam_rel": 7, "surali_rel": 7, "noise_level": 2, "summary": "Only 35% of financial intermediaries actively use AI tools in advisory; just 10.5% do so daily. The piece urges firms to embed AI into core workflows.", "user_relevance": 7}
+      {
+        "id": "art04",
+        "title": "Standard Chartered and A*STAR to Set Up S$15 Million Lab for Banking AI",
+        "url": "https://fintechnews.sg/130057/ai/standard-chartered-astar-ai-lab/",
+        "source": "Fintech Singapore",
+        "published_at": "2026-04-21",
+        "summary": "Standard Chartered and A*STAR IHPC announced a S$15m, 3-year AI Banking Innovation Lab to develop portfolio optimisation, fraud detection and NLP tools, including a natural-language query interface for relationship managers.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "art05",
+        "title": "Standard Chartered's AI Factory Applies the 'Repeatability' Principle",
+        "url": "https://www.waterstechnology.com/emerging-technologies/7952608/standard-chartered-ai-factory-applies-the-repeatability-principle",
+        "source": "Waters Technology",
+        "published_at": "2026-04-29",
+        "summary": "Standard Chartered's AI Factory uses a repeatability principle to standardise AI development patterns across 41 markets, cutting deployment time and improving governance consistency for high-value use cases.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "art06",
+        "title": "Standard Chartered Moves into Its Next Phase of Disciplined AI Execution",
+        "url": "https://www.theasianbanker.com/updates-and-articles/standard-chartered-moves-into-its-next-phase-of-disciplined-ai-execution",
+        "source": "Asian Banker",
+        "published_at": "2026-04-30",
+        "summary": "Standard Chartered is deepening AI programme governance, consolidating platforms and sharpening measurement practices as it scales high-value use cases across 41 markets using quantifiable KPIs.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 8
+      }
     ],
     "HSBC News": [
-      {"id": "art05", "title": "HSBC Q1 2026: Wealth Income Up 18%, Group Pre-Tax Profit Falls on One-Off Comparator", "url": "https://www.about.us.hsbc.com/newsroom/press-releases/hsbc-q1-2026-outlook-resilience-in-a-transforming-world", "source": "HSBC / Bloomberg", "published_at": "2026-04-29", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 7, "surali_rel": 9, "noise_level": 3, "summary": "HSBC Q1 2026: wealth income up 18% YoY to $1.659bn; fee/other income up 24% to $1.819bn. Group pre-tax profit fell to $9.5bn on prior-year disposal gains non-recurrence. IWPB attracted $80bn NNIA globally, $19bn from Asia in Q4.", "user_relevance": 9},
-      {"id": "art06", "title": "HSBC Wins First HKD Stablecoin Licence; Plans H2 2026 Launch via PayMe", "url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-welcomes-hkmas-grant-of-a-hong-kong-stablecoin-issuer-licence", "source": "HSBC", "published_at": "2026-04-10", "category": "HSBC News", "hsbc_relevancy": 9, "adam_rel": 8, "surali_rel": 7, "noise_level": 4, "summary": "HKMA granted HSBC one of HK's first stablecoin licences (10 Apr 2026); HKD stablecoin launches via PayMe and HSBC HK app in H2 2026 for 3.3M users.", "user_relevance": 7},
-      {"id": "art07", "title": "HSBC Completes Privatisation of Hang Seng Bank, Delisted January 2026", "url": "https://www.hsbc.com/investors/hsbc-proposal-to-privatise-hang-seng-bank", "source": "HSBC", "published_at": "2026-01-27", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 7, "surali_rel": 8, "noise_level": 3, "summary": "HSBC completed the court-approved privatisation of Hang Seng Bank on 27 Jan 2026, acquiring the remaining 38% stake for ~HK$290bn, consolidating its HK footprint.", "user_relevance": 8}
-    ],
-    "Competitor Intelligence": [
-      {"id": "art08", "title": "DBS Named World's Best Private Bank 2026 by Euromoney — Historic First for Asia", "url": "https://www.euromoney.com/article/4wu4umwhazs4ssw4k0okc0c/private-banking/the-worlds-best-private-bank-2026-dbs-private-bank/", "source": "Euromoney", "published_at": "2026-04-01", "category": "Competitor Intelligence", "hsbc_relevancy": 8, "adam_rel": 9, "surali_rel": 7, "noise_level": 4, "summary": "DBS Private Bank became the first Asian institution to win Euromoney's World's Best Private Bank 2026, plus inaugural digital assets and safest private bank titles.", "user_relevance": 7},
-      {"id": "art09", "title": "Standard Chartered Korea Launches Five-Pillar Next-Gen Private Banking Model", "url": "https://www.koreaherald.com/article/10721098", "source": "Korea Herald", "published_at": "2026-04-20", "category": "Competitor Intelligence", "hsbc_relevancy": 6, "adam_rel": 7, "surali_rel": 6, "noise_level": 2, "summary": "StanChart Korea revamped its private banking model targeting KRW 1bn+ clients, drawing on systems from SG, HK, and UAE hubs.", "user_relevance": 6},
-      {"id": "art10", "title": "Pictet Wealth Recruits UBS 20-Year Veteran Kelvin Tay as APAC CIO", "url": "https://www.caproasia.com/2026/04/22/switzerland-970-billion-pictet-wealth-management-hires-ubs-20-year-veteran-regional-chief-investment-officer-cio-kelvin-tay-as-apac-chief-investment-officer-cio-26-years-investment-private-bank/", "source": "Caproasia", "published_at": "2026-04-22", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 6, "surali_rel": 5, "noise_level": 2, "summary": "Pictet Wealth hired <strong>Kelvin Tay, former UBS Regional CIO for South Asia Pacific</strong>, as APAC CIO — signalling intensifying APAC private banking talent competition.", "user_relevance": 5}
+      {
+        "id": "art07",
+        "title": "HSBC: Earnings Release for Q1 2026 and Consideration of First Quarter Dividend",
+        "url": "https://www.marketscreener.com/news/hsbc-earnings-release-for-the-first-quarter-2026-and-consideration-of-first-quarter-dividend-for-2-ce7f59dfd988f022",
+        "source": "MarketScreener",
+        "published_at": "2026-04-30",
+        "summary": "HSBC Holdings confirmed a Board committee meeting on 5 May 2026 to approve Q1 2026 earnings and the first interim dividend, payable 26 June. Analysts expect EPS of $2.17 with focus on $45bn NII and 17% RoTE guidance.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "user_relevance": 9
+      },
+      {
+        "id": "art08",
+        "title": "Monthly View \u2014 May 2026",
+        "url": "https://www.privatebanking.hsbc.com/wih/investments-Insights/House-views/monthly-view-may-2026/",
+        "source": "HSBC Private Bank",
+        "published_at": "2026-05-01",
+        "summary": "HSBC Private Bank's Global CIO outlines the May 2026 house view covering asset allocation adjustments amid Iran war risks, quality credit overweights, and Asia equity positioning for private banking clients.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "user_relevance": 8
+      }
     ],
     "Private Banking & Wealth": [
-      {"id": "art11", "title": "Hong Kong Overtakes Singapore in WealthTech Adoption — 93% Digital Access Rate", "url": "https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/", "source": "Fintech Hong Kong / Quinlan & Associates", "published_at": "2026-04-01", "category": "Private Banking & Wealth", "hsbc_relevancy": 7, "adam_rel": 8, "surali_rel": 7, "noise_level": 3, "summary": "Quinlan & Associates / Allfunds: 93% of HK investors accessed digital wealth services (vs. 85% in SG); 52% comfortable with AI-guided advice (vs. 27%) — driven by neobrokers like Futu.", "user_relevance": 7}
+      {
+        "id": "art10",
+        "title": "UBS Q1 2026 Profit Soars 80% on Broad-Based Wealth Growth",
+        "url": "https://www.privatebankerinternational.com/news/ubs-q1-2026-profit/",
+        "source": "Private Banker International",
+        "published_at": "2026-04-29",
+        "summary": "UBS's Global Wealth Management posted profit before tax of $1.97bn (+28%) with $37.4bn net new assets and 14.4% return on tangible equity, as the Credit Suisse migration of 1.2m clients globally concluded.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 8
+      },
+      {
+        "id": "art11",
+        "title": "UBS Targets $5 Trillion AUM by 2028 with Strategic Focus on Asia's Growth",
+        "url": "https://www.hubbis.com/news/ubs-targets-5-trillion-aum-by-2028-with-strategic-focus-on-asia-s-growth-and-diversification",
+        "source": "Hubbis",
+        "published_at": "2026-04-29",
+        "summary": "UBS has updated its invested assets target to over $5.5 trillion by end-2028, with Asia positioned as a key growth engine. Net new asset inflows are planned to accelerate from $100bn to $200bn annually through 2028.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 8
+      },
+      {
+        "id": "art09",
+        "title": "DBS Q1 Net Profit Beat Underpins 2026 Outlook as Wealth Arm Softens Iran War Risks",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/dbss-q1-net-profit-beat-052952555.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-04-30",
+        "summary": "DBS's Q1 net profit of S$2.93bn beat consensus as the wealth arm recorded S$907m fees. The group head of consumer banking confirmed the bank is 'still hiring on all fronts' across affluent, private client and private banking.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 7
+      }
     ],
     "Regulatory & Markets": [
-      {"id": "art12", "title": "APAC Financial Services Regulatory Update Q1 2026: Governance and Cyber Risk Dominate", "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-update-q1-2026.html", "source": "Deloitte", "published_at": "2026-04-01", "category": "Regulatory & Markets", "hsbc_relevancy": 6, "adam_rel": 6, "surali_rel": 8, "noise_level": 3, "summary": "Deloitte Q1 2026 APAC: governance, accountability, and cyber risk dominate across Japan, Taiwan, Indonesia, SG, and HK. SG launched environmental risk guidelines; HK activated Phase 2A Sustainable Finance Taxonomy.", "user_relevance": 8},
-      {"id": "art13", "title": "EY Global Financial Services Regulatory Outlook 2026: Four Critical Shifts", "url": "https://www.ey.com/en_gl/insights/financial-services/four-regulatory-shifts-financial-firms-must-watch-in-2026", "source": "EY", "published_at": "2026-01-01", "category": "Regulatory & Markets", "hsbc_relevancy": 6, "adam_rel": 5, "surali_rel": 8, "noise_level": 3, "summary": "EY 2026 outlook: four critical shifts — AI governance, climate/sustainability disclosure, operational resilience entering enforcement, and enhanced third-party risk management.", "user_relevance": 8}
+      {
+        "id": "art13",
+        "title": "DBS Q1 Net Profit Beat Bolsters 2026 Outlook Amid Iran War Risks",
+        "url": "https://www.gurutrade.com/news/dbs-q1-net-profit-beat-bolsters-2026-outlook-amid-iran-war-risks-1777552419.html",
+        "source": "GuruTrade",
+        "published_at": "2026-04-30",
+        "summary": "DBS's stronger-than-expected Q1 results bolster its 2026 outlook, though the CFO noted Iran-related geopolitical risks and tariff uncertainty continue to weigh on Asia Pacific banking conditions and near-term guidance visibility.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "user_relevance": 8
+      },
+      {
+        "id": "art12",
+        "title": "Deutsche Bank's Record Profit Masked by Rising Provisions and Capital Concerns",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/deutsche-bank-s-record-profit-masked-by-rising-provisions-and-capital/69264741",
+        "source": "Ad Hoc News",
+        "published_at": "2026-04-29",
+        "summary": "Despite Deutsche Bank's record Q1 results, rising credit provisions and capital concerns amid geopolitical uncertainty signal broader risk appetite caution across European banking in the current macro environment.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "user_relevance": 7
+      }
     ],
     "Operations & Change": [
-      {"id": "art14", "title": "McKinsey: Agentic AI Could Cut Banking Operational Costs by 20% or More", "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations", "source": "McKinsey & Company", "published_at": "2026-04-01", "category": "Operations & Change", "hsbc_relevancy": 6, "adam_rel": 8, "surali_rel": 9, "noise_level": 3, "summary": "McKinsey: agentic AI can cut banking ops costs 20%+ (9-15% of operating profits), targeting the 60-70% of cost base tied to operations. Calls for end-to-end workflow rewiring.", "user_relevance": 9},
-      {"id": "art15", "title": "Microsoft: Five Predictors for AI Transformation Success in Financial Services 2026", "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/financial-services/2025/12/18/ai-transformation-in-financial-services-5-predictors-for-success-in-2026/", "source": "Microsoft", "published_at": "2025-12-18", "category": "Operations & Change", "hsbc_relevancy": 5, "adam_rel": 7, "surali_rel": 7, "noise_level": 2, "summary": "Microsoft FS practice: five AI transformation predictors — clear executive ownership, modular architecture, governance-first deployment, outcome-based measurement, and workforce capability investment.", "user_relevance": 7}
+      {
+        "id": "art14",
+        "title": "Standard Chartered Launches AI Factory to Unify Innovation and Governance",
+        "url": "https://thedigitalbanker.com/standard-chartered-launches-ai-factory-to-unify-innovation-and-governance/",
+        "source": "The Digital Banker",
+        "published_at": "2026-04-29",
+        "summary": "Standard Chartered's AI Factory platform integrates data scientists, engineers and business teams in a unified environment to accelerate AI deployment across 41 markets while maintaining regulatory compliance standards.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 8
+      },
+      {
+        "id": "art15",
+        "title": "Standard Chartered's Risk-First Approach to Scaling AI Globally",
+        "url": "https://www.theasianbanker.com/updates-and-articles/standard-chartered-s-risk-first-approach-to-scaling-ai-globally",
+        "source": "Asian Banker",
+        "published_at": "2026-04-30",
+        "summary": "Standard Chartered prioritises risk management and governance when scaling AI, deploying explicit KPIs across financial crime detection, cyber response, and client engagement metrics to track AI effectiveness.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 9
+      }
     ]
   },
   "chart_data": {
     "articles": [
-      {"id": "art01", "title": "Citi Wealth Unveils Citi Sky — AI Wealth Advisor with Google DeepMind", "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies", "source": "Citigroup", "published_at": "2026-04-22", "category": "AI & Technology", "hsbc_relevancy": 7, "adam_rel": 9, "surali_rel": 8, "noise_level": 4, "summary": "Citi launched an always-on AI wealth advisor with Google DeepMind's Gemini avatar tech, targeting Citigold clients from summer 2026.", "user_relevance": 8},
-      {"id": "art02", "title": "McKinsey: Agentic AI Will Shake Up Banking, Shrink Global Profit Pools", "url": "https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/agentic-ai-will-shake-up-banking-shrinking-global-profit-pools", "source": "McKinsey & Company", "published_at": "2026-04-01", "category": "AI & Technology", "hsbc_relevancy": 6, "adam_rel": 7, "surali_rel": 8, "noise_level": 3, "summary": "McKinsey warns agentic AI will compress profit pools as efficiency gains are competed away.", "user_relevance": 8},
-      {"id": "art03", "title": "Merrill and BofA Private Bank Launch AI-Powered Meeting Journey", "url": "https://www.prnewswire.com/news-releases/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeting-journey-302725593.html", "source": "Bank of America", "published_at": "2026-03-26", "category": "AI & Technology", "hsbc_relevancy": 6, "adam_rel": 8, "surali_rel": 7, "noise_level": 3, "summary": "BofA gave 15,000 advisors AI tools for meeting prep, note-taking, and follow-up, saving up to four hours per client meeting.", "user_relevance": 7},
-      {"id": "art04", "title": "AI in Wealth Management: Closing the Implementation Gap", "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/", "source": "Fintech Global", "published_at": "2026-04-17", "category": "AI & Technology", "hsbc_relevancy": 5, "adam_rel": 7, "surali_rel": 7, "noise_level": 2, "summary": "Only 35% of wealth intermediaries actively use AI tools (10.5% daily) — a significant adoption gap vs. investment.", "user_relevance": 7},
-      {"id": "art05", "title": "HSBC Q1 2026: Wealth Income Up 18%, Group Profit Drops on Comparator", "url": "https://www.about.us.hsbc.com/newsroom/press-releases/hsbc-q1-2026-outlook-resilience-in-a-transforming-world", "source": "HSBC", "published_at": "2026-04-29", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 7, "surali_rel": 9, "noise_level": 3, "summary": "HSBC Q1 2026: wealth income up 18% to $1.659bn; group pre-tax profit down to $9.5bn on prior-year disposal gains non-recurrence.", "user_relevance": 9},
-      {"id": "art06", "title": "HSBC Wins First HKD Stablecoin Licence — H2 2026 PayMe Launch", "url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-welcomes-hkmas-grant-of-a-hong-kong-stablecoin-issuer-licence", "source": "HSBC", "published_at": "2026-04-10", "category": "HSBC News", "hsbc_relevancy": 9, "adam_rel": 8, "surali_rel": 7, "noise_level": 4, "summary": "HKMA granted HSBC one of HK's first stablecoin licences (10 Apr 2026); HKD stablecoin via PayMe in H2 2026.", "user_relevance": 7},
-      {"id": "art07", "title": "HSBC Completes Privatisation of Hang Seng Bank — Delisted Jan 2026", "url": "https://www.hsbc.com/investors/hsbc-proposal-to-privatise-hang-seng-bank", "source": "HSBC", "published_at": "2026-01-27", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 7, "surali_rel": 8, "noise_level": 3, "summary": "HSBC acquired the remaining 38% of Hang Seng Bank for HK$290bn, delisting it on 27 Jan 2026.", "user_relevance": 8},
-      {"id": "art08", "title": "DBS Named World's Best Private Bank 2026 — Historic First for Asia", "url": "https://www.euromoney.com/article/4wu4umwhazs4ssw4k0okc0c/private-banking/the-worlds-best-private-bank-2026-dbs-private-bank/", "source": "Euromoney", "published_at": "2026-04-01", "category": "Competitor Intelligence", "hsbc_relevancy": 8, "adam_rel": 9, "surali_rel": 7, "noise_level": 4, "summary": "DBS became the first Asian bank to win Euromoney's World's Best Private Bank 2026, plus inaugural digital assets and safest titles.", "user_relevance": 7},
-      {"id": "art09", "title": "Standard Chartered Korea Launches Five-Pillar Next-Gen Private Banking Model", "url": "https://www.koreaherald.com/article/10721098", "source": "Korea Herald", "published_at": "2026-04-20", "category": "Competitor Intelligence", "hsbc_relevancy": 6, "adam_rel": 7, "surali_rel": 6, "noise_level": 2, "summary": "StanChart Korea revamped its private banking model targeting KRW 1bn+ clients across global hubs.", "user_relevance": 6},
-      {"id": "art10", "title": "Pictet Wealth Recruits UBS Veteran Kelvin Tay as APAC CIO", "url": "https://www.caproasia.com/2026/04/22/switzerland-970-billion-pictet-wealth-management-hires-ubs-20-year-veteran-regional-chief-investment-officer-cio-kelvin-tay-as-apac-chief-investment-officer-cio-26-years-investment-private-bank/", "source": "Caproasia", "published_at": "2026-04-22", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 6, "surali_rel": 5, "noise_level": 2, "summary": "Pictet hired ex-UBS Regional CIO Kelvin Tay as APAC CIO, highlighting talent competition.", "user_relevance": 5},
-      {"id": "art11", "title": "Hong Kong Overtakes Singapore in WealthTech Adoption at 93%", "url": "https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/", "source": "Fintech Hong Kong", "published_at": "2026-04-01", "category": "Private Banking & Wealth", "hsbc_relevancy": 7, "adam_rel": 8, "surali_rel": 7, "noise_level": 3, "summary": "Quinlan & Associates: 93% of HK investors accessed digital wealth services vs. 85% in SG; 52% comfortable with AI advice vs. 27%.", "user_relevance": 7},
-      {"id": "art12", "title": "APAC Financial Regulatory Update Q1 2026: Governance and Cyber Risk", "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-update-q1-2026.html", "source": "Deloitte", "published_at": "2026-04-01", "category": "Regulatory & Markets", "hsbc_relevancy": 6, "adam_rel": 6, "surali_rel": 8, "noise_level": 3, "summary": "Deloitte Q1 2026 APAC: governance and cyber risk top the regulatory agenda across Japan, Indonesia, SG, and HK.", "user_relevance": 8},
-      {"id": "art13", "title": "EY 2026 Regulatory Outlook: Four Critical Shifts for Financial Firms", "url": "https://www.ey.com/en_gl/insights/financial-services/four-regulatory-shifts-financial-firms-must-watch-in-2026", "source": "EY", "published_at": "2026-01-01", "category": "Regulatory & Markets", "hsbc_relevancy": 6, "adam_rel": 5, "surali_rel": 8, "noise_level": 3, "summary": "EY identifies four 2026 regulatory priorities: AI governance, climate disclosure, operational resilience enforcement, and third-party risk.", "user_relevance": 8},
-      {"id": "art14", "title": "McKinsey: Agentic AI Could Cut Banking Operational Costs by 20%+", "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations", "source": "McKinsey & Company", "published_at": "2026-04-01", "category": "Operations & Change", "hsbc_relevancy": 6, "adam_rel": 8, "surali_rel": 9, "noise_level": 3, "summary": "McKinsey: agentic AI can cut banking ops costs 20%+, saving 9-15% of operating profits.", "user_relevance": 9},
-      {"id": "art15", "title": "Microsoft: Five Predictors for AI Transformation in Financial Services 2026", "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/financial-services/2025/12/18/ai-transformation-in-financial-services-5-predictors-for-success-in-2026/", "source": "Microsoft", "published_at": "2025-12-18", "category": "Operations & Change", "hsbc_relevancy": 5, "adam_rel": 7, "surali_rel": 7, "noise_level": 2, "summary": "Microsoft: five AI transformation predictors — executive ownership, modular architecture, governance-first, outcome measurement, workforce investment.", "user_relevance": 7}
+      {
+        "id": "art01",
+        "title": "DBS Q1 2026: Record Total Income as Wealth Management Powers Through Rate Headwinds",
+        "url": "https://thesmartinvestor.com.sg/dbs-delivers-record-total-income-in-q1-2026-as-wealth-management-powers-through-rate-headwinds/",
+        "source": "The Smart Investor",
+        "published_at": "2026-04-30",
+        "summary": "DBS reported record total income of S$5.95bn in Q1 2026, with wealth management fees hitting S$907m and S$10bn net new money, beating analyst net profit consensus of S$2.83bn with S$2.93bn delivered.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "user_relevance": 7
+      },
+      {
+        "id": "art02",
+        "title": "Deutsche Bank Reports Record First-Quarter Post-Tax Profit of \u20ac2.2 Billion",
+        "url": "https://www.db.com/news/detail/20260429-deutsche-bank-reports-first-quarter-2026-results?language_id=1",
+        "source": "Deutsche Bank",
+        "published_at": "2026-04-29",
+        "summary": "Deutsche Bank posted record Q1 post-tax profit of \u20ac2.2bn (+8% YoY) with all divisions hitting 13% RoTE targets. Assets under management rose 9% to \u20ac1.8tn on \u20ac22bn net inflows.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "user_relevance": 7
+      },
+      {
+        "id": "art03",
+        "title": "UBS Profits Rocket 80% to $3 Billion for First Quarter Beat",
+        "url": "https://www.cnbc.com/2026/04/29/ubs-swiss-bank-first-quarter-earnings-profit-switzerland-trading.html",
+        "source": "CNBC",
+        "published_at": "2026-04-29",
+        "summary": "UBS reported net profit of $3bn in Q1 2026, up 80% YoY, with Global Wealth Management contributing $1.97bn profit before tax (+28%) and $37.4bn net new assets as Credit Suisse integration nears completion.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "Standard Chartered and A*STAR to Set Up S$15 Million Lab for Banking AI",
+        "url": "https://fintechnews.sg/130057/ai/standard-chartered-astar-ai-lab/",
+        "source": "Fintech Singapore",
+        "published_at": "2026-04-21",
+        "summary": "Standard Chartered and A*STAR IHPC announced a S$15m, 3-year AI Banking Innovation Lab to develop portfolio optimisation, fraud detection and NLP tools, including a natural-language query interface for relationship managers.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "art05",
+        "title": "Standard Chartered's AI Factory Applies the 'Repeatability' Principle",
+        "url": "https://www.waterstechnology.com/emerging-technologies/7952608/standard-chartered-ai-factory-applies-the-repeatability-principle",
+        "source": "Waters Technology",
+        "published_at": "2026-04-29",
+        "summary": "Standard Chartered's AI Factory uses a repeatability principle to standardise AI development patterns across 41 markets, cutting deployment time and improving governance consistency for high-value use cases.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "art06",
+        "title": "Standard Chartered Moves into Its Next Phase of Disciplined AI Execution",
+        "url": "https://www.theasianbanker.com/updates-and-articles/standard-chartered-moves-into-its-next-phase-of-disciplined-ai-execution",
+        "source": "Asian Banker",
+        "published_at": "2026-04-30",
+        "summary": "Standard Chartered is deepening AI programme governance, consolidating platforms and sharpening measurement practices as it scales high-value use cases across 41 markets using quantifiable KPIs.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 8
+      },
+      {
+        "id": "art07",
+        "title": "HSBC: Earnings Release for Q1 2026 and Consideration of First Quarter Dividend",
+        "url": "https://www.marketscreener.com/news/hsbc-earnings-release-for-the-first-quarter-2026-and-consideration-of-first-quarter-dividend-for-2-ce7f59dfd988f022",
+        "source": "MarketScreener",
+        "published_at": "2026-04-30",
+        "summary": "HSBC Holdings confirmed a Board committee meeting on 5 May 2026 to approve Q1 2026 earnings and the first interim dividend, payable 26 June. Analysts expect EPS of $2.17 with focus on $45bn NII and 17% RoTE guidance.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "user_relevance": 9
+      },
+      {
+        "id": "art08",
+        "title": "Monthly View \u2014 May 2026",
+        "url": "https://www.privatebanking.hsbc.com/wih/investments-Insights/House-views/monthly-view-may-2026/",
+        "source": "HSBC Private Bank",
+        "published_at": "2026-05-01",
+        "summary": "HSBC Private Bank's Global CIO outlines the May 2026 house view covering asset allocation adjustments amid Iran war risks, quality credit overweights, and Asia equity positioning for private banking clients.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "user_relevance": 8
+      },
+      {
+        "id": "art09",
+        "title": "DBS Q1 Net Profit Beat Underpins 2026 Outlook as Wealth Arm Softens Iran War Risks",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/dbss-q1-net-profit-beat-052952555.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-04-30",
+        "summary": "DBS's Q1 net profit of S$2.93bn beat consensus as the wealth arm recorded S$907m fees. The group head of consumer banking confirmed the bank is 'still hiring on all fronts' across affluent, private client and private banking.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 7
+      },
+      {
+        "id": "art10",
+        "title": "UBS Q1 2026 Profit Soars 80% on Broad-Based Wealth Growth",
+        "url": "https://www.privatebankerinternational.com/news/ubs-q1-2026-profit/",
+        "source": "Private Banker International",
+        "published_at": "2026-04-29",
+        "summary": "UBS's Global Wealth Management posted profit before tax of $1.97bn (+28%) with $37.4bn net new assets and 14.4% return on tangible equity, as the Credit Suisse migration of 1.2m clients globally concluded.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 8
+      },
+      {
+        "id": "art11",
+        "title": "UBS Targets $5 Trillion AUM by 2028 with Strategic Focus on Asia's Growth",
+        "url": "https://www.hubbis.com/news/ubs-targets-5-trillion-aum-by-2028-with-strategic-focus-on-asia-s-growth-and-diversification",
+        "source": "Hubbis",
+        "published_at": "2026-04-29",
+        "summary": "UBS has updated its invested assets target to over $5.5 trillion by end-2028, with Asia positioned as a key growth engine. Net new asset inflows are planned to accelerate from $100bn to $200bn annually through 2028.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 8
+      },
+      {
+        "id": "art12",
+        "title": "Deutsche Bank's Record Profit Masked by Rising Provisions and Capital Concerns",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/deutsche-bank-s-record-profit-masked-by-rising-provisions-and-capital/69264741",
+        "source": "Ad Hoc News",
+        "published_at": "2026-04-29",
+        "summary": "Despite Deutsche Bank's record Q1 results, rising credit provisions and capital concerns amid geopolitical uncertainty signal broader risk appetite caution across European banking in the current macro environment.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "user_relevance": 7
+      },
+      {
+        "id": "art13",
+        "title": "DBS Q1 Net Profit Beat Bolsters 2026 Outlook Amid Iran War Risks",
+        "url": "https://www.gurutrade.com/news/dbs-q1-net-profit-beat-bolsters-2026-outlook-amid-iran-war-risks-1777552419.html",
+        "source": "GuruTrade",
+        "published_at": "2026-04-30",
+        "summary": "DBS's stronger-than-expected Q1 results bolster its 2026 outlook, though the CFO noted Iran-related geopolitical risks and tariff uncertainty continue to weigh on Asia Pacific banking conditions and near-term guidance visibility.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "user_relevance": 8
+      },
+      {
+        "id": "art14",
+        "title": "Standard Chartered Launches AI Factory to Unify Innovation and Governance",
+        "url": "https://thedigitalbanker.com/standard-chartered-launches-ai-factory-to-unify-innovation-and-governance/",
+        "source": "The Digital Banker",
+        "published_at": "2026-04-29",
+        "summary": "Standard Chartered's AI Factory platform integrates data scientists, engineers and business teams in a unified environment to accelerate AI deployment across 41 markets while maintaining regulatory compliance standards.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 8
+      },
+      {
+        "id": "art15",
+        "title": "Standard Chartered's Risk-First Approach to Scaling AI Globally",
+        "url": "https://www.theasianbanker.com/updates-and-articles/standard-chartered-s-risk-first-approach-to-scaling-ai-globally",
+        "source": "Asian Banker",
+        "published_at": "2026-04-30",
+        "summary": "Standard Chartered prioritises risk management and governance when scaling AI, deploying explicit KPIs across financial crime detection, cyber response, and client engagement metrics to track AI effectiveness.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 9
+      }
     ],
-    "categories": {"AI & Technology": "#6366f1", "HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "Private Banking & Wealth": "#059669", "Regulatory & Markets": "#d97706", "Operations & Change": "#7c3aed"}
+    "categories": {
+      "Competitor Intelligence": "#0891b2",
+      "AI & Technology": "#6366f1",
+      "HSBC News": "#dc2626",
+      "Private Banking & Wealth": "#059669",
+      "Regulatory & Markets": "#d97706",
+      "Operations & Change": "#7c3aed"
+    }
   }
 }
