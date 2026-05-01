@@ -10,9 +10,8 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
 
 1. **Spelling: `Surali` (not Sirali)**, with URL slug `surali` and JSON history key `surali`.
    Per-article scores use `adam_rel` and `surali_rel`. There is no `sirali_rel` field.
-2. **Two output paths per run** — feature branch push **and** merge to `main`. GitHub Pages
-   only deploys from `main` (`.github/workflows/pages.yml`). A push to a feature branch alone
-   will NOT update the public URLs.
+2. **Always push to `main`** — GitHub Pages deploys from `main` only (`.github/workflows/pages.yml`).
+   All commits go directly to `main`; never use a feature branch for briefing runs.
 3. **Stream-idle timeouts** are the dominant failure mode. Always use the stepped Edit pattern
    for briefing JSON writes (see `ROUTINE.md` § Execution Model). Never write a full
    `briefing_data.json` in a single Write tool call.

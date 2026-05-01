@@ -146,19 +146,10 @@ Rules:
 Merge today's covered URLs and talking point headlines into `context/history.json`.
 Keep only the last 7 days of data per user.
 
-**9. Commit, merge to main, and push**
+**9. Commit and push to main**
 ```bash
 git add docs/ context/history.json
 git commit -m "briefing: YYYY-MM-DD daily intelligence update"
-
-# If running on a feature branch, merge into main to trigger GitHub Pages
-BRANCH=$(git branch --show-current)
-git push -u origin $BRANCH
-if [ "$BRANCH" != "main" ]; then
-  git fetch origin main
-  git checkout main
-  git merge --no-ff $BRANCH -m "briefing: YYYY-MM-DD daily intelligence update"
-fi
 git push origin main
 ```
 This triggers GitHub Pages to publish the updated briefings automatically.
@@ -211,7 +202,7 @@ To set up: `gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_
 
 **GCS static hosting** (enable on bucket with `allUsers` Storage Object Viewer):
 - Adam → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/adam/index.html`
-- Sirali → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/surali/index.html`
+- Surali → `https://storage.googleapis.com/${GCS_BUCKET_NAME}/surali/index.html`
 
 If using a custom domain with Cloud CDN or Firebase Hosting, point the CDN origin at the GCS bucket.
 
