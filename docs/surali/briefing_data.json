@@ -3,68 +3,68 @@
   "user_name": "Surali Siriwardene",
   "user_display_name": "Surali",
   "user_title": "COO & Global Head of Change Execution, WPS",
-  "briefing_date": "Saturday, 2 May 2026",
-  "date_str": "2026-05-02",
-  "generated_at": "2 May 2026, 23:28 UTC",
+  "briefing_date": "Sunday, 3 May 2026",
+  "date_str": "2026-05-03",
+  "generated_at": "3 May 2026, 23:17 UTC",
   "total_articles": 9,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Lloyds Envoy: The Governance Architecture for Agentic AI \u2014 A Global COO Benchmark",
-      "why_it_matters": "Lloyds Banking Group's Envoy platform is the first documented enterprise AI agent governance infrastructure at a major bank, providing a direct benchmark for how WPS should govern AI-driven change across its global programmes before regulatory frameworks mandate it.",
+      "headline": "MAS Moves to Toolkit Phase \u2014 HSBC Singapore\u2019s AI Governance Window Is Closing",
+      "why_it_matters": "MAS advancing from consultation to a practical AI Risk Management Toolkit in active industry partnership means HSBC\u2019s Singapore-regulated WPS entities are now on a defined supervisory clock \u2014 AI governance frameworks must be production-ready before inspections commence.",
       "bullets": [
-        "Envoy's built-in governance controls \u2014 connecting to Lloyds' internal LLM platform to keep models safe and rule-compliant \u2014 represent exactly the control architecture that any global COO needs before authorizing enterprise AI agent deployment at scale across multiple regulated markets",
-        "The internal agent marketplace model, where teams publish and reuse proven AI agents, could reduce duplicated AI development spend across WPS change programmes by eliminating parallel proof-of-concept work in different geographies",
-        "Defining equivalent WPS governance standards for AI agent deployment \u2014 safety controls, reuse frameworks, accountability chains \u2014 is a core COO deliverable for 2026 that Lloyds has now publicly set as the industry benchmark"
+        "MAS is partnering with industry to develop a practical AI Risk Management Toolkit covering governance frameworks, risk materiality assessment, lifecycle controls, and oversight of third-party AI providers \u2014 compliance will be assessed during MAS supervisory inspections",
+        "The guidelines explicitly cover agentic AI and generative AI \u2014 meaning HSBC\u2019s Microsoft, Google Cloud, and internal LLM deployments in Singapore all fall within regulatory scope, requiring documented governance and rollback frameworks for each production use case",
+        "MAS is the APAC regulatory bellwether: its toolkit architecture will likely be mirrored by HKMA and other regional regulators, making Singapore compliance the template for Surali\u2019s global WPS AI governance programme across all jurisdictions"
       ],
       "source_links": [
         {
-          "url": "https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/lloyds-banking-group-unveils-envoy.html",
-          "title": "Lloyds: Envoy press release"
+          "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-partners-industry-to-develop-ai-risk-management-toolkit-for-the-financial-sector",
+          "title": "MAS: AI Risk Management Toolkit announcement"
         },
         {
-          "url": "https://www.crowdfundinsider.com/2026/05/276871-uks-lloyds-banking-group-launches-platform-for-developing-ai-agents/",
-          "title": "CrowdFund Insider: Lloyds Envoy"
+          "url": "https://www.twobirds.com/en/insights/2026/singapore/mas-consults-on-proposed-guidelines-on-artificial-intelligence-risk-management",
+          "title": "Bird & Bird: MAS AI guidelines analysis"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC Expands Global India Coverage: Gautam Anand Appointment Signals Multi-Hub Operational Demand",
-      "why_it_matters": "HSBC Private Bank's appointment of Gautam Anand as Head of Global India creates immediate multi-geography change execution demand across India, Dubai, Hong Kong, Singapore and the UK \u2014 requiring WPS to ensure coordinated change programme capacity across all five hubs.",
+      "headline": "HSBC Q1 Results Tuesday: Cost Discipline and AI Programme Progress Are the COO Read",
+      "why_it_matters": "Tuesday\u2019s Q1 2026 results are the first external validation of whether HSBC\u2019s AI-driven cost transformation is on track, with cost-to-income ratio trajectory and any AI programme disclosure being the decisive COO metrics Surali\u2019s WPS planning depends on.",
       "bullets": [
-        "The Global India remit spans five international jurisdictions simultaneously \u2014 India, Dubai, Hong Kong, Singapore and the UK \u2014 each with distinct regulatory requirements, creating a multi-geography change delivery challenge that WPS must govern centrally",
-        "HSBC WPB surpassed US$1 trillion in invested assets in Asia Pacific last year, with India as a primary growth market \u2014 operational scaling at this magnitude requires commensurate change infrastructure investment to avoid service model deterioration",
-        "As HSBC targets both onshore Indian wealth and global NRI wealth simultaneously, WPS should assess whether existing change execution frameworks are adapted for the complexity of dual-segment, multi-hub wealth service delivery"
+        "Q1 2026 results announced Tuesday 5 May at 5am BST / 12pm HKT; consensus expects EPS +11.8% and revenue +5.4% YoY \u2014 the board simultaneously considers a first interim 2026 dividend, the first capital allocation signal of the year",
+        "<strong>Georges Elhedery, CEO of HSBC</strong>\u2019s commentary on the 20,000-role AI reduction programme \u2014 and any disclosure from <strong>David Rice, Chief AI Officer of HSBC</strong> in his first full quarter \u2014 will set the operational delivery calendar for the remainder of 2026",
+        "Cost-to-income ratio is the COO\u2019s primary tracker: explicit guidance on 2026 cost reduction commitments and any identifiable Q1 AI savings will determine the resource and change sequencing implications for WPS globally"
       ],
       "source_links": [
         {
-          "url": "https://www.caproasia.com/2026/05/02/hsbc-private-bank-appoints-private-banking-veteran-gautam-anand-as-head-of-global-india-24-4-26-to-oversee-coverage-in-india-key-international-hubs-including-dubai-hong-kong-singapore-uk-join/",
-          "title": "Caproasia: HSBC Global India appointment"
+          "url": "https://www.marketbeat.com/earnings/reports/2026-5-5-hsbc-holdings-plc-stock/",
+          "title": "MarketBeat: HSBC Q1 2026 earnings preview"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-04-29/hsbc-private-bank-names-anand-to-head-global-india-wealth-role",
-          "title": "Bloomberg: HSBC India wealth role"
+          "url": "https://www.tipranks.com/news/company-announcements/hsbc-sets-board-committee-meeting-to-consider-q1-2026-results-and-first-interim-dividend",
+          "title": "TipRanks: HSBC Q1 board dividend meeting"
         }
       ],
-      "is_update": false
+      "is_update": true
     },
     {
-      "headline": "StanChart Leadership Reset and HKEX Enforcement Push: Twin Operational Signals for WPS Governance",
-      "why_it_matters": "Standard Chartered's wealth leadership change and the HKEX enforcement surge both create near-term operational demands on WPS \u2014 one requiring competitor intelligence translation into client coverage action, the other demanding proactive compliance capacity in Hong Kong.",
+      "headline": "AI Agents Enter Production: Three Governance Dimensions for the WPS COO Agenda",
+      "why_it_matters": "As AI agents move from pilots to executing real transactions in 2026, the convergence of market deployment pressure, MAS\u2019s formal governance requirements, and global COO benchmarking creates a structural triple-track agenda for Surali\u2019s WPS operations programme.",
       "bullets": [
-        "<strong>Marc van de Walle's</strong> return to Standard Chartered as Global Head of Wealth Management signals StanChart is rebuilding its wealth proposition with a more aggressive posture from H2 2026 \u2014 WPS must ensure HSBC's competitive response capacity is operationally ready",
-        "The HKMA and SFC are both intensifying enforcement activity in 2026 \u2014 with 300+ IPOs anticipated on HKEX and new green transition planning guidance for banks \u2014 creating compounding compliance workload for operations teams already managing the Q1 regulatory wave",
-        "WPS governance frameworks must distinguish between reactive compliance (HKEX enforcement) and proactive positioning (StanChart competitive response) \u2014 both require change execution capacity but on different timelines and risk profiles"
+        "2026 industry analysis projects banks integrating AI will gain 15% greater market share and 20% operational efficiency gains \u2014 but only those pairing deployment speed with governance rigour, making this a COO-level architecture decision, not a technology pilot",
+        "Domain-specific small language models (under 7bn parameters) are emerging as the preferred on-premise architecture for financial institutions with data residency obligations \u2014 directly relevant to HSBC WPS\u2019s multi-jurisdiction APAC footprint and its obligations under HKMA, MAS, and SEBI data rules",
+        "MAS\u2019s AI toolkit (covering third-party AI vendor oversight) and the Banking Transformation Summit 2026 (19\u201320 May, London) both signal global COOs are now treating AI as a core operational risk \u2014 Surali\u2019s WPS governance framework must be documented and supervisory-inspection-ready in 2026"
       ],
       "source_links": [
         {
-          "url": "https://www.caproasia.com/2026/05/02/standard-chartered-private-bank-global-vice-chairman-vivian-chan-to-retire-in-2026-june-after-9-5-years-joining-standard-chartered-as-regional-head-of-private-banking-for-greater-china-north-asia-in/",
-          "title": "Caproasia: StanChart leadership change"
+          "url": "https://www.wealthmanagement.com/artificial-intelligence/ai-trends-reshaping-wealth-management-in-2026",
+          "title": "Wealth Management: AI trends reshaping platforms"
         },
         {
-          "url": "https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/",
-          "title": "IQ-EQ: HKEX enforcement and APAC regulatory 2026"
+          "url": "https://www.skan.ai/events/banking-transformation-summit-2026",
+          "title": "Banking Transformation Summit 2026"
         }
       ],
       "is_update": false
@@ -73,273 +73,279 @@
   "articles_by_category": {
     "HSBC News": [
       {
-        "title": "HSBC Private Bank Appoints Gautam Anand as Head of Global India",
-        "url": "https://www.caproasia.com/2026/05/02/hsbc-private-bank-appoints-private-banking-veteran-gautam-anand-as-head-of-global-india-24-4-26-to-oversee-coverage-in-india-key-international-hubs-including-dubai-hong-kong-singapore-uk-join/",
-        "source": "Caproasia",
-        "published_at": "2026-05-02",
-        "summary": "HSBC Private Bank appoints Gautam Anand, a 25-year veteran with prior roles at UBS, Credit Suisse and ABN AMRO, as Head of Global India to oversee private banking for onshore and global Indians across India, Dubai, Hong Kong, Singapore and the UK. The appointment accelerates HSBC WPB's multi-hub India wealth strategy as the bank targets South Asian HNWI growth.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "surali_rel": 7,
-        "noise_level": 3,
-        "category": "HSBC News",
         "id": "art01",
-        "user_relevance": 7
-      },
-      {
-        "title": "HSBC Life Named World's Best Insurance Provider for Wealth Management 2026 (Euromoney)",
-        "url": "https://www.euromoney.com/article/9qve1rl3fd44gg8wgcgco44w8/private-banking/the-worlds-best-insurance-provider-for-wealth-management-2026-hsbc-life/",
-        "source": "Euromoney",
-        "published_at": "2026-04-29",
-        "summary": "HSBC Life wins Euromoney's inaugural 'World's Best Insurance Provider for Wealth Management' award, recognising its specialist HNW/UHNW insurance franchise embedded in private bank wealth plans across six continents. Edward Moncreiffe, CEO of HSBC Insurance, attributed the win to HSBC's ability to capture international demand for wealth preservation and wealth transfer at scale.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
+        "title": "HSBC Sets 5 May Board Meeting for Q1 2026 Results and First Interim Dividend",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-5-5-hsbc-holdings-plc-stock/",
+        "source": "MarketBeat / TipRanks",
+        "published_at": "2026-05-02",
+        "summary": "HSBC Holdings will announce Q1 2026 earnings on Tuesday 5 May at 5am BST / 12pm HKT, with analyst consensus projecting EPS of $2.18 (+11.8% YoY) and revenue of $18.60bn (+5.4% YoY). The board committee will simultaneously consider declaring a first interim 2026 dividend. Wealth fee and other income grew 20% YoY in 2024, setting a high baseline for the APAC wealth metric.",
+        "hsbc_relevancy": 10,
+        "adam_rel": 9,
+        "surali_rel": 9,
+        "noise_level": 4,
         "category": "HSBC News",
-        "id": "art02",
-        "user_relevance": 6
-      },
-      {
-        "title": "HSBC Private Bank Monthly View \u2014 May 2026: CIO Willem Sels on Market Positioning",
-        "url": "https://www.privatebanking.hsbc.com/wih/investments-Insights/House-views/monthly-view-may-2026/",
-        "source": "HSBC Private Bank",
-        "published_at": "2026-05-01",
-        "summary": "HSBC Private Bank's May 2026 Monthly View, led by Global CIO Willem Sels, outlines asset allocation updates and investment positioning for clients amid global macro uncertainty. The publication reinforces HSBC WPB's thought leadership and client engagement approach, a key differentiator in private banking advisory.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 5,
-        "surali_rel": 5,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "id": "art03",
-        "user_relevance": 5
+        "user_relevance": 9
       }
     ],
     "Competitor Intelligence": [
       {
-        "title": "Standard Chartered Appoints Marc van de Walle as Global Head of Wealth Management; Vivian Chan Retires",
-        "url": "https://www.caproasia.com/2026/05/02/standard-chartered-private-bank-global-vice-chairman-vivian-chan-to-retire-in-2026-june-after-9-5-years-joining-standard-chartered-as-regional-head-of-private-banking-for-greater-china-north-asia-in/",
-        "source": "Caproasia",
+        "id": "art02",
+        "title": "JP Morgan Names Florence Kui as New China Private Bank Head from End-May",
+        "url": "https://hubbis.com/news/jp-morgan-private-bank-names-new-china-head",
+        "source": "Hubbis",
         "published_at": "2026-05-02",
-        "summary": "Standard Chartered appoints Marc van de Walle (formerly Bank of Singapore's Head of Wealth Management and a prior StanChart global head) as Global Head of Wealth Management. Vivian Chan, Global Vice Chairman of StanChart Private Bank, retires in June 2026 after 9.5 years, having joined from Barclays. The leadership change signals a strategic reset in StanChart's global wealth operations.",
+        "summary": "JP Morgan Private Bank has appointed Florence Kui as the new head of its China operations, effective end-May 2026, reporting to Harshika Patel, CEO of JP Morgan Asia Private Bank. Kui, based in Hong Kong, will oversee offshore wealth management for ultra-high-net-worth Chinese clients, adding dedicated leadership to a business already occupying Asia\u2019s AUM top three.",
         "hsbc_relevancy": 7,
         "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 4,
-        "category": "Competitor Intelligence",
-        "id": "art04",
-        "user_relevance": 7
-      },
-      {
-        "title": "Standard Chartered Wins World's Best Digital Bank for Customer Experience 2026",
-        "url": "https://thedigitalbanker.com/standard-chartered-wins-worlds-best-digital-bank-for-cx-at-digital-cx-awards-2026/",
-        "source": "The Digital Banker",
-        "published_at": "2026-04-30",
-        "summary": "Standard Chartered wins 'World's Best Digital Bank for Customer Experience' at the Digital CX Awards 2026 for a programme that overhauled SC Mobile with integrated Help & Services, in-app search, real-time card controls and accessibility improvements. Self-service adoption increased materially and friction was reduced across key APAC markets.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
         "surali_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
-        "id": "art05",
         "user_relevance": 6
       },
       {
-        "title": "Standard Chartered Private Bank Vice Chairman Vivian Chan to Retire in June",
-        "url": "https://asianprivatebanker.com/private-wealth/stanchart-pbs-global-vice-chairman-to-retire/",
-        "source": "Asian Private Banker",
+        "id": "art03",
+        "title": "JP Morgan Promotes Steven Hawkins to Head of Asia Lending Solutions, Moves to HK",
+        "url": "https://hubbis.com/news/jp-morgan-private-bank-promotes-steven-hawkins-to-head-of-asia-lending-solutions",
+        "source": "Hubbis",
         "published_at": "2026-05-02",
-        "summary": "Vivian Chan, Global Vice Chairman of Standard Chartered Private Bank, will retire in June 2026 after 9.5 years, having joined as Regional Head of Private Banking for Greater China & North Asia. Chan had previously been with Barclays Private Bank and Credit Suisse. Her departure removes a key figure in StanChart's Greater China wealth leadership.",
+        "summary": "JP Morgan Private Bank has promoted Steven Hawkins to Head of Asia Lending Solutions, with Hawkins relocating from Singapore to Hong Kong in April 2026. The move reinforces JP Morgan\u2019s strategy to deepen UHNW lending capability in Asia \u2014 a key differentiator in private banking competition and a direct capability challenge for HSBC WPB\u2019s credit-led client acquisition model.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 1,
+        "category": "Competitor Intelligence",
+        "user_relevance": 5
+      },
+      {
+        "id": "art04",
+        "title": "Chocolate Finance Officially Launches in Hong Kong with 3.8% Returns, No Lock-Up",
+        "url": "https://fintechnews.hk/37106/wealthtech/chocolate-finance-hong-kong/",
+        "source": "Fintech News Hong Kong",
+        "published_at": "2026-05-02",
+        "summary": "Singapore-born wealthtech Chocolate Finance, which reached S$1.1bn AUM and 100,000+ users in its first commercial year, has officially launched in Hong Kong. The platform offers 3.8% annual returns on the first HK$100,000, instant daily withdrawals up to HK$50,000, and no minimum balance \u2014 targeting Hong Kong\u2019s large pool of idle retail savings with a digital-native model that outcompetes bank deposit rates.",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
+        "surali_rel": 5,
+        "noise_level": 2,
         "category": "Competitor Intelligence",
-        "id": "art09",
-        "user_relevance": 6
+        "user_relevance": 5
       }
     ],
-    "AI & Technology": [
+    "Private Banking & Wealth": [
       {
-        "title": "Lloyds Banking Group Launches 'Envoy' \u2014 Governed AI Agent Platform for Enterprise-Scale Deployment",
-        "url": "https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/lloyds-banking-group-unveils-envoy.html",
-        "source": "Lloyds Banking Group",
-        "published_at": "2026-05-01",
-        "summary": "Lloyds Banking Group unveiled Envoy, an internal platform for developing, training and sharing AI agents safely at scale, powered by Google Cloud. Envoy features an internal agent marketplace for cross-team reuse, pre-built templates, and governance controls connecting to Lloyds' LLM platform. The launch represents the first publicly documented enterprise AI agent governance infrastructure at a major bank.",
+        "id": "art05",
+        "title": "Singapore Wealthtech Firms Choose Hong Kong as First Overseas Market",
+        "url": "https://www.scmp.com/business/banking-finance/article/3352176/why-singapore-wealth-tech-firms-are-choosing-hong-kong-their-first-overseas-market",
+        "source": "South China Morning Post",
+        "published_at": "2026-05-02",
+        "summary": "A growing number of Singapore-based wealthtech firms are selecting Hong Kong as their first major overseas expansion market, citing Hong Kong\u2019s deep wealth base, large pool of idle savings, and position as Asia\u2019s pre-eminent cross-border wealth hub. Chocolate Finance\u2019s launch is the headline example, with other platforms eyeing Hong Kong as a gateway to the wider APAC wealth market.",
         "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "id": "art06",
-        "user_relevance": 8
-      },
-      {
-        "title": "AI in Financial Services \u2014 5 Stories: Week Ending 1 May 2026",
-        "url": "https://www.jdsupra.com/legalnews/ai-in-financial-services-in-5-stories-18873/",
-        "source": "JD Supra",
-        "published_at": "2026-05-01",
-        "summary": "Weekly roundup of AI in financial services for the week ending 1 May 2026, covering production-scale AI agent deployments at major banks, JPMorgan's IndexGPT for financial product analysis, Bank of America Erica's evolution into a proactive financial advisor, and Morgan Stanley's financial document analysis AI deployed at enterprise scale.",
-        "hsbc_relevancy": 5,
         "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "id": "art07",
-        "user_relevance": 6
+        "surali_rel": 5,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 5
       }
     ],
     "Regulatory & Markets": [
       {
-        "title": "HKEX Anticipates 300+ IPOs in 2026; SFC Signals Quality Enforcement Push",
-        "url": "https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/",
-        "source": "IQ-EQ",
-        "published_at": "2026-04-26",
-        "summary": "Over 300 IPOs are anticipated on the Hong Kong Stock Exchange in 2026, with the SFC signalling increased enforcement on application quality. The HKMA will also introduce green transition planning guidance for banks within 2026. Both developments add compliance workload for wealth managers and private banks active in Hong Kong capital markets.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
-        "surali_rel": 7,
+        "id": "art06",
+        "title": "MAS Partners Industry to Build AI Risk Management Toolkit for Financial Sector",
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-partners-industry-to-develop-ai-risk-management-toolkit-for-the-financial-sector",
+        "source": "Monetary Authority of Singapore",
+        "published_at": "2026-05-02",
+        "summary": "Following the close of its AI Risk Management Guidelines consultation in January 2026, MAS is now partnering with industry stakeholders to develop a practical AI Risk Management Toolkit for financial institutions. The toolkit will cover AI governance frameworks, risk materiality assessment, lifecycle controls, and oversight of third-party AI providers, with compliance assessed during MAS supervisory inspections.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "surali_rel": 9,
         "noise_level": 2,
         "category": "Regulatory & Markets",
+        "user_relevance": 9
+      },
+      {
+        "id": "art07",
+        "title": "MAS AI Guidelines Finalization in 2026 Creates Supervisory Expectations for All FIs",
+        "url": "https://www.twobirds.com/en/insights/2026/singapore/mas-consults-on-proposed-guidelines-on-artificial-intelligence-risk-management",
+        "source": "Bird & Bird",
+        "published_at": "2026-01-31",
+        "summary": "Bird & Bird analysis of MAS\u2019s proposed AI Risk Management Guidelines (consultation closed 31 January 2026) confirms that once finalised, the guidelines will be treated as supervisory expectations \u2014 meaning MAS will assess AI compliance during inspections. All Singapore-regulated financial institutions, including HSBC\u2019s Singapore banking and wealth entities, must establish documented AI governance frameworks covering the full AI lifecycle, including agentic and generative AI.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "user_relevance": 8
+      }
+    ],
+    "AI & Technology": [
+      {
         "id": "art08",
+        "title": "AI Trends Reshaping Wealth Management Platforms in 2026: Agents, Back-Office and SLMs",
+        "url": "https://www.wealthmanagement.com/artificial-intelligence/ai-trends-reshaping-wealth-management-in-2026",
+        "source": "Wealth Management",
+        "published_at": "2026-05-01",
+        "summary": "Wealth management AI is reaching an inflection point in 2026: AI agents are moving beyond Q&A to executing transactions and managing workflows; back-office automation is outpacing client-facing AI for near-term ROI; and domain-specific small language models (under 7bn parameters) are emerging as the preferred on-premise architecture for sensitive financial data. Banks integrating AI are projected to gain 15% greater market share over those that do not.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "AI & Technology",
         "user_relevance": 7
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art10",
+        "title": "Banking Transformation Summit 2026 (May 19\u201320, London): AI Agents and Governance in Focus",
+        "url": "https://www.skan.ai/events/banking-transformation-summit-2026",
+        "source": "Banking Transformation Summit",
+        "published_at": "2026-05-01",
+        "summary": "The Banking Transformation Summit 2026, taking place 19\u201320 May at Tobacco Dock, London, will convene global banking transformation leaders on themes including AI agent deployment at scale, sequenced transformation roadmaps, and governance-first change execution. The event signals industry consensus that 2026 is the year execution discipline \u2014 not ambition \u2014 is the differentiating variable for banking transformation programmes.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "user_relevance": 8
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "title": "HSBC Private Bank Appoints Gautam Anand as Head of Global India",
-        "url": "https://www.caproasia.com/2026/05/02/hsbc-private-bank-appoints-private-banking-veteran-gautam-anand-as-head-of-global-india-24-4-26-to-oversee-coverage-in-india-key-international-hubs-including-dubai-hong-kong-singapore-uk-join/",
-        "source": "Caproasia",
-        "published_at": "2026-05-02",
-        "summary": "HSBC Private Bank appoints Gautam Anand, a 25-year veteran with prior roles at UBS, Credit Suisse and ABN AMRO, as Head of Global India to oversee private banking for onshore and global Indians across India, Dubai, Hong Kong, Singapore and the UK. The appointment accelerates HSBC WPB's multi-hub India wealth strategy as the bank targets South Asian HNWI growth.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "surali_rel": 7,
-        "noise_level": 3,
-        "category": "HSBC News",
         "id": "art01",
-        "user_relevance": 7
+        "title": "HSBC Sets 5 May Board Meeting for Q1 2026 Results and First Interim Dividend",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-5-5-hsbc-holdings-plc-stock/",
+        "source": "MarketBeat / TipRanks",
+        "published_at": "2026-05-02",
+        "summary": "HSBC Holdings will announce Q1 2026 earnings on Tuesday 5 May at 5am BST / 12pm HKT, with analyst consensus projecting EPS of $2.18 (+11.8% YoY) and revenue of $18.60bn (+5.4% YoY). The board committee will simultaneously consider declaring a first interim 2026 dividend. Wealth fee and other income grew 20% YoY in 2024, setting a high baseline for the APAC wealth metric.",
+        "hsbc_relevancy": 10,
+        "adam_rel": 9,
+        "surali_rel": 9,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "user_relevance": 9
       },
       {
-        "title": "HSBC Life Named World's Best Insurance Provider for Wealth Management 2026 (Euromoney)",
-        "url": "https://www.euromoney.com/article/9qve1rl3fd44gg8wgcgco44w8/private-banking/the-worlds-best-insurance-provider-for-wealth-management-2026-hsbc-life/",
-        "source": "Euromoney",
-        "published_at": "2026-04-29",
-        "summary": "HSBC Life wins Euromoney's inaugural 'World's Best Insurance Provider for Wealth Management' award, recognising its specialist HNW/UHNW insurance franchise embedded in private bank wealth plans across six continents. Edward Moncreiffe, CEO of HSBC Insurance, attributed the win to HSBC's ability to capture international demand for wealth preservation and wealth transfer at scale.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "HSBC News",
         "id": "art02",
+        "title": "JP Morgan Names Florence Kui as New China Private Bank Head from End-May",
+        "url": "https://hubbis.com/news/jp-morgan-private-bank-names-new-china-head",
+        "source": "Hubbis",
+        "published_at": "2026-05-02",
+        "summary": "JP Morgan Private Bank has appointed Florence Kui as the new head of its China operations, effective end-May 2026, reporting to Harshika Patel, CEO of JP Morgan Asia Private Bank. Kui, based in Hong Kong, will oversee offshore wealth management for ultra-high-net-worth Chinese clients, adding dedicated leadership to a business already occupying Asia\u2019s AUM top three.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
         "user_relevance": 6
       },
       {
-        "title": "HSBC Private Bank Monthly View \u2014 May 2026: CIO Willem Sels on Market Positioning",
-        "url": "https://www.privatebanking.hsbc.com/wih/investments-Insights/House-views/monthly-view-may-2026/",
-        "source": "HSBC Private Bank",
-        "published_at": "2026-05-01",
-        "summary": "HSBC Private Bank's May 2026 Monthly View, led by Global CIO Willem Sels, outlines asset allocation updates and investment positioning for clients amid global macro uncertainty. The publication reinforces HSBC WPB's thought leadership and client engagement approach, a key differentiator in private banking advisory.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 5,
-        "surali_rel": 5,
-        "noise_level": 2,
-        "category": "HSBC News",
         "id": "art03",
+        "title": "JP Morgan Promotes Steven Hawkins to Head of Asia Lending Solutions, Moves to HK",
+        "url": "https://hubbis.com/news/jp-morgan-private-bank-promotes-steven-hawkins-to-head-of-asia-lending-solutions",
+        "source": "Hubbis",
+        "published_at": "2026-05-02",
+        "summary": "JP Morgan Private Bank has promoted Steven Hawkins to Head of Asia Lending Solutions, with Hawkins relocating from Singapore to Hong Kong in April 2026. The move reinforces JP Morgan\u2019s strategy to deepen UHNW lending capability in Asia \u2014 a key differentiator in private banking competition and a direct capability challenge for HSBC WPB\u2019s credit-led client acquisition model.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 1,
+        "category": "Competitor Intelligence",
         "user_relevance": 5
       },
       {
-        "title": "Standard Chartered Appoints Marc van de Walle as Global Head of Wealth Management; Vivian Chan Retires",
-        "url": "https://www.caproasia.com/2026/05/02/standard-chartered-private-bank-global-vice-chairman-vivian-chan-to-retire-in-2026-june-after-9-5-years-joining-standard-chartered-as-regional-head-of-private-banking-for-greater-china-north-asia-in/",
-        "source": "Caproasia",
-        "published_at": "2026-05-02",
-        "summary": "Standard Chartered appoints Marc van de Walle (formerly Bank of Singapore's Head of Wealth Management and a prior StanChart global head) as Global Head of Wealth Management. Vivian Chan, Global Vice Chairman of StanChart Private Bank, retires in June 2026 after 9.5 years, having joined from Barclays. The leadership change signals a strategic reset in StanChart's global wealth operations.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 4,
-        "category": "Competitor Intelligence",
         "id": "art04",
-        "user_relevance": 7
-      },
-      {
-        "title": "Standard Chartered Wins World's Best Digital Bank for Customer Experience 2026",
-        "url": "https://thedigitalbanker.com/standard-chartered-wins-worlds-best-digital-bank-for-cx-at-digital-cx-awards-2026/",
-        "source": "The Digital Banker",
-        "published_at": "2026-04-30",
-        "summary": "Standard Chartered wins 'World's Best Digital Bank for Customer Experience' at the Digital CX Awards 2026 for a programme that overhauled SC Mobile with integrated Help & Services, in-app search, real-time card controls and accessibility improvements. Self-service adoption increased materially and friction was reduced across key APAC markets.",
+        "title": "Chocolate Finance Officially Launches in Hong Kong with 3.8% Returns, No Lock-Up",
+        "url": "https://fintechnews.hk/37106/wealthtech/chocolate-finance-hong-kong/",
+        "source": "Fintech News Hong Kong",
+        "published_at": "2026-05-02",
+        "summary": "Singapore-born wealthtech Chocolate Finance, which reached S$1.1bn AUM and 100,000+ users in its first commercial year, has officially launched in Hong Kong. The platform offers 3.8% annual returns on the first HK$100,000, instant daily withdrawals up to HK$50,000, and no minimum balance \u2014 targeting Hong Kong\u2019s large pool of idle retail savings with a digital-native model that outcompetes bank deposit rates.",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "surali_rel": 6,
+        "surali_rel": 5,
         "noise_level": 2,
         "category": "Competitor Intelligence",
-        "id": "art05",
-        "user_relevance": 6
+        "user_relevance": 5
       },
       {
-        "title": "Lloyds Banking Group Launches 'Envoy' \u2014 Governed AI Agent Platform for Enterprise-Scale Deployment",
-        "url": "https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/lloyds-banking-group-unveils-envoy.html",
-        "source": "Lloyds Banking Group",
-        "published_at": "2026-05-01",
-        "summary": "Lloyds Banking Group unveiled Envoy, an internal platform for developing, training and sharing AI agents safely at scale, powered by Google Cloud. Envoy features an internal agent marketplace for cross-team reuse, pre-built templates, and governance controls connecting to Lloyds' LLM platform. The launch represents the first publicly documented enterprise AI agent governance infrastructure at a major bank.",
+        "id": "art05",
+        "title": "Singapore Wealthtech Firms Choose Hong Kong as First Overseas Market",
+        "url": "https://www.scmp.com/business/banking-finance/article/3352176/why-singapore-wealth-tech-firms-are-choosing-hong-kong-their-first-overseas-market",
+        "source": "South China Morning Post",
+        "published_at": "2026-05-02",
+        "summary": "A growing number of Singapore-based wealthtech firms are selecting Hong Kong as their first major overseas expansion market, citing Hong Kong\u2019s deep wealth base, large pool of idle savings, and position as Asia\u2019s pre-eminent cross-border wealth hub. Chocolate Finance\u2019s launch is the headline example, with other platforms eyeing Hong Kong as a gateway to the wider APAC wealth market.",
         "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 4,
-        "category": "AI & Technology",
+        "adam_rel": 7,
+        "surali_rel": 5,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 5
+      },
+      {
         "id": "art06",
+        "title": "MAS Partners Industry to Build AI Risk Management Toolkit for Financial Sector",
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-partners-industry-to-develop-ai-risk-management-toolkit-for-the-financial-sector",
+        "source": "Monetary Authority of Singapore",
+        "published_at": "2026-05-02",
+        "summary": "Following the close of its AI Risk Management Guidelines consultation in January 2026, MAS is now partnering with industry stakeholders to develop a practical AI Risk Management Toolkit for financial institutions. The toolkit will cover AI governance frameworks, risk materiality assessment, lifecycle controls, and oversight of third-party AI providers, with compliance assessed during MAS supervisory inspections.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "surali_rel": 9,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "user_relevance": 9
+      },
+      {
+        "id": "art07",
+        "title": "MAS AI Guidelines Finalization in 2026 Creates Supervisory Expectations for All FIs",
+        "url": "https://www.twobirds.com/en/insights/2026/singapore/mas-consults-on-proposed-guidelines-on-artificial-intelligence-risk-management",
+        "source": "Bird & Bird",
+        "published_at": "2026-01-31",
+        "summary": "Bird & Bird analysis of MAS\u2019s proposed AI Risk Management Guidelines (consultation closed 31 January 2026) confirms that once finalised, the guidelines will be treated as supervisory expectations \u2014 meaning MAS will assess AI compliance during inspections. All Singapore-regulated financial institutions, including HSBC\u2019s Singapore banking and wealth entities, must establish documented AI governance frameworks covering the full AI lifecycle, including agentic and generative AI.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
         "user_relevance": 8
       },
       {
-        "title": "AI in Financial Services \u2014 5 Stories: Week Ending 1 May 2026",
-        "url": "https://www.jdsupra.com/legalnews/ai-in-financial-services-in-5-stories-18873/",
-        "source": "JD Supra",
+        "id": "art08",
+        "title": "AI Trends Reshaping Wealth Management Platforms in 2026: Agents, Back-Office and SLMs",
+        "url": "https://www.wealthmanagement.com/artificial-intelligence/ai-trends-reshaping-wealth-management-in-2026",
+        "source": "Wealth Management",
         "published_at": "2026-05-01",
-        "summary": "Weekly roundup of AI in financial services for the week ending 1 May 2026, covering production-scale AI agent deployments at major banks, JPMorgan's IndexGPT for financial product analysis, Bank of America Erica's evolution into a proactive financial advisor, and Morgan Stanley's financial document analysis AI deployed at enterprise scale.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "id": "art07",
-        "user_relevance": 6
-      },
-      {
-        "title": "HKEX Anticipates 300+ IPOs in 2026; SFC Signals Quality Enforcement Push",
-        "url": "https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/",
-        "source": "IQ-EQ",
-        "published_at": "2026-04-26",
-        "summary": "Over 300 IPOs are anticipated on the Hong Kong Stock Exchange in 2026, with the SFC signalling increased enforcement on application quality. The HKMA will also introduce green transition planning guidance for banks within 2026. Both developments add compliance workload for wealth managers and private banks active in Hong Kong capital markets.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
+        "summary": "Wealth management AI is reaching an inflection point in 2026: AI agents are moving beyond Q&A to executing transactions and managing workflows; back-office automation is outpacing client-facing AI for near-term ROI; and domain-specific small language models (under 7bn parameters) are emerging as the preferred on-premise architecture for sensitive financial data. Banks integrating AI are projected to gain 15% greater market share over those that do not.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
         "surali_rel": 7,
         "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "id": "art08",
+        "category": "AI & Technology",
         "user_relevance": 7
       },
       {
-        "title": "Standard Chartered Private Bank Vice Chairman Vivian Chan to Retire in June",
-        "url": "https://asianprivatebanker.com/private-wealth/stanchart-pbs-global-vice-chairman-to-retire/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-05-02",
-        "summary": "Vivian Chan, Global Vice Chairman of Standard Chartered Private Bank, will retire in June 2026 after 9.5 years, having joined as Regional Head of Private Banking for Greater China & North Asia. Chan had previously been with Barclays Private Bank and Credit Suisse. Her departure removes a key figure in StanChart's Greater China wealth leadership.",
-        "hsbc_relevancy": 6,
+        "id": "art10",
+        "title": "Banking Transformation Summit 2026 (May 19\u201320, London): AI Agents and Governance in Focus",
+        "url": "https://www.skan.ai/events/banking-transformation-summit-2026",
+        "source": "Banking Transformation Summit",
+        "published_at": "2026-05-01",
+        "summary": "The Banking Transformation Summit 2026, taking place 19\u201320 May at Tobacco Dock, London, will convene global banking transformation leaders on themes including AI agent deployment at scale, sequenced transformation roadmaps, and governance-first change execution. The event signals industry consensus that 2026 is the year execution discipline \u2014 not ambition \u2014 is the differentiating variable for banking transformation programmes.",
+        "hsbc_relevancy": 4,
         "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "id": "art09",
-        "user_relevance": 6
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "user_relevance": 8
       }
     ],
     "categories": {
       "HSBC News": "#dc2626",
       "Competitor Intelligence": "#0891b2",
+      "Private Banking & Wealth": "#059669",
+      "Regulatory & Markets": "#d97706",
       "AI & Technology": "#6366f1",
-      "Regulatory & Markets": "#d97706"
+      "Operations & Change": "#7c3aed"
     }
   }
 }
