@@ -11,11 +11,10 @@ DATE_STR="$(date -u +%Y-%m-%d)"
 git add docs/ context/history.json bin/ src/ templates/ CLAUDE.md ROUTINE.md requirements.txt 2>/dev/null || true
 
 if git diff --cached --quiet; then
-  echo "[publish] no changes to commit"
-  exit 0
+  echo "[publish] nothing new to commit — proceeding to push"
+else
+  git commit -m "briefing: ${DATE_STR} daily intelligence update"
 fi
-
-git commit -m "briefing: ${DATE_STR} daily intelligence update"
 
 # Always push to main, with retries for transient network failures
 for i in 1 2 3 4; do
