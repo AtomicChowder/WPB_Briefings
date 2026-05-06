@@ -1,0 +1,70 @@
+{
+  "date_str": "2026-05-06",
+  "briefing_date": "Wednesday, 6 May 2026",
+  "articles": [
+    {
+      "title": "HSBC WPB Launches AI-Powered Wealth Advisory Platform",
+      "url": "https://example.com/hsbc-ai-wealth",
+      "source": "Financial Times",
+      "published_at": "2026-05-06",
+      "summary": "HSBC WPB has launched an AI-powered wealth advisory tool for APAC private banking clients. The system provides real-time portfolio insights and personalised recommendations.",
+      "hsbc_relevancy": 9,
+      "adam_rel": 9,
+      "surali_rel": 7,
+      "noise_level": 3,
+      "category": "AI & Technology"
+    },
+    {
+      "title": "DBS Bank Accelerates Agile Transformation Across Wealth Unit",
+      "url": "https://example.com/dbs-agile",
+      "source": "Bloomberg",
+      "published_at": "2026-05-05",
+      "summary": "DBS Bank is expanding its agile delivery model into its wealth management division, targeting 30% faster product launches.",
+      "hsbc_relevancy": 6,
+      "adam_rel": 8,
+      "surali_rel": 6,
+      "noise_level": 2,
+      "category": "Operations & Change"
+    }
+  ],
+  "users": {
+    "adam": {
+      "talking_points": [
+        {
+          "headline": "HSBC WPB's AI platform sets new benchmark for APAC wealth advisory",
+          "why_it_matters": "This directly impacts your AI-enabled change agenda across APAC private banking.",
+          "bullets": [
+            "<strong>Jane Smith, Head of WPB Asia</strong> announced the rollout at the Singapore FinTech Festival.",
+            "The platform uses Claude-based LLMs to deliver hyper-personalised portfolio insights.",
+            "Competitor DBS is watching closely — first-mover advantage window is narrow."
+          ],
+          "source_links": [
+            {"url": "https://example.com/hsbc-ai-wealth", "title": "FT: HSBC WPB AI Platform"}
+          ],
+          "is_update": false
+        }
+      ]
+    },
+    "sirali": {
+      "talking_points": [
+        {
+          "headline": "HSBC WPB AI platform signals new era in COO operational strategy",
+          "why_it_matters": "As COO you will need to govern the cost, risk, and change programme behind this launch.",
+          "bullets": [
+            "Initial rollout covers HK, Singapore, and Australia — 3 of your largest change programmes.",
+            "Regulatory sign-off took 14 weeks — governance model is reusable across markets.",
+            "<strong>Jane Smith, Head of WPB Asia</strong> has requested COO input on the global rollout plan."
+          ],
+          "source_links": [
+            {"url": "https://example.com/hsbc-ai-wealth", "title": "FT: HSBC WPB AI Platform"}
+          ],
+          "is_update": false
+        }
+      ]
+    }
+  },
+  "breaking_news": {
+    "adam": [],
+    "sirali": []
+  }
+}

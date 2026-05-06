@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Render HTML for both users from their briefing_data.json files.
+set -euo pipefail
+REPO="$(git -C "$(dirname "$0")/.." rev-parse --show-toplevel)"
+
+pip install -r "$REPO/requirements.txt" -q
+
+echo "==> briefing-render: rendering adam..."
+python "$REPO/src/render.py" adam
+
+echo "==> briefing-render: rendering sirali..."
+python "$REPO/src/render.py" sirali
+
+echo "==> briefing-render: done."

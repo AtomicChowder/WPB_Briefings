@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# Commit docs/, context/history.json and any code changes, then push to origin/main.
+# Retries up to 4 times with exponential back-off on transient push failures.
+# Rebases on top of origin/main if rejected as non-fast-forward.
+set -euo pipefail
+REPO="$(git -C "$(dirname "$0")/.." rev-parse --show-toplevel)"
+DATE="$(date -u +%Y-%m-%d)"
+
+cd "$REPO"
+
+# Stage everything that matters
+git add docs/ context/history.json bin/ src/ templates/ requirements.txt CLAUDE.md ROUTINE.md \
+  briefing_input.example.json 2>/dev/null || true
+git add -u 2>/dev/null || true
+
+if git diff --cached --quiet; then
+  echo "==> briefing-publish: nothing to commit."
+else
+  git commit -m "briefing: $DATE daily intelligence update
+
+https://claude.ai/code/session_011QWhBMwWoxxrErbNow85CT"
+fi
+
+# Push to origin/main with retry
+TARGET="main"
+git fetch origin main 2>/dev/null || true
+
+for attempt in 1 2 3 4; do
+  echo "==> briefing-publish: push attempt $attempt..."
+  if git push -u origin "HEAD:$TARGET" 2>&1; then
+    echo "==> briefing-publish: pushed to origin/$TARGET."
+    break
+  fi
+  # Non-fast-forward — rebase on top of origin/main
+  if git fetch origin main 2>/dev/null && git rebase origin/main 2>/dev/null; then
+    echo "==> briefing-publish: rebased on origin/main, retrying..."
+  fi
+  wait_secs=$((2 ** attempt))
+  echo "==> briefing-publish: waiting ${wait_secs}s before retry..."
+  sleep "$wait_secs"
+done
+
+echo "==> briefing-publish: done."

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Pull live context/history.json and docs/ from origin/main, install Python deps.
+set -euo pipefail
+REPO="$(git -C "$(dirname "$0")/.." rev-parse --show-toplevel)"
+
+echo "==> briefing-sync: installing Python deps..."
+pip install -r "$REPO/requirements.txt" -q
+
+echo "==> briefing-sync: fetching origin/main..."
+if git -C "$REPO" fetch origin main 2>/dev/null; then
+  echo "==> briefing-sync: merging docs/ and context/ from origin/main..."
+  git -C "$REPO" checkout FETCH_HEAD -- docs/ context/history.json 2>/dev/null || true
+else
+  echo "==> briefing-sync: origin/main not found — starting fresh (first run)."
+fi
+
+mkdir -p "$REPO/docs/adam" "$REPO/docs/sirali" "$REPO/context"
+
+echo "==> briefing-sync: done."
