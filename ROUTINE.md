@@ -30,7 +30,7 @@ there is a material development.
 
 ### Step 3 — Search for news (parallel batch)
 
-In a **single message**, fire **all 10 web searches** from CLAUDE.md in parallel.
+In a **single message**, fire **all 12 web searches** from CLAUDE.md in parallel.
 Sequential searches are forbidden — they cause stream-idle timeouts.
 
 **Freshness filter:**

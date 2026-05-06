@@ -53,7 +53,7 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
 
 ---
 
-## Search Queries (use all of these when fetching news)
+## Search Queries (use ALL of these when fetching news — 12 total)
 
 ```
 HSBC WPB wealth management Asia Pacific strategy
@@ -66,7 +66,14 @@ Banking change execution agile transformation
 Wealth management regulatory Asia Pacific 2026
 AI large language models banking finance enterprise
 HSBC competitor analysis wealth management
+Anthropic OpenAI Google Gemini AI model release banking finance enterprise
+DeepSeek Qwen Kimi Chinese AI model financial services Asia
 ```
+
+> **Why 12?** Queries 1–10 cover markets, competitors, and macro. Queries 11–12
+> were added after AI lab announcements (Anthropic finance agents, OpenAI GPT-5.4,
+> Google Gemma 4, DeepSeek V4) were systematically missed. Always run all 12 in
+> a single parallel batch.
 
 ---
 
