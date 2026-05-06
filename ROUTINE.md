@@ -33,10 +33,8 @@ there is a material development.
 In a **single message**, fire **all 12 web searches** from CLAUDE.md in parallel.
 Sequential searches are forbidden — they cause stream-idle timeouts.
 
-**Freshness filter:**
-- If `covered_urls` is non-empty for either user → only collect articles published
-  or updated **within the past 48 hours**.
-- If `covered_urls` is empty (first ever run) → relax to **7 days**.
+**Freshness filter:** Always limit to articles published or updated **within the past 48 hours**.
+Discard anything older, even on a first run.
 
 Aim for 20–40 articles total across all queries.
 

@@ -143,13 +143,10 @@ Organisation names do NOT need to be bolded — only people.
 
 ## Article Freshness Rule
 
-**Once a baseline exists** (i.e. `context/history.json` has a non-empty `covered_urls` list for
-this user), only include articles **published or last updated within the prior 48 hours** of the
+**Always**: only include articles **published or last updated within the prior 48 hours** of the
 briefing date. Discard any article whose `published_at` is older than 48 hours, even if it scores
-highly — it should have been caught in an earlier run.
-
-**First run only** (empty `covered_urls`): the 48-hour limit is relaxed to 7 days to allow
-baseline coverage to be established.
+highly — it should have been caught in an earlier run. This applies on every run, including the
+first.
 
 If a known article has a **material update** (new data, regulatory decision, company announcement
 that changes the story), it may be re-included and flagged as an update (`"is_update": true`).
