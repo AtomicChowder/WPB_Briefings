@@ -1,19 +1,45 @@
 #!/usr/bin/env bash
-# Pull live context/history.json and docs/ from origin/main, install Python deps.
+# briefing-sync — pull live state (history + docs) from origin/main into the
+# working tree, regardless of what branch this session was created on.
+#
+# This is the FIRST step of every routine run. It eliminates the recurring
+# "branch was cloned without main's history.json" failure.
 set -euo pipefail
-REPO="$(git -C "$(dirname "$0")/.." rev-parse --show-toplevel)"
 
-echo "==> briefing-sync: installing Python deps..."
-pip install -r "$REPO/requirements.txt" -q
+cd "$(git rev-parse --show-toplevel)"
 
-echo "==> briefing-sync: fetching origin/main..."
-if git -C "$REPO" fetch origin main 2>/dev/null; then
-  echo "==> briefing-sync: merging docs/ and context/ from origin/main..."
-  git -C "$REPO" checkout FETCH_HEAD -- docs/ context/history.json 2>/dev/null || true
-else
-  echo "==> briefing-sync: origin/main not found — starting fresh (first run)."
+echo "[sync] fetching origin/main..."
+for i in 1 2 3 4; do
+  if git fetch origin main 2>&1 | tail -3; then
+    break
+  fi
+  echo "[sync] fetch failed (attempt $i), retrying in $((2 ** i))s..."
+  sleep $((2 ** i))
+done
+
+# Pull the live data files from main. Code (src/, bin/, templates/, *.md) stays
+# at whatever this branch has — those changes get pushed back to main at the end.
+echo "[sync] restoring context/history.json and docs/ from origin/main..."
+git checkout origin/main -- context/history.json 2>/dev/null || echo "[sync] no history.json on main yet — will init"
+git checkout origin/main -- docs/ 2>/dev/null || echo "[sync] no docs/ on main yet"
+
+# Ensure required directories exist
+mkdir -p context docs/adam docs/surali
+
+# Initialise history.json if absent (first ever run)
+if [ ! -f context/history.json ]; then
+  echo "[sync] initialising empty history.json"
+  python3 - <<'PY'
+import json, pathlib
+pathlib.Path("context/history.json").write_text(json.dumps({
+    "adam":   {"last_updated": None, "covered_urls": [], "covered_topics": [], "daily": []},
+    "surali": {"last_updated": None, "covered_urls": [], "covered_topics": [], "daily": []},
+}, indent=2))
+PY
 fi
 
-mkdir -p "$REPO/docs/adam" "$REPO/docs/sirali" "$REPO/context"
+# Install Python deps quietly
+echo "[sync] pip install -r requirements.txt"
+pip install -r requirements.txt -q 2>&1 | tail -3 || true
 
-echo "==> briefing-sync: done."
+echo "[sync] done — working tree ready"

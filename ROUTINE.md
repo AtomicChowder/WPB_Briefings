@@ -1,78 +1,157 @@
 # WPB Daily Briefing — Claude Code Routine
 
-## Routine Prompt
+This routine is **deterministic**. Heavy file I/O, git operations, and naming
+have been moved out of the LLM prompt into committed scripts. The LLM only does
+research, scoring, and writing talking points + the Notion publish step.
 
-> Read CLAUDE.md first — it contains all user profiles, scoring rubrics, the JSON schema,
-> and context awareness instructions.
+---
 
-Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Sirali Siriwardene**.
+## Routine Prompt — paste this into Claude Code Routines
 
-### For each user (run adam first, then sirali):
+> Read CLAUDE.md before starting.
 
-**1. Check history**
-Read `context/history.json`. Note the URLs and topics covered in the last 7 days so you
-don't repeat them unless there's a material update.
+Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Surali Siriwardene**.
 
-**2. Search for news**
-Use your web search tool to run each of the search queries listed in CLAUDE.md. Collect
-all articles published in the last 48 hours. Aim for 20–40 articles across all queries.
+### Step 1 — Sync (mandatory, run first)
 
-**3. Score and categorise**
+```bash
+bash bin/briefing-sync
+```
+
+This pulls the live `context/history.json` and `docs/` from `origin/main` into the
+working tree, regardless of which branch this session was created on, and installs
+Python deps. This eliminates the "branch was cloned without main's content" bug.
+
+### Step 2 — Read history
+
+Read `context/history.json`. The `covered_urls` and `covered_topics` fields contain
+the union of everything covered in the past 7 days. Do not repeat these unless
+there is a material development.
+
+### Step 3 — Search for news (parallel batch)
+
+In a **single message**, fire **all 10 web searches** from CLAUDE.md in parallel.
+Sequential searches are forbidden — they cause stream-idle timeouts.
+
+**Freshness filter:**
+- If `covered_urls` is non-empty for either user → only collect articles published
+  or updated **within the past 48 hours**.
+- If `covered_urls` is empty (first ever run) → relax to **7 days**.
+
+Aim for 20–40 articles total across all queries.
+
+### Step 4 — Score and categorise
+
 For each article, assign:
-- `hsbc_relevancy` (0–10) — per the rubric in CLAUDE.md
-- `user_relevance` (0–10) — based on this specific user's role and interests
-- `noise_level` (1–5) — breadth of coverage
-- `category` — one of the 6 categories in CLAUDE.md
+- `hsbc_relevancy` (0–10) — see CLAUDE.md rubric
+- `adam_rel` (0–10) and `surali_rel` (0–10) — per-user relevance, both required
+- `noise_level` (1–5) — coverage breadth
+- `category` — exactly one of the 6 categories in CLAUDE.md
 
-Discard articles with combined score (hsbc + relevance) below 6.
-Keep a maximum of 5 articles per category, sorted by combined score descending.
+Discard any article whose combined score (`hsbc_relevancy + max(adam_rel, surali_rel)`)
+is below 6. (The build script applies the same filter per user.)
 
-**4. Write 3 talking points**
-Select the 3 most strategically significant stories for this user. Each talking point needs:
-- A sharp headline (max 120 chars)
-- 2–3 sentences of context explaining why it matters *specifically* to this user's role
-- Wrap person names in `<strong>Name, Title</strong>` HTML tags
-- 1–3 supporting article URLs
+### Step 5 — Write 3 talking points per user
 
-Do not repeat talking points covered in the last 7 days unless there's a material update.
+For each of Adam and Surali, pick 3 talking points (different selections — the users
+have different roles, so the priorities differ). Each needs:
+- `headline` (max 100 chars)
+- `why_it_matters` (one sentence on direct relevance to that user's role)
+- `bullets` (2–3 concise bullets, wrap person names: `<strong>Name, Title</strong>`)
+- `source_links` (1–3 supporting URLs as `{url, title}` objects)
+- `is_update` (boolean — true if this is a material update on a previously covered story)
 
-**5. Write `docs/{user_id}/briefing_data.json`**
-Write the complete JSON file following the exact schema in CLAUDE.md.
-Include `briefing_date` as a formatted string (e.g. "Saturday, 26 April 2026").
-Include `generated_at` as UTC time.
+### Step 6 — Write the input file
 
-**6. Render HTML**
+Use **a single Python heredoc via Bash** to write `/tmp/briefing_input.json`.
+This is small (under ~10 KB) so there is no stream-timeout risk. See
+`briefing_input.example.json` in the repo root for the exact schema.
+
 ```bash
-pip install -r requirements.txt -q
-python src/render.py {user_id}
+python3 - <<'PY'
+import json, pathlib
+data = {
+  "date_str": "2026-05-01",
+  "briefing_date": "Friday, 1 May 2026",
+  "articles": [ ... ],
+  "users": {
+    "adam":   { "talking_points": [ ... ] },
+    "surali": { "talking_points": [ ... ] }
+  },
+  "breaking_news": { "adam": [], "surali": [] }
+}
+pathlib.Path("/tmp/briefing_input.json").write_text(json.dumps(data, indent=2))
+PY
 ```
-This reads the JSON and writes `docs/{user_id}/index.html`.
 
-**7. Publish to Notion**
-Using the Notion MCP connector, create a new page in the database
-**"WPB Weekly Intelligence Briefings"** with:
-- Title: `[{display_name}] WPB Briefing — {date}` (e.g. `[Adam] WPB Briefing — 26 Apr 2026`)
-- A red callout with the user's name and title
-- A divider
-- Heading: "🎯 Key Talking Points" — then each talking point as Heading 3 + paragraph + bullet links
-- A divider
-- Heading: "📰 Intelligence Feed" — articles grouped by category as Heading 3 + bulleted links
-  with scores: `[HSBC 7/10 · Rel 9/10] Article title` linked to article URL,
-  followed by a grey paragraph for the summary
+### Step 7 — Build, render, update history
 
-### After both users are done:
-
-**8. Update history**
-Merge today's covered URLs and talking point headlines into `context/history.json`.
-Keep only the last 7 days of data per user.
-
-**9. Commit and push**
 ```bash
-git add docs/ context/history.json
-git commit -m "briefing: YYYY-MM-DD daily intelligence update"
-git push
+python src/build_briefing.py /tmp/briefing_input.json
+python src/update_history.py /tmp/briefing_input.json
+bash bin/briefing-render
 ```
-This triggers GitHub Pages to publish the updated briefings automatically.
+
+`build_briefing.py` deterministically writes both `docs/{user}/briefing_data.json`
+files, applying the score filter, category cap (3 per category), and sort.
+`update_history.py` adds today's URLs and headlines to `context/history.json` with
+a 7-day rolling window.
+
+### Step 8 — Publish to Notion
+
+Use the Notion MCP connector to create one page per user in the database
+**WPB Weekly Intelligence Briefings** (data source `3336f349-23b7-8053-9230-000b278a9f1a`).
+
+Page properties:
+- `Headline`: `[{display_name}] WPB Briefing — {D Mon YYYY}` (e.g. `[Surali] WPB Briefing — 1 May 2026`)
+- `icon`: `📊`
+- `Recipient`: `Adam Chow` or `Surali Siriwardene` (exact spelling)
+- `Priority`: `High`
+- `Briefing Section`: `Talking Point`
+- `date:Briefing Date:start`: ISO date string
+
+Page body:
+
+```
+> 🔴 **{Name}** — {Title}
+
+---
+
+# 🎯 Key Talking Points
+
+### {Talking Point 1 Headline}
+{why_it_matters paragraph}
+- {bullet 1}
+- {bullet 2}
+- {bullet 3}
+- [{Source title}]({url})
+
+### {Talking Point 2 Headline}
+... (same structure)
+
+---
+
+# 📰 Intelligence Feed
+
+### {Category Name}
+- **[HSBC {n}/10 · Rel {n}/10]** [{Article title}]({url})
+	> {summary}
+
+---
+*Generated {D Mon YYYY} · {N} articles across {C} categories · GitHub Pages: [{url}]({url})*
+```
+
+### Step 9 — Publish to main (mandatory)
+
+```bash
+bash bin/briefing-publish
+```
+
+This commits `docs/`, `context/history.json`, and any code changes, then pushes to
+`origin/main` (always main, never the feature branch). Retries on transient failures
+and rebases on top of `origin/main` if the push is rejected as non-fast-forward.
+
+GitHub Pages auto-deploys from `main` on every push that touches `docs/**`.
 
 ---
 
@@ -80,34 +159,25 @@ This triggers GitHub Pages to publish the updated briefings automatically.
 
 `0 23 * * *` (UTC) = **07:00 HKT** daily
 
----
-
 ## Connectors Required
 
-- **Notion** — add your existing Notion connector in Routine settings
+- **Notion** — add the workspace's existing connector
 
 ## Environment Variables
 
-None required. Everything runs on your Max subscription.
-
----
+None required. Optional: `GCS_BUCKET_NAME` if mirroring to GCS.
 
 ## Public URLs
 
-Enable GitHub Pages on `main` branch, source: `/docs` folder.
-
-- Adam → `https://atomicchowder.github.io/wpb_briefings/adam/`
-- Sirali → `https://atomicchowder.github.io/wpb_briefings/sirali/`
-
----
+- Adam → https://atomicchowder.github.io/wpb_briefings/adam/
+- Surali → https://atomicchowder.github.io/wpb_briefings/surali/
 
 ## Routine Setup (Claude Code UI)
 
-1. Claude Code → Routines → **New Routine**
+1. Routines → **New Routine**
 2. **Name**: `WPB Daily Briefing`
-3. **Prompt**: paste everything in the "Routine Prompt" section above
+3. **Prompt**: paste the "Routine Prompt" section above
 4. **Repository**: `AtomicChowder/WPB_Briefings` (branch: `main`)
-5. **Schedule**: custom cron `0 23 * * *`
-6. **Connectors**: add your Notion connector
-7. No environment variables needed
-8. **Create** → **Run now** to generate the first briefing
+5. **Schedule**: cron `0 23 * * *`
+6. **Connectors**: Notion
+7. **Create** → **Run now**

@@ -1,178 +1,183 @@
-"""
-Build briefing_data.json for each user from a shared briefing_input.json.
+"""Build docs/{user}/briefing_data.json for both users from a single input file.
+
+The Claude Code Routine produces /tmp/briefing_input.json containing:
+- the date strings
+- a flat list of scored articles (with adam_rel and surali_rel on each)
+- per-user talking points
+- optional per-user breaking_news
+
+This script handles all the deterministic JSON gymnastics: filtering by
+combined score >= 6, grouping by category, capping at 3 articles per category,
+sorting, and writing the final per-user briefing_data.json files.
+
+Doing this in a Python script (not via Claude's Write/Edit tools) avoids the
+stream-idle timeouts that have been the dominant failure mode.
 
 Usage:
     python src/build_briefing.py /tmp/briefing_input.json
+
+Input schema (briefing_input.json):
+{
+  "date_str": "2026-05-01",
+  "briefing_date": "Friday, 1 May 2026",
+  "articles": [
+    {
+      "id": "art01",
+      "title": "...",
+      "url": "https://...",
+      "source": "Reuters",
+      "published_at": "2026-05-01",
+      "summary": "One sentence — why should the user care?",
+      "hsbc_relevancy": 7,
+      "adam_rel": 9,
+      "surali_rel": 5,
+      "noise_level": 3,
+      "category": "AI & Technology"
+    }
+  ],
+  "users": {
+    "adam":   {"talking_points": [{"headline": "...", "why_it_matters": "...",
+                                    "bullets": ["...", "..."],
+                                    "source_links": [{"url": "...", "title": "..."}],
+                                    "is_update": false}]},
+    "surali": {"talking_points": [...]}
+  },
+  "breaking_news": {"adam": [], "surali": []}   // optional
+}
 """
+from __future__ import annotations
 
 import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).parent.parent
-DOCS_DIR = REPO_ROOT / "docs"
+REPO = Path(__file__).resolve().parent.parent
 
-CATEGORY_COLORS = {
-    "AI & Technology": "#6366f1",
-    "HSBC News": "#dc2626",
-    "Competitor Intelligence": "#0891b2",
+CATEGORY_COLOURS = {
+    "AI & Technology":          "#6366f1",
+    "HSBC News":                "#dc2626",
+    "Competitor Intelligence":  "#0891b2",
     "Private Banking & Wealth": "#059669",
-    "Regulatory & Markets": "#d97706",
-    "Operations & Change": "#7c3aed",
+    "Regulatory & Markets":     "#d97706",
+    "Operations & Change":      "#7c3aed",
 }
 
+# Single source of truth for user metadata. Names are hardcoded here so a
+# typo in the routine prompt cannot leak into published output.
 USERS = {
     "adam": {
-        "user_id": "adam",
-        "user_name": "Adam Chow",
+        "user_name":         "Adam Chow",
         "user_display_name": "Adam",
-        "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-        "rel_field": "adam_rel",
+        "user_title":        "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
+        "score_key":         "adam_rel",
     },
-    "sirali": {
-        "user_id": "sirali",
-        "user_name": "Sirali Siriwardene",
-        "user_display_name": "Sirali",
-        "user_title": "COO & Global Head of Change Execution, WPS",
-        "rel_field": "surali_rel",
+    "surali": {
+        "user_name":         "Surali Siriwardene",
+        "user_display_name": "Surali",
+        "user_title":        "COO & Global Head of Change Execution, WPS",
+        "score_key":         "surali_rel",
     },
 }
 
-MAX_PER_CATEGORY = 5
+REQUIRED_ARTICLE_FIELDS = (
+    "id", "title", "url", "source", "published_at", "summary",
+    "hsbc_relevancy", "adam_rel", "surali_rel", "noise_level", "category",
+)
+
+MAX_PER_CATEGORY = 3
 MIN_COMBINED_SCORE = 6
 
 
-def build_context_html(tp: dict) -> str:
-    why = tp.get("why_it_matters", "")
-    bullets = tp.get("bullets", [])
-    context_html = tp.get("context_html", "")
-    if context_html:
-        return context_html
-    if bullets:
-        bullet_html = "".join(f"<li>{b}</li>" for b in bullets)
-        return f"{why} <ul style='margin:8px 0 0 16px;'>{bullet_html}</ul>"
-    return why
+def _validate_articles(articles):
+    seen_ids = set()
+    for a in articles:
+        for k in REQUIRED_ARTICLE_FIELDS:
+            if k not in a:
+                raise SystemExit(f"article missing field {k!r}: {a.get('id', '<no-id>')}")
+        if a["id"] in seen_ids:
+            raise SystemExit(f"duplicate article id: {a['id']}")
+        seen_ids.add(a["id"])
+        if a["category"] not in CATEGORY_COLOURS:
+            raise SystemExit(f"unknown category {a['category']!r} on {a['id']}")
 
 
-def build_for_user(inp: dict, user_key: str) -> dict:
-    meta = USERS[user_key]
-    rel_field = meta["rel_field"]
+def _build_for_user(user_id: str, raw: dict, generated_at: str) -> dict:
+    meta = USERS[user_id]
+    score_key = meta["score_key"]
 
-    now_utc = datetime.now(timezone.utc)
-    generated_at = now_utc.strftime("%-d %b %Y, %H:%M UTC")
-
-    # Filter and score articles
-    raw_articles = inp.get("articles", [])
-    scored = []
-    for art in raw_articles:
-        hsbc = art.get("hsbc_relevancy", 0)
-        rel = art.get(rel_field, 0)
-        if hsbc + rel < MIN_COMBINED_SCORE:
+    cats: dict[str, list[dict]] = {}
+    flat: list[dict] = []
+    for a in raw["articles"]:
+        combined = a["hsbc_relevancy"] + a[score_key]
+        if combined < MIN_COMBINED_SCORE:
             continue
-        scored.append({**art, "_user_rel": rel, "_combined": hsbc + rel})
+        art = dict(a)
+        art["user_relevance"] = a[score_key]
+        cats.setdefault(a["category"], []).append(art)
 
-    # Assign sequential IDs, cap per category
-    by_cat: dict[str, list] = {}
-    for art in scored:
-        cat = art.get("category", "AI & Technology")
-        by_cat.setdefault(cat, []).append(art)
+    # Sort each category by combined score, cap at MAX_PER_CATEGORY
+    for cat, items in cats.items():
+        items.sort(key=lambda x: x["hsbc_relevancy"] + x[score_key], reverse=True)
+        cats[cat] = items[:MAX_PER_CATEGORY]
 
-    articles_by_category: dict[str, list] = {}
-    all_articles_flat: list[dict] = []
-    art_id = 1
+    # Drop empty categories (none should be, but be defensive)
+    cats = {k: v for k, v in cats.items() if v}
 
-    for cat in CATEGORY_COLORS:
-        if cat not in by_cat:
-            continue
-        cat_arts = sorted(by_cat[cat], key=lambda a: a["_combined"], reverse=True)
-        cat_arts = cat_arts[:MAX_PER_CATEGORY]
-        out_arts = []
-        for art in cat_arts:
-            a_id = f"art{art_id:02d}"
-            art_id += 1
-            out_art = {
-                "id": a_id,
-                "title": art["title"],
-                "url": art["url"],
-                "source": art.get("source", ""),
-                "published_at": art.get("published_at", ""),
-                "summary": art.get("summary", ""),
-                "hsbc_relevancy": art["hsbc_relevancy"],
-                "user_relevance": art["_user_rel"],
-                "noise_level": art.get("noise_level", 2),
-                "category": cat,
-            }
-            out_arts.append(out_art)
-            all_articles_flat.append({
-                "id": a_id,
-                "title": art["title"][:90],
-                "url": art["url"],
-                "source": art.get("source", ""),
-                "hsbc_relevancy": art["hsbc_relevancy"],
-                "user_relevance": art["_user_rel"],
-                "noise_level": art.get("noise_level", 2),
-                "category": cat,
-                "summary": art.get("summary", "")[:200],
-            })
-        articles_by_category[cat] = out_arts
+    # Flat list mirrors what's in articles_by_category (post-cap)
+    final_ids: set[str] = {a["id"] for arts in cats.values() for a in arts}
+    flat = [dict(a, user_relevance=a[score_key])
+            for a in raw["articles"] if a["id"] in final_ids]
 
-    # Talking points — convert from input format to output format
-    raw_tps = inp.get("users", {}).get(user_key, {}).get("talking_points", [])
-    talking_points = []
-    for tp in raw_tps:
-        source_links_raw = tp.get("source_links", [])
-        # Template expects list of [url, title] arrays
-        source_links = []
-        for sl in source_links_raw:
-            if isinstance(sl, dict):
-                source_links.append([sl.get("url", ""), sl.get("title", "")])
-            elif isinstance(sl, (list, tuple)) and len(sl) >= 2:
-                source_links.append([sl[0], sl[1]])
-        talking_points.append({
-            "headline": tp.get("headline", ""),
-            "context_html": build_context_html(tp),
-            "source_links": source_links,
-            "is_update": tp.get("is_update", False),
-        })
+    user_block = (raw.get("users") or {}).get(user_id, {}) or {}
+    breaking = (raw.get("breaking_news") or {}).get(user_id, []) or []
 
-    # Chart data — only categories present
-    present_cats = {a["category"] for a in all_articles_flat}
-    chart_categories = {k: v for k, v in CATEGORY_COLORS.items() if k in present_cats}
-
-    data = {
-        "user_id": meta["user_id"],
-        "user_name": meta["user_name"],
+    return {
+        "user_id":           user_id,
+        "user_name":         meta["user_name"],
         "user_display_name": meta["user_display_name"],
-        "user_title": meta["user_title"],
-        "briefing_date": inp["briefing_date"],
-        "date_str": inp["date_str"],
-        "generated_at": generated_at,
-        "total_articles": len(all_articles_flat),
-        "talking_points": talking_points,
-        "articles_by_category": articles_by_category,
+        "user_title":        meta["user_title"],
+        "briefing_date":     raw["briefing_date"],
+        "date_str":          raw["date_str"],
+        "generated_at":      generated_at,
+        "total_articles":    len(flat),
+        "breaking_news":     breaking,
+        "talking_points":    user_block.get("talking_points", []),
+        "articles_by_category": cats,
         "chart_data": {
-            "articles": all_articles_flat,
-            "categories": chart_categories,
+            "articles":   flat,
+            "categories": {k: CATEGORY_COLOURS[k] for k in cats},
         },
     }
 
-    out_path = DOCS_DIR / meta["user_id"] / "briefing_data.json"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"✓  {out_path.relative_to(REPO_ROOT)}  ({len(all_articles_flat)} articles)")
-    return data
 
+def main(argv: list[str]) -> int:
+    if len(argv) < 2:
+        print("usage: build_briefing.py <briefing_input.json>", file=sys.stderr)
+        return 1
 
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python src/build_briefing.py <briefing_input.json>", file=sys.stderr)
-        sys.exit(1)
-    inp_path = Path(sys.argv[1])
-    inp = json.loads(inp_path.read_text(encoding="utf-8"))
-    for user_key in ("adam", "sirali"):
-        build_for_user(inp, user_key)
+    raw = json.loads(Path(argv[1]).read_text(encoding="utf-8"))
+
+    for required in ("date_str", "briefing_date", "articles", "users"):
+        if required not in raw:
+            print(f"input missing required field: {required}", file=sys.stderr)
+            return 1
+
+    _validate_articles(raw["articles"])
+
+    generated_at = datetime.now(timezone.utc).strftime("%-d %b %Y, %H:%M UTC")
+
+    for user_id in USERS:
+        data = _build_for_user(user_id, raw, generated_at)
+        out = REPO / "docs" / user_id / "briefing_data.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(data, indent=2), encoding="utf-8")
+        cats_summary = ", ".join(f"{k}:{len(v)}" for k, v in data["articles_by_category"].items())
+        print(f"[build] {out.relative_to(REPO)} — {data['total_articles']} articles "
+              f"({cats_summary}), {len(data['talking_points'])} TPs")
+
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main(sys.argv))

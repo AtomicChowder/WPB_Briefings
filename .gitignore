@@ -11,9 +11,9 @@ env/
 *.key
 *.json
 !.env.example
-!briefing_input.example.json
 !context/history.json
-!docs/**/*.json
+!docs/**/briefing_data.json
+!briefing_input.example.json
 service-account*.json
 /output/
 /tmp/
