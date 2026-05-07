@@ -49,10 +49,11 @@ from __future__ import annotations
 
 import json
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
+HIST_PATH = REPO / "context" / "history.json"
 
 CATEGORY_COLOURS = {
     "AI & Technology":          "#6366f1",
@@ -102,13 +103,27 @@ def _validate_articles(articles):
             raise SystemExit(f"unknown category {a['category']!r} on {a['id']}")
 
 
-def _build_for_user(user_id: str, raw: dict, generated_at: str) -> dict:
+def _build_for_user(user_id: str, raw: dict, generated_at: str,
+                    briefing_dt: date, covered_urls: set[str]) -> dict:
     meta = USERS[user_id]
     score_key = meta["score_key"]
 
     cats: dict[str, list[dict]] = {}
     flat: list[dict] = []
     for a in raw["articles"]:
+        is_update = a.get("is_update", False)
+
+        # Gate 1 — freshness: reject articles older than 48 h unless flagged as update
+        age_days = (briefing_dt - date.fromisoformat(a["published_at"])).days
+        if age_days > 1 and not is_update:
+            print(f"[build] SKIP stale {a['id']} ({a['published_at']}, {age_days}d old)")
+            continue
+
+        # Gate 2 — dedup: reject URLs already in this user's history unless flagged as update
+        if a["url"] in covered_urls and not is_update:
+            print(f"[build] SKIP duplicate {a['id']} already covered for {user_id}")
+            continue
+
         combined = a["hsbc_relevancy"] + a[score_key]
         if combined < MIN_COMBINED_SCORE:
             continue
@@ -166,9 +181,16 @@ def main(argv: list[str]) -> int:
     _validate_articles(raw["articles"])
 
     generated_at = datetime.now(timezone.utc).strftime("%-d %b %Y, %H:%M UTC")
+    briefing_dt = date.fromisoformat(raw["date_str"])
+
+    hist = {}
+    if HIST_PATH.exists():
+        hist = json.loads(HIST_PATH.read_text(encoding="utf-8"))
 
     for user_id in USERS:
-        data = _build_for_user(user_id, raw, generated_at)
+        covered_urls = set(hist.get(user_id, {}).get("covered_urls", []))
+        data = _build_for_user(user_id, raw, generated_at,
+                               briefing_dt=briefing_dt, covered_urls=covered_urls)
         out = REPO / "docs" / user_id / "briefing_data.json"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(data, indent=2), encoding="utf-8")

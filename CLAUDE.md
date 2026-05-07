@@ -194,7 +194,8 @@ See `briefing_input.example.json` for a working schema reference. The structure 
   "articles": [ {"id":"art01", "title":"...", "url":"...", "source":"...",
                  "published_at":"2026-05-01", "summary":"...",
                  "hsbc_relevancy":7, "adam_rel":9, "surali_rel":5,
-                 "noise_level":3, "category":"AI & Technology"} ],
+                 "noise_level":3, "category":"AI & Technology",
+                 "is_update":false} ],
   "users": {
     "adam":   {"talking_points": [...]},
     "surali": {"talking_points": [...]}
@@ -203,9 +204,18 @@ See `briefing_input.example.json` for a working schema reference. The structure 
 }
 ```
 
-`build_briefing.py` validates required fields, applies the
-`hsbc_relevancy + {user}_rel ≥ 6` filter per user, sorts by combined score, caps at 3
-articles per category, and writes the full per-user `briefing_data.json` schema below.
+`build_briefing.py` validates required fields, then applies two gates before the score filter:
+
+**Gate 1 — Freshness**: articles with `published_at` older than 48 hours are dropped.
+**Gate 2 — Deduplication**: articles whose URL already appears in `context/history.json`
+`covered_urls` for that user are dropped.
+
+Both gates are bypassed when `"is_update": true` is set on the article. Use this **only**
+when re-introducing a previously covered story because a major new development warrants it.
+When `is_update: true`, the `summary` field **must** explain what changed since prior coverage —
+not repeat the original summary. After both gates, the score filter
+(`hsbc_relevancy + {user}_rel ≥ 6`) is applied, articles are sorted by combined score, capped at 3
+per category, and the full per-user `briefing_data.json` is written.
 
 ## briefing_data.json Schema (what the script writes — for reference only)
 
