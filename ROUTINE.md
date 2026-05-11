@@ -67,10 +67,13 @@ This is small (under ~10 KB) so there is no stream-timeout risk. See
 
 ```bash
 python3 - <<'PY'
-import json, pathlib
+import json, pathlib, datetime
+today = datetime.date.today()
+date_str = today.isoformat()                          # e.g. "2026-05-11"
+briefing_date = today.strftime("%A, %-d %B %Y")      # e.g. "Monday, 11 May 2026"
 data = {
-  "date_str": "2026-05-01",
-  "briefing_date": "Friday, 1 May 2026",
+  "date_str": date_str,
+  "briefing_date": briefing_date,
   "articles": [ ... ],
   "users": {
     "adam":   { "talking_points": [ ... ] },
@@ -81,6 +84,10 @@ data = {
 pathlib.Path("/tmp/briefing_input.json").write_text(json.dumps(data, indent=2))
 PY
 ```
+
+**Important**: always derive `date_str` and `briefing_date` from `datetime.date.today()` as shown
+above — never hardcode a date string from the LLM context. Long sessions that cross midnight will
+otherwise produce briefings dated yesterday.
 
 ### Step 7 — Build, render, update history
 
