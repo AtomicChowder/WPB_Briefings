@@ -3,54 +3,73 @@
   "user_name": "Surali Siriwardene",
   "user_display_name": "Surali",
   "user_title": "COO & Global Head of Change Execution, WPS",
-  "briefing_date": "Monday, 11 May 2026",
+  "briefing_date": "Sunday, 11 May 2026",
   "date_str": "2026-05-11",
-  "generated_at": "11 May 2026, 22:58 UTC",
-  "total_articles": 11,
+  "generated_at": "11 May 2026, 23:12 UTC",
+  "total_articles": 6,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC Hang Seng Integration: $0.9bn Synergy Target Demands a WPS Governance Framework Immediately",
-      "context_html": "The privatisation of Hang Seng Bank completed in January 2026 and the $0.5bn confirmed synergy target (plus $0.4bn potential upside) requires a multi-year cross-institutional programme that WPS must govern at the global change execution level \u2014 with the $0.3bn Asia cost synergy component by 2028 depending on operational model consolidation and technology rationalization. With <strong>Georges Elhedery, Group CEO of HSBC</strong>, having publicly committed to RoTE 17%+ through 2028, the Hang Seng integration programme is now a visible line item in that commitment; revenue synergies also require Hang Seng's commercial banking clients to access HSBC wealth and capital markets products \u2014 a cross-functional execution challenge that sits squarely in Surali's WPS governance remit. H2 2026 must show tangible integration milestones, and the WPS programme office should have a dedicated Hang Seng integration workstream in the current plan.",
+      "headline": "HSBC Indonesia Exit to OCBC: ~1,300-Staff, Q2 2027 Transition Is a WPS-Scope COO Programme",
+      "why_it_matters": "The S$6.6bn AUM and ~1,300-staff divestiture to OCBC requires WPS-level programme governance across regulatory, HR, client migration and technology tracks \u2014 an 18-month programme that must be stood up now, running in parallel to all existing H2 deliverables.",
+      "bullets": [
+        "OCBC NISP acquires HSBC Indonesia's IWPB including ~1,300 staff, 336,000 clients, S$4.3bn investment assets and S$2.3bn deposits; premium of up to S$480m over NAV \u2014 Indonesian regulatory approvals (BI / OJK) are on the critical path to Q2 2027 close.",
+        "HSBC's $1.8bn cost reinvestment guidance (flagged at Q1 results) is already calibrated assuming Indonesia proceeds complete \u2014 any programme delay directly impacts HSBC's medium-term cost-to-growth trajectory and tightens Surali's H2 delivery expectations.",
+        "WPS must establish an Indonesia Transition PMO immediately: four parallel tracks \u2014 regulatory, HR (staff mapping and offers), client comms (336,000 accounts), and system migration \u2014 all running to 2027 alongside normal BAU."
+      ],
       "source_links": [
-        [
-          "https://seekingalpha.com/article/4863210-hsbc-privatization-edge-unlocks-structural-wealth-velocity",
-          "Seeking Alpha: Privatization Wealth Velocity"
-        ],
-        [
-          "https://www.hsbc.com/investors/hsbc-proposal-to-privatise-hang-seng-bank",
-          "HSBC: Hang Seng Privatization"
-        ]
+        {
+          "url": "https://www.ocbc.com/group/media/release/2026/ocbc-acquires-hsbc-international-wealth-and-premier-banking-indonesia",
+          "title": "OCBC Official: HSBC Indonesia IWPB Acquisition"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-04/ocbc-to-acquire-hsbc-indonesia-s-retail-wealth-assets",
+          "title": "Bloomberg: OCBC Acquires HSBC Indonesia Assets"
+        },
+        {
+          "url": "https://www.minichart.com.sg/2026/05/11/ocbc-bank-2026-outlook-wealth-strategy-hsbc-indonesia-acquisition-and-financial-forecasts/",
+          "title": "Minichart: OCBC Wealth Strategy & Deal Analysis"
+        }
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC Q2 Raises ECL Guidance Alongside NII \u2014 H2 Demands Cost AND Resilience Simultaneously",
-      "context_html": "HSBC management raised banking NII guidance to ~$46bn for 2026 while simultaneously lifting ECL to ~45% of average gross loans \u2014 a dual signal that wealth revenue momentum is strong but credit risk is building, creating a COO mandate to deliver cost efficiency without compromising operational resilience. Wealth fee income grew 15% YoY in Q1 (investment distribution +21%, insurance +19%), validating the Asia strategy, but the ECL raise means WPS must build operational buffers for a more volatile H2 environment while still delivering the cost discipline required to protect RoTE 17%+. For Surali, the H2 cost-to-income trajectory depends on change delivery landing on time and on budget \u2014 and the dual guidance raise means there is no slack: cost must come down as credit risk rises.",
+      "headline": "OpenAI + PwC AI-Native Finance in Production \u2014 WPS Must Set Agent Governance Standard Before H2 Adoption Wave",
+      "why_it_matters": "With PwC deploying production AI agents across core CFO workflows and 44% of global finance teams adopting agentic AI in 2026, Surali must establish WPS's AI agent governance framework \u2014 risk tiers, human-in-the-loop rules, audit trails \u2014 before the next vendor wave arrives at HSBC.",
+      "bullets": [
+        "PwC and OpenAI's 'native finance function' is live in production with MCP-connected enterprise systems \u2014 governance is built-in: agents execute, humans supervise and improve; this is the standard Hong Kong and Singapore regulators will soon expect banks to evidence.",
+        "The ABA Banking Journal (May 2026) confirms 70% of banking executives already deploy agentic AI \u2014 this is no longer a competitive preview but current industry reality that WPS governance must match before H2 deployments expand.",
+        "Surali's H2 COO mandate should include an AI Agent Governance Framework covering: agent risk classification (high/medium/low), mandatory human review gates, explainability requirements for client-facing agents, and a vendor approval process \u2014 to be in place before further agentic deployments are approved."
+      ],
       "source_links": [
-        [
-          "https://www.hubbis.com/news/hsbc-international-wealth-arm-posts-usd39bn-net-inflows-as-asia-drives-growth-profit-edges-higher",
-          "Hubbis: HSBC $39bn Asia NNM Q1 2026"
-        ],
-        [
-          "https://www.caproasia.com/2026/05/07/332-billion-hsbc-reports-7-4-billion-net-profit-18-6-billion-revenue-for-2026-q1-wealth-balances-at-1-6-trillion-comprising-of-960-billion-invested-assets-private-bank-458-billion-retail-5/",
-          "Caproasia: HSBC Q1 2026 Full Breakdown"
-        ]
+        {
+          "url": "https://www.pymnts.com/artificial-intelligence-2/2026/openai-and-pwc-team-to-bring-agentic-ai-to-finance/",
+          "title": "PYMNTS: OpenAI and PwC AI-Native Finance"
+        },
+        {
+          "url": "https://bankingjournal.aba.com/2026/05/the-ai-agent-era-in-financial-services-is-just-beginning/",
+          "title": "ABA Banking Journal: AI-Agent Era Begins"
+        }
       ],
       "is_update": true
     },
     {
-      "headline": "Banking Agile Failures Are Systemic in 2026 \u2014 WPS Change Sequencing Must Address the Root Cause",
-      "context_html": "New analysis of banking agile operating model challenges identifies legacy governance structures, siloed funding, unclear accountability, and cultural resistance as the systemic blockers that prevent pilot programmes from reaching enterprise scale \u2014 precisely the structural challenges Surali must overcome across the global WPS change programme. A companion 2026 framework introduces standardized transformation sequencing language \u2014 shared phases, milestones, funding gates, and control evidence \u2014 that creates a governance vocabulary for aligning distributed change teams across markets without requiring a parallel 'innovation operating model' that never integrates. For WPS globally, adopting this sequencing standard would directly reduce the execution risk that currently causes large-bank transformation programmes to stall at the pilot-to-enterprise transition \u2014 the most expensive failure mode in enterprise change delivery.",
+      "headline": "DBS Names Finance-Focused CSO Kelvin Wong \u2014 ESG Governance Now a COO-Adjacent Function",
+      "why_it_matters": "DBS's appointment of a sustainability officer with 20+ years in energy financing signals ESG governance is becoming operationally integrated at senior leadership level \u2014 a prompt for WPS to assess whether HSBC's own sustainability delivery governance matches this new standard.",
+      "bullets": [
+        "<strong>Kelvin Wong, incoming Chief Sustainability Officer at DBS</strong> (effective 11 May 2026), brings structured finance, IEA Finance Advisory Board membership and energy transition credentials \u2014 marking a shift from ESG reporting to ESG capital deployment as the CSO mandate.",
+        "Singapore's MAS and Hong Kong's HKMA are both increasing climate risk disclosure and transition planning requirements in 2026 \u2014 banks whose ESG governance is siloed from operations will face increasing regulatory scrutiny.",
+        "HSBC's net-zero commitments, Hang Seng integration ESG synergies and the Indonesia IWPB divestiture all require WPS-level governance integration \u2014 Surali should assess whether WPS has equivalent operational ESG oversight to what DBS has now formalised."
+      ],
       "source_links": [
-        [
-          "https://www.dunnixer.com/insights/information/banking/us/bank-agile-operating-model-challenges",
-          "Dunnixer: Agile Model Challenges"
-        ],
-        [
-          "https://www.dunnixer.com/insights/information/banking/us/transformation-roadmap-sequencing-language-2026",
-          "Dunnixer: Sequencing Language 2026"
-        ]
+        {
+          "url": "https://www.dbs.com/newsroom/DBS_names_new_Chief_Sustainability_Officer_2026",
+          "title": "DBS: Kelvin Wong Appointed Chief Sustainability Officer"
+        },
+        {
+          "url": "https://fintechnews.sg/129818/green-fintech/dbs-chief-sustainability-officer/",
+          "title": "Fintech Singapore: DBS New CSO Appointment"
+        }
       ],
       "is_update": false
     }
@@ -58,47 +77,64 @@
   "articles_by_category": {
     "HSBC News": [
       {
-        "id": "art02",
-        "title": "HSBC Hang Seng Privatization Unlocks $0.9bn Wealth Synergy Target for 2028",
-        "url": "https://seekingalpha.com/article/4863210-hsbc-privatization-edge-unlocks-structural-wealth-velocity",
-        "source": "Seeking Alpha",
-        "published_at": "2026-05-10",
-        "summary": "Following the January 2026 completion of Hang Seng Bank's privatization, analysts show the deal unlocks $1.7 trillion in deposits for high-velocity wealth redeployment, with $0.5bn in confirmed synergies and $0.4bn further upside targeted by 2028 through technology consolidation, RM workflow alignment, and product integration across both institutions.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "surali_rel": 9,
-        "noise_level": 2,
+        "id": "art01",
+        "title": "OCBC Acquires HSBC Indonesia IWPB \u2014 S$6.6bn AUM, ~1,300 Staff in $480m Deal",
+        "url": "https://www.minichart.com.sg/2026/05/11/ocbc-bank-2026-outlook-wealth-strategy-hsbc-indonesia-acquisition-and-financial-forecasts/",
+        "source": "Minichart / OCBC",
+        "published_at": "2026-05-11",
+        "summary": "OCBC's Indonesian subsidiary PT Bank OCBC NISP agreed to acquire HSBC Indonesia's International Wealth and Premier Banking operations for up to S$480m premium over NAV, adding 336,000 clients, S$6.6bn AUM and ~1,300 staff; deal expected to close Q2 2027 pending BI and OJK approvals.",
+        "hsbc_relevancy": 10,
+        "adam_rel": 9,
+        "surali_rel": 10,
+        "noise_level": 4,
         "category": "HSBC News",
         "is_update": false,
-        "user_relevance": 9
+        "user_relevance": 10
       },
       {
-        "id": "art03",
-        "title": "HSBC Asia Net New Money $34bn in Q1 2026 \u2014 Wealth Balance Hits $1.068 Trillion",
-        "url": "https://www.hubbis.com/news/hsbc-international-wealth-arm-posts-usd39bn-net-inflows-as-asia-drives-growth-profit-edges-higher",
+        "id": "art02",
+        "title": "HSBC + Humansa 'Longevity as an Asset' MoU \u2014 Singapore Premier Launch May 11",
+        "url": "https://www.hubbis.com/news/hsbc-launches-singapore-s-first-bank-led-integrated-health-wellness-and-longevity-offering",
         "source": "Hubbis",
-        "published_at": "2026-05-08",
-        "summary": "HSBC's IWPB attracted $39bn net new money in Q1 2026, with $34bn from Asia, taking Asia wealth balances to $1.068 trillion (up 14% YoY); wealth fee income rose 15% YoY to $2.7bn, with investment distribution up 21% and insurance up 19%, validating the bank's Asia wealth strategy execution.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art01",
-        "title": "HSBC Private Bank Q2 2026 Outlook: AI Infrastructure and Cyclical Broadening",
-        "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/q2-2026-investment-outlook-changing-narratives-continued-opportunity/",
-        "source": "HSBC Private Bank",
-        "published_at": "2026-05-10",
-        "summary": "HSBC Private Bank releases its Q2 2026 outlook 'Changing Narratives, Continued Opportunity', maintaining mild risk-on positioning with AI semiconductors and cyclical broadening as top themes, and recommending alternatives for UHNW clients; ECL guidance raised to ~45% of average gross loans signals a more cautious macro view.",
+        "published_at": "2026-05-11",
+        "summary": "HSBC Group and Humansa signed an MoU on 11 May 2026 to create integrated longevity and wealth services across Asia, launching Singapore's first bank-led health, wellness and longevity Premier proposition via IHH Healthcare and Raffles Medical partnerships.",
         "hsbc_relevancy": 8,
         "adam_rel": 8,
         "surali_rel": 7,
         "noise_level": 2,
         "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 7
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art03",
+        "title": "OpenAI + PwC Build AI-Native Finance Function \u2014 Agents Across Full CFO Stack",
+        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/openai-and-pwc-team-to-bring-agentic-ai-to-finance/",
+        "source": "PYMNTS / PwC",
+        "published_at": "2026-05-05",
+        "summary": "PwC and OpenAI launched a first-of-its-kind AI-native finance function on 5 May, deploying production agents across forecasting, treasury, procurement, tax and accounting close \u2014 including a live procurement agent inside OpenAI's own finance organisation \u2014 setting a new enterprise benchmark.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 9
+      },
+      {
+        "id": "art04",
+        "title": "ABA Banking Journal: The AI-Agent Era in Financial Services Has Begun",
+        "url": "https://bankingjournal.aba.com/2026/05/the-ai-agent-era-in-financial-services-is-just-beginning/",
+        "source": "ABA Banking Journal",
+        "published_at": "2026-05-10",
+        "summary": "70% of banking executives already report agentic AI deployment and 44% of finance teams will use AI agents in 2026 \u2014 a 600%+ YoY jump \u2014 marking 2026 as the inflection point from pilot to enterprise-wide production across global financial institutions.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 7
       }
@@ -106,13 +142,13 @@
     "Competitor Intelligence": [
       {
         "id": "art05",
-        "title": "Morgan Stanley Adds DBS to Asia ex-Japan Focus List, Removes UOB",
-        "url": "https://www.investing.com/news/stock-market-news/dbs-group-holdings-added-to-morgan-stanley-asia-exjapan-focus-list-93CH-4655990",
-        "source": "Investing.com",
-        "published_at": "2026-05-10",
-        "summary": "Morgan Stanley's EM equity strategy team upgraded DBS Group to its Asia ex-Japan focus list and removed UOB, citing DBS's strong and developing wealth franchise, robust deposit base, and capacity to return surplus capital via ordinary dividends and buybacks as the key differentiators.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
+        "title": "DBS Appoints Kelvin Wong as Chief Sustainability Officer \u2014 Effective 11 May",
+        "url": "https://www.dbs.com/newsroom/DBS_names_new_Chief_Sustainability_Officer_2026",
+        "source": "DBS",
+        "published_at": "2026-05-11",
+        "summary": "DBS appointed Kelvin Wong as Chief Sustainability Officer effective 11 May 2026; Wong brings 20+ years in energy, infrastructure and structured finance and sits on the IEA Finance Advisory Board, signalling DBS's shift to operationally-integrated ESG governance.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
         "surali_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
@@ -121,116 +157,18 @@
       },
       {
         "id": "art06",
-        "title": "Morgan Stanley Asia: Tax Structuring and Geopolitics Fuel Firmwide Wealth Push",
-        "url": "https://asianprivatebanker.com/private-wealth/private-banking/tax-and-geopolitics-thats-driving-morgan-stanleys-firmwide-wealth-planning-push/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-05-10",
-        "summary": "Morgan Stanley Private Wealth Management Asia is rolling out a cross-divisional wealth planning model targeting its investment banking client base on tax structuring and geopolitical portfolio diversification, positioning 140 relationship managers as an integrated wealth-and-institutional proposition.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "surali_rel": 5,
-        "noise_level": 2,
+        "title": "UBS Hires Jacqueline Lim from JP Morgan as Singapore Client Advisor",
+        "url": "https://www.caproasia.com/2026/05/11/ubs-wealth-management-hires-jp-morgan-private-bank-ex-ubs-jacqueline-lim-as-client-advisor-17-years-private-banking-financial-industry-experience-at-jp-morgan-ubs-royal-bank-of-scotland-pwc/",
+        "source": "Caproasia",
+        "published_at": "2026-05-11",
+        "summary": "UBS Wealth Management hired Jacqueline Lim from JP Morgan Private Bank as Client Advisor in Singapore; Lim brings 17 years across JP Morgan, UBS, RBS and PwC \u2014 continuing the competitive talent cycle among Singapore's top-tier wealth managers.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "surali_rel": 4,
+        "noise_level": 1,
         "category": "Competitor Intelligence",
         "is_update": false,
-        "user_relevance": 5
-      }
-    ],
-    "AI & Technology": [
-      {
-        "id": "art08",
-        "title": "Davos 2026 Banking Leaders Signal Disciplined AI Era \u2014 Governance Over Experimentation",
-        "url": "https://www.pymnts.com/news/banking/2026/davos-signals-a-disciplined-era-for-ai-in-banking-and-fintech",
-        "source": "PYMNTS",
-        "published_at": "2026-05-10",
-        "summary": "Global banking CEOs at Davos 2026 called 2026 the year AI shifts from experimentation to governed enterprise deployment, emphasising modular architectures, outcome measurement against live business metrics, and alignment with regulatory risk controls as the preconditions for scaling AI across banking operations.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "surali_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art07",
-        "title": "LLMs Enter Production in Banking: Knowledge Agents and Document Automation at Scale",
-        "url": "https://www.emlearning.com/insights/the-age-of-ai/how-large-language-models-are-transforming-the-future-of-banking",
-        "source": "Euromoney Learning",
-        "published_at": "2026-05-10",
-        "summary": "Large language models have crossed from pilot to production in banking in 2026, with scaled use cases in firm-specific knowledge agents, intelligent contract and filing processing, and risk and compliance flagging; JPMorgan's AI budget approaches $20bn, and the banking AI market is forecast at $315bn by 2033.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 6
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "art09",
-        "title": "Private Wealth Asia Singapore Forum May 14 \u2014 Private Assets, Family Offices, ESG on Agenda",
-        "url": "https://www.marketsgroup.org/forums/private-wealth-asia-singapore-forum",
-        "source": "Markets Group",
-        "published_at": "2026-05-10",
-        "summary": "The 7th Annual Private Wealth Asia Forum 2026 convenes in Singapore on May 14 with DBS Private Bank, Bank of Singapore, and GIC, covering private assets in a higher-for-longer rate environment, next-generation family office governance and ESG integration, and equities/ETFs as Singapore's growth engine.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 6,
-        "surali_rel": 5,
-        "noise_level": 1,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 5
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "art10",
-        "title": "Eight Hong Kong Regulatory Developments for 2026: Infrastructure Law, SFC Enforcement Focus",
-        "url": "https://www.simmons-simmons.com/en/publications/cmk26uzl405oevlz0v7q9xpkd/eight-hong-kong-regulatory-developments-for-2026",
-        "source": "Simmons & Simmons",
-        "published_at": "2026-05-10",
-        "summary": "Simmons & Simmons identifies eight critical HK regulatory shifts for 2026: the Protection of Critical Infrastructure Ordinance (effective Jan 1, mandatory banking security units and biennial drills), Sustainable Finance Taxonomy Phase 2A launch, SFC enforcement targeting internal control failures, and HKEX's 300+ IPO pipeline with heightened manipulation scrutiny.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "Operations & Change": [
-      {
-        "id": "art11",
-        "title": "Banking Agile Operating Model Challenges: Legacy Governance Is the Enterprise Scale Barrier",
-        "url": "https://www.dunnixer.com/insights/information/banking/us/bank-agile-operating-model-challenges",
-        "source": "Dunnixer",
-        "published_at": "2026-05-10",
-        "summary": "Analysis of 2026 banking agile transformations reveals legacy governance structures, siloed funding, regulatory constraints, unclear accountability, and cultural resistance as systemic blockers; without aligned funding models, risk integration, and sustained leadership support, agile programmes consistently fail to progress from pilot to enterprise scale.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 7,
-        "surali_rel": 8,
-        "noise_level": 1,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art12",
-        "title": "2026 Transformation Roadmap Sequencing Language: A Shared Governance Framework for Bank Change",
-        "url": "https://www.dunnixer.com/insights/information/banking/us/transformation-roadmap-sequencing-language-2026",
-        "source": "Dunnixer",
-        "published_at": "2026-05-10",
-        "summary": "A new 2026 standardized sequencing language for banking transformation roadmaps \u2014 covering phases, milestones, dependencies, and funding gates \u2014 provides a shared governance vocabulary across change teams, improving prioritization, reducing execution risk, and connecting strategy to measurable delivery outcomes at enterprise scale.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 1,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 4
       }
     ]
   },
@@ -238,11 +176,26 @@
     "articles": [
       {
         "id": "art01",
-        "title": "HSBC Private Bank Q2 2026 Outlook: AI Infrastructure and Cyclical Broadening",
-        "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/q2-2026-investment-outlook-changing-narratives-continued-opportunity/",
-        "source": "HSBC Private Bank",
-        "published_at": "2026-05-10",
-        "summary": "HSBC Private Bank releases its Q2 2026 outlook 'Changing Narratives, Continued Opportunity', maintaining mild risk-on positioning with AI semiconductors and cyclical broadening as top themes, and recommending alternatives for UHNW clients; ECL guidance raised to ~45% of average gross loans signals a more cautious macro view.",
+        "title": "OCBC Acquires HSBC Indonesia IWPB \u2014 S$6.6bn AUM, ~1,300 Staff in $480m Deal",
+        "url": "https://www.minichart.com.sg/2026/05/11/ocbc-bank-2026-outlook-wealth-strategy-hsbc-indonesia-acquisition-and-financial-forecasts/",
+        "source": "Minichart / OCBC",
+        "published_at": "2026-05-11",
+        "summary": "OCBC's Indonesian subsidiary PT Bank OCBC NISP agreed to acquire HSBC Indonesia's International Wealth and Premier Banking operations for up to S$480m premium over NAV, adding 336,000 clients, S$6.6bn AUM and ~1,300 staff; deal expected to close Q2 2027 pending BI and OJK approvals.",
+        "hsbc_relevancy": 10,
+        "adam_rel": 9,
+        "surali_rel": 10,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 10
+      },
+      {
+        "id": "art02",
+        "title": "HSBC + Humansa 'Longevity as an Asset' MoU \u2014 Singapore Premier Launch May 11",
+        "url": "https://www.hubbis.com/news/hsbc-launches-singapore-s-first-bank-led-integrated-health-wellness-and-longevity-offering",
+        "source": "Hubbis",
+        "published_at": "2026-05-11",
+        "summary": "HSBC Group and Humansa signed an MoU on 11 May 2026 to create integrated longevity and wealth services across Asia, launching Singapore's first bank-led health, wellness and longevity Premier proposition via IHH Healthcare and Raffles Medical partnerships.",
         "hsbc_relevancy": 8,
         "adam_rel": 8,
         "surali_rel": 7,
@@ -252,44 +205,44 @@
         "user_relevance": 7
       },
       {
-        "id": "art02",
-        "title": "HSBC Hang Seng Privatization Unlocks $0.9bn Wealth Synergy Target for 2028",
-        "url": "https://seekingalpha.com/article/4863210-hsbc-privatization-edge-unlocks-structural-wealth-velocity",
-        "source": "Seeking Alpha",
-        "published_at": "2026-05-10",
-        "summary": "Following the January 2026 completion of Hang Seng Bank's privatization, analysts show the deal unlocks $1.7 trillion in deposits for high-velocity wealth redeployment, with $0.5bn in confirmed synergies and $0.4bn further upside targeted by 2028 through technology consolidation, RM workflow alignment, and product integration across both institutions.",
-        "hsbc_relevancy": 9,
+        "id": "art03",
+        "title": "OpenAI + PwC Build AI-Native Finance Function \u2014 Agents Across Full CFO Stack",
+        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/openai-and-pwc-team-to-bring-agentic-ai-to-finance/",
+        "source": "PYMNTS / PwC",
+        "published_at": "2026-05-05",
+        "summary": "PwC and OpenAI launched a first-of-its-kind AI-native finance function on 5 May, deploying production agents across forecasting, treasury, procurement, tax and accounting close \u2014 including a live procurement agent inside OpenAI's own finance organisation \u2014 setting a new enterprise benchmark.",
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
         "surali_rel": 9,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
         "user_relevance": 9
       },
       {
-        "id": "art03",
-        "title": "HSBC Asia Net New Money $34bn in Q1 2026 \u2014 Wealth Balance Hits $1.068 Trillion",
-        "url": "https://www.hubbis.com/news/hsbc-international-wealth-arm-posts-usd39bn-net-inflows-as-asia-drives-growth-profit-edges-higher",
-        "source": "Hubbis",
-        "published_at": "2026-05-08",
-        "summary": "HSBC's IWPB attracted $39bn net new money in Q1 2026, with $34bn from Asia, taking Asia wealth balances to $1.068 trillion (up 14% YoY); wealth fee income rose 15% YoY to $2.7bn, with investment distribution up 21% and insurance up 19%, validating the bank's Asia wealth strategy execution.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 8
+        "id": "art04",
+        "title": "ABA Banking Journal: The AI-Agent Era in Financial Services Has Begun",
+        "url": "https://bankingjournal.aba.com/2026/05/the-ai-agent-era-in-financial-services-is-just-beginning/",
+        "source": "ABA Banking Journal",
+        "published_at": "2026-05-10",
+        "summary": "70% of banking executives already report agentic AI deployment and 44% of finance teams will use AI agents in 2026 \u2014 a 600%+ YoY jump \u2014 marking 2026 as the inflection point from pilot to enterprise-wide production across global financial institutions.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 7
       },
       {
         "id": "art05",
-        "title": "Morgan Stanley Adds DBS to Asia ex-Japan Focus List, Removes UOB",
-        "url": "https://www.investing.com/news/stock-market-news/dbs-group-holdings-added-to-morgan-stanley-asia-exjapan-focus-list-93CH-4655990",
-        "source": "Investing.com",
-        "published_at": "2026-05-10",
-        "summary": "Morgan Stanley's EM equity strategy team upgraded DBS Group to its Asia ex-Japan focus list and removed UOB, citing DBS's strong and developing wealth franchise, robust deposit base, and capacity to return surplus capital via ordinary dividends and buybacks as the key differentiators.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
+        "title": "DBS Appoints Kelvin Wong as Chief Sustainability Officer \u2014 Effective 11 May",
+        "url": "https://www.dbs.com/newsroom/DBS_names_new_Chief_Sustainability_Officer_2026",
+        "source": "DBS",
+        "published_at": "2026-05-11",
+        "summary": "DBS appointed Kelvin Wong as Chief Sustainability Officer effective 11 May 2026; Wong brings 20+ years in energy, infrastructure and structured finance and sits on the IEA Finance Advisory Board, signalling DBS's shift to operationally-integrated ESG governance.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
         "surali_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
@@ -298,117 +251,24 @@
       },
       {
         "id": "art06",
-        "title": "Morgan Stanley Asia: Tax Structuring and Geopolitics Fuel Firmwide Wealth Push",
-        "url": "https://asianprivatebanker.com/private-wealth/private-banking/tax-and-geopolitics-thats-driving-morgan-stanleys-firmwide-wealth-planning-push/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-05-10",
-        "summary": "Morgan Stanley Private Wealth Management Asia is rolling out a cross-divisional wealth planning model targeting its investment banking client base on tax structuring and geopolitical portfolio diversification, positioning 140 relationship managers as an integrated wealth-and-institutional proposition.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "surali_rel": 5,
-        "noise_level": 2,
+        "title": "UBS Hires Jacqueline Lim from JP Morgan as Singapore Client Advisor",
+        "url": "https://www.caproasia.com/2026/05/11/ubs-wealth-management-hires-jp-morgan-private-bank-ex-ubs-jacqueline-lim-as-client-advisor-17-years-private-banking-financial-industry-experience-at-jp-morgan-ubs-royal-bank-of-scotland-pwc/",
+        "source": "Caproasia",
+        "published_at": "2026-05-11",
+        "summary": "UBS Wealth Management hired Jacqueline Lim from JP Morgan Private Bank as Client Advisor in Singapore; Lim brings 17 years across JP Morgan, UBS, RBS and PwC \u2014 continuing the competitive talent cycle among Singapore's top-tier wealth managers.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "surali_rel": 4,
+        "noise_level": 1,
         "category": "Competitor Intelligence",
         "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art07",
-        "title": "LLMs Enter Production in Banking: Knowledge Agents and Document Automation at Scale",
-        "url": "https://www.emlearning.com/insights/the-age-of-ai/how-large-language-models-are-transforming-the-future-of-banking",
-        "source": "Euromoney Learning",
-        "published_at": "2026-05-10",
-        "summary": "Large language models have crossed from pilot to production in banking in 2026, with scaled use cases in firm-specific knowledge agents, intelligent contract and filing processing, and risk and compliance flagging; JPMorgan's AI budget approaches $20bn, and the banking AI market is forecast at $315bn by 2033.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art08",
-        "title": "Davos 2026 Banking Leaders Signal Disciplined AI Era \u2014 Governance Over Experimentation",
-        "url": "https://www.pymnts.com/news/banking/2026/davos-signals-a-disciplined-era-for-ai-in-banking-and-fintech",
-        "source": "PYMNTS",
-        "published_at": "2026-05-10",
-        "summary": "Global banking CEOs at Davos 2026 called 2026 the year AI shifts from experimentation to governed enterprise deployment, emphasising modular architectures, outcome measurement against live business metrics, and alignment with regulatory risk controls as the preconditions for scaling AI across banking operations.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "surali_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art09",
-        "title": "Private Wealth Asia Singapore Forum May 14 \u2014 Private Assets, Family Offices, ESG on Agenda",
-        "url": "https://www.marketsgroup.org/forums/private-wealth-asia-singapore-forum",
-        "source": "Markets Group",
-        "published_at": "2026-05-10",
-        "summary": "The 7th Annual Private Wealth Asia Forum 2026 convenes in Singapore on May 14 with DBS Private Bank, Bank of Singapore, and GIC, covering private assets in a higher-for-longer rate environment, next-generation family office governance and ESG integration, and equities/ETFs as Singapore's growth engine.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 6,
-        "surali_rel": 5,
-        "noise_level": 1,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art10",
-        "title": "Eight Hong Kong Regulatory Developments for 2026: Infrastructure Law, SFC Enforcement Focus",
-        "url": "https://www.simmons-simmons.com/en/publications/cmk26uzl405oevlz0v7q9xpkd/eight-hong-kong-regulatory-developments-for-2026",
-        "source": "Simmons & Simmons",
-        "published_at": "2026-05-10",
-        "summary": "Simmons & Simmons identifies eight critical HK regulatory shifts for 2026: the Protection of Critical Infrastructure Ordinance (effective Jan 1, mandatory banking security units and biennial drills), Sustainable Finance Taxonomy Phase 2A launch, SFC enforcement targeting internal control failures, and HKEX's 300+ IPO pipeline with heightened manipulation scrutiny.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art11",
-        "title": "Banking Agile Operating Model Challenges: Legacy Governance Is the Enterprise Scale Barrier",
-        "url": "https://www.dunnixer.com/insights/information/banking/us/bank-agile-operating-model-challenges",
-        "source": "Dunnixer",
-        "published_at": "2026-05-10",
-        "summary": "Analysis of 2026 banking agile transformations reveals legacy governance structures, siloed funding, regulatory constraints, unclear accountability, and cultural resistance as systemic blockers; without aligned funding models, risk integration, and sustained leadership support, agile programmes consistently fail to progress from pilot to enterprise scale.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 7,
-        "surali_rel": 8,
-        "noise_level": 1,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art12",
-        "title": "2026 Transformation Roadmap Sequencing Language: A Shared Governance Framework for Bank Change",
-        "url": "https://www.dunnixer.com/insights/information/banking/us/transformation-roadmap-sequencing-language-2026",
-        "source": "Dunnixer",
-        "published_at": "2026-05-10",
-        "summary": "A new 2026 standardized sequencing language for banking transformation roadmaps \u2014 covering phases, milestones, dependencies, and funding gates \u2014 provides a shared governance vocabulary across change teams, improving prioritization, reducing execution risk, and connecting strategy to measurable delivery outcomes at enterprise scale.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 1,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 4
       }
     ],
     "categories": {
       "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2",
       "AI & Technology": "#6366f1",
-      "Private Banking & Wealth": "#059669",
-      "Regulatory & Markets": "#d97706",
-      "Operations & Change": "#7c3aed"
+      "Competitor Intelligence": "#0891b2"
     }
   }
 }
