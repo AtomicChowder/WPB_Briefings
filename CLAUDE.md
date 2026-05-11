@@ -20,10 +20,20 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
    "Surali Siriwardene") are hardcoded in the script and cannot be overridden.
 4. **Spelling: `Surali` (not Sirali)** — slug `surali`, history key `surali`,
    per-article scores `adam_rel` and `surali_rel`. Notion `Recipient` is `Surali Siriwardene`.
-5. **Run all 10 search queries in parallel** in a single batch — never sequentially.
+5. **Run all 12 search queries in parallel** in a single batch — never sequentially.
    Stream-idle timeouts are the second-most-common failure after sync skipping.
 6. **Notion DB**: *WPB Weekly Intelligence Briefings* (data source
    `3336f349-23b7-8053-9230-000b278a9f1a`).
+7. **Always derive `date_str` and `briefing_date` dynamically** in the Step 6 Python heredoc
+   using `datetime.date.today()` — never hardcode a date string from the LLM's context.
+   Sessions that run past midnight will otherwise produce briefings with yesterday's date.
+   Correct pattern:
+   ```python
+   import datetime
+   today = datetime.date.today()
+   date_str = today.isoformat()
+   briefing_date = today.strftime("%A, %-d %B %Y")
+   ```
 
 ---
 
