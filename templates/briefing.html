@@ -25,8 +25,8 @@
     .site-header { background: var(--navy); border-top: 4px solid var(--red); padding: 18px 32px; }
     .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
     .header-brand { display: flex; align-items: center; gap: 14px; }
-    .hsbc-mark { width: 40px; height: 40px; border-radius: 6px; background: var(--red); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .hsbc-mark svg { width: 26px; height: 26px; fill: white; }
+    .hsbc-mark { width: 52px; height: 35px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .hsbc-mark svg { width: 52px; height: 35px; }
     .brand-text h1 { font-size: 17px; font-weight: 700; color: #fff; }
     .brand-text p { font-size: 11px; color: #8a93b2; margin-top: 2px; }
     .header-meta { text-align: right; }
@@ -129,7 +129,11 @@
   <div class="header-inner">
     <div class="header-brand">
       <div class="hsbc-mark">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><polygon points="16,2 30,16 16,30 2,16"/></svg>
+        <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,20 15,0 45,0 60,20 45,40 15,40" fill="#DB0011"/>
+          <polygon points="15,0 15,40 30,20" fill="white"/>
+          <polygon points="45,0 45,40 30,20" fill="white"/>
+        </svg>
       </div>
       <div class="brand-text">
         <h1>WPB Market Intelligence</h1>

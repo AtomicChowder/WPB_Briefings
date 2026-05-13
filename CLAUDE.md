@@ -51,6 +51,28 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
    tool immediately before passing its content to `mcp__github__push_files` — do not rely on
    in-context copies which may be stale. After both calls succeed, the briefing is live.
 
+9. **HSBC logo in `templates/briefing.html` — use the correct hexagon SVG.**
+   The header logo must be the HSBC hexagonal mark: a horizontal hexagon (red body) with two
+   white inward-pointing triangular cutouts. The correct SVG and CSS are:
+
+   ```css
+   .hsbc-mark { width: 52px; height: 35px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+   .hsbc-mark svg { width: 52px; height: 35px; }
+   ```
+
+   ```html
+   <div class="hsbc-mark">
+     <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+       <polygon points="0,20 15,0 45,0 60,20 45,40 15,40" fill="#DB0011"/>
+       <polygon points="15,0 15,40 30,20" fill="white"/>
+       <polygon points="45,0 45,40 30,20" fill="white"/>
+     </svg>
+   </div>
+   ```
+
+   Do **not** use a rotated square (`<polygon points="16,2 30,16 16,30 2,16"/>`), which
+   renders as a diamond. The `.hsbc-mark` div must have no background-color.
+
 ---
 
 ## Users
