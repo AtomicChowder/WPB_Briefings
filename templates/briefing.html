@@ -121,6 +121,14 @@
     /* Footer */
     .site-footer { background: var(--navy-dk); border-top: 1px solid #1e2640; padding: 16px 32px; text-align: center; font-size: 11px; color: #475569; }
     .site-footer span { color: #64748b; }
+
+    /* Briefing navigation */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .nav-btn { font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px; background: rgba(255,255,255,0.07); color: #c9d0e8; border: 1px solid rgba(255,255,255,0.1); white-space: nowrap; }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--red); color: white; border-color: var(--red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
   </style>
 </head>
 <body>
@@ -147,6 +155,18 @@
     </div>
   </div>
 </header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    {% if prev_url %}
+    <a class="nav-btn nav-prev" href="{{ prev_url }}">‹ {{ prev_label }}</a>
+    {% else %}
+    <span class="nav-btn nav-prev nav-disabled">‹ No earlier briefings</span>
+    {% endif %}
+    <span class="nav-current">{{ briefing_date }}</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
 
 {% if breaking_news %}
 <div class="breaking-bar">
