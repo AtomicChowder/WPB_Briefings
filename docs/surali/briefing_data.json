@@ -5,172 +5,230 @@
   "user_title": "COO & Global Head of Change Execution, WPS",
   "briefing_date": "Monday, 18 May 2026",
   "date_str": "2026-05-18",
-  "generated_at": "18 May 2026, 03:25 UTC",
-  "total_articles": 6,
+  "generated_at": "18 May 2026, 23:13 UTC",
+  "total_articles": 10,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC Q1 $9.4bn Profit, 17.3% RoTE \u2014 WPS Must Scale Operating Backbone for H2",
-      "why_it_matters": "HSBC's strong Q1 results \u2014 driven by 49% insurance income growth and 21% investment distribution rise \u2014 create immediate WPS capacity requirements that must be operational before H2 peak season to sustain the momentum.",
+      "headline": "G-SIB AI Report: Platform Architecture Is the Enterprise Standard \u2014 WPS Must Define HSBC's",
+      "why_it_matters": "Analysis of AI deployment across all 29 Global Systemically Important Banks confirms platform architecture \u2014 not point solutions \u2014 is the enterprise AI operating standard, and WPS must define HSBC's architecture proactively ahead of the next regulatory examination cycle.",
       "bullets": [
-        "HSBC posted $9.4bn Q1 pre-tax profit (RoTE 17.3%) with revenue +4%; wealth fees rose 20% YoY, insurance income +49%, and investment distribution revenues +21% \u2014 all scaling processing, distribution and compliance demands on WPS operational infrastructure.",
-        "The group attracted $39bn NNIA in Q1 with $34bn from Asia \u2014 WPS must validate that capacity headroom exists for H2 seasonal peaks and the Wealth Powerhouse integration, which consolidates previously parallel governance tracks into a single operating model.",
-        "Operating expenses grew only 5% against revenue growth \u2014 the cost efficiency ratio Surali's business management mandate must protect as wealth-driven volumes accelerate through the second half."
+        "The Asian Banker's analysis of AI in all 29 G-SIBs documents the definitive structural shift to enterprise-wide platform architectures spanning operations, risk management, and customer value \u2014 HSBC faces identical transformation pressures as a top-tier G-SIB",
+        "Banks with platform-based AI deployments demonstrate 2.3x ROI in 13 months and 30-40% cost reductions at scale \u2014 benchmarks WPS can now embed directly into HSBC's AI investment governance and board-level reporting",
+        "70% of banking executives already report agentic AI deployment (MIT/EY survey); WPS must ensure HSBC's governance framework is ahead of regulatory expectations given heightened APAC supervisor focus on AI operational resilience"
       ],
       "source_links": [
         {
-          "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-holdings-plc-1q-2026-earnings-release",
-          "title": "HSBC Holdings: Q1 2026 Earnings Release"
+          "url": "https://www.theasianbanker.com/updates-and-articles/strategic-ai-deployment-in-g-sibs-transforms-operations-risk-management-and-customer-value",
+          "title": "Asian Banker: AI in G-SIBs Analysis"
         },
         {
-          "url": "https://www.wealthbriefing.com/html/article.php/reported-international-wealth,-premier-banking-revenues-rise-at-hsbc-in-q1-2026",
-          "title": "WealthBriefing: HSBC IWPB Q1 Revenue Detail"
+          "url": "https://thefinancialbrand.com/news/artificial-intelligence-banking/agentic-ai-inevitable-banks-need-fulfill-ambitions-197193",
+          "title": "Agentic AI Is Inevitable \u2014 Financial Brand"
         }
       ],
-      "is_update": true
+      "is_update": false
     },
     {
-      "headline": "APAC Regulators Move to Active Enforcement \u2014 WPS AI and IT Governance Must Be Audit-Ready",
-      "why_it_matters": "Deloitte's Q1 update and Bloomberg's outlook both confirm regulators across Singapore, Hong Kong, Japan, and Indonesia are moving from publishing frameworks to active supervision \u2014 the governance gap Surali must close before H2 examination cycles.",
+      "headline": "FIS + Anthropic AML Agent Changes the Compliance Operating Model \u2014 WPS Must Evaluate Now",
+      "why_it_matters": "The FIS/Anthropic Financial Crimes AI Agent is the most concrete compliance AI production architecture available in the market, directly relevant to WPS's global oversight of HSBC's financial crime change programmes and H2 2026 compliance transformation roadmap.",
       "bullets": [
-        "Deloitte's Q1 2026 APAC update confirms governance and accountability as the #1 regulatory theme; Japan, Indonesia, and Singapore all issued new bank IT governance requirements in Q1 \u2014 WPS must map these to HSBC's existing control frameworks and identify gaps.",
-        "MAS is consulting on comprehensive AI Risk Management Guidelines covering explainability, lifecycle controls, and oversight of third-party AI service providers \u2014 WPS must engage in the consultation process and build audit-ready documentation before guidelines are finalised.",
-        "Bloomberg's APAC regulatory outlook explicitly confirms supervisory agendas are moving from 'framework setting' to 'new guidance, implementation, and enforcement' \u2014 WPS governance must be ahead of the cycle, not reactive."
+        "FIS and Anthropic's Financial Crimes AI Agent automatically assembles AML evidence across core banking systems, evaluates against known typologies, and generates auditable SAR narratives \u2014 compressing investigation time from hours to minutes",
+        "The architecture is built within FIS-controlled infrastructure with full decision auditability, directly addressing explainability requirements APAC regulators (MAS, HKMA) have raised in active AI governance consultations",
+        "BMO and Amalgamated Bank are in live development with general availability H2 2026 \u2014 WPS should assess HSBC's deployment pathway to position the bank as a first-cohort G-SIB adopter"
       ],
       "source_links": [
         {
-          "url": "https://www.deloitte.com/southeast-asia/en/Industries/financial-services/perspectives/asia-pacific-financial-services-regulatory-update-q1-2026.html",
-          "title": "Deloitte: APAC Q1 2026 Regulatory Update"
+          "url": "https://fintechmagazine.com/news/fis-and-anthropic-pair-for-ai-in-banking-and-aml",
+          "title": "FIS + Anthropic: Financial Crimes AI Agent"
         },
         {
-          "url": "https://www.bloomberg.com/professional/insights/regulation/apac-regulatory-outlook-2026/",
-          "title": "Bloomberg: APAC Regulatory Outlook 2026"
+          "url": "https://bankingjournal.aba.com/2026/05/the-ai-agent-era-in-financial-services-is-just-beginning/",
+          "title": "ABA: AI-Agent Era Begins in Finance"
         }
       ],
-      "is_update": true
+      "is_update": false
     },
     {
-      "headline": "Lloyds \u00a3100M AI Target Sets the Benchmark \u2014 WPS Must Define HSBC's Equivalent ROI Framework",
-      "why_it_matters": "Lloyds' explicit and measurable AI value targets give Surali a directly comparable peer benchmark for WPS governance discussions about HSBC's enterprise AI programme scale, return expectations, and accountability ownership.",
+      "headline": "Agile ROI Benchmarks Quantified at 2.3x in 13 Months \u2014 WPS Has the Governance Framework",
+      "why_it_matters": "With WPS governing global change execution programmes, newly published agile transformation ROI benchmarks for banking \u2014 2.3x returns in 13 months and 30\u201340% cost reductions at scale \u2014 give Surali's teams the quantified evidence base to justify and accelerate HSBC's transformation investment at board level.",
       "bullets": [
-        "<strong>Lloyds Banking Group</strong> delivered \u00a350m in measured AI value in 2025 and targets \u00a3100m in 2026 via its Envoy platform \u2014 deployed across 21m accounts, spanning customer, operations, risk, and engineering. This is a governance model WPS can reference directly.",
-        "OCBC's Q1 2026 data (wealth income +50% YoY, AUM record S$342bn) reflects the compounding effect of sustained technology investment and disciplined operational execution \u2014 the model WPS change governance should be benchmarking against in HSBC's H2 planning.",
-        "With only 35% of wealth advisors industry-wide using AI regularly, the WPS governance question is: does HSBC have a defined AI adoption rate target, measurement framework, and clear accountability ownership sitting within WPS scope?"
+        "Published banking agile ROI data documents average 2.3x returns in 13 months, with 30\u201340% cost reductions at scale achievable when AI is embedded in platform architecture \u2014 a governance benchmark WPS can embed in investment approvals immediately",
+        "The global wealth management platform market is growing from $3.7bn to $6.4bn by 2032 (8.1% CAGR), establishing the competitive investment imperative WPS must ensure HSBC's transformation calendar addresses in H2 planning",
+        "Asia's four-tier wealth advisory front office model (digital-led affluent through integrated UHNW) is being adopted across DBS, UBS, and Citi \u2014 WPS must ensure HSBC's operational transformation roadmap enables this evolved competitive standard"
       ],
       "source_links": [
         {
-          "url": "https://fintechmagazine.com/news/lloyds-deploys-agentic-ai-framework-across-21m-accounts",
-          "title": "FinTech Mag: Lloyds Agentic AI 21M Accounts"
+          "url": "https://hyperdriveagile.com/articles/how-to-measure-agile-transformation-roi-in-banking-complete-guide-79",
+          "title": "Banking Agile ROI: 2.3x Benchmark"
         },
         {
-          "url": "https://citywire.com/selector/news/ocbc-wealth-management-assets-hit-record-271bn/a2484590",
-          "title": "Citywire: OCBC Wealth Record S$342bn"
-        },
-        {
-          "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
-          "title": "Fintech Global: AI Implementation Gap Analysis"
+          "url": "https://www.hubbis.com/news/front-office-reimagined-the-future-of-asia-wealth-management",
+          "title": "Asia Wealth: Front Office Reimagined"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "AI & Technology": [
       {
-        "id": "art01",
-        "title": "HSBC Q1 2026 IWPB: Wealth Fees +15% YoY, Revenue Reaches $3.75bn",
-        "url": "https://www.wealthbriefing.com/html/article.php/reported-international-wealth,-premier-banking-revenues-rise-at-hsbc-in-q1-2026",
-        "source": "WealthBriefing",
-        "published_at": "2026-05-07",
-        "summary": "HSBC's International Wealth and Premier Banking revenues rose 1.5% YoY to $3.75bn in Q1 2026. Wealth fees and other income grew 15% driven by insurance (+19%), investment distribution (+21%), and private banking (+8%). Pre-tax profit held stable at $1.23bn while operating expenses grew 5%.",
-        "hsbc_relevancy": 10,
-        "adam_rel": 9,
-        "surali_rel": 9,
-        "noise_level": 3,
-        "category": "HSBC News",
+        "id": "art03",
+        "title": "Strategic AI Deployment in G-SIBs Shifts from Experimentation to Platform Architecture",
+        "url": "https://www.theasianbanker.com/updates-and-articles/strategic-ai-deployment-in-g-sibs-transforms-operations-risk-management-and-customer-value",
+        "source": "The Asian Banker",
+        "published_at": "2026-05-12",
         "is_update": true,
+        "summary": "Analysis of AI initiatives across 29 Global Systemically Important Banks from 2023\u20132025 reveals a structural transition from point-solution experiments to enterprise-wide platform architectures, with leading G-SIBs achieving 2.3x ROI and 30\u201340% cost reductions across operations, risk, and customer value creation.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 2,
+        "category": "AI & Technology",
         "user_relevance": 9
       },
       {
-        "id": "art02",
-        "title": "HSBC Q1 2026 Group Results: $9.4bn Profit, 17.3% RoTE, $39bn NNIA",
-        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-holdings-plc-1q-2026-earnings-release",
-        "source": "HSBC Holdings",
-        "published_at": "2026-05-05",
-        "summary": "HSBC posted $9.4bn group pre-tax profit for Q1 2026 with a 17.3% RoTE. Revenue rose 4% driven by wealth fees (+20%) and FX income. Insurance income grew 49%, investment distribution revenues rose 21%. The group attracted $39bn in net new money in Q1, of which $34bn came from Asia, reinforcing the Asia-wealth pivot.",
-        "hsbc_relevancy": 10,
-        "adam_rel": 8,
-        "surali_rel": 9,
-        "noise_level": 4,
-        "category": "HSBC News",
+        "id": "art01",
+        "title": "FIS and Anthropic Launch Agentic AI Agent to Cut AML Investigations Hours to Minutes",
+        "url": "https://fintechmagazine.com/news/fis-and-anthropic-pair-for-ai-in-banking-and-aml",
+        "source": "FinTech Magazine",
+        "published_at": "2026-05-04",
         "is_update": true,
-        "user_relevance": 9
-      }
-    ],
-    "AI & Technology": [
-      {
-        "id": "art06",
-        "title": "AI in Wealth Management: Closing the 65% Implementation Gap",
-        "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
-        "source": "Fintech Global",
-        "published_at": "2026-04-17",
-        "summary": "Only 35% of financial advisory intermediaries actively use AI tools, with just 10.5% doing so daily. The analysis identifies data governance, talent, and change management as the binding constraints. Banks that systematize AI into advice workflows achieve repeatable, auditable, scalable advisory at lower cost \u2014 the decisive differentiator in 2026 as competitors accelerate deployment.",
-        "hsbc_relevancy": 6,
+        "summary": "FIS and Anthropic partnered to deploy the Financial Crimes AI Agent, which automatically assembles AML evidence across core banking systems, matches typologies, and generates auditable SAR narratives \u2014 compressing investigation time from hours to minutes. BMO and Amalgamated Bank are in live development; general availability is planned for H2 2026.",
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
-        "surali_rel": 7,
+        "surali_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 7
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "Agentic AI Is Inevitable \u2014 Banks Must Move from Pilot to Enterprise Now",
+        "url": "https://thefinancialbrand.com/news/artificial-intelligence-banking/agentic-ai-inevitable-banks-need-fulfill-ambitions-197193",
+        "source": "The Financial Brand",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "With 70% of banking executives already reporting agentic AI deployment and 2.3x ROI demonstrated in 13 months, The Financial Brand warns that banks delaying enterprise-scale agentic AI deployment risk falling behind peers already achieving 30\u201340% cost reductions at scale.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "user_relevance": 8
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "art07",
-        "title": "OCBC Q1 2026: Wealth AUM Hits Record S$342bn, Fee Income +34% YoY",
-        "url": "https://citywire.com/selector/news/ocbc-wealth-management-assets-hit-record-271bn/a2484590",
-        "source": "Citywire",
-        "published_at": "2026-05-09",
-        "summary": "OCBC's Q1 2026 results show wealth management AUM reaching a record S$342bn (US$271bn), up 12% YoY, with fee income rising 34% to S$422m. Group net profit grew 5% to S$1.97bn. OCBC continues to integrate HSBC's Indonesia wealth business (1,300 staff, S$6.6bn AUM) while hiring 30-50 wealth bankers in Hong Kong under its Next Frontier strategy.",
+        "id": "art05",
+        "title": "Citi Deploys AI Agent Directly Into Its Wealth Management Platform",
+        "url": "https://www.thestreet.com/personal-finance/citi-just-added-an-ai-agent-to-your-wealth-management-team",
+        "source": "TheStreet",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "Citi has added an AI agent to its wealth management platform, providing clients and advisors with automated portfolio insights, personalised financial guidance, and real-time market context embedded within existing banking workflows \u2014 the latest major competitor to deploy live AI advisory capabilities.",
         "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 8,
+        "adam_rel": 9,
+        "surali_rel": 7,
         "noise_level": 3,
         "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
+        "user_relevance": 7
       },
       {
-        "id": "art09",
-        "title": "OCBC Q1 2026: Net Profit +5%, Wealth Income +50%, Next Frontier Executing",
-        "url": "https://www.caproasia.com/2026/05/09/singapore-2nd-largest-bank-78-billion-ocbc-reports-1-6-billion-s1-97-billion-net-profit-3-billion-s3-8-billion-revenue-for-2026-q1-wealth-management-with-270-billion-s342-billion-aum/",
-        "source": "Caproasia",
-        "published_at": "2026-05-09",
-        "summary": "OCBC reported Q1 2026 net profit of S$1.97bn (+5% YoY) with wealth management income rising 50% from a year earlier. Corporate wealth income more than tripled. OCBC is executing its Next Frontier strategy, strengthening its Singapore and Hong Kong hubs while completing its S$2.5bn capital return plan and integrating the HSBC Indonesia wealth acquisition.",
+        "id": "art06",
+        "title": "DBS CEO: AI-Enabled Bank With Heart \u2014 Wealth AUM Hits SGD 488bn, Fees Up 29%",
+        "url": "https://asianprivatebanker.com/private-wealth/ai-enabled-bank-with-a-heart-dbs-ceo-on-preserving-human-touch/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-05-18",
+        "is_update": false,
+        "summary": "DBS CEO Tan Su Shan outlines how AI-powered nudges to relationship managers drove a 16% growth in client engagement and SGD 2.81bn in wealth fees (+29% YoY), while DBS Joy chatbot handles 235,000+ interactions with 23% higher client satisfaction \u2014 with wealth AUM doubling to SGD 488bn since 2019.",
         "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 8,
+        "adam_rel": 9,
+        "surali_rel": 7,
         "noise_level": 3,
         "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
+        "user_relevance": 7
+      },
+      {
+        "id": "art08",
+        "title": "UBS Asset Management Consolidates $1.8 Trillion Under Unified Public-Private Platform",
+        "url": "https://hubbis.com/news/ubs-asset-management-unifies-public-and-private-markets-under-1-8-trillion-platform",
+        "source": "Hubbis",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "UBS Asset Management is integrating its direct public and private markets capabilities under a single $1.8 trillion platform from Q1 2026, with Sonja Laud appointed co-head of investments effective July 2026, enabling seamless cross-asset wealth solutions for HNW and UHNW clients.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "user_relevance": 7
       }
     ],
-    "Regulatory & Markets": [
+    "Private Banking & Wealth": [
+      {
+        "id": "art10",
+        "title": "Front Office Reimagined: Asia Wealth Management Adopts Four-Tier AI Advisory Model",
+        "url": "https://www.hubbis.com/news/front-office-reimagined-the-future-of-asia-wealth-management",
+        "source": "Hubbis",
+        "published_at": "2026-05-18",
+        "is_update": false,
+        "summary": "Asia wealth management industry leaders outline a four-tier front office model \u2014 from digital-led for self-directed affluent clients through to fully integrated advisory for UHNW \u2014 with AI-driven personalisation central to all tiers and relationship managers re-positioned as orchestrators of AI-enabled client journeys.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 7
+      },
+      {
+        "id": "art11",
+        "title": "Wealth Management Platform Market: $3.7bn to $6.4bn by 2032 on 8.1% CAGR",
+        "url": "https://www.globenewswire.com/news-release/2026/05/13/3293812/28124/en/Advancements-in-AI-and-Blockchain-Revolutionizing-the-3.7-Billion-Wealth-Management-Platform-Market-2026-2032.html",
+        "source": "GlobeNewswire",
+        "published_at": "2026-05-13",
+        "is_update": true,
+        "summary": "New market research projects the global wealth management platform market will grow from $3.7bn (2025) to $6.4bn by 2032 at 8.1% CAGR, driven by AI and blockchain integration across HNW and UHNW services \u2014 raising the competitive investment bar for banks' wealth technology stacks.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 7
+      }
+    ],
+    "HSBC News": [
       {
         "id": "art12",
-        "title": "Deloitte APAC Q1 2026 Regulatory Update: Governance Top Priority",
-        "url": "https://www.deloitte.com/southeast-asia/en/Industries/financial-services/perspectives/asia-pacific-financial-services-regulatory-update-q1-2026.html",
-        "source": "Deloitte Southeast Asia",
-        "published_at": "2026-04-30",
-        "summary": "Deloitte's Q1 2026 APAC regulatory update identifies governance and accountability as the dominant theme. Key developments include Japan finalizing cyber risk preparedness guidelines, Indonesia mandating IT governance for banks, MAS consulting on comprehensive AI Risk Management Guidelines (covering explainability and lifecycle controls), and Hong Kong launching Phase 2A of its Sustainable Finance Taxonomy.",
-        "hsbc_relevancy": 7,
+        "title": "HSBC Economist: China April Data Disappoints \u2014 Investment Falls, Retail Sales +0.2%",
+        "url": "https://www.bloomberg.com/news/videos/2026-05-18/china-economic-data-surprises-on-the-downside-hsbc-says-video",
+        "source": "Bloomberg",
+        "published_at": "2026-05-18",
+        "is_update": false,
+        "summary": "HSBC Chief China Economist Jing Liu noted China's April economic data fell below expectations, with investment declining and retail sales growing just 0.2%, urging analysis in the context of Middle East conflict impact on global trade flows \u2014 a near-term headwind for APAC wealth client portfolios.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
-        "surali_rel": 9,
+        "surali_rel": 5,
         "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 9
+        "category": "HSBC News",
+        "user_relevance": 5
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art13",
+        "title": "How Banks Measure ROI of Agile Transformation: 2.3x in 13 Months Benchmark",
+        "url": "https://hyperdriveagile.com/articles/how-to-measure-agile-transformation-roi-in-banking-complete-guide-79",
+        "source": "Hyperdrive Agile",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "A complete guide to agile transformation ROI measurement in banking documents an average 2.3x return in 13 months and 30\u201340% cost reductions at scale, providing change leaders with a practical framework for board-level justification of transformation programmes.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 1,
+        "category": "Operations & Change",
+        "user_relevance": 8
       }
     ]
   },
@@ -178,100 +236,161 @@
     "articles": [
       {
         "id": "art01",
-        "title": "HSBC Q1 2026 IWPB: Wealth Fees +15% YoY, Revenue Reaches $3.75bn",
-        "url": "https://www.wealthbriefing.com/html/article.php/reported-international-wealth,-premier-banking-revenues-rise-at-hsbc-in-q1-2026",
-        "source": "WealthBriefing",
-        "published_at": "2026-05-07",
-        "summary": "HSBC's International Wealth and Premier Banking revenues rose 1.5% YoY to $3.75bn in Q1 2026. Wealth fees and other income grew 15% driven by insurance (+19%), investment distribution (+21%), and private banking (+8%). Pre-tax profit held stable at $1.23bn while operating expenses grew 5%.",
-        "hsbc_relevancy": 10,
-        "adam_rel": 9,
-        "surali_rel": 9,
-        "noise_level": 3,
-        "category": "HSBC News",
+        "title": "FIS and Anthropic Launch Agentic AI Agent to Cut AML Investigations Hours to Minutes",
+        "url": "https://fintechmagazine.com/news/fis-and-anthropic-pair-for-ai-in-banking-and-aml",
+        "source": "FinTech Magazine",
+        "published_at": "2026-05-04",
         "is_update": true,
-        "user_relevance": 9
-      },
-      {
-        "id": "art02",
-        "title": "HSBC Q1 2026 Group Results: $9.4bn Profit, 17.3% RoTE, $39bn NNIA",
-        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-holdings-plc-1q-2026-earnings-release",
-        "source": "HSBC Holdings",
-        "published_at": "2026-05-05",
-        "summary": "HSBC posted $9.4bn group pre-tax profit for Q1 2026 with a 17.3% RoTE. Revenue rose 4% driven by wealth fees (+20%) and FX income. Insurance income grew 49%, investment distribution revenues rose 21%. The group attracted $39bn in net new money in Q1, of which $34bn came from Asia, reinforcing the Asia-wealth pivot.",
-        "hsbc_relevancy": 10,
+        "summary": "FIS and Anthropic partnered to deploy the Financial Crimes AI Agent, which automatically assembles AML evidence across core banking systems, matches typologies, and generates auditable SAR narratives \u2014 compressing investigation time from hours to minutes. BMO and Amalgamated Bank are in live development; general availability is planned for H2 2026.",
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
-        "surali_rel": 9,
-        "noise_level": 4,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 9
-      },
-      {
-        "id": "art06",
-        "title": "AI in Wealth Management: Closing the 65% Implementation Gap",
-        "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
-        "source": "Fintech Global",
-        "published_at": "2026-04-17",
-        "summary": "Only 35% of financial advisory intermediaries actively use AI tools, with just 10.5% doing so daily. The analysis identifies data governance, talent, and change management as the binding constraints. Banks that systematize AI into advice workflows achieve repeatable, auditable, scalable advisory at lower cost \u2014 the decisive differentiator in 2026 as competitors accelerate deployment.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "surali_rel": 7,
+        "surali_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
+        "user_relevance": 8
+      },
+      {
+        "id": "art03",
+        "title": "Strategic AI Deployment in G-SIBs Shifts from Experimentation to Platform Architecture",
+        "url": "https://www.theasianbanker.com/updates-and-articles/strategic-ai-deployment-in-g-sibs-transforms-operations-risk-management-and-customer-value",
+        "source": "The Asian Banker",
+        "published_at": "2026-05-12",
         "is_update": true,
+        "summary": "Analysis of AI initiatives across 29 Global Systemically Important Banks from 2023\u20132025 reveals a structural transition from point-solution experiments to enterprise-wide platform architectures, with leading G-SIBs achieving 2.3x ROI and 30\u201340% cost reductions across operations, risk, and customer value creation.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "user_relevance": 9
+      },
+      {
+        "id": "art04",
+        "title": "Agentic AI Is Inevitable \u2014 Banks Must Move from Pilot to Enterprise Now",
+        "url": "https://thefinancialbrand.com/news/artificial-intelligence-banking/agentic-ai-inevitable-banks-need-fulfill-ambitions-197193",
+        "source": "The Financial Brand",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "With 70% of banking executives already reporting agentic AI deployment and 2.3x ROI demonstrated in 13 months, The Financial Brand warns that banks delaying enterprise-scale agentic AI deployment risk falling behind peers already achieving 30\u201340% cost reductions at scale.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "user_relevance": 8
+      },
+      {
+        "id": "art05",
+        "title": "Citi Deploys AI Agent Directly Into Its Wealth Management Platform",
+        "url": "https://www.thestreet.com/personal-finance/citi-just-added-an-ai-agent-to-your-wealth-management-team",
+        "source": "TheStreet",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "Citi has added an AI agent to its wealth management platform, providing clients and advisors with automated portfolio insights, personalised financial guidance, and real-time market context embedded within existing banking workflows \u2014 the latest major competitor to deploy live AI advisory capabilities.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
         "user_relevance": 7
       },
       {
-        "id": "art07",
-        "title": "OCBC Q1 2026: Wealth AUM Hits Record S$342bn, Fee Income +34% YoY",
-        "url": "https://citywire.com/selector/news/ocbc-wealth-management-assets-hit-record-271bn/a2484590",
-        "source": "Citywire",
-        "published_at": "2026-05-09",
-        "summary": "OCBC's Q1 2026 results show wealth management AUM reaching a record S$342bn (US$271bn), up 12% YoY, with fee income rising 34% to S$422m. Group net profit grew 5% to S$1.97bn. OCBC continues to integrate HSBC's Indonesia wealth business (1,300 staff, S$6.6bn AUM) while hiring 30-50 wealth bankers in Hong Kong under its Next Frontier strategy.",
+        "id": "art06",
+        "title": "DBS CEO: AI-Enabled Bank With Heart \u2014 Wealth AUM Hits SGD 488bn, Fees Up 29%",
+        "url": "https://asianprivatebanker.com/private-wealth/ai-enabled-bank-with-a-heart-dbs-ceo-on-preserving-human-touch/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-05-18",
+        "is_update": false,
+        "summary": "DBS CEO Tan Su Shan outlines how AI-powered nudges to relationship managers drove a 16% growth in client engagement and SGD 2.81bn in wealth fees (+29% YoY), while DBS Joy chatbot handles 235,000+ interactions with 23% higher client satisfaction \u2014 with wealth AUM doubling to SGD 488bn since 2019.",
         "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 8,
+        "adam_rel": 9,
+        "surali_rel": 7,
         "noise_level": 3,
         "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
+        "user_relevance": 7
       },
       {
-        "id": "art09",
-        "title": "OCBC Q1 2026: Net Profit +5%, Wealth Income +50%, Next Frontier Executing",
-        "url": "https://www.caproasia.com/2026/05/09/singapore-2nd-largest-bank-78-billion-ocbc-reports-1-6-billion-s1-97-billion-net-profit-3-billion-s3-8-billion-revenue-for-2026-q1-wealth-management-with-270-billion-s342-billion-aum/",
-        "source": "Caproasia",
-        "published_at": "2026-05-09",
-        "summary": "OCBC reported Q1 2026 net profit of S$1.97bn (+5% YoY) with wealth management income rising 50% from a year earlier. Corporate wealth income more than tripled. OCBC is executing its Next Frontier strategy, strengthening its Singapore and Hong Kong hubs while completing its S$2.5bn capital return plan and integrating the HSBC Indonesia wealth acquisition.",
-        "hsbc_relevancy": 7,
+        "id": "art08",
+        "title": "UBS Asset Management Consolidates $1.8 Trillion Under Unified Public-Private Platform",
+        "url": "https://hubbis.com/news/ubs-asset-management-unifies-public-and-private-markets-under-1-8-trillion-platform",
+        "source": "Hubbis",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "UBS Asset Management is integrating its direct public and private markets capabilities under a single $1.8 trillion platform from Q1 2026, with Sonja Laud appointed co-head of investments effective July 2026, enabling seamless cross-asset wealth solutions for HNW and UHNW clients.",
+        "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "surali_rel": 8,
+        "surali_rel": 7,
         "noise_level": 3,
         "category": "Competitor Intelligence",
+        "user_relevance": 7
+      },
+      {
+        "id": "art10",
+        "title": "Front Office Reimagined: Asia Wealth Management Adopts Four-Tier AI Advisory Model",
+        "url": "https://www.hubbis.com/news/front-office-reimagined-the-future-of-asia-wealth-management",
+        "source": "Hubbis",
+        "published_at": "2026-05-18",
+        "is_update": false,
+        "summary": "Asia wealth management industry leaders outline a four-tier front office model \u2014 from digital-led for self-directed affluent clients through to fully integrated advisory for UHNW \u2014 with AI-driven personalisation central to all tiers and relationship managers re-positioned as orchestrators of AI-enabled client journeys.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 7
+      },
+      {
+        "id": "art11",
+        "title": "Wealth Management Platform Market: $3.7bn to $6.4bn by 2032 on 8.1% CAGR",
+        "url": "https://www.globenewswire.com/news-release/2026/05/13/3293812/28124/en/Advancements-in-AI-and-Blockchain-Revolutionizing-the-3.7-Billion-Wealth-Management-Platform-Market-2026-2032.html",
+        "source": "GlobeNewswire",
+        "published_at": "2026-05-13",
         "is_update": true,
-        "user_relevance": 8
+        "summary": "New market research projects the global wealth management platform market will grow from $3.7bn (2025) to $6.4bn by 2032 at 8.1% CAGR, driven by AI and blockchain integration across HNW and UHNW services \u2014 raising the competitive investment bar for banks' wealth technology stacks.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 7
       },
       {
         "id": "art12",
-        "title": "Deloitte APAC Q1 2026 Regulatory Update: Governance Top Priority",
-        "url": "https://www.deloitte.com/southeast-asia/en/Industries/financial-services/perspectives/asia-pacific-financial-services-regulatory-update-q1-2026.html",
-        "source": "Deloitte Southeast Asia",
-        "published_at": "2026-04-30",
-        "summary": "Deloitte's Q1 2026 APAC regulatory update identifies governance and accountability as the dominant theme. Key developments include Japan finalizing cyber risk preparedness guidelines, Indonesia mandating IT governance for banks, MAS consulting on comprehensive AI Risk Management Guidelines (covering explainability and lifecycle controls), and Hong Kong launching Phase 2A of its Sustainable Finance Taxonomy.",
-        "hsbc_relevancy": 7,
+        "title": "HSBC Economist: China April Data Disappoints \u2014 Investment Falls, Retail Sales +0.2%",
+        "url": "https://www.bloomberg.com/news/videos/2026-05-18/china-economic-data-surprises-on-the-downside-hsbc-says-video",
+        "source": "Bloomberg",
+        "published_at": "2026-05-18",
+        "is_update": false,
+        "summary": "HSBC Chief China Economist Jing Liu noted China's April economic data fell below expectations, with investment declining and retail sales growing just 0.2%, urging analysis in the context of Middle East conflict impact on global trade flows \u2014 a near-term headwind for APAC wealth client portfolios.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
-        "surali_rel": 9,
+        "surali_rel": 5,
         "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 9
+        "category": "HSBC News",
+        "user_relevance": 5
+      },
+      {
+        "id": "art13",
+        "title": "How Banks Measure ROI of Agile Transformation: 2.3x in 13 Months Benchmark",
+        "url": "https://hyperdriveagile.com/articles/how-to-measure-agile-transformation-roi-in-banking-complete-guide-79",
+        "source": "Hyperdrive Agile",
+        "published_at": "2026-05-17",
+        "is_update": false,
+        "summary": "A complete guide to agile transformation ROI measurement in banking documents an average 2.3x return in 13 months and 30\u201340% cost reductions at scale, providing change leaders with a practical framework for board-level justification of transformation programmes.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 1,
+        "category": "Operations & Change",
+        "user_relevance": 8
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
       "AI & Technology": "#6366f1",
       "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706"
+      "Private Banking & Wealth": "#059669",
+      "HSBC News": "#dc2626",
+      "Operations & Change": "#7c3aed"
     }
   }
 }
