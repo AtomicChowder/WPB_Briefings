@@ -64,7 +64,7 @@ def main(argv: list[str]) -> int:
         ub["covered_topics"] = sorted({t for d in daily for t in d.get("topics", [])})
         ub["last_updated"] = today
 
-    # Drop any unknown user keys (e.g. legacy "sirali") to keep history clean
+    # Drop any unknown user keys to keep history clean
     for k in list(hist):
         if k not in USERS:
             print(f"[history] dropping unknown user block: {k}")
