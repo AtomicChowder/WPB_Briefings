@@ -1,23 +1,48 @@
 #!/usr/bin/env bash
-# Pulls live context/history.json and docs/ from origin/main into the working tree.
-# Run before every briefing session regardless of which branch the session is on.
+# briefing-sync — pull live DATA from origin/main into the working tree,
+# regardless of what branch this session was created on.
+#
+# Only syncs data files (history.json, docs/). Code (src/, bin/, templates/,
+# CLAUDE.md, ROUTINE.md) stays at whatever this branch has — this branch IS
+# the source of truth for code. Changes here get pushed to main at the end
+# via briefing-publish.
+#
+# This is the FIRST step of every routine run.
 set -euo pipefail
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd "$REPO_ROOT"
 
-echo "→ Syncing from origin/main..."
-git fetch origin main 2>/dev/null || { echo "  ⚠ fetch failed — using local state"; }
+cd "$(git rev-parse --show-toplevel)"
 
-for path in \
-  context/history.json \
-  docs/adam/briefing_data.json docs/adam/index.html \
-  docs/surali/briefing_data.json docs/surali/index.html; do
-  if git cat-file -e "origin/main:$path" 2>/dev/null; then
-    mkdir -p "$(dirname "$REPO_ROOT/$path")"
-    git show "origin/main:$path" > "$REPO_ROOT/$path"
-    echo "  ✓ $path"
+echo "[sync] fetching origin/main..."
+for i in 1 2 3 4; do
+  if git fetch origin main 2>&1 | tail -3; then
+    break
   fi
+  echo "[sync] fetch failed (attempt $i), retrying in $((2 ** i))s..."
+  sleep $((2 ** i))
 done
 
-pip install -r requirements.txt -q
-echo "→ Sync complete."
+# Sync live data files only — code stays on the branch
+echo "[sync] restoring context/history.json and docs/ from origin/main..."
+git checkout origin/main -- context/history.json 2>/dev/null || echo "[sync] no history.json on main yet — will init"
+git checkout origin/main -- docs/ 2>/dev/null || echo "[sync] no docs/ on main yet"
+
+# Ensure required directories exist
+mkdir -p context docs/adam docs/surali
+
+# Initialise history.json if absent (first ever run)
+if [ ! -f context/history.json ]; then
+  echo "[sync] initialising empty history.json"
+  python3 - <<'PY'
+import json, pathlib
+pathlib.Path("context/history.json").write_text(json.dumps({
+    "adam":   {"last_updated": None, "covered_urls": [], "covered_topics": [], "daily": []},
+    "surali": {"last_updated": None, "covered_urls": [], "covered_topics": [], "daily": []},
+}, indent=2))
+PY
+fi
+
+# Install Python deps quietly
+echo "[sync] pip install -r requirements.txt"
+pip install -r requirements.txt -q 2>&1 | tail -3 || true
+
+echo "[sync] done — working tree ready"
