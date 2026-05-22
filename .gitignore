@@ -11,6 +11,8 @@ env/
 *.key
 *.json
 !.env.example
+!context/*.json
+!docs/**/*.json
 service-account*.json
 /output/
 /tmp/
