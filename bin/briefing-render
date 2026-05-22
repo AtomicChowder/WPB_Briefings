@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Renders HTML for both users from their briefing_data.json files.
+set -euo pipefail
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$REPO_ROOT"
+pip install -r requirements.txt -q
+for user in adam surali; do
+  python src/render.py "$user"
+done

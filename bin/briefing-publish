@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Commits docs/, context/history.json, and any script changes, then pushes to origin/main.
+# Retries on transient failures; rebases if push is rejected as non-fast-forward.
+set -euo pipefail
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$REPO_ROOT"
+
+DATE=$(date -u +%Y-%m-%d)
+echo "→ Publishing briefing for $DATE..."
+
+git add docs/ context/history.json src/ bin/ briefing_input.example.json 2>/dev/null || true
+
+if git diff --cached --quiet; then
+  echo "  Nothing new to commit — already up to date."
+else
+  git commit -m "briefing: $DATE daily intelligence update"
+fi
+
+MAX_RETRIES=4
+DELAY=2
+for i in $(seq 1 $MAX_RETRIES); do
+  echo "  → push attempt $i to origin/main..."
+  if git push origin HEAD:main; then
+    echo "  ✓ Published to origin/main."
+    exit 0
+  fi
+  if [ $i -lt $MAX_RETRIES ]; then
+    echo "  ⚠ Push failed — fetching and rebasing (retry in ${DELAY}s)..."
+    sleep $DELAY
+    git fetch origin main
+    git rebase origin/main || { git rebase --abort; echo "  ✗ Rebase failed."; exit 1; }
+    DELAY=$((DELAY * 2))
+  fi
+done
+
+echo "  ✗ Push failed after $MAX_RETRIES attempts."
+exit 1

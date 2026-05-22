@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Pulls live context/history.json and docs/ from origin/main into the working tree.
+# Run before every briefing session regardless of which branch the session is on.
+set -euo pipefail
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$REPO_ROOT"
+
+echo "→ Syncing from origin/main..."
+git fetch origin main 2>/dev/null || { echo "  ⚠ fetch failed — using local state"; }
+
+for path in \
+  context/history.json \
+  docs/adam/briefing_data.json docs/adam/index.html \
+  docs/surali/briefing_data.json docs/surali/index.html; do
+  if git cat-file -e "origin/main:$path" 2>/dev/null; then
+    mkdir -p "$(dirname "$REPO_ROOT/$path")"
+    git show "origin/main:$path" > "$REPO_ROOT/$path"
+    echo "  ✓ $path"
+  fi
+done
+
+pip install -r requirements.txt -q
+echo "→ Sync complete."
