@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# Commit docs/ and context/history.json, then push to origin/main.
+# Rebases on top of origin/main if the push is rejected as non-fast-forward.
+# Retries up to 4 times with exponential backoff on transient failures.
+set -euo pipefail
+REPO_ROOT="$(git -C "$(dirname "$0")/.." rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+DATE=$(date -u +%Y-%m-%d)
+
+git add docs/ context/history.json src/build_briefing.py src/update_history.py bin/ briefing_input.example.json 2>/dev/null || true
+git add docs/ context/history.json
+
+if git diff --cached --quiet; then
+  echo "Nothing new to commit — docs/ and history unchanged."
+  exit 0
+fi
+
+git commit -m "briefing: ${DATE} daily intelligence update"
+
+push_with_retry() {
+  local ATTEMPTS=0
+  local DELAY=2
+  while [ $ATTEMPTS -lt 4 ]; do
+    if git push origin HEAD:main; then
+      echo "✓  Pushed to origin/main"
+      return 0
+    fi
+    # Check if it's a non-fast-forward rejection
+    git fetch origin main
+    if git merge-base --is-ancestor HEAD origin/main 2>/dev/null; then
+      echo "→ Rebasing onto origin/main …"
+      git rebase origin/main
+    fi
+    ATTEMPTS=$((ATTEMPTS + 1))
+    echo "  Push attempt $ATTEMPTS failed — retrying in ${DELAY}s …"
+    sleep $DELAY
+    DELAY=$((DELAY * 2))
+  done
+  echo "ERROR: push failed after 4 attempts" >&2
+  return 1
+}
+
+push_with_retry
+echo "✓  briefing-publish complete"

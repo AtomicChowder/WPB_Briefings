@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Pull context/history.json and docs/ from origin/main into working tree,
+# regardless of which feature branch this session started on.
+set -euo pipefail
+
+REPO_ROOT="$(git -C "$(dirname "$0")/.." rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+echo "→ Fetching origin/main …"
+git fetch origin main 2>&1 || { echo "WARNING: fetch failed, using local state"; }
+
+# Overlay context and docs from main without switching branches
+git checkout origin/main -- context/history.json 2>/dev/null && echo "✓  context/history.json synced" || echo "  context/history.json not on main yet — using local"
+git checkout origin/main -- docs/ 2>/dev/null && echo "✓  docs/ synced" || echo "  docs/ not on main yet — starting fresh"
+
+echo "→ Installing Python dependencies …"
+pip install -r requirements.txt -q
+
+echo "✓  briefing-sync complete"

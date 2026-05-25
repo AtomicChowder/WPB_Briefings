@@ -1,0 +1,72 @@
+{
+  "date_str": "2026-05-01",
+  "briefing_date": "Friday, 1 May 2026",
+  "articles": [
+    {
+      "id": "art01",
+      "title": "DBS launches AI wealth advisory platform for HNW clients",
+      "url": "https://example.com/dbs-ai-wealth",
+      "source": "The Straits Times",
+      "published_at": "2026-05-01",
+      "summary": "DBS Bank unveiled an AI-powered advisory platform targeting high-net-worth clients in Singapore and Hong Kong. The system uses LLMs to generate personalised portfolio recommendations.",
+      "hsbc_relevancy": 8,
+      "adam_rel": 9,
+      "surali_rel": 7,
+      "noise_level": 3,
+      "category": "Competitor Intelligence"
+    },
+    {
+      "id": "art02",
+      "title": "HSBC WPB reports record Asia AUM growth in Q1 2026",
+      "url": "https://example.com/hsbc-q1-aum",
+      "source": "Financial Times",
+      "published_at": "2026-04-30",
+      "summary": "HSBC Wealth and Personal Banking reported a 14% year-on-year increase in assets under management across Asia Pacific, driven by strong inflows from mainland Chinese clients.",
+      "hsbc_relevancy": 10,
+      "adam_rel": 9,
+      "surali_rel": 9,
+      "noise_level": 4,
+      "category": "HSBC News"
+    }
+  ],
+  "users": {
+    "adam": {
+      "talking_points": [
+        {
+          "headline": "DBS AI wealth platform raises competitive bar for HSBC in HNW segment",
+          "why_it_matters": "As Head of Change Execution for APAC private banking, Adam needs visibility on competitor AI rollouts that could shift HNW client expectations before HSBC's own roadmap delivers.",
+          "bullets": [
+            "<strong>Piyush Gupta, CEO of DBS</strong> confirmed the platform will expand to Hong Kong by Q3 2026.",
+            "The system integrates real-time market data with client goal modelling — a capability HSBC's internal teams are still piloting.",
+            "Early adoption metrics show 23% increase in product cross-sell within the first 60 days."
+          ],
+          "source_links": [
+            { "url": "https://example.com/dbs-ai-wealth", "title": "DBS launches AI wealth advisory platform" }
+          ],
+          "is_update": false
+        }
+      ]
+    },
+    "surali": {
+      "talking_points": [
+        {
+          "headline": "HSBC WPB Q1 AUM surge validates APAC wealth strategy under WPS",
+          "why_it_matters": "As COO & Global Head of Change Execution, Sirali will need to align operational capacity and change pipeline with the accelerated growth trajectory signalled by Q1 results.",
+          "bullets": [
+            "14% YoY AUM growth across APAC was driven primarily by mainland China inflows.",
+            "<strong>Noel Quinn, Group CEO of HSBC</strong> highlighted wealth as the primary growth engine for 2026.",
+            "Operational scaling will be critical — the COO function should anticipate increased demand for onboarding and servicing capacity."
+          ],
+          "source_links": [
+            { "url": "https://example.com/hsbc-q1-aum", "title": "HSBC WPB reports record Asia AUM growth" }
+          ],
+          "is_update": false
+        }
+      ]
+    }
+  },
+  "breaking_news": {
+    "adam": [],
+    "surali": []
+  }
+}
