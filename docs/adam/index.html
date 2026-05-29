@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WPB Intelligence Briefing — Thursday, 28 May 2026 — Adam</title>
+  <title>WPB Intelligence Briefing — Friday, 29 May 2026 — Adam</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -28,28 +28,10 @@
     a { color: var(--hsbc-red); text-decoration: none; }
     a:hover { text-decoration: underline; }
     strong { font-weight: 600; }
-
-    /* ── Header ── */
-    .site-header {
-      background: var(--navy);
-      border-top: 4px solid var(--hsbc-red);
-      padding: 20px 32px;
-    }
-    .header-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
-    }
+    .site-header { background: var(--navy); border-top: 4px solid var(--hsbc-red); padding: 20px 32px; }
+    .header-inner { max-width: 1280px; margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
     .header-brand { display: flex; align-items: center; gap: 14px; }
-    .hsbc-mark {
-      width: 44px; height: 44px; border-radius: 6px;
-      background: var(--hsbc-red);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
+    .hsbc-mark { width: 44px; height: 44px; border-radius: 6px; background: var(--hsbc-red); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .hsbc-mark svg { width: 28px; height: 28px; fill: white; }
     .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
     .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
@@ -57,68 +39,28 @@
     .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
     .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
     .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
-
-    /* ── Shared layout ── */
     .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
     section { padding: 40px 0; }
-    .section-label {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
-      color: var(--hsbc-red); margin-bottom: 10px;
-    }
-    .section-label::before {
-      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
-    }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--hsbc-red); margin-bottom: 10px; }
+    .section-label::before { content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red); }
     .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
     .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
-
-    /* ── Talking Points ── */
     .talking-points-section { background: var(--surface); }
     .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
-    .tp-card {
-      background: var(--card);
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      padding: 24px;
-      display: flex; gap: 16px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      position: relative;
-      overflow: hidden;
-    }
-    .tp-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0;
-      height: 3px; background: var(--hsbc-red);
-    }
+    .tp-card { background: var(--card); border-radius: 12px; border: 1px solid var(--border); padding: 24px; display: flex; gap: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); position: relative; overflow: hidden; }
+    .tp-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--hsbc-red); }
     .tp-card.is-update::before { background: #d97706; }
-    .tp-num {
-      flex-shrink: 0;
-      width: 32px; height: 32px; border-radius: 50%;
-      background: var(--hsbc-red);
-      color: white; font-weight: 700; font-size: 14px;
-      display: flex; align-items: center; justify-content: center;
-    }
+    .tp-num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--hsbc-red); color: white; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
     .tp-card.is-update .tp-num { background: #d97706; }
     .tp-body { flex: 1; min-width: 0; }
-    .tp-update-badge {
-      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
-      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
-      margin-bottom: 8px; text-transform: uppercase;
-    }
+    .tp-update-badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px; margin-bottom: 8px; text-transform: uppercase; }
     .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
     .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
     .tp-context strong { color: var(--text); }
     .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tp-source-link {
-      font-size: 11px; font-weight: 500;
-      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
-      border-radius: 4px; padding: 3px 8px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
-    }
+    .tp-source-link { font-size: 11px; font-weight: 500; color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8; border-radius: 4px; padding: 3px 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px; }
     .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
-
-    /* ── Chart section ── */
     .chart-section { background: var(--chart-bg); padding: 48px 0; }
     .chart-section .section-label { color: #e05565; }
     .chart-section .section-label::before { background: #e05565; }
@@ -128,108 +70,48 @@
     @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
     #bubble-chart-container svg { display: block; width: 100%; }
     .chart-legend { padding-top: 40px; }
-    .legend-item {
-      display: flex; align-items: center; gap: 8px;
-      padding: 7px 0; cursor: pointer;
-      font-size: 12px; color: #94a3b8;
-      border-bottom: 1px solid #1e2a3a;
-      transition: color 0.15s;
-    }
+    .legend-item { display: flex; align-items: center; gap: 8px; padding: 7px 0; cursor: pointer; font-size: 12px; color: #94a3b8; border-bottom: 1px solid #1e2a3a; transition: color 0.15s; }
     .legend-item:hover { color: #e2e8f0; }
     .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-    .chart-note {
-      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
-    }
-    .chart-tooltip {
-      position: fixed; display: none;
-      background: #1e293b; color: #f1f5f9;
-      padding: 12px 16px; border-radius: 10px;
-      font-size: 13px; max-width: 300px;
-      pointer-events: none; z-index: 9999;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-      border: 1px solid #334155; line-height: 1.5;
-    }
-
-    /* ── Feed section ── */
+    .chart-note { margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6; }
+    .chart-tooltip { position: fixed; display: none; background: #1e293b; color: #f1f5f9; padding: 12px 16px; border-radius: 10px; font-size: 13px; max-width: 300px; pointer-events: none; z-index: 9999; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid #334155; line-height: 1.5; }
     .feed-section { background: var(--surface); }
     .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
-    .cat-tab {
-      font-size: 12px; font-weight: 500; padding: 6px 14px;
-      border-radius: 20px; border: 1px solid var(--border);
-      background: white; color: var(--text-mid);
-      cursor: pointer; transition: all 0.15s;
-    }
+    .cat-tab { font-size: 12px; font-weight: 500; padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border); background: white; color: var(--text-mid); cursor: pointer; transition: all 0.15s; }
     .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
     .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
     .category-section { margin-bottom: 36px; }
-    .category-header {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 14px; font-weight: 600; color: var(--navy);
-      margin-bottom: 14px; padding-bottom: 10px;
-      border-bottom: 2px solid var(--border);
-    }
+    .category-header { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
     .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
     .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
-    .article-card {
-      background: var(--card); border-radius: 10px;
-      border: 1px solid var(--border);
-      padding: 18px; display: flex; flex-direction: column; gap: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      transition: box-shadow 0.15s, border-color 0.15s;
-    }
+    .article-card { background: var(--card); border-radius: 10px; border: 1px solid var(--border); padding: 18px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: box-shadow 0.15s, border-color 0.15s; }
     .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
-    .article-card.chart-highlighted {
-      border-color: var(--hsbc-red);
-      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
-    }
+    .article-card.chart-highlighted { border-color: var(--hsbc-red); box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1); }
     .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
-    .score-badge {
-      font-size: 10px; font-weight: 600; padding: 3px 7px;
-      border-radius: 4px; display: flex; align-items: center; gap: 4px;
-    }
+    .score-badge { font-size: 10px; font-weight: 600; padding: 3px 7px; border-radius: 4px; display: flex; align-items: center; gap: 4px; }
     .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
-    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.rel { background: #eff6ff; color: #1e40af; }
     .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
     .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
     .article-title a { color: var(--navy); }
     .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
     .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
-    .article-footer {
-      display: flex; justify-content: space-between; align-items: center;
-      font-size: 11px; color: var(--text-light);
-      padding-top: 10px; border-top: 1px solid var(--border);
-    }
+    .article-footer { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--text-light); padding-top: 10px; border-top: 1px solid var(--border); }
     .article-source { font-weight: 500; color: var(--text-mid); }
-
-    /* ── Footer ── */
-    .site-footer {
-      background: var(--navy-dark); border-top: 1px solid #1e2640;
-      padding: 20px 32px; text-align: center;
-      font-size: 12px; color: #475569;
-    }
+    .site-footer { background: var(--navy-dark); border-top: 1px solid #1e2640; padding: 20px 32px; text-align: center; font-size: 12px; color: #475569; }
     .site-footer span { color: #64748b; }
   </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
-      <div class="hsbc-mark">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="16,2 30,16 16,30 2,16"/>
-        </svg>
-      </div>
-      <div class="brand-text">
-        <h1>WPB Market Intelligence</h1>
-        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
-      </div>
+      <div class="hsbc-mark"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><polygon points="16,2 30,16 16,30 2,16"/></svg></div>
+      <div class="brand-text"><h1>WPB Market Intelligence</h1><p>Private Banking &amp; Wealth Solutions · Asia Pacific</p></div>
     </div>
     <div class="header-meta">
-      <div class="date">Thursday, 28 May 2026</div>
-      <div class="user-info">
-        Prepared for <span class="user-name">Adam Chow</span>
-      </div>
+      <div class="date">Friday, 29 May 2026</div>
+      <div class="user-info">Prepared for <span class="user-name">Adam Chow</span></div>
       <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
     </div>
   </div>
@@ -239,38 +121,39 @@
   <div class="section-wrap">
     <div class="section-label">Intelligence Summary</div>
     <h2 class="section-title">Today's Key Talking Points</h2>
-    <p class="section-sub">17 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <p class="section-sub">13 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
     <div class="tp-grid">
-      <div class="tp-card">
+      <div class="tp-card is-update">
         <div class="tp-num">1</div>
         <div class="tp-body">
-          <h3 class="tp-headline">HSBC Reorganisation Wave Demands Real-Time Change Execution Agility Across WPB APAC</h3>
-          <p class="tp-context"></p>
+          <div class="tp-update-badge">&#8635; Update</div>
+          <h3 class="tp-headline">HSBC WPB $38bn NNIA Win and RBWM Digital Shift Signal a Critical Delivery Window</h3>
+          <p class="tp-context">HSBC WPB attracted US$38 billion in net new invested assets from Asia, validating the Wealth Powerhouse strategy — and the bank's RBWM Asia head is now moving to a new global digital leadership role, signalling that APAC's digital playbook is being exported to the centre. For Adam's change execution agenda, this creates a dual pressure: sustaining delivery momentum for a high-performing business unit while absorbing a significant leadership transition. The new Two IFC Premier Elite Wealth Centre is already fully booked through June, underscoring that client demand is outpacing service capacity.</p>
           <div class="tp-sources">
-            <a href="url" target="_blank" rel="noopener" class="tp-source-link" title="title">title</a>
-            <a href="url" target="_blank" rel="noopener" class="tp-source-link" title="title">title</a>
+            <a href="https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/" target="_blank" rel="noopener" class="tp-source-link">HSBC WPB Attracts US$38bn NNIA — APB</a>
+            <a href="https://asianprivatebanker.com/private-wealth/people-private-wealth/hsbc-rbwm-asia-head-to-take-global-digital-role/" target="_blank" rel="noopener" class="tp-source-link">HSBC RBWM Asia Head Takes Global Digital Role</a>
           </div>
         </div>
       </div>
       <div class="tp-card">
         <div class="tp-num">2</div>
         <div class="tp-body">
-          <h3 class="tp-headline">Agentic AI Hits Production Scale — 70% of Banks Deploying by Year-End; Laggards Face Compounding Risk</h3>
-          <p class="tp-context"></p>
+          <h3 class="tp-headline">Citi Sky and BofA AI Meeting Tool Set the Wealth Advisory Productivity Bar HSBC Must Match</h3>
+          <p class="tp-context">Citi Wealth's Citi Sky — an AI adviser built on Google DeepMind's real-time avatar technology — will roll out to Citigold clients this summer, while Merrill and Bank of America have already deployed an AI-Powered Meeting Journey to all 25,000 advisors, saving up to 4 hours per meeting. These deployments define the new competitive baseline for AI-enabled wealth advisory productivity, and represent the benchmark that Adam's change execution agenda must close for HSBC WPB APAC.</p>
           <div class="tp-sources">
-            <a href="url" target="_blank" rel="noopener" class="tp-source-link" title="title">title</a>
-            <a href="url" target="_blank" rel="noopener" class="tp-source-link" title="title">title</a>
+            <a href="https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies" target="_blank" rel="noopener" class="tp-source-link">Citi Wealth Unveils Citi Sky — DeepMind Powered</a>
+            <a href="https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html" target="_blank" rel="noopener" class="tp-source-link">BofA/Merrill AI Meeting Journey — 25,000 Advisors</a>
           </div>
         </div>
       </div>
       <div class="tp-card">
         <div class="tp-num">3</div>
         <div class="tp-body">
-          <h3 class="tp-headline">JPMorgan&#39;s 35% Asia RM Surge Puts HSBC Wealth Powerhouse Talent Pipeline Under Stress</h3>
-          <p class="tp-context"></p>
+          <h3 class="tp-headline">Asia HNWI Succession Crisis: Only 27% Have a Plan — a High-Margin Growth Lever for HSBC WPB</h3>
+          <p class="tp-context">A CNBC survey of 390+ Asia-Pacific HNWIs published today (29 May 2026) found only 26.9% have a full succession plan, while 39.4% have none — with Hong Kong showing particularly weak preparedness, despite the city overtaking Switzerland as the world's largest cross-border wealth hub with USD 2.9 trillion in assets. For Adam, this represents a structured product development and digital capability opportunity: succession advisory requires integrating legal, tax, investment, and digital touchpoints — exactly the cross-functional change delivery work that drives differentiated WPB APAC outcomes.</p>
           <div class="tp-sources">
-            <a href="url" target="_blank" rel="noopener" class="tp-source-link" title="title">title</a>
-            <a href="url" target="_blank" rel="noopener" class="tp-source-link" title="title">title</a>
+            <a href="https://www.cnbc.com/amp/2026/05/29/asias-rich-fear-losing-family-fortune-but-have-no-succession-plans.html" target="_blank" rel="noopener" class="tp-source-link">CNBC: Asia HNWIs Fear Wealth Loss — No Succession Plans</a>
+            <a href="https://www.hokanews.com/2026/05/hong-kong-becomes-worlds-biggest-wealth.html" target="_blank" rel="noopener" class="tp-source-link">HK Overtakes Switzerland as World Biggest Wealth Hub</a>
           </div>
         </div>
       </div>
@@ -287,10 +170,7 @@
       <div id="bubble-chart-container"></div>
       <div>
         <div class="chart-legend" id="chart-legend"></div>
-        <div class="chart-note">
-          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
-          Top-right zone = highest strategic priority.
-        </div>
+        <div class="chart-note">Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>Top-right zone = highest strategic priority.</div>
       </div>
     </div>
   </div>
@@ -303,217 +183,119 @@
     <h2 class="section-title">Articles by Category</h2>
     <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
     <div class="category-tabs" id="category-tabs">
-      <button class="cat-tab active" data-cat="all">All (17)</button>
+      <button class="cat-tab active" data-cat="all">All (13)</button>
+      <button class="cat-tab" data-cat="AI &amp; Technology">AI &amp; Technology (3)</button>
       <button class="cat-tab" data-cat="HSBC News">HSBC News (3)</button>
       <button class="cat-tab" data-cat="Competitor Intelligence">Competitor Intelligence (3)</button>
-      <button class="cat-tab" data-cat="AI &amp; Technology">AI &amp; Technology (3)</button>
-      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">Private Banking &amp; Wealth (3)</button>
-      <button class="cat-tab" data-cat="Regulatory &amp; Markets">Regulatory &amp; Markets (2)</button>
-      <button class="cat-tab" data-cat="Operations &amp; Change">Operations &amp; Change (3)</button>
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">Private Banking &amp; Wealth (2)</button>
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">Regulatory &amp; Markets (1)</button>
+      <button class="cat-tab" data-cat="Operations &amp; Change">Operations &amp; Change (1)</button>
     </div>
-
-    <div class="category-section" data-category-group="HSBC News">
-      <h3 class="category-header"><span class="cat-dot" style="background: #dc2626"></span>HSBC News</h3>
-      <div class="articles-grid">
-        <article class="article-card" id="article-art01" data-category="HSBC News">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 10/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 9/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://www.fintechfutures.com/bankingtech/hsbc-completes-next-stage-of-global-reorganisation-announces-numerous-leadership-appointments" target="_blank" rel="noopener">HSBC Completes Next Stage of Global Reorganisation with Leadership Appointments</a></div>
-          <p class="article-summary">HSBC has completed the next stage of its global reorganisation with sweeping leadership appointments across restructured business units, reinforcing a dual focus on Wealth and Commercial Banking. Simultaneous new private banking heads across North Asia, South Asia, and Southeast Asia signal the Wealth Powerhouse strategy is entering an aggressive delivery phase.</p>
-          <div class="article-footer"><span class="article-source">Fintech Futures</span><span>28 May 2026</span></div>
-        </article>
-        <article class="article-card" id="article-art05" data-category="HSBC News">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 9/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://www.hubbis.com/news/hsbc-moves-ahead-with-hong-kong-stablecoin-launch" target="_blank" rel="noopener">HSBC Moves Ahead With Hong Kong Dollar Stablecoin Launch via PayMe</a></div>
-          <p class="article-summary">HSBC is advancing its HKD-denominated stablecoin for H2 2026 launch, integrated directly into PayMe and the HSBC HK App, enabling peer-to-peer payments, merchant QR transactions, and cross-border transfers. Each stablecoin will be fully backed by segregated high-quality liquid assets, creating a new digital product channel within WPB.</p>
-          <div class="article-footer"><span class="article-source">Hubbis</span><span>28 May 2026</span></div>
-        </article>
-        <article class="article-card" id="article-art03" data-category="HSBC News">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
-          </div>
-          <div class="article-title"><a href="https://hubbis.com/news/hsbc-global-private-banking-expands-southeast-asia-coverage" target="_blank" rel="noopener">HSBC Global Private Banking Expands Southeast Asia Coverage Team</a></div>
-          <p class="article-summary">HSBC Global Private Banking has expanded its Southeast Asia coverage team with senior appointments, targeting the region&#39;s growing ultra-high-net-worth client base. The expansion aligns with the Wealth Powerhouse strategy to capture accelerating cross-border flows from Southeast Asian markets.</p>
-          <div class="article-footer"><span class="article-source">Hubbis</span><span>28 May 2026</span></div>
-        </article>
-      </div>
-    </div>
-
-    <div class="category-section" data-category-group="Competitor Intelligence">
-      <h3 class="category-header"><span class="cat-dot" style="background: #0891b2"></span>Competitor Intelligence</h3>
-      <div class="articles-grid">
-        <article class="article-card" id="article-art06" data-category="Competitor Intelligence">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://thedigitalbanker.com/standard-chartered-strengthens-digital-wealth-offering-with-upgraded-mobile-app-and-ai-advisory/" target="_blank" rel="noopener">Standard Chartered Strengthens Digital Wealth with Upgraded AI Advisory and Mobile App</a></div>
-          <p class="article-summary">Standard Chartered has upgraded its mobile wealth platform with embedded AI advisory, including an AI-powered FX Intelligent Expert delivering complex market analysis as concise multilingual video briefings. The enhancement directly competes with HSBC WPB&#39;s digital wealth proposition across shared client segments in Hong Kong and Singapore.</p>
-          <div class="article-footer"><span class="article-source">The Digital Banker</span><span>28 May 2026</span></div>
-        </article>
-        <article class="article-card" id="article-art07" data-category="Competitor Intelligence">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://asianprivatebanker.com/private-wealth/people-private-wealth/movers-shakers-decoding-j-p-morgan-private-banks-hiring-spree/" target="_blank" rel="noopener">Decoding JPMorgan&#39;s Asia Private Banking Hiring Spree: 35% RM Growth to 330</a></div>
-          <p class="article-summary">JPMorgan Private Bank grew its Asia relationship manager headcount 35% to 330 in 2024 and AUM 26% to US$213 billion, with hiring budgets substantially increased for 2026. The bank&#39;s aggressive expansion intensifies competition for APAC private banking talent at exactly the moment HSBC&#39;s Wealth Powerhouse requires its own RM scaling.</p>
-          <div class="article-footer"><span class="article-source">Asian Private Banker</span><span>28 May 2026</span></div>
-        </article>
-        <article class="article-card" id="article-art09" data-category="Competitor Intelligence">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
-          </div>
-          <div class="article-title"><a href="https://theonlinecitizen.com/2026/05/19/standard-chartered-targets-15-support-role-cut-by-2030-as-ai-drives-efficiency-push" target="_blank" rel="noopener">Standard Chartered Targets 15% Support Role Cut by 2030 as AI Drives Efficiency Push</a></div>
-          <p class="article-summary">Standard Chartered has committed to cutting more than 15% of corporate support roles by 2030 using AI and automation, having already announced 7,800 contract worker reductions. The move represents the most concrete competitor example of COO-led AI-enabled workforce transformation in APAC banking to date.</p>
-          <div class="article-footer"><span class="article-source">The Online Citizen</span><span>19 May 2026</span></div>
-        </article>
-      </div>
-    </div>
-
     <div class="category-section" data-category-group="AI &amp; Technology">
       <h3 class="category-header"><span class="cat-dot" style="background: #6366f1"></span>AI &amp; Technology</h3>
       <div class="articles-grid">
-        <article class="article-card" id="article-art10" data-category="AI &amp; Technology">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 9/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
-          </div>
-          <div class="article-title"><a href="https://www.bankingdive.com/news/banks-agentic-ai-scale-2026-accenture/809585/" target="_blank" rel="noopener">Banks Aim for Agentic AI Scale in 2026: 70% in Production by Year-End — Accenture</a></div>
-          <p class="article-summary">An Accenture report finds over 70% of banks expect to run AI agents in production by end-2026, with finance teams using agentic AI projected to grow 600%+. Banks achieving scaled deployment are generating 2.3x ROI within 13 months, creating compounding advantage for first movers.</p>
-          <div class="article-footer"><span class="article-source">Banking Dive</span><span>28 May 2026</span></div>
+        <article class="article-card" id="article-art02" data-category="AI &amp; Technology">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 6/10</span><span class="score-badge rel">Rel. 8/10</span><span class="score-badge noise">●●●○○</span></div>
+          <div class="article-title"><a href="https://www.pymnts.com/news/banking/2026/agentic-ai-and-banks-who-signs-off-on-the-machine/" target="_blank" rel="noopener">Agentic AI in Banking: Who Signs Off on the Machine?</a></div>
+          <p class="article-summary">As banks deploy agentic AI to execute multistep workflows autonomously, a critical governance gap emerges around authorization, oversight, and liability; with 44% of finance teams expected to use agentic AI in 2026, banks must establish clear accountability frameworks before deployment rather than after the first regulatory incident.</p>
+          <div class="article-footer"><span class="article-source">PYMNTS.com</span><span>28 May 2026</span></div>
         </article>
-        <article class="article-card" id="article-art11" data-category="AI &amp; Technology">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 9/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
-          </div>
-          <div class="article-title"><a href="https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations" target="_blank" rel="noopener">McKinsey: The Paradigm Shift — How Agentic AI Is Redefining Banking Operations</a></div>
-          <p class="article-summary">McKinsey research shows agentic AI delivering transformative results: JPMorgan&#39;s LLM Suite delivers 83% faster research cycles and automates 360,000 manual hours annually, while a UK financial services firm achieved 30% development efficiency gains worth £15m. The report argues 2026 is the decisive year for banks to shift from AI experimentation to systematic operational redesign.</p>
-          <div class="article-footer"><span class="article-source">McKinsey</span><span>28 May 2026</span></div>
+        <article class="article-card" id="article-art03" data-category="AI &amp; Technology">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 6/10</span><span class="score-badge rel">Rel. 8/10</span><span class="score-badge noise">●●●○○</span></div>
+          <div class="article-title"><a href="https://www.businesswire.com/news/home/20260504126906/en/FIS-Brings-Agentic-AI-to-Banking-with-Anthropic-Starting-with-Financial-Crimes" target="_blank" rel="noopener">FIS + Anthropic Launch Financial Crimes AI Agent for AML</a></div>
+          <p class="article-summary">FIS partnered with Anthropic to deploy a Financial Crimes AI Agent that compresses AML investigations from hours to minutes, with BMO and Amalgamated Bank as early adopters and broader banking deployment planned for H2 2026 — extending to credit decisioning, customer onboarding, and fraud prevention.</p>
+          <div class="article-footer"><span class="article-source">BusinessWire / FIS</span><span>4 May 2026</span></div>
         </article>
-        <article class="article-card" id="article-art13" data-category="AI &amp; Technology">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://thedigitalbanker.com/why-2026-is-the-make-or-break-year-for-agentic-ai-in-banking-cloud-operations/" target="_blank" rel="noopener">Why 2026 Is the Make-or-Break Year for Agentic AI in Banking Cloud Operations</a></div>
-          <p class="article-summary">Banks face a defining choice in 2026: commit to production-grade AI agent infrastructure or fall permanently behind as competitors build compounding productivity gains. Those that delay the transition from AI pilots to governed cloud-native agent operations face structural disadvantage that will be difficult to reverse.</p>
-          <div class="article-footer"><span class="article-source">The Digital Banker</span><span>27 May 2026</span></div>
+        <article class="article-card" id="article-art01" data-category="AI &amp; Technology">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 5/10</span><span class="score-badge rel">Rel. 8/10</span><span class="score-badge noise">●●●○○</span></div>
+          <div class="article-title"><a href="https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html" target="_blank" rel="noopener">Merrill and BofA Roll Out AI-Powered Meeting Journey to 25,000 Advisors</a></div>
+          <p class="article-summary">Merrill Wealth Management and Bank of America Private Bank deployed an AI-Powered Meeting Journey tool to all 25,000 Merrill advisors — covering pre-meeting prep, AI note-taking during calls, and automated follow-up generation — with reported savings of up to 4 hours per advisor meeting.</p>
+          <div class="article-footer"><span class="article-source">Bank of America Newsroom</span><span>28 May 2026</span></div>
         </article>
       </div>
     </div>
-
-    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
-      <h3 class="category-header"><span class="cat-dot" style="background: #059669"></span>Private Banking &amp; Wealth</h3>
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header"><span class="cat-dot" style="background: #dc2626"></span>HSBC News</h3>
       <div class="articles-grid">
-        <article class="article-card" id="article-art14" data-category="Private Banking &amp; Wealth">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
-          </div>
-          <div class="article-title"><a href="https://www.unboxfuture.com/2026/05/2026-global-wealth-report-hong-kong.html" target="_blank" rel="noopener">BCG 2026 Global Wealth Report: Hong Kong Officially Surpasses Switzerland</a></div>
-          <p class="article-summary">Boston Consulting Group&#39;s 2026 Global Wealth Report, released May 27, confirms Hong Kong has officially surpassed Switzerland as the world&#39;s largest cross-border wealth management centre with US$2.95 trillion in international assets. The &#39;Great Reordering&#39; highlights Asia&#39;s wealth consolidation and sharpens the competitive stakes for wealth managers with APAC operations.</p>
-          <div class="article-footer"><span class="article-source">Unbox Future</span><span>27 May 2026</span></div>
+        <article class="article-card" id="article-art04" data-category="HSBC News">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 9/10</span><span class="score-badge rel">Rel. 9/10</span><span class="score-badge noise">●●●○○</span></div>
+          <div class="article-title"><a href="https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/" target="_blank" rel="noopener">HSBC WPB Attracts US$38bn NNIA in Asia; StanChart on Track</a></div>
+          <p class="article-summary">HSBC WPB attracted US$38 billion in net new invested assets from Asia, maintaining strong momentum in the region; Standard Chartered simultaneously confirmed it is on track for its 2026 revenue targets — intensifying high-end competition across the APAC private banking landscape.</p>
+          <div class="article-footer"><span class="article-source">Asian Private Banker</span><span>28 May 2026</span></div>
         </article>
-        <article class="article-card" id="article-art15" data-category="Private Banking &amp; Wealth">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/" target="_blank" rel="noopener">Hong Kong Overtakes Singapore in Wealthtech Adoption — Quinlan &amp; Associates Report</a></div>
-          <p class="article-summary">A Quinlan &amp; Associates and Allfunds Asia report shows 93% of Hong Kong investors have accessed digital wealth services in the past two years versus Singapore&#39;s 85%, with Hong Kong leading on robo-advisor adoption (74% vs 59%) and AI comfort (52% vs 27%). Hong Kong is confirmed as the most digitally progressive wealth market in Asia, raising the competitive bar for all wealth managers operating there.</p>
-          <div class="article-footer"><span class="article-source">Fintech HK</span><span>27 May 2026</span></div>
+        <article class="article-card" id="article-art05" data-category="HSBC News">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 9/10</span><span class="score-badge rel">Rel. 9/10</span><span class="score-badge noise">●●○○○</span></div>
+          <div class="article-title"><a href="https://asianprivatebanker.com/private-wealth/people-private-wealth/hsbc-rbwm-asia-head-to-take-global-digital-role/" target="_blank" rel="noopener">HSBC RBWM Asia Head to Take Global Digital Role</a></div>
+          <p class="article-summary">HSBC's head of Retail Banking and Wealth Management for Asia is transitioning to a newly created global digital leadership role, marking another wave of the bank's reorganisation and signalling that APAC digital expertise is being exported to the global centre.</p>
+          <div class="article-footer"><span class="article-source">Asian Private Banker</span><span>29 May 2026</span></div>
         </article>
-        <article class="article-card" id="article-art16" data-category="Private Banking &amp; Wealth">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
-          </div>
-          <div class="article-title"><a href="https://www.hubbis.com/news/digital-solutions-the-way-forward-as-financial-institutions-capitalise-on-wealth-management-opportunities-in-hong-kong-and-singapore" target="_blank" rel="noopener">Digital Solutions the Way Forward as Banks Capitalise on HK and Singapore Wealth Opportunities</a></div>
-          <p class="article-summary">Digital solutions are now the primary driver for financial institutions to capitalise on wealth management opportunities in Hong Kong and Singapore, with digital-first platforms capturing market share from traditional private banks. The competitive pressure from neobrokers and pure-play wealthtech players is accelerating the need for incumbent banks like HSBC to upgrade digital wealth delivery.</p>
+        <article class="article-card" id="article-art06" data-category="HSBC News">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 8/10</span><span class="score-badge rel">Rel. 7/10</span><span class="score-badge noise">●●○○○</span></div>
+          <div class="article-title"><a href="https://www.about.hsbc.com.hk/news-and-media/hsbc-opens-fifth-premier-elite-wealth-centre-in-hong-kong-at-ifc" target="_blank" rel="noopener">HSBC Opens Fifth Premier Elite Wealth Centre at Two IFC HK</a></div>
+          <p class="article-summary">HSBC opened its fifth Premier Elite Wealth Centre on the 58th floor of Two IFC — a 13,000 sq ft facility with 34 harbour-view meeting rooms already fully booked through June — reflecting 10%+ Premier Elite client growth in 2025 and HSBC's continued bet on ultra-premium physical service in HK.</p>
+          <div class="article-footer"><span class="article-source">HSBC Hong Kong</span><span>29 May 2026</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header"><span class="cat-dot" style="background: #0891b2"></span>Competitor Intelligence</h3>
+      <div class="articles-grid">
+        <article class="article-card" id="article-art07" data-category="Competitor Intelligence">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 7/10</span><span class="score-badge rel">Rel. 9/10</span><span class="score-badge noise">●●●●○</span></div>
+          <div class="article-title"><a href="https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies" target="_blank" rel="noopener">Citi Wealth Unveils Citi Sky — AI Adviser Built on Google DeepMind</a></div>
+          <p class="article-summary">Citigroup unveiled Citi Sky, an always-on AI-powered wealth adviser built on Google DeepMind real-time avatar and live audio/video technology, set to roll out to Citigold clients in summer 2026 — enabling conversational AI-driven wealth engagement and real-time market insight delivery.</p>
+          <div class="article-footer"><span class="article-source">Citigroup Press Release</span><span>28 May 2026</span></div>
+        </article>
+        <article class="article-card" id="article-art08" data-category="Competitor Intelligence">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 8/10</span><span class="score-badge rel">Rel. 8/10</span><span class="score-badge noise">●●●○○</span></div>
+          <div class="article-title"><a href="https://www.euromoney.com/article/cuvnpbop10gk4kw4sowcg0c8w/private-banking/singapores-best-private-bank-for-uhnw-2026-standard-chartered/" target="_blank" rel="noopener">Standard Chartered Named Singapore Best UHNW Private Bank 2026</a></div>
+          <p class="article-summary">Euromoney named Standard Chartered Singapore's Best Private Bank for Ultra-High-Net-Worth clients in 2026, recognising its Asia-Middle East corridor strategy, 24% Wealth Solutions operating income growth (USD 3.1bn in 2025), and seven new wealth centres across Hong Kong, Singapore, and Korea.</p>
+          <div class="article-footer"><span class="article-source">Euromoney</span><span>28 May 2026</span></div>
+        </article>
+        <article class="article-card" id="article-art09" data-category="Competitor Intelligence">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 7/10</span><span class="score-badge rel">Rel. 7/10</span><span class="score-badge noise">●●●○○</span></div>
+          <div class="article-title"><a href="https://www.hubbis.com/news/standard-chartered-private-bank-expands-singapore-team-amid-wealth-management-growth" target="_blank" rel="noopener">Standard Chartered Plans 50+ New Singapore RMs for Chinese Clients</a></div>
+          <p class="article-summary">Standard Chartered is hiring up to 50 new relationship managers in Singapore to double its private banking team serving wealthy Chinese clients, targeting the USD 5 trillion generational wealth transfer expected by 2030 and directly competing with HSBC WPB for the same HNWI segment.</p>
           <div class="article-footer"><span class="article-source">Hubbis</span><span>28 May 2026</span></div>
         </article>
       </div>
     </div>
-
-    <div class="category-section" data-category-group="Regulatory &amp; Markets">
-      <h3 class="category-header"><span class="cat-dot" style="background: #d97706"></span>Regulatory &amp; Markets</h3>
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header"><span class="cat-dot" style="background: #059669"></span>Private Banking &amp; Wealth</h3>
       <div class="articles-grid">
-        <article class="article-card" id="article-art19" data-category="Regulatory &amp; Markets">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://www.elliptic.co/blog/hong-kong-awards-first-stablecoin-licenses-to-hsbc-and-standard-chartered" target="_blank" rel="noopener">Hong Kong Awards First Stablecoin Licences to HSBC and Standard Chartered</a></div>
-          <p class="article-summary">Elliptic analysis examines the HKMA&#39;s grant of Hong Kong&#39;s first two stablecoin licences to HSBC and Standard Chartered under the Stablecoins Ordinance, exploring implications for digital asset adoption and competitive advantage in Hong Kong&#39;s fast-growing digital payments market. Both banks plan to launch HKD-denominated stablecoins in H2 2026, with HSBC integrating its offering into PayMe.</p>
-          <div class="article-footer"><span class="article-source">Elliptic</span><span>27 May 2026</span></div>
+        <article class="article-card" id="article-art12" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 8/10</span><span class="score-badge rel">Rel. 8/10</span><span class="score-badge noise">●●●○○</span></div>
+          <div class="article-title"><a href="https://www.hokanews.com/2026/05/hong-kong-becomes-worlds-biggest-wealth.html" target="_blank" rel="noopener">Hong Kong Overtakes Switzerland as World Largest Cross-Border Wealth Hub</a></div>
+          <p class="article-summary">Hong Kong has officially overtaken Switzerland to become the world's largest cross-border wealth management hub with USD 2.9 trillion in international assets, driven by 93% digital wealth adoption among HK investors — a powerful strategic tailwind for HSBC's home market growth ambitions.</p>
+          <div class="article-footer"><span class="article-source">Hokanews</span><span>28 May 2026</span></div>
         </article>
-        <article class="article-card" id="article-art18" data-category="Regulatory &amp; Markets">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
-          </div>
-          <div class="article-title"><a href="https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/" target="_blank" rel="noopener">IQ-EQ: Asia Pacific 2025 Regulatory Review and 2026 Predictions</a></div>
-          <p class="article-summary">IQ-EQ&#39;s APAC regulatory review highlights AI governance, cyber risk preparedness, and environmental risk management as dominant themes for financial services regulators in 2026. Governance and accountability strengthening was the most prominent Q1 2026 theme across Japan, Taiwan, Indonesia, Singapore, and Hong Kong.</p>
-          <div class="article-footer"><span class="article-source">IQ-EQ</span><span>28 May 2026</span></div>
+        <article class="article-card" id="article-art11" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 7/10</span><span class="score-badge rel">Rel. 8/10</span><span class="score-badge noise">●●●●○</span></div>
+          <div class="article-title"><a href="https://www.cnbc.com/amp/2026/05/29/asias-rich-fear-losing-family-fortune-but-have-no-succession-plans.html" target="_blank" rel="noopener">Asia HNWIs Fear Losing Family Fortune but Lack Succession Plans</a></div>
+          <p class="article-summary">A CNBC survey of 390+ Asia-Pacific HNWIs (published today) found only 26.9% have a full succession plan, while 39.4% have none — with Hong Kong, Japan, Philippines, and Malaysia showing the weakest preparedness — representing a massive untapped advisory opportunity for private banks with integrated succession and estate planning capabilities.</p>
+          <div class="article-footer"><span class="article-source">CNBC</span><span>29 May 2026</span></div>
         </article>
       </div>
     </div>
-
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header"><span class="cat-dot" style="background: #d97706"></span>Regulatory &amp; Markets</h3>
+      <div class="articles-grid">
+        <article class="article-card" id="article-art13" data-category="Regulatory &amp; Markets">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 6/10</span><span class="score-badge rel">Rel. 5/10</span><span class="score-badge noise">●●○○○</span></div>
+          <div class="article-title"><a href="https://www.deloitte.com/southeast-asia/en/Industries/financial-services/perspectives/asia-pacific-financial-services-regulatory-update-q1-2026.html" target="_blank" rel="noopener">Deloitte: APAC Q1 2026 Regulatory Update — Governance Dominates</a></div>
+          <p class="article-summary">Deloitte Q1 2026 APAC regulatory review shows governance and consumer protection topping the regulatory agenda, with China releasing a draft Financial Law, Singapore issuing environmental risk management guidelines, and Hong Kong launching Phase 2A of its Sustainable Finance Taxonomy — each requiring banks to update internal governance frameworks.</p>
+          <div class="article-footer"><span class="article-source">Deloitte Southeast Asia</span><span>28 May 2026</span></div>
+        </article>
+      </div>
+    </div>
     <div class="category-section" data-category-group="Operations &amp; Change">
       <h3 class="category-header"><span class="cat-dot" style="background: #7c3aed"></span>Operations &amp; Change</h3>
       <div class="articles-grid">
-        <article class="article-card" id="article-art20" data-category="Operations &amp; Change">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
-          </div>
-          <div class="article-title"><a href="https://www.adlittle.com/en/insights/viewpoints/new-era-operational-efficiency-banking" target="_blank" rel="noopener">Arthur D. Little: A New Era of Operational Efficiency in Banking</a></div>
-          <p class="article-summary">Arthur D. Little argues banking is entering a new era of operational efficiency where AI, RPA, and agentic platforms enable institutions to move beyond cost reduction toward intelligent, self-improving operations. Operational transformation is repositioned as a strategic differentiator rather than a pure cost programme.</p>
-          <div class="article-footer"><span class="article-source">Arthur D. Little</span><span>28 May 2026</span></div>
-        </article>
-        <article class="article-card" id="article-art22" data-category="Operations &amp; Change">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
-          </div>
-          <div class="article-title"><a href="https://www.moodys.com/web/en/us/insights/banking/the-future-of-banking-6-key-takeaways-from-the-apac-advisory-board.html" target="_blank" rel="noopener">Moody&#39;s APAC: The Future of Banking — 6 Key Takeaways from Advisory Board</a></div>
-          <p class="article-summary">Moody&#39;s APAC Advisory Board identifies six forces shaping the future of regional banking: AI-enabled operations, digital-first wealth, operational resilience, cyber risk, regulatory compliance intensity, and talent transformation. The findings underscore the interconnected challenges that COOs and change leaders in APAC banking must navigate simultaneously.</p>
-          <div class="article-footer"><span class="article-source">Moody&#39;s</span><span>27 May 2026</span></div>
-        </article>
-        <article class="article-card" id="article-art21" data-category="Operations &amp; Change">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
-            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
-          </div>
-          <div class="article-title"><a href="https://www.retailbankerinternational.com/comment/operational-resilience-in-retail-banking/" target="_blank" rel="noopener">Operational Resilience in Retail Banking: Why the Next Transformation Must Be Invisible</a></div>
-          <p class="article-summary">Retail Banker International argues the next wave of operational resilience must be invisibly embedded in processes rather than bolted on as compliance overhead, requiring real-time AI-enabled operational intelligence. Effective resilience means COO functions shift from reactive incident management to predictive operational governance.</p>
-          <div class="article-footer"><span class="article-source">Retail Banker International</span><span>28 May 2026</span></div>
+        <article class="article-card" id="article-art14" data-category="Operations &amp; Change">
+          <div class="article-scores"><span class="score-badge hsbc">HSBC 6/10</span><span class="score-badge rel">Rel. 7/10</span><span class="score-badge noise">●●○○○</span></div>
+          <div class="article-title"><a href="https://www.10xbanking.com/insights/core-banking-trends-2026-ai-resilience-real-time-transformation" target="_blank" rel="noopener">Core Banking Trends 2026: AI, Resilience and Real-Time Transformation</a></div>
+          <p class="article-summary">Core banking modernisation is the defining operational challenge of 2026, as banks shift from cloud lift-and-shift to cloud-native cores enabling real-time capabilities and AI integration at the infrastructure level; change programs that fail to sequence this correctly risk accumulating compounding technical and operational debt.</p>
+          <div class="article-footer"><span class="article-source">10x Banking</span><span>28 May 2026</span></div>
         </article>
       </div>
     </div>
@@ -521,13 +303,13 @@
 </section>
 
 <footer class="site-footer">
-  Generated 28 May 2026, 23:18 UTC &nbsp;·&nbsp;
+  Generated 29 May 2026, 23:22 UTC &nbsp;·&nbsp;
   <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
   Powered by Claude AI (Anthropic)
 </footer>
 
 <script>
-const CHART_DATA = {"articles": [{"id": "art01", "title": "HSBC Completes Next Stage of Global Reorganisation with Leadership Appointments", "url": "https://www.fintechfutures.com/bankingtech/hsbc-completes-next-stage-of-global-reorganisation-announces-numerous-leadership-appointments", "source": "Fintech Futures", "hsbc_relevancy": 10, "user_relevance": 9, "noise_level": 3, "category": "HSBC News"}, {"id": "art03", "title": "HSBC Global Private Banking Expands Southeast Asia Coverage Team", "url": "https://hubbis.com/news/hsbc-global-private-banking-expands-southeast-asia-coverage", "source": "Hubbis", "hsbc_relevancy": 8, "user_relevance": 8, "noise_level": 2, "category": "HSBC News"}, {"id": "art05", "title": "HSBC Moves Ahead With Hong Kong Dollar Stablecoin Launch via PayMe", "url": "https://www.hubbis.com/news/hsbc-moves-ahead-with-hong-kong-stablecoin-launch", "source": "Hubbis", "hsbc_relevancy": 9, "user_relevance": 8, "noise_level": 3, "category": "HSBC News"}, {"id": "art06", "title": "Standard Chartered Strengthens Digital Wealth with Upgraded AI Advisory and Mobile App", "url": "https://thedigitalbanker.com/standard-chartered-strengthens-digital-wealth-offering-with-upgraded-mobile-app-and-ai-advisory/", "source": "The Digital Banker", "hsbc_relevancy": 7, "user_relevance": 8, "noise_level": 3, "category": "Competitor Intelligence"}, {"id": "art07", "title": "Decoding JPMorgan's Asia Private Banking Hiring Spree: 35% RM Growth to 330", "url": "https://asianprivatebanker.com/private-wealth/people-private-wealth/movers-shakers-decoding-j-p-morgan-private-banks-hiring-spree/", "source": "Asian Private Banker", "hsbc_relevancy": 7, "user_relevance": 8, "noise_level": 3, "category": "Competitor Intelligence"}, {"id": "art09", "title": "Standard Chartered Targets 15% Support Role Cut by 2030 as AI Drives Efficiency Push", "url": "https://theonlinecitizen.com/2026/05/19/standard-chartered-targets-15-support-role-cut-by-2030-as-ai-drives-efficiency-push", "source": "The Online Citizen", "hsbc_relevancy": 8, "user_relevance": 7, "noise_level": 4, "category": "Competitor Intelligence"}, {"id": "art10", "title": "Banks Aim for Agentic AI Scale in 2026: 70% in Production by Year-End — Accenture", "url": "https://www.bankingdive.com/news/banks-agentic-ai-scale-2026-accenture/809585/", "source": "Banking Dive", "hsbc_relevancy": 7, "user_relevance": 9, "noise_level": 4, "category": "AI & Technology"}, {"id": "art11", "title": "McKinsey: The Paradigm Shift — How Agentic AI Is Redefining Banking Operations", "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations", "source": "McKinsey", "hsbc_relevancy": 7, "user_relevance": 9, "noise_level": 4, "category": "AI & Technology"}, {"id": "art13", "title": "Why 2026 Is the Make-or-Break Year for Agentic AI in Banking Cloud Operations", "url": "https://thedigitalbanker.com/why-2026-is-the-make-or-break-year-for-agentic-ai-in-banking-cloud-operations/", "source": "The Digital Banker", "hsbc_relevancy": 6, "user_relevance": 8, "noise_level": 3, "category": "AI & Technology"}, {"id": "art14", "title": "BCG 2026 Global Wealth Report: Hong Kong Officially Surpasses Switzerland", "url": "https://www.unboxfuture.com/2026/05/2026-global-wealth-report-hong-kong.html", "source": "Unbox Future", "hsbc_relevancy": 8, "user_relevance": 7, "noise_level": 4, "category": "Private Banking & Wealth"}, {"id": "art15", "title": "Hong Kong Overtakes Singapore in Wealthtech Adoption — Quinlan & Associates Report", "url": "https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/", "source": "Fintech HK", "hsbc_relevancy": 7, "user_relevance": 7, "noise_level": 3, "category": "Private Banking & Wealth"}, {"id": "art16", "title": "Digital Solutions the Way Forward as Banks Capitalise on HK and Singapore Wealth Opportunities", "url": "https://www.hubbis.com/news/digital-solutions-the-way-forward-as-financial-institutions-capitalise-on-wealth-management-opportunities-in-hong-kong-and-singapore", "source": "Hubbis", "hsbc_relevancy": 7, "user_relevance": 7, "noise_level": 2, "category": "Private Banking & Wealth"}, {"id": "art18", "title": "IQ-EQ: Asia Pacific 2025 Regulatory Review and 2026 Predictions", "url": "https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/", "source": "IQ-EQ", "hsbc_relevancy": 6, "user_relevance": 6, "noise_level": 2, "category": "Regulatory & Markets"}, {"id": "art19", "title": "Hong Kong Awards First Stablecoin Licences to HSBC and Standard Chartered", "url": "https://www.elliptic.co/blog/hong-kong-awards-first-stablecoin-licenses-to-hsbc-and-standard-chartered", "source": "Elliptic", "hsbc_relevancy": 8, "user_relevance": 6, "noise_level": 3, "category": "Regulatory & Markets"}, {"id": "art20", "title": "Arthur D. Little: A New Era of Operational Efficiency in Banking", "url": "https://www.adlittle.com/en/insights/viewpoints/new-era-operational-efficiency-banking", "source": "Arthur D. Little", "hsbc_relevancy": 6, "user_relevance": 7, "noise_level": 3, "category": "Operations & Change"}, {"id": "art21", "title": "Operational Resilience in Retail Banking: Why the Next Transformation Must Be Invisible", "url": "https://www.retailbankerinternational.com/comment/operational-resilience-in-retail-banking/", "source": "Retail Banker International", "hsbc_relevancy": 6, "user_relevance": 6, "noise_level": 2, "category": "Operations & Change"}, {"id": "art22", "title": "Moody's APAC: The Future of Banking — 6 Key Takeaways from Advisory Board", "url": "https://www.moodys.com/web/en/us/insights/banking/the-future-of-banking-6-key-takeaways-from-the-apac-advisory-board.html", "source": "Moody's", "hsbc_relevancy": 6, "user_relevance": 7, "noise_level": 2, "category": "Operations & Change"}], "categories": {"HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "AI & Technology": "#6366f1", "Private Banking & Wealth": "#059669", "Regulatory & Markets": "#d97706", "Operations & Change": "#7c3aed"}};
+const CHART_DATA = {"articles": [{"id": "art01", "title": "Merrill and BofA Roll Out AI-Powered Meeting Journey to 25,000 Advisors", "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html", "source": "Bank of America Newsroom", "published_at": "2026-05-28", "hsbc_relevancy": 5, "user_relevance": 8, "noise_level": 3, "category": "AI & Technology"}, {"id": "art02", "title": "Agentic AI in Banking: Who Signs Off on the Machine?", "url": "https://www.pymnts.com/news/banking/2026/agentic-ai-and-banks-who-signs-off-on-the-machine/", "source": "PYMNTS.com", "published_at": "2026-05-28", "hsbc_relevancy": 6, "user_relevance": 8, "noise_level": 3, "category": "AI & Technology"}, {"id": "art03", "title": "FIS + Anthropic Launch Financial Crimes AI Agent for AML", "url": "https://www.businesswire.com/news/home/20260504126906/en/FIS-Brings-Agentic-AI-to-Banking-with-Anthropic-Starting-with-Financial-Crimes", "source": "BusinessWire / FIS", "published_at": "2026-05-04", "hsbc_relevancy": 6, "user_relevance": 8, "noise_level": 3, "category": "AI & Technology"}, {"id": "art04", "title": "HSBC WPB Attracts US$38bn NNIA in Asia; StanChart on Track", "url": "https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/", "source": "Asian Private Banker", "published_at": "2026-05-28", "hsbc_relevancy": 9, "user_relevance": 9, "noise_level": 3, "category": "HSBC News"}, {"id": "art05", "title": "HSBC RBWM Asia Head to Take Global Digital Role", "url": "https://asianprivatebanker.com/private-wealth/people-private-wealth/hsbc-rbwm-asia-head-to-take-global-digital-role/", "source": "Asian Private Banker", "published_at": "2026-05-29", "hsbc_relevancy": 9, "user_relevance": 9, "noise_level": 2, "category": "HSBC News"}, {"id": "art06", "title": "HSBC Opens Fifth Premier Elite Wealth Centre at Two IFC HK", "url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-opens-fifth-premier-elite-wealth-centre-in-hong-kong-at-ifc", "source": "HSBC Hong Kong", "published_at": "2026-05-29", "hsbc_relevancy": 8, "user_relevance": 7, "noise_level": 2, "category": "HSBC News"}, {"id": "art07", "title": "Citi Wealth Unveils Citi Sky — AI Adviser Built on Google DeepMind", "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies", "source": "Citigroup Press Release", "published_at": "2026-05-28", "hsbc_relevancy": 7, "user_relevance": 9, "noise_level": 4, "category": "Competitor Intelligence"}, {"id": "art08", "title": "Standard Chartered Named Singapore Best UHNW Private Bank 2026", "url": "https://www.euromoney.com/article/cuvnpbop10gk4kw4sowcg0c8w/private-banking/singapores-best-private-bank-for-uhnw-2026-standard-chartered/", "source": "Euromoney", "published_at": "2026-05-28", "hsbc_relevancy": 8, "user_relevance": 8, "noise_level": 3, "category": "Competitor Intelligence"}, {"id": "art09", "title": "Standard Chartered Plans 50+ New Singapore RMs for Chinese Clients", "url": "https://www.hubbis.com/news/standard-chartered-private-bank-expands-singapore-team-amid-wealth-management-growth", "source": "Hubbis", "published_at": "2026-05-28", "hsbc_relevancy": 7, "user_relevance": 7, "noise_level": 3, "category": "Competitor Intelligence"}, {"id": "art11", "title": "Asia HNWIs Fear Losing Family Fortune but Lack Succession Plans", "url": "https://www.cnbc.com/amp/2026/05/29/asias-rich-fear-losing-family-fortune-but-have-no-succession-plans.html", "source": "CNBC", "published_at": "2026-05-29", "hsbc_relevancy": 7, "user_relevance": 8, "noise_level": 4, "category": "Private Banking & Wealth"}, {"id": "art12", "title": "Hong Kong Overtakes Switzerland as World Largest Cross-Border Wealth Hub", "url": "https://www.hokanews.com/2026/05/hong-kong-becomes-worlds-biggest-wealth.html", "source": "Hokanews", "published_at": "2026-05-28", "hsbc_relevancy": 8, "user_relevance": 8, "noise_level": 3, "category": "Private Banking & Wealth"}, {"id": "art13", "title": "Deloitte: APAC Q1 2026 Regulatory Update — Governance Dominates", "url": "https://www.deloitte.com/southeast-asia/en/Industries/financial-services/perspectives/asia-pacific-financial-services-regulatory-update-q1-2026.html", "source": "Deloitte Southeast Asia", "published_at": "2026-05-28", "hsbc_relevancy": 6, "user_relevance": 5, "noise_level": 2, "category": "Regulatory & Markets"}, {"id": "art14", "title": "Core Banking Trends 2026: AI, Resilience and Real-Time Transformation", "url": "https://www.10xbanking.com/insights/core-banking-trends-2026-ai-resilience-real-time-transformation", "source": "10x Banking", "published_at": "2026-05-28", "hsbc_relevancy": 6, "user_relevance": 7, "noise_level": 2, "category": "Operations & Change"}], "categories": {"AI & Technology": "#6366f1", "HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "Private Banking & Wealth": "#059669", "Regulatory & Markets": "#d97706", "Operations & Change": "#7c3aed"}};
 
 function renderChart() {
   const container = document.getElementById('bubble-chart-container');
@@ -537,70 +319,49 @@ function renderChart() {
   const svgH = 480;
   const W = totalW - margin.left - margin.right;
   const H = svgH - margin.top - margin.bottom;
-
-  const svg = d3.select('#bubble-chart-container')
-    .append('svg')
-    .attr('width', totalW)
-    .attr('height', svgH)
-    .append('g')
-    .attr('transform', `translate(${margin.left},${margin.top})`);
-
-  svg.append('rect').attr('width', W).attr('height', H)
-    .attr('fill', '#0a0f1e').attr('rx', 4);
-
+  const svg = d3.select('#bubble-chart-container').append('svg').attr('width', totalW).attr('height', svgH).append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+  svg.append('rect').attr('width', W).attr('height', H).attr('fill', '#0a0f1e').attr('rx', 4);
   const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
   const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
   const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
-
   [2,4,6,8].forEach(v => {
     svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', 0).attr('y2', H).attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
     svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
   });
-
-  svg.append('rect').attr('x', x(6)).attr('y', y(10)).attr('width', x(10) - x(6)).attr('height', y(6) - y(10)).attr('fill', 'rgba(219,0,17,0.07)').attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('rect').attr('x', x(6)).attr('y', y(10)).attr('width', x(10)-x(6)).attr('height', y(6)-y(10)).attr('fill', 'rgba(219,0,17,0.07)').attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
   svg.append('text').attr('x', x(8)).attr('y', y(9.6)).attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)').attr('font-size', '10px').attr('font-family', 'Inter,sans-serif').attr('font-weight', '600').attr('letter-spacing', '1px').text('HIGH PRIORITY');
-
   const xAxis = svg.append('g').attr('transform', `translate(0,${H})`).call(d3.axisBottom(x).ticks(10));
   const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
-  [xAxis, yAxis].forEach(ax => {
-    ax.select('.domain').attr('stroke', '#2d3f55');
-    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
-    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
-  });
-
-  svg.append('text').attr('x', W / 2).attr('y', H + 46).attr('text-anchor', 'middle').attr('fill', '#64748b').attr('font-size', '12px').attr('font-family', 'Inter,sans-serif').text('Relevance to Role →');
-  svg.append('text').attr('transform', 'rotate(-90)').attr('x', -H / 2).attr('y', -46).attr('text-anchor', 'middle').attr('fill', '#64748b').attr('font-size', '12px').attr('font-family', 'Inter,sans-serif').text('↑ HSBC Relevancy');
-
+  [xAxis, yAxis].forEach(ax => { ax.select('.domain').attr('stroke', '#2d3f55'); ax.selectAll('.tick line').attr('stroke', '#2d3f55'); ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px'); });
+  svg.append('text').attr('x', W/2).attr('y', H+46).attr('text-anchor', 'middle').attr('fill', '#64748b').attr('font-size', '12px').attr('font-family', 'Inter,sans-serif').text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)').attr('x', -H/2).attr('y', -46).attr('text-anchor', 'middle').attr('fill', '#64748b').attr('font-size', '12px').attr('font-family', 'Inter,sans-serif').text('↑ HSBC Relevancy');
   const tooltip = document.getElementById('chart-tooltip');
   const groups = svg.selectAll('.bubble-g').data(CHART_DATA.articles).enter().append('g').attr('class', 'bubble-g').attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`).style('cursor', 'pointer');
-
-  groups.append('circle').attr('r', d => r(d.noise_level)).attr('data-base-r', d => r(d.noise_level)).attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0').attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b').attr('stroke-width', 1.5);
-  groups.append('text').attr('text-anchor', 'middle').attr('dy', '0.35em').attr('fill', 'white').attr('pointer-events', 'none').attr('font-family', 'Inter,sans-serif').attr('font-weight', '700').attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px').text((d, i) => i + 1);
-
+  groups.append('circle').attr('r', d => r(d.noise_level)).attr('data-base-r', d => r(d.noise_level)).attr('fill', d => (CHART_DATA.categories[d.category]||'#64748b')+'b0').attr('stroke', d => CHART_DATA.categories[d.category]||'#64748b').attr('stroke-width', 1.5);
+  groups.append('text').attr('text-anchor', 'middle').attr('dy', '0.35em').attr('fill', 'white').attr('pointer-events', 'none').attr('font-family', 'Inter,sans-serif').attr('font-weight', '700').attr('font-size', d => r(d.noise_level)>17?'11px':'9px').text((d,i) => i+1);
   groups
     .on('mouseover', function(event, d) {
       const i = CHART_DATA.articles.indexOf(d);
-      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const color = CHART_DATA.categories[d.category]||'#64748b';
       const baseR = +d3.select(this).select('circle').attr('data-base-r');
-      d3.select(this).select('circle').attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+      d3.select(this).select('circle').attr('fill', color+'ff').attr('stroke-width', 2.5).attr('r', baseR*1.18);
       tooltip.style.display = 'block';
-      tooltip.innerHTML = `<div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div><div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div><div style="display:flex;gap:12px;font-size:12px"><span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span><span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span><span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span></div>`;
+      tooltip.innerHTML = `<div style="font-weight:600;margin-bottom:5px">#${i+1} — ${d.title}</div><div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div><div style="display:flex;gap:12px;font-size:12px"><span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span><span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span><span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span></div>`;
       document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
-      const card = document.getElementById('article-' + d.id);
+      const card = document.getElementById('article-'+d.id);
       if (card) card.classList.add('chart-highlighted');
     })
-    .on('mousemove', function(event) { tooltip.style.left = (event.clientX + 14) + 'px'; tooltip.style.top = (event.clientY - 12) + 'px'; })
+    .on('mousemove', function(event) { tooltip.style.left=(event.clientX+14)+'px'; tooltip.style.top=(event.clientY-12)+'px'; })
     .on('mouseout', function(event, d) {
-      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const color = CHART_DATA.categories[d.category]||'#64748b';
       const baseR = +d3.select(this).select('circle').attr('data-base-r');
-      d3.select(this).select('circle').attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      d3.select(this).select('circle').attr('fill', color+'b0').attr('stroke-width', 1.5).attr('r', baseR);
       tooltip.style.display = 'none';
       document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
     })
     .on('click', (event, d) => window.open(d.url, '_blank'));
-
   const legendEl = document.getElementById('chart-legend');
-  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) => `<div class="legend-item" data-cat="${cat}"><span class="legend-dot" style="background:${color}"></span><span>${cat}</span></div>`).join('');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) => `<div class="legend-item"><span class="legend-dot" style="background:${color}"></span><span>${cat}</span></div>`).join('');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -613,24 +374,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const cat = btn.dataset.cat;
-    document.querySelectorAll('.category-section').forEach(sec => { sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none'; });
+    document.querySelectorAll('.category-section').forEach(sec => { sec.style.display = (cat==='all'||sec.dataset.categoryGroup===cat)?'':'none'; });
   });
   document.querySelectorAll('.article-card').forEach(card => {
     card.addEventListener('mouseenter', () => {
       const id = card.id.replace('article-', '');
       d3.selectAll('.bubble-g').each(function(d) {
-        if (d.id === id) {
-          const color = CHART_DATA.categories[d.category] || '#64748b';
+        if (d.id===id) {
+          const color = CHART_DATA.categories[d.category]||'#64748b';
           const baseR = +d3.select(this).select('circle').attr('data-base-r');
-          d3.select(this).select('circle').attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+          d3.select(this).select('circle').attr('fill', color+'ff').attr('stroke-width', 2.5).attr('r', baseR*1.18);
         }
       });
     });
     card.addEventListener('mouseleave', () => {
       d3.selectAll('.bubble-g').each(function(d) {
-        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const color = CHART_DATA.categories[d.category]||'#64748b';
         const baseR = +d3.select(this).select('circle').attr('data-base-r');
-        d3.select(this).select('circle').attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+        d3.select(this).select('circle').attr('fill', color+'b0').attr('stroke-width', 1.5).attr('r', baseR);
       });
     });
   });
