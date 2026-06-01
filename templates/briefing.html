@@ -109,6 +109,8 @@
     .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
     .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
     .tp-context strong { color: var(--text); }
+    .tp-context ul { margin: 6px 0 0 18px; padding: 0; }
+    .tp-context li { margin-bottom: 4px; }
     .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
     .tp-source-link {
       font-size: 11px; font-weight: 500;
@@ -255,11 +257,11 @@
           <div class="tp-update-badge">&#8635; Update</div>
           {% endif %}
           <h3 class="tp-headline">{{ tp.headline }}</h3>
-          <p class="tp-context">{{ tp.context_html | safe }}</p>
+          <div class="tp-context">{{ tp.context_html | safe }}</div>
           {% if tp.source_links %}
           <div class="tp-sources">
-            {% for url, title in tp.source_links %}
-            <a href="{{ url }}" target="_blank" rel="noopener" class="tp-source-link" title="{{ title }}">{{ title }}</a>
+            {% for link in tp.source_links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener" class="tp-source-link" title="{{ link.title }}">{{ link.title }}</a>
             {% endfor %}
           </div>
           {% endif %}
