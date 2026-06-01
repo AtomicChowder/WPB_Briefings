@@ -147,21 +147,6 @@ def _build_for_user(user_id: str, raw: dict, generated_at: str,
     user_block = (raw.get("users") or {}).get(user_id, {}) or {}
     breaking = (raw.get("breaking_news") or {}).get(user_id, []) or []
 
-    # Normalise talking points: build context_html from why_it_matters+bullets if absent
-    raw_tps = user_block.get("talking_points", [])
-    talking_points_out = []
-    for tp in raw_tps:
-        tp_out = dict(tp)
-        if "context_html" not in tp_out:
-            parts: list[str] = []
-            if tp_out.get("why_it_matters"):
-                parts.append(tp_out["why_it_matters"])
-            if tp_out.get("bullets"):
-                items = "".join(f"<li>{b}</li>" for b in tp_out["bullets"])
-                parts.append(f"<ul>{items}</ul>")
-            tp_out["context_html"] = " ".join(parts)
-        talking_points_out.append(tp_out)
-
     return {
         "user_id":           user_id,
         "user_name":         meta["user_name"],
@@ -172,7 +157,7 @@ def _build_for_user(user_id: str, raw: dict, generated_at: str,
         "generated_at":      generated_at,
         "total_articles":    len(flat),
         "breaking_news":     breaking,
-        "talking_points":    talking_points_out,
+        "talking_points":    user_block.get("talking_points", []),
         "articles_by_category": cats,
         "chart_data": {
             "articles":   flat,

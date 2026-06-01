@@ -9,220 +9,138 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
     :root {
-      --hsbc-red: #DB0011;
-      --hsbc-red-dark: #a80009;
-      --navy: #1a1f36;
-      --navy-dark: #0f1424;
-      --navy-mid: #252b47;
-      --surface: #f4f5f7;
-      --card: #ffffff;
-      --border: #e5e7eb;
-      --text: #1f2937;
-      --text-mid: #6b7280;
-      --text-light: #9ca3af;
-      --chart-bg: #0a0f1e;
-      --chart-grid: #1e2a3a;
+      --red: #DB0011; --red-dk: #a80009;
+      --navy: #1a1f36; --navy-dk: #0f1424; --navy-mid: #252b47;
+      --surface: #f4f5f7; --card: #ffffff; --border: #e5e7eb;
+      --text: #1f2937; --mid: #6b7280; --light: #9ca3af;
+      --chart-bg: #0a0f1e; --chart-grid: #1e2a3a;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
-    a { color: var(--hsbc-red); text-decoration: none; }
+    a { color: var(--red); text-decoration: none; }
     a:hover { text-decoration: underline; }
     strong { font-weight: 600; }
 
-    /* ── Header ── */
-    .site-header {
-      background: var(--navy);
-      border-top: 4px solid var(--hsbc-red);
-      padding: 20px 32px;
-    }
-    .header-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
-    }
+    /* Header */
+    .site-header { background: var(--navy); border-top: 4px solid var(--red); padding: 18px 32px; }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
     .header-brand { display: flex; align-items: center; gap: 14px; }
-    .hsbc-mark {
-      width: 44px; height: 44px; border-radius: 6px;
-      background: var(--hsbc-red);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .hsbc-mark svg { width: 28px; height: 28px; fill: white; }
-    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
-    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .hsbc-mark { width: 52px; height: 35px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .hsbc-mark svg { width: 52px; height: 35px; }
+    .brand-text h1 { font-size: 17px; font-weight: 700; color: #fff; }
+    .brand-text p { font-size: 11px; color: #8a93b2; margin-top: 2px; }
     .header-meta { text-align: right; }
-    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
-    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
-    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+    .header-meta .date { font-size: 13px; font-weight: 600; color: #fff; }
+    .header-meta .sub { font-size: 11px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .name { color: #c9d0e8; font-weight: 500; }
 
-    /* ── Shared layout ── */
-    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
-    section { padding: 40px 0; }
-    .section-label {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
-      color: var(--hsbc-red); margin-bottom: 10px;
-    }
-    .section-label::before {
-      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
-    }
-    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
-    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+    /* Breaking news */
+    .breaking-bar { background: #7f1d1d; border-bottom: 2px solid var(--red); padding: 10px 32px; }
+    .breaking-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: flex-start; gap: 14px; }
+    .breaking-badge { flex-shrink: 0; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; background: var(--red); color: white; padding: 3px 8px; border-radius: 4px; margin-top: 2px; }
+    .breaking-items { display: flex; flex-direction: column; gap: 4px; }
+    .breaking-item { font-size: 13px; color: #fca5a5; }
+    .breaking-item a { color: #fecaca; font-weight: 600; }
+    .breaking-item a:hover { color: #fff; }
 
-    /* ── Talking Points ── */
-    .talking-points-section { background: var(--surface); }
-    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
-    .tp-card {
-      background: var(--card);
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      padding: 24px;
-      display: flex; gap: 16px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      position: relative;
-      overflow: hidden;
-    }
-    .tp-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0;
-      height: 3px; background: var(--hsbc-red);
-    }
+    /* Layout */
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 36px 0; }
+    .sec-label { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+    .sec-label::before { content: ''; display: block; width: 14px; height: 2px; background: var(--red); }
+    .sec-title { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .sec-sub { font-size: 12px; color: var(--mid); margin-bottom: 24px; }
+
+    /* Talking Points */
+    .tp-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+    .tp-card { background: var(--card); border-radius: 10px; border: 1px solid var(--border); padding: 20px 20px 16px; position: relative; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+    .tp-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--red); }
     .tp-card.is-update::before { background: #d97706; }
-    .tp-num {
-      flex-shrink: 0;
-      width: 32px; height: 32px; border-radius: 50%;
-      background: var(--hsbc-red);
-      color: white; font-weight: 700; font-size: 14px;
-      display: flex; align-items: center; justify-content: center;
-    }
+    .tp-top { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+    .tp-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--red); color: white; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; }
     .tp-card.is-update .tp-num { background: #d97706; }
-    .tp-body { flex: 1; min-width: 0; }
-    .tp-update-badge {
-      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
-      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
-      margin-bottom: 8px; text-transform: uppercase;
-    }
-    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
-    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
-    .tp-context strong { color: var(--text); }
-    .tp-context ul { margin: 6px 0 0 18px; padding: 0; }
-    .tp-context li { margin-bottom: 4px; }
-    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tp-source-link {
-      font-size: 11px; font-weight: 500;
-      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
-      border-radius: 4px; padding: 3px 8px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
-    }
-    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+    .tp-headline { font-size: 14px; font-weight: 600; color: var(--navy); line-height: 1.4; }
+    .tp-update-badge { display: inline-block; font-size: 9px; font-weight: 600; letter-spacing: .5px; background: #fef3c7; color: #92400e; border-radius: 3px; padding: 2px 6px; margin-bottom: 6px; text-transform: uppercase; }
+    .tp-why { font-size: 12px; font-weight: 500; color: var(--mid); margin-bottom: 8px; font-style: italic; }
+    .tp-bullets { margin: 0 0 12px 14px; }
+    .tp-bullets li { font-size: 12px; color: var(--text); line-height: 1.55; margin-bottom: 4px; }
+    .tp-bullets li strong { color: var(--navy); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 5px; }
+    .tp-src { font-size: 10px; font-weight: 500; color: var(--red); background: #fff0f1; border: 1px solid #fbc4c8; border-radius: 3px; padding: 2px 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px; display: inline-block; }
+    .tp-src:hover { background: #ffe0e3; text-decoration: none; }
 
-    /* ── Chart section ── */
-    .chart-section { background: var(--chart-bg); padding: 48px 0; }
-    .chart-section .section-label { color: #e05565; }
-    .chart-section .section-label::before { background: #e05565; }
-    .chart-section .section-title { color: #e2e8f0; }
-    .chart-section .section-sub { color: #64748b; }
-    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
-    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    /* Chart */
+    .chart-section { background: var(--chart-bg); padding: 36px 0; }
+    .chart-section .sec-label { color: #e05565; }
+    .chart-section .sec-label::before { background: #e05565; }
+    .chart-section .sec-title { color: #e2e8f0; }
+    .chart-section .sec-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 160px; gap: 20px; align-items: start; }
+    @media (max-width: 800px) { .chart-layout { grid-template-columns: 1fr; } }
     #bubble-chart-container svg { display: block; width: 100%; }
-    .chart-legend { padding-top: 40px; }
-    .legend-item {
-      display: flex; align-items: center; gap: 8px;
-      padding: 7px 0; cursor: pointer;
-      font-size: 12px; color: #94a3b8;
-      border-bottom: 1px solid #1e2a3a;
-      transition: color 0.15s;
-    }
+    .chart-legend { padding-top: 32px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 11px; color: #94a3b8; border-bottom: 1px solid #1e2a3a; cursor: pointer; }
     .legend-item:hover { color: #e2e8f0; }
-    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-    .chart-note {
-      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
-    }
-    .chart-tooltip {
-      position: fixed; display: none;
-      background: #1e293b; color: #f1f5f9;
-      padding: 12px 16px; border-radius: 10px;
-      font-size: 13px; max-width: 300px;
-      pointer-events: none; z-index: 9999;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-      border: 1px solid #334155; line-height: 1.5;
-    }
+    .legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note { margin-top: 12px; font-size: 10px; color: #475569; line-height: 1.6; }
+    .chart-tooltip { position: fixed; display: none; background: #1e293b; color: #f1f5f9; padding: 10px 14px; border-radius: 8px; font-size: 12px; max-width: 280px; pointer-events: none; z-index: 9999; box-shadow: 0 8px 32px rgba(0,0,0,.5); border: 1px solid #334155; line-height: 1.5; }
 
-    /* ── Feed section ── */
+    /* Feed */
     .feed-section { background: var(--surface); }
-    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
-    .cat-tab {
-      font-size: 12px; font-weight: 500; padding: 6px 14px;
-      border-radius: 20px; border: 1px solid var(--border);
-      background: white; color: var(--text-mid);
-      cursor: pointer; transition: all 0.15s;
-    }
-    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
-    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
-    .category-section { margin-bottom: 36px; }
-    .category-header {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 14px; font-weight: 600; color: var(--navy);
-      margin-bottom: 14px; padding-bottom: 10px;
-      border-bottom: 2px solid var(--border);
-    }
-    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
-    .article-card {
-      background: var(--card); border-radius: 10px;
-      border: 1px solid var(--border);
-      padding: 18px; display: flex; flex-direction: column; gap: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      transition: box-shadow 0.15s, border-color 0.15s;
-    }
-    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
-    .article-card.chart-highlighted {
-      border-color: var(--hsbc-red);
-      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
-    }
-    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
-    .score-badge {
-      font-size: 10px; font-weight: 600; padding: 3px 7px;
-      border-radius: 4px; display: flex; align-items: center; gap: 4px;
-    }
-    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
-    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
-    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
-    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
-    .article-title a { color: var(--navy); }
-    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
-    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
-    .article-footer {
-      display: flex; justify-content: space-between; align-items: center;
-      font-size: 11px; color: var(--text-light);
-      padding-top: 10px; border-top: 1px solid var(--border);
-    }
-    .article-source { font-weight: 500; color: var(--text-mid); }
+    .cat-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+    .cat-tab { font-size: 11px; font-weight: 500; padding: 5px 12px; border-radius: 20px; border: 1px solid var(--border); background: white; color: var(--mid); cursor: pointer; transition: all .15s; }
+    .cat-tab:hover { border-color: var(--red); color: var(--red); }
+    .cat-tab.active { background: var(--red); color: white; border-color: var(--red); }
+    .cat-group { margin-bottom: 28px; }
+    .cat-header { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 8px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
+    .cat-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 
-    /* ── Footer ── */
-    .site-footer {
-      background: var(--navy-dark); border-top: 1px solid #1e2640;
-      padding: 20px 32px; text-align: center;
-      font-size: 12px; color: #475569;
-    }
+    /* Collapsible articles */
+    .art-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px; overflow: hidden; transition: border-color .15s; }
+    .art-item:hover { border-color: #d1d5db; }
+    .art-item[open] { border-color: var(--red); }
+    .art-item[open] .art-item-card { border-color: var(--red); }
+    .art-summary { display: flex; align-items: center; gap: 10px; padding: 10px 14px; cursor: pointer; list-style: none; user-select: none; }
+    .art-summary::-webkit-details-marker { display: none; }
+    .art-scores { display: flex; gap: 5px; flex-shrink: 0; }
+    .sc { font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 3px; }
+    .sc-h { background: #fff0f1; color: #9b1c1c; }
+    .sc-r { background: #eff6ff; color: #1e40af; }
+    .art-title-text { font-size: 13px; font-weight: 500; color: var(--navy); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .art-source { font-size: 11px; color: var(--light); flex-shrink: 0; }
+    .art-chevron { font-size: 14px; color: var(--light); flex-shrink: 0; transition: transform .2s; }
+    details[open] .art-chevron { transform: rotate(90deg); }
+    .art-body { padding: 0 14px 12px 14px; border-top: 1px solid var(--border); }
+    .art-full-title { font-size: 13px; font-weight: 600; color: var(--navy); margin: 10px 0 6px; }
+    .art-why { font-size: 12px; color: var(--mid); line-height: 1.55; margin-bottom: 8px; }
+    .art-read { font-size: 11px; font-weight: 500; color: var(--red); }
+    .art-read:hover { text-decoration: underline; }
+    .art-meta { font-size: 10px; color: var(--light); margin-top: 4px; }
+
+    /* Footer */
+    .site-footer { background: var(--navy-dk); border-top: 1px solid #1e2640; padding: 16px 32px; text-align: center; font-size: 11px; color: #475569; }
     .site-footer span { color: #64748b; }
+
+    /* Briefing navigation */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .nav-btn { font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px; background: rgba(255,255,255,0.07); color: #c9d0e8; border: 1px solid rgba(255,255,255,0.1); white-space: nowrap; }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--red); color: white; border-color: var(--red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
   </style>
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════
-     HEADER
-════════════════════════════════════════════ -->
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
       <div class="hsbc-mark">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="16,2 30,16 16,30 2,16"/>
+        <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,20 15,0 45,0 60,20 45,40 15,40" fill="#DB0011"/>
+          <polygon points="15,0 15,40 30,20" fill="white"/>
+          <polygon points="45,0 45,40 30,20" fill="white"/>
         </svg>
       </div>
       <div class="brand-text">
@@ -232,313 +150,208 @@
     </div>
     <div class="header-meta">
       <div class="date">{{ briefing_date }}</div>
-      <div class="user-info">
-        Prepared for <span class="user-name">{{ user.name }}</span>
-      </div>
-      <div class="user-info">{{ user.title }}</div>
+      <div class="sub">Prepared for <span class="name">{{ user.name }}</span></div>
+      <div class="sub">{{ user.title }}</div>
     </div>
   </div>
 </header>
 
-<!-- ══════════════════════════════════════════
-     SECTION 1 — KEY TALKING POINTS
-════════════════════════════════════════════ -->
-<section class="talking-points-section">
-  <div class="section-wrap">
-    <div class="section-label">Intelligence Summary</div>
-    <h2 class="section-title">Today's Key Talking Points</h2>
-    <p class="section-sub">{{ total_articles }} articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+<nav class="nav-bar">
+  <div class="nav-inner">
+    {% if prev_url %}
+    <a class="nav-btn nav-prev" href="{{ prev_url }}">‹ {{ prev_label }}</a>
+    {% else %}
+    <span class="nav-btn nav-prev nav-disabled">‹ No earlier briefings</span>
+    {% endif %}
+    <span class="nav-current">{{ briefing_date }}</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+{% if breaking_news %}
+<div class="breaking-bar">
+  <div class="breaking-inner">
+    <span class="breaking-badge">⚡ Breaking</span>
+    <div class="breaking-items">
+      {% for item in breaking_news %}
+      <div class="breaking-item">
+        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.headline }}</a>
+        {% if item.summary %} — {{ item.summary }}{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- SECTION 1 — TALKING POINTS -->
+<section class="tp-section">
+  <div class="wrap">
+    <div class="sec-label">Intelligence Summary</div>
+    <h2 class="sec-title">Key Talking Points</h2>
+    <p class="sec-sub">{{ total_articles }} articles analysed · Top insights ranked by strategic relevance</p>
     <div class="tp-grid">
       {% for tp in talking_points %}
       <div class="tp-card{% if tp.is_update %} is-update{% endif %}">
-        <div class="tp-num">{{ loop.index }}</div>
-        <div class="tp-body">
-          {% if tp.is_update %}
-          <div class="tp-update-badge">&#8635; Update</div>
-          {% endif %}
-          <h3 class="tp-headline">{{ tp.headline }}</h3>
-          <div class="tp-context">{{ tp.context_html | safe }}</div>
-          {% if tp.source_links %}
-          <div class="tp-sources">
-            {% for link in tp.source_links %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener" class="tp-source-link" title="{{ link.title }}">{{ link.title }}</a>
-            {% endfor %}
-          </div>
-          {% endif %}
+        <div class="tp-top">
+          <div class="tp-num">{{ loop.index }}</div>
+          <h3 class="tp-headline">
+            {% if tp.is_update %}<div class="tp-update-badge">↻ Update</div><br>{% endif %}
+            {{ tp.headline }}
+          </h3>
         </div>
+        {% if tp.why_it_matters %}
+        <p class="tp-why">{{ tp.why_it_matters }}</p>
+        {% endif %}
+        {% if tp.bullets %}
+        <ul class="tp-bullets">
+          {% for b in tp.bullets %}<li>{{ b | safe }}</li>{% endfor %}
+        </ul>
+        {% elif tp.context_html %}
+        <p class="tp-why" style="font-style:normal;color:var(--text)">{{ tp.context_html | safe }}</p>
+        {% endif %}
+        {% if tp.source_links %}
+        <div class="tp-sources">
+          {% for link in tp.source_links %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener" class="tp-src" title="{{ link.title }}">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
-════════════════════════════════════════════ -->
+<!-- SECTION 2 — RADAR CHART -->
 <section class="chart-section">
-  <div class="section-wrap">
-    <div class="section-label">Intelligence Radar</div>
-    <h2 class="section-title">Article Signal Map</h2>
-    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+  <div class="wrap">
+    <div class="sec-label">Intelligence Radar</div>
+    <h2 class="sec-title">Article Signal Map</h2>
+    <p class="sec-sub">Y = HSBC relevancy · X = Role relevance · Bubble size = media noise · Click to open</p>
     <div class="chart-layout">
       <div id="bubble-chart-container"></div>
       <div>
         <div class="chart-legend" id="chart-legend"></div>
-        <div class="chart-note">
-          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
-          Top-right zone = highest strategic priority.
-        </div>
+        <div class="chart-note">Top-right = highest priority.<br><br>Bubble size = media noise (1–5).</div>
       </div>
     </div>
   </div>
   <div class="chart-tooltip" id="chart-tooltip"></div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     SECTION 3 — INTELLIGENCE FEED
-════════════════════════════════════════════ -->
+<!-- SECTION 3 — FEED -->
 <section class="feed-section">
-  <div class="section-wrap">
-    <div class="section-label">Intelligence Feed</div>
-    <h2 class="section-title">Articles by Category</h2>
-    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
-    <div class="category-tabs" id="category-tabs">
+  <div class="wrap">
+    <div class="sec-label">Intelligence Feed</div>
+    <h2 class="sec-title">Articles by Category</h2>
+    <p class="sec-sub">Click any article to expand · Scores: HSBC relevancy / role relevance</p>
+    <div class="cat-tabs" id="cat-tabs">
       <button class="cat-tab active" data-cat="all">All ({{ total_articles }})</button>
       {% for category in articles_by_category.keys() %}
-      <button class="cat-tab" data-cat="{{ category }}">
-        {{ category }} ({{ articles_by_category[category] | length }})
-      </button>
+      <button class="cat-tab" data-cat="{{ category }}">{{ category }} ({{ articles_by_category[category] | length }})</button>
       {% endfor %}
     </div>
     {% for category, articles in articles_by_category.items() %}
-    <div class="category-section" data-category-group="{{ category }}">
-      <h3 class="category-header">
-        <span class="cat-dot" style="background: {{ category_colors.get(category, '#64748b') }}"></span>
+    <div class="cat-group" data-cat-group="{{ category }}">
+      <div class="cat-header">
+        <span class="cat-dot" style="background:{{ category_colors.get(category,'#64748b') }}"></span>
         {{ category }}
-      </h3>
-      <div class="articles-grid">
-        {% for article in articles %}
-        <article class="article-card" id="article-{{ article.id }}" data-category="{{ article.category }}">
-          <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC {{ article.hsbc_relevancy }}/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. {{ article.user_relevance }}/10</span>
-            <span class="score-badge noise" title="Media Noise Level">
-              {%- for _ in range(article.noise_level) %}●{% endfor -%}
-              {%- for _ in range(5 - article.noise_level) %}○{% endfor -%}
-            </span>
-          </div>
-          <div class="article-title">
-            <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
-          </div>
-          <p class="article-summary">{{ article.summary }}</p>
-          <div class="article-footer">
-            <span class="article-source">{{ article.source }}</span>
-            <span>{{ article.published_at | format_date }}</span>
-          </div>
-        </article>
-        {% endfor %}
       </div>
+      {% for article in articles %}
+      <details class="art-item" id="article-{{ article.id }}">
+        <summary class="art-summary">
+          <div class="art-scores">
+            <span class="sc sc-h" title="HSBC Relevancy">H{{ article.hsbc_relevancy }}</span>
+            <span class="sc sc-r" title="Role Relevance">R{{ article.user_relevance }}</span>
+          </div>
+          <span class="art-title-text">{{ article.title }}</span>
+          <span class="art-source">{{ article.source }}</span>
+          <span class="art-chevron">›</span>
+        </summary>
+        <div class="art-body">
+          <p class="art-why">{{ article.summary }}</p>
+          <a href="{{ article.url }}" target="_blank" rel="noopener" class="art-read">Read full article →</a>
+          <div class="art-meta">{{ article.source }} · {{ article.published_at | format_date }}</div>
+        </div>
+      </details>
+      {% endfor %}
     </div>
     {% endfor %}
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════ -->
 <footer class="site-footer">
-  Generated {{ generated_at }} &nbsp;·&nbsp;
-  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
-  Powered by Claude AI (Anthropic)
+  Generated {{ generated_at }} &nbsp;·&nbsp; <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp; Powered by Claude AI
 </footer>
 
-<!-- ══════════════════════════════════════════
-     D3.js BUBBLE CHART
-════════════════════════════════════════════ -->
 <script>
 const CHART_DATA = {{ chart_data_json | safe }};
-
 function renderChart() {
-  const container = document.getElementById('bubble-chart-container');
-  container.innerHTML = '';
-  const totalW = container.offsetWidth || 800;
-  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
-  const svgH = 480;
-  const W = totalW - margin.left - margin.right;
-  const H = svgH - margin.top - margin.bottom;
-
-  const svg = d3.select('#bubble-chart-container')
-    .append('svg')
-    .attr('width', totalW)
-    .attr('height', svgH)
-    .append('g')
-    .attr('transform', `translate(${margin.left},${margin.top})`);
-
-  // Background
-  svg.append('rect').attr('width', W).attr('height', H)
-    .attr('fill', '#0a0f1e').attr('rx', 4);
-
-  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
-  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
-  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
-
-  // Grid
-  [2,4,6,8].forEach(v => {
-    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
-      .attr('y1', 0).attr('y2', H)
-      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
-    svg.append('line').attr('x1', 0).attr('x2', W)
-      .attr('y1', y(v)).attr('y2', y(v))
-      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  const el = document.getElementById('bubble-chart-container');
+  el.innerHTML = '';
+  const W0 = el.offsetWidth || 760, m = {t:24,r:16,b:52,l:52};
+  const svgH = 400, W = W0-m.l-m.r, H = svgH-m.t-m.b;
+  const svg = d3.select('#bubble-chart-container').append('svg')
+    .attr('width',W0).attr('height',svgH)
+    .append('g').attr('transform',`translate(${m.l},${m.t})`);
+  svg.append('rect').attr('width',W).attr('height',H).attr('fill','#0a0f1e').attr('rx',4);
+  const x=d3.scaleLinear().domain([0,10]).range([0,W]);
+  const y=d3.scaleLinear().domain([0,10]).range([H,0]);
+  const r=d3.scaleLinear().domain([1,5]).range([8,26]);
+  [2,4,6,8].forEach(v=>{
+    svg.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',0).attr('y2',H).attr('stroke','#1e2a3a').attr('stroke-dasharray','3,3');
+    svg.append('line').attr('x1',0).attr('x2',W).attr('y1',y(v)).attr('y2',y(v)).attr('stroke','#1e2a3a').attr('stroke-dasharray','3,3');
   });
-
-  // High-priority zone (top-right)
-  svg.append('rect')
-    .attr('x', x(6)).attr('y', y(10))
-    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
-    .attr('fill', 'rgba(219,0,17,0.07)')
-    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
-  svg.append('text')
-    .attr('x', x(8)).attr('y', y(9.6))
-    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
-    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
-    .attr('font-weight', '600').attr('letter-spacing', '1px')
-    .text('HIGH PRIORITY');
-
-  // Axes
-  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
-    .call(d3.axisBottom(x).ticks(10));
-  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
-  [xAxis, yAxis].forEach(ax => {
-    ax.select('.domain').attr('stroke', '#2d3f55');
-    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
-    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  svg.append('rect').attr('x',x(6)).attr('y',y(10)).attr('width',x(10)-x(6)).attr('height',y(6)-y(10))
+    .attr('fill','rgba(219,0,17,0.07)').attr('stroke','rgba(219,0,17,0.2)').attr('stroke-dasharray','4,4');
+  svg.append('text').attr('x',x(8)).attr('y',y(9.5)).attr('text-anchor','middle').attr('fill','rgba(219,0,17,0.4)')
+    .attr('font-size','9px').attr('font-family','Inter,sans-serif').attr('font-weight','600').attr('letter-spacing','1px').text('HIGH PRIORITY');
+  const xAx=svg.append('g').attr('transform',`translate(0,${H})`).call(d3.axisBottom(x).ticks(10));
+  const yAx=svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAx,yAx].forEach(a=>{
+    a.select('.domain').attr('stroke','#2d3f55');
+    a.selectAll('.tick line').attr('stroke','#2d3f55');
+    a.selectAll('.tick text').attr('fill','#64748b').attr('font-size','10px');
   });
-
-  // Axis labels
-  svg.append('text').attr('x', W / 2).attr('y', H + 46)
-    .attr('text-anchor', 'middle').attr('fill', '#64748b')
-    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
-    .text('Relevance to Role →');
-  svg.append('text').attr('transform', 'rotate(-90)')
-    .attr('x', -H / 2).attr('y', -46)
-    .attr('text-anchor', 'middle').attr('fill', '#64748b')
-    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
-    .text('↑ HSBC Relevancy');
-
-  const tooltip = document.getElementById('chart-tooltip');
-
-  // Bubble groups
-  const groups = svg.selectAll('.bubble-g')
-    .data(CHART_DATA.articles)
-    .enter().append('g')
-    .attr('class', 'bubble-g')
-    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
-    .style('cursor', 'pointer');
-
-  groups.append('circle')
-    .attr('r', d => r(d.noise_level))
-    .attr('data-base-r', d => r(d.noise_level))
-    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
-    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
-    .attr('stroke-width', 1.5);
-
-  groups.append('text')
-    .attr('text-anchor', 'middle').attr('dy', '0.35em')
-    .attr('fill', 'white').attr('pointer-events', 'none')
-    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
-    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
-    .text((d, i) => i + 1);
-
-  groups
-    .on('mouseover', function(event, d) {
-      const i = CHART_DATA.articles.indexOf(d);
-      const color = CHART_DATA.categories[d.category] || '#64748b';
-      const baseR = +d3.select(this).select('circle').attr('data-base-r');
-      d3.select(this).select('circle')
-        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
-        .attr('r', baseR * 1.18);
-
-      tooltip.style.display = 'block';
-      tooltip.innerHTML = `
-        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
-        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
-        <div style="display:flex;gap:12px;font-size:12px">
-          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
-          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
-          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
-        </div>`;
-
-      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
-      const card = document.getElementById('article-' + d.id);
-      if (card) card.classList.add('chart-highlighted');
-    })
-    .on('mousemove', function(event) {
-      tooltip.style.left = (event.clientX + 14) + 'px';
-      tooltip.style.top  = (event.clientY - 12) + 'px';
-    })
-    .on('mouseout', function(event, d) {
-      const color = CHART_DATA.categories[d.category] || '#64748b';
-      const baseR = +d3.select(this).select('circle').attr('data-base-r');
-      d3.select(this).select('circle')
-        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
-      tooltip.style.display = 'none';
-      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
-    })
-    .on('click', (event, d) => window.open(d.url, '_blank'));
-
-  // Legend
-  const legendEl = document.getElementById('chart-legend');
-  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
-    `<div class="legend-item" data-cat="${cat}">
-       <span class="legend-dot" style="background:${color}"></span>
-       <span>${cat}</span>
-     </div>`
-  ).join('');
+  svg.append('text').attr('x',W/2).attr('y',H+42).attr('text-anchor','middle').attr('fill','#64748b').attr('font-size','11px').attr('font-family','Inter,sans-serif').text('Relevance to Role →');
+  svg.append('text').attr('transform','rotate(-90)').attr('x',-H/2).attr('y',-40).attr('text-anchor','middle').attr('fill','#64748b').attr('font-size','11px').attr('font-family','Inter,sans-serif').text('↑ HSBC Relevancy');
+  const tip=document.getElementById('chart-tooltip');
+  const grps=svg.selectAll('.bg').data(CHART_DATA.articles).enter().append('g')
+    .attr('class','bg').attr('transform',d=>`translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`).style('cursor','pointer');
+  grps.append('circle').attr('r',d=>r(d.noise_level)).attr('data-br',d=>r(d.noise_level))
+    .attr('fill',d=>(CHART_DATA.categories[d.category]||'#64748b')+'b0')
+    .attr('stroke',d=>CHART_DATA.categories[d.category]||'#64748b').attr('stroke-width',1.5);
+  grps.append('text').attr('text-anchor','middle').attr('dy','0.35em').attr('fill','white').attr('pointer-events','none')
+    .attr('font-family','Inter,sans-serif').attr('font-weight','700')
+    .attr('font-size',d=>r(d.noise_level)>15?'10px':'8px')
+    .text((_,i)=>i+1);
+  grps.on('mouseover',function(e,d){
+    const i=CHART_DATA.articles.indexOf(d), c=CHART_DATA.categories[d.category]||'#64748b', br=+d3.select(this).select('circle').attr('data-br');
+    d3.select(this).select('circle').attr('fill',c+'ff').attr('stroke-width',2.5).attr('r',br*1.18);
+    tip.style.display='block';
+    tip.innerHTML=`<div style="font-weight:600;margin-bottom:4px">#${i+1} — ${d.title}</div><div style="color:#94a3b8;font-size:11px;margin-bottom:8px">${d.source}</div><div style="display:flex;gap:10px;font-size:11px"><span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span><span>Rel <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span><span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span></div>`;
+    document.querySelectorAll('.art-item').forEach(c=>c.removeAttribute('data-hl'));
+    const card=document.getElementById('article-'+d.id); if(card)card.style.borderColor='var(--red)';
+  }).on('mousemove',function(e){tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-10)+'px';})
+  .on('mouseout',function(e,d){
+    const c=CHART_DATA.categories[d.category]||'#64748b',br=+d3.select(this).select('circle').attr('data-br');
+    d3.select(this).select('circle').attr('fill',c+'b0').attr('stroke-width',1.5).attr('r',br);
+    tip.style.display='none';
+    document.querySelectorAll('.art-item').forEach(c=>c.style.borderColor='');
+  }).on('click',(e,d)=>window.open(d.url,'_blank'));
+  const leg=document.getElementById('chart-legend');
+  leg.innerHTML=Object.entries(CHART_DATA.categories).map(([cat,col])=>
+    `<div class="legend-item"><span class="legend-dot" style="background:${col}"></span><span>${cat}</span></div>`).join('');
 }
-
-// Category tab filtering
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded',()=>{
   renderChart();
-
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(renderChart, 180);
-  });
-
-  document.getElementById('category-tabs').addEventListener('click', e => {
-    const btn = e.target.closest('.cat-tab');
-    if (!btn) return;
-    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const cat = btn.dataset.cat;
-    document.querySelectorAll('.category-section').forEach(sec => {
-      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
-    });
-  });
-
-  // Article card hover → highlight bubble
-  document.querySelectorAll('.article-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      const id = card.id.replace('article-', '');
-      d3.selectAll('.bubble-g').each(function(d) {
-        if (d.id === id) {
-          const color = CHART_DATA.categories[d.category] || '#64748b';
-          const baseR = +d3.select(this).select('circle').attr('data-base-r');
-          d3.select(this).select('circle')
-            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
-        }
-      });
-    });
-    card.addEventListener('mouseleave', () => {
-      d3.selectAll('.bubble-g').each(function(d) {
-        const color = CHART_DATA.categories[d.category] || '#64748b';
-        const baseR = +d3.select(this).select('circle').attr('data-base-r');
-        d3.select(this).select('circle')
-          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
-      });
-    });
+  let t; window.addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(renderChart,200);});
+  document.getElementById('cat-tabs').addEventListener('click',e=>{
+    const btn=e.target.closest('.cat-tab'); if(!btn)return;
+    document.querySelectorAll('.cat-tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+    const cat=btn.dataset.cat;
+    document.querySelectorAll('.cat-group').forEach(s=>{ s.style.display=(cat==='all'||s.dataset.catGroup===cat)?'':'none'; });
   });
 });
 </script>
