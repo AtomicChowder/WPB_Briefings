@@ -3,60 +3,64 @@
   "user_name": "Surali Siriwardene",
   "user_display_name": "Surali",
   "user_title": "COO & Global Head of Change Execution, WPS",
-  "briefing_date": "Tuesday, 2 June 2026",
-  "date_str": "2026-06-02",
-  "generated_at": "2 Jun 2026, 23:15 UTC",
-  "total_articles": 7,
+  "briefing_date": "Wednesday, 3 June 2026",
+  "date_str": "2026-06-03",
+  "generated_at": "3 Jun 2026, 23:25 UTC",
+  "total_articles": 9,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Deloitte: Only 21% of Companies Have Mature AI Agent Governance \u2014 the COO Risk Is Live",
-      "why_it_matters": "The governance maturity gap Deloitte has quantified sits squarely inside WPS's COO accountability envelope \u2014 and the two-year agentic deployment wave means this is a near-term governance risk, not a future one.",
+      "headline": "Agentic AI Governance Is a Live COO Risk: Decision Rights Must Be Set Before Deployment Scales",
+      "why_it_matters": "PYMNTS is flagging that banks are deploying AI agents accessing multiple systems and initiating transactions without clear accountability frameworks \u2014 a governance gap that falls squarely on Sirali's remit as WPS prepares for HSBC WPB's next AI deployment phase.",
       "bullets": [
-        "75% of companies plan to deploy agentic AI within two years, but only 21% have a mature model for agent governance \u2014 the accountability gap is a COO-level risk that sits above IT and change delivery",
-        "Advisers currently spend 70% of time on administrative work that agentic AI can eliminate; the reallocation is highly valuable, but only under structured delegation frameworks with defined human oversight \u2014 the exact infrastructure WPS must build",
-        "Deloitte's productivity range of 30\u2013100% by 2032 is deliberately wide: governance quality is the determining variable \u2014 firms with strong COO oversight capture the full upside; those without bear the liability for autonomous agent failures"
+        "Banks must resolve three governance gaps before agentic AI can be trusted at scale: security perimeters for agents crossing system boundaries, granular data access controls, and explicit decision-rights frameworks specifying when agents act unilaterally versus when human override is mandatory.",
+        "Only 21% of companies have mature AI agent governance (Deloitte, covered Jun 2); 99% of banks plan to deploy agents but only 11% have done so safely \u2014 the COO accountability window to establish frameworks before deployment outpaces governance is open now.",
+        "For WPS: a concrete deliverable is a decision-rights matrix for AI agents across WPB APAC, aligned with HSBC Group's risk framework, ahead of the next AI change programme milestone."
       ],
       "source_links": [
         {
-          "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-predictions/2026/agentic-ai-wealth-management-productivity.html",
-          "title": "Deloitte: Agentic AI Wealth Productivity 2026"
+          "url": "https://www.pymnts.com/cybersecurity/2026/agentic-ai-pushes-banks-to-fix-security-data-and-decision-rights/",
+          "title": "Agentic AI Pushes Banks to Fix Security and Decision Rights"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "DBS Exceeds SGD 500bn AUM a Year Early and Launches 54-Location APAC Build \u2014 WPS Delivery Benchmark Reset",
-      "why_it_matters": "DBS's ahead-of-schedule milestone and immediate scale-up commitment set a new delivery velocity standard that WPS must incorporate into its global change execution governance as a live competitor benchmark.",
+      "headline": "Agent-Native Back Office Requires COO Operating Models to Be Redesigned, Not Just Updated",
+      "why_it_matters": "The shift from AI-assisted to agent-native infrastructure \u2014 where AI autonomously initiates payments and manages liquidity \u2014 requires WPS to redesign governance checkpoints, escalation paths and operational resilience frameworks for HSBC WPB's back office, not merely update existing playbooks.",
       "bullets": [
-        "DBS confirmed SGD 500bn wealth AUM in Q1 2026 \u2014 over a year early \u2014 then committed to 18 new wealth centres plus 36 upgrades across 6 Asian markets by end-2027: its largest-ever physical build",
-        "40% of new DBS Private Bank clients came from existing mass-affluent clients moving up the wealth ladder \u2014 a fully integrated cross-segment delivery model that demands strong COO infrastructure to scale without operational failures",
-        "First wave of new centres launches Q3 2026 across Singapore, Hong Kong, mainland China, India, Indonesia and Taiwan \u2014 every shared HSBC WPB market \u2014 giving WPS a live delivery clock to monitor from this quarter"
+        "AI agents in production treasury operations are initiating transfers and predicting liquidity needs without waiting for human dashboards \u2014 this is infrastructure, not tooling, and the exception escalation models built for human operators do not apply.",
+        "<strong>Mark Mitchell, CPO of Morgan Stanley at Work</strong>, confirmed 3,400 admin clients get agentic platform access by 2027: wealth platforms will increasingly be consumed by AI agents, not human users \u2014 WPS must plan for a client-facing agent-native operating model.",
+        "For WPS global change execution: change programmes must now define an agent-native end state in their delivery blueprints, not simply add AI tooling on top of human-centred workflows."
       ],
       "source_links": [
         {
-          "url": "https://www.dbs.com/newsroom/DBS_to_launch_18_new_wealth_centres_across_the_region_by_2027_as_affluent_clients_seek_closer_relationships",
-          "title": "DBS Newsroom: 18 New Wealth Centres Official"
-        }
-      ],
-      "is_update": true
-    },
-    {
-      "headline": "HSBC Adds South Asia WPB Head \u2014 A New Governance Node in WPS's Rapidly Expanding APAC Operating Model",
-      "why_it_matters": "Each new HSBC WPB leadership appointment across APAC adds a delivery dependency into WPS's global governance model \u2014 and the current pace of appointments requires the COO infrastructure to scale faster than the org chart.",
-      "bullets": [
-        "HSBC appointed a new Head of Wealth and Personal Banking for South Asia, adding to a rapid succession of senior APAC WPB appointments in recent weeks: two mainland China wealth roles, a new CIO Asia, and a North Asia PB head",
-        "Standard Chartered simultaneously reshuffled Greater China and North Asia Private Banking leadership \u2014 the entire APAC competitive set is reconfiguring its front-office governance structure simultaneously in Q2 2026",
-        "With HSBC's Wealth Powerhouse strategy (SGD 1.4T AUM, half from Asia) in active delivery across 6+ APAC markets, WPS must ensure that onboarding new regional leaders into the change governance framework does not create execution lag at a critical delivery window"
-      ],
-      "source_links": [
-        {
-          "url": "https://hubbis.com/news/hsbc-appoints-head-of-wealth-and-personal-banking-south-asia",
-          "title": "Hubbis: HSBC South Asia WPB Head"
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-shift-ai-from-chatbots-autonomous-money-movement",
+          "title": "Banks Shift AI From Chatbots to Autonomous Money Movement"
         },
         {
-          "url": "https://www.hubbis.com/news/standard-chartered-announces-key-leadership-changes-in-greater-china-and-north-asia-private-banking",
-          "title": "Hubbis: StanChart GC/NA PB Reshuffle"
+          "url": "https://www.cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html",
+          "title": "Morgan Stanley Opens $1.2T Wealth Platform to AI Agents"
+        }
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "JPMorgan and Schroders Deepen Asia Wealth Infrastructure While HSBC WPB Executes Its Build",
+      "why_it_matters": "JPMorgan's simultaneous mid-year client outlook and advisory leadership hire \u2014 alongside Schroders recruiting a 25-year private banking veteran \u2014 reinforces the competitive pressure on HSBC WPB's delivery velocity that WPS must govern against.",
+      "bullets": [
+        "<strong>Xinhui Su</strong> named JPMorgan Private Bank's Asia Head of Portfolio Solutions, extending JPMorgan's 35% RM hiring surge into advisory infrastructure leadership \u2014 HSBC WPB is competing for advisory talent and client mindshare in real time.",
+        "JPMorgan's Asia Mid-Year Outlook positions clients in the same week as HSBC Private Bank's Q3 investment outlook, creating direct head-to-head advisory competition; the delivery quality gap between institutions is visible to clients.",
+        "<strong>Sharon Sim</strong>, 25-year veteran of Goldman, JPMorgan, UBS and Deutsche Bank, joins Schroders Wealth Asia as Business Development Head \u2014 boutique managers are poaching the same senior talent pool as HSBC WPB, compressing WPS's talent governance headroom."
+      ],
+      "source_links": [
+        {
+          "url": "https://www.hubbis.com/news/j-p-morgan-private-bank-appoints-xinhui-su-as-asia-head-of-portfolio-solutions",
+          "title": "J.P. Morgan Names Asia Portfolio Solutions Head"
+        },
+        {
+          "url": "https://www.caproasia.com/2026/06/02/uk-195-billion-schroders-wealth-management-hires-ex-citi-private-bank-jp-morgan-ubs-private-banker-sharon-sim-as-head-of-business-development-asia-25-years-of-private-banking-financial-industry/",
+          "title": "Schroders Wealth Hires Sharon Sim for Asia"
         }
       ],
       "is_update": false
@@ -65,228 +69,276 @@
   "articles_by_category": {
     "AI & Technology": [
       {
-        "id": "art01",
-        "title": "Deloitte: Only 6% of Advisory Firms Use Agentic AI \u2014 30\u2013100% Productivity Uplift on the Table",
-        "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-predictions/2026/agentic-ai-wealth-management-productivity.html",
-        "source": "Deloitte Center for Financial Services",
-        "published_at": "2026-01-15",
-        "summary": "Deloitte's FSI 2026 Predictions report reveals that while 73% of advisory firms use some AI, only 6% have deployed agentic tools \u2014 and the productivity gap is stark: early movers stand to gain 40\u201350% cuts in manual prospecting time, 30\u201340% onboarding cost reductions, and a 30\u2013100% advisor productivity uplift by 2032. Advisers currently spend 70% of their time on administrative work that agentic AI can automate.",
+        "id": "raw01",
+        "title": "Morgan Stanley Opens $1.2T Wealth Platform to External AI Agents",
+        "url": "https://www.cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html",
+        "source": "CNBC",
+        "published_at": "2026-06-03",
+        "summary": "Morgan Stanley is opening its ShareWorks and Equity Edge stock administration platforms to external AI agents via Model Context Protocol, giving 3,400 corporate admin clients agentic access by 2027. Morgan Stanley becomes the first major Wall Street bank to open core wealth infrastructure to external AI systems, channelling assets through a $1.2 trillion workplace wealth funnel.",
         "hsbc_relevancy": 7,
-        "adam_rel": 9,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art03",
-        "title": "How Agentic AI Is Set to Dramatically Transform Banking Operations and Customer Delivery",
-        "url": "https://internationalbanker.com/banking/how-agentic-ai-is-set-to-dramatically-transform-banking/",
-        "source": "International Banker",
-        "published_at": "2026-02-15",
-        "summary": "Deep analysis of the shift from task-level automation to fully autonomous decision-making in banking: agentic AI systems can now access live systems, make decisions, and execute tasks without human prompting \u2014 reducing banking process costs by up to 40% while redefining organisational structures around human oversight and governance.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
+        "adam_rel": 8,
         "surali_rel": 7,
-        "noise_level": 2,
+        "noise_level": 4,
         "category": "AI & Technology",
-        "is_update": true,
         "user_relevance": 7
       },
       {
-        "id": "art02",
-        "title": "Banks and Fintechs Sit on the Most Powerful AI Dataset in Finance \u2014 and Must Act First",
-        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/banks-and-fintechs-are-sitting-on-the-most-powerful-ai-dataset-in-finance/",
-        "source": "PYMNTS.com",
-        "published_at": "2026-06-01",
-        "summary": "Banks and fintechs hold an unmatched AI advantage through decades of proprietary transactional, behavioral, and financial data that big tech cannot replicate; institutions that activate these assets for personalised AI-driven advisory at scale will establish a durable competitive moat before tech giants enter the wealth space.",
+        "id": "raw02",
+        "title": "Anthropic vs OpenAI Race for Banking's AI Core: 10 Finance Agents, Goldman and Citi Onboard",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/battle-own-banking-ai-backbone/",
+        "source": "PYMNTS",
+        "published_at": "2026-06-02",
+        "summary": "Anthropic launched 10 financial-services AI agent templates covering underwriting, KYC, pitchbook prep and financial modelling; Goldman Sachs, Visa, Citi and AIG are early adopters. Simultaneously Bloomberg reported OpenAI is rolling out finance and legal plugins for Codex. The AI giants are battling for the orchestration layer inside core banking, positioning financial services as their second-largest enterprise segment.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "raw03",
+        "title": "AI-Driven Wealth: Asia Private Banks Move from Experimentation to Execution",
+        "url": "https://hubbis.com/article/ai-driven-wealth-from-experimentation-to-execution-in-private-banking",
+        "source": "Hubbis",
+        "published_at": "2026-06-02",
+        "summary": "Leading Asian private banks are transitioning from AI pilots to production deployments: RM copilots, automated CRM note-taking, proactive client-alert systems and next-best-action engines are now live. Clients rank alpha generation and personalised financial advice as the highest-impact AI use case, with onboarding and investment operations close behind.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "raw05",
+        "title": "Agentic AI Forces Banks to Resolve Security, Data Access and Decision Rights Before Deployment",
+        "url": "https://www.pymnts.com/cybersecurity/2026/agentic-ai-pushes-banks-to-fix-security-data-and-decision-rights/",
+        "source": "PYMNTS",
+        "published_at": "2026-06-02",
+        "summary": "As banks scale agentic AI, regulators and CROs are demanding accountability frameworks before agents act. Three gaps must be resolved simultaneously: security perimeters (agents crossing system boundaries), granular data access controls, and explicit decision rights defining when agents act unilaterally versus when human override is required.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "user_relevance": 9
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "raw06",
+        "title": "Three AI Operational Themes for 2026: Task Compression, Delivery Speed, Growth Infrastructure",
+        "url": "https://www.pymnts.com/news/banking/2026/3-takeaways-as-ai-moves-into-banks-daily-operating-machinery/",
+        "source": "PYMNTS",
+        "published_at": "2026-06-02",
+        "summary": "Three recurring operational AI themes in 2026 banking: (1) advisor and employee task compression via meeting prep, coding and design review; (2) faster technology delivery cycles; (3) AI embedded into growth infrastructure including issuer processing and payment credentials. The common thread is execution speed, not autonomous decision-making.",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 6
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 7
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "art04",
-        "title": "DBS Confirms SGD 500bn Wealth AUM Milestone and 18 New Asian Wealth Centres by 2027",
-        "url": "https://www.dbs.com/newsroom/DBS_to_launch_18_new_wealth_centres_across_the_region_by_2027_as_affluent_clients_seek_closer_relationships",
-        "source": "DBS Newsroom",
-        "published_at": "2026-06-01",
-        "summary": "DBS's official press release confirms it surpassed its SGD 500bn wealth AUM target in Q1 2026 \u2014 more than a year ahead of schedule \u2014 and is now launching its largest-ever physical expansion: 18 new wealth centres and 36 upgrades across Singapore, Hong Kong, mainland China, India, Indonesia, and Taiwan by end-2027, with the first wave opening Q3 2026. Notably, 40% of new Private Bank clients came from existing mass-affluent clients moving up the wealth ladder.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 4,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art06",
-        "title": "Standard Chartered Reshuffles Greater China and North Asia Private Banking Leadership",
-        "url": "https://www.hubbis.com/news/standard-chartered-announces-key-leadership-changes-in-greater-china-and-north-asia-private-banking",
-        "source": "Hubbis",
-        "published_at": "2026-05-30",
-        "summary": "Standard Chartered has announced key leadership changes across its Greater China and North Asia private banking operations, part of an ongoing repositioning of its front-office management structure as the bank accelerates its regional wealth AUM and net new money targets.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "art07",
-        "title": "JPMorgan to Boost Asia Pacific Hiring by 20% in 2026 Amid Regional Growth Push",
-        "url": "https://www.peoplematters.in/news/recruiting-and-onboarding/jpmorgan-to-boost-asia-pacific-hiring-by-20percent-in-2026-amid-growth-push-43529",
-        "source": "People Matters",
-        "published_at": "2026-05-28",
-        "summary": "JPMorgan Chase is targeting a 20% increase in Asia Pacific headcount in 2026, part of a plan to grow APAC staff by 40% between 2023 and 2026; its private bank is simultaneously expanding coverage across Indonesia and mainland China, intensifying talent competition across the Asia wealth management sector.",
+        "id": "raw07",
+        "title": "J.P. Morgan Private Bank 2026 Mid-Year Asia Outlook: AI, Fragmentation and Record Equity Markets",
+        "url": "https://privatebank.jpmorgan.com/apac/en/insights/latest-and-featured/mid-year-outlook",
+        "source": "J.P. Morgan Private Bank",
+        "published_at": "2026-06-03",
+        "summary": "JPMorgan Private Bank's Asia mid-year outlook frames 2026 around global fragmentation, AI-driven innovation and structural inflation. Asia Pacific equity capital markets are set for a record year; bullish on India (7-10% return), Singapore dividends and China tech. Competing directly with HSBC Private Bank's Q3 2026 investment outlook published in the same window.",
         "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "surali_rel": 6,
+        "adam_rel": 6,
+        "surali_rel": 5,
         "noise_level": 3,
         "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 6
+        "user_relevance": 5
+      },
+      {
+        "id": "raw08",
+        "title": "J.P. Morgan Private Bank Names Xinhui Su Asia Head of Portfolio Solutions",
+        "url": "https://www.hubbis.com/news/j-p-morgan-private-bank-appoints-xinhui-su-as-asia-head-of-portfolio-solutions",
+        "source": "Hubbis",
+        "published_at": "2026-06-02",
+        "summary": "J.P. Morgan Private Bank has appointed Xinhui Su as Asia Head of Portfolio Solutions, leading a newly rebranded team focused on holistic investment advice. The appointment extends JPMorgan's 35% RM hiring surge in Asia into advisory infrastructure leadership.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "user_relevance": 5
+      },
+      {
+        "id": "raw09",
+        "title": "Schroders Wealth Hires Asia Veteran Sharon Sim From JPMorgan and UBS",
+        "url": "https://www.caproasia.com/2026/06/02/uk-195-billion-schroders-wealth-management-hires-ex-citi-private-bank-jp-morgan-ubs-private-banker-sharon-sim-as-head-of-business-development-asia-25-years-of-private-banking-financial-industry/",
+        "source": "Caproasia",
+        "published_at": "2026-06-02",
+        "summary": "Schroders Wealth Management ($195bn AUM) has hired Sharon Sim, a 25-year veteran of Goldman Sachs, JPMorgan, Deutsche Bank, UBS and Citi Private Bank, as Head of Business Development Asia. The hire signals continued top-tier talent competition in APAC wealth, with boutique managers drawing from the same pool as HSBC WPB.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "user_relevance": 5
       }
     ],
-    "HSBC News": [
+    "Private Banking & Wealth": [
       {
-        "id": "art09",
-        "title": "HSBC Appoints New Head of Wealth and Personal Banking for South Asia",
-        "url": "https://hubbis.com/news/hsbc-appoints-head-of-wealth-and-personal-banking-south-asia",
-        "source": "Hubbis",
-        "published_at": "2026-06-01",
-        "summary": "HSBC has appointed a new Head of Wealth and Personal Banking for South Asia, the latest in a rapid wave of senior WPB leadership appointments spanning mainland China, CIO Asia, North Asia Private Banking, and the Swiss private bank \u2014 reflecting the accelerating execution of the Wealth Powerhouse strategy across a growing number of APAC markets.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 7,
+        "id": "raw12",
+        "title": "J.P. Morgan Private Bank: Singapore Equities Offer Compelling 2026 Income and Growth Case",
+        "url": "https://www.familywealthreport.com/article.php/JP-Morgan-Private-Bank-Highlights-Singapore-Equity-Market-Benefits",
+        "source": "Family Wealth Report",
+        "published_at": "2026-06-02",
+        "summary": "JPMorgan Private Bank strategist Weiheng Chen positions Singapore equities as a 2026 standout \u2014 stable dividend yields, value pricing and secular growth. The note is part of JPMorgan's mid-year Asia advisory push, competing directly with HSBC Private Bank's Q3 investment outlook issued in the same period.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 5,
+        "surali_rel": 4,
         "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 7
+        "category": "Private Banking & Wealth",
+        "user_relevance": 4
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "art01",
-        "title": "Deloitte: Only 6% of Advisory Firms Use Agentic AI \u2014 30\u2013100% Productivity Uplift on the Table",
-        "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-predictions/2026/agentic-ai-wealth-management-productivity.html",
-        "source": "Deloitte Center for Financial Services",
-        "published_at": "2026-01-15",
-        "summary": "Deloitte's FSI 2026 Predictions report reveals that while 73% of advisory firms use some AI, only 6% have deployed agentic tools \u2014 and the productivity gap is stark: early movers stand to gain 40\u201350% cuts in manual prospecting time, 30\u201340% onboarding cost reductions, and a 30\u2013100% advisor productivity uplift by 2032. Advisers currently spend 70% of their time on administrative work that agentic AI can automate.",
+        "id": "raw01",
+        "title": "Morgan Stanley Opens $1.2T Wealth Platform to External AI Agents",
+        "url": "https://www.cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html",
+        "source": "CNBC",
+        "published_at": "2026-06-03",
+        "summary": "Morgan Stanley is opening its ShareWorks and Equity Edge stock administration platforms to external AI agents via Model Context Protocol, giving 3,400 corporate admin clients agentic access by 2027. Morgan Stanley becomes the first major Wall Street bank to open core wealth infrastructure to external AI systems, channelling assets through a $1.2 trillion workplace wealth funnel.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "raw02",
+        "title": "Anthropic vs OpenAI Race for Banking's AI Core: 10 Finance Agents, Goldman and Citi Onboard",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/battle-own-banking-ai-backbone/",
+        "source": "PYMNTS",
+        "published_at": "2026-06-02",
+        "summary": "Anthropic launched 10 financial-services AI agent templates covering underwriting, KYC, pitchbook prep and financial modelling; Goldman Sachs, Visa, Citi and AIG are early adopters. Simultaneously Bloomberg reported OpenAI is rolling out finance and legal plugins for Codex. The AI giants are battling for the orchestration layer inside core banking, positioning financial services as their second-largest enterprise segment.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "raw03",
+        "title": "AI-Driven Wealth: Asia Private Banks Move from Experimentation to Execution",
+        "url": "https://hubbis.com/article/ai-driven-wealth-from-experimentation-to-execution-in-private-banking",
+        "source": "Hubbis",
+        "published_at": "2026-06-02",
+        "summary": "Leading Asian private banks are transitioning from AI pilots to production deployments: RM copilots, automated CRM note-taking, proactive client-alert systems and next-best-action engines are now live. Clients rank alpha generation and personalised financial advice as the highest-impact AI use case, with onboarding and investment operations close behind.",
         "hsbc_relevancy": 7,
         "adam_rel": 9,
-        "surali_rel": 8,
+        "surali_rel": 7,
         "noise_level": 3,
         "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art02",
-        "title": "Banks and Fintechs Sit on the Most Powerful AI Dataset in Finance \u2014 and Must Act First",
-        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/banks-and-fintechs-are-sitting-on-the-most-powerful-ai-dataset-in-finance/",
-        "source": "PYMNTS.com",
-        "published_at": "2026-06-01",
-        "summary": "Banks and fintechs hold an unmatched AI advantage through decades of proprietary transactional, behavioral, and financial data that big tech cannot replicate; institutions that activate these assets for personalised AI-driven advisory at scale will establish a durable competitive moat before tech giants enter the wealth space.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art03",
-        "title": "How Agentic AI Is Set to Dramatically Transform Banking Operations and Customer Delivery",
-        "url": "https://internationalbanker.com/banking/how-agentic-ai-is-set-to-dramatically-transform-banking/",
-        "source": "International Banker",
-        "published_at": "2026-02-15",
-        "summary": "Deep analysis of the shift from task-level automation to fully autonomous decision-making in banking: agentic AI systems can now access live systems, make decisions, and execute tasks without human prompting \u2014 reducing banking process costs by up to 40% while redefining organisational structures around human oversight and governance.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": true,
         "user_relevance": 7
       },
       {
-        "id": "art04",
-        "title": "DBS Confirms SGD 500bn Wealth AUM Milestone and 18 New Asian Wealth Centres by 2027",
-        "url": "https://www.dbs.com/newsroom/DBS_to_launch_18_new_wealth_centres_across_the_region_by_2027_as_affluent_clients_seek_closer_relationships",
-        "source": "DBS Newsroom",
-        "published_at": "2026-06-01",
-        "summary": "DBS's official press release confirms it surpassed its SGD 500bn wealth AUM target in Q1 2026 \u2014 more than a year ahead of schedule \u2014 and is now launching its largest-ever physical expansion: 18 new wealth centres and 36 upgrades across Singapore, Hong Kong, mainland China, India, Indonesia, and Taiwan by end-2027, with the first wave opening Q3 2026. Notably, 40% of new Private Bank clients came from existing mass-affluent clients moving up the wealth ladder.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 4,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art06",
-        "title": "Standard Chartered Reshuffles Greater China and North Asia Private Banking Leadership",
-        "url": "https://www.hubbis.com/news/standard-chartered-announces-key-leadership-changes-in-greater-china-and-north-asia-private-banking",
-        "source": "Hubbis",
-        "published_at": "2026-05-30",
-        "summary": "Standard Chartered has announced key leadership changes across its Greater China and North Asia private banking operations, part of an ongoing repositioning of its front-office management structure as the bank accelerates its regional wealth AUM and net new money targets.",
+        "id": "raw05",
+        "title": "Agentic AI Forces Banks to Resolve Security, Data Access and Decision Rights Before Deployment",
+        "url": "https://www.pymnts.com/cybersecurity/2026/agentic-ai-pushes-banks-to-fix-security-data-and-decision-rights/",
+        "source": "PYMNTS",
+        "published_at": "2026-06-02",
+        "summary": "As banks scale agentic AI, regulators and CROs are demanding accountability frameworks before agents act. Three gaps must be resolved simultaneously: security perimeters (agents crossing system boundaries), granular data access controls, and explicit decision rights defining when agents act unilaterally versus when human override is required.",
         "hsbc_relevancy": 7,
         "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 6
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "user_relevance": 9
       },
       {
-        "id": "art07",
-        "title": "JPMorgan to Boost Asia Pacific Hiring by 20% in 2026 Amid Regional Growth Push",
-        "url": "https://www.peoplematters.in/news/recruiting-and-onboarding/jpmorgan-to-boost-asia-pacific-hiring-by-20percent-in-2026-amid-growth-push-43529",
-        "source": "People Matters",
-        "published_at": "2026-05-28",
-        "summary": "JPMorgan Chase is targeting a 20% increase in Asia Pacific headcount in 2026, part of a plan to grow APAC staff by 40% between 2023 and 2026; its private bank is simultaneously expanding coverage across Indonesia and mainland China, intensifying talent competition across the Asia wealth management sector.",
+        "id": "raw06",
+        "title": "Three AI Operational Themes for 2026: Task Compression, Delivery Speed, Growth Infrastructure",
+        "url": "https://www.pymnts.com/news/banking/2026/3-takeaways-as-ai-moves-into-banks-daily-operating-machinery/",
+        "source": "PYMNTS",
+        "published_at": "2026-06-02",
+        "summary": "Three recurring operational AI themes in 2026 banking: (1) advisor and employee task compression via meeting prep, coding and design review; (2) faster technology delivery cycles; (3) AI embedded into growth infrastructure including issuer processing and payment credentials. The common thread is execution speed, not autonomous decision-making.",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "surali_rel": 6,
+        "surali_rel": 7,
         "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 6
+        "category": "Operations & Change",
+        "user_relevance": 7
       },
       {
-        "id": "art09",
-        "title": "HSBC Appoints New Head of Wealth and Personal Banking for South Asia",
-        "url": "https://hubbis.com/news/hsbc-appoints-head-of-wealth-and-personal-banking-south-asia",
+        "id": "raw07",
+        "title": "J.P. Morgan Private Bank 2026 Mid-Year Asia Outlook: AI, Fragmentation and Record Equity Markets",
+        "url": "https://privatebank.jpmorgan.com/apac/en/insights/latest-and-featured/mid-year-outlook",
+        "source": "J.P. Morgan Private Bank",
+        "published_at": "2026-06-03",
+        "summary": "JPMorgan Private Bank's Asia mid-year outlook frames 2026 around global fragmentation, AI-driven innovation and structural inflation. Asia Pacific equity capital markets are set for a record year; bullish on India (7-10% return), Singapore dividends and China tech. Competing directly with HSBC Private Bank's Q3 2026 investment outlook published in the same window.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "user_relevance": 5
+      },
+      {
+        "id": "raw08",
+        "title": "J.P. Morgan Private Bank Names Xinhui Su Asia Head of Portfolio Solutions",
+        "url": "https://www.hubbis.com/news/j-p-morgan-private-bank-appoints-xinhui-su-as-asia-head-of-portfolio-solutions",
         "source": "Hubbis",
-        "published_at": "2026-06-01",
-        "summary": "HSBC has appointed a new Head of Wealth and Personal Banking for South Asia, the latest in a rapid wave of senior WPB leadership appointments spanning mainland China, CIO Asia, North Asia Private Banking, and the Swiss private bank \u2014 reflecting the accelerating execution of the Wealth Powerhouse strategy across a growing number of APAC markets.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 7,
+        "published_at": "2026-06-02",
+        "summary": "J.P. Morgan Private Bank has appointed Xinhui Su as Asia Head of Portfolio Solutions, leading a newly rebranded team focused on holistic investment advice. The appointment extends JPMorgan's 35% RM hiring surge in Asia into advisory infrastructure leadership.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "surali_rel": 5,
         "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 7
+        "category": "Competitor Intelligence",
+        "user_relevance": 5
+      },
+      {
+        "id": "raw09",
+        "title": "Schroders Wealth Hires Asia Veteran Sharon Sim From JPMorgan and UBS",
+        "url": "https://www.caproasia.com/2026/06/02/uk-195-billion-schroders-wealth-management-hires-ex-citi-private-bank-jp-morgan-ubs-private-banker-sharon-sim-as-head-of-business-development-asia-25-years-of-private-banking-financial-industry/",
+        "source": "Caproasia",
+        "published_at": "2026-06-02",
+        "summary": "Schroders Wealth Management ($195bn AUM) has hired Sharon Sim, a 25-year veteran of Goldman Sachs, JPMorgan, Deutsche Bank, UBS and Citi Private Bank, as Head of Business Development Asia. The hire signals continued top-tier talent competition in APAC wealth, with boutique managers drawing from the same pool as HSBC WPB.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "user_relevance": 5
+      },
+      {
+        "id": "raw12",
+        "title": "J.P. Morgan Private Bank: Singapore Equities Offer Compelling 2026 Income and Growth Case",
+        "url": "https://www.familywealthreport.com/article.php/JP-Morgan-Private-Bank-Highlights-Singapore-Equity-Market-Benefits",
+        "source": "Family Wealth Report",
+        "published_at": "2026-06-02",
+        "summary": "JPMorgan Private Bank strategist Weiheng Chen positions Singapore equities as a 2026 standout \u2014 stable dividend yields, value pricing and secular growth. The note is part of JPMorgan's mid-year Asia advisory push, competing directly with HSBC Private Bank's Q3 investment outlook issued in the same period.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 5,
+        "surali_rel": 4,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 4
       }
     ],
     "categories": {
       "AI & Technology": "#6366f1",
+      "Regulatory & Markets": "#d97706",
+      "Operations & Change": "#7c3aed",
       "Competitor Intelligence": "#0891b2",
-      "HSBC News": "#dc2626"
+      "Private Banking & Wealth": "#059669"
     }
   }
 }
