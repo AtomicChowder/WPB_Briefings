@@ -20,10 +20,10 @@ no external API keys required. Python (`src/render.py`) is used only for HTML te
 - **Banks to monitor**: HSBC, DBS, Standard Chartered, Citibank, Hang Seng Bank (HASE), PayMe,
   UBS, JP Morgan, Bank of America, Deutsche Bank, Bank of China
 
-### Surali Siriwardene
+### Sirali Siriwardene
 - **Title**: COO & Global Head of Change Execution, WPS
 - **Organisation**: HSBC
-- **URL slug**: `surali`
+- **URL slug**: `sirali`
 - **Role focus**: Global COO strategy, operational efficiency, business management, and governing
   the worldwide change execution programme. Adam's direct manager.
 - **Interests**: WPS COO strategy, global change execution governance, business management &
@@ -130,7 +130,7 @@ headlines.
     "covered_urls": ["https://...", "https://..."],
     "covered_topics": ["DBS AI wealth platform", "HSBC Q1 results announcement"]
   },
-  "surali": {
+  "sirali": {
     "last_updated": "2026-04-26",
     "covered_urls": [],
     "covered_topics": []
@@ -225,8 +225,8 @@ src/render.py             — Reads briefing_data.json, renders HTML (no API cal
 context/history.json      — Rolling 7-day coverage history (committed to repo)
 docs/adam/index.html      — Adam's generated briefing (committed, served by GitHub Pages)
 docs/adam/briefing_data.json
-docs/surali/index.html
-docs/surali/briefing_data.json
+docs/sirali/index.html
+docs/sirali/briefing_data.json
 ROUTINE.md                — Claude Code Routine setup instructions
 CLAUDE.md                 — This file (loaded automatically by Claude Code)
 ```

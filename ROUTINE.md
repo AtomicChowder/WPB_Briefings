@@ -5,9 +5,9 @@
 > Read CLAUDE.md first — it contains all user profiles, scoring rubrics, the JSON schema,
 > and context awareness instructions.
 
-Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Surali Siriwardene**.
+Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Sirali Siriwardene**.
 
-### For each user (run adam first, then surali):
+### For each user (run adam first, then sirali):
 
 **1. Check history**
 Read `context/history.json`. Note the URLs and topics covered in the last 7 days so you
@@ -97,7 +97,7 @@ None required. Everything runs on your Max subscription.
 Enable GitHub Pages on `main` branch, source: `/docs` folder.
 
 - Adam → `https://atomicchowder.github.io/wpb_briefings/adam/`
-- Surali → `https://atomicchowder.github.io/wpb_briefings/surali/`
+- Sirali → `https://atomicchowder.github.io/wpb_briefings/sirali/`
 
 ---
 
