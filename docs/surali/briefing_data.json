@@ -3,190 +3,135 @@
   "user_name": "Surali Siriwardene",
   "user_display_name": "Surali",
   "user_title": "COO & Global Head of Change Execution, WPS",
-  "briefing_date": "Saturday, 13 June 2026",
-  "date_str": "2026-06-13",
-  "generated_at": "13 Jun 2026, 23:14 UTC",
-  "total_articles": 12,
+  "briefing_date": "Sunday, 14 June 2026",
+  "date_str": "2026-06-14",
+  "generated_at": "14 Jun 2026, 23:12 UTC",
+  "total_articles": 9,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "SR 26-2 Excludes Generative AI \u2014 WPS Governance Obligation Is Live Before the Next Exam",
-      "why_it_matters": "SR 26-2 governs quantitative model risk but explicitly excludes every generative and agentic AI system banks are scaling most aggressively \u2014 WPS must define the internal governance layer that regulators have declined to provide, before the next examination cycle makes the gap visible.",
-      "bullets": [
-        "SR 26-2 (April 2026, joint Fed/OCC/FDIC) replaces SR 11-7 as the model risk management standard; generative and agentic AI are placed explicitly outside scope, with a separate federal RFI 'planned but not yet issued' \u2014 creating a minimum 12-month governance vacuum for HSBC's most powerful AI deployments",
-        "Banks are now subject to AI oversight in every examination even without a formal framework; examiners are asking about kill-switch protocols, model inventory completeness, and human escalation paths \u2014 areas WPS must document before being examined",
-        "WPS must produce: (1) an inventory of all generative and agentic AI in deployment or active pilot across the group, (2) internal decision-rights and escalation thresholds equivalent to what SR 26-2 requires for traditional models, and (3) governance documentation ready for an examiner requesting evidence"
-      ],
+      "headline": "Execution Is the 2026 Differentiator — 70% of Competitors Are Stalled Where WPS Must Lead",
+      "context_html": "A 2026 financial services industry analysis finds that nearly every institution has an AI strategy, but only a small fraction have converted ambitions to scalable, production-grade delivery — making execution the only remaining competitive differentiator. Only 30% of wealth management CEOs are confident about AI revenue gains in 2026; the remaining 70% face skills gaps, legacy architecture, and governance bottlenecks that WPS’s global change execution programme is specifically designed to solve. For Surali, this is structural: the H2 governance sprint must define quality gates, sequencing protocols, and delivery ownership across AI deployment, DPM tooling, and stablecoin infrastructure simultaneously — sequencing is the COO’s primary H2 output.",
       "source_links": [
-        {
-          "url": "https://www.techtimes.com/articles/318340/20260613/bank-ai-oversight-expands-every-exam-generative-ai-bypasses-sr-26-2-kill-switch-gap-grows.htm",
-          "title": "TechTimes: Bank AI Oversight Expands to Every Exam"
-        },
-        {
-          "url": "https://cutover.com/blog/what-sr-26-2-means-for-banks-deploying-agentic-ai",
-          "title": "Cutover: SR 26-2 and Agentic AI Banking Guide"
-        },
-        {
-          "url": "https://www.sullcrom.com/insights/memo/2026/April/OCC-Fed-FDIC-Issue-Revised-Guidance-Model-Risk-Management",
-          "title": "Sullivan & Cromwell: SR 26-2 Banking Memo"
-        }
+        [
+          "https://www.altimetrik.com/blog/execution-over-innovation-financial-services-2026",
+          "Altimetrik: Execution Is the 2026 Financial Services Differentiator"
+        ],
+        [
+          "https://www.hubbis.com/news/ai-yet-to-deliver-consistent-revenue-gains-as-ceos-face-rising-geopolitical-and-trade-risks",
+          "Hubbis: AI Yet to Deliver Consistent Revenue Gains — CEOs Face Rising Risks"
+        ]
       ],
       "is_update": false
     },
     {
-      "headline": "HK AM Tax Overhaul Opens UHNW Family Office Pipeline \u2014 WPS Must Ready Ops Infrastructure",
-      "why_it_matters": "Hong Kong's mid-2026 asset management tax overhaul \u2014 expanding 0% concessions to family office structures, private credit, and digital assets \u2014 is the single biggest structural catalyst for UHNW inflows into HSBC's home market, but only if WPS has the operational infrastructure to capture it.",
-      "bullets": [
-        "Legislation expected mid-2026 from Hong Kong's FSTB extends the 0% carried interest and performance fee tax regime to single-investor family office structures, private credit, digital assets, and overseas real estate \u2014 and eliminates the minimum return benchmark that previously limited eligibility",
-        "Self-assessment replaces prior HKMA certification, shifting compliance ownership to the institution \u2014 WPS must build or validate internal tax-concession governance processes, KYC infrastructure for family office onboarding, and product shelf readiness for private credit and digital assets",
-        "Bloomberg projects HK private wealth AUM to nearly double to $2.6 trillion by 2031; the tax overhaul is the principal policy catalyst. WPS has a narrow window before competitors operationalise their response \u2014 the first movers in family office capability will capture a disproportionate share"
-      ],
+      "headline": "HSBC Stablecoin + DBS DPM in HK + Goldman APAC Hiring = Three Simultaneous H2 Operational Risks",
+      "context_html": "Three independent APAC developments converge on WPS’s H2 operational calendar: HSBC’s confirmed HKD stablecoin for H2 2026 creates an immediate obligation — AML/CFT architecture, high-quality asset segregation, client servicing model, and PayMe integration all need operational build-out before launch. <strong>DBS Private Bank</strong> is simultaneously pursuing a Hong Kong DPM licence, entering the highest-margin advisory segment in HSBC’s home market precisely when WPS delivery bandwidth is already committed to AI and digital transformation. And Goldman Sachs is scaling APAC hiring across wealth markets, compounding the talent pressure on WPS change execution headcount at peak programme delivery.",
       "source_links": [
-        {
-          "url": "https://boldergroup.com/resources/updates/hong-kongs-2026-asset-management-overhaul-explained/",
-          "title": "Bolder Group: HK AM Overhaul 2026 Explained"
-        },
-        {
-          "url": "https://taxnews.ey.com/news/2026-0558-hong-kongs-2026-2027-budget-proposes-enhancements-to-tax-incentive-measures",
-          "title": "EY: HK 2026-27 Budget Tax Enhancement Update"
-        },
-        {
-          "url": "https://www.bloomberg.com/professional/insights/financial-services/hong-kong-wealth-management-2026-outlook/",
-          "title": "Bloomberg: Hong Kong Wealth Management 2026 Outlook"
-        }
+        [
+          "https://www.hubbis.com/news/hsbc-moves-ahead-with-hong-kong-stablecoin-launch",
+          "Hubbis: HSBC Moves Ahead With HK Stablecoin Launch"
+        ],
+        [
+          "https://citywire.com/asia/news/exclusive-dbs-pb-to-launch-dpm-services-in-hong-kong/a2473494",
+          "Citywire: DBS PB to Launch HK DPM Services"
+        ],
+        [
+          "https://hubbis.com/news/goldman-sachs-targets-expansion-in-asia-plans-increased-hiring-across-key-markets",
+          "Hubbis: Goldman Sachs Targets Asia Expansion and Hiring"
+        ]
       ],
       "is_update": false
     },
     {
-      "headline": "UBS Coordinates Three-Front APAC Build Simultaneously \u2014 WPS Operational Response Plan Needed",
-      "why_it_matters": "UBS is executing a simultaneous three-front build \u2014 four senior front-office hires in Hong Kong, a $1.8T asset management platform consolidation, and new SE Asia and Greater China leadership \u2014 representing the most coordinated competitive push in HSBC's home markets in 2026 and demanding a WPS-level operational response.",
-      "bullets": [
-        "<strong>Pierre Widmer, Head of GWM Asia & Switzerland North Asia, UBS</strong> takes the APAC senior lead from September 1 while <strong>Sherwin Wong</strong>, recruited directly from JPMorgan, leads Greater China private clients \u2014 both roles directly overlapping with WPS's core delivery geography",
-        "UBS Asset Management's unification of public and private markets under a single $1.8 trillion platform removes a key product friction point, enabling UBS to deliver a cleaner integrated offer to clients in markets where HSBC's own platform integration has been a strategic work in progress",
-        "WPS must assess whether current operational capacity enables a coordinated response across Hong Kong, Taiwan, and Southeast Asia simultaneously \u2014 or whether a triage decision is required on where HSBC concentrates its H2 delivery firepower against the competitive threat"
-      ],
+      "headline": "Schroders Names Dedicated APAC COO as Peers Formalise APAC Execution Leadership",
+      "context_html": "Schroders has appointed <strong>Robert Reid, Asia Pacific Chief Operating Officer</strong>, to strengthen regional operations and client service capabilities — with <strong>Meagen Burnett, Group Chief Financial Officer at Schroders</strong>, citing the hire as a direct strategic commitment to the region. The appointment reflects a broader industry pattern: as APAC wealth management complexity grows across regulatory, digital, and competitive dimensions, operational leadership is being elevated from functional support to board-level strategic delivery. For Surali, this is a governance benchmark — if peers are formalising dedicated APAC COO-level execution capacity, WPS must confirm that its H2 governance model provides matching bandwidth for its simultaneous APAC deliverables.",
       "source_links": [
-        {
-          "url": "https://www.finews.asia/people/43809-ubs-global-wealth-management-private-banking-neil-yiu-pierre-widmer-simon-chang-sherwin-wong-hong-kong",
-          "title": "finews.asia: UBS Expands Wealth Front Office HK"
-        },
-        {
-          "url": "https://hubbis.com/news/ubs-asset-management-unifies-public-and-private-markets-under-1-8-trillion-platform",
-          "title": "Hubbis: UBS AM Unifies $1.8T Platform"
-        },
-        {
-          "url": "https://www.hubbis.com/news/ubs-strengthens-wealth-management-leadership-in-southeast-asia-and-greater-china",
-          "title": "Hubbis: UBS SE Asia & Greater China Leadership"
-        }
+        [
+          "https://www.hubbis.com/news/schroders-appoints-reid-as-asia-pacific-chief-operating-officer",
+          "Hubbis: Schroders Appoints Reid as Asia Pacific COO"
+        ],
+        [
+          "https://www.marketscreener.com/news/schroders-plc-announces-appointment-of-robert-reid-to-asia-pacific-coo-ce7f5dd3d989f52d",
+          "MarketScreener: Schroders Appoints APAC COO Robert Reid"
+        ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "AI & Technology": [
+    "HSBC News": [
       {
         "id": "art01",
-        "title": "SR 26-2 Excludes Generative AI: Banks Face Governance Void at Scale",
-        "url": "https://www.techtimes.com/articles/318340/20260613/bank-ai-oversight-expands-every-exam-generative-ai-bypasses-sr-26-2-kill-switch-gap-grows.htm",
-        "source": "TechTimes",
-        "published_at": "2026-06-13",
-        "summary": "Federal regulators issued SR 26-2 in April 2026, replacing SR 11-7, but explicitly excluded generative and agentic AI from its model risk governance scope \u2014 creating a regulatory grey zone precisely as banks scale these systems enterprise-wide, with a separate federal RFI on AI governance planned but not yet issued.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 9,
+        "title": "HSBC WPB Attracts US$38bn NNIA in Asia in Q1 2026; StanChart on Track",
+        "url": "https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-05-07",
+        "summary": "HSBC WPB attracted US$38–39bn NNIA from Asia in Q1 2026 (+43% YoY), with IWPB revenues rising 7% to $3.75bn and total wealth balances reaching $1.57 trillion. Asia accounts for $34bn of the $39bn group-wide net new money, underlining the region's dominance in HSBC's wealth growth story.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 9,
+        "surali_rel": 8,
         "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 9
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "Banks Hold Finance's Most Powerful AI Dataset \u2014 Who Unlocks It Wins",
-        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/banks-and-fintechs-are-sitting-on-the-most-powerful-ai-dataset-in-finance/",
-        "source": "PYMNTS",
+        "title": "HSBC Moves Ahead With Hong Kong HKD Stablecoin, PayMe Integration Confirmed for H2 2026",
+        "url": "https://www.hubbis.com/news/hsbc-moves-ahead-with-hong-kong-stablecoin-launch",
+        "source": "Hubbis",
         "published_at": "2026-06-12",
-        "summary": "Banks and fintechs hold decades of structured financial transaction data that represents the most powerful AI training resource in finance; institutions that deploy LLMs and multimodal models against this proprietary data will achieve durable advantages in credit risk, fraud detection, and wealth advisory personalisation.",
-        "hsbc_relevancy": 6,
+        "summary": "HSBC has confirmed an HKD-denominated stablecoin launch in H2 2026, fully backed by high-quality liquid assets and integrated with PayMe and the HSBC HK Mobile App. Initial retail use cases centre on P2P payments, making HSBC one of the first global banks to issue regulated retail digital currency in its home market.",
+        "hsbc_relevancy": 8,
         "adam_rel": 7,
-        "surali_rel": 5,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 5
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 7
       }
     ],
-    "HSBC News": [
+    "Competitor Intelligence": [
       {
         "id": "art03",
-        "title": "HSBC RBWM Asia Head Elevated to Global Digital Leadership Role",
-        "url": "https://asianprivatebanker.com/private-wealth/people-private-wealth/hsbc-rbwm-asia-head-to-take-global-digital-role/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-06-12",
-        "summary": "HSBC's head of Retail Banking and Wealth Management for Asia is transitioning to a new global digital leadership role, reflecting the bank's strategy of exporting APAC's digital playbook to its worldwide WPB operations and elevating the region's delivery model as the global template.",
-        "hsbc_relevancy": 9,
+        "title": "EXCLUSIVE: DBS Private Bank Seeks Hong Kong DPM Licence to Serve Growing Demand",
+        "url": "https://citywire.com/asia/news/exclusive-dbs-pb-to-launch-dpm-services-in-hong-kong/a2473494",
+        "source": "Citywire Asia",
+        "published_at": "2026-06-14",
+        "summary": "DBS Private Bank is considering obtaining a Hong Kong regulatory licence to offer discretionary portfolio management services locally, citing growing client demand. The bank is building a dedicated HK team and already added hundreds of new DPM mandates in the recent review period, with HK set to become a local DPM hub.",
+        "hsbc_relevancy": 8,
         "adam_rel": 8,
         "surali_rel": 7,
         "noise_level": 2,
-        "category": "HSBC News",
+        "category": "Competitor Intelligence",
         "is_update": false,
         "user_relevance": 7
       },
       {
         "id": "art04",
-        "title": "HSBC Now Sources Over Half of Global Wealth Inflows From Asia",
-        "url": "https://globalprivatebanker.net/hsbc-sources-over-half-of-wealth-inflows-from-asia/",
-        "source": "Global Private Banker",
+        "title": "Euromoney Names DBS Private Bank Asia's Best for HNW Clients 2026",
+        "url": "https://www.euromoney.com/article/3eccn1mqiayo0ossswos88o8c/private-banking/asias-best-for-hnw-2026-dbs-private-bank/",
+        "source": "Euromoney",
         "published_at": "2026-06-12",
-        "summary": "New data confirms HSBC now generates over 50% of its global wealth management net new inflows from Asia Pacific, cementing the region as the primary growth engine for WPB and significantly raising the strategic weight and visibility of APAC delivery execution across the group.",
-        "hsbc_relevancy": 9,
+        "summary": "Euromoney has awarded DBS Private Bank Asia's Best Private Bank for HNW clients in 2026, adding to its World's Best Private Bank title. The citation highlights DBS's digital capabilities, personalised relationship model, and record wealth fees of SGD 907m in Q1 2026.",
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
         "surali_rel": 6,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
         "user_relevance": 6
-      }
-    ],
-    "Competitor Intelligence": [
+      },
       {
         "id": "art05",
-        "title": "UBS Makes Four Senior Wealth Hires in HK Targeting HSBC's Home Markets",
-        "url": "https://www.finews.asia/people/43809-ubs-global-wealth-management-private-banking-neil-yiu-pierre-widmer-simon-chang-sherwin-wong-hong-kong",
-        "source": "finews.asia",
-        "published_at": "2026-06-12",
-        "summary": "UBS Global Wealth Management has made four simultaneous senior front-office appointments in Hong Kong, covering Southeast Asia, Taiwan International, Greater China private clients, and Asia-wide regional leadership \u2014 a coordinated talent build directly targeting HSBC's core APAC wealth markets.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art06",
-        "title": "StanChart Hires Ex-UBS AI Equity Specialist and Ex-JPM APAC FI Head as New CIOs",
-        "url": "https://www.sc.com/en/press-release/standard-chartered-expands-global-cio-team-as-part-of-investment-in-affluent-business/",
-        "source": "Standard Chartered",
-        "published_at": "2026-06-12",
-        "summary": "Standard Chartered has appointed Sundeep Gantori, formerly UBS's CIO Equity Strategist managing the global AI portfolio, as CIO Equities, and Jonathan Liang, formerly JPMorgan APAC head of fixed income investment specialists, as CIO Fixed Income & FX \u2014 deepening its wealth investment engine for the affluent growth push.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art07",
-        "title": "UBS Asset Management Unifies $1.8T Platform Across Public and Private Markets",
-        "url": "https://hubbis.com/news/ubs-asset-management-unifies-public-and-private-markets-under-1-8-trillion-platform",
+        "title": "Goldman Sachs Targets Asia Pacific Expansion With Increased Hiring Across Key Markets",
+        "url": "https://hubbis.com/news/goldman-sachs-targets-expansion-in-asia-plans-increased-hiring-across-key-markets",
         "source": "Hubbis",
-        "published_at": "2026-06-12",
-        "summary": "UBS Asset Management is consolidating all public and private markets investment capabilities under a single $1.8 trillion integrated platform, appointing Sonja Laud as co-head of investments \u2014 simplifying product access for wealth clients globally and removing a friction point that historically favoured integrated banking models.",
+        "published_at": "2026-06-13",
+        "summary": "Goldman Sachs is scaling its Asia Pacific wealth presence through targeted hiring across key markets including Hong Kong and Singapore. The move reinforces competitive pressure on HSBC WPB in the region's highest-growth wealth segments and will intensify the talent market for senior relationship managers.",
         "hsbc_relevancy": 6,
-        "adam_rel": 6,
+        "adam_rel": 7,
         "surali_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
@@ -194,83 +139,68 @@
         "user_relevance": 6
       }
     ],
-    "Regulatory & Markets": [
+    "AI & Technology": [
       {
-        "id": "art08",
-        "title": "Hong Kong Expands 0% Tax Regime to Family Offices, Digital Assets, Private Credit",
-        "url": "https://boldergroup.com/resources/updates/hong-kongs-2026-asset-management-overhaul-explained/",
-        "source": "Bolder Group",
+        "id": "art06",
+        "title": "AI Yet to Deliver Consistent Revenue Gains: Only 30% of Wealth CEOs Confident in 2026",
+        "url": "https://www.hubbis.com/news/ai-yet-to-deliver-consistent-revenue-gains-as-ceos-face-rising-geopolitical-and-trade-risks",
+        "source": "Hubbis",
         "published_at": "2026-06-13",
-        "summary": "Hong Kong's FSTB is introducing mid-2026 legislation extending the 0% carried interest and performance fee tax concession to UHNW family office single-investor structures, private credit, digital assets, and overseas real estate \u2014 eliminating the minimum return benchmark and replacing HKMA certification with institutional self-assessment.",
-        "hsbc_relevancy": 8,
+        "summary": "A Hubbis 2026 CEO survey finds only 30% of wealth management CEOs are confident about AI-driven revenue growth, with geopolitical risk and inability to scale AI from pilot to production the primary barriers. Portfolio personalisation at scale (26%) and real-time investment research (24%) are the top unresolved use cases; 70% of firms remain in pilot or early deployment stages.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "art09",
+        "title": "Hubbis: AI Advisors Opine on Transforming Wealth Management Advice and Personalisation",
+        "url": "https://www.hubbis.com/article/ai-in-wealth-management-advisors-opine-on-transforming-advice-personalisation-and-efficiency",
+        "source": "Hubbis",
+        "published_at": "2026-06-13",
+        "summary": "Hubbis surveyed Asia wealth management advisors on AI's impact: top applications are portfolio monitoring, client communication personalisation, and investment research at scale. Advisors report AI is boosting productivity but human judgement remains non-negotiable for complex advisory decisions, especially for UHNW clients.",
+        "hsbc_relevancy": 5,
         "adam_rel": 7,
+        "surali_rel": 6,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 6
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art07",
+        "title": "Altimetrik: Execution Is the Only Remaining Differentiator in Financial Services 2026",
+        "url": "https://www.altimetrik.com/blog/execution-over-innovation-financial-services-2026",
+        "source": "Altimetrik",
+        "published_at": "2026-06-13",
+        "summary": "A 2026 analysis of the financial services industry finds that nearly every institution has an AI strategy but only a small fraction convert ambitions to production-grade, scalable delivery. The new competitive question is no longer whether to transform but how fast and consistently delivery can be sustained — execution velocity vs. regulation pace and legacy resistance.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 8,
         "surali_rel": 9,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "noise_level": 2,
+        "category": "Operations & Change",
         "is_update": false,
         "user_relevance": 9
       },
       {
-        "id": "art10",
-        "title": "Deloitte APAC Q1 2026: Five Simultaneous Regulatory Changes Across HSBC's Markets",
-        "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-update-q1-2026.html",
-        "source": "Deloitte",
-        "published_at": "2026-04-30",
-        "summary": "Deloitte's Q1 2026 Asia Pacific regulatory update identifies governance and accountability as the dominant theme, with simultaneous active rule changes in Japan (cyber risk), Taiwan (incident reporting), Indonesia (IT governance), Singapore (environmental risk management), and Hong Kong (Sustainable Finance Taxonomy Phase 2A).",
-        "hsbc_relevancy": 7,
-        "adam_rel": 6,
-        "surali_rel": 8,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art09",
-        "title": "HKMA Forms Tokenised Bond Expert Group to Formalise HK Digital Bond Market",
-        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260605-3/",
-        "source": "HKMA",
-        "published_at": "2026-06-05",
-        "summary": "The HKMA established a Tokenised Bond Expert Group in June 2026 to accelerate the legal and regulatory framework for tokenised bond issuance and transactions in Hong Kong, with initial discussions reviewing the existing regime and identifying structural gaps to position HK as the leading centre for digital fixed income.",
-        "hsbc_relevancy": 6,
+        "id": "art08",
+        "title": "Schroders Appoints Robert Reid as Asia Pacific Chief Operating Officer",
+        "url": "https://www.hubbis.com/news/schroders-appoints-reid-as-asia-pacific-chief-operating-officer",
+        "source": "Hubbis",
+        "published_at": "2026-06-13",
+        "summary": "Schroders has appointed Robert Reid as Asia Pacific Chief Operating Officer to strengthen regional operations and client service capabilities. Group CFO Meagen Burnett cited Reid's appointment as reinforcing Schroders' commitment to APAC growth, reflecting a broader industry trend of elevating COO-level leadership in the region.",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 6
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "art11",
-        "title": "Bloomberg: Hong Kong Private Wealth AUM to Double to $2.6T by 2031",
-        "url": "https://www.bloomberg.com/professional/insights/financial-services/hong-kong-wealth-management-2026-outlook/",
-        "source": "Bloomberg Professional",
-        "published_at": "2026-06-12",
-        "summary": "Bloomberg's 2026 Hong Kong wealth management outlook projects private wealth AUM to nearly double to $2.6 trillion by 2031, supported by 93% digital adoption among investors with $100K+ in assets \u2014 the highest in Asia \u2014 positioning Hong Kong as the defining growth market for HSBC's Asia wealth strategy.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "Private Banking & Wealth",
+        "surali_rel": 7,
+        "noise_level": 1,
+        "category": "Operations & Change",
         "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art12",
-        "title": "UBS and Lombard Odier Use DPM to Navigate Asia Generational Wealth Transfer",
-        "url": "https://asianprivatebanker.com/private-wealth/ubs-lombard-odier-how-dpm-is-bridging-generational-rifts/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-06-12",
-        "summary": "UBS and Lombard Odier are deploying discretionary portfolio management as the primary vehicle to address generational wealth transfer challenges in Asia, with next-generation clients seeking delegated management with personalised mandates as a balanced approach to volatile markets and complex succession needs.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 6,
-        "surali_rel": 5,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 7
       }
     ]
   },
@@ -278,191 +208,145 @@
     "articles": [
       {
         "id": "art01",
-        "title": "SR 26-2 Excludes Generative AI: Banks Face Governance Void at Scale",
-        "url": "https://www.techtimes.com/articles/318340/20260613/bank-ai-oversight-expands-every-exam-generative-ai-bypasses-sr-26-2-kill-switch-gap-grows.htm",
-        "source": "TechTimes",
-        "published_at": "2026-06-13",
-        "summary": "Federal regulators issued SR 26-2 in April 2026, replacing SR 11-7, but explicitly excluded generative and agentic AI from its model risk governance scope \u2014 creating a regulatory grey zone precisely as banks scale these systems enterprise-wide, with a separate federal RFI on AI governance planned but not yet issued.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 9,
+        "title": "HSBC WPB Attracts US$38bn NNIA in Asia in Q1 2026; StanChart on Track",
+        "url": "https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-05-07",
+        "summary": "HSBC WPB attracted US$38–39bn NNIA from Asia in Q1 2026 (+43% YoY), with IWPB revenues rising 7% to $3.75bn and total wealth balances reaching $1.57 trillion. Asia accounts for $34bn of the $39bn group-wide net new money, underlining the region's dominance in HSBC's wealth growth story.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 9,
+        "surali_rel": 8,
         "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 9
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "Banks Hold Finance's Most Powerful AI Dataset \u2014 Who Unlocks It Wins",
-        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/banks-and-fintechs-are-sitting-on-the-most-powerful-ai-dataset-in-finance/",
-        "source": "PYMNTS",
+        "title": "HSBC Moves Ahead With Hong Kong HKD Stablecoin, PayMe Integration Confirmed for H2 2026",
+        "url": "https://www.hubbis.com/news/hsbc-moves-ahead-with-hong-kong-stablecoin-launch",
+        "source": "Hubbis",
         "published_at": "2026-06-12",
-        "summary": "Banks and fintechs hold decades of structured financial transaction data that represents the most powerful AI training resource in finance; institutions that deploy LLMs and multimodal models against this proprietary data will achieve durable advantages in credit risk, fraud detection, and wealth advisory personalisation.",
-        "hsbc_relevancy": 6,
+        "summary": "HSBC has confirmed an HKD-denominated stablecoin launch in H2 2026, fully backed by high-quality liquid assets and integrated with PayMe and the HSBC HK Mobile App. Initial retail use cases centre on P2P payments, making HSBC one of the first global banks to issue regulated retail digital currency in its home market.",
+        "hsbc_relevancy": 8,
         "adam_rel": 7,
-        "surali_rel": 5,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 5
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 7
       },
       {
         "id": "art03",
-        "title": "HSBC RBWM Asia Head Elevated to Global Digital Leadership Role",
-        "url": "https://asianprivatebanker.com/private-wealth/people-private-wealth/hsbc-rbwm-asia-head-to-take-global-digital-role/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-06-12",
-        "summary": "HSBC's head of Retail Banking and Wealth Management for Asia is transitioning to a new global digital leadership role, reflecting the bank's strategy of exporting APAC's digital playbook to its worldwide WPB operations and elevating the region's delivery model as the global template.",
-        "hsbc_relevancy": 9,
+        "title": "EXCLUSIVE: DBS Private Bank Seeks Hong Kong DPM Licence to Serve Growing Demand",
+        "url": "https://citywire.com/asia/news/exclusive-dbs-pb-to-launch-dpm-services-in-hong-kong/a2473494",
+        "source": "Citywire Asia",
+        "published_at": "2026-06-14",
+        "summary": "DBS Private Bank is considering obtaining a Hong Kong regulatory licence to offer discretionary portfolio management services locally, citing growing client demand. The bank is building a dedicated HK team and already added hundreds of new DPM mandates in the recent review period, with HK set to become a local DPM hub.",
+        "hsbc_relevancy": 8,
         "adam_rel": 8,
         "surali_rel": 7,
         "noise_level": 2,
-        "category": "HSBC News",
+        "category": "Competitor Intelligence",
         "is_update": false,
         "user_relevance": 7
       },
       {
         "id": "art04",
-        "title": "HSBC Now Sources Over Half of Global Wealth Inflows From Asia",
-        "url": "https://globalprivatebanker.net/hsbc-sources-over-half-of-wealth-inflows-from-asia/",
-        "source": "Global Private Banker",
+        "title": "Euromoney Names DBS Private Bank Asia's Best for HNW Clients 2026",
+        "url": "https://www.euromoney.com/article/3eccn1mqiayo0ossswos88o8c/private-banking/asias-best-for-hnw-2026-dbs-private-bank/",
+        "source": "Euromoney",
         "published_at": "2026-06-12",
-        "summary": "New data confirms HSBC now generates over 50% of its global wealth management net new inflows from Asia Pacific, cementing the region as the primary growth engine for WPB and significantly raising the strategic weight and visibility of APAC delivery execution across the group.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art05",
-        "title": "UBS Makes Four Senior Wealth Hires in HK Targeting HSBC's Home Markets",
-        "url": "https://www.finews.asia/people/43809-ubs-global-wealth-management-private-banking-neil-yiu-pierre-widmer-simon-chang-sherwin-wong-hong-kong",
-        "source": "finews.asia",
-        "published_at": "2026-06-12",
-        "summary": "UBS Global Wealth Management has made four simultaneous senior front-office appointments in Hong Kong, covering Southeast Asia, Taiwan International, Greater China private clients, and Asia-wide regional leadership \u2014 a coordinated talent build directly targeting HSBC's core APAC wealth markets.",
+        "summary": "Euromoney has awarded DBS Private Bank Asia's Best Private Bank for HNW clients in 2026, adding to its World's Best Private Bank title. The citation highlights DBS's digital capabilities, personalised relationship model, and record wealth fees of SGD 907m in Q1 2026.",
         "hsbc_relevancy": 7,
         "adam_rel": 8,
         "surali_rel": 6,
         "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 6
+      },
+      {
+        "id": "art05",
+        "title": "Goldman Sachs Targets Asia Pacific Expansion With Increased Hiring Across Key Markets",
+        "url": "https://hubbis.com/news/goldman-sachs-targets-expansion-in-asia-plans-increased-hiring-across-key-markets",
+        "source": "Hubbis",
+        "published_at": "2026-06-13",
+        "summary": "Goldman Sachs is scaling its Asia Pacific wealth presence through targeted hiring across key markets including Hong Kong and Singapore. The move reinforces competitive pressure on HSBC WPB in the region's highest-growth wealth segments and will intensify the talent market for senior relationship managers.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 6,
+        "noise_level": 2,
         "category": "Competitor Intelligence",
         "is_update": false,
         "user_relevance": 6
       },
       {
         "id": "art06",
-        "title": "StanChart Hires Ex-UBS AI Equity Specialist and Ex-JPM APAC FI Head as New CIOs",
-        "url": "https://www.sc.com/en/press-release/standard-chartered-expands-global-cio-team-as-part-of-investment-in-affluent-business/",
-        "source": "Standard Chartered",
-        "published_at": "2026-06-12",
-        "summary": "Standard Chartered has appointed Sundeep Gantori, formerly UBS's CIO Equity Strategist managing the global AI portfolio, as CIO Equities, and Jonathan Liang, formerly JPMorgan APAC head of fixed income investment specialists, as CIO Fixed Income & FX \u2014 deepening its wealth investment engine for the affluent growth push.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
+        "title": "AI Yet to Deliver Consistent Revenue Gains: Only 30% of Wealth CEOs Confident in 2026",
+        "url": "https://www.hubbis.com/news/ai-yet-to-deliver-consistent-revenue-gains-as-ceos-face-rising-geopolitical-and-trade-risks",
+        "source": "Hubbis",
+        "published_at": "2026-06-13",
+        "summary": "A Hubbis 2026 CEO survey finds only 30% of wealth management CEOs are confident about AI-driven revenue growth, with geopolitical risk and inability to scale AI from pilot to production the primary barriers. Portfolio personalisation at scale (26%) and real-time investment research (24%) are the top unresolved use cases; 70% of firms remain in pilot or early deployment stages.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "AI & Technology",
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 7
       },
       {
         "id": "art07",
-        "title": "UBS Asset Management Unifies $1.8T Platform Across Public and Private Markets",
-        "url": "https://hubbis.com/news/ubs-asset-management-unifies-public-and-private-markets-under-1-8-trillion-platform",
-        "source": "Hubbis",
-        "published_at": "2026-06-12",
-        "summary": "UBS Asset Management is consolidating all public and private markets investment capabilities under a single $1.8 trillion integrated platform, appointing Sonja Laud as co-head of investments \u2014 simplifying product access for wealth clients globally and removing a friction point that historically favoured integrated banking models.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 6,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art08",
-        "title": "Hong Kong Expands 0% Tax Regime to Family Offices, Digital Assets, Private Credit",
-        "url": "https://boldergroup.com/resources/updates/hong-kongs-2026-asset-management-overhaul-explained/",
-        "source": "Bolder Group",
+        "title": "Altimetrik: Execution Is the Only Remaining Differentiator in Financial Services 2026",
+        "url": "https://www.altimetrik.com/blog/execution-over-innovation-financial-services-2026",
+        "source": "Altimetrik",
         "published_at": "2026-06-13",
-        "summary": "Hong Kong's FSTB is introducing mid-2026 legislation extending the 0% carried interest and performance fee tax concession to UHNW family office single-investor structures, private credit, digital assets, and overseas real estate \u2014 eliminating the minimum return benchmark and replacing HKMA certification with institutional self-assessment.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
+        "summary": "A 2026 analysis of the financial services industry finds that nearly every institution has an AI strategy but only a small fraction convert ambitions to production-grade, scalable delivery. The new competitive question is no longer whether to transform but how fast and consistently delivery can be sustained — execution velocity vs. regulation pace and legacy resistance.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 8,
         "surali_rel": 9,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "noise_level": 2,
+        "category": "Operations & Change",
         "is_update": false,
         "user_relevance": 9
       },
       {
-        "id": "art09",
-        "title": "HKMA Forms Tokenised Bond Expert Group to Formalise HK Digital Bond Market",
-        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260605-3/",
-        "source": "HKMA",
-        "published_at": "2026-06-05",
-        "summary": "The HKMA established a Tokenised Bond Expert Group in June 2026 to accelerate the legal and regulatory framework for tokenised bond issuance and transactions in Hong Kong, with initial discussions reviewing the existing regime and identifying structural gaps to position HK as the leading centre for digital fixed income.",
-        "hsbc_relevancy": 6,
+        "id": "art08",
+        "title": "Schroders Appoints Robert Reid as Asia Pacific Chief Operating Officer",
+        "url": "https://www.hubbis.com/news/schroders-appoints-reid-as-asia-pacific-chief-operating-officer",
+        "source": "Hubbis",
+        "published_at": "2026-06-13",
+        "summary": "Schroders has appointed Robert Reid as Asia Pacific Chief Operating Officer to strengthen regional operations and client service capabilities. Group CFO Meagen Burnett cited Reid's appointment as reinforcing Schroders' commitment to APAC growth, reflecting a broader industry trend of elevating COO-level leadership in the region.",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
+        "surali_rel": 7,
+        "noise_level": 1,
+        "category": "Operations & Change",
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "art09",
+        "title": "Hubbis: AI Advisors Opine on Transforming Wealth Management Advice and Personalisation",
+        "url": "https://www.hubbis.com/article/ai-in-wealth-management-advisors-opine-on-transforming-advice-personalisation-and-efficiency",
+        "source": "Hubbis",
+        "published_at": "2026-06-13",
+        "summary": "Hubbis surveyed Asia wealth management advisors on AI's impact: top applications are portfolio monitoring, client communication personalisation, and investment research at scale. Advisors report AI is boosting productivity but human judgement remains non-negotiable for complex advisory decisions, especially for UHNW clients.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
         "surali_rel": 6,
         "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "art10",
-        "title": "Deloitte APAC Q1 2026: Five Simultaneous Regulatory Changes Across HSBC's Markets",
-        "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-update-q1-2026.html",
-        "source": "Deloitte",
-        "published_at": "2026-04-30",
-        "summary": "Deloitte's Q1 2026 Asia Pacific regulatory update identifies governance and accountability as the dominant theme, with simultaneous active rule changes in Japan (cyber risk), Taiwan (incident reporting), Indonesia (IT governance), Singapore (environmental risk management), and Hong Kong (Sustainable Finance Taxonomy Phase 2A).",
-        "hsbc_relevancy": 7,
-        "adam_rel": 6,
-        "surali_rel": 8,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art11",
-        "title": "Bloomberg: Hong Kong Private Wealth AUM to Double to $2.6T by 2031",
-        "url": "https://www.bloomberg.com/professional/insights/financial-services/hong-kong-wealth-management-2026-outlook/",
-        "source": "Bloomberg Professional",
-        "published_at": "2026-06-12",
-        "summary": "Bloomberg's 2026 Hong Kong wealth management outlook projects private wealth AUM to nearly double to $2.6 trillion by 2031, supported by 93% digital adoption among investors with $100K+ in assets \u2014 the highest in Asia \u2014 positioning Hong Kong as the defining growth market for HSBC's Asia wealth strategy.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 6,
-        "noise_level": 3,
-        "category": "Private Banking & Wealth",
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 6
-      },
-      {
-        "id": "art12",
-        "title": "UBS and Lombard Odier Use DPM to Navigate Asia Generational Wealth Transfer",
-        "url": "https://asianprivatebanker.com/private-wealth/ubs-lombard-odier-how-dpm-is-bridging-generational-rifts/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-06-12",
-        "summary": "UBS and Lombard Odier are deploying discretionary portfolio management as the primary vehicle to address generational wealth transfer challenges in Asia, with next-generation clients seeking delegated management with personalised mandates as a balanced approach to volatile markets and complex succession needs.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 6,
-        "surali_rel": 5,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 5
       }
     ],
     "categories": {
-      "AI & Technology": "#6366f1",
       "HSBC News": "#dc2626",
       "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706",
-      "Private Banking & Wealth": "#059669"
+      "AI & Technology": "#6366f1",
+      "Operations & Change": "#7c3aed"
     }
   }
 }
