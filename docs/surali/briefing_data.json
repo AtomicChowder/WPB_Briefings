@@ -1,0 +1,243 @@
+{
+  "user_id": "surali",
+  "user_name": "Surali Siriwardene",
+  "user_display_name": "Surali",
+  "user_title": "COO & Global Head of Change Execution, WPS",
+  "briefing_date": "Monday, 23 June 2026",
+  "date_str": "2026-06-23",
+  "generated_at": "23 Jun 2026, 23:11 UTC",
+  "total_articles": 5,
+  "breaking_news": [],
+  "talking_points": [
+    {
+      "headline": "HSBC's 200-Use-Case Google Cloud AI Mandate Requires an Enterprise WPS Governance Framework Now",
+      "why_it_matters": "As Global COO, Surali must establish the governance architecture that tracks, risk-assesses, and controls 200+ AI initiatives across HSBC before regional delivery creates a governance deficit.",
+      "bullets": [
+        "The HSBC-Google Cloud partnership (June 17) commits to deploying Gemini Enterprise Agent Platform across wealth management, financial crime, and RM operations globally; WPS must own the portfolio governance that approves sequencing and manages delivery risk",
+        "Each initiative must meet a US$100m+ value threshold before delivery \u2014 WPS needs a standardised value-estimation and approval framework before competing regional business cases undermine the prioritisation logic",
+        "This partnership adds 200+ potential change items on top of existing concurrent delivery (stablecoin, ASEAN DPM, UHNW Access) \u2014 WPS governance must explicitly manage the accumulated portfolio load before H2 2026 compresses timelines"
+      ],
+      "source_links": [
+        {
+          "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-and-google-cloud-announce-transformative-ai-banking-partnership",
+          "title": "HSBC & Google Cloud AI Partnership \u2014 HSBC"
+        },
+        {
+          "url": "https://fintech.global/2026/06/17/hsbc-and-google-cloud-forge-multi-year-ai-partnership/",
+          "title": "HSBC Google Cloud Multi-Year AI Deal \u2014 Fintech Global"
+        }
+      ],
+      "is_update": true
+    },
+    {
+      "headline": "StanChart Cuts 7,000 Back-Office Roles via AI \u2014 WPS Must Define HSBC's Efficiency Response",
+      "why_it_matters": "Standard Chartered's announcement resets the industry benchmark for AI-driven operational cost reduction, pressuring Surali to articulate HSBC WPS's own efficiency roadmap for the same cycle.",
+      "bullets": [
+        "<strong>Bill Winters, CEO of Standard Chartered</strong> confirmed 7,000+ role cuts by 2030 targeting a 6-point improvement in return on tangible equity \u2014 the clearest signal yet that AI-driven operational efficiency is now a competitive baseline, not a differentiator",
+        "The cuts target back-office functions in Asia and Eastern Europe: exactly the geography and function type where WPS has the most comparable operational footprint",
+        "WPS must articulate its own AI operational efficiency trajectory \u2014 which shared-service, change-execution, and compliance functions are candidates for automation, and what is the governed timeline and accountability framework?"
+      ],
+      "source_links": [
+        {
+          "url": "https://www.finextra.com/newsarticle/47776/standard-chartered-to-cut-7000-jobs-as-ai-takes-over-the-back-office",
+          "title": "StanChart AI Job Cuts \u2014 Finextra"
+        },
+        {
+          "url": "https://www.citybuzz.co/2026/05/22/standard-chartered-to-cut-7000-jobs-by-2030-boost-ai-investment/",
+          "title": "StanChart 7,000 Jobs \u2014 CityBuzz"
+        }
+      ],
+      "is_update": true
+    },
+    {
+      "headline": "PwC: APAC AWM Heading for US$34.5 Trillion \u2014 Tokenised Fund Infrastructure Must Be WPS Priority",
+      "why_it_matters": "PwC's 2030 projections confirm the operational scale APAC wealth will require, and 41% annual growth in tokenised fund AuM creates an immediate WPS infrastructure planning obligation.",
+      "bullets": [
+        "PwC's June 17 APAC AWM report projects AuM at US$34.5 trillion by 2030 (6.8% CAGR), with Singapore as the strategic hub and APAC HNW assets hitting US$52.4 trillion \u2014 a 50%+ increase that demands commensurate operational scaling",
+        "Tokenised fund AuM is projected to grow 41% annually from $90bn to $715bn by 2030; WPS must confirm HSBC's operations, custody, and settlement infrastructure can support this new asset class at volume before competitors build the rails first",
+        "HSBC already holds a HKD stablecoin licence and has active ASEAN DPM and UHNW Access programmes \u2014 WPS must sequence these concurrent build-outs to avoid infrastructure gaps as market volumes accelerate in H2 2026"
+      ],
+      "source_links": [
+        {
+          "url": "https://hubbis.com/news/pwc-singapore-strengthens-its-position-as-the-strategic-hub-for-cross-border-wealth-tokenisation-and-sovereign-capital-as-asia-pacific-awm-heads-for-us-34-5-trillion-by-2030",
+          "title": "PwC APAC AWM 2030 \u2014 Hubbis"
+        },
+        {
+          "url": "https://www.wealthbriefing.com/html/article.php/singapore-bolsters-its-position-ascross_dash_border-wealth-hub--pwc",
+          "title": "Singapore Cross-Border Wealth Hub \u2014 WealthBriefing"
+        }
+      ],
+      "is_update": true
+    }
+  ],
+  "articles_by_category": {
+    "HSBC News": [
+      {
+        "id": "art02",
+        "title": "HSBC and Google Cloud Announce Multi-Year AI Partnership Targeting 200+ Use Cases",
+        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-and-google-cloud-announce-transformative-ai-banking-partnership",
+        "source": "HSBC",
+        "published_at": "2026-06-17",
+        "summary": "HSBC and Google Cloud launched a multi-year AI partnership using Gemini models to enable 200+ use cases focused on hyper-personalised wealth management advice, 2x-faster financial crime detection, and RM tools\u2014each initiative requiring US$100m+ projected value to proceed.",
+        "hsbc_relevancy": 10,
+        "adam_rel": 9,
+        "surali_rel": 9,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 9
+      },
+      {
+        "id": "art01",
+        "title": "Two-Thirds of HNWIs in HK and China Lack Legacy Plans, HSBC Life Survey",
+        "url": "https://www.hubbis.com/news/two-thirds-of-hnwis-in-hong-kong-and-mainland-china-lack-legacy-plans-hsbc-life-survey-finds",
+        "source": "Hubbis / HSBC Life",
+        "published_at": "2026-06-22",
+        "summary": "HSBC Life's June 22 survey of 203 HNWIs across Hong Kong and mainland China finds two-thirds have no legacy plan, with market volatility as the primary trigger; life insurance is the top planning tool for 80-92% of respondents.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 6,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 6
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art03",
+        "title": "Standard Chartered Plans 7,000+ Job Cuts by 2030 as AI Automates Back-Office",
+        "url": "https://www.finextra.com/newsarticle/47776/standard-chartered-to-cut-7000-jobs-as-ai-takes-over-the-back-office",
+        "source": "Finextra",
+        "published_at": "2026-05-22",
+        "summary": "Standard Chartered announced 7,000+ job cuts (15% of corporate roles) by 2030 driven by AI automation of back-office functions in Chennai, Bengaluru, Kuala Lumpur, and Warsaw, targeting an 18% return on tangible equity.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art04",
+        "title": "PwC: APAC AWM to Reach US$34.5 Trillion by 2030, Singapore Leads Tokenised Wealth",
+        "url": "https://hubbis.com/news/pwc-singapore-strengthens-its-position-as-the-strategic-hub-for-cross-border-wealth-tokenisation-and-sovereign-capital-as-asia-pacific-awm-heads-for-us-34-5-trillion-by-2030",
+        "source": "Hubbis / PwC",
+        "published_at": "2026-06-17",
+        "summary": "PwC's 2026 APAC AWM report projects AuM reaching US$34.5 trillion by 2030 at a 6.8% CAGR, with tokenised fund AuM growing 41% annually to $715 billion by 2030 and Singapore positioned as the strategic cross-border wealth hub.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "is_update": true,
+        "user_relevance": 8
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art05",
+        "title": "FIS and Anthropic Deploy Agentic AI Agent to Compress Banking AML Investigations Days to Minutes",
+        "url": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes",
+        "source": "FIS",
+        "published_at": "2026-05-04",
+        "summary": "FIS and Anthropic launched a Financial Crimes AI Agent automating AML alert and case investigations from days to minutes, with BMO and Amalgamated Bank as first users and broader H2 2026 rollout planned for credit decisioning, onboarding, and fraud prevention.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 8
+      }
+    ]
+  },
+  "chart_data": {
+    "articles": [
+      {
+        "id": "art01",
+        "title": "Two-Thirds of HNWIs in HK and China Lack Legacy Plans, HSBC Life Survey",
+        "url": "https://www.hubbis.com/news/two-thirds-of-hnwis-in-hong-kong-and-mainland-china-lack-legacy-plans-hsbc-life-survey-finds",
+        "source": "Hubbis / HSBC Life",
+        "published_at": "2026-06-22",
+        "summary": "HSBC Life's June 22 survey of 203 HNWIs across Hong Kong and mainland China finds two-thirds have no legacy plan, with market volatility as the primary trigger; life insurance is the top planning tool for 80-92% of respondents.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 6,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art02",
+        "title": "HSBC and Google Cloud Announce Multi-Year AI Partnership Targeting 200+ Use Cases",
+        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-and-google-cloud-announce-transformative-ai-banking-partnership",
+        "source": "HSBC",
+        "published_at": "2026-06-17",
+        "summary": "HSBC and Google Cloud launched a multi-year AI partnership using Gemini models to enable 200+ use cases focused on hyper-personalised wealth management advice, 2x-faster financial crime detection, and RM tools\u2014each initiative requiring US$100m+ projected value to proceed.",
+        "hsbc_relevancy": 10,
+        "adam_rel": 9,
+        "surali_rel": 9,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 9
+      },
+      {
+        "id": "art03",
+        "title": "Standard Chartered Plans 7,000+ Job Cuts by 2030 as AI Automates Back-Office",
+        "url": "https://www.finextra.com/newsarticle/47776/standard-chartered-to-cut-7000-jobs-as-ai-takes-over-the-back-office",
+        "source": "Finextra",
+        "published_at": "2026-05-22",
+        "summary": "Standard Chartered announced 7,000+ job cuts (15% of corporate roles) by 2030 driven by AI automation of back-office functions in Chennai, Bengaluru, Kuala Lumpur, and Warsaw, targeting an 18% return on tangible equity.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "PwC: APAC AWM to Reach US$34.5 Trillion by 2030, Singapore Leads Tokenised Wealth",
+        "url": "https://hubbis.com/news/pwc-singapore-strengthens-its-position-as-the-strategic-hub-for-cross-border-wealth-tokenisation-and-sovereign-capital-as-asia-pacific-awm-heads-for-us-34-5-trillion-by-2030",
+        "source": "Hubbis / PwC",
+        "published_at": "2026-06-17",
+        "summary": "PwC's 2026 APAC AWM report projects AuM reaching US$34.5 trillion by 2030 at a 6.8% CAGR, with tokenised fund AuM growing 41% annually to $715 billion by 2030 and Singapore positioned as the strategic cross-border wealth hub.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art05",
+        "title": "FIS and Anthropic Deploy Agentic AI Agent to Compress Banking AML Investigations Days to Minutes",
+        "url": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes",
+        "source": "FIS",
+        "published_at": "2026-05-04",
+        "summary": "FIS and Anthropic launched a Financial Crimes AI Agent automating AML alert and case investigations from days to minutes, with BMO and Amalgamated Bank as first users and broader H2 2026 rollout planned for credit decisioning, onboarding, and fraud prevention.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 8
+      }
+    ],
+    "categories": {
+      "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2",
+      "Private Banking & Wealth": "#059669",
+      "AI & Technology": "#6366f1"
+    }
+  }
+}
