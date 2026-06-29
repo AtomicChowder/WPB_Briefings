@@ -1,0 +1,321 @@
+{
+  "user_id": "surali",
+  "user_name": "Surali Siriwardene",
+  "user_display_name": "Surali",
+  "user_title": "COO & Global Head of Change Execution, WPS",
+  "briefing_date": "Sunday, 29 June 2026",
+  "date_str": "2026-06-29",
+  "generated_at": "29 Jun 2026, 23:24 UTC",
+  "total_articles": 8,
+  "breaking_news": [],
+  "talking_points": [
+    {
+      "headline": "Private Bank COOs Are Becoming Change Catalysts \u2014 WPS Must Define Its AI Governance Blueprint Now",
+      "context_html": "Asian Private Banker's annual COO audit confirms the role shift Surali is navigating: from efficiency manager to enterprise change catalyst \u2014 requiring AI governance capability that most COO functions haven't built yet. <ul><li>Asia's top private bank COOs report a fundamental shift \u2014 from efficiency enablers to change catalysts redesigning operating models and embedding AI at scale across all business lines.</li><li>Barclays Private Bank Asia appointed <strong>Werner Schlossmacher, former UBS AI Transformation Leader</strong>, as its new Asia Private Banking COO \u2014 setting a competitive benchmark for AI-capable COO leadership in the region.</li><li>44% of banking roles in Asia are expected to need significant reskilling by 2026; WPS change governance must plan workforce transition alongside technology rollout to avoid execution gaps.</li></ul>",
+      "source_links": [
+        [
+          "https://asianprivatebanker.com/opinion/coo-focus-2026-private-bank-coos-redefine-operations-change-catalysts",
+          "APB COO Focus 2026: COOs redefine private banking operations"
+        ],
+        [
+          "https://asianprivatebanker.com/analysis/asia-top-private-banks-rewiring-middle-office-ai-integration-2026",
+          "Asia's top private banks rewiring the middle office \u2014 APB"
+        ]
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "DBS's 54-Centre Wealth Infrastructure Build Sets the Operational Delivery Standard for APAC",
+      "context_html": "DBS's physical expansion \u2014 18 new + 36 upgraded centres across 6 markets by end-2027 \u2014 is the most direct benchmark for how fast HSBC WPB's change execution must operate to remain operationally competitive. <ul><li>DBS is building the largest wealth centre infrastructure in its history across Singapore, Hong Kong, China, India, Indonesia, and Taiwan \u2014 a multi-market, multi-function delivery programme running concurrently.</li><li>DBS AUM surpassed SGD 500bn target over a year early; JPMorgan simultaneously doubled APAC private banking headcount to 380 RMs reaching US$300bn AUM, overtaking DBS in AUM growth.</li><li>WPS change delivery programme must execute multi-market, multi-function transformation concurrently \u2014 not sequentially \u2014 while maintaining full operational resilience throughout.</li></ul>",
+      "source_links": [
+        [
+          "https://www.dbs.com/newsroom/DBS_expands_wealth_management_centres_Asia_2026",
+          "DBS 54-centre APAC wealth expansion \u2014 DBS Newsroom"
+        ],
+        [
+          "https://www.bloomberg.com/news/articles/2026-06-11/jpmorgan-doubles-singapore-private-banking-team",
+          "JPMorgan doubles APAC private banking headcount \u2014 Bloomberg"
+        ]
+      ],
+      "is_update": true
+    },
+    {
+      "headline": "HSBC Access UHNW Private Markets Launch Demands Dual-Track Change Governance from WPS",
+      "context_html": "HSBC Access is live in Hong Kong but requires multi-market rollout \u2014 product, compliance, RM capability, and technology delivery must move in lockstep under WPS governance. <ul><li>HSBC Private Bank launched HSBC Access in Hong Kong giving UHNW and family office clients institutional-grade private markets access (direct investments, co-investments, VC funds); designed for international expansion.</li><li>3 in 4 HK investors use AI for research but only 12% say AI drove their last investment decision \u2014 HSBC Access must be delivered with RM AI capability built-in from launch, not retrofitted.</li><li>WPS must govern two parallel tracks: HSBC Access product rollout across markets AND AI capability build (Wealth Intelligence, RM tooling) to enable those client interactions at scale.</li></ul>",
+      "source_links": [
+        [
+          "https://citywire.com/asia/news/hsbc-launches-access-platform-for-uhnw-private-markets/a2491537",
+          "HSBC Access UHNW private markets launch \u2014 Citywire"
+        ],
+        [
+          "https://about.hsbc.com.hk/en-hk/news-and-media/2026/hsbc-trust-threshold-2026",
+          "HSBC Trust Threshold 2026: 3 in 4 HK investors use AI \u2014 HSBC"
+        ]
+      ],
+      "is_update": true
+    }
+  ],
+  "articles_by_category": {
+    "HSBC News": [
+      {
+        "id": "art01",
+        "title": "HSBC Access Opens Institutional Private Markets to UHNW Clients in Hong Kong",
+        "url": "https://citywire.com/asia/news/hsbc-launches-access-platform-for-uhnw-private-markets/a2491537",
+        "source": "Citywire Asia",
+        "published_at": "2026-05-28",
+        "summary": "HSBC Private Bank launched HSBC Access in Hong Kong, connecting UHNW and family office clients to institutional-grade private markets including direct investments, co-investments, and VC funds \u2014 with plans for international expansion.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art02",
+        "title": "HSBC Trust Threshold 2026: Three in Four Hong Kong Investors Now Use AI for Research",
+        "url": "https://about.hsbc.com.hk/en-hk/news-and-media/2026/hsbc-trust-threshold-2026",
+        "source": "HSBC Hong Kong",
+        "published_at": "2026-06-24",
+        "summary": "HSBC's annual Trust Threshold survey finds 75% of Hong Kong investors use AI tools for investment research, but only 12% say AI was the primary driver of their last investment decision \u2014 highlighting the gap between AI adoption and AI-led decision-making.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 7
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art03",
+        "title": "DBS Wealth Management to Open 18 New Centres Across Asia Pacific by End-2027",
+        "url": "https://www.dbs.com/newsroom/DBS_expands_wealth_management_centres_Asia_2026",
+        "source": "DBS Newsroom",
+        "published_at": "2026-06-02",
+        "summary": "DBS announced it will open 18 new wealth management centres and upgrade 36 existing ones across six APAC markets \u2014 Singapore, Hong Kong, China, India, Indonesia, and Taiwan \u2014 by end-2027, marking the largest physical wealth infrastructure build in the bank's history. DBS also confirmed it surpassed its SGD 500bn AUM target over a year ahead of schedule.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "JPMorgan Doubles Singapore Private Banking Team to Over 50 Relationship Managers",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-11/jpmorgan-doubles-singapore-private-banking-team",
+        "source": "Bloomberg",
+        "published_at": "2026-06-11",
+        "summary": "JPMorgan's Asia ex-China private banking headcount reached 380 relationship managers \u2014 up 50 in Singapore alone \u2014 while AUM surged 41% to US$300bn, overtaking DBS in Asia AUM growth. The bank simultaneously lowered its minimum client threshold from USD25m to USD10m to capture the emerging UHNW segment.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art05",
+        "title": "Standard Chartered to Sell Bahrain Wealth and Retail Banking Operations",
+        "url": "https://www.theasianbanker.com/updates-and-articles/standard-chartered-exits-bahrain-wealth-retail-banking-2026",
+        "source": "The Asian Banker",
+        "published_at": "2026-06-23",
+        "summary": "Standard Chartered announced the sale of its Bahrain wealth and retail banking unit as part of a continued strategic pivot toward Asia-Pacific and institutional business, reducing its Middle East retail footprint while maintaining corporate and investment banking presence.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 5,
+        "surali_rel": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 6
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art07",
+        "title": "BCG: How Retail Banks Can Put Agentic AI to Work \u2014 A Practical Deployment Guide",
+        "url": "https://www.bcg.com/publications/2026/how-retail-banks-can-put-agentic-ai-to-work",
+        "source": "Boston Consulting Group",
+        "published_at": "2026-03-25",
+        "summary": "BCG's guide for retail bank AI deployment documents how AI-first banks are achieving AI handling of 70\u201380% of toil-based tasks and 30\u201350% of reasoning tasks, with voice bots covering 70% of outbound calls at one-fifth the cost. A leading European bank achieved 90%+ loan automation and 50%+ productivity gains, with BCG warning that early movers are building advantages that will be 'increasingly hard to replicate and compete against'.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 7
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art08",
+        "title": "BCG Global Wealth Report 2026: Where the Next Wave of Wealth Will Emerge",
+        "url": "https://www.bcg.com/publications/2026/global-wealth-report-2026",
+        "source": "Boston Consulting Group",
+        "published_at": "2026-05-27",
+        "summary": "BCG's Global Wealth Report 2026 identifies Asia Pacific \u2014 particularly India, Indonesia, and Vietnam \u2014 as the primary growth corridor for global wealth over the next five years, with UHNW and emerging affluent segments growing fastest. The report highlights digital-first service delivery and AI-enabled advisory as competitive differentiators among leading private banks.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "is_update": true,
+        "user_relevance": 7
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art09",
+        "title": "APB COO Focus 2026: Private Bank COOs Redefine Operations as Change Catalysts",
+        "url": "https://asianprivatebanker.com/opinion/coo-focus-2026-private-bank-coos-redefine-operations-change-catalysts",
+        "source": "Asian Private Banker",
+        "published_at": "2026-06-28",
+        "summary": "Asian Private Banker's annual COO Focus survey of Asia's leading private bank COOs reveals a fundamental role shift \u2014 from efficiency managers to enterprise change catalysts redesigning operating models and embedding AI at scale. Barclays Private Bank Asia's appointment of Werner Schlossmacher as COO is cited as a benchmark for AI-capable operations leadership.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "is_update": false,
+        "user_relevance": 9
+      }
+    ]
+  },
+  "chart_data": {
+    "articles": [
+      {
+        "id": "art01",
+        "title": "HSBC Access Opens Institutional Private Markets to UHNW Clients in Hong Kong",
+        "url": "https://citywire.com/asia/news/hsbc-launches-access-platform-for-uhnw-private-markets/a2491537",
+        "source": "Citywire Asia",
+        "published_at": "2026-05-28",
+        "summary": "HSBC Private Bank launched HSBC Access in Hong Kong, connecting UHNW and family office clients to institutional-grade private markets including direct investments, co-investments, and VC funds \u2014 with plans for international expansion.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art02",
+        "title": "HSBC Trust Threshold 2026: Three in Four Hong Kong Investors Now Use AI for Research",
+        "url": "https://about.hsbc.com.hk/en-hk/news-and-media/2026/hsbc-trust-threshold-2026",
+        "source": "HSBC Hong Kong",
+        "published_at": "2026-06-24",
+        "summary": "HSBC's annual Trust Threshold survey finds 75% of Hong Kong investors use AI tools for investment research, but only 12% say AI was the primary driver of their last investment decision \u2014 highlighting the gap between AI adoption and AI-led decision-making.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art03",
+        "title": "DBS Wealth Management to Open 18 New Centres Across Asia Pacific by End-2027",
+        "url": "https://www.dbs.com/newsroom/DBS_expands_wealth_management_centres_Asia_2026",
+        "source": "DBS Newsroom",
+        "published_at": "2026-06-02",
+        "summary": "DBS announced it will open 18 new wealth management centres and upgrade 36 existing ones across six APAC markets \u2014 Singapore, Hong Kong, China, India, Indonesia, and Taiwan \u2014 by end-2027, marking the largest physical wealth infrastructure build in the bank's history. DBS also confirmed it surpassed its SGD 500bn AUM target over a year ahead of schedule.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "JPMorgan Doubles Singapore Private Banking Team to Over 50 Relationship Managers",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-11/jpmorgan-doubles-singapore-private-banking-team",
+        "source": "Bloomberg",
+        "published_at": "2026-06-11",
+        "summary": "JPMorgan's Asia ex-China private banking headcount reached 380 relationship managers \u2014 up 50 in Singapore alone \u2014 while AUM surged 41% to US$300bn, overtaking DBS in Asia AUM growth. The bank simultaneously lowered its minimum client threshold from USD25m to USD10m to capture the emerging UHNW segment.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art05",
+        "title": "Standard Chartered to Sell Bahrain Wealth and Retail Banking Operations",
+        "url": "https://www.theasianbanker.com/updates-and-articles/standard-chartered-exits-bahrain-wealth-retail-banking-2026",
+        "source": "The Asian Banker",
+        "published_at": "2026-06-23",
+        "summary": "Standard Chartered announced the sale of its Bahrain wealth and retail banking unit as part of a continued strategic pivot toward Asia-Pacific and institutional business, reducing its Middle East retail footprint while maintaining corporate and investment banking presence.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 5,
+        "surali_rel": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 6
+      },
+      {
+        "id": "art07",
+        "title": "BCG: How Retail Banks Can Put Agentic AI to Work \u2014 A Practical Deployment Guide",
+        "url": "https://www.bcg.com/publications/2026/how-retail-banks-can-put-agentic-ai-to-work",
+        "source": "Boston Consulting Group",
+        "published_at": "2026-03-25",
+        "summary": "BCG's guide for retail bank AI deployment documents how AI-first banks are achieving AI handling of 70\u201380% of toil-based tasks and 30\u201350% of reasoning tasks, with voice bots covering 70% of outbound calls at one-fifth the cost. A leading European bank achieved 90%+ loan automation and 50%+ productivity gains, with BCG warning that early movers are building advantages that will be 'increasingly hard to replicate and compete against'.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art08",
+        "title": "BCG Global Wealth Report 2026: Where the Next Wave of Wealth Will Emerge",
+        "url": "https://www.bcg.com/publications/2026/global-wealth-report-2026",
+        "source": "Boston Consulting Group",
+        "published_at": "2026-05-27",
+        "summary": "BCG's Global Wealth Report 2026 identifies Asia Pacific \u2014 particularly India, Indonesia, and Vietnam \u2014 as the primary growth corridor for global wealth over the next five years, with UHNW and emerging affluent segments growing fastest. The report highlights digital-first service delivery and AI-enabled advisory as competitive differentiators among leading private banks.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art09",
+        "title": "APB COO Focus 2026: Private Bank COOs Redefine Operations as Change Catalysts",
+        "url": "https://asianprivatebanker.com/opinion/coo-focus-2026-private-bank-coos-redefine-operations-change-catalysts",
+        "source": "Asian Private Banker",
+        "published_at": "2026-06-28",
+        "summary": "Asian Private Banker's annual COO Focus survey of Asia's leading private bank COOs reveals a fundamental role shift \u2014 from efficiency managers to enterprise change catalysts redesigning operating models and embedding AI at scale. Barclays Private Bank Asia's appointment of Werner Schlossmacher as COO is cited as a benchmark for AI-capable operations leadership.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "is_update": false,
+        "user_relevance": 9
+      }
+    ],
+    "categories": {
+      "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2",
+      "AI & Technology": "#6366f1",
+      "Private Banking & Wealth": "#059669",
+      "Operations & Change": "#7c3aed"
+    }
+  }
+}
