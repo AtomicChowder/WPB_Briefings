@@ -258,8 +258,8 @@
           <p class="tp-context">{{ tp.context_html | safe }}</p>
           {% if tp.source_links %}
           <div class="tp-sources">
-            {% for url, title in tp.source_links %}
-            <a href="{{ url }}" target="_blank" rel="noopener" class="tp-source-link" title="{{ title }}">{{ title }}</a>
+            {% for link in tp.source_links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener" class="tp-source-link" title="{{ link.title }}">{{ link.title }}</a>
             {% endfor %}
           </div>
           {% endif %}
