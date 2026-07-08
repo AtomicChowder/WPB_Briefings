@@ -1,0 +1,325 @@
+{
+  "user_id": "sirali",
+  "user_name": "Sirali Siriwardene",
+  "user_display_name": "Sirali",
+  "user_title": "COO & Global Head of Change Execution, WPS",
+  "briefing_date": "Tuesday, 8 July 2026",
+  "date_str": "2026-07-08",
+  "generated_at": "8 Jul 2026, 23:05 UTC",
+  "total_articles": 20,
+  "talking_points": [
+    {
+      "headline": "HSBC WPB $38bn Asia NNIA: Execution Machine Must Scale to Match Record Growth",
+      "context_html": "HSBC's WPB division attracted US$38 billion of net new invested assets in Asia — a 43% year-on-year increase — making Asia responsible for the majority of HSBC's global wealth inflows and setting a new performance baseline the operating model must now service at scale. Standard Chartered is simultaneously positioning itself as one of Asia's three largest wealth managers after recording USD 52 billion in net new money in 2025, intensifying competitive pressure that demands HSBC's change execution keeps pace. For Sirali as COO and Global Head of Change Execution, the implication is direct: the commercial ambition is outrunning operational infrastructure, and change delivery capacity must scale in lockstep with revenue growth across the APAC franchise.",
+      "source_links": [
+        {"url": "https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/", "title": "HSBC WPB Attracts US$38bn NNIA in Asia"},
+        {"url": "https://www.hubbis.com/news/standard-chartered-private-bank-expands-singapore-team-amid-wealth-management-growth", "title": "StanChart Private Bank Expands Amid Record AUM"}
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "Agentic AI Is Now a Change Programme Requirement, Not a Research Agenda",
+      "context_html": "Deloitte and Accenture both project 30–100% adviser productivity gains by 2032 through agentic AI, with 25–50% of low-value operational work being automated — numbers at this scale require a formal change programme, not ad-hoc AI adoption pilots. Citigroup has already moved from analysis to deployment, launching Citi Sky — an agentic AI agent built on Google DeepMind — for Citigold clients from summer 2026, putting HSBC measurably behind on the deployment curve. For Sirali's global WPS operating model, this signals that agentic AI must now have a defined delivery roadmap with executive sponsorship and resourcing in place, not a 2027 start date.",
+      "source_links": [
+        {"url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-predictions/2026/agentic-ai-wealth-management-productivity.html", "title": "Deloitte: Agentic AI Productivity Wave (2026)"},
+        {"url": "https://bankingblog.accenture.com/agentic-ai-future-of-work", "title": "Accenture: Agentic AI and Future of Work"}
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "APAC Regulatory Tightening on Multiple Fronts: Resilience Programmes Must Absorb All",
+      "context_html": "The HKMA granted Hong Kong's first HKD stablecoin licences to HSBC and a Standard Chartered-led consortium in June 2026, while Singapore's MAS expanded its Equity Market Development Programme to S$6.5 billion, and Basel 3.1 capital requirements came into effect globally in January 2026 — each creating distinct compliance delivery demands simultaneously across HSBC's core APAC markets. These parallel regulatory shifts sit squarely in Sirali's operational resilience and governance remit, as each initiative competes for the same finite change capacity within WPS. The H2 2026 delivery calendar will need to explicitly sequence regulatory adaptation alongside the commercial transformation agenda to avoid execution bottlenecks.",
+      "source_links": [
+        {"url": "https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/", "title": "APAC 2025 Regulatory Review & 2026 Predictions"},
+        {"url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-outlook-2026.html", "title": "2026 APAC Financial Regulatory Outlook — Deloitte"}
+      ],
+      "is_update": false
+    }
+  ],
+  "articles_by_category": {
+    "HSBC News": [
+      {
+        "id": "art01",
+        "title": "HSBC WPB Attracts US$38bn Net New Invested Assets in Asia",
+        "url": "https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-06-15",
+        "summary": "HSBC's WPB division attracted US$38 billion of net new invested assets in Asia, a 43% year-on-year increase, with Asia accounting for the bulk of HSBC's US$64 billion global NNIA. StanChart is on track to hit its 2026 wealth targets, positioning itself as one of Asia's three largest wealth managers.",
+        "hsbc_relevancy": 9,
+        "user_relevance": 9,
+        "noise_level": 3,
+        "category": "HSBC News"
+      },
+      {
+        "id": "art02",
+        "title": "HSBC to Launch HKD-Denominated Stablecoin via PayMe in H2 2026",
+        "url": "https://www.theasianbanker.com/press-releases/hsbc-to-launch-hkd-denominated-stablecoin-in-second-half-of-2026",
+        "source": "Asian Banker",
+        "published_at": "2026-06-25",
+        "summary": "HSBC plans to launch an HKD stablecoin in H2 2026, integrated into PayMe (3.3M users) and the HSBC HK Mobile App for P2P payments and tokenised investment subscriptions. Each coin will be fully backed by high-quality liquid assets held in segregated accounts under HKMA licence.",
+        "hsbc_relevancy": 9,
+        "user_relevance": 9,
+        "noise_level": 4,
+        "category": "HSBC News"
+      },
+      {
+        "id": "art20",
+        "title": "HSBC Q3 2026 Wealth Perspectives: AI, Energy and Defence as the New Trifecta",
+        "url": "https://www.us.hsbc.com/investments/insights/",
+        "source": "HSBC",
+        "published_at": "2026-07-01",
+        "summary": "HSBC's Q3 2026 investment perspectives brand AI, energy, and defence as 'The New Investment Trifecta', alongside a stronger USD outlook driven by a new Federal Reserve chair. The report signals the HSBC CIO's view that AI infrastructure investment is the defining macro theme for H2 2026.",
+        "hsbc_relevancy": 8,
+        "user_relevance": 6,
+        "noise_level": 2,
+        "category": "HSBC News"
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art04",
+        "title": "Citi Wealth Unveils 'Citi Sky' — Agentic AI Built on Google DeepMind",
+        "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies",
+        "source": "Citigroup",
+        "published_at": "2026-04-15",
+        "summary": "Citigroup launched Citi Sky, an agentic AI digital team member built using Google Cloud and Google DeepMind, to be rolled out to Citigold clients from summer 2026. The system autonomously executes multi-step advisory and administrative workflows alongside human advisors, not merely answering questions.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 8,
+        "noise_level": 4,
+        "category": "Competitor Intelligence"
+      },
+      {
+        "id": "art06",
+        "title": "Standard Chartered Private Bank Expands Singapore Team Amid Record AUM",
+        "url": "https://www.hubbis.com/news/standard-chartered-private-bank-expands-singapore-team-amid-wealth-management-growth",
+        "source": "Hubbis",
+        "published_at": "2026-07-01",
+        "summary": "Standard Chartered Private Bank is expanding its Singapore team as Wealth Solutions — its rebranded division — reported 24% operating income growth to USD 3.1 billion for 2025, backed by USD 52 billion in net new money inflows. StanChart is now targeting a place among Asia's three largest wealth managers.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "Competitor Intelligence"
+      },
+      {
+        "id": "art07",
+        "title": "UBS Asia Wealth Hits $795bn Record; JP Morgan Grows 39% in 2025",
+        "url": "https://theinvestingking.com/top-wealth-management-firms-2026-ubs-goldman-sachs-jp-morgan-private-bank-compared/",
+        "source": "The Investing King",
+        "published_at": "2026-06-01",
+        "summary": "UBS Global Wealth Management in Asia added a record $130 billion in invested assets to reach $795 billion, including $62.5 billion in net new assets. JP Morgan Private Bank led the industry in growth rate at 39.1% in 2025, as global wealth competitors accelerate Asia expansion.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 8,
+        "noise_level": 3,
+        "category": "Competitor Intelligence"
+      },
+      {
+        "id": "art05",
+        "title": "DBS and Samsung Securities Sign Preliminary Asia Wealth Partnership",
+        "url": "https://www.thestar.com.my/business/business-news/2026/07/02/singapore039s-dbs-samsung-securities-plan-asia-wealth-management-tie-up",
+        "source": "The Star",
+        "published_at": "2026-07-02",
+        "summary": "DBS and Samsung Securities agreed a preliminary partnership to create a wealth offering giving clients wider access to South Korean and global market investments. The deal signals DBS's strategy to use cross-border product partnerships as a key differentiator in the Asian private banking market.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 7,
+        "noise_level": 2,
+        "category": "Competitor Intelligence"
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art08",
+        "title": "AI in Private Wealth: From Experimentation to Agentic Transformation",
+        "url": "https://www.hubbis.com/article/ai-in-private-wealth-management-from-experimentation-to-agentic-transformation",
+        "source": "Hubbis",
+        "published_at": "2026-06-10",
+        "summary": "In 2026, AI in private wealth is shifting from generative text tools to agentic systems capable of autonomously executing complex workflows. Firms must evolve relationship managers into AI 'orchestrators'. Only 35% of advisors actively use AI today, pointing to a significant adoption gap that creates competitive risk.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 3,
+        "category": "AI & Technology"
+      },
+      {
+        "id": "art09",
+        "title": "Merrill and BofA Private Bank Fully Deploy AI-Powered Meeting Journey",
+        "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html",
+        "source": "Bank of America",
+        "published_at": "2026-03-15",
+        "summary": "Bank of America's wealth businesses completed full-scale rollout of AI-Powered Meeting Journey, an integrated system that helps advisors prepare for, conduct, and follow up on client meetings. It benchmarks enterprise-scale AI deployment in wealth advisory and the productivity gains it unlocks.",
+        "hsbc_relevancy": 5,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "AI & Technology"
+      },
+      {
+        "id": "art19",
+        "title": "AI in Wealth Management: Closing the Implementation Gap",
+        "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
+        "source": "Fintech Global",
+        "published_at": "2026-04-17",
+        "summary": "Only 35% of financial advisors actively use AI tools, with just 10.5% doing so daily, despite widespread platform investment. Large banks like UBS and Standard Chartered have dedicated AI teams leading adoption; most mid-tier firms still struggle to connect AI securely to internal data and workflows.",
+        "hsbc_relevancy": 5,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "AI & Technology"
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art10",
+        "title": "Deloitte: Agentic AI Productivity Wave Is Heading for Wealth Management",
+        "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-predictions/2026/agentic-ai-wealth-management-productivity.html",
+        "source": "Deloitte",
+        "published_at": "2026-05-01",
+        "summary": "Deloitte's 2026 financial services predictions project adviser productivity gains of 30–100% by 2032 through agentic AI, with 25–50% of adviser time freed from lower-value operational work. Reducing onboarding costs by 30–40% and accelerating onboarding by 50% are headline efficiency targets firms should plan for now.",
+        "hsbc_relevancy": 5,
+        "user_relevance": 9,
+        "noise_level": 4,
+        "category": "Operations & Change"
+      },
+      {
+        "id": "art11",
+        "title": "Accenture: Agentic AI and the Future of Work in Financial Services",
+        "url": "https://bankingblog.accenture.com/agentic-ai-future-of-work",
+        "source": "Accenture",
+        "published_at": "2026-06-01",
+        "summary": "Accenture finds agentic AI will fundamentally reshape workforce models in financial services, with AI agents multiplying adviser reach by automating prospecting, portfolio prep, and client follow-up. The firm positions agentic AI as a competitive prerequisite — not an optional efficiency lever — for 2026 and beyond.",
+        "hsbc_relevancy": 5,
+        "user_relevance": 9,
+        "noise_level": 3,
+        "category": "Operations & Change"
+      },
+      {
+        "id": "art12",
+        "title": "Banking Process Transformation Roadmap 2026: Proving Change at Scale",
+        "url": "https://www.dunnixer.com/insights/information/banking/us/banking-process-transformation-roadmap-for-2026",
+        "source": "Dunnixer",
+        "published_at": "2026-05-15",
+        "summary": "Banking transformation in 2026 is less about launching new features and more about proving operating model change can be delivered safely at scale. Legacy infrastructure and regulatory constraints remain the two biggest drags, with successful agile transformations typically requiring 18–24 months for full maturation.",
+        "hsbc_relevancy": 4,
+        "user_relevance": 8,
+        "noise_level": 2,
+        "category": "Operations & Change"
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art13",
+        "title": "Hong Kong Leads Singapore in Wealth Tech Adoption at 93% Digital Rate",
+        "url": "https://www.finews.asia/finance/43430-quinlan-associates-allfunds-wealthtech-fintech-robo-advisory-ai-wealth-management-hong-kong-singapore",
+        "source": "finews.asia",
+        "published_at": "2026-05-20",
+        "summary": "93% of Hong Kong investors with $100K+ in assets access wealth management digitally, outpacing Singapore's 85%. HK's robo-advisor adoption rate of 74% nearly doubles Singapore's 27% AI comfort level. Hong Kong private wealth AUM is projected to nearly double to $2.6 trillion by 2031.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth"
+      },
+      {
+        "id": "art16",
+        "title": "Bloomberg: Hong Kong Wealth Management 2026 Outlook",
+        "url": "https://www.bloomberg.com/professional/insights/financial-services/hong-kong-wealth-management-2026-outlook/",
+        "source": "Bloomberg",
+        "published_at": "2026-01-15",
+        "summary": "Bloomberg's 2026 HK wealth outlook projects robust growth driven by capital inflows and improving returns. Key themes include institutionalisation of digital assets, AI-driven client personalisation, and Hong Kong's positioning as the cross-border wealth hub for Greater China.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth"
+      },
+      {
+        "id": "art14",
+        "title": "Singapore WealthTech Firms Choose Hong Kong as First Overseas Market",
+        "url": "https://www.scmp.com/business/banking-finance/article/3352176/why-singapore-wealth-tech-firms-are-choosing-hong-kong-their-first-overseas-market",
+        "source": "South China Morning Post",
+        "published_at": "2026-07-01",
+        "summary": "Singapore wealth-tech firms are choosing Hong Kong as their primary overseas expansion destination, attracted by the city's deep wealth base and 93% digital financial services adoption rate. Chocolate Finance is the latest to enter, targeting retail investors' idle cash management needs.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 7,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth"
+      },
+      {
+        "id": "art15",
+        "title": "APAC Wealth Management Market to Reach $41.82 Trillion by 2031",
+        "url": "https://www.mordorintelligence.com/industry-reports/asia-pacific-wealth-management-market",
+        "source": "Mordor Intelligence",
+        "published_at": "2026-04-01",
+        "summary": "The Asia-Pacific wealth management market is estimated at USD 29.55 trillion in 2026, forecast to reach USD 41.82 trillion by 2031 at a 7.18% CAGR. Growth is driven by an expanding affluent class, rising digital adoption, and supportive regulation across Hong Kong, Singapore, and mainland China.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 7,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth"
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "art03",
+        "title": "Hong Kong Awards First Stablecoin Licences to HSBC and StanChart Consortium",
+        "url": "https://www.scmp.com/business/cryptocurrency/article/3349644/hong-kong-awards-stablecoin-licences-hsbc-stanchart-led-group-long-awaited-roll-out",
+        "source": "South China Morning Post",
+        "published_at": "2026-06-24",
+        "summary": "The HKMA granted Hong Kong's first HKD stablecoin issuer licences to HSBC and a Standard Chartered-led consortium under the Stablecoins Ordinance, effective August 2025. The licences mark a landmark regulatory moment for digital finance in Hong Kong and directly shape HSBC's H2 2026 product delivery obligations.",
+        "hsbc_relevancy": 9,
+        "user_relevance": 8,
+        "noise_level": 4,
+        "category": "Regulatory & Markets"
+      },
+      {
+        "id": "art18",
+        "title": "Asia-Pacific 2025 Regulatory Review and 2026 Predictions",
+        "url": "https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/",
+        "source": "IQ-EQ",
+        "published_at": "2026-01-20",
+        "summary": "APAC regulators in 2026 are prioritising fintech innovation alongside stricter compliance. Hong Kong SFC heightens IPO scrutiny with 300+ listings expected; the HKMA is developing green transition planning guidance; Singapore's MAS expanded its Equity Market Development Programme to S$6.5 billion.",
+        "hsbc_relevancy": 7,
+        "user_relevance": 8,
+        "noise_level": 3,
+        "category": "Regulatory & Markets"
+      },
+      {
+        "id": "art17",
+        "title": "2026 Asia Pacific Financial Services Regulatory Outlook — Deloitte",
+        "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-outlook-2026.html",
+        "source": "Deloitte",
+        "published_at": "2026-01-10",
+        "summary": "Deloitte's 2026 APAC regulatory outlook identifies AI governance requirements, Basel 3.1 capital standards (effective January 2026), and climate risk disclosure as the three dominant compliance themes. Institutions must integrate regulatory adaptation as a standing workstream alongside commercial transformation.",
+        "hsbc_relevancy": 6,
+        "user_relevance": 8,
+        "noise_level": 3,
+        "category": "Regulatory & Markets"
+      }
+    ]
+  },
+  "chart_data": {
+    "articles": [
+      {"id": "art01", "title": "HSBC WPB Attracts US$38bn Net New Invested Assets in Asia", "url": "https://asianprivatebanker.com/private-wealth/private-banking/hsbc-wpb-attracts-us38bn-nnia-in-asia-stanchart-on-track-to-hit-2026-targets/", "source": "Asian Private Banker", "hsbc_relevancy": 9, "user_relevance": 9, "noise_level": 3, "category": "HSBC News", "summary": "HSBC WPB attracted US$38bn NNIA in Asia — 43% YoY growth. Asia accounts for bulk of HSBC's global wealth inflows."},
+      {"id": "art02", "title": "HSBC to Launch HKD Stablecoin via PayMe in H2 2026", "url": "https://www.theasianbanker.com/press-releases/hsbc-to-launch-hkd-denominated-stablecoin-in-second-half-of-2026", "source": "Asian Banker", "hsbc_relevancy": 9, "user_relevance": 9, "noise_level": 4, "category": "HSBC News", "summary": "HSBC plans HKD stablecoin H2 2026 integrated into PayMe and HSBC HK App for P2P payments and tokenised investments."},
+      {"id": "art20", "title": "HSBC Q3 2026 Wealth Perspectives: AI, Energy and Defence Trifecta", "url": "https://www.us.hsbc.com/investments/insights/", "source": "HSBC", "hsbc_relevancy": 8, "user_relevance": 6, "noise_level": 2, "category": "HSBC News", "summary": "HSBC Q3 2026 CIO perspectives: AI, energy and defence branded the new investment trifecta."},
+      {"id": "art04", "title": "Citi Wealth Unveils 'Citi Sky' — Agentic AI Built on Google DeepMind", "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies", "source": "Citigroup", "hsbc_relevancy": 7, "user_relevance": 8, "noise_level": 4, "category": "Competitor Intelligence", "summary": "Citi launched agentic AI digital team member Citi Sky (Google DeepMind) rolling out to Citigold clients from summer 2026."},
+      {"id": "art06", "title": "Standard Chartered Private Bank Expands Singapore Team Amid Record AUM", "url": "https://www.hubbis.com/news/standard-chartered-private-bank-expands-singapore-team-amid-wealth-management-growth", "source": "Hubbis", "hsbc_relevancy": 7, "user_relevance": 8, "noise_level": 2, "category": "Competitor Intelligence", "summary": "StanChart Wealth Solutions: 24% operating income growth to USD 3.1bn in 2025; USD 52bn net new money; expanding Singapore team."},
+      {"id": "art07", "title": "UBS Asia Wealth Hits $795bn Record; JP Morgan Grows 39% in 2025", "url": "https://theinvestingking.com/top-wealth-management-firms-2026-ubs-goldman-sachs-jp-morgan-private-bank-compared/", "source": "The Investing King", "hsbc_relevancy": 7, "user_relevance": 8, "noise_level": 3, "category": "Competitor Intelligence", "summary": "UBS reached $795bn in Asia invested assets; JP Morgan led industry growth at 39.1% in 2025."},
+      {"id": "art05", "title": "DBS and Samsung Securities Sign Preliminary Asia Wealth Partnership", "url": "https://www.thestar.com.my/business/business-news/2026/07/02/singapore039s-dbs-samsung-securities-plan-asia-wealth-management-tie-up", "source": "The Star", "hsbc_relevancy": 7, "user_relevance": 7, "noise_level": 2, "category": "Competitor Intelligence", "summary": "DBS and Samsung Securities signed preliminary deal for cross-border wealth access to South Korean and global markets."},
+      {"id": "art08", "title": "AI in Private Wealth: From Experimentation to Agentic Transformation", "url": "https://www.hubbis.com/article/ai-in-private-wealth-management-from-experimentation-to-agentic-transformation", "source": "Hubbis", "hsbc_relevancy": 6, "user_relevance": 8, "noise_level": 3, "category": "AI & Technology", "summary": "2026 marks shift from generative text to agentic AI in private wealth. 35% of advisors use AI; firms must evolve RMs into orchestrators."},
+      {"id": "art09", "title": "Merrill and BofA Private Bank Fully Deploy AI-Powered Meeting Journey", "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html", "source": "Bank of America", "hsbc_relevancy": 5, "user_relevance": 7, "noise_level": 3, "category": "AI & Technology", "summary": "BofA wealth businesses deployed AI-Powered Meeting Journey at enterprise scale across advisor workflow lifecycle."},
+      {"id": "art19", "title": "AI in Wealth Management: Closing the Implementation Gap", "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/", "source": "Fintech Global", "hsbc_relevancy": 5, "user_relevance": 7, "noise_level": 3, "category": "AI & Technology", "summary": "Only 35% of financial advisors use AI tools actively; 10.5% daily. Large banks lead; mid-tier firms lag on secure data connectivity."},
+      {"id": "art10", "title": "Deloitte: Agentic AI Productivity Wave Heading for Wealth Management", "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-predictions/2026/agentic-ai-wealth-management-productivity.html", "source": "Deloitte", "hsbc_relevancy": 5, "user_relevance": 9, "noise_level": 4, "category": "Operations & Change", "summary": "Deloitte projects 30-100% adviser productivity gains by 2032; 25-50% of time freed; onboarding costs down 30-40%."},
+      {"id": "art11", "title": "Accenture: Agentic AI and the Future of Work in Financial Services", "url": "https://bankingblog.accenture.com/agentic-ai-future-of-work", "source": "Accenture", "hsbc_relevancy": 5, "user_relevance": 9, "noise_level": 3, "category": "Operations & Change", "summary": "Accenture: agentic AI is a competitive prerequisite in financial services — multiplying adviser reach by automating manual workflows."},
+      {"id": "art12", "title": "Banking Process Transformation Roadmap 2026: Proving Change at Scale", "url": "https://www.dunnixer.com/insights/information/banking/us/banking-process-transformation-roadmap-for-2026", "source": "Dunnixer", "hsbc_relevancy": 4, "user_relevance": 8, "noise_level": 2, "category": "Operations & Change", "summary": "2026 banking transformation: proving operating model change can be delivered safely at scale. Legacy and regulation are top drags."},
+      {"id": "art13", "title": "Hong Kong Leads Singapore in Wealth Tech Adoption — 93% Digital Rate", "url": "https://www.finews.asia/finance/43430-quinlan-associates-allfunds-wealthtech-fintech-robo-advisory-ai-wealth-management-hong-kong-singapore", "source": "finews.asia", "hsbc_relevancy": 7, "user_relevance": 7, "noise_level": 3, "category": "Private Banking & Wealth", "summary": "HK 93% digital wealth adoption vs SG 85%; robo-advisor 74% vs 27%. HK private wealth AUM projected to nearly double to $2.6T by 2031."},
+      {"id": "art16", "title": "Bloomberg: Hong Kong Wealth Management 2026 Outlook", "url": "https://www.bloomberg.com/professional/insights/financial-services/hong-kong-wealth-management-2026-outlook/", "source": "Bloomberg", "hsbc_relevancy": 7, "user_relevance": 7, "noise_level": 3, "category": "Private Banking & Wealth", "summary": "Bloomberg 2026 HK wealth outlook: capital inflows, digital asset institutionalisation, AI personalisation as key themes."},
+      {"id": "art14", "title": "Singapore WealthTech Firms Choose Hong Kong as First Overseas Market", "url": "https://www.scmp.com/business/banking-finance/article/3352176/why-singapore-wealth-tech-firms-are-choosing-hong-kong-their-first-overseas-market", "source": "South China Morning Post", "hsbc_relevancy": 6, "user_relevance": 7, "noise_level": 2, "category": "Private Banking & Wealth", "summary": "SG wealth-tech firms choose HK as primary overseas market: 93% digital adoption rate and deep idle savings base."},
+      {"id": "art15", "title": "APAC Wealth Management Market to Reach $41.82 Trillion by 2031", "url": "https://www.mordorintelligence.com/industry-reports/asia-pacific-wealth-management-market", "source": "Mordor Intelligence", "hsbc_relevancy": 6, "user_relevance": 7, "noise_level": 3, "category": "Private Banking & Wealth", "summary": "APAC wealth: $29.55T in 2026 to $41.82T by 2031 at 7.18% CAGR. Digital adoption and affluent class expansion drive growth."},
+      {"id": "art03", "title": "Hong Kong Awards First Stablecoin Licences to HSBC and StanChart Group", "url": "https://www.scmp.com/business/cryptocurrency/article/3349644/hong-kong-awards-stablecoin-licences-hsbc-stanchart-led-group-long-awaited-roll-out", "source": "South China Morning Post", "hsbc_relevancy": 9, "user_relevance": 8, "noise_level": 4, "category": "Regulatory & Markets", "summary": "HKMA granted HK's first HKD stablecoin issuer licences to HSBC and StanChart consortium under Stablecoins Ordinance."},
+      {"id": "art18", "title": "Asia-Pacific 2025 Regulatory Review and 2026 Predictions", "url": "https://iqeq.com/cn/insights/asia-pacific-2025-regulatory-review-and-predictions-for-2026/", "source": "IQ-EQ", "hsbc_relevancy": 7, "user_relevance": 8, "noise_level": 3, "category": "Regulatory & Markets", "summary": "APAC 2026: HK SFC heightens IPO scrutiny; HKMA green guidance; MAS expands EQDP to S$6.5bn."},
+      {"id": "art17", "title": "2026 APAC Financial Services Regulatory Outlook — Deloitte", "url": "https://www.deloitte.com/cn/en/Industries/financial-services/perspectives/asia-pacific-financial-regulatory-outlook-2026.html", "source": "Deloitte", "hsbc_relevancy": 6, "user_relevance": 8, "noise_level": 3, "category": "Regulatory & Markets", "summary": "Deloitte 2026 APAC regulatory: AI governance, Basel 3.1 capital standards, and climate disclosure are the three dominant themes."}
+    ],
+    "categories": {
+      "AI & Technology": "#6366f1",
+      "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2",
+      "Private Banking & Wealth": "#059669",
+      "Regulatory & Markets": "#d97706",
+      "Operations & Change": "#7c3aed"
+    }
+  }
+}
