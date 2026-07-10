@@ -3,292 +3,166 @@
   "user_name": "Surali Siriwardene",
   "user_display_name": "Surali",
   "user_title": "COO & Global Head of Change Execution, WPS",
-  "briefing_date": "Wednesday, 9 July 2026",
-  "date_str": "2026-07-09",
-  "generated_at": "9 Jul 2026, 23:14 UTC",
-  "total_articles": 14,
+  "briefing_date": "Thursday, 10 July 2026",
+  "date_str": "2026-07-10",
+  "generated_at": "10 Jul 2026, 23:11 UTC",
+  "total_articles": 6,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HKMA, PBoC and SFC Triple HK's RMB Facility to RMB500bn and Announce FIC Platform — Effective 10 July",
-      "why_it_matters": "The joint July 7 regulatory package creates immediate operational obligations for WPS: the RMB facility expansion is live in one day, and the FIC platform launch signals forward planning requirements for operational integration.",
+      "headline": "WEF AI Playbook Sets Industry Governance Benchmark \u2014 WPS Change Programme Needs a Maturity Assessment",
+      "why_it_matters": "As COO governing the global change execution programme, Surali needs to ensure WPS's AI governance posture meets or exceeds the framework now being used as the benchmark by regulators and client due-diligence processes \u2014 gaps will become visible as this standard embeds.",
       "bullets": [
-        "HKMA's RMB Business Facility was tripled from RMB200bn to RMB500bn with new tenors (9-month, 2-year, 3-year) added, effective 10 July 2026 — a direct operational trigger for HSBC's Hong Kong treasury and FX teams requiring immediate readiness validation",
-        "HKMA, PBoC and SFC jointly announced a new HK FIC Trading Platform aligned to international standards; the launch timeline is forthcoming, giving WPS a narrow window to incorporate it into change planning before design is locked",
-        "The package reinforces Hong Kong as the world's dominant offshore RMB and cross-border wealth hub — directly aligned with HSBC's APAC strategy — but the pace of regulatory action requires WPS operational resilience planning to keep up"
+        "The World Economic Forum and Accenture published The AI Playbook for Financial Services (24 June), grounded in 18 months of roundtables with 150+ senior leaders from 100+ organisations \u2014 this is now the de facto industry reference document for AI governance in financial services",
+        "The report identifies governance accountability as the primary differentiator between AI leaders and laggards, mapping a six-dimension maturity framework covering strategy, data, talent, risk, operations, and ethics \u2014 regulators in HK, Singapore and the UK have all cited WEF frameworks in recent supervisory guidance",
+        "For WPS, the playbook provides a ready-made checklist against which the global change execution programme's AI governance posture should be assessed in Q3, before external mandates formalise these expectations into compliance requirements"
       ],
       "source_links": [
         {
-          "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260707-3/",
-          "title": "HKMA: RMB Facility Expansion to RMB500bn July 2026"
+          "url": "https://www.weforum.org/publications/the-ai-playbook-for-financial-services/",
+          "title": "WEF: AI Playbook for Financial Services"
         },
         {
-          "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260707-8/",
-          "title": "HKMA: FIC Trading Platform Joint Announcement"
+          "url": "https://www.weforum.org/press/2026/06/financial-institutions-race-to-scale-ai-as-trust-and-governance-become-critical-tests/",
+          "title": "WEF Press: Financial Institutions Race to Scale AI"
         }
       ],
       "is_update": true
     },
     {
-      "headline": "UBS Asia Wealth Profit Up 40% and StanChart Deploys Production AI — The Competitor Execution Gap Is Compounding",
-      "why_it_matters": "With UBS reporting $600m Asia Pacific wealth profit and Standard Chartered deploying production AI for its RM workforce, the competitive pressure on WPS's change execution programme has measurably intensified this quarter.",
+      "headline": "Swift's 24/7 Blockchain Settlement Is Live \u2014 HSBC's Operating Model Must Match Its Infrastructure Lead",
+      "why_it_matters": "HSBC's founding participation in Swift's tokenised payment network is a strategic win, but it creates an immediate operational resilience obligation: risk, compliance, and client servicing functions must be capable of supporting round-the-clock settlement flows before the pilot scales.",
       "bullets": [
-        "UBS Global Wealth Management Asia Pacific reported Q1 2026 profit before tax of USD 600m (up 40% YoY), revenues up 19% to USD 1.23bn, and USD 18.6bn net new assets — the scale of competitor momentum is compounding every quarter",
-        "Standard Chartered has deployed a production AI platform enabling relationship managers and proposal teams to automate client solution selection for transaction banking — directly comparable to HSBC WPS's own AI deployment ambitions",
-        "HSBC's 32% Asia wealth revenue growth in 2024 is strong in absolute terms, but the pace of competitor AI deployment means the window to establish a durable lead is narrowing; WPS change delivery throughput is the critical differentiator"
+        "Swift's permissioned blockchain ledger went live 9 July with HSBC as a founding participant among 17 banks; the network enables tokenised deposits to move outside normal banking hours \u2014 including nights, weekends and public holidays",
+        "This shifts the operating model assumption from 9-to-5 settlement windows to 24/7 availability: operations, risk controls, liquidity management, and client servicing capacity all need to be scoped for continuous operations before the pilot enters production scale",
+        "The COO function should lead the cross-functional design for this operating model change \u2014 it requires coordination across operations, technology, risk and compliance, making it a natural home in the change execution programme's Q3 agenda"
       ],
       "source_links": [
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/0001610520/000161052026000044/edgar1q26ubsgroup.htm",
-          "title": "UBS Q1 2026 Earnings: Asia Pacific Wealth Results"
+          "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure",
+          "title": "Swift: Blockchain Ledger Ready for Use"
         },
         {
-          "url": "https://www.hubbis.com/news/standard-chartered-introduces-ai-platform-for-transaction-banking",
-          "title": "Hubbis: StanChart Deploys AI for Transaction Banking"
-        }
-      ],
-      "is_update": true
-    },
-    {
-      "headline": "Agentic AI Governance Frameworks Are Set — WPS Must Define Its Posture Before External Mandates Arrive",
-      "why_it_matters": "With 81% of peer institutions running agentic AI at enterprise level and governance frameworks now enabling deployment, Surali's COO function must establish WPS's agentic AI standards before regulators or competitor practices define them externally.",
-      "bullets": [
-        "Governance frameworks for agentic AI have matured in 2026 with regulators drawing deliberate lines and real-time compliance monitoring becoming a deployed capability at leading banks — the waiting period for institutions is over",
-        "Accenture projects 60-70% reduction in operational overhead by 2027 for banks that successfully deploy agentic AI, directly informing the business case for WPS's current change execution investments and cost efficiency targets",
-        "The appointment of <strong>Nicholas Elias, Head of Wealth Platforms, Wealth and Premier Solutions, HSBC</strong>, effective August 15, creates an immediate alignment opportunity: WPS COO governance standards for agentic AI deployment should be agreed before his programme accelerates"
-      ],
-      "source_links": [
-        {
-          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/governance-gives-ai-agents-permission-to-grow-up/",
-          "title": "PYMNTS: Governance Enables Agentic AI at Scale"
-        },
-        {
-          "url": "https://bankingblog.accenture.com/agentic-ai-future-of-work",
-          "title": "Accenture: Agentic AI and the Future of Work in Finance"
+          "url": "https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents",
+          "title": "CoinDesk: Swift Rolls Out 24/7 Blockchain"
         }
       ],
       "is_update": false
+    },
+    {
+      "headline": "Wealth Intelligence Live and Asia CIO Seated \u2014 Change Execution Velocity Is Now the Measurable Variable",
+      "why_it_matters": "With Wealth Intelligence deployed and the Asia CIO in seat, the programme has moved from change approval to change delivery \u2014 the COO's priority should now be establishing the governance cadence and velocity metrics that will define whether the transformation is on track.",
+      "bullets": [
+        "HSBC's Wealth Intelligence generative AI platform is now live across the private bank; incoming head of wealth platforms <strong>Nicholas Elias, Head of Wealth Platforms, Wealth & Premier Solutions</strong> will scale the platform from deployment to enterprise adoption under his AI expansion mandate",
+        "The new Asia CIO for Private Bank and Premier Wealth seated on 6 July, under <strong>Willem Sels, Global CIO, HSBC Private Bank and Premier Wealth</strong>, completes the decision-making architecture needed to govern AI-driven advisory quality at a regional level",
+        "The governance cadence required now: monthly adoption dashboards (RM usage, client touchpoints), a defined Q3 baseline for benchmarking, and a change control process for AI model updates \u2014 these are the operational controls that determine whether the investment in Wealth Intelligence converts to measurable business outcomes"
+      ],
+      "source_links": [
+        {
+          "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/",
+          "title": "HSBC Private Bank: Wealth Intelligence Deployed"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html",
+          "title": "Yahoo Finance: HSBC Private Bank Names Asia CIO"
+        }
+      ],
+      "is_update": true
     }
   ],
   "articles_by_category": {
     "AI & Technology": [
       {
+        "id": "art04",
+        "title": "WEF AI Playbook for Financial Services: Industry Benchmark for AI Governance Released",
+        "url": "https://www.weforum.org/publications/the-ai-playbook-for-financial-services/",
+        "source": "World Economic Forum / Accenture",
+        "published_at": "2026-06-24",
+        "summary": "The World Economic Forum, with Accenture, published The AI Playbook for Financial Services at the Annual Meeting of New Champions, drawing on 18 months of roundtables with 150+ senior leaders from 100+ organisations. It identifies governance accountability as the primary differentiator between AI leaders and laggards, and maps a six-dimension maturity framework for enterprise AI deployment.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 9
+      },
+      {
         "id": "art01",
-        "title": "Banks Are Running Three AIs, Not One — Enterprise AI Adoption Benchmark",
-        "url": "https://fintech.global/2026/07/01/ncino-banks-are-running-three-ais-not-one/",
-        "source": "Fintech Global",
-        "published_at": "2026-07-01",
-        "summary": "nCino's 2026 AI in Banking Benchmark across 50+ institutions finds 91% now run generative AI, 87% predictive AI, and 81% agentic AI at the enterprise level. The pilot era is definitively over; banks are managing simultaneous deployment of three distinct AI capability stacks. Competitive differentiation has shifted from AI adoption to integration quality and delivery speed.",
-        "hsbc_relevancy": 6,
+        "title": "Swift Blockchain Ledger Goes Live: HSBC, DBS, StanChart Among 17-Bank Tokenised Payment Pilot",
+        "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure",
+        "source": "Swift",
+        "published_at": "2026-07-09",
+        "summary": "Swift launched its permissioned blockchain ledger on 9 July, enabling 17 banks \u2014 including HSBC, Citi, DBS, Standard Chartered, UBS, OCBC and UOB \u2014 to pilot 24/7 tokenised cross-border payments outside normal banking hours, built on Ethereum's Linea L2 network developed by ConsenSys.",
+        "hsbc_relevancy": 8,
         "adam_rel": 8,
         "surali_rel": 7,
-        "noise_level": 3,
+        "noise_level": 4,
         "category": "AI & Technology",
-        "is_update": true,
+        "is_update": false,
         "user_relevance": 7
-      },
-      {
-        "id": "art03",
-        "title": "Governance Gives AI Agents Permission to Grow Up in Financial Services",
-        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/governance-gives-ai-agents-permission-to-grow-up/",
-        "source": "PYMNTS",
-        "published_at": "2026-07-01",
-        "summary": "Regulatory and internal governance frameworks have caught up sufficiently with agentic AI capabilities to enable broader enterprise deployment in financial services. Major core system providers have shipped agent platforms, and regulators have drawn deliberate lines around the technology in 2026. Real-time compliance monitoring has shifted from planning to deployed capability at leading institutions.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "surali_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art02",
-        "title": "JurisTech 2026 LLM Benchmark: Hallucination Risk Quantified for Banking AI Deployments",
-        "url": "https://juristech.net/juristechs-2026-llm-benchmark-for-ai-hallucination-in-finance/",
-        "source": "JurisTech",
-        "published_at": "2026-06-01",
-        "summary": "JurisTech's 2026 LLM benchmark quantifies AI hallucination rates across leading models in financial contexts, establishing a reference framework for banks deploying generative AI in client-facing and advisory workflows. The study identifies significant variance between models in accuracy, regulatory compliance, and risk of generating incorrect investment guidance. The findings have direct implications for any institution deploying LLMs in wealth advisory, where hallucination carries fiduciary and regulatory consequences.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 6
       }
     ],
     "HSBC News": [
       {
-        "id": "art04",
-        "title": "HSBC Appoints Nicholas Elias Head of Wealth Platforms with AI Expansion Mandate",
-        "url": "https://eastandpartners.com/news/hsbc-appoints-new-wealth-lead-with-ai-expansion-mandate/",
-        "source": "East & Partners",
-        "published_at": "2026-07-08",
-        "summary": "HSBC has appointed Nicholas Elias as Head of Wealth Platforms, Wealth and Premier Solutions, effective 15 August 2026, with a mandate to embed AI across the bank's wealth business. Elias will lead HSBC's Wealth Transformation Programme and scale Wealth Intelligence — the bank's generative AI platform for personalised market insights and investment strategies. He joins from an internal role as global head of CRM within the Corporate and Institutional Banking COO function, having been with HSBC since 2012.",
+        "id": "art03",
+        "title": "HSBC Deploys Wealth Intelligence AI Platform Across Private Bank",
+        "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/",
+        "source": "HSBC Private Bank",
+        "published_at": "2026-07-09",
+        "summary": "HSBC's Wealth Intelligence generative AI platform is now fully deployed across the private bank, providing relationship managers with personalised market insights and investment strategy recommendations \u2014 the operational output of the AI transformation programme led by incoming wealth platforms head Nicholas Elias.",
         "hsbc_relevancy": 9,
         "adam_rel": 9,
         "surali_rel": 8,
         "noise_level": 2,
         "category": "HSBC News",
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 8
       },
       {
-        "id": "art05",
-        "title": "HSBC Holdings Wealth Push Meets Fairly Valued Stock as Asia Execution Comes Into Focus",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-wealth-081427543.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-07-08",
-        "summary": "Market analysis of HSBC Holdings finds the bank's wealth management expansion in Asia is now substantially priced into its equity valuation. HSBC's 32% year-on-year Asia wealth revenue growth in 2024 is noted, but investors are increasingly focused on execution risk as the key variable for a sustained premium. AI deployment speed and WPB product rollouts are highlighted as primary indicators the market is watching.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 6,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "Competitor Intelligence": [
-      {
-        "id": "art07",
-        "title": "UBS Asia Pacific Wealth Profit Up 40% in Q1 2026 to $600m with $18.6bn Net New Assets",
-        "url": "https://www.sec.gov/Archives/edgar/data/0001610520/000161052026000044/edgar1q26ubsgroup.htm",
-        "source": "UBS (SEC Filing)",
-        "published_at": "2026-05-07",
-        "summary": "UBS Global Wealth Management Asia Pacific reported profit before tax of USD 600m in Q1 2026, up USD 172m (40%) year-on-year, with total revenues rising 19% to USD 1.23bn and net new assets of USD 18.6bn. The results reflect expanding HNW and UHNW inflows across Hong Kong, Singapore, and mainland China following UBS's consolidation of the Credit Suisse Asia business. Asia Pacific is now the fastest-growing geography for the world's largest wealth manager.",
-        "hsbc_relevancy": 7,
+        "id": "art02",
+        "title": "HSBC Private Bank and Premier Wealth Appoints New Asia CIO",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html",
+        "source": "Yahoo Finance / HSBC",
+        "published_at": "2026-07-06",
+        "summary": "HSBC appointed a new Asia CIO for Private Bank and Premier Wealth effective 6 July, based in Singapore and reporting to Global CIO Willem Sels and Singapore wealth head Ishan Sarkar \u2014 the latest move in HSBC's accelerating build-out of its Asia investment leadership bench.",
+        "hsbc_relevancy": 8,
         "adam_rel": 7,
         "surali_rel": 8,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
+        "noise_level": 2,
+        "category": "HSBC News",
         "is_update": true,
         "user_relevance": 8
       },
       {
         "id": "art06",
-        "title": "Standard Chartered Rolls Out AI Platform for Transaction Banking Sales Teams",
-        "url": "https://www.hubbis.com/news/standard-chartered-introduces-ai-platform-for-transaction-banking",
-        "source": "Hubbis",
-        "published_at": "2026-07-01",
-        "summary": "Standard Chartered has deployed an AI-powered platform helping relationship managers, sales teams, and proposal managers deliver transaction banking services more efficiently. The platform automates client solution selection, provides a centralised product and market gateway, and is designed to evolve via continuous integration with other digital platforms. The deployment is part of StanChart's push to improve profitability through AI following its portfolio divestments.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art08",
-        "title": "DBS Group: Putting AI Into the Bank's DNA Across All Business Lines",
-        "url": "https://gfmag.com/award/winner-insights/dbs-group-putting-ai-into-the-banks-dna/",
-        "source": "Global Finance",
-        "published_at": "2026-06-01",
-        "summary": "Global Finance's profile documents DBS's full-spectrum AI integration across all major business units — from wealth management and transaction services to treasury and retail. DBS is prioritising high-ROE businesses including wealth management and transaction services as primary beneficiaries of AI-driven efficiency. The bank's approach is now recognised as the Asia Pacific benchmark for what bank-wide AI transformation looks like in practice.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 7
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "art09",
-        "title": "Hong Kong Overtakes Singapore in Wealthtech: 93% Digital Wealth Service Adoption",
-        "url": "https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/",
-        "source": "Fintech News Hong Kong",
-        "published_at": "2026-07-01",
-        "summary": "A Quinlan & Associates and Allfunds Asia study finds 93% of Hong Kong investors accessed digital wealth services in the past two years, surpassing Singapore's 85%. Robo-advisor usage reaches 74% in Hong Kong, 15 percentage points above Singapore. The data reflects a structural shift toward digital self-service channels in HSBC's primary APAC market.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "art10",
-        "title": "Mass Affluent Losing Allure for Wealth Managers as AI Redraws Segment Economics",
-        "url": "https://www.bloomberg.com/news/articles/2026-06-21/mass-affluent-lose-allure-for-wealth-managers-navigating-ai",
-        "source": "Bloomberg",
-        "published_at": "2026-06-21",
-        "summary": "Bloomberg analysis finds wealth managers are systematically de-prioritising the mass affluent segment as AI-driven advisory tools make exclusive focus on HNW and UHNW clients economically rational. Banks with hybrid human-AI models are concentrating relationship manager time on clients above USD 1m AUM, with mass affluent clients served by AI-only or self-service channels. The trend carries significant strategic implications for HSBC WPB's premier banking and priority banking segments.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 4,
-        "category": "Private Banking & Wealth",
-        "is_update": true,
-        "user_relevance": 6
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "art11",
-        "title": "HKMA, PBoC and SFC Expand RMB Facility to RMB500bn and Announce HK FIC Trading Platform",
-        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260707-3/",
-        "source": "HKMA",
-        "published_at": "2026-07-07",
-        "summary": "On 7 July 2026, HKMA, PBoC, and SFC announced expansion of the HKMA's RMB Business Facility from RMB200bn to RMB500bn effective 10 July, with new tenors of 9-month, 2-year, and 3-year added. Separately, a new Hong Kong FIC Trading Platform adhering to international market standards was jointly announced, with launch details to follow. The measures deepen Hong Kong-mainland China financial cooperation and reinforce Hong Kong's position as the world's leading offshore RMB hub.",
+        "title": "HSBC Bets on AI and $84 Trillion Inheritance Wave to Drive Wealth Boom",
+        "url": "https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151",
+        "source": "Taipei Times",
+        "published_at": "2026-06-16",
+        "summary": "HSBC is positioning its wealth business around two structural tailwinds: AI-enabled personalisation at scale and the historic $84 trillion intergenerational wealth transfer wave. The bank plans to use AI to serve mass-affluent clients at near-private-banking quality, deepening its APAC lead while competitors with legacy advisory models face cost and scalability limits.",
         "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art12",
-        "title": "APAC Monthly Private Wealth Legal Developments — May 2026",
-        "url": "https://www.mondaq.com/australia/commoditiesderivativesstock-exchanges/1802802/apac-monthly-private-wealth-legal-developments-may-2026",
-        "source": "Mondaq",
-        "published_at": "2026-05-31",
-        "summary": "Mondaq's monthly digest covers Asia-Pacific private wealth legal and regulatory developments for May 2026 across Singapore, Hong Kong, Australia, and other APAC jurisdictions. Key themes include Singapore's revised Single Family Office framework, evolving KYC and AML requirements, and cross-border wealth structuring guidance. The digest is a practical reference for compliance and operational resilience planning across WPS markets.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
+        "adam_rel": 8,
         "surali_rel": 7,
         "noise_level": 2,
-        "category": "Regulatory & Markets",
+        "category": "HSBC News",
         "is_update": true,
         "user_relevance": 7
       }
     ],
-    "Operations & Change": [
+    "Competitor Intelligence": [
       {
-        "id": "art13",
-        "title": "Accenture: Agentic AI Set to Deliver 60-70% Operational Overhead Reduction by 2027",
-        "url": "https://bankingblog.accenture.com/agentic-ai-future-of-work",
-        "source": "Accenture Banking Blog",
-        "published_at": "2026-07-01",
-        "summary": "Accenture's analysis of agentic AI in financial services forecasts 60-70% reduction in operational overhead by 2027 as banks deploy digital co-workers that can be directed by small teams to execute at enterprise scale. Capacity for delivery is no longer dependent on headcount; the constraint has shifted to change management quality and integration depth. The report positions 2026 as the inflection year where agentic AI moves from futures planning into core operating model design.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "Operations & Change",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art14",
-        "title": "Lloyds Banking Group: 2026 Is the Year Agentic AI Enters a New Era for Finance",
-        "url": "https://www.lloydsbankinggroup.com/insights/2026-the-year-of-agentic-ai-and-a-new-era-for-finance.html",
-        "source": "Lloyds Banking Group",
-        "published_at": "2026-07-01",
-        "summary": "Lloyds Banking Group's strategic paper characterises 2026 as the year agentic AI transitions from experimentation to a new operational era, with autonomous software agents beginning to take actions and execute tasks independently in banking workflows. The paper identifies API infrastructure, data governance, and regulatory readiness as the enabling conditions determining which banks capture operational backs first. Lloyds frames deliberate change management investment as the key to converting agentic AI capability into a sustainable competitive advantage.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
+        "id": "art05",
+        "title": "Asia 2025 AUM League Tables: Assets Cross US$4tn, JP Morgan Enters Top Three Targeting HSBC",
+        "url": "https://asianprivatebanker.com/private-wealth/private-banking/asia-2025-aum-league-tables-assets-cross-us4tn-jpm-enters-top-three-nomura-debuts/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-03-31",
+        "summary": "Asia's top 10 private banks grew AUM 22.5% to $2.5 trillion in 2025. JP Morgan Private Bank's 39.1% AUM surge to $299bn puts it within $3bn of HSBC's $302bn regional lead, while Nomura's debut in the rankings signals a broadening competitive field and mounting pressure on HSBC's long-held top position.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
         "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Operations & Change",
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
         "is_update": true,
         "user_relevance": 7
       }
@@ -298,211 +172,91 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Banks Are Running Three AIs, Not One — Enterprise AI Adoption Benchmark",
-        "url": "https://fintech.global/2026/07/01/ncino-banks-are-running-three-ais-not-one/",
-        "source": "Fintech Global",
-        "published_at": "2026-07-01",
-        "summary": "nCino's 2026 AI in Banking Benchmark across 50+ institutions finds 91% now run generative AI, 87% predictive AI, and 81% agentic AI at the enterprise level. The pilot era is definitively over; banks are managing simultaneous deployment of three distinct AI capability stacks. Competitive differentiation has shifted from AI adoption to integration quality and delivery speed.",
-        "hsbc_relevancy": 6,
+        "title": "Swift Blockchain Ledger Goes Live: HSBC, DBS, StanChart Among 17-Bank Tokenised Payment Pilot",
+        "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure",
+        "source": "Swift",
+        "published_at": "2026-07-09",
+        "summary": "Swift launched its permissioned blockchain ledger on 9 July, enabling 17 banks \u2014 including HSBC, Citi, DBS, Standard Chartered, UBS, OCBC and UOB \u2014 to pilot 24/7 tokenised cross-border payments outside normal banking hours, built on Ethereum's Linea L2 network developed by ConsenSys.",
+        "hsbc_relevancy": 8,
         "adam_rel": 8,
         "surali_rel": 7,
-        "noise_level": 3,
+        "noise_level": 4,
         "category": "AI & Technology",
-        "is_update": true,
+        "is_update": false,
         "user_relevance": 7
       },
       {
         "id": "art02",
-        "title": "JurisTech 2026 LLM Benchmark: Hallucination Risk Quantified for Banking AI Deployments",
-        "url": "https://juristech.net/juristechs-2026-llm-benchmark-for-ai-hallucination-in-finance/",
-        "source": "JurisTech",
-        "published_at": "2026-06-01",
-        "summary": "JurisTech's 2026 LLM benchmark quantifies AI hallucination rates across leading models in financial contexts, establishing a reference framework for banks deploying generative AI in client-facing and advisory workflows. The study identifies significant variance between models in accuracy, regulatory compliance, and risk of generating incorrect investment guidance. The findings have direct implications for any institution deploying LLMs in wealth advisory, where hallucination carries fiduciary and regulatory consequences.",
-        "hsbc_relevancy": 6,
+        "title": "HSBC Private Bank and Premier Wealth Appoints New Asia CIO",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html",
+        "source": "Yahoo Finance / HSBC",
+        "published_at": "2026-07-06",
+        "summary": "HSBC appointed a new Asia CIO for Private Bank and Premier Wealth effective 6 July, based in Singapore and reporting to Global CIO Willem Sels and Singapore wealth head Ishan Sarkar \u2014 the latest move in HSBC's accelerating build-out of its Asia investment leadership bench.",
+        "hsbc_relevancy": 8,
         "adam_rel": 7,
-        "surali_rel": 6,
+        "surali_rel": 8,
         "noise_level": 2,
-        "category": "AI & Technology",
+        "category": "HSBC News",
         "is_update": true,
-        "user_relevance": 6
+        "user_relevance": 8
       },
       {
         "id": "art03",
-        "title": "Governance Gives AI Agents Permission to Grow Up in Financial Services",
-        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/governance-gives-ai-agents-permission-to-grow-up/",
-        "source": "PYMNTS",
-        "published_at": "2026-07-01",
-        "summary": "Regulatory and internal governance frameworks have caught up sufficiently with agentic AI capabilities to enable broader enterprise deployment in financial services. Major core system providers have shipped agent platforms, and regulators have drawn deliberate lines around the technology in 2026. Real-time compliance monitoring has shifted from planning to deployed capability at leading institutions.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "surali_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art04",
-        "title": "HSBC Appoints Nicholas Elias Head of Wealth Platforms with AI Expansion Mandate",
-        "url": "https://eastandpartners.com/news/hsbc-appoints-new-wealth-lead-with-ai-expansion-mandate/",
-        "source": "East & Partners",
-        "published_at": "2026-07-08",
-        "summary": "HSBC has appointed Nicholas Elias as Head of Wealth Platforms, Wealth and Premier Solutions, effective 15 August 2026, with a mandate to embed AI across the bank's wealth business. Elias will lead HSBC's Wealth Transformation Programme and scale Wealth Intelligence — the bank's generative AI platform for personalised market insights and investment strategies. He joins from an internal role as global head of CRM within the Corporate and Institutional Banking COO function, having been with HSBC since 2012.",
+        "title": "HSBC Deploys Wealth Intelligence AI Platform Across Private Bank",
+        "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/",
+        "source": "HSBC Private Bank",
+        "published_at": "2026-07-09",
+        "summary": "HSBC's Wealth Intelligence generative AI platform is now fully deployed across the private bank, providing relationship managers with personalised market insights and investment strategy recommendations \u2014 the operational output of the AI transformation programme led by incoming wealth platforms head Nicholas Elias.",
         "hsbc_relevancy": 9,
         "adam_rel": 9,
         "surali_rel": 8,
         "noise_level": 2,
         "category": "HSBC News",
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 8
       },
       {
-        "id": "art05",
-        "title": "HSBC Holdings Wealth Push Meets Fairly Valued Stock as Asia Execution Comes Into Focus",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-wealth-081427543.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-07-08",
-        "summary": "Market analysis of HSBC Holdings finds the bank's wealth management expansion in Asia is now substantially priced into its equity valuation. HSBC's 32% year-on-year Asia wealth revenue growth in 2024 is noted, but investors are increasingly focused on execution risk as the key variable for a sustained premium. AI deployment speed and WPB product rollouts are highlighted as primary indicators the market is watching.",
+        "id": "art04",
+        "title": "WEF AI Playbook for Financial Services: Industry Benchmark for AI Governance Released",
+        "url": "https://www.weforum.org/publications/the-ai-playbook-for-financial-services/",
+        "source": "World Economic Forum / Accenture",
+        "published_at": "2026-06-24",
+        "summary": "The World Economic Forum, with Accenture, published The AI Playbook for Financial Services at the Annual Meeting of New Champions, drawing on 18 months of roundtables with 150+ senior leaders from 100+ organisations. It identifies governance accountability as the primary differentiator between AI leaders and laggards, and maps a six-dimension maturity framework for enterprise AI deployment.",
         "hsbc_relevancy": 7,
-        "adam_rel": 6,
+        "adam_rel": 7,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 9
+      },
+      {
+        "id": "art05",
+        "title": "Asia 2025 AUM League Tables: Assets Cross US$4tn, JP Morgan Enters Top Three Targeting HSBC",
+        "url": "https://asianprivatebanker.com/private-wealth/private-banking/asia-2025-aum-league-tables-assets-cross-us4tn-jpm-enters-top-three-nomura-debuts/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-03-31",
+        "summary": "Asia's top 10 private banks grew AUM 22.5% to $2.5 trillion in 2025. JP Morgan Private Bank's 39.1% AUM surge to $299bn puts it within $3bn of HSBC's $302bn regional lead, while Nomura's debut in the rankings signals a broadening competitive field and mounting pressure on HSBC's long-held top position.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
         "surali_rel": 7,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
         "user_relevance": 7
       },
       {
         "id": "art06",
-        "title": "Standard Chartered Rolls Out AI Platform for Transaction Banking Sales Teams",
-        "url": "https://www.hubbis.com/news/standard-chartered-introduces-ai-platform-for-transaction-banking",
-        "source": "Hubbis",
-        "published_at": "2026-07-01",
-        "summary": "Standard Chartered has deployed an AI-powered platform helping relationship managers, sales teams, and proposal managers deliver transaction banking services more efficiently. The platform automates client solution selection, provides a centralised product and market gateway, and is designed to evolve via continuous integration with other digital platforms. The deployment is part of StanChart's push to improve profitability through AI following its portfolio divestments.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art07",
-        "title": "UBS Asia Pacific Wealth Profit Up 40% in Q1 2026 to $600m with $18.6bn Net New Assets",
-        "url": "https://www.sec.gov/Archives/edgar/data/0001610520/000161052026000044/edgar1q26ubsgroup.htm",
-        "source": "UBS (SEC Filing)",
-        "published_at": "2026-05-07",
-        "summary": "UBS Global Wealth Management Asia Pacific reported profit before tax of USD 600m in Q1 2026, up USD 172m (40%) year-on-year, with total revenues rising 19% to USD 1.23bn and net new assets of USD 18.6bn. The results reflect expanding HNW and UHNW inflows across Hong Kong, Singapore, and mainland China following UBS's consolidation of the Credit Suisse Asia business. Asia Pacific is now the fastest-growing geography for the world's largest wealth manager.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art08",
-        "title": "DBS Group: Putting AI Into the Bank's DNA Across All Business Lines",
-        "url": "https://gfmag.com/award/winner-insights/dbs-group-putting-ai-into-the-banks-dna/",
-        "source": "Global Finance",
-        "published_at": "2026-06-01",
-        "summary": "Global Finance's profile documents DBS's full-spectrum AI integration across all major business units — from wealth management and transaction services to treasury and retail. DBS is prioritising high-ROE businesses including wealth management and transaction services as primary beneficiaries of AI-driven efficiency. The bank's approach is now recognised as the Asia Pacific benchmark for what bank-wide AI transformation looks like in practice.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art09",
-        "title": "Hong Kong Overtakes Singapore in Wealthtech: 93% Digital Wealth Service Adoption",
-        "url": "https://fintechnews.hk/34485/wealthtech/hong-kong-overtakes-singapore-in-wealthtech-adoption/",
-        "source": "Fintech News Hong Kong",
-        "published_at": "2026-07-01",
-        "summary": "A Quinlan & Associates and Allfunds Asia study finds 93% of Hong Kong investors accessed digital wealth services in the past two years, surpassing Singapore's 85%. Robo-advisor usage reaches 74% in Hong Kong, 15 percentage points above Singapore. The data reflects a structural shift toward digital self-service channels in HSBC's primary APAC market.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "surali_rel": 6,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "art10",
-        "title": "Mass Affluent Losing Allure for Wealth Managers as AI Redraws Segment Economics",
-        "url": "https://www.bloomberg.com/news/articles/2026-06-21/mass-affluent-lose-allure-for-wealth-managers-navigating-ai",
-        "source": "Bloomberg",
-        "published_at": "2026-06-21",
-        "summary": "Bloomberg analysis finds wealth managers are systematically de-prioritising the mass affluent segment as AI-driven advisory tools make exclusive focus on HNW and UHNW clients economically rational. Banks with hybrid human-AI models are concentrating relationship manager time on clients above USD 1m AUM, with mass affluent clients served by AI-only or self-service channels. The trend carries significant strategic implications for HSBC WPB's premier banking and priority banking segments.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 6,
-        "noise_level": 4,
-        "category": "Private Banking & Wealth",
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "art11",
-        "title": "HKMA, PBoC and SFC Expand RMB Facility to RMB500bn and Announce HK FIC Trading Platform",
-        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260707-3/",
-        "source": "HKMA",
-        "published_at": "2026-07-07",
-        "summary": "On 7 July 2026, HKMA, PBoC, and SFC announced expansion of the HKMA's RMB Business Facility from RMB200bn to RMB500bn effective 10 July, with new tenors of 9-month, 2-year, and 3-year added. Separately, a new Hong Kong FIC Trading Platform adhering to international market standards was jointly announced, with launch details to follow. The measures deepen Hong Kong-mainland China financial cooperation and reinforce Hong Kong's position as the world's leading offshore RMB hub.",
+        "title": "HSBC Bets on AI and $84 Trillion Inheritance Wave to Drive Wealth Boom",
+        "url": "https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151",
+        "source": "Taipei Times",
+        "published_at": "2026-06-16",
+        "summary": "HSBC is positioning its wealth business around two structural tailwinds: AI-enabled personalisation at scale and the historic $84 trillion intergenerational wealth transfer wave. The bank plans to use AI to serve mass-affluent clients at near-private-banking quality, deepening its APAC lead while competitors with legacy advisory models face cost and scalability limits.",
         "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art12",
-        "title": "APAC Monthly Private Wealth Legal Developments — May 2026",
-        "url": "https://www.mondaq.com/australia/commoditiesderivativesstock-exchanges/1802802/apac-monthly-private-wealth-legal-developments-may-2026",
-        "source": "Mondaq",
-        "published_at": "2026-05-31",
-        "summary": "Mondaq's monthly digest covers Asia-Pacific private wealth legal and regulatory developments for May 2026 across Singapore, Hong Kong, Australia, and other APAC jurisdictions. Key themes include Singapore's revised Single Family Office framework, evolving KYC and AML requirements, and cross-border wealth structuring guidance. The digest is a practical reference for compliance and operational resilience planning across WPS markets.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
-        "surali_rel": 7,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art13",
-        "title": "Accenture: Agentic AI Set to Deliver 60-70% Operational Overhead Reduction by 2027",
-        "url": "https://bankingblog.accenture.com/agentic-ai-future-of-work",
-        "source": "Accenture Banking Blog",
-        "published_at": "2026-07-01",
-        "summary": "Accenture's analysis of agentic AI in financial services forecasts 60-70% reduction in operational overhead by 2027 as banks deploy digital co-workers that can be directed by small teams to execute at enterprise scale. Capacity for delivery is no longer dependent on headcount; the constraint has shifted to change management quality and integration depth. The report positions 2026 as the inflection year where agentic AI moves from futures planning into core operating model design.",
-        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "surali_rel": 8,
-        "noise_level": 3,
-        "category": "Operations & Change",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art14",
-        "title": "Lloyds Banking Group: 2026 Is the Year Agentic AI Enters a New Era for Finance",
-        "url": "https://www.lloydsbankinggroup.com/insights/2026-the-year-of-agentic-ai-and-a-new-era-for-finance.html",
-        "source": "Lloyds Banking Group",
-        "published_at": "2026-07-01",
-        "summary": "Lloyds Banking Group's strategic paper characterises 2026 as the year agentic AI transitions from experimentation to a new operational era, with autonomous software agents beginning to take actions and execute tasks independently in banking workflows. The paper identifies API infrastructure, data governance, and regulatory readiness as the enabling conditions determining which banks capture operational backs first. Lloyds frames deliberate change management investment as the key to converting agentic AI capability into a sustainable competitive advantage.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
         "surali_rel": 7,
         "noise_level": 2,
-        "category": "Operations & Change",
+        "category": "HSBC News",
         "is_update": true,
         "user_relevance": 7
       }
@@ -510,10 +264,7 @@
     "categories": {
       "AI & Technology": "#6366f1",
       "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2",
-      "Private Banking & Wealth": "#059669",
-      "Regulatory & Markets": "#d97706",
-      "Operations & Change": "#7c3aed"
+      "Competitor Intelligence": "#0891b2"
     }
   }
 }
