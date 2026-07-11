@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WPB Intelligence Briefing — {{ briefing_date }} — {{ user.display_name }}</title>
+  <title>WPB Intelligence Briefing — Thursday, 10 July 2026 — Surali</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -229,11 +229,11 @@
       </div>
     </div>
     <div class="header-meta">
-      <div class="date">{{ briefing_date }}</div>
+      <div class="date">Thursday, 10 July 2026</div>
       <div class="user-info">
-        Prepared for <span class="user-name">{{ user.name }}</span>
+        Prepared for <span class="user-name">Surali Siriwardene</span>
       </div>
-      <div class="user-info">{{ user.title }}</div>
+      <div class="user-info">COO &amp; Global Head of Change Execution, WPS</div>
     </div>
   </div>
 </header>
@@ -245,27 +245,67 @@
   <div class="section-wrap">
     <div class="section-label">Intelligence Summary</div>
     <h2 class="section-title">Today's Key Talking Points</h2>
-    <p class="section-sub">{{ total_articles }} articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <p class="section-sub">6 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
     <div class="tp-grid">
-      {% for tp in talking_points %}
-      <div class="tp-card{% if tp.is_update %} is-update{% endif %}">
-        <div class="tp-num">{{ loop.index }}</div>
+      
+      <div class="tp-card is-update">
+        <div class="tp-num">1</div>
         <div class="tp-body">
-          {% if tp.is_update %}
+          
           <div class="tp-update-badge">&#8635; Update</div>
-          {% endif %}
-          <h3 class="tp-headline">{{ tp.headline }}</h3>
-          <p class="tp-context">{{ tp.context_html | safe }}</p>
-          {% if tp.source_links %}
+          
+          <h3 class="tp-headline">WEF AI Playbook Sets Industry Governance Benchmark — WPS Change Programme Needs a Maturity Assessment</h3>
+          <p class="tp-context"></p>
+          
           <div class="tp-sources">
-            {% for link in tp.source_links %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener" class="tp-source-link" title="{{ link.title }}">{{ link.title }}</a>
-            {% endfor %}
+            
+            <a href="https://www.weforum.org/publications/the-ai-playbook-for-financial-services/" target="_blank" rel="noopener" class="tp-source-link" title="WEF: AI Playbook for Financial Services">WEF: AI Playbook for Financial Services</a>
+            
+            <a href="https://www.weforum.org/press/2026/06/financial-institutions-race-to-scale-ai-as-trust-and-governance-become-critical-tests/" target="_blank" rel="noopener" class="tp-source-link" title="WEF Press: Financial Institutions Race to Scale AI">WEF Press: Financial Institutions Race to Scale AI</a>
+            
           </div>
-          {% endif %}
+          
         </div>
       </div>
-      {% endfor %}
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Swift&#39;s 24/7 Blockchain Settlement Is Live — HSBC&#39;s Operating Model Must Match Its Infrastructure Lead</h3>
+          <p class="tp-context"></p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure" target="_blank" rel="noopener" class="tp-source-link" title="Swift: Blockchain Ledger Ready for Use">Swift: Blockchain Ledger Ready for Use</a>
+            
+            <a href="https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents" target="_blank" rel="noopener" class="tp-source-link" title="CoinDesk: Swift Rolls Out 24/7 Blockchain">CoinDesk: Swift Rolls Out 24/7 Blockchain</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card is-update">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <div class="tp-update-badge">&#8635; Update</div>
+          
+          <h3 class="tp-headline">Wealth Intelligence Live and Asia CIO Seated — Change Execution Velocity Is Now the Measurable Variable</h3>
+          <p class="tp-context"></p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/" target="_blank" rel="noopener" class="tp-source-link" title="HSBC Private Bank: Wealth Intelligence Deployed">HSBC Private Bank: Wealth Intelligence Deployed</a>
+            
+            <a href="https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html" target="_blank" rel="noopener" class="tp-source-link" title="Yahoo Finance: HSBC Private Bank Names Asia CIO">Yahoo Finance: HSBC Private Bank Names Asia CIO</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -301,43 +341,148 @@
     <h2 class="section-title">Articles by Category</h2>
     <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
     <div class="category-tabs" id="category-tabs">
-      <button class="cat-tab active" data-cat="all">All ({{ total_articles }})</button>
-      {% for category in articles_by_category.keys() %}
-      <button class="cat-tab" data-cat="{{ category }}">
-        {{ category }} ({{ articles_by_category[category] | length }})
+      <button class="cat-tab active" data-cat="all">All (6)</button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (2)
       </button>
-      {% endfor %}
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (3)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (1)
+      </button>
+      
     </div>
-    {% for category, articles in articles_by_category.items() %}
-    <div class="category-section" data-category-group="{{ category }}">
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
       <h3 class="category-header">
-        <span class="cat-dot" style="background: {{ category_colors.get(category, '#64748b') }}"></span>
-        {{ category }}
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
       </h3>
       <div class="articles-grid">
-        {% for article in articles %}
-        <article class="article-card" id="article-{{ article.id }}" data-category="{{ article.category }}">
+        
+        <article class="article-card" id="article-art04" data-category="AI &amp; Technology">
           <div class="article-scores">
-            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC {{ article.hsbc_relevancy }}/10</span>
-            <span class="score-badge rel" title="Relevance to Role">Rel. {{ article.user_relevance }}/10</span>
-            <span class="score-badge noise" title="Media Noise Level">
-              {%- for _ in range(article.noise_level) %}●{% endfor -%}
-              {%- for _ in range(5 - article.noise_level) %}○{% endfor -%}
-            </span>
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 9/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
           </div>
           <div class="article-title">
-            <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+            <a href="https://www.weforum.org/publications/the-ai-playbook-for-financial-services/" target="_blank" rel="noopener">WEF AI Playbook for Financial Services: Industry Benchmark for AI Governance Released</a>
           </div>
-          <p class="article-summary">{{ article.summary }}</p>
+          <p class="article-summary">The World Economic Forum, with Accenture, published The AI Playbook for Financial Services at the Annual Meeting of New Champions, drawing on 18 months of roundtables with 150+ senior leaders from 100+ organisations. It identifies governance accountability as the primary differentiator between AI leaders and laggards, and maps a six-dimension maturity framework for enterprise AI deployment.</p>
           <div class="article-footer">
-            <span class="article-source">{{ article.source }}</span>
-            <span>{{ article.published_at | format_date }}</span>
+            <span class="article-source">World Economic Forum / Accenture</span>
+            <span>24 Jun 2026</span>
           </div>
         </article>
-        {% endfor %}
+        
+        <article class="article-card" id="article-art01" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure" target="_blank" rel="noopener">Swift Blockchain Ledger Goes Live: HSBC, DBS, StanChart Among 17-Bank Tokenised Payment Pilot</a>
+          </div>
+          <p class="article-summary">Swift launched its permissioned blockchain ledger on 9 July, enabling 17 banks — including HSBC, Citi, DBS, Standard Chartered, UBS, OCBC and UOB — to pilot 24/7 tokenised cross-border payments outside normal banking hours, built on Ethereum&#39;s Linea L2 network developed by ConsenSys.</p>
+          <div class="article-footer">
+            <span class="article-source">Swift</span>
+            <span>9 Jul 2026</span>
+          </div>
+        </article>
+        
       </div>
     </div>
-    {% endfor %}
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art03" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 9/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/" target="_blank" rel="noopener">HSBC Deploys Wealth Intelligence AI Platform Across Private Bank</a>
+          </div>
+          <p class="article-summary">HSBC&#39;s Wealth Intelligence generative AI platform is now fully deployed across the private bank, providing relationship managers with personalised market insights and investment strategy recommendations — the operational output of the AI transformation programme led by incoming wealth platforms head Nicholas Elias.</p>
+          <div class="article-footer">
+            <span class="article-source">HSBC Private Bank</span>
+            <span>9 Jul 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art02" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html" target="_blank" rel="noopener">HSBC Private Bank and Premier Wealth Appoints New Asia CIO</a>
+          </div>
+          <p class="article-summary">HSBC appointed a new Asia CIO for Private Bank and Premier Wealth effective 6 July, based in Singapore and reporting to Global CIO Willem Sels and Singapore wealth head Ishan Sarkar — the latest move in HSBC&#39;s accelerating build-out of its Asia investment leadership bench.</p>
+          <div class="article-footer">
+            <span class="article-source">Yahoo Finance / HSBC</span>
+            <span>6 Jul 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art06" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151" target="_blank" rel="noopener">HSBC Bets on AI and $84 Trillion Inheritance Wave to Drive Wealth Boom</a>
+          </div>
+          <p class="article-summary">HSBC is positioning its wealth business around two structural tailwinds: AI-enabled personalisation at scale and the historic $84 trillion intergenerational wealth transfer wave. The bank plans to use AI to serve mass-affluent clients at near-private-banking quality, deepening its APAC lead while competitors with legacy advisory models face cost and scalability limits.</p>
+          <div class="article-footer">
+            <span class="article-source">Taipei Times</span>
+            <span>16 Jun 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art05" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://asianprivatebanker.com/private-wealth/private-banking/asia-2025-aum-league-tables-assets-cross-us4tn-jpm-enters-top-three-nomura-debuts/" target="_blank" rel="noopener">Asia 2025 AUM League Tables: Assets Cross US$4tn, JP Morgan Enters Top Three Targeting HSBC</a>
+          </div>
+          <p class="article-summary">Asia&#39;s top 10 private banks grew AUM 22.5% to $2.5 trillion in 2025. JP Morgan Private Bank&#39;s 39.1% AUM surge to $299bn puts it within $3bn of HSBC&#39;s $302bn regional lead, while Nomura&#39;s debut in the rankings signals a broadening competitive field and mounting pressure on HSBC&#39;s long-held top position.</p>
+          <div class="article-footer">
+            <span class="article-source">Asian Private Banker</span>
+            <span>31 Mar 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
   </div>
 </section>
 
@@ -345,7 +490,7 @@
      FOOTER
 ════════════════════════════════════════════ -->
 <footer class="site-footer">
-  Generated {{ generated_at }} &nbsp;·&nbsp;
+  Generated 10 Jul 2026, 23:11 UTC &nbsp;·&nbsp;
   <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
   Powered by Claude AI (Anthropic)
 </footer>
@@ -354,7 +499,7 @@
      D3.js BUBBLE CHART
 ════════════════════════════════════════════ -->
 <script>
-const CHART_DATA = {{ chart_data_json | safe }};
+const CHART_DATA = {"articles": [{"id": "art01", "title": "Swift Blockchain Ledger Goes Live: HSBC, DBS, StanChart Among 17-Bank Tokenised Payment Pilot", "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure", "source": "Swift", "published_at": "2026-07-09", "summary": "Swift launched its permissioned blockchain ledger on 9 July, enabling 17 banks \u2014 including HSBC, Citi, DBS, Standard Chartered, UBS, OCBC and UOB \u2014 to pilot 24/7 tokenised cross-border payments outside normal banking hours, built on Ethereum's Linea L2 network developed by ConsenSys.", "hsbc_relevancy": 8, "adam_rel": 8, "surali_rel": 7, "noise_level": 4, "category": "AI & Technology", "is_update": false, "user_relevance": 7}, {"id": "art02", "title": "HSBC Private Bank and Premier Wealth Appoints New Asia CIO", "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html", "source": "Yahoo Finance / HSBC", "published_at": "2026-07-06", "summary": "HSBC appointed a new Asia CIO for Private Bank and Premier Wealth effective 6 July, based in Singapore and reporting to Global CIO Willem Sels and Singapore wealth head Ishan Sarkar \u2014 the latest move in HSBC's accelerating build-out of its Asia investment leadership bench.", "hsbc_relevancy": 8, "adam_rel": 7, "surali_rel": 8, "noise_level": 2, "category": "HSBC News", "is_update": true, "user_relevance": 8}, {"id": "art03", "title": "HSBC Deploys Wealth Intelligence AI Platform Across Private Bank", "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/", "source": "HSBC Private Bank", "published_at": "2026-07-09", "summary": "HSBC's Wealth Intelligence generative AI platform is now fully deployed across the private bank, providing relationship managers with personalised market insights and investment strategy recommendations \u2014 the operational output of the AI transformation programme led by incoming wealth platforms head Nicholas Elias.", "hsbc_relevancy": 9, "adam_rel": 9, "surali_rel": 8, "noise_level": 2, "category": "HSBC News", "is_update": true, "user_relevance": 8}, {"id": "art04", "title": "WEF AI Playbook for Financial Services: Industry Benchmark for AI Governance Released", "url": "https://www.weforum.org/publications/the-ai-playbook-for-financial-services/", "source": "World Economic Forum / Accenture", "published_at": "2026-06-24", "summary": "The World Economic Forum, with Accenture, published The AI Playbook for Financial Services at the Annual Meeting of New Champions, drawing on 18 months of roundtables with 150+ senior leaders from 100+ organisations. It identifies governance accountability as the primary differentiator between AI leaders and laggards, and maps a six-dimension maturity framework for enterprise AI deployment.", "hsbc_relevancy": 7, "adam_rel": 7, "surali_rel": 9, "noise_level": 3, "category": "AI & Technology", "is_update": true, "user_relevance": 9}, {"id": "art05", "title": "Asia 2025 AUM League Tables: Assets Cross US$4tn, JP Morgan Enters Top Three Targeting HSBC", "url": "https://asianprivatebanker.com/private-wealth/private-banking/asia-2025-aum-league-tables-assets-cross-us4tn-jpm-enters-top-three-nomura-debuts/", "source": "Asian Private Banker", "published_at": "2026-03-31", "summary": "Asia's top 10 private banks grew AUM 22.5% to $2.5 trillion in 2025. JP Morgan Private Bank's 39.1% AUM surge to $299bn puts it within $3bn of HSBC's $302bn regional lead, while Nomura's debut in the rankings signals a broadening competitive field and mounting pressure on HSBC's long-held top position.", "hsbc_relevancy": 8, "adam_rel": 9, "surali_rel": 7, "noise_level": 3, "category": "Competitor Intelligence", "is_update": true, "user_relevance": 7}, {"id": "art06", "title": "HSBC Bets on AI and $84 Trillion Inheritance Wave to Drive Wealth Boom", "url": "https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151", "source": "Taipei Times", "published_at": "2026-06-16", "summary": "HSBC is positioning its wealth business around two structural tailwinds: AI-enabled personalisation at scale and the historic $84 trillion intergenerational wealth transfer wave. The bank plans to use AI to serve mass-affluent clients at near-private-banking quality, deepening its APAC lead while competitors with legacy advisory models face cost and scalability limits.", "hsbc_relevancy": 8, "adam_rel": 8, "surali_rel": 7, "noise_level": 2, "category": "HSBC News", "is_update": true, "user_relevance": 7}], "categories": {"AI & Technology": "#6366f1", "HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2"}};
 
 function renderChart() {
   const container = document.getElementById('bubble-chart-container');
