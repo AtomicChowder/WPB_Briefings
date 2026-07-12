@@ -3,164 +3,232 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Thursday, 10 July 2026",
-  "date_str": "2026-07-10",
-  "generated_at": "10 Jul 2026, 23:11 UTC",
-  "total_articles": 6,
+  "briefing_date": "Sunday, 12 July 2026",
+  "date_str": "2026-07-12",
+  "generated_at": "12 Jul 2026, 23:23 UTC",
+  "total_articles": 10,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Swift's Tokenised Ledger Goes Live \u2014 HSBC Is a Founding Participant in 24/7 Cross-Border Payments",
-      "why_it_matters": "HSBC's founding participation in Swift's blockchain-based tokenised payments network gives WPB wealth clients a structural advantage in after-hours cross-border transactions \u2014 a direct differentiator for UHNW and international clients that no domestic competitor can match.",
+      "headline": "HSBC Co-Authors MAS SAFR \u2014 Industry AI Agent Governance Standard Now Live",
+      "why_it_matters": "Adam can use HSBC's co-authorship of the SAFR white paper to accelerate internal AI governance approvals, converting Wealth Transformation Programme governance conversations from bespoke risk review to alignment with a published industry standard.",
       "bullets": [
-        "Swift launched its permissioned blockchain ledger on 9 July; HSBC, Citi, DBS, Standard Chartered, UBS, OCBC and UOB are among 17 founding participants spanning six continents \u2014 HSBC now has the broadest coalition in its competitive cohort",
-        "Built on Linea (Ethereum L2 by ConsenSys), the ledger moves tokenised deposits outside normal banking hours while final settlement remains on existing rails, reducing friction without replacing core infrastructure",
-        "First-mover participation positions HSBC to offer 24/7 settlement capability to UHNW clients before this becomes table-stakes \u2014 execution teams should begin mapping which wealth workflows benefit immediately"
+        "SAFR defines four runtime controls for AI agents \u2014 Agent Identity, Controls Repository, Disposition Engine and Audit Log \u2014 explicitly covering wealth management document reviews and client engagement workflows",
+        "HSBC co-authored the paper alongside <strong>JP Morgan Chase</strong>, OCBC, Mastercard, Manulife and Ant International \u2014 establishing this as a cross-institution industry benchmark that HSBC helped design",
+        "Adopting SAFR as the internal governance architecture for Wealth Intelligence and future agentic AI programmes converts approval conversations from 'how do we govern this?' to 'here is the standard we helped write \u2014 here is our alignment plan'"
       ],
       "source_links": [
         {
-          "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure",
-          "title": "Swift: Blockchain Ledger Ready for Use"
+          "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-partners-industry-to-develop-safeguards-for-ai-agents-in-finance",
+          "title": "MAS: SAFR \u2014 Safeguards for AI Agents"
         },
         {
-          "url": "https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents",
-          "title": "CoinDesk: Swift Rolls Out 24/7 Blockchain"
+          "url": "https://www.mas.gov.sg/-/media/mas-media-library/development/fintech/ai-safr/safr.pdf",
+          "title": "SAFR White Paper v1.0 (Full PDF)"
+        }
+      ],
+      "is_update": true
+    },
+    {
+      "headline": "HSBC-Google Cloud AI Deal: 200+ Use Cases, >$100M Value, Wealth Management First",
+      "why_it_matters": "The multi-year Google Cloud partnership gives Adam's change execution programme a formal AI platform infrastructure and a US$100M+ value case to anchor internal prioritisation for the Wealth Intelligence programme's next phase.",
+      "bullets": [
+        "The deal deploys Gemini models, the Gemini Enterprise Agent Platform, and Google DeepMind engineers specifically for personalised wealth management advice, financial crime risk management, and RM decision-support tools across HSBC's global operations",
+        "HSBC expects 200+ new AI use cases over two years, prioritising the highest-value initiatives with combined revenue and operational benefit estimated to exceed US$100 million",
+        "This is a material step-up from Wealth Intelligence v1 \u2014 from a single generative AI product to a platform-level AI infrastructure backed by Google's full engineering capacity, directly under Adam's delivery remit"
+      ],
+      "source_links": [
+        {
+          "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-and-google-cloud-announce-transformative-ai-banking-partnership",
+          "title": "HSBC + Google Cloud: Transformative AI Partnership"
+        },
+        {
+          "url": "https://www.cdomagazine.tech/aiml/hsbc-expands-google-cloud-partnership-to-scale-ai-across-wealth-management-and-risk-operations",
+          "title": "CDO Magazine: HSBC AI Across Wealth & Risk Ops"
+        }
+      ],
+      "is_update": true
+    },
+    {
+      "headline": "Citi Sky AI Advisor Hits HK; DBS Opens 18 Wealth Centres This Quarter in HSBC's Markets",
+      "why_it_matters": "Adam's APAC change execution programme faces simultaneous competitive escalation \u2014 Citi's DeepMind-powered AI advisor is expanding to Hong Kong while DBS's first physical wealth centre wave opens across every HSBC WPB market this quarter.",
+      "bullets": [
+        "Citi Sky uses Google DeepMind's Gemini real-time avatar for always-on CIO market insights and portfolio prompts; Citi HK's AskWealth tool has been the precursor deployment, making HK an imminent next Citi Sky rollout market",
+        "DBS's first wave of 18 new wealth centres opens Q3 2026 across Singapore, HK, mainland China, India, Indonesia and Taiwan \u2014 backed by SGD 492bn AUM that already surpassed its SGD 500bn target a year early",
+        "Both Citi and DBS are deploying AI-augmented advisory in new physical wealth centres simultaneously \u2014 the differentiation window for HSBC's Wealth Intelligence is narrowing by quarter, not by year"
+      ],
+      "source_links": [
+        {
+          "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies",
+          "title": "Citi Wealth Unveils Citi Sky (Press Release)"
+        },
+        {
+          "url": "https://www.dbs.com/newsroom/DBS_to_launch_18_new_wealth_centres_across_the_region_by_2027_as_affluent_clients_seek_closer_relationships",
+          "title": "DBS: 18 New Asian Wealth Centres"
         }
       ],
       "is_update": false
-    },
-    {
-      "headline": "HSBC Wealth Intelligence Is Live and Asia CIO Is Seated \u2014 Change Execution Enters Performance Phase",
-      "why_it_matters": "The deployment of Wealth Intelligence and the seating of a new Asia CIO mark the transition from transformation design to delivery \u2014 Adam's change execution programme must now pivot from build to adoption velocity and measurable RM engagement.",
-      "bullets": [
-        "HSBC's Wealth Intelligence generative AI platform is now deployed across the private bank, providing personalised market insights and investment strategy recommendations to relationship managers \u2014 the direct operational output of the AI transformation mandate",
-        "A new Asia CIO for Private Bank and Premier Wealth took up the role on 6 July, reporting to <strong>Willem Sels, Global CIO, HSBC Private Bank and Premier Wealth</strong> and <strong>Ishan Sarkar, Head of Wealth & Premier Solutions, Singapore</strong> \u2014 completing the senior leadership bench for the region",
-        "With platform live and leadership seated, the change execution agenda shifts to RM adoption rates, usage metrics, and feedback loops \u2014 the next governance milestone should be a Q3 adoption baseline"
-      ],
-      "source_links": [
-        {
-          "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/",
-          "title": "HSBC Private Bank: Wealth Intelligence Deployed"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html",
-          "title": "Yahoo Finance: HSBC Private Bank Names Asia CIO"
-        }
-      ],
-      "is_update": true
-    },
-    {
-      "headline": "JP Morgan's 39% Asia AUM Surge Closes to $3bn Behind HSBC \u2014 Competitive Window Is Narrowing",
-      "why_it_matters": "JP Morgan's near-halving of HSBC's Asia AUM lead in a single year signals that the competitive moat is not structural \u2014 accelerating HSBC's AI-enabled advisory capability is the primary lever Adam's programme has to re-widen the gap before Q4.",
-      "bullets": [
-        "Asia 2025 AUM league tables (Asian Private Banker) show JP Morgan's assets grew 39.1% to $299bn versus HSBC's $302bn \u2014 the gap has compressed from $78bn three years ago to just $3bn, the most rapid convergence in the table's history",
-        "Nomura's debut in the top-10 rankings signals a broadening competitive field; DBS's Euromoney triple win (World's Best Private Bank, World's Safest Private Bank, World's Best for Digital Assets) adds further pressure from a regionally-headquartered rival with an AI-first model",
-        "HSBC's counter-strategy \u2014 AI-enabled advisory at mass-affluent scale plus the $84tn inheritance wave play \u2014 is theoretically sound, but the Wealth Intelligence deployment timeline and RM adoption rate will determine whether the competitive gap widens or closes by year-end"
-      ],
-      "source_links": [
-        {
-          "url": "https://asianprivatebanker.com/private-wealth/private-banking/asia-2025-aum-league-tables-assets-cross-us4tn-jpm-enters-top-three-nomura-debuts/",
-          "title": "Asian Private Banker: Asia 2025 AUM League Tables"
-        }
-      ],
-      "is_update": true
     }
   ],
   "articles_by_category": {
-    "AI & Technology": [
+    "Private Banking & Wealth": [
       {
         "id": "art01",
-        "title": "Swift Blockchain Ledger Goes Live: HSBC, DBS, StanChart Among 17-Bank Tokenised Payment Pilot",
-        "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure",
-        "source": "Swift",
-        "published_at": "2026-07-09",
-        "summary": "Swift launched its permissioned blockchain ledger on 9 July, enabling 17 banks \u2014 including HSBC, Citi, DBS, Standard Chartered, UBS, OCBC and UOB \u2014 to pilot 24/7 tokenised cross-border payments outside normal banking hours, built on Ethereum's Linea L2 network developed by ConsenSys.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art04",
-        "title": "WEF AI Playbook for Financial Services: Industry Benchmark for AI Governance Released",
-        "url": "https://www.weforum.org/publications/the-ai-playbook-for-financial-services/",
-        "source": "World Economic Forum / Accenture",
-        "published_at": "2026-06-24",
-        "summary": "The World Economic Forum, with Accenture, published The AI Playbook for Financial Services at the Annual Meeting of New Champions, drawing on 18 months of roundtables with 150+ senior leaders from 100+ organisations. It identifies governance accountability as the primary differentiator between AI leaders and laggards, and maps a six-dimension maturity framework for enterprise AI deployment.",
+        "title": "HSBC Private Bank Bolsters Taiwan Team \u2014 Offshore Head Joins from DBS",
+        "url": "https://asianprivatebanker.com/private-wealth/hsbc-pb-taps-ex-dbs-private-banker-to-strengthen-taiwan-push/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-07-11",
+        "summary": "HSBC Private Bank appointed Gloria Sun, formerly Senior Market Head for Taiwan at DBS Private Bank, as Market Head of Offshore Taiwan effective 13 July 2026. Based in Hong Kong, Sun leads offshore Taiwan teams across HK and Singapore. This follows Edward Chiu's hiring as onshore Taiwan market head in June, completing dual-track coverage for Taiwan's semiconductor-wealth boom.",
         "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 9,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 7
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 6
       }
     ],
     "HSBC News": [
       {
-        "id": "art03",
-        "title": "HSBC Deploys Wealth Intelligence AI Platform Across Private Bank",
-        "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/",
-        "source": "HSBC Private Bank",
-        "published_at": "2026-07-09",
-        "summary": "HSBC's Wealth Intelligence generative AI platform is now fully deployed across the private bank, providing relationship managers with personalised market insights and investment strategy recommendations \u2014 the operational output of the AI transformation programme led by incoming wealth platforms head Nicholas Elias.",
+        "id": "art02",
+        "title": "HSBC + Google Cloud: Multi-Year AI Partnership for Wealth, Risk, and 200+ Use Cases",
+        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-and-google-cloud-announce-transformative-ai-banking-partnership",
+        "source": "HSBC Holdings",
+        "published_at": "2026-06-17",
+        "summary": "HSBC and Google Cloud announced a multi-year partnership at Google Cloud Summit London to deploy AI and agentic AI capabilities globally. The deal covers 200+ new AI use cases over two years generating over US$100m in value. Primary focus areas are personalised wealth management advice, financial crime risk management, and RM decision-support tools using Gemini models and Google DeepMind engineers.",
         "hsbc_relevancy": 9,
         "adam_rel": 9,
         "surali_rel": 8,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "HSBC News",
         "is_update": true,
         "user_relevance": 9
       },
       {
-        "id": "art06",
-        "title": "HSBC Bets on AI and $84 Trillion Inheritance Wave to Drive Wealth Boom",
-        "url": "https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151",
-        "source": "Taipei Times",
-        "published_at": "2026-06-16",
-        "summary": "HSBC is positioning its wealth business around two structural tailwinds: AI-enabled personalisation at scale and the historic $84 trillion intergenerational wealth transfer wave. The bank plans to use AI to serve mass-affluent clients at near-private-banking quality, deepening its APAC lead while competitors with legacy advisory models face cost and scalability limits.",
-        "hsbc_relevancy": 8,
+        "id": "art07",
+        "title": "HSBC Survey: 73% of HNW Investors Use AI \u2014 but Professionals Trusted 3x More",
+        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/the-trust-threshold-ai-makes-investors-bolder-but-they-want-human-judgement-to-make-decisions",
+        "source": "HSBC Holdings",
+        "published_at": "2026-06-24",
+        "summary": "HSBC's Trust Threshold survey of ~10,000 affluent and HNW individuals across 10 markets found 73% now use AI for finance and investment. However, financial professionals are cited as the most influential factor in investment decisions at 37% versus 12% for AI \u2014 a 3x trust gap. The survey frames AI as a research and preparation tool while human relationships remain the monetisable differentiator.",
+        "hsbc_relevancy": 9,
         "adam_rel": 8,
         "surali_rel": 7,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "HSBC News",
         "is_update": true,
         "user_relevance": 8
       },
       {
-        "id": "art02",
-        "title": "HSBC Private Bank and Premier Wealth Appoints New Asia CIO",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html",
-        "source": "Yahoo Finance / HSBC",
-        "published_at": "2026-07-06",
-        "summary": "HSBC appointed a new Asia CIO for Private Bank and Premier Wealth effective 6 July, based in Singapore and reporting to Global CIO Willem Sels and Singapore wealth head Ishan Sarkar \u2014 the latest move in HSBC's accelerating build-out of its Asia investment leadership bench.",
-        "hsbc_relevancy": 8,
+        "id": "art06",
+        "title": "HSBC Launches HKD Stablecoin via PayMe in H2 2026 After HKMA Licence Grant",
+        "url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-welcomes-hkmas-grant-of-a-hong-kong-stablecoin-issuer-licence",
+        "source": "HSBC Hong Kong",
+        "published_at": "2026-04-10",
+        "summary": "HSBC and Standard Chartered's Anchorpoint Financial JV received Hong Kong's first stablecoin issuer licences from the HKMA. HSBC plans to launch a fully-backed HKD stablecoin in H2 2026, integrating it into PayMe (3.3m active users) and the HSBC HK App (up 20% active users YoY) for P2P and P2M payments. Each stablecoin is backed by high-quality liquid assets in segregated accounts.",
+        "hsbc_relevancy": 9,
         "adam_rel": 7,
         "surali_rel": 8,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "HSBC News",
         "is_update": true,
         "user_relevance": 7
       }
     ],
+    "AI & Technology": [
+      {
+        "id": "art03",
+        "title": "MAS SAFR: Runtime AI Agent Governance Framework Co-Authored by HSBC and JP Morgan",
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-partners-industry-to-develop-safeguards-for-ai-agents-in-finance",
+        "source": "Monetary Authority of Singapore",
+        "published_at": "2026-07-03",
+        "summary": "MAS published Safeguards for Agentic Finance at Runtime (SAFR) with HSBC, JP Morgan Chase, Ant International, OCBC, Mastercard, Manulife and Visa. SAFR defines four runtime components \u2014 Agent Identity, Controls Repository, Disposition Engine and Audit Log \u2014 covering three core use cases including wealth management document reviews and client engagement workflows.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 9,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 9
+      },
+      {
+        "id": "art10",
+        "title": "AI Wealth Implementation Gap: 10.5% of Advisors Use AI Daily Despite 65% FI Deployment",
+        "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
+        "source": "Fintech Global",
+        "published_at": "2026-04-17",
+        "summary": "Despite 65% of financial institutions deploying AI and 90% in deployment or assessment, only 35% of wealth intermediaries actively use AI tools and a mere 10.5% do so daily. The gap between enterprise AI capability and front-line advisor adoption highlights change management challenges. By 2027, agentic AI is projected to deliver a 60-70% reduction in operational overhead for wealth management back offices.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 8
+      }
+    ],
     "Competitor Intelligence": [
       {
+        "id": "art04",
+        "title": "DBS Launches 18 New Wealth Centres Across Asia \u2014 First Wave Opens Q3 2026",
+        "url": "https://www.dbs.com/newsroom/DBS_to_launch_18_new_wealth_centres_across_the_region_by_2027_as_affluent_clients_seek_closer_relationships",
+        "source": "DBS",
+        "published_at": "2026-06-01",
+        "summary": "DBS announced its largest-ever physical wealth franchise expansion \u2014 18 new centres across Singapore, Hong Kong, mainland China, India, Indonesia and Taiwan \u2014 with the first wave opening Q3 2026. DBS will also upgrade 36 existing centres. The expansion is backed by DBS AUM reaching SGD 492bn in Q1 2026, surpassing its SGD 500bn target more than a year early.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
         "id": "art05",
-        "title": "Asia 2025 AUM League Tables: Assets Cross US$4tn, JP Morgan Enters Top Three Targeting HSBC",
-        "url": "https://asianprivatebanker.com/private-wealth/private-banking/asia-2025-aum-league-tables-assets-cross-us4tn-jpm-enters-top-three-nomura-debuts/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-03-31",
-        "summary": "Asia's top 10 private banks grew AUM 22.5% to $2.5 trillion in 2025. JP Morgan Private Bank's 39.1% AUM surge to $299bn puts it within $3bn of HSBC's $302bn regional lead, while Nomura's debut in the rankings signals a broadening competitive field and mounting pressure on HSBC's long-held top position.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 9,
+        "title": "Citi Sky: Google DeepMind AI Wealth Advisor Expanding to Asia After US Rollout",
+        "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies",
+        "source": "Citigroup",
+        "published_at": "2026-04-15",
+        "summary": "Citi launched Citi Sky, an always-on AI-powered wealth team member built using Google Cloud and Google DeepMind's Gemini real-time avatar and audio/video models. Initially deployed for Citigold US clients, Citi Sky provides CIO market insights and proactive portfolio prompts. Citi's Hong Kong operations already deploy related tools (AskWealth, Advisor Insights), making HK an imminent next rollout market.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 6,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art09",
+        "title": "DBS Primary Beneficiary as China Tightens Offshore Wealth Flow Controls",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-02/dbs-seen-to-benefit-from-china-s-tighter-grip-on-wealth-flows",
+        "source": "Bloomberg",
+        "published_at": "2026-07-02",
+        "summary": "Bloomberg analysis identifies DBS as primed to capture Chinese HNW assets as Beijing tightens controls on offshore wealth flows, redirecting assets through Singapore. DBS's SGD 492bn AUM milestone, Euromoney World's Best Private Bank 2026 award, and 18 new wealth centres opening across HSBC's core APAC markets position DBS to widen its lead if Chinese flows shift from Hong Kong-domiciled structures.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
         "surali_rel": 7,
         "noise_level": 3,
         "category": "Competitor Intelligence",
         "is_update": true,
-        "user_relevance": 9
+        "user_relevance": 6
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "art08",
+        "title": "MAS Future of Finance Institute: AI and Tokenisation Scale-Up Framework",
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-establishes-future-of-finance-institute-to-scale-financial-innovation",
+        "source": "Monetary Authority of Singapore",
+        "published_at": "2026-06-25",
+        "summary": "MAS announced the Future of Finance Institute (FFI) to move AI and tokenisation beyond pilots into industry-wide adoption. The FFI offers an Innovation Garage, Industry Sandboxes for programmable money and tokenised assets, a Programmable Compliance Toolkit, and a Knowledge Hub with validated use cases. The institute was announced one week before MAS published SAFR, indicating a coordinated Singapore AI governance push.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "is_update": true,
+        "user_relevance": 7
       }
     ]
   },
@@ -168,99 +236,161 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Swift Blockchain Ledger Goes Live: HSBC, DBS, StanChart Among 17-Bank Tokenised Payment Pilot",
-        "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure",
-        "source": "Swift",
-        "published_at": "2026-07-09",
-        "summary": "Swift launched its permissioned blockchain ledger on 9 July, enabling 17 banks \u2014 including HSBC, Citi, DBS, Standard Chartered, UBS, OCBC and UOB \u2014 to pilot 24/7 tokenised cross-border payments outside normal banking hours, built on Ethereum's Linea L2 network developed by ConsenSys.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "surali_rel": 7,
-        "noise_level": 4,
-        "category": "AI & Technology",
+        "title": "HSBC Private Bank Bolsters Taiwan Team \u2014 Offshore Head Joins from DBS",
+        "url": "https://asianprivatebanker.com/private-wealth/hsbc-pb-taps-ex-dbs-private-banker-to-strengthen-taiwan-push/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-07-11",
+        "summary": "HSBC Private Bank appointed Gloria Sun, formerly Senior Market Head for Taiwan at DBS Private Bank, as Market Head of Offshore Taiwan effective 13 July 2026. Based in Hong Kong, Sun leads offshore Taiwan teams across HK and Singapore. This follows Edward Chiu's hiring as onshore Taiwan market head in June, completing dual-track coverage for Taiwan's semiconductor-wealth boom.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
+        "surali_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 6
       },
       {
         "id": "art02",
-        "title": "HSBC Private Bank and Premier Wealth Appoints New Asia CIO",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-private-bank-premier-wealth-105347565.html",
-        "source": "Yahoo Finance / HSBC",
-        "published_at": "2026-07-06",
-        "summary": "HSBC appointed a new Asia CIO for Private Bank and Premier Wealth effective 6 July, based in Singapore and reporting to Global CIO Willem Sels and Singapore wealth head Ishan Sarkar \u2014 the latest move in HSBC's accelerating build-out of its Asia investment leadership bench.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "surali_rel": 8,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art03",
-        "title": "HSBC Deploys Wealth Intelligence AI Platform Across Private Bank",
-        "url": "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-deploys-wealth-intelligence/",
-        "source": "HSBC Private Bank",
-        "published_at": "2026-07-09",
-        "summary": "HSBC's Wealth Intelligence generative AI platform is now fully deployed across the private bank, providing relationship managers with personalised market insights and investment strategy recommendations \u2014 the operational output of the AI transformation programme led by incoming wealth platforms head Nicholas Elias.",
+        "title": "HSBC + Google Cloud: Multi-Year AI Partnership for Wealth, Risk, and 200+ Use Cases",
+        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/hsbc-and-google-cloud-announce-transformative-ai-banking-partnership",
+        "source": "HSBC Holdings",
+        "published_at": "2026-06-17",
+        "summary": "HSBC and Google Cloud announced a multi-year partnership at Google Cloud Summit London to deploy AI and agentic AI capabilities globally. The deal covers 200+ new AI use cases over two years generating over US$100m in value. Primary focus areas are personalised wealth management advice, financial crime risk management, and RM decision-support tools using Gemini models and Google DeepMind engineers.",
         "hsbc_relevancy": 9,
         "adam_rel": 9,
         "surali_rel": 8,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 9
+      },
+      {
+        "id": "art03",
+        "title": "MAS SAFR: Runtime AI Agent Governance Framework Co-Authored by HSBC and JP Morgan",
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-partners-industry-to-develop-safeguards-for-ai-agents-in-finance",
+        "source": "Monetary Authority of Singapore",
+        "published_at": "2026-07-03",
+        "summary": "MAS published Safeguards for Agentic Finance at Runtime (SAFR) with HSBC, JP Morgan Chase, Ant International, OCBC, Mastercard, Manulife and Visa. SAFR defines four runtime components \u2014 Agent Identity, Controls Repository, Disposition Engine and Audit Log \u2014 covering three core use cases including wealth management document reviews and client engagement workflows.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 9,
+        "surali_rel": 9,
+        "noise_level": 3,
+        "category": "AI & Technology",
         "is_update": true,
         "user_relevance": 9
       },
       {
         "id": "art04",
-        "title": "WEF AI Playbook for Financial Services: Industry Benchmark for AI Governance Released",
-        "url": "https://www.weforum.org/publications/the-ai-playbook-for-financial-services/",
-        "source": "World Economic Forum / Accenture",
-        "published_at": "2026-06-24",
-        "summary": "The World Economic Forum, with Accenture, published The AI Playbook for Financial Services at the Annual Meeting of New Champions, drawing on 18 months of roundtables with 150+ senior leaders from 100+ organisations. It identifies governance accountability as the primary differentiator between AI leaders and laggards, and maps a six-dimension maturity framework for enterprise AI deployment.",
+        "title": "DBS Launches 18 New Wealth Centres Across Asia \u2014 First Wave Opens Q3 2026",
+        "url": "https://www.dbs.com/newsroom/DBS_to_launch_18_new_wealth_centres_across_the_region_by_2027_as_affluent_clients_seek_closer_relationships",
+        "source": "DBS",
+        "published_at": "2026-06-01",
+        "summary": "DBS announced its largest-ever physical wealth franchise expansion \u2014 18 new centres across Singapore, Hong Kong, mainland China, India, Indonesia and Taiwan \u2014 with the first wave opening Q3 2026. DBS will also upgrade 36 existing centres. The expansion is backed by DBS AUM reaching SGD 492bn in Q1 2026, surpassing its SGD 500bn target more than a year early.",
         "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "surali_rel": 9,
+        "adam_rel": 8,
+        "surali_rel": 8,
         "noise_level": 3,
-        "category": "AI & Technology",
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art05",
+        "title": "Citi Sky: Google DeepMind AI Wealth Advisor Expanding to Asia After US Rollout",
+        "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies",
+        "source": "Citigroup",
+        "published_at": "2026-04-15",
+        "summary": "Citi launched Citi Sky, an always-on AI-powered wealth team member built using Google Cloud and Google DeepMind's Gemini real-time avatar and audio/video models. Initially deployed for Citigold US clients, Citi Sky provides CIO market insights and proactive portfolio prompts. Citi's Hong Kong operations already deploy related tools (AskWealth, Advisor Insights), making HK an imminent next rollout market.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "surali_rel": 6,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art06",
+        "title": "HSBC Launches HKD Stablecoin via PayMe in H2 2026 After HKMA Licence Grant",
+        "url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-welcomes-hkmas-grant-of-a-hong-kong-stablecoin-issuer-licence",
+        "source": "HSBC Hong Kong",
+        "published_at": "2026-04-10",
+        "summary": "HSBC and Standard Chartered's Anchorpoint Financial JV received Hong Kong's first stablecoin issuer licences from the HKMA. HSBC plans to launch a fully-backed HKD stablecoin in H2 2026, integrating it into PayMe (3.3m active users) and the HSBC HK App (up 20% active users YoY) for P2P and P2M payments. Each stablecoin is backed by high-quality liquid assets in segregated accounts.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "HSBC News",
         "is_update": true,
         "user_relevance": 7
       },
       {
-        "id": "art05",
-        "title": "Asia 2025 AUM League Tables: Assets Cross US$4tn, JP Morgan Enters Top Three Targeting HSBC",
-        "url": "https://asianprivatebanker.com/private-wealth/private-banking/asia-2025-aum-league-tables-assets-cross-us4tn-jpm-enters-top-three-nomura-debuts/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-03-31",
-        "summary": "Asia's top 10 private banks grew AUM 22.5% to $2.5 trillion in 2025. JP Morgan Private Bank's 39.1% AUM surge to $299bn puts it within $3bn of HSBC's $302bn regional lead, while Nomura's debut in the rankings signals a broadening competitive field and mounting pressure on HSBC's long-held top position.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 9,
+        "id": "art07",
+        "title": "HSBC Survey: 73% of HNW Investors Use AI \u2014 but Professionals Trusted 3x More",
+        "url": "https://www.hsbc.com/news-and-views/news/media-releases/2026/the-trust-threshold-ai-makes-investors-bolder-but-they-want-human-judgement-to-make-decisions",
+        "source": "HSBC Holdings",
+        "published_at": "2026-06-24",
+        "summary": "HSBC's Trust Threshold survey of ~10,000 affluent and HNW individuals across 10 markets found 73% now use AI for finance and investment. However, financial professionals are cited as the most influential factor in investment decisions at 37% versus 12% for AI \u2014 a 3x trust gap. The survey frames AI as a research and preparation tool while human relationships remain the monetisable differentiator.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
+        "surali_rel": 7,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 8
+      },
+      {
+        "id": "art08",
+        "title": "MAS Future of Finance Institute: AI and Tokenisation Scale-Up Framework",
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-establishes-future-of-finance-institute-to-scale-financial-innovation",
+        "source": "Monetary Authority of Singapore",
+        "published_at": "2026-06-25",
+        "summary": "MAS announced the Future of Finance Institute (FFI) to move AI and tokenisation beyond pilots into industry-wide adoption. The FFI offers an Innovation Garage, Industry Sandboxes for programmable money and tokenised assets, a Programmable Compliance Toolkit, and a Knowledge Hub with validated use cases. The institute was announced one week before MAS published SAFR, indicating a coordinated Singapore AI governance push.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "surali_rel": 8,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art09",
+        "title": "DBS Primary Beneficiary as China Tightens Offshore Wealth Flow Controls",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-02/dbs-seen-to-benefit-from-china-s-tighter-grip-on-wealth-flows",
+        "source": "Bloomberg",
+        "published_at": "2026-07-02",
+        "summary": "Bloomberg analysis identifies DBS as primed to capture Chinese HNW assets as Beijing tightens controls on offshore wealth flows, redirecting assets through Singapore. DBS's SGD 492bn AUM milestone, Euromoney World's Best Private Bank 2026 award, and 18 new wealth centres opening across HSBC's core APAC markets position DBS to widen its lead if Chinese flows shift from Hong Kong-domiciled structures.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
         "surali_rel": 7,
         "noise_level": 3,
         "category": "Competitor Intelligence",
         "is_update": true,
-        "user_relevance": 9
+        "user_relevance": 6
       },
       {
-        "id": "art06",
-        "title": "HSBC Bets on AI and $84 Trillion Inheritance Wave to Drive Wealth Boom",
-        "url": "https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151",
-        "source": "Taipei Times",
-        "published_at": "2026-06-16",
-        "summary": "HSBC is positioning its wealth business around two structural tailwinds: AI-enabled personalisation at scale and the historic $84 trillion intergenerational wealth transfer wave. The bank plans to use AI to serve mass-affluent clients at near-private-banking quality, deepening its APAC lead while competitors with legacy advisory models face cost and scalability limits.",
-        "hsbc_relevancy": 8,
+        "id": "art10",
+        "title": "AI Wealth Implementation Gap: 10.5% of Advisors Use AI Daily Despite 65% FI Deployment",
+        "url": "https://fintech.global/2026/04/17/ai-in-wealth-management-closing-the-implementation-gap/",
+        "source": "Fintech Global",
+        "published_at": "2026-04-17",
+        "summary": "Despite 65% of financial institutions deploying AI and 90% in deployment or assessment, only 35% of wealth intermediaries actively use AI tools and a mere 10.5% do so daily. The gap between enterprise AI capability and front-line advisor adoption highlights change management challenges. By 2027, agentic AI is projected to deliver a 60-70% reduction in operational overhead for wealth management back offices.",
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
         "surali_rel": 7,
         "noise_level": 2,
-        "category": "HSBC News",
+        "category": "AI & Technology",
         "is_update": true,
         "user_relevance": 8
       }
     ],
     "categories": {
-      "AI & Technology": "#6366f1",
+      "Private Banking & Wealth": "#059669",
       "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2"
+      "AI & Technology": "#6366f1",
+      "Competitor Intelligence": "#0891b2",
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
