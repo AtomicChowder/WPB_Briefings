@@ -92,7 +92,7 @@ Wait up to 3 minutes for GitHub Pages to deploy, then confirm the URL returns HT
 ```bash
 for i in $(seq 1 18); do
   code=$(curl -s -o /dev/null -w "%{http_code}" \
-    "https://atomicchowder.github.io/wpb_briefings/adam/")
+    "https://atomicchowder.github.io/WPB_Briefings/adam/")
   if [ "$code" = "200" ]; then
     echo "✓ adam briefing live (200)"
     break
@@ -125,7 +125,7 @@ None required. Everything runs on your Max subscription.
 
 Enable GitHub Pages on `main` branch, source: `/docs` folder.
 
-- Adam → `https://atomicchowder.github.io/wpb_briefings/adam/`
+- Adam → `https://atomicchowder.github.io/WPB_Briefings/adam/`
 
 ---
 
