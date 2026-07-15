@@ -29,9 +29,17 @@ Read `context/history.json`. Build a picture of the last 7 days of coverage — 
 URLs and topics are the "already reported" baseline every candidate is judged against.
 
 **2. Search for news — last 48 hours only**
-Run each search query listed in CLAUDE.md. Keep only articles verifiably published
-within the last 48 hours. It is normal for many queries to return nothing new — do
-not reach back further to compensate.
+Run EVERY search query listed in CLAUDE.md — including the general AI / new models /
+enterprise-technology ones, not just the bank-specific ones. Keep only articles
+verifiably published within the last 48 hours. It is normal for individual queries to
+return nothing new — do not reach back further in time to compensate.
+
+Target 8–15 articles. If fewer than 6 survive triage, run a SECOND, broader search
+pass (general AI and model news, fintech, agentic AI, operations/transformation,
+regulatory) — still strictly inside the 48-hour window — before accepting a lean
+briefing. Lean is acceptable only after that second pass; missing whole interest
+areas (e.g. zero AI & Technology items) usually means the search was too narrow,
+not that there was no news.
 
 **3. Triage every candidate**
 - Published within 48h? If not, discard — unless it is a material NEW development of

@@ -206,7 +206,14 @@ def main(argv: list[str]) -> int:
         hist = json.loads(HIST_PATH.read_text(encoding="utf-8"))
 
     for user_id in USERS:
-        covered_urls = set(hist.get(user_id, {}).get("covered_urls", []))
+        # Dedup against prior days only — a same-day re-run must not treat its
+        # own earlier output as "already covered" (re-run idempotency).
+        ub = hist.get(user_id, {})
+        if ub.get("daily"):
+            covered_urls = {u for d in ub["daily"] if d.get("date") != raw["date_str"]
+                            for u in d.get("urls", [])}
+        else:
+            covered_urls = set(ub.get("covered_urls", []))
         data = _build_for_user(user_id, raw, generated_at,
                                briefing_dt=briefing_dt, covered_urls=covered_urls)
         out = REPO / "docs" / user_id / "briefing_data.json"

@@ -44,13 +44,13 @@
       gap: 16px;
     }
     .header-brand { display: flex; align-items: center; gap: 14px; }
-    .hsbc-mark {
-      width: 44px; height: 44px; border-radius: 6px;
-      background: var(--hsbc-red);
-      display: flex; align-items: center; justify-content: center;
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
       flex-shrink: 0;
     }
-    .hsbc-mark svg { width: 28px; height: 28px; fill: white; }
     .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
     .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
     .header-meta { text-align: right; }
@@ -218,11 +218,7 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
-      <div class="hsbc-mark">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="16,2 30,16 16,30 2,16"/>
-        </svg>
-      </div>
+      <div class="hsbc-keyline"></div>
       <div class="brand-text">
         <h1>WPB Market Intelligence</h1>
         <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>

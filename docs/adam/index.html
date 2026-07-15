@@ -44,13 +44,13 @@
       gap: 16px;
     }
     .header-brand { display: flex; align-items: center; gap: 14px; }
-    .hsbc-mark {
-      width: 44px; height: 44px; border-radius: 6px;
-      background: var(--hsbc-red);
-      display: flex; align-items: center; justify-content: center;
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
       flex-shrink: 0;
     }
-    .hsbc-mark svg { width: 28px; height: 28px; fill: white; }
     .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
     .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
     .header-meta { text-align: right; }
@@ -218,11 +218,7 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
-      <div class="hsbc-mark">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="16,2 30,16 16,30 2,16"/>
-        </svg>
-      </div>
+      <div class="hsbc-keyline"></div>
       <div class="brand-text">
         <h1>WPB Market Intelligence</h1>
         <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
@@ -245,15 +241,15 @@
   <div class="section-wrap">
     <div class="section-label">Intelligence Summary</div>
     <h2 class="section-title">Today's Key Talking Points</h2>
-    <p class="section-sub">3 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <p class="section-sub">7 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
     <div class="tp-grid">
       
       <div class="tp-card">
         <div class="tp-num">1</div>
         <div class="tp-body">
           
-          <h3 class="tp-headline">StanChart puts BlackRock&#39;s Aladdin Wealth in RM hands — Hong Kong and Singapore first</h3>
-          <p class="tp-context">Standard Chartered is buying institutional-grade analytics rather than building, wiring Aladdin Wealth into its myWealth Advisor platform for Priority through Private Banking segments — starting in HSBC's two home wealth markets. The contrast with HSBC's in-house route (Wealth Intelligence, plus June's Google Cloud partnership) makes this a straight execution race: whoever lands AI-augmented advice in RM workflows first sets the client expectation. StanChart's rollout cadence is now an external benchmark for WPB change delivery.</p>
+          <h3 class="tp-headline">StanChart adopts Aladdin Wealth — catching up to where HSBC&#39;s PRISM has been for years</h3>
+          <p class="tp-context">Standard Chartered is wiring BlackRock's Aladdin Wealth into myWealth Advisor, starting in Singapore and Hong Kong. HSBC has run Aladdin for over six years and PRISM advisory is built on it — so this is a rival converging on HSBC's existing stack, not a leapfrog. The implication for change execution: with tooling converging, the competitive edge moves to advisory workflow quality, RM adoption and rollout pace — and BlackRock analytics now underpinning multiple APAC franchises makes vendor concentration a point worth raising in architecture discussions.</p>
           
           <div class="tp-sources">
             
@@ -286,10 +282,12 @@
         <div class="tp-num">3</div>
         <div class="tp-body">
           
-          <h3 class="tp-headline">Boutique pull on senior APAC private-banking talent is accelerating — a transformation retention risk</h3>
-          <p class="tp-context">Lighthouse Canton's appointment of <strong>Angela Saik, Managing Director and former DBS Private Bank Executive Director</strong> — reported 14 July — follows Julius Baer's rival-bank hires in Hong Kong the week before. Boutiques and multi-family offices are offering senior bankers equity and autonomy precisely while incumbents run multi-year change programmes. Key-person continuity in the RM and product bench is a delivery dependency worth making explicit in WPB programme risk logs.</p>
+          <h3 class="tp-headline">Agentic AI crosses into the mainstream — 51% of banks piloting, with wealth a named first-wave domain</h3>
+          <p class="tp-context">Reuters and PYMNTS report a majority of banks now piloting agentic AI — agents that act, not just answer — with wealth, client vetting and treasury the lead use cases, while Fiserv's agentOS and FIS's AML agents show the vendor stack industrialising. Peer adoption is now a measurable benchmark: when half the industry is piloting, the differentiator becomes operating-model readiness — governance, risk sign-off and RM workflow integration. Meanwhile OpenAI's GPT-5.6 release cut frontier-model costs again (Terra: GPT-5.5 quality at half price), improving the unit economics of scaling whatever makes it through the pipeline.</p>
           
           <div class="tp-sources">
+            
+            <a href="" target="_blank" rel="noopener" class="tp-source-link" title=""></a>
             
             <a href="" target="_blank" rel="noopener" class="tp-source-link" title=""></a>
             
@@ -333,10 +331,10 @@
     <h2 class="section-title">Articles by Category</h2>
     <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
     <div class="category-tabs" id="category-tabs">
-      <button class="cat-tab active" data-cat="all">All (3)</button>
+      <button class="cat-tab active" data-cat="all">All (7)</button>
       
       <button class="cat-tab" data-cat="Competitor Intelligence">
-        Competitor Intelligence (1)
+        Competitor Intelligence (2)
       </button>
       
       <button class="cat-tab" data-cat="HSBC News">
@@ -345,6 +343,14 @@
       
       <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
         Private Banking &amp; Wealth (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Operations &amp; Change">
+        Operations &amp; Change (1)
       </button>
       
     </div>
@@ -363,11 +369,27 @@
             <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
           </div>
           <div class="article-title">
-            <a href="https://www.hubbis.com/news/standard-chartered-announces-global-collaboration-with-blackrock-s-aladdin-wealth-to-enhance-mywealth-advisor" target="_blank" rel="noopener">Standard Chartered wires BlackRock&#39;s Aladdin Wealth into myWealth Advisor — Singapore and Hong Kong first</a>
+            <a href="https://www.hubbis.com/news/standard-chartered-announces-global-collaboration-with-blackrock-s-aladdin-wealth-to-enhance-mywealth-advisor" target="_blank" rel="noopener">Standard Chartered adopts BlackRock&#39;s Aladdin Wealth for myWealth Advisor — Singapore and Hong Kong first</a>
           </div>
-          <p class="article-summary">Standard Chartered announced a global collaboration with BlackRock&#39;s Aladdin Wealth, embedding institutional-grade portfolio analytics into its myWealth Advisor platform, with the initial rollout covering Priority, Priority Private and Private Banking clients in Singapore and Hong Kong. It is a buy-over-build counter to in-house AI advisory stacks such as HSBC&#39;s Wealth Intelligence and June&#39;s Google Cloud partnership, putting a direct APAC rival on an accelerated delivery path. The competitive question is now execution speed: how fast StanChart lands this in RM workflows is the benchmark WPB&#39;s own change programme will be measured against.</p>
+          <p class="article-summary">Standard Chartered announced a global collaboration with BlackRock&#39;s Aladdin Wealth, embedding portfolio analytics into its myWealth Advisor platform, rolling out first to Priority, Priority Private and Private Banking clients in Singapore and Hong Kong. This is catch-up rather than leapfrog: HSBC has run Aladdin for over six years and PRISM advisory is built on it — StanChart is converging on the same vendor stack HSBC already operates at scale. With tooling converging, differentiation shifts to advisory workflow quality, RM adoption and delivery pace — and shared reliance on BlackRock analytics across APAC rivals adds a vendor-concentration angle worth watching.</p>
           <div class="article-footer">
             <span class="article-source">Hubbis / Standard Chartered</span>
+            <span>14 Jul 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art06" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.finstar.com/fintech-banking-industry-newsletter-138/" target="_blank" rel="noopener">Citi signs Siam Commercial Bank as first client for tokenised clearing — 24/7 US dollars for Thai corporates</a>
+          </div>
+          <p class="article-summary">Siam Commercial Bank became Citi&#39;s first client for a combined tokenised clearing service, letting Thai corporates move US dollars around the clock. Citi is operationalising digital-asset rails in Asia while HSBC scales its own HKD stablecoin licence (granted April) and the HKMA advances its tokenisation agenda — the region&#39;s transaction-banking incumbents are now racing to production, not pilots. Treasury-adjacent tokenisation capability increasingly frames what wealth and corporate clients will expect as table stakes from their primary bank.</p>
+          <div class="article-footer">
+            <span class="article-source">Finstar fintech weekly</span>
             <span>14 Jul 2026</span>
           </div>
         </article>
@@ -427,6 +449,74 @@
       </div>
     </div>
     
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art04" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●●</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-14-2026" target="_blank" rel="noopener">OpenAI&#39;s GPT-5.6 goes public: Sol, Terra and Luna tiers plus full-duplex GPT-Live voice models</a>
+          </div>
+          <p class="article-summary">OpenAI publicly released its GPT-5.6 family — Sol (flagship with an Ultra subagent mode and Max reasoning setting), Terra (GPT-5.5-level quality at roughly half the cost) and Luna (fast tier) — two weeks after a government-requested limited rollout, alongside GPT-Live full-duplex voice models that listen and speak simultaneously. Terra&#39;s cost-quality point materially shifts the economics of scaling GenAI across enterprise workloads, and full-duplex voice moves conversational AI closer to client-servicing grade. For a change portfolio negotiating AI unit costs and use-case sequencing, the frontier price floor just dropped again.</p>
+          <div class="article-footer">
+            <span class="article-source">BuildFastWithAI / CNBC</span>
+            <span>14 Jul 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art07" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" target="_blank" rel="noopener">Anthropic reported at ~$47bn annualised revenue and profitable, as Google-Microsoft enterprise alliance forms</a>
+          </div>
+          <p class="article-summary">Industry roundups this week report Anthropic has become the AI revenue leader at roughly US$47bn annualised and reportedly profitable in 2026, driven by Claude Code and deep enterprise adoption, while Google and Microsoft are lining up an enterprise-software alliance to counter Anthropic and OpenAI. Vendor viability and concentration risk are moving in opposite directions: the frontier labs look financially durable, but enterprise AI procurement is consolidating into two or three camps. Relevant context for any bank negotiating multi-year AI platform commitments — including the model choices underneath WPB&#39;s own AI roadmap.</p>
+          <div class="article-footer">
+            <span class="article-source">BuildFastWithAI roundup</span>
+            <span>14 Jul 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Operations &amp; Change">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #7c3aed"></span>
+        Operations &amp; Change
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art05" data-category="Operations &amp; Change">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.pymnts.com/news/banking/2026/51percent-of-banks-piloting-ai-agents-to-boost-productivity/" target="_blank" rel="noopener">Majority of banks now piloting agentic AI — wealth, client vetting and treasury named first-wave domains</a>
+          </div>
+          <p class="article-summary">A survey reported by Reuters and PYMNTS this week finds 51% of banks are piloting AI agents, with banks explicitly promoting agentic AI for wealth, client vetting, treasury and trading — agents that act autonomously and work alongside humans, not just answer questions. The vendor stack is industrialising in parallel: Fiserv&#39;s agentOS is heading to general availability by August and FIS is building agents that compress AML investigations from days to minutes. With half the industry piloting, the differentiator shifts from &#39;whether&#39; to operating-model readiness — governance, risk sign-off and RM workflow integration — a direct pacing benchmark for WPB&#39;s agentic roadmap.</p>
+          <div class="article-footer">
+            <span class="article-source">PYMNTS / Reuters</span>
+            <span>14 Jul 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
   </div>
 </section>
 
@@ -434,7 +524,7 @@
      FOOTER
 ════════════════════════════════════════════ -->
 <footer class="site-footer">
-  Generated 15 Jul 2026, 05:04 UTC &nbsp;·&nbsp;
+  Generated 15 Jul 2026, 05:24 UTC &nbsp;·&nbsp;
   <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
   Powered by Claude AI (Anthropic)
 </footer>
@@ -443,7 +533,7 @@
      D3.js BUBBLE CHART
 ════════════════════════════════════════════ -->
 <script>
-const CHART_DATA = {"articles": [{"id": "art01", "title": "Standard Chartered wires BlackRock's Aladdin Wealth into myWealth Advisor \u2014 Singapore and Hong Kong first", "url": "https://www.hubbis.com/news/standard-chartered-announces-global-collaboration-with-blackrock-s-aladdin-wealth-to-enhance-mywealth-advisor", "source": "Hubbis / Standard Chartered", "published_at": "2026-07-14", "summary": "Standard Chartered announced a global collaboration with BlackRock's Aladdin Wealth, embedding institutional-grade portfolio analytics into its myWealth Advisor platform, with the initial rollout covering Priority, Priority Private and Private Banking clients in Singapore and Hong Kong. It is a buy-over-build counter to in-house AI advisory stacks such as HSBC's Wealth Intelligence and June's Google Cloud partnership, putting a direct APAC rival on an accelerated delivery path. The competitive question is now execution speed: how fast StanChart lands this in RM workflows is the benchmark WPB's own change programme will be measured against.", "hsbc_relevancy": 8, "adam_rel": 9, "noise_level": 4, "category": "Competitor Intelligence", "is_update": false, "user_relevance": 9}, {"id": "art02", "title": "HSBC shares hit 52-week high \u2014 analysts say 4 August interims must prove faster wealth growth", "url": "https://ts2.tech/en/hsbc-stock-is-down-9-from-its-high-yet-analysts-see-less-than-2-upside/", "source": "TS2 / market commentary", "published_at": "2026-07-14", "summary": "HSBC shares touched a 52-week high on 14 July, but with the median analyst target barely 1.5% above the price, commentators argue the 4 August interim results must show cleaner credit outcomes and demonstrably faster wealth growth to justify further re-rating. The backdrop includes the FT's 10 July report that HSBC is seeking buyers for roughly US$3.5bn of troubled Hong Kong commercial-property loans inherited from Hang Seng. Wealth delivery is now explicitly the equity story \u2014 the transformation portfolio Adam runs is where 'faster wealth growth' has to come from.", "hsbc_relevancy": 9, "adam_rel": 7, "noise_level": 2, "category": "HSBC News", "is_update": false, "user_relevance": 7}, {"id": "art03", "title": "Lighthouse Canton brings in DBS Private Bank executive director as MD \u2014 boutique pull on senior APAC talent", "url": "https://www.caproasia.com/2026/07/14/singapore-5-billion-wealth-asset-manager-lighthouse-canton-hired-dbs-private-bank-executive-director-angela-saik-as-managing-director-in-2025-november-16-years-private-banking-financial-industry/", "source": "Caproasia", "published_at": "2026-07-14", "summary": "Caproasia reported on 14 July that Lighthouse Canton, a US$5bn Singapore wealth and asset manager, brought in DBS Private Bank executive director Angela Saik as managing director (a hire made in November 2025), her career spanning DBS, Pictet, RBC and Standard Chartered. It is the latest sign of boutiques and multi-family offices pulling senior private-banking talent from the big APAC franchises \u2014 Julius Baer made rival-bank hires in Hong Kong the week prior. Talent retention through multi-year transformation is a delivery risk for every incumbent wealth programme, HSBC's included.", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 1, "category": "Private Banking & Wealth", "is_update": false, "user_relevance": 6}], "categories": {"Competitor Intelligence": "#0891b2", "HSBC News": "#dc2626", "Private Banking & Wealth": "#059669"}};
+const CHART_DATA = {"articles": [{"id": "art01", "title": "Standard Chartered adopts BlackRock's Aladdin Wealth for myWealth Advisor \u2014 Singapore and Hong Kong first", "url": "https://www.hubbis.com/news/standard-chartered-announces-global-collaboration-with-blackrock-s-aladdin-wealth-to-enhance-mywealth-advisor", "source": "Hubbis / Standard Chartered", "published_at": "2026-07-14", "summary": "Standard Chartered announced a global collaboration with BlackRock's Aladdin Wealth, embedding portfolio analytics into its myWealth Advisor platform, rolling out first to Priority, Priority Private and Private Banking clients in Singapore and Hong Kong. This is catch-up rather than leapfrog: HSBC has run Aladdin for over six years and PRISM advisory is built on it \u2014 StanChart is converging on the same vendor stack HSBC already operates at scale. With tooling converging, differentiation shifts to advisory workflow quality, RM adoption and delivery pace \u2014 and shared reliance on BlackRock analytics across APAC rivals adds a vendor-concentration angle worth watching.", "hsbc_relevancy": 8, "adam_rel": 9, "noise_level": 4, "category": "Competitor Intelligence", "is_update": false, "user_relevance": 9}, {"id": "art02", "title": "HSBC shares hit 52-week high \u2014 analysts say 4 August interims must prove faster wealth growth", "url": "https://ts2.tech/en/hsbc-stock-is-down-9-from-its-high-yet-analysts-see-less-than-2-upside/", "source": "TS2 / market commentary", "published_at": "2026-07-14", "summary": "HSBC shares touched a 52-week high on 14 July, but with the median analyst target barely 1.5% above the price, commentators argue the 4 August interim results must show cleaner credit outcomes and demonstrably faster wealth growth to justify further re-rating. The backdrop includes the FT's 10 July report that HSBC is seeking buyers for roughly US$3.5bn of troubled Hong Kong commercial-property loans inherited from Hang Seng. Wealth delivery is now explicitly the equity story \u2014 the transformation portfolio Adam runs is where 'faster wealth growth' has to come from.", "hsbc_relevancy": 9, "adam_rel": 7, "noise_level": 2, "category": "HSBC News", "is_update": false, "user_relevance": 7}, {"id": "art03", "title": "Lighthouse Canton brings in DBS Private Bank executive director as MD \u2014 boutique pull on senior APAC talent", "url": "https://www.caproasia.com/2026/07/14/singapore-5-billion-wealth-asset-manager-lighthouse-canton-hired-dbs-private-bank-executive-director-angela-saik-as-managing-director-in-2025-november-16-years-private-banking-financial-industry/", "source": "Caproasia", "published_at": "2026-07-14", "summary": "Caproasia reported on 14 July that Lighthouse Canton, a US$5bn Singapore wealth and asset manager, brought in DBS Private Bank executive director Angela Saik as managing director (a hire made in November 2025), her career spanning DBS, Pictet, RBC and Standard Chartered. It is the latest sign of boutiques and multi-family offices pulling senior private-banking talent from the big APAC franchises \u2014 Julius Baer made rival-bank hires in Hong Kong the week prior. Talent retention through multi-year transformation is a delivery risk for every incumbent wealth programme, HSBC's included.", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 1, "category": "Private Banking & Wealth", "is_update": false, "user_relevance": 6}, {"id": "art04", "title": "OpenAI's GPT-5.6 goes public: Sol, Terra and Luna tiers plus full-duplex GPT-Live voice models", "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-14-2026", "source": "BuildFastWithAI / CNBC", "published_at": "2026-07-14", "summary": "OpenAI publicly released its GPT-5.6 family \u2014 Sol (flagship with an Ultra subagent mode and Max reasoning setting), Terra (GPT-5.5-level quality at roughly half the cost) and Luna (fast tier) \u2014 two weeks after a government-requested limited rollout, alongside GPT-Live full-duplex voice models that listen and speak simultaneously. Terra's cost-quality point materially shifts the economics of scaling GenAI across enterprise workloads, and full-duplex voice moves conversational AI closer to client-servicing grade. For a change portfolio negotiating AI unit costs and use-case sequencing, the frontier price floor just dropped again.", "hsbc_relevancy": 4, "adam_rel": 8, "noise_level": 5, "category": "AI & Technology", "is_update": false, "user_relevance": 8}, {"id": "art05", "title": "Majority of banks now piloting agentic AI \u2014 wealth, client vetting and treasury named first-wave domains", "url": "https://www.pymnts.com/news/banking/2026/51percent-of-banks-piloting-ai-agents-to-boost-productivity/", "source": "PYMNTS / Reuters", "published_at": "2026-07-14", "summary": "A survey reported by Reuters and PYMNTS this week finds 51% of banks are piloting AI agents, with banks explicitly promoting agentic AI for wealth, client vetting, treasury and trading \u2014 agents that act autonomously and work alongside humans, not just answer questions. The vendor stack is industrialising in parallel: Fiserv's agentOS is heading to general availability by August and FIS is building agents that compress AML investigations from days to minutes. With half the industry piloting, the differentiator shifts from 'whether' to operating-model readiness \u2014 governance, risk sign-off and RM workflow integration \u2014 a direct pacing benchmark for WPB's agentic roadmap.", "hsbc_relevancy": 6, "adam_rel": 8, "noise_level": 3, "category": "Operations & Change", "is_update": false, "user_relevance": 8}, {"id": "art06", "title": "Citi signs Siam Commercial Bank as first client for tokenised clearing \u2014 24/7 US dollars for Thai corporates", "url": "https://www.finstar.com/fintech-banking-industry-newsletter-138/", "source": "Finstar fintech weekly", "published_at": "2026-07-14", "summary": "Siam Commercial Bank became Citi's first client for a combined tokenised clearing service, letting Thai corporates move US dollars around the clock. Citi is operationalising digital-asset rails in Asia while HSBC scales its own HKD stablecoin licence (granted April) and the HKMA advances its tokenisation agenda \u2014 the region's transaction-banking incumbents are now racing to production, not pilots. Treasury-adjacent tokenisation capability increasingly frames what wealth and corporate clients will expect as table stakes from their primary bank.", "hsbc_relevancy": 7, "adam_rel": 7, "noise_level": 2, "category": "Competitor Intelligence", "is_update": false, "user_relevance": 7}, {"id": "art07", "title": "Anthropic reported at ~$47bn annualised revenue and profitable, as Google-Microsoft enterprise alliance forms", "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026", "source": "BuildFastWithAI roundup", "published_at": "2026-07-14", "summary": "Industry roundups this week report Anthropic has become the AI revenue leader at roughly US$47bn annualised and reportedly profitable in 2026, driven by Claude Code and deep enterprise adoption, while Google and Microsoft are lining up an enterprise-software alliance to counter Anthropic and OpenAI. Vendor viability and concentration risk are moving in opposite directions: the frontier labs look financially durable, but enterprise AI procurement is consolidating into two or three camps. Relevant context for any bank negotiating multi-year AI platform commitments \u2014 including the model choices underneath WPB's own AI roadmap.", "hsbc_relevancy": 3, "adam_rel": 7, "noise_level": 3, "category": "AI & Technology", "is_update": false, "user_relevance": 7}], "categories": {"Competitor Intelligence": "#0891b2", "HSBC News": "#dc2626", "Private Banking & Wealth": "#059669", "AI & Technology": "#6366f1", "Operations & Change": "#7c3aed"}};
 
 function renderChart() {
   const container = document.getElementById('bubble-chart-container');

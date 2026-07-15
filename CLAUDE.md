@@ -31,6 +31,23 @@ Always push to `main` so GitHub Pages publishes immediately without any manual s
 
 ---
 
+## Domain Notes (institutional context — use when writing analysis)
+
+Facts about HSBC's own stack that competitor stories must be framed against:
+
+- **HSBC has used BlackRock's Aladdin for 6+ years.** The **PRISM advisory service**
+  is built on Aladdin. A competitor adopting Aladdin/Aladdin Wealth is *catching up*
+  to capability HSBC already runs at scale — never frame it as HSBC being behind.
+- **Wealth Intelligence** (launched Sept 2025) is HSBC's **staff-facing GenAI
+  research/insights ecosystem** (OpenAI-powered summarisation of CIO research and
+  news for RMs/investment counsellors). It is NOT a portfolio-analytics platform and
+  is not the head-to-head surface against Aladdin-type tools — don't compare them.
+- When a competitor adopts a vendor HSBC also uses, the analytical angles are:
+  convergence on the same stack (differentiation shifts to advisory workflow,
+  adoption and delivery pace) and vendor concentration risk — not "buy vs build".
+
+---
+
 ## Search Queries (use all of these when fetching news)
 
 ```
