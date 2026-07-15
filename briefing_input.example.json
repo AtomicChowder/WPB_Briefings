@@ -14,7 +14,6 @@
       "summary": "One sentence — why should this user care?",
       "hsbc_relevancy": 7,
       "adam_rel": 9,
-      "sirali_rel": 5,
       "noise_level": 3,
       "category": "AI & Technology",
       "is_update": false
@@ -38,14 +37,10 @@
           "is_update": false
         }
       ]
-    },
-    "sirali": {
-      "talking_points": []
     }
   },
 
   "breaking_news": {
-    "adam":   [],
-    "sirali": []
+    "adam": []
   }
 }

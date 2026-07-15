@@ -27,7 +27,7 @@ git checkout origin/main -- context/history.json 2>/dev/null || echo "[sync] no 
 git checkout origin/main -- docs/ 2>/dev/null || echo "[sync] no docs/ on main yet"
 
 # Ensure required directories exist
-mkdir -p context docs/adam docs/sirali
+mkdir -p context docs/adam
 
 # Initialise history.json if absent (first ever run)
 if [ ! -f context/history.json ]; then
@@ -35,8 +35,7 @@ if [ ! -f context/history.json ]; then
   python3 - <<'PY'
 import json, pathlib
 pathlib.Path("context/history.json").write_text(json.dumps({
-    "adam":   {"last_updated": None, "covered_urls": [], "covered_topics": [], "daily": []},
-    "sirali": {"last_updated": None, "covered_urls": [], "covered_topics": [], "daily": []},
+    "adam": {"last_updated": None, "covered_urls": [], "covered_topics": [], "daily": []},
 }, indent=2))
 PY
 fi

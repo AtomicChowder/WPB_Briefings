@@ -1,14 +1,14 @@
-"""Build docs/{user}/briefing_data.json for both users from a single input file.
+"""Build docs/adam/briefing_data.json from a single input file.
 
 The Claude Code Routine produces /tmp/briefing_input.json containing:
 - the date strings
-- a flat list of scored articles (with adam_rel and sirali_rel on each)
-- per-user talking points
-- optional per-user breaking_news
+- a flat list of scored articles (with adam_rel on each)
+- talking points
+- optional breaking_news
 
 This script handles all the deterministic JSON gymnastics: filtering by
 combined score >= 6, grouping by category, capping at 3 articles per category,
-sorting, and writing the final per-user briefing_data.json files.
+sorting, and writing the final briefing_data.json file.
 
 Doing this in a Python script (not via Claude's Write/Edit tools) avoids the
 stream-idle timeouts that have been the dominant failure mode.
@@ -30,19 +30,17 @@ Input schema (briefing_input.json):
       "summary": "One sentence — why should the user care?",
       "hsbc_relevancy": 7,
       "adam_rel": 9,
-      "sirali_rel": 5,
       "noise_level": 3,
       "category": "AI & Technology"
     }
   ],
   "users": {
-    "adam":   {"talking_points": [{"headline": "...", "why_it_matters": "...",
-                                    "bullets": ["...", "..."],
-                                    "source_links": [{"url": "...", "title": "..."}],
-                                    "is_update": false}]},
-    "sirali": {"talking_points": [...]}
+    "adam": {"talking_points": [{"headline": "...", "why_it_matters": "...",
+                                  "bullets": ["...", "..."],
+                                  "source_links": [{"url": "...", "title": "..."}],
+                                  "is_update": false}]}
   },
-  "breaking_news": {"adam": [], "sirali": []}   // optional
+  "breaking_news": {"adam": []}   // optional
 }
 """
 from __future__ import annotations
@@ -67,12 +65,8 @@ CATEGORY_COLOURS = {
 # Single source of truth for user metadata. Names are hardcoded here so a
 # typo in the routine prompt cannot leak into published output.
 #
-# A past misspelling of the second user's slug (an r/i transposition) shipped
-# for months via a stray directory before being fully purged. The assertion
-# below exists so that mistake cannot silently reoccur: if anyone ever edits
-# this dict to introduce it again, the pipeline hard-fails instead of quietly
-# publishing under the wrong slug. See _banned_spelling() for detection logic
-# — the banned string is intentionally not spelled out anywhere in this repo.
+# This is a single-user system (Adam Chow only). Do not add a second user
+# without explicit instruction — a prior second recipient was fully removed.
 USERS = {
     "adam": {
         "user_name":         "Adam Chow",
@@ -80,32 +74,11 @@ USERS = {
         "user_title":        "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
         "score_key":         "adam_rel",
     },
-    "sirali": {
-        "user_name":         "Sirali Siriwardene",
-        "user_display_name": "Sirali",
-        "user_title":        "COO & Global Head of Change Execution, WPS",
-        "score_key":         "sirali_rel",
-    },
 }
-
-
-def _banned_spelling() -> str:
-    # Built from parts rather than written literally so the banned word
-    # itself never appears as a string in this codebase.
-    return "s" + "u" + "r" + "a" + "l" + "i"
-
-
-for _uid, _meta in USERS.items():
-    _blob = " ".join([_uid, *_meta.values()]).lower()
-    if _banned_spelling() in _blob:
-        raise SystemExit(
-            f"FATAL: banned slug spelling detected in USERS metadata for {_uid!r}. "
-            "See the comment above USERS — the correct spelling is 'sirali'."
-        )
 
 REQUIRED_ARTICLE_FIELDS = (
     "id", "title", "url", "source", "published_at", "summary",
-    "hsbc_relevancy", "adam_rel", "sirali_rel", "noise_level", "category",
+    "hsbc_relevancy", "adam_rel", "noise_level", "category",
 )
 
 MAX_PER_CATEGORY = 3

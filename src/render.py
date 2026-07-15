@@ -1,11 +1,10 @@
 """
 HTML renderer for WPB briefings.
-Reads docs/{user_id}/briefing_data.json and writes docs/{user_id}/index.html.
+Reads docs/adam/briefing_data.json and writes docs/adam/index.html.
 No API calls — pure Jinja2 templating.
 
 Usage:
     python src/render.py adam
-    python src/render.py sirali
 """
 
 import json

@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# briefing-render — render docs/{user}/index.html for both users.
+# briefing-render — render docs/adam/index.html.
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
 python src/render.py adam
-python src/render.py sirali
 
 echo "[render] done"

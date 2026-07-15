@@ -1,8 +1,11 @@
 # WPB Market Intelligence Briefing — Project Context
 
-This repository generates a daily intelligence briefing for two HSBC WPB senior executives.
-The briefing is produced by a Claude Code Routine that runs entirely on the Max subscription —
-no external API keys required. Python (`src/render.py`) is used only for HTML templating.
+This repository generates a daily intelligence briefing for one HSBC WPB senior executive,
+Adam Chow. The briefing is produced by a Claude Code Routine that runs entirely on the Max
+subscription — no external API keys required. Python (`src/render.py`) is used only for HTML
+templating.
+
+This is a single-user system. Do not add a second recipient/user without explicit instruction.
 
 ## Git Permissions (OVERRIDE)
 
@@ -25,16 +28,6 @@ Always push to `main` so GitHub Pages publishes immediately without any manual s
   delivery, digital transformation, competitor intelligence, new AI models and tools
 - **Banks to monitor**: HSBC, DBS, Standard Chartered, Citibank, Hang Seng Bank (HASE), PayMe,
   UBS, JP Morgan, Bank of America, Deutsche Bank, Bank of China
-
-### Sirali Siriwardene
-- **Title**: COO & Global Head of Change Execution, WPS
-- **Organisation**: HSBC
-- **URL slug**: `sirali`
-- **Role focus**: Global COO strategy, operational efficiency, business management, and governing
-  the worldwide change execution programme. Adam's direct manager.
-- **Interests**: WPS COO strategy, global change execution governance, business management &
-  cost efficiency, operational resilience, regulatory compliance, AI in banking, wealth management
-- **Banks to monitor**: Same as Adam
 
 ---
 
@@ -135,11 +128,6 @@ headlines.
     "last_updated": "2026-04-26",
     "covered_urls": ["https://...", "https://..."],
     "covered_topics": ["DBS AI wealth platform", "HSBC Q1 results announcement"]
-  },
-  "sirali": {
-    "last_updated": "2026-04-26",
-    "covered_urls": [],
-    "covered_topics": []
   }
 }
 ```
@@ -231,8 +219,6 @@ src/render.py             — Reads briefing_data.json, renders HTML (no API cal
 context/history.json      — Rolling 7-day coverage history (committed to repo)
 docs/adam/index.html      — Adam's generated briefing (committed, served by GitHub Pages)
 docs/adam/briefing_data.json
-docs/sirali/index.html
-docs/sirali/briefing_data.json
 ROUTINE.md                — Claude Code Routine setup instructions
 CLAUDE.md                 — This file (loaded automatically by Claude Code)
 ```

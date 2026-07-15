@@ -17,12 +17,9 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 HIST_PATH = REPO / "context" / "history.json"
 WINDOW_DAYS = 7
-# "sirali" is correct. See src/build_briefing.py's _banned_spelling() comment
-# for why a past r/i-transposed misspelling is guarded against below.
-USERS = ("adam", "sirali")
-_banned = "s" + "u" + "r" + "a" + "l" + "i"
-if any(_banned in u.lower() for u in USERS):
-    raise SystemExit("FATAL: banned slug spelling detected in USERS.")
+# Single-user system (Adam Chow only). Do not add a second user without
+# explicit instruction — a prior second recipient was fully removed.
+USERS = ("adam",)
 
 
 def _empty_user_block() -> dict:
