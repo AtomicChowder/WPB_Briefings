@@ -2,7 +2,7 @@
 
 The Claude Code Routine produces /tmp/briefing_input.json containing:
 - the date strings
-- a flat list of scored articles (with adam_rel and surali_rel on each)
+- a flat list of scored articles (with adam_rel and sirali_rel on each)
 - per-user talking points
 - optional per-user breaking_news
 
@@ -30,7 +30,7 @@ Input schema (briefing_input.json):
       "summary": "One sentence — why should the user care?",
       "hsbc_relevancy": 7,
       "adam_rel": 9,
-      "surali_rel": 5,
+      "sirali_rel": 5,
       "noise_level": 3,
       "category": "AI & Technology"
     }
@@ -40,9 +40,9 @@ Input schema (briefing_input.json):
                                     "bullets": ["...", "..."],
                                     "source_links": [{"url": "...", "title": "..."}],
                                     "is_update": false}]},
-    "surali": {"talking_points": [...]}
+    "sirali": {"talking_points": [...]}
   },
-  "breaking_news": {"adam": [], "surali": []}   // optional
+  "breaking_news": {"adam": [], "sirali": []}   // optional
 }
 """
 from __future__ import annotations
@@ -66,6 +66,13 @@ CATEGORY_COLOURS = {
 
 # Single source of truth for user metadata. Names are hardcoded here so a
 # typo in the routine prompt cannot leak into published output.
+#
+# "sirali" is the ONLY correct spelling for Sirali Siriwardene's slug — not
+# "surali". A misspelling here shipped for ~5 months (May-Jul 2026) via a
+# stray docs/surali/ directory before being fully purged. The assertion
+# below exists specifically so that mistake cannot silently reoccur: if
+# anyone ever edits this dict to say "surali", the pipeline hard-fails
+# instead of quietly publishing under the wrong slug again.
 USERS = {
     "adam": {
         "user_name":         "Adam Chow",
@@ -73,17 +80,26 @@ USERS = {
         "user_title":        "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
         "score_key":         "adam_rel",
     },
-    "surali": {
-        "user_name":         "Surali Siriwardene",
-        "user_display_name": "Surali",
+    "sirali": {
+        "user_name":         "Sirali Siriwardene",
+        "user_display_name": "Sirali",
         "user_title":        "COO & Global Head of Change Execution, WPS",
-        "score_key":         "surali_rel",
+        "score_key":         "sirali_rel",
     },
 }
 
+for _uid, _meta in USERS.items():
+    _blob = " ".join([_uid, *_meta.values()])
+    if "surali" in _blob.lower():
+        raise SystemExit(
+            f"FATAL: 'surali' (with a u) detected in USERS metadata for {_uid!r}. "
+            "This spelling is permanently banned — see comment above USERS. "
+            "The correct spelling is 'sirali'."
+        )
+
 REQUIRED_ARTICLE_FIELDS = (
     "id", "title", "url", "source", "published_at", "summary",
-    "hsbc_relevancy", "adam_rel", "surali_rel", "noise_level", "category",
+    "hsbc_relevancy", "adam_rel", "sirali_rel", "noise_level", "category",
 )
 
 MAX_PER_CATEGORY = 3

@@ -17,7 +17,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 HIST_PATH = REPO / "context" / "history.json"
 WINDOW_DAYS = 7
-USERS = ("adam", "surali")
+# "sirali" — never "surali". See src/build_briefing.py for why this is pinned.
+USERS = ("adam", "sirali")
+if any("surali" in u.lower() for u in USERS):
+    raise SystemExit("FATAL: 'surali' (with a u) detected in USERS — banned spelling.")
 
 
 def _empty_user_block() -> dict:

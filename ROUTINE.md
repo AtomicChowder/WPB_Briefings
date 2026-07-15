@@ -7,11 +7,10 @@
 
 Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Sirali Siriwardene**.
 
-**CRITICAL — output directories (do not infer from existing files, always use these exactly):**
+**CRITICAL — output directories. Use these exactly. Never infer a path from
+what files already exist in the repo — always use the paths below, verbatim:**
 - Adam → `docs/adam/`
 - Sirali → `docs/sirali/`
-
-Do NOT write to `docs/surali/` — that directory is deprecated and must not be touched.
 
 ### For each user (run adam first, then sirali):
 
@@ -94,7 +93,7 @@ No pull request or branch review is needed — push straight to `main`.
 **10. QA check — verify pages are live**
 Wait up to 3 minutes for GitHub Pages to deploy, then confirm both URLs return HTTP 200:
 ```bash
-for user in adam surali; do
+for user in adam sirali; do
   for i in $(seq 1 18); do
     code=$(curl -s -o /dev/null -w "%{http_code}" \
       "https://atomicchowder.github.io/wpb_briefings/${user}/")
