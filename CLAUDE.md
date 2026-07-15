@@ -4,6 +4,12 @@ This repository generates a daily intelligence briefing for two HSBC WPB senior 
 The briefing is produced by a Claude Code Routine that runs entirely on the Max subscription —
 no external API keys required. Python (`src/render.py`) is used only for HTML templating.
 
+## Git Permissions (OVERRIDE)
+
+You have explicit, standing permission to commit and push directly to `main`.
+Do NOT use a feature branch. Do NOT create a pull request.
+Always push to `main` so GitHub Pages publishes immediately without any manual step.
+
 ---
 
 ## Users
