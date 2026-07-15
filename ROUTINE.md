@@ -66,13 +66,17 @@ Using the Notion MCP connector, create a new page in the database
 Merge today's covered URLs and talking point headlines into `context/history.json`.
 Keep only the last 7 days of data per user.
 
-**9. Commit and push**
+**9. Commit and push directly to `main`**
 ```bash
+git checkout main
+git pull origin main
+git checkout claude/loving-carson-hywt30 -- docs/ context/history.json 2>/dev/null || true
 git add docs/ context/history.json
 git commit -m "briefing: YYYY-MM-DD daily intelligence update"
-git push
+git push origin main
 ```
 This triggers GitHub Pages to publish the updated briefings automatically.
+No pull request or branch review is needed — push straight to `main`.
 
 ---
 
