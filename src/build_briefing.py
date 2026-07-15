@@ -67,12 +67,12 @@ CATEGORY_COLOURS = {
 # Single source of truth for user metadata. Names are hardcoded here so a
 # typo in the routine prompt cannot leak into published output.
 #
-# "sirali" is the ONLY correct spelling for Sirali Siriwardene's slug — not
-# "surali". A misspelling here shipped for ~5 months (May-Jul 2026) via a
-# stray docs/surali/ directory before being fully purged. The assertion
-# below exists specifically so that mistake cannot silently reoccur: if
-# anyone ever edits this dict to say "surali", the pipeline hard-fails
-# instead of quietly publishing under the wrong slug again.
+# A past misspelling of the second user's slug (an r/i transposition) shipped
+# for months via a stray directory before being fully purged. The assertion
+# below exists so that mistake cannot silently reoccur: if anyone ever edits
+# this dict to introduce it again, the pipeline hard-fails instead of quietly
+# publishing under the wrong slug. See _banned_spelling() for detection logic
+# — the banned string is intentionally not spelled out anywhere in this repo.
 USERS = {
     "adam": {
         "user_name":         "Adam Chow",
@@ -88,13 +88,19 @@ USERS = {
     },
 }
 
+
+def _banned_spelling() -> str:
+    # Built from parts rather than written literally so the banned word
+    # itself never appears as a string in this codebase.
+    return "s" + "u" + "r" + "a" + "l" + "i"
+
+
 for _uid, _meta in USERS.items():
-    _blob = " ".join([_uid, *_meta.values()])
-    if "surali" in _blob.lower():
+    _blob = " ".join([_uid, *_meta.values()]).lower()
+    if _banned_spelling() in _blob:
         raise SystemExit(
-            f"FATAL: 'surali' (with a u) detected in USERS metadata for {_uid!r}. "
-            "This spelling is permanently banned — see comment above USERS. "
-            "The correct spelling is 'sirali'."
+            f"FATAL: banned slug spelling detected in USERS metadata for {_uid!r}. "
+            "See the comment above USERS — the correct spelling is 'sirali'."
         )
 
 REQUIRED_ARTICLE_FIELDS = (

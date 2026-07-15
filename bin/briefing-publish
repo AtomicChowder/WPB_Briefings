@@ -15,21 +15,18 @@ DATE_STR="$(date -u +%Y-%m-%d)"
 
 git add docs/ context/history.json bin/ src/ templates/ CLAUDE.md ROUTINE.md requirements.txt 2>/dev/null || true
 
-# PERMANENT GUARD — the misspelling "s-u-r-a-l-i" (correct: "s-i-r-a-l-i")
-# shipped for ~5 months (May-Jul 2026) via a stray directory before being
-# fully purged. Refuse to publish anything that reintroduces it. The three
-# files below are excluded because they document/enforce this ban and must
-# name the banned string to do so.
-_banned="surali"
-_guard_files="bin/briefing-publish|src/build_briefing.py|src/update_history.py"
+# PERMANENT GUARD — an r/i-transposed misspelling of the second user's slug
+# shipped for months via a stray directory before being fully purged. Refuse
+# to publish anything that reintroduces it. Built from parts, not written
+# literally, so the banned string never appears in this repo's source.
+_banned="s""u""r""a""l""i"
 _hits=$(git diff --cached --name-only -z \
-  | xargs -0 grep -lI -i "$_banned" 2>/dev/null \
-  | grep -Ev "^(${_guard_files})\$" || true)
+  | xargs -0 grep -lI -i "$_banned" 2>/dev/null || true)
 if [ -n "$_hits" ]; then
   echo "" >&2
-  echo "[publish] BLOCKED: staged changes contain the banned misspelling." >&2
+  echo "[publish] BLOCKED: staged changes contain a banned slug misspelling." >&2
   echo "[publish] The correct spelling is 'sirali'. Fix the offending file(s) below" >&2
-  echo "[publish] and re-run — this check exists to stop a 5-month-old typo from" >&2
+  echo "[publish] and re-run — this check exists to stop an old typo from" >&2
   echo "[publish] ever coming back:" >&2
   echo "$_hits" >&2
   exit 3
