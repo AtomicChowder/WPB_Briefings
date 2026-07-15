@@ -24,13 +24,8 @@
     "adam": {
       "talking_points": [
         {
-          "headline": "Sharp executive headline (max 100 chars)",
-          "why_it_matters": "One sentence on why this matters for Adam's role.",
-          "bullets": [
-            "Key fact — wrap names like <strong>John Doe, CEO of Bank</strong>",
-            "Second key point with implications",
-            "Third point or call to action"
-          ],
+          "headline": "Sharp executive headline (max 120 chars)",
+          "context_html": "2-3 sentences of analysis answering 'so what for Adam?'. Wrap person names like <strong>John Doe, CEO of Bank</strong>. For updates, anchor prior coverage: 'Following X we covered on 4 May, ...'",
           "source_links": [
             { "url": "https://example.com/article", "title": "Source label (max 55 chars)" }
           ],

@@ -98,6 +98,29 @@ def _validate_articles(articles):
             raise SystemExit(f"unknown category {a['category']!r} on {a['id']}")
 
 
+def _normalize_talking_points(tps: list[dict]) -> list[dict]:
+    """Coerce talking points into the exact shape templates/briefing.html expects:
+    headline, context_html (analysis), source_links as [[url, title], ...] pairs."""
+    out = []
+    for tp in tps or []:
+        tp = dict(tp)
+        if not tp.get("context_html"):
+            parts = [tp.pop("why_it_matters", "")] + list(tp.pop("bullets", []))
+            tp["context_html"] = " ".join(p for p in parts if p)
+        if not tp.get("headline") or not tp.get("context_html"):
+            raise SystemExit(f"talking point missing headline/context_html: {tp}")
+        links = []
+        for link in tp.get("source_links", []):
+            if isinstance(link, dict):
+                links.append([link["url"], link["title"]])
+            else:
+                links.append(list(link))
+        tp["source_links"] = links
+        tp.setdefault("is_update", False)
+        out.append(tp)
+    return out
+
+
 def _build_for_user(user_id: str, raw: dict, generated_at: str,
                     briefing_dt: date, covered_urls: set[str]) -> dict:
     meta = USERS[user_id]
@@ -152,7 +175,7 @@ def _build_for_user(user_id: str, raw: dict, generated_at: str,
         "generated_at":      generated_at,
         "total_articles":    len(flat),
         "breaking_news":     breaking,
-        "talking_points":    user_block.get("talking_points", []),
+        "talking_points":    _normalize_talking_points(user_block.get("talking_points", [])),
         "articles_by_category": cats,
         "chart_data": {
             "articles":   flat,

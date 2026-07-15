@@ -48,6 +48,29 @@ HSBC competitor analysis wealth management
 
 ---
 
+## Freshness & Context Rules (CRITICAL — read before selecting any article)
+
+This is a **daily** intelligence product. Stale content destroys its credibility.
+
+1. **48-hour window.** Only include articles published within 48 hours of the briefing
+   date. The pipeline (`src/build_briefing.py`) enforces this and silently drops
+   anything older — do not try to route around it.
+2. **Updates are the only exception.** An older story may appear only with
+   `is_update: true`, and only when there is a genuinely NEW development. Its summary
+   must open with the new fact and explicitly anchor to the prior coverage
+   (e.g. "Following the Citi Sky launch we covered in April, Citi today announced…").
+3. **Never pad.** If fresh news is thin, publish a lean briefing. Six genuinely new
+   articles beat eighteen recycled ones. An empty category is fine.
+4. **Check history first.** Cross-reference every candidate against
+   `context/history.json` (`covered_urls` and `covered_topics`) before scoring.
+5. **Analysis, not aggregation.** Every article summary follows three beats:
+   (a) the new fact, (b) context — how it connects to prior coverage or the
+   competitive landscape, (c) why it matters to Adam — through the change-execution /
+   AI / private banking & wealth / COO lens. Talking points must answer
+   "so what for Adam?" explicitly in `context_html`.
+
+---
+
 ## Article Categories
 
 Assign every article to exactly one of these categories:
@@ -136,7 +159,11 @@ headlines.
 
 ## briefing_data.json Schema
 
-Write this file to `docs/{user_id}/briefing_data.json` before running `python src/render.py`.
+Do NOT hand-write this file. Write a `briefing_input.json` (see
+`briefing_input.example.json`) and run `python src/build_briefing.py <input>` — it
+applies the freshness gate, the history dedup gate, score filtering, category caps,
+and sorting deterministically, then writes `docs/adam/briefing_data.json` in the
+schema below.
 
 ```json
 {
@@ -201,7 +228,7 @@ Write this file to `docs/{user_id}/briefing_data.json` before running `python sr
 ```
 
 Rules:
-- `articles_by_category`: max **5 articles per category**, only include categories with articles
+- `articles_by_category`: max **3 articles per category** (enforced by the pipeline), only include categories with articles
 - `chart_data.articles`: flat list of ALL articles across all categories (for the bubble chart)
 - `chart_data.categories`: only include categories that appear in the data
 - `id` values must be consistent between `articles_by_category` and `chart_data.articles`

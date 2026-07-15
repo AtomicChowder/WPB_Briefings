@@ -8,50 +8,68 @@
 Run the daily WPB Market Intelligence Briefing for **Adam Chow** only. This is a single-user
 system — do not create or publish a briefing for anyone else.
 
+**PURPOSE:** surface genuinely NEW news (last 48 hours) at the intersection of HSBC,
+AI, business transformation, private banking & wealth, and the COO agenda — placed in
+context of what we've previously reported, with analysis on why each item matters to
+Adam. Never republish old stories as if they were news. Read the "Freshness & Context
+Rules" section of CLAUDE.md before selecting anything.
+
 **CRITICAL — output directory. Use this exactly. Never infer a path from
 what files already exist in the repo — always use the path below, verbatim:**
 - Adam → `docs/adam/`
 
-**1. Check history**
-Read `context/history.json`. Note the URLs and topics covered in the last 7 days so you
-don't repeat them unless there's a material update.
-
-**2. Search for news**
-Use your web search tool to run each of the search queries listed in CLAUDE.md. Collect
-all articles published in the last 48 hours. Aim for 20–40 articles across all queries.
-
-**3. Score and categorise**
-For each article, assign:
-- `hsbc_relevancy` (0–10) — per the rubric in CLAUDE.md
-- `user_relevance` (0–10) — based on Adam's role and interests
-- `noise_level` (1–5) — breadth of coverage
-- `category` — one of the 6 categories in CLAUDE.md
-
-Discard articles with combined score (hsbc + relevance) below 6.
-Keep a maximum of 5 articles per category, sorted by combined score descending.
-
-**4. Write 3 talking points**
-Select the 3 most strategically significant stories. Each talking point needs:
-- A sharp headline (max 120 chars)
-- 2–3 sentences of context explaining why it matters *specifically* to Adam's role
-- Wrap person names in `<strong>Name, Title</strong>` HTML tags
-- 1–3 supporting article URLs
-
-Do not repeat talking points covered in the last 7 days unless there's a material update.
-
-**5. Write `docs/adam/briefing_data.json`**
-Write the complete JSON file following the exact schema in CLAUDE.md.
-Include `briefing_date` as a formatted string (e.g. "Saturday, 26 April 2026").
-Include `generated_at` as UTC time.
-
-**6. Render HTML and archive**
+**0. Sync**
 ```bash
-pip install -r requirements.txt -q
-python src/render.py adam
+bash bin/briefing-sync
 ```
-This reads the JSON and writes `docs/adam/index.html`.
+Pulls live data (history + docs) from origin/main and installs dependencies.
 
-Also copy today's rendered page as a dated archive file and update the nav index:
+**1. Check history**
+Read `context/history.json`. Build a picture of the last 7 days of coverage — these
+URLs and topics are the "already reported" baseline every candidate is judged against.
+
+**2. Search for news — last 48 hours only**
+Run each search query listed in CLAUDE.md. Keep only articles verifiably published
+within the last 48 hours. It is normal for many queries to return nothing new — do
+not reach back further to compensate.
+
+**3. Triage every candidate**
+- Published within 48h? If not, discard — unless it is a material NEW development of
+  a story in history, in which case mark `is_update: true`.
+- URL or topic already in history? Discard — unless there's a new development
+  (`is_update: true`).
+
+**4. Score and write analysis**
+For each surviving article assign `hsbc_relevancy` (0–10), `adam_rel` (0–10),
+`noise_level` (1–5), and `category`. Write the summary in three beats:
+the new fact → context (link to prior coverage or competitive landscape) → why it
+matters to Adam. For `is_update` articles, the summary must open by anchoring the
+prior coverage ("Following X we covered on {date}, …").
+
+**5. Write 3 talking points**
+The 3 most strategically significant NEW stories. Each needs:
+- A sharp headline (max 120 chars)
+- `context_html`: 2–3 sentences of genuine analysis answering "so what for Adam?" —
+  wrap person names in `<strong>Name, Title</strong>` tags
+- 1–3 supporting source links
+
+Do not repeat talking points from the last 7 days unless flagged as an update.
+
+**6. Build via the pipeline (never hand-write briefing_data.json)**
+Write the input file per `briefing_input.example.json`, then:
+```bash
+python src/build_briefing.py /tmp/briefing_input.json
+python src/update_history.py /tmp/briefing_input.json
+```
+The build step enforces the 48h freshness gate, the history dedup gate, the combined
+score ≥ 6 filter, and the 3-per-category cap. If it drops articles you expected,
+that is the system working — do not bypass it.
+
+**7. Render HTML and archive**
+```bash
+bash bin/briefing-render
+```
+Then archive today's page and refresh the nav index:
 ```bash
 cp docs/adam/index.html docs/adam/{date_str}.html
 python3 -c "
@@ -62,7 +80,7 @@ open('docs/adam/nav.json','w').write(json.dumps(files, indent=2))
 "
 ```
 
-**7. Publish to Notion**
+**8. Publish to Notion**
 Using the Notion MCP connector, create a new page in the database
 **"WPB Weekly Intelligence Briefings"** with:
 - Title: `[Adam] WPB Briefing — {date}` (e.g. `[Adam] WPB Briefing — 26 Apr 2026`)
@@ -75,17 +93,11 @@ Using the Notion MCP connector, create a new page in the database
   followed by a grey paragraph for the summary
 - Set the "Recipient" property to `Adam Chow`
 
-**8. Update history**
-Merge today's covered URLs and talking point headlines into `context/history.json`.
-Keep only the last 7 days of data.
-
 **9. Commit and push directly to `main`**
 ```bash
-git add docs/ context/history.json
-git commit -m "briefing: YYYY-MM-DD daily intelligence update"
-git push origin main
+bash bin/briefing-publish
 ```
-No pull request or branch review is needed — push straight to `main`.
+This commits docs/ + history and pushes straight to `main` (no PR, no review).
 
 **10. QA check — verify the page is live**
 Wait up to 3 minutes for GitHub Pages to deploy, then confirm the URL returns HTTP 200:
