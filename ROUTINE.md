@@ -7,6 +7,12 @@
 
 Run the daily WPB Market Intelligence Briefing for **Adam Chow** and **Sirali Siriwardene**.
 
+**CRITICAL — output directories (do not infer from existing files, always use these exactly):**
+- Adam → `docs/adam/`
+- Sirali → `docs/sirali/`
+
+Do NOT write to `docs/surali/` — that directory is deprecated and must not be touched.
+
 ### For each user (run adam first, then sirali):
 
 **1. Check history**
@@ -41,12 +47,23 @@ Write the complete JSON file following the exact schema in CLAUDE.md.
 Include `briefing_date` as a formatted string (e.g. "Saturday, 26 April 2026").
 Include `generated_at` as UTC time.
 
-**6. Render HTML**
+**6. Render HTML and archive**
 ```bash
 pip install -r requirements.txt -q
 python src/render.py {user_id}
 ```
 This reads the JSON and writes `docs/{user_id}/index.html`.
+
+Also copy today's rendered page as a dated archive file and update the nav index:
+```bash
+cp docs/{user_id}/index.html docs/{user_id}/{date_str}.html
+python3 -c "
+import os, json
+files = sorted(f.replace('.html','') for f in os.listdir('docs/{user_id}')
+               if f.endswith('.html') and f != 'index.html' and len(f) == 15)
+open('docs/{user_id}/nav.json','w').write(json.dumps(files, indent=2))
+"
+```
 
 **7. Publish to Notion**
 Using the Notion MCP connector, create a new page in the database
@@ -68,15 +85,29 @@ Keep only the last 7 days of data per user.
 
 **9. Commit and push directly to `main`**
 ```bash
-git checkout main
-git pull origin main
-git checkout claude/loving-carson-hywt30 -- docs/ context/history.json 2>/dev/null || true
 git add docs/ context/history.json
 git commit -m "briefing: YYYY-MM-DD daily intelligence update"
 git push origin main
 ```
-This triggers GitHub Pages to publish the updated briefings automatically.
 No pull request or branch review is needed — push straight to `main`.
+
+**10. QA check — verify pages are live**
+Wait up to 3 minutes for GitHub Pages to deploy, then confirm both URLs return HTTP 200:
+```bash
+for user in adam surali; do
+  for i in $(seq 1 18); do
+    code=$(curl -s -o /dev/null -w "%{http_code}" \
+      "https://atomicchowder.github.io/wpb_briefings/${user}/")
+    if [ "$code" = "200" ]; then
+      echo "✓ ${user} briefing live (200)"
+      break
+    fi
+    [ $i -eq 18 ] && echo "✗ ${user} still returning ${code} after 3 min"
+    sleep 10
+  done
+done
+```
+If either URL does not return 200, send a PushNotification flagging the failure.
 
 ---
 
