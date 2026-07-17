@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-07-16",
+    "last_updated": "2026-07-17",
     "covered_urls": [
       "https://asianprivatebanker.com/private-wealth/next-phase-of-ai-china-investors-pivot-to-ai-infra-and-applications/",
       "https://asianprivatebanker.com/technology/can-asias-sub-us1bn-eams-afford-the-ai-revolution/",
@@ -19,6 +19,7 @@
       "https://www.caproasia.com/2026/07/14/singapore-5-billion-wealth-asset-manager-lighthouse-canton-hired-dbs-private-bank-executive-director-angela-saik-as-managing-director-in-2025-november-16-years-private-banking-financial-industry/",
       "https://www.caproasia.com/2026/07/14/singapore-largest-bank-dbs-crossed-s200-billion-154-billion-market-value-in-2026-july-13-7-26-dbs-is-also-southeast-asia-largest-company-by-market-value-founded-in-1968-by-singapore-government/",
       "https://www.cnbc.com/2026/07/15/morgan-stanley-ms-earnings-q2-2026-.html",
+      "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
       "https://www.dbs.com/newsroom/DBS_to_launch_18_new_wealth_centres_across_the_region_by_2027_as_affluent_clients_seek_closer_relationships",
       "https://www.dbs.com/newsroom/DBS_wins_Euromoneys_top_honour_as_the_Worlds_Best_Private_Bank_in_triple_global_award_sweep",
       "https://www.dunnixer.com/insights/information/banking/us/banking-process-transformation-roadmap-for-2026",
@@ -31,7 +32,10 @@
       "https://www.prnewswire.com/news-releases/citi-wealth-unveils-citi-sky--an-ai-powered-member-of-the-citi-wealth-team-built-using-google-cloud-and-google-deepmind-technologies-302749822.html",
       "https://www.pwchk.com/en/industries/financial-services/asset-and-wealth-management/asset-and-wealth-management-revolution-asia-pacific-jul2026.html",
       "https://www.pymnts.com/news/banking/2026/51percent-of-banks-piloting-ai-agents-to-boost-productivity/",
-      "https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151"
+      "https://www.taipeitimes.com/News/biz/archives/2026/06/16/2003859151",
+      "https://www.thestar.com.my/business/business-news/2026/07/16/dbs-targets-us775bil-in-wealth-assets-in-asia-push",
+      "https://www.thetradenews.com/buy-side-genai-adoption-hindered-by-broker-research-licensing-restrictions-despite-77-uptake-report-reveals/",
+      "https://www.thetradenews.com/hsbc-approved-for-bank-of-englands-digital-sandbox/"
     ],
     "covered_topics": [
       "4 August interims are now a wealth-growth proof point \u2014 the market has stopped paying in advance",
@@ -41,15 +45,18 @@
       "Anthropic and Blackstone bet AI's next trillion-dollar market is implementation, not models",
       "Bank of America Merrill AI-Powered Meeting Journey",
       "China investors AI infrastructure applications pivot",
+      "China's Moonshot AI closes the capability gap with Western frontier models via Kimi K3",
       "Citi Sky AI wealth avatar Google DeepMind April 2026",
       "Cloud-native architecture AI prerequisite digital banking 2026",
       "DBS 18 wealth centres Asia expansion 2027",
       "DBS S$200 billion market capitalisation July 2026",
       "DBS Samsung Securities wealth MOU July 2026",
       "DBS World's Best Private Bank Euromoney 2026",
+      "DBS targets S$1 trillion wealth AUM by 2030, backs it with a no-RM-required AI trading platform launching mid-August",
       "HKEX 300 IPOs 2026 US$37bn 2025",
       "HSBC Desmond Kuang CIO Asia appointment July 2026",
       "HSBC HKD stablecoin PayMe HKMA licence April 2026",
+      "HSBC Orion becomes first platform live in the Bank of England's Digital Securities Sandbox",
       "HSBC Singapore largest wealth centre Singapore Land Tower",
       "HSBC WPB AI and inheritance wave wealth strategy Asia",
       "Hong Kong overtakes Singapore wealthtech adoption",
@@ -135,6 +142,20 @@
           "Anthropic and Blackstone bet AI's next trillion-dollar market is implementation, not models",
           "Morgan Stanley's record AI-fuelled wealth quarter raises the bar ahead of WPB's August interims",
           "New AI visibility index shows JPMorgan owns the chatbot answer layer &mdash; most banks are invisible"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "urls": [
+          "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
+          "https://www.thestar.com.my/business/business-news/2026/07/16/dbs-targets-us775bil-in-wealth-assets-in-asia-push",
+          "https://www.thetradenews.com/buy-side-genai-adoption-hindered-by-broker-research-licensing-restrictions-despite-77-uptake-report-reveals/",
+          "https://www.thetradenews.com/hsbc-approved-for-bank-of-englands-digital-sandbox/"
+        ],
+        "topics": [
+          "DBS targets S$1 trillion wealth AUM by 2030, backs it with a no-RM-required AI trading platform launching mid-August",
+          "HSBC Orion becomes first platform live in the Bank of England's Digital Securities Sandbox",
+          "China's Moonshot AI closes the capability gap with Western frontier models via Kimi K3"
         ]
       }
     ]
