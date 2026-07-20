@@ -1,0 +1,41 @@
+{
+  "_comment": "Example input for src/build_briefing.py. The Routine produces this file at /tmp/briefing_input.json. Do NOT commit a real one; this example is just a schema reference.",
+
+  "date_str": "2026-05-01",
+  "briefing_date": "Friday, 1 May 2026",
+
+  "articles": [
+    {
+      "id": "art01",
+      "title": "Example article headline (max 90 chars)",
+      "url": "https://example.com/article",
+      "source": "Financial Times",
+      "published_at": "2026-05-01",
+      "summary": "One sentence — why should this user care?",
+      "hsbc_relevancy": 7,
+      "adam_rel": 9,
+      "noise_level": 3,
+      "category": "AI & Technology",
+      "is_update": false
+    }
+  ],
+
+  "users": {
+    "adam": {
+      "talking_points": [
+        {
+          "headline": "Sharp executive headline (max 120 chars)",
+          "context_html": "2-3 sentences of analysis answering 'so what for Adam?'. Wrap person names like <strong>John Doe, CEO of Bank</strong>. For updates, anchor prior coverage: 'Following X we covered on 4 May, ...'",
+          "source_links": [
+            { "url": "https://example.com/article", "title": "Source label (max 55 chars)" }
+          ],
+          "is_update": false
+        }
+      ]
+    }
+  },
+
+  "breaking_news": {
+    "adam": []
+  }
+}

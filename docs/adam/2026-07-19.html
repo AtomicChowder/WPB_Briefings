@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Sunday, 19 July 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Sunday, 19 July 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">5 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card is-update">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <div class="tp-update-badge">&#8635; Update</div>
+          
+          <h3 class="tp-headline">DBS and OCBC choose humans-plus-AI over AI-for-headcount — a different narrative to peers</h3>
+          <p class="tp-context">Bloomberg reports DBS and OCBC are explicitly growing relationship-manager headcount alongside AI tools rather than trimming staff, with <strong>Tan Teck Long, CEO of OCBC</strong> pledging the bank will use AI to support a larger business, not a smaller one, while lifting annual tech spend past S$1bn. That's a distinct framing from AI-driven restructuring narratives elsewhere in the industry — worth weighing as HSBC shapes its own AI-workforce messaging ahead of 4 August interim results, since these two competitors are betting the market rewards visible RM growth over headcount reduction.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="" target="_blank" rel="noopener" class="tp-source-link" title=""></a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">HSBC flagged AI-driven market volatility in its H2 outlook — the Moonshot shock arrived within 48 hours</h3>
+          <p class="tp-context">HSBC's own research desk published a H2 2026 outlook naming 'AI winners' as a key theme while explicitly cautioning that concentrated AI capex and earnings growth could raise volatility. Two days later, Chinese lab Moonshot's Kimi K3 and MiniMax's M3 debuted at WAIC 2026, triggering a Nasdaq and semiconductor sell-off on fears the China-US frontier-model gap is closing faster than priced in. For Adam's WPB advisory and change agenda, this is a live example of AI-model geopolitics feeding directly into portfolio risk conversations, not just a technology-desk story.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="" target="_blank" rel="noopener" class="tp-source-link" title=""></a>
+            
+            <a href="" target="_blank" rel="noopener" class="tp-source-link" title=""></a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Alibaba&#39;s new enterprise agent platform shows the AI-tooling market HSBC is betting on is consolidating fast</h3>
+          <p class="tp-context">Alibaba Cloud used WAIC 2026 to launch Agent Native Cloud, a multi-agent orchestration platform aimed squarely at enterprise production use — architecturally similar to the Google Cloud/Gemini Enterprise Agent Platform HSBC is already building wealth-advisory and risk use cases on. As Chinese hyperscalers now field competing enterprise-agent stacks, the vendor-selection and lock-in questions Adam's change-execution team is navigating with Google Cloud are becoming a live competitive dynamic, not a one-off procurement decision.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="" target="_blank" rel="noopener" class="tp-source-link" title=""></a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (5)</button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
+        Private Banking &amp; Wealth (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (1)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art01" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.aninews.in/news/business/emerging-markets-poised-to-outperform-in-h2-2026-amid-attractive-valuations-ai-led-growth-hsbc20260719142848/" target="_blank" rel="noopener">HSBC: emerging markets, AI winners to outperform in H2 2026 despite volatility risk</a>
+          </div>
+          <p class="article-summary">HSBC&#39;s own research desk says emerging markets — up 24% in H1 2026, more than double developed markets — remain attractively valued (11.5x forward P/E vs 17.5x globally) and should keep outperforming into H2, led by AI-exposed Asian equities. The report explicitly cautioned that concentrated tech-sector earnings growth and rising AI capex could raise volatility risk — a caveat that proved prescient within 48 hours (see the Moonshot story below).</p>
+          <div class="article-footer">
+            <span class="article-source">ANI News</span>
+            <span>19 Jul 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art02" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●●</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.axios.com/2026/07/19/ai-chips-stocks-china" target="_blank" rel="noopener">Moonshot, MiniMax debuts at WAIC 2026 trigger global AI stock rout</a>
+          </div>
+          <p class="article-summary">Following the Moonshot Kimi K3 capability leap covered on 17 July, the model&#39;s debut alongside MiniMax&#39;s M3 at the World AI Conference in Shanghai (1,100+ exhibitors, 261 models, 108 chips shown) sent the Nasdaq down 1.4% and semiconductor stocks into a sharp slide on fears China is closing the frontier-model gap faster than markets had priced in. HSBC&#39;s own H2 2026 outlook, published the same week, had flagged exactly this kind of AI-driven volatility as a risk to its &#39;AI winners&#39; thesis.</p>
+          <div class="article-footer">
+            <span class="article-source">Axios</span>
+            <span>19 Jul 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art03" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.bloomberg.com/news/newsletters/2026-07-18/singapore-s-dbs-ocbc-hire-more-humans-to-work-with-ai-to-manage-clients-wealth" target="_blank" rel="noopener">DBS and OCBC bet on humans-plus-AI, not AI-for-headcount, in wealth build-out</a>
+          </div>
+          <p class="article-summary">Extending the DBS wealth-hiring push covered on 17 July, Bloomberg reports both DBS and OCBC are explicitly pairing new relationship-manager hires with AI tools rather than substituting one for the other. &lt;strong&gt;Tan Teck Long, CEO of OCBC&lt;/strong&gt; pledged the bank will grow headcount alongside its &#39;Wendy&#39;/&#39;Wayne&#39; AI avatar platform and lift annual tech spend past S$1bn — the opposite framing to AI-driven headcount reduction stories elsewhere in the industry.</p>
+          <div class="article-footer">
+            <span class="article-source">Bloomberg</span>
+            <span>18 Jul 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #059669"></span>
+        Private Banking &amp; Wealth
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art04" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.caproasia.com/2026/07/18/bank-of-singapore-cio-investment-institute-released-2026-supertrends-1-navigating-chokepoints-2-whole-portfolio-approach-3-china-renaissance-4-artificial-intelligence-ai-5-longevity-econo/" target="_blank" rel="noopener">Bank of Singapore names AI one of five &#39;Supertrends&#39; shaping 2026 portfolios</a>
+          </div>
+          <p class="article-summary">Bank of Singapore&#39;s CIO Investment Institute published its 2026 house view, naming five investment &#39;Supertrends&#39; for private banking clients: market chokepoints, whole-portfolio construction, a China renaissance thesis, AI, and the longevity economy. It&#39;s a useful read on how a direct APAC wealth competitor is framing client conversations around AI exposure just as the Moonshot-driven rout above tests that thesis.</p>
+          <div class="article-footer">
+            <span class="article-source">Caproasia</span>
+            <span>18 Jul 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art05" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 2/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://cryptobriefing.com/alibaba-cloud-launches-agent-native-cloud-to-scale-enterprise-ai-agents/" target="_blank" rel="noopener">Alibaba Cloud launches &#39;Agent Native Cloud&#39; for enterprise AI agents</a>
+          </div>
+          <p class="article-summary">Unveiled by &lt;strong&gt;Qi Zhou, Head of Alibaba Cloud&#39;s Cloud-Native Application Platform&lt;/strong&gt; at WAIC 2026, Agent Native Cloud adds multi-agent orchestration (&#39;AgentTeams&#39;), sandboxed execution and enterprise identity integration for running fleets of AI agents in production. It&#39;s an architecturally similar rival to the Google Cloud/Gemini Enterprise Agent Platform HSBC is already building wealth-advisory and risk use cases on — another sign the enterprise-agent tooling market is consolidating around a handful of hyperscaler stacks.</p>
+          <div class="article-footer">
+            <span class="article-source">Crypto Briefing</span>
+            <span>18 Jul 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 19 Jul 2026, 23:13 UTC &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "art01", "title": "HSBC: emerging markets, AI winners to outperform in H2 2026 despite volatility risk", "url": "https://www.aninews.in/news/business/emerging-markets-poised-to-outperform-in-h2-2026-amid-attractive-valuations-ai-led-growth-hsbc20260719142848/", "source": "ANI News", "published_at": "2026-07-19", "summary": "HSBC's own research desk says emerging markets \u2014 up 24% in H1 2026, more than double developed markets \u2014 remain attractively valued (11.5x forward P/E vs 17.5x globally) and should keep outperforming into H2, led by AI-exposed Asian equities. The report explicitly cautioned that concentrated tech-sector earnings growth and rising AI capex could raise volatility risk \u2014 a caveat that proved prescient within 48 hours (see the Moonshot story below).", "hsbc_relevancy": 8, "adam_rel": 5, "noise_level": 4, "category": "Regulatory & Markets", "is_update": false, "user_relevance": 5}, {"id": "art02", "title": "Moonshot, MiniMax debuts at WAIC 2026 trigger global AI stock rout", "url": "https://www.axios.com/2026/07/19/ai-chips-stocks-china", "source": "Axios", "published_at": "2026-07-19", "summary": "Following the Moonshot Kimi K3 capability leap covered on 17 July, the model's debut alongside MiniMax's M3 at the World AI Conference in Shanghai (1,100+ exhibitors, 261 models, 108 chips shown) sent the Nasdaq down 1.4% and semiconductor stocks into a sharp slide on fears China is closing the frontier-model gap faster than markets had priced in. HSBC's own H2 2026 outlook, published the same week, had flagged exactly this kind of AI-driven volatility as a risk to its 'AI winners' thesis.", "hsbc_relevancy": 3, "adam_rel": 7, "noise_level": 5, "category": "Regulatory & Markets", "is_update": true, "user_relevance": 7}, {"id": "art03", "title": "DBS and OCBC bet on humans-plus-AI, not AI-for-headcount, in wealth build-out", "url": "https://www.bloomberg.com/news/newsletters/2026-07-18/singapore-s-dbs-ocbc-hire-more-humans-to-work-with-ai-to-manage-clients-wealth", "source": "Bloomberg", "published_at": "2026-07-18", "summary": "Extending the DBS wealth-hiring push covered on 17 July, Bloomberg reports both DBS and OCBC are explicitly pairing new relationship-manager hires with AI tools rather than substituting one for the other. <strong>Tan Teck Long, CEO of OCBC</strong> pledged the bank will grow headcount alongside its 'Wendy'/'Wayne' AI avatar platform and lift annual tech spend past S$1bn \u2014 the opposite framing to AI-driven headcount reduction stories elsewhere in the industry.", "hsbc_relevancy": 7, "adam_rel": 8, "noise_level": 3, "category": "Competitor Intelligence", "is_update": true, "user_relevance": 8}, {"id": "art04", "title": "Bank of Singapore names AI one of five 'Supertrends' shaping 2026 portfolios", "url": "https://www.caproasia.com/2026/07/18/bank-of-singapore-cio-investment-institute-released-2026-supertrends-1-navigating-chokepoints-2-whole-portfolio-approach-3-china-renaissance-4-artificial-intelligence-ai-5-longevity-econo/", "source": "Caproasia", "published_at": "2026-07-18", "summary": "Bank of Singapore's CIO Investment Institute published its 2026 house view, naming five investment 'Supertrends' for private banking clients: market chokepoints, whole-portfolio construction, a China renaissance thesis, AI, and the longevity economy. It's a useful read on how a direct APAC wealth competitor is framing client conversations around AI exposure just as the Moonshot-driven rout above tests that thesis.", "hsbc_relevancy": 3, "adam_rel": 5, "noise_level": 2, "category": "Private Banking & Wealth", "is_update": false, "user_relevance": 5}, {"id": "art05", "title": "Alibaba Cloud launches 'Agent Native Cloud' for enterprise AI agents", "url": "https://cryptobriefing.com/alibaba-cloud-launches-agent-native-cloud-to-scale-enterprise-ai-agents/", "source": "Crypto Briefing", "published_at": "2026-07-18", "summary": "Unveiled by <strong>Qi Zhou, Head of Alibaba Cloud's Cloud-Native Application Platform</strong> at WAIC 2026, Agent Native Cloud adds multi-agent orchestration ('AgentTeams'), sandboxed execution and enterprise identity integration for running fleets of AI agents in production. It's an architecturally similar rival to the Google Cloud/Gemini Enterprise Agent Platform HSBC is already building wealth-advisory and risk use cases on \u2014 another sign the enterprise-agent tooling market is consolidating around a handful of hyperscaler stacks.", "hsbc_relevancy": 2, "adam_rel": 6, "noise_level": 3, "category": "AI & Technology", "is_update": false, "user_relevance": 6}], "categories": {"Regulatory & Markets": "#d97706", "Competitor Intelligence": "#0891b2", "Private Banking & Wealth": "#059669", "AI & Technology": "#6366f1"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
