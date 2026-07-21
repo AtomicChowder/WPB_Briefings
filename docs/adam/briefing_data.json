@@ -3,64 +3,72 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Monday, 20 July 2026",
-  "date_str": "2026-07-20",
-  "generated_at": "20 Jul 2026, 23:11 UTC",
-  "total_articles": 6,
+  "briefing_date": "Tuesday, 21 July 2026",
+  "date_str": "2026-07-21",
+  "generated_at": "21 Jul 2026, 23:11 UTC",
+  "total_articles": 4,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "UOB Private Bank lures 17-year HSBC veteran to lead its Hong Kong private banking business",
-      "context_html": "<strong>Judy Chan, incoming Managing Director at UOB Private Bank Hong Kong</strong> joins after 17 years at HSBC and a stint running Bank of China's private banking market coverage, bringing 26 years of combined experience. She will report to <strong>Chew Mun Yew, Head of UOB Group Private Bank</strong>, taking charge of client coverage and team leadership for high-net-worth clients &mdash; a reminder that rivals are actively recruiting senior relationship talent out of HSBC's home market.",
+      "headline": "China's state rescue of AI stocks vindicates HSBC's H2 volatility call \u2014 and raises the August stakes",
+      "context_html": "Following the AI-driven market volatility HSBC flagged in its H2 outlook and the Kimi K3 shock we covered this week, Beijing has now mobilised its broadest state market intervention in years \u2014 record ETF inflows, a roughly CNY60bn state capital injection and insurer buying \u2014 to stop the AI/semiconductor selloff from becoming a wider confidence crisis. For Adam, this is a live test of how fast policy support can absorb an AI-driven shock to HSBC's heavily China/HK-exposed wealth book ahead of the 4 August interims.",
       "source_links": [
         [
-          "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N43M0A6:0-uob-private-bank-appoints-judy-chan-to-lead-hong-kong-business/",
-          "UOB Private Bank appoints Judy Chan (Reuters)"
-        ],
-        [
-          "https://www.caproasia.com/2026/07/20/uob-private-bank-hires-hsbc-17-year-veteran-bank-of-china-private-banking-market-head-judy-chan-as-managing-director-based-in-hong-kong-26-years-corporate-banking-private-banking-financial-indus/",
-          "UOB hires HSBC veteran Judy Chan as MD"
-        ]
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "Last week's Kimi K3 AI-stock shock gets reframed as a memory story, not a compute one",
-      "context_html": "Following the Kimi K3 sell-off we covered on 17 July, new Bloomberg analysis argues Moonshot AI's model draws its edge from memory-efficient architecture rather than sheer compute scale. That nuance doesn't undo the risk HSBC itself flagged in its H2 outlook &mdash; AI-driven volatility hitting chip and tech names on short notice &mdash; it sharpens it, keeping scrutiny of AI infrastructure spend live heading into WPB's August interims.",
-      "source_links": [
-        [
-          "https://www.bloomberg.com/news/articles/2026-07-20/moonshot-s-kimi-k3-may-be-more-about-memory-than-compute",
-          "Moonshot's Kimi K3 May Be More About Memory (Bloomberg)"
+          "https://www.bloomberg.com/news/articles/2026-07-21/china-broadens-market-rescue-with-record-inflows-into-tech-etf",
+          "China Broadens Market Rescue"
         ]
       ],
       "is_update": true
     },
     {
-      "headline": "Alibaba's 2.4-trillion-parameter Qwen3.8 launch drives another leg of the Hong Kong AI rally",
-      "context_html": "Alibaba shares rose 3.7% on the Qwen3.8 launch, its second major AI announcement in two days after Friday's enterprise agent platform, while the broader Hang Seng gained 2.4% on hopes of fresh Beijing stimulus. For WPB, the pattern is the story: AI model releases are now a direct, near-daily driver of Hong Kong market sentiment and client portfolio positioning, not a background technology theme.",
+      "headline": "JPMorgan's Dimon: AI cut 30-40% of jobs in some units \u2014 but margins won't follow",
+      "context_html": "<strong>Jamie Dimon, CEO of JPMorgan Chase</strong> disclosed AI has already eliminated 30-40% of headcount in some units, but warned the savings won't flow to shareholders because rivals capture similar efficiency gains from the same technology. It's the sharpest test case yet of the AI-ROI question Adam's change execution team will face when HSBC reports on 4 August \u2014 headcount cuts alone won't move the market if every competitor matches them.",
       "source_links": [
         [
-          "https://ts2.tech/en/alibaba-hkg9988-shares-gain-3-7-after-qwen3-8-launch-ai-premium-remains-modest/",
-          "Alibaba shares gain 3.7% after Qwen3.8 launch"
-        ],
+          "https://www.fool.com/investing/2026/07/21/jamie-dimon-says-ai-has-already-cut-30-to-40-of-jo/",
+          "Dimon: AI Cut 30-40% of Jobs in Some Units"
+        ]
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "Google's cheaper Gemini 3.6 Flash targets the exact agentic-cost problem enterprise AI is hitting",
+      "context_html": "Google DeepMind's new Flash-tier models cut output-token usage by up to 17% and are purpose-built for multi-step agentic workflows, directly answering enterprise complaints about the cost of running agents at scale. HSBC's Google Cloud/Gemini partnership already targets 200+ AI use cases across wealth management and RM tooling; a materially cheaper agentic tier improves the unit economics of scaling those past pilot stage.",
+      "source_links": [
         [
-          "https://www.marketscreener.com/news/hong-kong-stocks-rally-on-china-stimulus-hopes-alibaba-advances-ce7f51dad081f225",
-          "Hang Seng jumps on China stimulus hopes"
+          "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+          "Google Releases Three New Gemini Models"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Competitor Intelligence": [
+    "Regulatory & Markets": [
       {
         "id": "art01",
-        "title": "UOB Private Bank Hires HSBC Veteran Judy Chan as Hong Kong MD",
-        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N43M0A6:0-uob-private-bank-appoints-judy-chan-to-lead-hong-kong-business/",
-        "source": "Reuters",
-        "published_at": "2026-07-20",
-        "summary": "UOB Private Bank has named Judy Chan, a 17-year HSBC veteran who most recently headed Bank of China's private banking market coverage, as Managing Director for its Hong Kong business. Chan brings 26 years of private and corporate banking experience across Citigroup, HSBC and Bank of China, reporting to Chew Mun Yew, Head of UOB Group Private Bank, with responsibility for client coverage and HNW wealth delivery in Hong Kong.",
-        "hsbc_relevancy": 7,
+        "title": "China mounts broadest state market rescue in years to halt AI-driven tech stock selloff",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-21/china-broadens-market-rescue-with-record-inflows-into-tech-etf",
+        "source": "Bloomberg",
+        "published_at": "2026-07-21",
+        "summary": "Beijing coordinated regulators, state-backed investors and insurers -- including a roughly CNY60bn injection from two state capital operators and record inflows into tech ETFs -- to stop a selloff in AI and semiconductor stocks from becoming a broader confidence crisis, days after Moonshot AI's Kimi K3 release rattled markets.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 4,
+        "category": "Regulatory & Markets",
+        "is_update": true,
+        "user_relevance": 6
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art02",
+        "title": "Dimon: AI has already cut 30-40% of headcount in some JPMorgan units, but won't lift margins",
+        "url": "https://www.fool.com/investing/2026/07/21/jamie-dimon-says-ai-has-already-cut-30-to-40-of-jo/",
+        "source": "The Motley Fool",
+        "published_at": "2026-07-21",
+        "summary": "JPMorgan CEO Jamie Dimon disclosed AI has eliminated 30-40% of headcount in some bank units, part of a roughly $20bn tech budget and nearly 1,000 live AI use cases, but warned banks 'don't uniquely benefit from AI' since rivals capture similar cost reductions, leaving relative margins largely unchanged.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "Competitor Intelligence",
@@ -68,13 +76,13 @@
         "user_relevance": 8
       },
       {
-        "id": "art02",
-        "title": "LGT Private Bank Hires Ex-UBS Family Office Head David Wang in Singapore",
-        "url": "https://www.caproasia.com/2026/07/20/liechtenstein-487-billion-lgt-private-bank-hires-ubs-greater-china-global-family-office-institutional-wealth-executive-director-david-wang-as-managing-director-based-in-singapore-14-years-private/",
-        "source": "Caproasia",
+        "id": "art04",
+        "title": "Singapore banks' wealth income resilience cited as DBS, OCBC, UOB hold near record highs",
+        "url": "https://thefinance.sg/2026/07/20/dbs-ocbc-and-uob-in-focus-weekly-review-with-sias-2/",
+        "source": "TheFinance.sg / SIAS",
         "published_at": "2026-07-20",
-        "summary": "Liechtenstein's LGT Private Bank, which manages roughly $487 billion in group assets, has hired David Wang as Managing Director in Singapore. Wang joins from UBS, where he spent 14 years including as Executive Director for Greater China Global Family Office & Institutional Wealth, and previously held roles at Bank of Singapore and UOB.",
-        "hsbc_relevancy": 4,
+        "summary": "A SIAS weekly review flagged Singapore's three banks continuing to outperform on stronger wealth management fee income and higher-for-longer rate expectations, even as Middle East tensions push up oil prices and bond yields.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
@@ -85,63 +93,17 @@
     "AI & Technology": [
       {
         "id": "art03",
-        "title": "Moonshot's Kimi K3 May Be More About Memory Than Compute",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-20/moonshot-s-kimi-k3-may-be-more-about-memory-than-compute",
-        "source": "Bloomberg",
-        "published_at": "2026-07-20",
-        "summary": "New analysis suggests Moonshot AI's Kimi K3 model owes its performance edge to memory-efficient architecture rather than raw compute scale, offering fresh context on the model that triggered a sharp AI and semiconductor stock selloff the prior week. The reassessment comes as markets continue to digest the competitive threat posed by low-cost, high-capability Chinese frontier models.",
-        "hsbc_relevancy": 6,
+        "title": "Google releases Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber for cheaper agentic workloads",
+        "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+        "source": "TechCrunch",
+        "published_at": "2026-07-21",
+        "summary": "Google DeepMind shipped three new Flash-tier models -- Gemini 3.6 Flash, 3.5 Flash-Lite and a cybersecurity-tuned 3.5 Flash Cyber -- cutting output-token usage by up to 17% and pricing the flagship at $1.50/$7.50 per million input/output tokens, targeting cheaper, faster multi-step agentic workflows.",
+        "hsbc_relevancy": 5,
         "adam_rel": 8,
         "noise_level": 4,
         "category": "AI & Technology",
-        "is_update": true,
+        "is_update": false,
         "user_relevance": 8
-      },
-      {
-        "id": "art04",
-        "title": "Alibaba Shares Gain 3.7% After Qwen3.8 Launch",
-        "url": "https://ts2.tech/en/alibaba-hkg9988-shares-gain-3-7-after-qwen3-8-launch-ai-premium-remains-modest/",
-        "source": "ts2.tech",
-        "published_at": "2026-07-20",
-        "summary": "Alibaba shares rose 3.7% in Hong Kong trading after the company launched Qwen3.8, a 2.4-trillion-parameter AI model, extending a rapid cadence of Chinese AI releases. Analysts noted the stock's 'AI premium' remains modest despite the model announcement.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "art05",
-        "title": "Hang Seng Jumps on China Stimulus Hopes as Alibaba Advances",
-        "url": "https://www.marketscreener.com/news/hong-kong-stocks-rally-on-china-stimulus-hopes-alibaba-advances-ce7f51dad081f225",
-        "source": "MarketScreener",
-        "published_at": "2026-07-20",
-        "summary": "The Hang Seng Index rose 2.4% on hopes that Beijing will unveil additional stimulus following weaker-than-expected economic data, with Alibaba among the leading gainers. Investors are watching for signals from an expected PBOC policy meeting.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
-      }
-    ],
-    "HSBC News": [
-      {
-        "id": "art06",
-        "title": "HSBC Offers Indian Diaspora 19x Leverage on FCNR(B) Deposits",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-20/inr-usd-hsbc-offers-indian-diaspora-19x-leverage-on-fcnr-b-deposits",
-        "source": "Bloomberg",
-        "published_at": "2026-07-20",
-        "summary": "HSBC is among several lenders marketing high-leverage FCNR(B) foreign-currency deposit products to Non-Resident Indians, offering up to 19 times leverage to attract overseas dollar savings onshore. The push reflects intensifying competition among banks for NRI deposit flows.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 4,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 4
       }
     ]
   },
@@ -149,12 +111,26 @@
     "articles": [
       {
         "id": "art01",
-        "title": "UOB Private Bank Hires HSBC Veteran Judy Chan as Hong Kong MD",
-        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N43M0A6:0-uob-private-bank-appoints-judy-chan-to-lead-hong-kong-business/",
-        "source": "Reuters",
-        "published_at": "2026-07-20",
-        "summary": "UOB Private Bank has named Judy Chan, a 17-year HSBC veteran who most recently headed Bank of China's private banking market coverage, as Managing Director for its Hong Kong business. Chan brings 26 years of private and corporate banking experience across Citigroup, HSBC and Bank of China, reporting to Chew Mun Yew, Head of UOB Group Private Bank, with responsibility for client coverage and HNW wealth delivery in Hong Kong.",
-        "hsbc_relevancy": 7,
+        "title": "China mounts broadest state market rescue in years to halt AI-driven tech stock selloff",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-21/china-broadens-market-rescue-with-record-inflows-into-tech-etf",
+        "source": "Bloomberg",
+        "published_at": "2026-07-21",
+        "summary": "Beijing coordinated regulators, state-backed investors and insurers -- including a roughly CNY60bn injection from two state capital operators and record inflows into tech ETFs -- to stop a selloff in AI and semiconductor stocks from becoming a broader confidence crisis, days after Moonshot AI's Kimi K3 release rattled markets.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 4,
+        "category": "Regulatory & Markets",
+        "is_update": true,
+        "user_relevance": 6
+      },
+      {
+        "id": "art02",
+        "title": "Dimon: AI has already cut 30-40% of headcount in some JPMorgan units, but won't lift margins",
+        "url": "https://www.fool.com/investing/2026/07/21/jamie-dimon-says-ai-has-already-cut-30-to-40-of-jo/",
+        "source": "The Motley Fool",
+        "published_at": "2026-07-21",
+        "summary": "JPMorgan CEO Jamie Dimon disclosed AI has eliminated 30-40% of headcount in some bank units, part of a roughly $20bn tech budget and nearly 1,000 live AI use cases, but warned banks 'don't uniquely benefit from AI' since rivals capture similar cost reductions, leaving relative margins largely unchanged.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "Competitor Intelligence",
@@ -162,81 +138,38 @@
         "user_relevance": 8
       },
       {
-        "id": "art02",
-        "title": "LGT Private Bank Hires Ex-UBS Family Office Head David Wang in Singapore",
-        "url": "https://www.caproasia.com/2026/07/20/liechtenstein-487-billion-lgt-private-bank-hires-ubs-greater-china-global-family-office-institutional-wealth-executive-director-david-wang-as-managing-director-based-in-singapore-14-years-private/",
-        "source": "Caproasia",
+        "id": "art03",
+        "title": "Google releases Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber for cheaper agentic workloads",
+        "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+        "source": "TechCrunch",
+        "published_at": "2026-07-21",
+        "summary": "Google DeepMind shipped three new Flash-tier models -- Gemini 3.6 Flash, 3.5 Flash-Lite and a cybersecurity-tuned 3.5 Flash Cyber -- cutting output-token usage by up to 17% and pricing the flagship at $1.50/$7.50 per million input/output tokens, targeting cheaper, faster multi-step agentic workflows.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 8,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "Singapore banks' wealth income resilience cited as DBS, OCBC, UOB hold near record highs",
+        "url": "https://thefinance.sg/2026/07/20/dbs-ocbc-and-uob-in-focus-weekly-review-with-sias-2/",
+        "source": "TheFinance.sg / SIAS",
         "published_at": "2026-07-20",
-        "summary": "Liechtenstein's LGT Private Bank, which manages roughly $487 billion in group assets, has hired David Wang as Managing Director in Singapore. Wang joins from UBS, where he spent 14 years including as Executive Director for Greater China Global Family Office & Institutional Wealth, and previously held roles at Bank of Singapore and UOB.",
-        "hsbc_relevancy": 4,
+        "summary": "A SIAS weekly review flagged Singapore's three banks continuing to outperform on stronger wealth management fee income and higher-for-longer rate expectations, even as Middle East tensions push up oil prices and bond yields.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
         "is_update": false,
         "user_relevance": 6
-      },
-      {
-        "id": "art03",
-        "title": "Moonshot's Kimi K3 May Be More About Memory Than Compute",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-20/moonshot-s-kimi-k3-may-be-more-about-memory-than-compute",
-        "source": "Bloomberg",
-        "published_at": "2026-07-20",
-        "summary": "New analysis suggests Moonshot AI's Kimi K3 model owes its performance edge to memory-efficient architecture rather than raw compute scale, offering fresh context on the model that triggered a sharp AI and semiconductor stock selloff the prior week. The reassessment comes as markets continue to digest the competitive threat posed by low-cost, high-capability Chinese frontier models.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art04",
-        "title": "Alibaba Shares Gain 3.7% After Qwen3.8 Launch",
-        "url": "https://ts2.tech/en/alibaba-hkg9988-shares-gain-3-7-after-qwen3-8-launch-ai-premium-remains-modest/",
-        "source": "ts2.tech",
-        "published_at": "2026-07-20",
-        "summary": "Alibaba shares rose 3.7% in Hong Kong trading after the company launched Qwen3.8, a 2.4-trillion-parameter AI model, extending a rapid cadence of Chinese AI releases. Analysts noted the stock's 'AI premium' remains modest despite the model announcement.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art05",
-        "title": "Hang Seng Jumps on China Stimulus Hopes as Alibaba Advances",
-        "url": "https://www.marketscreener.com/news/hong-kong-stocks-rally-on-china-stimulus-hopes-alibaba-advances-ce7f51dad081f225",
-        "source": "MarketScreener",
-        "published_at": "2026-07-20",
-        "summary": "The Hang Seng Index rose 2.4% on hopes that Beijing will unveil additional stimulus following weaker-than-expected economic data, with Alibaba among the leading gainers. Investors are watching for signals from an expected PBOC policy meeting.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "art06",
-        "title": "HSBC Offers Indian Diaspora 19x Leverage on FCNR(B) Deposits",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-20/inr-usd-hsbc-offers-indian-diaspora-19x-leverage-on-fcnr-b-deposits",
-        "source": "Bloomberg",
-        "published_at": "2026-07-20",
-        "summary": "HSBC is among several lenders marketing high-leverage FCNR(B) foreign-currency deposit products to Non-Resident Indians, offering up to 19 times leverage to attract overseas dollar savings onshore. The push reflects intensifying competition among banks for NRI deposit flows.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 4,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 4
       }
     ],
     "categories": {
-      "Competitor Intelligence": "#0891b2",
-      "AI & Technology": "#6366f1",
       "Regulatory & Markets": "#d97706",
-      "HSBC News": "#dc2626"
+      "Competitor Intelligence": "#0891b2",
+      "AI & Technology": "#6366f1"
     }
   }
 }
