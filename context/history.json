@@ -1,76 +1,56 @@
 {
   "adam": {
-    "last_updated": "2026-07-21",
+    "last_updated": "2026-07-22",
     "covered_urls": [
+      "https://247wallst.com/investing/2026/07/21/citi-wealth-cio-warns-infinite-ai-agents-will-accelerate-cybersecuritys-share-of-enterprise-spending/",
+      "https://americanbazaaronline.com/2026/07/21/anthropics-1-5b-copyright-settlement-approved-by-us-court-484922/",
       "https://cryptobriefing.com/alibaba-cloud-launches-agent-native-cloud-to-scale-enterprise-ai-agents/",
       "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
       "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
       "https://thefinance.sg/2026/07/20/dbs-ocbc-and-uob-in-focus-weekly-review-with-sias-2/",
       "https://ts2.tech/en/alibaba-hkg9988-shares-gain-3-7-after-qwen3-8-launch-ai-premium-remains-modest/",
-      "https://ts2.tech/en/hsbc-stock-is-down-9-from-its-high-yet-analysts-see-less-than-2-upside/",
       "https://www.aninews.in/news/business/emerging-markets-poised-to-outperform-in-h2-2026-amid-attractive-valuations-ai-led-growth-hsbc20260719142848/",
       "https://www.axios.com/2026/07/19/ai-chips-stocks-china",
       "https://www.bloomberg.com/news/articles/2026-07-20/inr-usd-hsbc-offers-indian-diaspora-19x-leverage-on-fcnr-b-deposits",
       "https://www.bloomberg.com/news/articles/2026-07-20/moonshot-s-kimi-k3-may-be-more-about-memory-than-compute",
       "https://www.bloomberg.com/news/articles/2026-07-21/china-broadens-market-rescue-with-record-inflows-into-tech-etf",
       "https://www.bloomberg.com/news/newsletters/2026-07-18/singapore-s-dbs-ocbc-hire-more-humans-to-work-with-ai-to-manage-clients-wealth",
-      "https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026",
-      "https://www.buildfastwithai.com/blogs/ai-news-today-july-14-2026",
       "https://www.business-standard.com/markets/news/hsbc-upgrades-indian-equities-to-neutral-raises-sensex-target-to-84-000-126071600487_1.html",
-      "https://www.caproasia.com/2026/07/14/singapore-5-billion-wealth-asset-manager-lighthouse-canton-hired-dbs-private-bank-executive-director-angela-saik-as-managing-director-in-2025-november-16-years-private-banking-financial-industry/",
       "https://www.caproasia.com/2026/07/18/bank-of-singapore-cio-investment-institute-released-2026-supertrends-1-navigating-chokepoints-2-whole-portfolio-approach-3-china-renaissance-4-artificial-intelligence-ai-5-longevity-econo/",
       "https://www.caproasia.com/2026/07/20/liechtenstein-487-billion-lgt-private-bank-hires-ubs-greater-china-global-family-office-institutional-wealth-executive-director-david-wang-as-managing-director-based-in-singapore-14-years-private/",
       "https://www.cnbc.com/2026/07/15/morgan-stanley-ms-earnings-q2-2026-.html",
       "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
-      "https://www.finstar.com/fintech-banking-industry-newsletter-138/",
+      "https://www.cnbc.com/2026/07/21/us-china-ai-talks-bessent.html",
       "https://www.fool.com/investing/2026/07/21/jamie-dimon-says-ai-has-already-cut-30-to-40-of-jo/",
-      "https://www.hubbis.com/news/standard-chartered-announces-global-collaboration-with-blackrock-s-aladdin-wealth-to-enhance-mywealth-advisor",
       "https://www.marketscreener.com/news/hong-kong-stocks-rally-on-china-stimulus-hopes-alibaba-advances-ce7f51dad081f225",
       "https://www.prnewswire.com/news-releases/5w-ai-visibility-index-jpmorgan-owns-bankings-answer-layer--most-us-regional-banks-are-invisible-inside-chatgpt-claude-and-google-ai-overviews-302780102.html",
-      "https://www.pymnts.com/news/banking/2026/51percent-of-banks-piloting-ai-agents-to-boost-productivity/",
+      "https://www.sharecast.com/news/broker-recommendations/jpmorgan-upgrades-hsbc-to-neutral-raises-target-price-on-standard-chartered--7998644.html",
       "https://www.thestar.com.my/business/business-news/2026/07/16/dbs-targets-us775bil-in-wealth-assets-in-asia-push",
       "https://www.thetradenews.com/buy-side-genai-adoption-hindered-by-broker-research-licensing-restrictions-despite-77-uptake-report-reveals/",
       "https://www.thetradenews.com/hsbc-approved-for-bank-of-englands-digital-sandbox/",
       "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N43M0A6:0-uob-private-bank-appoints-judy-chan-to-lead-hong-kong-business/"
     ],
     "covered_topics": [
-      "4 August interims are now a wealth-growth proof point \u2014 the market has stopped paying in advance",
-      "Agentic AI crosses into the mainstream \u2014 51% of banks piloting, with wealth a named first-wave domain",
       "Alibaba's 2.4-trillion-parameter Qwen3.8 launch drives another leg of the Hong Kong AI rally",
       "Alibaba's new enterprise agent platform shows the AI-tooling market HSBC is betting on is consolidating fast",
       "Anthropic and Blackstone bet AI's next trillion-dollar market is implementation, not models",
       "China's Moonshot AI closes the capability gap with Western frontier models via Kimi K3",
       "China's state rescue of AI stocks vindicates HSBC's H2 volatility call \u2014 and raises the August stakes",
+      "Citi Wealth's CIO just flagged AI-agent cyber risk as underfunded industry-wide",
       "DBS and OCBC choose humans-plus-AI over AI-for-headcount \u2014 a different narrative to peers",
       "DBS targets S$1 trillion wealth AUM by 2030, backs it with a no-RM-required AI trading platform launching mid-August",
       "Google's cheaper Gemini 3.6 Flash targets the exact agentic-cost problem enterprise AI is hitting",
       "HSBC Orion becomes first platform live in the Bank of England's Digital Securities Sandbox",
       "HSBC flagged AI-driven market volatility in its H2 outlook \u2014 the Moonshot shock arrived within 48 hours",
       "JPMorgan's Dimon: AI cut 30-40% of jobs in some units \u2014 but margins won't follow",
+      "JPMorgan's HSBC upgrade is early validation of the Elhedery overhaul \u2014 4 August now has to prove it",
       "Last week's Kimi K3 AI-stock shock gets reframed as a memory story, not a compute one",
       "Morgan Stanley's record AI-fuelled wealth quarter raises the bar ahead of WPB's August interims",
       "New AI visibility index shows JPMorgan owns the chatbot answer layer &mdash; most banks are invisible",
-      "StanChart adopts Aladdin Wealth \u2014 catching up to where HSBC's PRISM has been for years",
+      "September's US-China AI talks put HSBC's multi-vendor AI roadmap on a shifting regulatory map",
       "UOB Private Bank lures 17-year HSBC veteran to lead its Hong Kong private banking business"
     ],
     "daily": [
-      {
-        "date": "2026-07-15",
-        "urls": [
-          "https://ts2.tech/en/hsbc-stock-is-down-9-from-its-high-yet-analysts-see-less-than-2-upside/",
-          "https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026",
-          "https://www.buildfastwithai.com/blogs/ai-news-today-july-14-2026",
-          "https://www.caproasia.com/2026/07/14/singapore-5-billion-wealth-asset-manager-lighthouse-canton-hired-dbs-private-bank-executive-director-angela-saik-as-managing-director-in-2025-november-16-years-private-banking-financial-industry/",
-          "https://www.finstar.com/fintech-banking-industry-newsletter-138/",
-          "https://www.hubbis.com/news/standard-chartered-announces-global-collaboration-with-blackrock-s-aladdin-wealth-to-enhance-mywealth-advisor",
-          "https://www.pymnts.com/news/banking/2026/51percent-of-banks-piloting-ai-agents-to-boost-productivity/"
-        ],
-        "topics": [
-          "StanChart adopts Aladdin Wealth \u2014 catching up to where HSBC's PRISM has been for years",
-          "4 August interims are now a wealth-growth proof point \u2014 the market has stopped paying in advance",
-          "Agentic AI crosses into the mainstream \u2014 51% of banks piloting, with wealth a named first-wave domain"
-        ]
-      },
       {
         "date": "2026-07-16",
         "urls": [
@@ -142,6 +122,20 @@
           "China's state rescue of AI stocks vindicates HSBC's H2 volatility call \u2014 and raises the August stakes",
           "JPMorgan's Dimon: AI cut 30-40% of jobs in some units \u2014 but margins won't follow",
           "Google's cheaper Gemini 3.6 Flash targets the exact agentic-cost problem enterprise AI is hitting"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "urls": [
+          "https://247wallst.com/investing/2026/07/21/citi-wealth-cio-warns-infinite-ai-agents-will-accelerate-cybersecuritys-share-of-enterprise-spending/",
+          "https://americanbazaaronline.com/2026/07/21/anthropics-1-5b-copyright-settlement-approved-by-us-court-484922/",
+          "https://www.cnbc.com/2026/07/21/us-china-ai-talks-bessent.html",
+          "https://www.sharecast.com/news/broker-recommendations/jpmorgan-upgrades-hsbc-to-neutral-raises-target-price-on-standard-chartered--7998644.html"
+        ],
+        "topics": [
+          "Citi Wealth's CIO just flagged AI-agent cyber risk as underfunded industry-wide",
+          "September's US-China AI talks put HSBC's multi-vendor AI roadmap on a shifting regulatory map",
+          "JPMorgan's HSBC upgrade is early validation of the Elhedery overhaul \u2014 4 August now has to prove it"
         ]
       }
     ]
