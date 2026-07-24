@@ -3,149 +3,139 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Thursday, 23 July 2026",
-  "date_str": "2026-07-23",
-  "generated_at": "23 Jul 2026, 23:10 UTC",
-  "total_articles": 7,
+  "briefing_date": "Friday, 24 July 2026",
+  "date_str": "2026-07-24",
+  "generated_at": "24 Jul 2026, 23:09 UTC",
+  "total_articles": 6,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC consolidates Hang Seng leadership under shared function heads \u2014 the integration playbook is now visible",
+      "headline": "Hang Seng becomes first HK bank on Alipay+ \u2014 HSBC group's digital payments reach just got bigger",
+      "context_html": "Ant International's Alipay+ network added HSBC subsidiary Hang Seng Bank as its first Hong Kong banking partner, giving Hang Seng customers QR-code payment access across 100+ million merchants in 55 markets. It lands days after HSBC consolidated cross-bank leadership at Hang Seng under shared function heads, suggesting the group integration playbook is now extending into digital payments rails, not just management structure. For Adam's change-execution mandate, the open question is whether the same rails and governance model roll out consistently across HSBC's own wallet, PayMe, or whether Hang Seng and HSBC end up running divergent digital payment strategies.",
       "source_links": [
         [
-          "https://live.euronext.com/en/financial-news/hsbc-appoints-cross-bank-leaders-after-hang-seng-privatisation-source-says",
-          "HSBC appoints cross-bank leaders after Hang Seng deal"
+          "https://technode.global/2026/07/24/singapores-ant-international-adds-hang-seng-bank-to-alipay-as-first-hong-kong-banking-partner/",
+          "Hang Seng Joins Alipay+ as First HK Bank"
         ]
       ],
-      "is_update": false,
-      "context_html": "This is the clearest signal yet of how HSBC intends to capture efficiency from the Hang Seng privatisation, and it's exactly the kind of cross-entity change programme Adam's team is expected to benchmark and potentially replicate elsewhere in WPB. Seven shared functions \u2014 including risk, compliance, IT, internal audit and COO \u2014 now report to single cross-bank leaders, while frontline teams stay separate. It's the biggest structural move since the privatisation closed last year, and a template worth tracking for future HSBC integration efforts."
+      "is_update": false
     },
     {
-      "headline": "The Fed didn't have access to Anthropic's own cybersecurity AI for months \u2014 a governance gap worth flagging upward",
+      "headline": "DBS suffers second PayLah! outage of 2026 \u2014 a reliability gap HSBC can now quantify",
+      "context_html": "DBS's PayLah! wallet went down for several hours on the evening of 23 July, the bank's second publicly acknowledged digital-service disruption this year after a March outage hit DBS/POSB digibank and PayLah! together. DBS says affected transfers will be credited back, but the repeat failure sits awkwardly against the \"World's Best AI Bank\" positioning DBS has built its wealth and retail growth story on. For Adam, this is a concrete data point for the operational-resilience side of the change-execution agenda: HSBC's own uptime record versus DBS's is now a quantifiable competitive claim, not just a talking point.",
       "source_links": [
         [
-          "https://www.chinatechnews.com/2026/07/22/126048-the-fed-rang-the-alarm-about-anthropics-mythos-ai",
-          "Fed rang alarm on Anthropic's Mythos AI model"
+          "https://fintechnews.sg/134734/digital-banking-news-singapore/dbs-paylah-outage/",
+          "DBS PayLah! Outage Marks Second Disruption"
         ]
       ],
-      "is_update": false,
-      "context_html": "HSBC's own AI security posture increasingly depends on frontier-model vendors like Anthropic; a systemically important regulator going months without access to a defensive AI tool is a live case study in vendor-access risk for any bank's AI governance framework. Anthropic's Project Glasswing gave 150+ banks early access to Claude Mythos for vulnerability-hunting from April, but the Fed itself reportedly lacked access for at least three months. It's unclear if the Fed has since caught up \u2014 a reminder that preferential vendor access, not just model capability, is now a real dimension of AI risk management."
+      "is_update": false
     },
     {
-      "headline": "DBS is now executing, not just announcing, its S$1 trillion wealth ambition \u2014 600+ hires and 18 new centres by 2028",
+      "headline": "Goldman and JPMorgan launch AI bond-trading tools \u2014 execution, not research, is the new AI battleground",
+      "context_html": "Goldman Sachs and JPMorgan both launched AI-powered tools this week letting institutional clients trade baskets of high-yield tech/AI-infrastructure debt, from issuers like CoreWeave and Applied Digital, in blocks up to $250 million \u2014 alongside a separate JPMorgan report showing AI-themed ETF inflows jumped even through a rough earnings quarter. The shift from AI-assisted research to AI-executed trading is the same trajectory HSBC's own AI roadmap needs to be judged against, not whether HSBC has GenAI tools, but whether they touch execution workflows yet. Adam's AI-enabled change agenda should track how fast peer banks are moving tools from advisory support into transaction execution, since that is where competitive differentiation will actually show up.",
       "source_links": [
         [
-          "https://meobserver.news/business-economix/market-updates-finance/2026/07/21/dbs-expansion-intensifies-race-for-wealth-seeking-a-second-safe-haven/",
-          "DBS expansion intensifies race for wealth"
+          "https://www.bloomberg.com/news/articles/2026-07-23/goldman-offers-way-to-trade-ai-junk-bonds-250-million-at-a-time",
+          "Goldman Offers Way to Trade AI Junk Bonds"
+        ],
+        [
+          "https://www.cnbc.com/2026/07/23/jpmorgan-dramatic-jump-in-ai-etfs-despite-rough-quarter.html",
+          "JPMorgan: Dramatic Jump in AI ETFs"
         ]
       ],
-      "is_update": true,
-      "context_html": "Following DBS's S$1 trillion AUM target covered on 17 July, this is the concrete delivery plan behind it \u2014 a useful benchmark for the scale and pace of change execution HSBC WPB is up against in the region. 600+ relationship managers, advisers and technology specialists to be hired by 2028; 18 new wealth centres opening, 36 more upgraded across Asia. The build-out doubles as a hedge against Hong Kong concentration risk, positioning Singapore as a second wealth hub."
+      "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "Competitor Intelligence": [
       {
         "id": "art01",
-        "title": "HSBC appoints cross-bank leaders after Hang Seng privatisation",
-        "url": "https://live.euronext.com/en/financial-news/hsbc-appoints-cross-bank-leaders-after-hang-seng-privatisation-source-says",
-        "source": "Reuters",
-        "published_at": "2026-07-22",
-        "summary": "HSBC has appointed single leaders to oversee seven shared corporate functions \u2014 including risk, compliance, IT, internal audit, finance and COO \u2014 across HSBC and Hang Seng Bank, a year after taking Hang Seng private. The two banks' teams will keep operating independently under the shared leadership, marking the biggest integration step since the privatisation.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 9,
+        "title": "Alipay+ Adds Hang Seng Bank as First Hong Kong Banking Partner",
+        "url": "https://technode.global/2026/07/24/singapores-ant-international-adds-hang-seng-bank-to-alipay-as-first-hong-kong-banking-partner/",
+        "source": "TechNode Global",
+        "published_at": "2026-07-24",
+        "summary": "Ant International's Alipay+ network has signed HSBC subsidiary Hang Seng Bank as its first Hong Kong banking partner, letting Hang Seng app users pay via QR code at more than 100 million merchants across 55 markets. The deal follows Hang Seng's recent leadership consolidation under shared HSBC group function heads.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
         "noise_level": 2,
-        "category": "HSBC News",
+        "category": "Competitor Intelligence",
         "is_update": false,
-        "user_relevance": 9
+        "user_relevance": 7
+      },
+      {
+        "id": "art02",
+        "title": "DBS PayLah! Outage on 23 July Marks Second Service Disruption This Year",
+        "url": "https://fintechnews.sg/134734/digital-banking-news-singapore/dbs-paylah-outage/",
+        "source": "Fintech News Singapore",
+        "published_at": "2026-07-24",
+        "summary": "DBS's PayLah! mobile wallet went down on the evening of 23 July and was restored around 1:38am the next day, with the bank crediting back affected transfers. It is the second publicly reported disruption to DBS's digital banking services in 2026, after a March outage hit digibank and PayLah! together.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 6
       }
     ],
     "AI & Technology": [
       {
-        "id": "art02",
-        "title": "The Fed rang the alarm about Anthropic's Mythos AI model \u2014 but had to go months without it",
-        "url": "https://www.chinatechnews.com/2026/07/22/126048-the-fed-rang-the-alarm-about-anthropics-mythos-ai",
-        "source": "China Tech News",
-        "published_at": "2026-07-22",
-        "summary": "Anthropic gave over 150 banks and institutions early access to its cybersecurity-focused Claude Mythos model through Project Glasswing starting in April, but the US Federal Reserve itself reportedly went without access for at least three months, leaving the central bank unable to patch vulnerabilities other lenders were already fixing. It remains unclear whether the Fed has since gained access.",
+        "id": "art04",
+        "title": "Goldman Sachs and JPMorgan Launch AI-Powered Tools to Trade Tech Debt in Bulk",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-23/goldman-offers-way-to-trade-ai-junk-bonds-250-million-at-a-time",
+        "source": "Bloomberg",
+        "published_at": "2026-07-23",
+        "summary": "Goldman Sachs and JPMorgan each launched tools this week letting institutional investors quickly adjust exposure to AI-infrastructure high-yield debt, including a Goldman product covering a basket of 18 issuers such as CoreWeave and Applied Digital in trades up to $250 million. The tools mark a shift of AI-assisted workflows from research into live trade execution.",
         "hsbc_relevancy": 6,
-        "adam_rel": 9,
-        "noise_level": 3,
+        "adam_rel": 6,
+        "noise_level": 2,
         "category": "AI & Technology",
         "is_update": false,
-        "user_relevance": 9
+        "user_relevance": 6
       },
       {
         "id": "art03",
-        "title": "China's 'AI for All' offensive defies US containment playbook",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-22/china-s-ai-for-all-offensive-defies-us-containment-playbook",
-        "source": "Bloomberg",
-        "published_at": "2026-07-22",
-        "summary": "China is pushing open, low-cost access to domestic AI models like Alibaba's Qwen and Moonshot's Kimi across emerging markets, undercutting US efforts to contain its AI industry through export controls. The strategy is widening China's technology influence just as US-China AI diplomacy remains unresolved ahead of September talks.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
+        "title": "Anthropic Updates Claude Voice Mode With More Capable Models",
+        "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+        "source": "TechCrunch",
+        "published_at": "2026-07-23",
+        "summary": "Anthropic has rolled out a beta update that runs Claude's voice mode on its Opus, Sonnet and Haiku models, adds access to connected tools like Gmail and Slack, and expands language support. Users can now switch models mid-conversation and move between talking and working across mobile, desktop and web.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
         "is_update": false,
-        "user_relevance": 7
+        "user_relevance": 8
       }
     ],
     "Regulatory & Markets": [
       {
-        "id": "art04",
-        "title": "Debt-fueled AI investment faces a 5% Treasury yield test",
-        "url": "https://www.bloomberg.com/news/newsletters/2026-07-22/debt-fueled-ai-investment-faces-a-5-treasury-yield-test",
-        "source": "Bloomberg",
-        "published_at": "2026-07-22",
-        "summary": "Rising long-term borrowing costs, with Treasury yields approaching 5%, are testing the debt-fueled financing model underpinning the AI infrastructure boom. Analysts warn that higher rates could squeeze data-center developers and their lenders, raising credit risk for banks with exposure to AI-linked financing.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 6,
-        "noise_level": 3,
+        "id": "art05",
+        "title": "JPMorgan Report Finds Dramatic Jump in AI-Themed ETFs Despite Rough Quarter",
+        "url": "https://www.cnbc.com/2026/07/23/jpmorgan-dramatic-jump-in-ai-etfs-despite-rough-quarter.html",
+        "source": "CNBC",
+        "published_at": "2026-07-23",
+        "summary": "A new JPMorgan report shows inflows into AI-themed ETFs rose sharply even as the sector had a volatile earnings quarter, with strategists noting investors are increasingly distinguishing between different segments of the AI value chain rather than trading it as a single theme. The bank's private-banking arm has separately urged clients to look beyond Big Tech for AI exposure.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 2,
         "category": "Regulatory & Markets",
         "is_update": false,
-        "user_relevance": 6
-      },
+        "user_relevance": 5
+      }
+    ],
+    "Private Banking & Wealth": [
       {
-        "id": "art05",
-        "title": "AI borrowers are pushing a niche credit market to its limits",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-22/ai-borrowers-are-pushing-a-niche-credit-market-to-its-limits",
-        "source": "Bloomberg",
-        "published_at": "2026-07-22",
-        "summary": "AI data-center developers are increasingly tapping niche high-yield credit markets to fund capacity, with one operator raising a record \u20ac800 million Nordic bond this week. The surge is straining underwriting standards in a corner of the credit market not built for financing at this scale.",
+        "id": "art06",
+        "title": "UOB Private Bank to Launch Hong Kong Booking Centre, Triple Banker Headcount by 2030",
+        "url": "https://www.caproasia.com/2026/07/24/uob-private-bank-to-launch-booking-centre-in-hong-kong-to-increase-additional-40-private-bankers-in-hong-kong-to-60-private-bankers-by-2030-from-current-20-private-bankers-uob-group-wealth-manageme/",
+        "source": "Caproasia",
+        "published_at": "2026-07-24",
+        "summary": "UOB Private Bank plans to open a Hong Kong booking centre and grow its Hong Kong private banker headcount from 20 to 60 by 2030, part of a wider Greater China wealth push as group wealth management AUM reaches US$163 billion. The move follows UOB's recent hire of a 17-year HSBC private banking veteran to help lead the Hong Kong business.",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 6
-      }
-    ],
-    "Competitor Intelligence": [
-      {
-        "id": "art07",
-        "title": "DBS expansion intensifies race for wealth as bank seeks a second safe haven",
-        "url": "https://meobserver.news/business-economix/market-updates-finance/2026/07/21/dbs-expansion-intensifies-race-for-wealth-seeking-a-second-safe-haven/",
-        "source": "Middle East Observer",
-        "published_at": "2026-07-21",
-        "summary": "DBS plans to recruit more than 600 relationship managers, advisers and technology specialists by 2028, open 18 new wealth centres and upgrade 36 more across Asia. The build-out is the operational backbone of the S$1 trillion wealth AUM target DBS set out last week, positioning Singapore as an alternative wealth hub to Hong Kong.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art06",
-        "title": "Standard Chartered hits 52-week high after JPMorgan upgrade to overweight",
-        "url": "https://www.dailypolitical.com/2026/07/22/standard-chartered-lonstan-sets-new-12-month-high-following-analyst-upgrade.html",
-        "source": "Daily Political",
-        "published_at": "2026-07-22",
-        "summary": "Standard Chartered shares hit a new 52-week high after JPMorgan upgraded the stock to overweight and raised its price target to GBX 2,270. The upgrade adds to a run of positive sell-side sentiment on the bank ahead of its 29 July results, and follows JPMorgan's separate upgrade of HSBC to neutral last week.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "category": "Private Banking & Wealth",
         "is_update": false,
         "user_relevance": 6
       }
@@ -155,108 +145,94 @@
     "articles": [
       {
         "id": "art01",
-        "title": "HSBC appoints cross-bank leaders after Hang Seng privatisation",
-        "url": "https://live.euronext.com/en/financial-news/hsbc-appoints-cross-bank-leaders-after-hang-seng-privatisation-source-says",
-        "source": "Reuters",
-        "published_at": "2026-07-22",
-        "summary": "HSBC has appointed single leaders to oversee seven shared corporate functions \u2014 including risk, compliance, IT, internal audit, finance and COO \u2014 across HSBC and Hang Seng Bank, a year after taking Hang Seng private. The two banks' teams will keep operating independently under the shared leadership, marking the biggest integration step since the privatisation.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 9,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 9
-      },
-      {
-        "id": "art02",
-        "title": "The Fed rang the alarm about Anthropic's Mythos AI model \u2014 but had to go months without it",
-        "url": "https://www.chinatechnews.com/2026/07/22/126048-the-fed-rang-the-alarm-about-anthropics-mythos-ai",
-        "source": "China Tech News",
-        "published_at": "2026-07-22",
-        "summary": "Anthropic gave over 150 banks and institutions early access to its cybersecurity-focused Claude Mythos model through Project Glasswing starting in April, but the US Federal Reserve itself reportedly went without access for at least three months, leaving the central bank unable to patch vulnerabilities other lenders were already fixing. It remains unclear whether the Fed has since gained access.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 9,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 9
-      },
-      {
-        "id": "art03",
-        "title": "China's 'AI for All' offensive defies US containment playbook",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-22/china-s-ai-for-all-offensive-defies-us-containment-playbook",
-        "source": "Bloomberg",
-        "published_at": "2026-07-22",
-        "summary": "China is pushing open, low-cost access to domestic AI models like Alibaba's Qwen and Moonshot's Kimi across emerging markets, undercutting US efforts to contain its AI industry through export controls. The strategy is widening China's technology influence just as US-China AI diplomacy remains unresolved ahead of September talks.",
-        "hsbc_relevancy": 5,
+        "title": "Alipay+ Adds Hang Seng Bank as First Hong Kong Banking Partner",
+        "url": "https://technode.global/2026/07/24/singapores-ant-international-adds-hang-seng-bank-to-alipay-as-first-hong-kong-banking-partner/",
+        "source": "TechNode Global",
+        "published_at": "2026-07-24",
+        "summary": "Ant International's Alipay+ network has signed HSBC subsidiary Hang Seng Bank as its first Hong Kong banking partner, letting Hang Seng app users pay via QR code at more than 100 million merchants across 55 markets. The deal follows Hang Seng's recent leadership consolidation under shared HSBC group function heads.",
+        "hsbc_relevancy": 8,
         "adam_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
         "is_update": false,
         "user_relevance": 7
       },
       {
-        "id": "art04",
-        "title": "Debt-fueled AI investment faces a 5% Treasury yield test",
-        "url": "https://www.bloomberg.com/news/newsletters/2026-07-22/debt-fueled-ai-investment-faces-a-5-treasury-yield-test",
-        "source": "Bloomberg",
-        "published_at": "2026-07-22",
-        "summary": "Rising long-term borrowing costs, with Treasury yields approaching 5%, are testing the debt-fueled financing model underpinning the AI infrastructure boom. Analysts warn that higher rates could squeeze data-center developers and their lenders, raising credit risk for banks with exposure to AI-linked financing.",
+        "id": "art02",
+        "title": "DBS PayLah! Outage on 23 July Marks Second Service Disruption This Year",
+        "url": "https://fintechnews.sg/134734/digital-banking-news-singapore/dbs-paylah-outage/",
+        "source": "Fintech News Singapore",
+        "published_at": "2026-07-24",
+        "summary": "DBS's PayLah! mobile wallet went down on the evening of 23 July and was restored around 1:38am the next day, with the bank crediting back affected transfers. It is the second publicly reported disruption to DBS's digital banking services in 2026, after a March outage hit digibank and PayLah! together.",
         "hsbc_relevancy": 6,
         "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art03",
+        "title": "Anthropic Updates Claude Voice Mode With More Capable Models",
+        "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+        "source": "TechCrunch",
+        "published_at": "2026-07-23",
+        "summary": "Anthropic has rolled out a beta update that runs Claude's voice mode on its Opus, Sonnet and Haiku models, adds access to connected tools like Gmail and Slack, and expands language support. Users can now switch models mid-conversation and move between talking and working across mobile, desktop and web.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 8,
         "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "Goldman Sachs and JPMorgan Launch AI-Powered Tools to Trade Tech Debt in Bulk",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-23/goldman-offers-way-to-trade-ai-junk-bonds-250-million-at-a-time",
+        "source": "Bloomberg",
+        "published_at": "2026-07-23",
+        "summary": "Goldman Sachs and JPMorgan each launched tools this week letting institutional investors quickly adjust exposure to AI-infrastructure high-yield debt, including a Goldman product covering a basket of 18 issuers such as CoreWeave and Applied Digital in trades up to $250 million. The tools mark a shift of AI-assisted workflows from research into live trade execution.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 6
       },
       {
         "id": "art05",
-        "title": "AI borrowers are pushing a niche credit market to its limits",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-22/ai-borrowers-are-pushing-a-niche-credit-market-to-its-limits",
-        "source": "Bloomberg",
-        "published_at": "2026-07-22",
-        "summary": "AI data-center developers are increasingly tapping niche high-yield credit markets to fund capacity, with one operator raising a record \u20ac800 million Nordic bond this week. The surge is straining underwriting standards in a corner of the credit market not built for financing at this scale.",
+        "title": "JPMorgan Report Finds Dramatic Jump in AI-Themed ETFs Despite Rough Quarter",
+        "url": "https://www.cnbc.com/2026/07/23/jpmorgan-dramatic-jump-in-ai-etfs-despite-rough-quarter.html",
+        "source": "CNBC",
+        "published_at": "2026-07-23",
+        "summary": "A new JPMorgan report shows inflows into AI-themed ETFs rose sharply even as the sector had a volatile earnings quarter, with strategists noting investors are increasingly distinguishing between different segments of the AI value chain rather than trading it as a single theme. The bank's private-banking arm has separately urged clients to look beyond Big Tech for AI exposure.",
         "hsbc_relevancy": 5,
-        "adam_rel": 6,
+        "adam_rel": 5,
         "noise_level": 2,
         "category": "Regulatory & Markets",
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 5
       },
       {
         "id": "art06",
-        "title": "Standard Chartered hits 52-week high after JPMorgan upgrade to overweight",
-        "url": "https://www.dailypolitical.com/2026/07/22/standard-chartered-lonstan-sets-new-12-month-high-following-analyst-upgrade.html",
-        "source": "Daily Political",
-        "published_at": "2026-07-22",
-        "summary": "Standard Chartered shares hit a new 52-week high after JPMorgan upgraded the stock to overweight and raised its price target to GBX 2,270. The upgrade adds to a run of positive sell-side sentiment on the bank ahead of its 29 July results, and follows JPMorgan's separate upgrade of HSBC to neutral last week.",
-        "hsbc_relevancy": 6,
+        "title": "UOB Private Bank to Launch Hong Kong Booking Centre, Triple Banker Headcount by 2030",
+        "url": "https://www.caproasia.com/2026/07/24/uob-private-bank-to-launch-booking-centre-in-hong-kong-to-increase-additional-40-private-bankers-in-hong-kong-to-60-private-bankers-by-2030-from-current-20-private-bankers-uob-group-wealth-manageme/",
+        "source": "Caproasia",
+        "published_at": "2026-07-24",
+        "summary": "UOB Private Bank plans to open a Hong Kong booking centre and grow its Hong Kong private banker headcount from 20 to 60 by 2030, part of a wider Greater China wealth push as group wealth management AUM reaches US$163 billion. The move follows UOB's recent hire of a 17-year HSBC private banking veteran to help lead the Hong Kong business.",
+        "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "category": "Private Banking & Wealth",
         "is_update": false,
         "user_relevance": 6
-      },
-      {
-        "id": "art07",
-        "title": "DBS expansion intensifies race for wealth as bank seeks a second safe haven",
-        "url": "https://meobserver.news/business-economix/market-updates-finance/2026/07/21/dbs-expansion-intensifies-race-for-wealth-seeking-a-second-safe-haven/",
-        "source": "Middle East Observer",
-        "published_at": "2026-07-21",
-        "summary": "DBS plans to recruit more than 600 relationship managers, advisers and technology specialists by 2028, open 18 new wealth centres and upgrade 36 more across Asia. The build-out is the operational backbone of the S$1 trillion wealth AUM target DBS set out last week, positioning Singapore as an alternative wealth hub to Hong Kong.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": true,
-        "user_relevance": 8
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2",
       "AI & Technology": "#6366f1",
       "Regulatory & Markets": "#d97706",
-      "Competitor Intelligence": "#0891b2"
+      "Private Banking & Wealth": "#059669"
     }
   }
 }
