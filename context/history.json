@@ -14,11 +14,15 @@
       "https://www.bloomberg.com/news/articles/2026-07-27/hsbc-to-hire-100-ai-specialists-as-bank-sets-up-singapore-center",
       "https://www.bloomberg.com/news/articles/2026-07-28/hsbc-s-chief-people-officer-to-move-from-london-to-hong-kong",
       "https://www.bloomberg.com/news/articles/2026-07-28/hsbc-s-kettner-sees-earnings-valuations-buoying-risk-assets",
+      "https://www.bloomberg.com/news/articles/2026-07-29/stanchart-ceo-says-chinese-and-us-ai-models-similarly-capable",
       "https://www.bloomberg.com/news/articles/2026-07-30/blackstone-said-to-buy-25-billion-hsbc-australia-home-loan-book",
       "https://www.caixinglobal.com/2026-07-29/china-wealth-products-hit-5-trillion-in-hunt-for-higher-yields-102469027.html",
       "https://www.caproasia.com/2026/07/24/uob-private-bank-to-launch-booking-centre-in-hong-kong-to-increase-additional-40-private-bankers-in-hong-kong-to-60-private-bankers-by-2030-from-current-20-private-bankers-uob-group-wealth-manageme/",
       "https://www.caproasia.com/2026/07/27/canada-1-1-trillion-rbc-wealth-management-hires-6-private-bankers-in-hong-kong-singapore-1-standard-chartered-bank-ivy-ma-as-executive-director-in-hong-kong-2-bank-j-safra-sarasin-jackson-huan/",
       "https://www.caproasia.com/2026/07/28/hsbc-private-bank-hires-ubs-14-year-veteran-tan-lay-hong-as-singapore-desk-head-based-in-singapore/",
+      "https://www.caproasia.com/2026/07/29/india-new-2-4-billion-wealth-management-multi-family-office-firm-nexedge-capital-hires-julius-baer-wealth-advisors-india-head-of-alternate-products-kashyap-barot-as-founding-team-head-third-party/",
+      "https://www.caproasia.com/2026/07/29/singapore-mas-association-of-banks-in-singapore-abs-setup-cyber-tech-ai-taskforce-ai-driven-cyber-and-technology-risk-taskforce-to-strengthen-cyber-technology-resilience-due-to-emerging-ris/",
+      "https://www.caproasia.com/2026/07/30/hong-kong-sfc-issues-restriction-notice-to-futu-securities-international-to-freeze-16-million-hkd-125-million-assets-in-client-accounts-involved-in-suspected-fraud-scheme-to-create-false-or-artific/",
       "https://www.cnbc.com/2026/07/23/jpmorgan-dramatic-jump-in-ai-etfs-despite-rough-quarter.html",
       "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html",
       "https://www.cnbc.com/2026/07/30/wealth-managers-ai-chatbots.html",
@@ -34,7 +38,6 @@
     "covered_topics": [
       "Anthropic breaks ranks on open-weight AI as the US-China model race heats up \u2014 a live test of HSBC's multi-vendor AI stance",
       "Blackstone locks in $25bn deal for HSBC's Australian loan book \u2014 bigger than first reported",
-      "China's onshore wealth market pushes past $5 trillion despite falling yields",
       "DBS goes agentic across 10m users and wires it into wealth advice \u2014 HSBC's AI-in-wealth window is narrowing",
       "DBS suffers second PayLah! outage of 2026 \u2014 a reliability gap HSBC can now quantify",
       "Goldman and JPMorgan launch AI bond-trading tools \u2014 execution, not research, is the new AI battleground",
@@ -47,6 +50,7 @@
       "OpenAI's own agent breached Hugging Face for days undetected \u2014 a live governance case study as HSBC scales agentic AI",
       "Private banking desk-head hiring is turning into a zero-sum talent war across HSBC's home markets",
       "StanChart and UBS both beat and raise ahead of HSBC's 4 August results \u2014 the bar for Elhedery just went up",
+      "StanChart's Bill Winters confirms a China-model / Western-model AI split \u2014 and calls them equally capable",
       "Wealth clients are now fact-checking their advisors with Claude and ChatGPT"
     ],
     "daily": [
@@ -126,14 +130,18 @@
       {
         "date": "2026-07-30",
         "urls": [
+          "https://www.bloomberg.com/news/articles/2026-07-29/stanchart-ceo-says-chinese-and-us-ai-models-similarly-capable",
           "https://www.bloomberg.com/news/articles/2026-07-30/blackstone-said-to-buy-25-billion-hsbc-australia-home-loan-book",
           "https://www.caixinglobal.com/2026-07-29/china-wealth-products-hit-5-trillion-in-hunt-for-higher-yields-102469027.html",
+          "https://www.caproasia.com/2026/07/29/india-new-2-4-billion-wealth-management-multi-family-office-firm-nexedge-capital-hires-julius-baer-wealth-advisors-india-head-of-alternate-products-kashyap-barot-as-founding-team-head-third-party/",
+          "https://www.caproasia.com/2026/07/29/singapore-mas-association-of-banks-in-singapore-abs-setup-cyber-tech-ai-taskforce-ai-driven-cyber-and-technology-risk-taskforce-to-strengthen-cyber-technology-resilience-due-to-emerging-ris/",
+          "https://www.caproasia.com/2026/07/30/hong-kong-sfc-issues-restriction-notice-to-futu-securities-international-to-freeze-16-million-hkd-125-million-assets-in-client-accounts-involved-in-suspected-fraud-scheme-to-create-false-or-artific/",
           "https://www.cnbc.com/2026/07/30/wealth-managers-ai-chatbots.html"
         ],
         "topics": [
           "Blackstone locks in $25bn deal for HSBC's Australian loan book \u2014 bigger than first reported",
           "Wealth clients are now fact-checking their advisors with Claude and ChatGPT",
-          "China's onshore wealth market pushes past $5 trillion despite falling yields"
+          "StanChart's Bill Winters confirms a China-model / Western-model AI split \u2014 and calls them equally capable"
         ]
       }
     ]
