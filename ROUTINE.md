@@ -44,8 +44,18 @@ not that there was no news.
 **3. Triage every candidate**
 - Published within 48h? If not, discard — unless it is a material NEW development of
   a story in history, in which case mark `is_update: true`.
-- URL or topic already in history? Discard — unless there's a new development
-  (`is_update: true`).
+- Same URL, or the same specific event/announcement, already in history? Discard —
+  unless there's a new development (`is_update: true`).
+- Do NOT discard a story just because it touches a broad theme covered before (e.g.
+  "AI vendor strategy", "private banker hiring", "bank cost-cutting"). A different
+  bank's earnings, a different executive's comment, a different hire, or a different
+  deal is a distinct story even if last week's briefing covered the same theme with a
+  different specific instance. Only exclude when it is genuinely the same event
+  re-reported.
+- The 8–15 article target (step 2) is for the full Intelligence Feed, not just for
+  finding 3 talking-point candidates. Do not stop searching/triaging once you have 3
+  strong stories — keep going until you have enough breadth across categories for the
+  feed and bubble chart, THEN pick the top 3 for talking points from that larger set.
 
 **4. Score and write analysis**
 For each surviving article assign `hsbc_relevancy` (0–10), `adam_rel` (0–10),
