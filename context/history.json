@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-07-31",
+    "last_updated": "2026-08-02",
     "covered_urls": [
       "https://fortune.com/2026/07/27/a-trove-of-users-seemingly-private-conversations-with-anthropics-claude-ai-chatbot-showed-up-in-google-search-results/",
       "https://growbeansprout.com/dbs-ocbc-and-uob-record-highs-jul-26",
@@ -24,6 +24,7 @@
       "https://www.caproasia.com/2026/07/29/singapore-mas-association-of-banks-in-singapore-abs-setup-cyber-tech-ai-taskforce-ai-driven-cyber-and-technology-risk-taskforce-to-strengthen-cyber-technology-resilience-due-to-emerging-ris/",
       "https://www.caproasia.com/2026/07/30/hong-kong-sfc-issues-restriction-notice-to-futu-securities-international-to-freeze-16-million-hkd-125-million-assets-in-client-accounts-involved-in-suspected-fraud-scheme-to-create-false-or-artific/",
       "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html",
+      "https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html",
       "https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html",
       "https://www.cnbc.com/2026/07/30/wealth-managers-ai-chatbots.html",
       "https://www.cnbc.com/video/2026/07/30/john-lam-ubs-hong-kong-office-market-bottom.html",
@@ -31,7 +32,7 @@
       "https://www.dbs.com/newsroom/DBS_Gen_AI_enabled_virtual_assistants_reach_10_million_customers_and_go_agentic",
       "https://www.investing.com/news/earnings/standard-chartered-beats-estimates-on-wealth-growth-strength-4818599",
       "https://www.investing.com/news/earnings/ubs-rises-after-q2-profit-beats-estimates-unveils-3-billion-share-buyback-4818604",
-      "https://www.manilatimes.net/2026/07/25/business/foreign-business/hsbc-sells-sg-insurance-unit-to-germanys-allianz/2391014",
+      "https://www.manilatimes.net/2026/08/02/regions/stanchart-lifts-income-target/2396462",
       "https://www.privatebankerinternational.com/news/wealth-manager-wrise-sets-up-ai-lab/",
       "https://www.technology.org/2026/07/27/anthropic-claude-opus-5-launch-half-price/",
       "https://www.technology.org/2026/07/27/openai-agent-hacked-hugging-face-days/",
@@ -39,13 +40,13 @@
     ],
     "covered_topics": [
       "Anthropic breaks ranks on open-weight AI as the US-China model race heats up \u2014 a live test of HSBC's multi-vendor AI stance",
+      "Anthropic's own agents breached real systems in testing -- a live governance test as HSBC scales agentic AI",
       "Blackstone locks in $25bn deal for HSBC's Australian loan book \u2014 bigger than first reported",
       "DBS goes agentic across 10m users and wires it into wealth advice \u2014 HSBC's AI-in-wealth window is narrowing",
       "HKMA puts a number on Hong Kong banks' quantum readiness \u2014 and it's a 2.3 out of 10",
       "HSBC explores \u00a318.7bn UK pension sale, extending Elhedery's balance-sheet simplification run",
       "HSBC formally exits Australian retail banking, confirms $25bn Blackstone loan sale",
       "HSBC nears ~A$30bn sale of its Australian loan book to Blackstone, extending Elhedery's simplification drive",
-      "HSBC sells Singapore life insurance arm to Allianz for S$2.7bn, doubling down on Elhedery's simplification drive",
       "HSBC stands up its first Global AI Centre of Excellence in Singapore, naming CAIO David Rice to lead agentic treasury and wealth AI build",
       "Hong Kong's AI-in-wealth race broadens beyond DBS and HSBC to UBS and boutiques",
       "Open-weight AI just got a 2.8-trillion-parameter upgrade \u2014 and the cost curve keeps bending",
@@ -53,18 +54,10 @@
       "Private banking desk-head hiring is turning into a zero-sum talent war across HSBC's home markets",
       "StanChart and UBS both beat and raise ahead of HSBC's 4 August results \u2014 the bar for Elhedery just went up",
       "StanChart's Bill Winters confirms a China-model / Western-model AI split \u2014 and calls them equally capable",
+      "StanChart's record H1 sets the bar three days before HSBC reports",
       "Wealth clients are now fact-checking their advisors with Claude and ChatGPT"
     ],
     "daily": [
-      {
-        "date": "2026-07-26",
-        "urls": [
-          "https://www.manilatimes.net/2026/07/25/business/foreign-business/hsbc-sells-sg-insurance-unit-to-germanys-allianz/2391014"
-        ],
-        "topics": [
-          "HSBC sells Singapore life insurance arm to Allianz for S$2.7bn, doubling down on Elhedery's simplification drive"
-        ]
-      },
       {
         "date": "2026-07-27",
         "urls": [
@@ -146,6 +139,17 @@
           "HSBC formally exits Australian retail banking, confirms $25bn Blackstone loan sale",
           "Hong Kong's AI-in-wealth race broadens beyond DBS and HSBC to UBS and boutiques",
           "HSBC explores \u00a318.7bn UK pension sale, extending Elhedery's balance-sheet simplification run"
+        ]
+      },
+      {
+        "date": "2026-08-02",
+        "urls": [
+          "https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html",
+          "https://www.manilatimes.net/2026/08/02/regions/stanchart-lifts-income-target/2396462"
+        ],
+        "topics": [
+          "StanChart's record H1 sets the bar three days before HSBC reports",
+          "Anthropic's own agents breached real systems in testing -- a live governance test as HSBC scales agentic AI"
         ]
       }
     ]
