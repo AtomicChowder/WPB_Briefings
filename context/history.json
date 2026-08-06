@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-08-05",
+    "last_updated": "2026-08-06",
     "covered_urls": [
       "https://asianprivatebanker.com/private-banking-wealth-management/hsbc-1h26-asia-wealth-balances-reach-us1-1tn-with-private-banking-fee-momentum/",
       "https://ca.investing.com/news/company-news/hsbc-q2-2026-slides-195-returns-as-all-franchises-exceed-targets-93CH-4773155",
@@ -8,11 +8,10 @@
       "https://claude.com/blog/claude-enterprise-inference-hooks",
       "https://finance.yahoo.com/markets/stocks/articles/hsbc-weighs-20-000-job-151625639.html",
       "https://infotechlead.com/cio/hsbc-steps-up-ai-and-digital-banking-transformation-as-technology-investments-drive-global-growth-strategy-95632",
+      "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
       "https://uk.finance.yahoo.com/news/hsbc-stock-stalls-1-billion-151330558.html",
       "https://voip.review/2026/07/31/microsoft-copilot-hits-30m-seats-as-ai-agents-scale/",
       "https://www.about.hsbc.com.au/news-and-media/hsbc-agrees-to-sell-aud36billion-australian-home-and-personal-loan-portfolio-to-blackstone",
-      "https://www.bloomberg.com/news/articles/2026-07-29/stanchart-ceo-says-chinese-and-us-ai-models-similarly-capable",
-      "https://www.bloomberg.com/news/articles/2026-07-30/blackstone-said-to-buy-25-billion-hsbc-australia-home-loan-book",
       "https://www.bloomberg.com/news/articles/2026-07-30/hsbc-weighs-offloading-billions-in-uk-pension-assets-to-insurer",
       "https://www.bloomberg.com/news/articles/2026-07-31/hsbc-singapore-banks-to-show-strength-on-wealth-performance",
       "https://www.bloomberg.com/news/articles/2026-07-31/wall-street-s-private-banks-are-vying-for-ai-s-paper-money-elite",
@@ -20,52 +19,34 @@
       "https://www.bloomberg.com/news/articles/2026-08-03/ubs-to-pay-125-million-over-anti-money-laundering-violations",
       "https://www.bloomberg.com/news/articles/2026-08-04/hsbc-announces-fresh-1-billion-share-buyback-after-profit-beats",
       "https://www.bloomberg.com/news/articles/2026-08-05/barclays-hsbc-say-warsh-boosts-case-for-inflation-linked-bonds",
-      "https://www.caixinglobal.com/2026-07-29/china-wealth-products-hit-5-trillion-in-hunt-for-higher-yields-102469027.html",
-      "https://www.caproasia.com/2026/07/29/india-new-2-4-billion-wealth-management-multi-family-office-firm-nexedge-capital-hires-julius-baer-wealth-advisors-india-head-of-alternate-products-kashyap-barot-as-founding-team-head-third-party/",
-      "https://www.caproasia.com/2026/07/29/singapore-mas-association-of-banks-in-singapore-abs-setup-cyber-tech-ai-taskforce-ai-driven-cyber-and-technology-risk-taskforce-to-strengthen-cyber-technology-resilience-due-to-emerging-ris/",
-      "https://www.caproasia.com/2026/07/30/hong-kong-sfc-issues-restriction-notice-to-futu-securities-international-to-freeze-16-million-hkd-125-million-assets-in-client-accounts-involved-in-suspected-fraud-scheme-to-create-false-or-artific/",
+      "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
       "https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html",
       "https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html",
-      "https://www.cnbc.com/2026/07/30/wealth-managers-ai-chatbots.html",
       "https://www.cnbc.com/video/2026/07/30/john-lam-ubs-hong-kong-office-market-bottom.html",
       "https://www.darkreading.com/cyber-risk/anthropic-ai-issues-result-security-gaps",
       "https://www.manilatimes.net/2026/08/02/regions/stanchart-lifts-income-target/2396462",
-      "https://www.privatebankerinternational.com/news/wealth-manager-wrise-sets-up-ai-lab/"
+      "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
+      "https://www.privatebankerinternational.com/news/wealth-manager-wrise-sets-up-ai-lab/",
+      "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
+      "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance"
     ],
     "covered_topics": [
       "Anthropic's own agents breached real systems in testing -- a live governance test as HSBC scales agentic AI",
       "Asia wealth is doing the heavy lifting: $1.1tn in balances, $57bn of this year's net new money booked in-region",
-      "Blackstone locks in $25bn deal for HSBC's Australian loan book \u2014 bigger than first reported",
       "DBS poaches StanChart veteran for India wealth as the private-banker talent war spreads to a new market",
+      "DBS wealth AUM crosses S$500bn as Q2 profit hits a record",
       "HSBC beats forecasts and lifts simplification target to $2bn as wealth revenue jumps 18%",
       "HSBC explores \u00a318.7bn UK pension sale, extending Elhedery's balance-sheet simplification run",
       "HSBC formally exits Australian retail banking, confirms $25bn Blackstone loan sale",
       "HSBC posts first hard numbers on agentic AI: CIB query times cut 30%, RM advisory tool live",
+      "HSBC's Q2 beat splits analysts despite $2bn simplification target",
       "HSBC's cost story is now the swing factor: profit beat, but NII pressure and China property risk offset it",
       "Hong Kong's AI-in-wealth race broadens beyond DBS and HSBC to UBS and boutiques",
-      "StanChart's Bill Winters confirms a China-model / Western-model AI split \u2014 and calls them equally capable",
+      "Meta's Muse Spark 1.2 raises the bar for agentic coding tools",
       "StanChart's record H1 sets the bar three days before HSBC reports",
-      "UBS's record $125m AML fine is a live warning on wire-monitoring gaps HSBC should stress-test against its own book",
-      "Wealth clients are now fact-checking their advisors with Claude and ChatGPT"
+      "UBS's record $125m AML fine is a live warning on wire-monitoring gaps HSBC should stress-test against its own book"
     ],
     "daily": [
-      {
-        "date": "2026-07-30",
-        "urls": [
-          "https://www.bloomberg.com/news/articles/2026-07-29/stanchart-ceo-says-chinese-and-us-ai-models-similarly-capable",
-          "https://www.bloomberg.com/news/articles/2026-07-30/blackstone-said-to-buy-25-billion-hsbc-australia-home-loan-book",
-          "https://www.caixinglobal.com/2026-07-29/china-wealth-products-hit-5-trillion-in-hunt-for-higher-yields-102469027.html",
-          "https://www.caproasia.com/2026/07/29/india-new-2-4-billion-wealth-management-multi-family-office-firm-nexedge-capital-hires-julius-baer-wealth-advisors-india-head-of-alternate-products-kashyap-barot-as-founding-team-head-third-party/",
-          "https://www.caproasia.com/2026/07/29/singapore-mas-association-of-banks-in-singapore-abs-setup-cyber-tech-ai-taskforce-ai-driven-cyber-and-technology-risk-taskforce-to-strengthen-cyber-technology-resilience-due-to-emerging-ris/",
-          "https://www.caproasia.com/2026/07/30/hong-kong-sfc-issues-restriction-notice-to-futu-securities-international-to-freeze-16-million-hkd-125-million-assets-in-client-accounts-involved-in-suspected-fraud-scheme-to-create-false-or-artific/",
-          "https://www.cnbc.com/2026/07/30/wealth-managers-ai-chatbots.html"
-        ],
-        "topics": [
-          "Blackstone locks in $25bn deal for HSBC's Australian loan book \u2014 bigger than first reported",
-          "Wealth clients are now fact-checking their advisors with Claude and ChatGPT",
-          "StanChart's Bill Winters confirms a China-model / Western-model AI split \u2014 and calls them equally capable"
-        ]
-      },
       {
         "date": "2026-07-31",
         "urls": [
@@ -125,6 +106,21 @@
           "HSBC's cost story is now the swing factor: profit beat, but NII pressure and China property risk offset it",
           "Asia wealth is doing the heavy lifting: $1.1tn in balances, $57bn of this year's net new money booked in-region",
           "UBS's record $125m AML fine is a live warning on wire-monitoring gaps HSBC should stress-test against its own book"
+        ]
+      },
+      {
+        "date": "2026-08-06",
+        "urls": [
+          "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+          "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
+          "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
+          "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
+          "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance"
+        ],
+        "topics": [
+          "DBS wealth AUM crosses S$500bn as Q2 profit hits a record",
+          "HSBC's Q2 beat splits analysts despite $2bn simplification target",
+          "Meta's Muse Spark 1.2 raises the bar for agentic coding tools"
         ]
       }
     ]

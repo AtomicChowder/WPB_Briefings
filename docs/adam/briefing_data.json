@@ -3,159 +3,123 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 5 August 2026",
-  "date_str": "2026-08-05",
-  "generated_at": "5 Aug 2026, 23:11 UTC",
-  "total_articles": 7,
+  "briefing_date": "Thursday, 6 August 2026",
+  "date_str": "2026-08-06",
+  "generated_at": "6 Aug 2026, 23:12 UTC",
+  "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC's cost story is now the swing factor: profit beat, but NII pressure and China property risk offset it",
-      "context_html": "HSBC beat forecasts and restarted buybacks on 4 August, but shares stalled as investors focused on a sharper NII decline and higher China-property ECL provisions \u2014 and separately, HSBC disclosed cutting 4,400 non-tech roles in 2025 while <strong>Pam Kaur, HSBC Group CFO</strong> flagged 'staff-related inflation' pressure on the simplification programme. Following the $2bn simplification target and 18% wealth-revenue growth we covered on 4 August, this is the market telling Adam's programme where the scrutiny will land in H2: cost delivery now has to outrun both NII drag and inflation in the cost base.",
+      "headline": "DBS wealth AUM crosses S$500bn as Q2 profit hits a record",
+      "context_html": "<strong>Tan Su Shan, CEO of DBS Group</strong> said the bank's results were \"anchored by the strength of our wealth management franchise\" after wealth AUM surpassed S$500 billion for the first time and Q2 net profit rose 9% to a record S$3.08 billion. That gives DBS a concrete benchmark against HSBC's own $1.1 trillion Asia wealth book, and DBS is raising 2026 guidance on the same wealth-fee momentum HSBC is counting on.",
       "source_links": [
         [
-          "https://uk.finance.yahoo.com/news/hsbc-stock-stalls-1-billion-151330558.html",
-          "HSBC Stock Stalls as Buyback Disappoints"
-        ],
+          "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
+          "DBS posts record Q2 profit, raises guidance"
+        ]
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "HSBC's Q2 beat splits analysts despite $2bn simplification target",
+      "context_html": "Following the earnings beat covered on 4 August, reaction has turned mixed: BNP Paribas cut HSBC to Underperform and Citi moved to Neutral, while Morgan Stanley raised its price target. <strong>Joseph Dickerson, analyst at Jefferies</strong>, called the resumed $1 billion buyback \"modestly lower\" than expected. For Change Execution, the split verdict is a reminder that the simplification and buyback story needs sustained visible progress, not just a one-off consensus beat.",
+      "source_links": [
         [
-          "https://finance.yahoo.com/markets/stocks/articles/hsbc-weighs-20-000-job-151625639.html",
-          "HSBC Weighs Job Cuts as AI Shift Reshapes Cost Story"
+          "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
+          "HSBC buyback underwhelms despite earnings"
         ]
       ],
       "is_update": true
     },
     {
-      "headline": "Asia wealth is doing the heavy lifting: $1.1tn in balances, $57bn of this year's net new money booked in-region",
-      "context_html": "HSBC's 1H26 disclosures show Asia wealth balances at US$1.1 trillion, with $57bn of the group's $64bn net new money this year landing in Asia \u2014 a concentration that makes APAC private banking and wealth the primary engine behind the headline results Adam's programme is judged against. It strengthens the case for prioritising APAC-facing change and RM capacity investment over group-wide initiatives with thinner regional payoff.",
+      "headline": "Meta's Muse Spark 1.2 raises the bar for agentic coding tools",
+      "context_html": "Meta shipped Muse Spark 1.2 alongside Muse Code, a terminal coding agent able to run persistent subagents across multi-hour engineering tasks \u2014 the latest entrant in a field that already includes Claude, GPT and Gemini coding agents. As WPB pilots AI-assisted delivery for its own engineering teams, the pace of change here is a reminder to keep re-evaluating which agent platform to standardise on rather than locking in early.",
       "source_links": [
         [
-          "https://asianprivatebanker.com/private-banking-wealth-management/hsbc-1h26-asia-wealth-balances-reach-us1-1tn-with-private-banking-fee-momentum/",
-          "HSBC 1H26: Asia Wealth Balances Reach US$1.1tn"
-        ]
-      ],
-      "is_update": true
-    },
-    {
-      "headline": "UBS's record $125m AML fine is a live warning on wire-monitoring gaps HSBC should stress-test against its own book",
-      "context_html": "FinCEN's largest-ever BSA penalty against a broker-dealer hit UBS for failing to monitor over $10bn in wires and ignoring red flags on Russia- and Latin America-linked clients \u2014 as a repeat offender after a 2018 fine for the same failure pattern. For Adam, the lesson is less about UBS and more about recidivism risk: any AML remediation programme that closes findings without re-testing controls a few years later is exactly the trap UBS fell into twice.",
-      "source_links": [
-        [
-          "https://www.bloomberg.com/news/articles/2026-08-03/ubs-to-pay-125-million-over-anti-money-laundering-violations",
-          "UBS to Pay $125m Over AML Violations"
+          "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+          "Meta ships Muse Code and Muse Spark 1.2"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
-      {
-        "id": "art01",
-        "title": "HSBC shares stall despite profit beat as investors flag NII pressure, China property risk",
-        "url": "https://uk.finance.yahoo.com/news/hsbc-stock-stalls-1-billion-151330558.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-05",
-        "summary": "HSBC shares barely moved despite Tuesday's earnings beat and fresh $1bn buyback, as investors focused on a sharper-than-expected decline in net interest income from global rate cuts and a surprise rise in expected credit loss provisions tied to mainland China property exposure. Analysts have begun trimming full-year revenue estimates on the back of the disclosure.",
-        "hsbc_relevancy": 10,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 7
-      }
-    ],
-    "Operations & Change": [
-      {
-        "id": "art02",
-        "title": "HSBC cut 4,400 non-tech roles in 2025 as CFO warns on 'staff-related inflation'",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-weighs-20-000-job-151625639.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-04",
-        "summary": "Alongside interim results, HSBC disclosed roughly 4,400 fewer non-technology full-time roles during 2025, against an increase of about 1,800 technology staff. CFO Pam Kaur flagged 'staff-related inflation' pressure and said cost savings from the simplification programme should become more substantial in the second half of 2026.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 9,
-        "noise_level": 2,
-        "category": "Operations & Change",
-        "is_update": true,
-        "user_relevance": 9
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "art03",
-        "title": "HSBC Asia wealth balances hit $1.1tn as $57bn of this year's net new money lands in the region",
-        "url": "https://asianprivatebanker.com/private-banking-wealth-management/hsbc-1h26-asia-wealth-balances-reach-us1-1tn-with-private-banking-fee-momentum/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-08-05",
-        "summary": "HSBC's 1H26 results show Asia wealth balances reaching US$1.1 trillion, with private banking fee momentum accelerating. Of the $64bn in net new money booked group-wide since the start of the year, $57bn was booked in Asia, underscoring the region's outsized share of the bank's wealth growth story.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "is_update": true,
-        "user_relevance": 8
-      }
-    ],
     "Competitor Intelligence": [
       {
-        "id": "art05",
-        "title": "Bank of Singapore hires HSBC private banker to head NRI team",
-        "url": "https://citywire.com/asia/news/exclusive-bos-hires-nri-private-banker-from-hsbc/a2495402",
-        "source": "Citywire Asia",
-        "published_at": "2026-08-04",
-        "summary": "OCBC's private banking arm Bank of Singapore has poached a Non-Resident Indian (NRI) team head from HSBC, as it bulks up coverage of the fast-growing Indian diaspora wealth segment. The hire comes as Bank of Singapore pushes into Asia's private-banking top five.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art04",
-        "title": "UBS hit with record $125m FinCEN fine over AML failures on Russia, Latin America wires",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-03/ubs-to-pay-125-million-over-anti-money-laundering-violations",
-        "source": "Bloomberg",
-        "published_at": "2026-08-04",
-        "summary": "The US Treasury's FinCEN imposed a record $125m penalty on UBS Financial Services for 'willful' anti-money-laundering violations, including failure to monitor over $10bn in foreign-currency wires and ignoring red flags on high-risk clients tied to Russia and Latin America. It is the largest-ever BSA penalty against a broker-dealer and marks UBS as a repeat offender after a 2018 fine for similar failings.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
+        "id": "art01",
+        "title": "DBS posts record Q2 profit as wealth AUM tops S$500bn",
+        "url": "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
+        "source": "The Star",
+        "published_at": "2026-08-06",
+        "summary": "DBS Group reported a record second-quarter net profit of S$3.08 billion, up 9% year-on-year and ahead of analyst estimates, as wealth management assets under management surpassed S$500 billion for the first time. The bank raised its full-year 2026 guidance on the strength of wealth fees and treasury income.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
         "noise_level": 4,
         "category": "Competitor Intelligence",
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 8
+      }
+    ],
+    "HSBC News": [
+      {
+        "id": "art03",
+        "title": "HSBC's Q2 beat splits analysts as buyback underwhelms",
+        "url": "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
+        "source": "Proactive Investors",
+        "published_at": "2026-08-05",
+        "summary": "Analysts diverged sharply on HSBC's Q2 results: BNP Paribas downgraded the stock to Underperform and Citi cut it to Neutral, while Morgan Stanley raised its price target. The resumed $1 billion buyback fell short of the $2 billion some analysts expected, and investors read the quarter as solid but not enough to drive a sharp re-rating.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
+        "user_relevance": 6
+      },
+      {
+        "id": "art02",
+        "title": "HSBC lifts debt tender offer to $6.8bn on 2028 notes",
+        "url": "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
+        "source": "MarketScreener",
+        "published_at": "2026-08-06",
+        "summary": "HSBC increased the maximum size of its cash tender offer for four series of senior unsecured notes maturing in 2028 to roughly $6.8 billion, up from an initial $5 billion cap. The liability-management exercise is due to close on 12 August, settling on 17 August.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 3,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 3
       }
     ],
     "AI & Technology": [
       {
-        "id": "art06",
-        "title": "Anthropic adds inline data-loss-prevention 'inference hooks' to Claude Enterprise",
-        "url": "https://claude.com/blog/claude-enterprise-inference-hooks",
-        "source": "Anthropic",
+        "id": "art04",
+        "title": "Meta ships Muse Spark 1.2 and a terminal coding agent",
+        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+        "source": "Meta AI Research",
         "published_at": "2026-08-05",
-        "summary": "Anthropic launched inference hooks in beta for Claude Enterprise, letting a customer's own security server issue a real-time allow/deny verdict on every prompt and tool call before it reaches the model, across chat, Claude Code and Cowork. It gives compliance teams inline DLP enforcement rather than after-the-fact audit logs.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 9,
+        "summary": "Meta released Muse Spark 1.2, a coding-focused model update, alongside Muse Code, a beta terminal coding agent that coordinates persistent subagents across long-running software engineering tasks. The release intensifies competition among AI labs for enterprise developer-tooling market share.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 7,
         "noise_level": 3,
         "category": "AI & Technology",
         "is_update": false,
-        "user_relevance": 9
+        "user_relevance": 7
       }
     ],
-    "Regulatory & Markets": [
+    "Private Banking & Wealth": [
       {
-        "id": "art07",
-        "title": "Barclays, HSBC say Fed Chair Warsh's inflation stance boosts case for inflation-linked bonds",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-05/barclays-hsbc-say-warsh-boosts-case-for-inflation-linked-bonds",
-        "source": "Bloomberg",
-        "published_at": "2026-08-05",
-        "summary": "HSBC and Barclays strategists say Fed Chair Kevin Warsh's refusal to commit to a path for controlling inflation is strengthening the case for inflation-protected bonds, after 30-year Treasury yields pushed above 5.2% last week on concerns the Fed is acting too late.",
+        "id": "art05",
+        "title": "Hong Kong wealth AUM hits $5.38 trillion, SFC survey shows",
+        "url": "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
+        "source": "Caproasia",
+        "published_at": "2026-08-06",
+        "summary": "The SFC's 2025 Asset and Wealth Management Survey put Hong Kong's total AUM at $5.38 trillion across 2,358 licensed firms, with private banking and wealth management accounting for $1.65 trillion. Hong Kong investors and mainland China contributed 37% and 9% of AUM respectively, underscoring the city's role as a cross-border wealth hub.",
         "hsbc_relevancy": 5,
-        "adam_rel": 3,
+        "adam_rel": 6,
         "noise_level": 2,
-        "category": "Regulatory & Markets",
+        "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 6
       }
     ]
   },
@@ -163,110 +127,80 @@
     "articles": [
       {
         "id": "art01",
-        "title": "HSBC shares stall despite profit beat as investors flag NII pressure, China property risk",
-        "url": "https://uk.finance.yahoo.com/news/hsbc-stock-stalls-1-billion-151330558.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-05",
-        "summary": "HSBC shares barely moved despite Tuesday's earnings beat and fresh $1bn buyback, as investors focused on a sharper-than-expected decline in net interest income from global rate cuts and a surprise rise in expected credit loss provisions tied to mainland China property exposure. Analysts have begun trimming full-year revenue estimates on the back of the disclosure.",
-        "hsbc_relevancy": 10,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "art02",
-        "title": "HSBC cut 4,400 non-tech roles in 2025 as CFO warns on 'staff-related inflation'",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-weighs-20-000-job-151625639.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-04",
-        "summary": "Alongside interim results, HSBC disclosed roughly 4,400 fewer non-technology full-time roles during 2025, against an increase of about 1,800 technology staff. CFO Pam Kaur flagged 'staff-related inflation' pressure and said cost savings from the simplification programme should become more substantial in the second half of 2026.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 9,
-        "noise_level": 2,
-        "category": "Operations & Change",
-        "is_update": true,
-        "user_relevance": 9
-      },
-      {
-        "id": "art03",
-        "title": "HSBC Asia wealth balances hit $1.1tn as $57bn of this year's net new money lands in the region",
-        "url": "https://asianprivatebanker.com/private-banking-wealth-management/hsbc-1h26-asia-wealth-balances-reach-us1-1tn-with-private-banking-fee-momentum/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-08-05",
-        "summary": "HSBC's 1H26 results show Asia wealth balances reaching US$1.1 trillion, with private banking fee momentum accelerating. Of the $64bn in net new money booked group-wide since the start of the year, $57bn was booked in Asia, underscoring the region's outsized share of the bank's wealth growth story.",
-        "hsbc_relevancy": 9,
+        "title": "DBS posts record Q2 profit as wealth AUM tops S$500bn",
+        "url": "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
+        "source": "The Star",
+        "published_at": "2026-08-06",
+        "summary": "DBS Group reported a record second-quarter net profit of S$3.08 billion, up 9% year-on-year and ahead of analyst estimates, as wealth management assets under management surpassed S$500 billion for the first time. The bank raised its full-year 2026 guidance on the strength of wealth fees and treasury income.",
+        "hsbc_relevancy": 8,
         "adam_rel": 8,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art04",
-        "title": "UBS hit with record $125m FinCEN fine over AML failures on Russia, Latin America wires",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-03/ubs-to-pay-125-million-over-anti-money-laundering-violations",
-        "source": "Bloomberg",
-        "published_at": "2026-08-04",
-        "summary": "The US Treasury's FinCEN imposed a record $125m penalty on UBS Financial Services for 'willful' anti-money-laundering violations, including failure to monitor over $10bn in foreign-currency wires and ignoring red flags on high-risk clients tied to Russia and Latin America. It is the largest-ever BSA penalty against a broker-dealer and marks UBS as a repeat offender after a 2018 fine for similar failings.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
         "noise_level": 4,
         "category": "Competitor Intelligence",
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 8
       },
       {
-        "id": "art05",
-        "title": "Bank of Singapore hires HSBC private banker to head NRI team",
-        "url": "https://citywire.com/asia/news/exclusive-bos-hires-nri-private-banker-from-hsbc/a2495402",
-        "source": "Citywire Asia",
-        "published_at": "2026-08-04",
-        "summary": "OCBC's private banking arm Bank of Singapore has poached a Non-Resident Indian (NRI) team head from HSBC, as it bulks up coverage of the fast-growing Indian diaspora wealth segment. The hire comes as Bank of Singapore pushes into Asia's private-banking top five.",
+        "id": "art02",
+        "title": "HSBC lifts debt tender offer to $6.8bn on 2028 notes",
+        "url": "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
+        "source": "MarketScreener",
+        "published_at": "2026-08-06",
+        "summary": "HSBC increased the maximum size of its cash tender offer for four series of senior unsecured notes maturing in 2028 to roughly $6.8 billion, up from an initial $5 billion cap. The liability-management exercise is due to close on 12 August, settling on 17 August.",
         "hsbc_relevancy": 6,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "category": "Competitor Intelligence",
+        "adam_rel": 3,
+        "noise_level": 2,
+        "category": "HSBC News",
         "is_update": false,
+        "user_relevance": 3
+      },
+      {
+        "id": "art03",
+        "title": "HSBC's Q2 beat splits analysts as buyback underwhelms",
+        "url": "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
+        "source": "Proactive Investors",
+        "published_at": "2026-08-05",
+        "summary": "Analysts diverged sharply on HSBC's Q2 results: BNP Paribas downgraded the stock to Underperform and Citi cut it to Neutral, while Morgan Stanley raised its price target. The resumed $1 billion buyback fell short of the $2 billion some analysts expected, and investors read the quarter as solid but not enough to drive a sharp re-rating.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": true,
         "user_relevance": 6
       },
       {
-        "id": "art06",
-        "title": "Anthropic adds inline data-loss-prevention 'inference hooks' to Claude Enterprise",
-        "url": "https://claude.com/blog/claude-enterprise-inference-hooks",
-        "source": "Anthropic",
+        "id": "art04",
+        "title": "Meta ships Muse Spark 1.2 and a terminal coding agent",
+        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+        "source": "Meta AI Research",
         "published_at": "2026-08-05",
-        "summary": "Anthropic launched inference hooks in beta for Claude Enterprise, letting a customer's own security server issue a real-time allow/deny verdict on every prompt and tool call before it reaches the model, across chat, Claude Code and Cowork. It gives compliance teams inline DLP enforcement rather than after-the-fact audit logs.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 9,
+        "summary": "Meta released Muse Spark 1.2, a coding-focused model update, alongside Muse Code, a beta terminal coding agent that coordinates persistent subagents across long-running software engineering tasks. The release intensifies competition among AI labs for enterprise developer-tooling market share.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 7,
         "noise_level": 3,
         "category": "AI & Technology",
         "is_update": false,
-        "user_relevance": 9
+        "user_relevance": 7
       },
       {
-        "id": "art07",
-        "title": "Barclays, HSBC say Fed Chair Warsh's inflation stance boosts case for inflation-linked bonds",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-05/barclays-hsbc-say-warsh-boosts-case-for-inflation-linked-bonds",
-        "source": "Bloomberg",
-        "published_at": "2026-08-05",
-        "summary": "HSBC and Barclays strategists say Fed Chair Kevin Warsh's refusal to commit to a path for controlling inflation is strengthening the case for inflation-protected bonds, after 30-year Treasury yields pushed above 5.2% last week on concerns the Fed is acting too late.",
+        "id": "art05",
+        "title": "Hong Kong wealth AUM hits $5.38 trillion, SFC survey shows",
+        "url": "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
+        "source": "Caproasia",
+        "published_at": "2026-08-06",
+        "summary": "The SFC's 2025 Asset and Wealth Management Survey put Hong Kong's total AUM at $5.38 trillion across 2,358 licensed firms, with private banking and wealth management accounting for $1.65 trillion. Hong Kong investors and mainland China contributed 37% and 9% of AUM respectively, underscoring the city's role as a cross-border wealth hub.",
         "hsbc_relevancy": 5,
-        "adam_rel": 3,
+        "adam_rel": 6,
         "noise_level": 2,
-        "category": "Regulatory & Markets",
+        "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 6
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
-      "Operations & Change": "#7c3aed",
-      "Private Banking & Wealth": "#059669",
       "Competitor Intelligence": "#0891b2",
+      "HSBC News": "#dc2626",
       "AI & Technology": "#6366f1",
-      "Regulatory & Markets": "#d97706"
+      "Private Banking & Wealth": "#059669"
     }
   }
 }
