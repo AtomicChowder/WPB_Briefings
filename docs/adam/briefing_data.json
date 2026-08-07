@@ -3,41 +3,41 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Thursday, 6 August 2026",
-  "date_str": "2026-08-06",
-  "generated_at": "6 Aug 2026, 23:12 UTC",
-  "total_articles": 5,
+  "briefing_date": "Friday, 7 August 2026",
+  "date_str": "2026-08-07",
+  "generated_at": "7 Aug 2026, 23:12 UTC",
+  "total_articles": 3,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "DBS wealth AUM crosses S$500bn as Q2 profit hits a record",
-      "context_html": "<strong>Tan Su Shan, CEO of DBS Group</strong> said the bank's results were \"anchored by the strength of our wealth management franchise\" after wealth AUM surpassed S$500 billion for the first time and Q2 net profit rose 9% to a record S$3.08 billion. That gives DBS a concrete benchmark against HSBC's own $1.1 trillion Asia wealth book, and DBS is raising 2026 guidance on the same wealth-fee momentum HSBC is counting on.",
+      "headline": "DBS embeds agentic AI bank-wide under Tan Su Shan, raising the APAC AI-transformation bar",
+      "context_html": "<strong>Tan Su Shan, Group CEO of DBS</strong> is pushing generative and agentic AI into every corner of the bank's internal operations, not just client-facing tools, according to an exclusive Forbes Asia profile out this week. DBS is HSBC's sharpest APAC wealth and digital rival, and its shift from AI pilots to embedded, bank-wide agentic workflows sets a delivery pace that HSBC WPB's own AI-enabled change programme needs to match or beat.",
       "source_links": [
         [
-          "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
-          "DBS posts record Q2 profit, raises guidance"
+          "https://www.forbes.com/sites/naazneenkarmali/2026/08/06/an-exclusive-look-into-how-dbs-group-ceo-tan-su-shan-is-leading-singapores-banking-giant-into-an-ai-future/",
+          "DBS's Tan Su Shan leads bank into an AI future"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC's Q2 beat splits analysts despite $2bn simplification target",
-      "context_html": "Following the earnings beat covered on 4 August, reaction has turned mixed: BNP Paribas cut HSBC to Underperform and Citi moved to Neutral, while Morgan Stanley raised its price target. <strong>Joseph Dickerson, analyst at Jefferies</strong>, called the resumed $1 billion buyback \"modestly lower\" than expected. For Change Execution, the split verdict is a reminder that the simplification and buyback story needs sustained visible progress, not just a one-off consensus beat.",
+      "headline": "Standard Chartered pushes wealth management into India's GIFT City",
+      "context_html": "Standard Chartered secured in-principle IFSCA approval to distribute wealth products from GIFT City and aims to launch within months, extending its India wealth footprint through a new offshore-onshore distribution channel. For Adam, it's a live example of a competitor opening a lower-friction cross-border wealth distribution route just as HSBC weighs its own India and cross-border wealth priorities.",
       "source_links": [
         [
-          "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
-          "HSBC buyback underwhelms despite earnings"
+          "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
+          "StanChart expands GIFT City wealth push"
         ]
       ],
-      "is_update": true
+      "is_update": false
     },
     {
-      "headline": "Meta's Muse Spark 1.2 raises the bar for agentic coding tools",
-      "context_html": "Meta shipped Muse Spark 1.2 alongside Muse Code, a terminal coding agent able to run persistent subagents across multi-hour engineering tasks \u2014 the latest entrant in a field that already includes Claude, GPT and Gemini coding agents. As WPB pilots AI-assisted delivery for its own engineering teams, the pace of change here is a reminder to keep re-evaluating which agent platform to standardise on rather than locking in early.",
+      "headline": "Singapore's DBS, OCBC and UOB all post record wealth fees as loan margins narrow",
+      "context_html": "DBS, OCBC and UOB each notched record wealth management income, fees and AUM in their latest results, with all three leaning harder on wealth fees as loan margins narrow. For Adam, it's a reminder that the competitive pressure on HSBC's Singapore wealth franchise isn't just from DBS \u2014 OCBC and UOB are scaling wealth as a core profit engine too, at a moment when wealth fee income is exactly the lever HSBC WPB is also pulling.",
       "source_links": [
         [
-          "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
-          "Meta ships Muse Code and Muse Spark 1.2"
+          "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
+          "Singapore's big three notch record wealth AUM"
         ]
       ],
       "is_update": false
@@ -47,79 +47,44 @@
     "Competitor Intelligence": [
       {
         "id": "art01",
-        "title": "DBS posts record Q2 profit as wealth AUM tops S$500bn",
-        "url": "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
-        "source": "The Star",
+        "title": "An Exclusive Look Into How DBS Group CEO Tan Su Shan Is Leading Singapore's Banking Giant Into An AI Future",
+        "url": "https://www.forbes.com/sites/naazneenkarmali/2026/08/06/an-exclusive-look-into-how-dbs-group-ceo-tan-su-shan-is-leading-singapores-banking-giant-into-an-ai-future/",
+        "source": "Forbes",
         "published_at": "2026-08-06",
-        "summary": "DBS Group reported a record second-quarter net profit of S$3.08 billion, up 9% year-on-year and ahead of analyst estimates, as wealth management assets under management surpassed S$500 billion for the first time. The bank raised its full-year 2026 guidance on the strength of wealth fees and treasury income.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 4,
+        "summary": "Forbes Asia profile details how DBS is embedding generative and agentic AI across every part of its internal operations, not just customer-facing tools, under Group CEO Tan Su Shan. The bank raised its full-year 2026 income guidance after a record Q2, with Tan positioning AI-enabled workflow redesign as core to that growth.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "noise_level": 2,
         "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 8
-      }
-    ],
-    "HSBC News": [
-      {
-        "id": "art03",
-        "title": "HSBC's Q2 beat splits analysts as buyback underwhelms",
-        "url": "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
-        "source": "Proactive Investors",
-        "published_at": "2026-08-05",
-        "summary": "Analysts diverged sharply on HSBC's Q2 results: BNP Paribas downgraded the stock to Underperform and Citi cut it to Neutral, while Morgan Stanley raised its price target. The resumed $1 billion buyback fell short of the $2 billion some analysts expected, and investors read the quarter as solid but not enough to drive a sharp re-rating.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 6,
-        "noise_level": 3,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 6
+        "user_relevance": 9
       },
       {
         "id": "art02",
-        "title": "HSBC lifts debt tender offer to $6.8bn on 2028 notes",
-        "url": "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
-        "source": "MarketScreener",
+        "title": "Standard Chartered expands GIFT City presence with wealth management push",
+        "url": "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
+        "source": "Business Standard",
         "published_at": "2026-08-06",
-        "summary": "HSBC increased the maximum size of its cash tender offer for four series of senior unsecured notes maturing in 2028 to roughly $6.8 billion, up from an initial $5 billion cap. The liability-management exercise is due to close on 12 August, settling on 17 August.",
+        "summary": "Standard Chartered received in-principle IFSCA approval to distribute capital market products from India's GIFT City, and plans to launch a wealth management proposition there within months, starting with its Signature CIO Funds. The move extends the bank's India wealth footprint even as it works through senior departures in that business.",
         "hsbc_relevancy": 6,
-        "adam_rel": 3,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 3
-      }
-    ],
-    "AI & Technology": [
-      {
-        "id": "art04",
-        "title": "Meta ships Muse Spark 1.2 and a terminal coding agent",
-        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
-        "source": "Meta AI Research",
-        "published_at": "2026-08-05",
-        "summary": "Meta released Muse Spark 1.2, a coding-focused model update, alongside Muse Code, a beta terminal coding agent that coordinates persistent subagents across long-running software engineering tasks. The release intensifies competition among AI labs for enterprise developer-tooling market share.",
-        "hsbc_relevancy": 3,
         "adam_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
         "user_relevance": 7
       }
     ],
     "Private Banking & Wealth": [
       {
-        "id": "art05",
-        "title": "Hong Kong wealth AUM hits $5.38 trillion, SFC survey shows",
-        "url": "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
-        "source": "Caproasia",
+        "id": "art03",
+        "title": "Singapore's big three notch record wealth income, fees and AUM",
+        "url": "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
+        "source": "Asian Private Banker",
         "published_at": "2026-08-06",
-        "summary": "The SFC's 2025 Asset and Wealth Management Survey put Hong Kong's total AUM at $5.38 trillion across 2,358 licensed firms, with private banking and wealth management accounting for $1.65 trillion. Hong Kong investors and mainland China contributed 37% and 9% of AUM respectively, underscoring the city's role as a cross-border wealth hub.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
+        "summary": "DBS, OCBC and UOB all reported record wealth management income, fees and AUM in their latest results, as Singapore's largest lenders lean harder on wealth fees to offset narrowing loan margins. DBS remains the largest by AUM, but OCBC and UOB both posted double-digit net-new-money growth.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 3,
         "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 8
       }
     ]
   },
@@ -127,79 +92,46 @@
     "articles": [
       {
         "id": "art01",
-        "title": "DBS posts record Q2 profit as wealth AUM tops S$500bn",
-        "url": "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
-        "source": "The Star",
+        "title": "An Exclusive Look Into How DBS Group CEO Tan Su Shan Is Leading Singapore's Banking Giant Into An AI Future",
+        "url": "https://www.forbes.com/sites/naazneenkarmali/2026/08/06/an-exclusive-look-into-how-dbs-group-ceo-tan-su-shan-is-leading-singapores-banking-giant-into-an-ai-future/",
+        "source": "Forbes",
         "published_at": "2026-08-06",
-        "summary": "DBS Group reported a record second-quarter net profit of S$3.08 billion, up 9% year-on-year and ahead of analyst estimates, as wealth management assets under management surpassed S$500 billion for the first time. The bank raised its full-year 2026 guidance on the strength of wealth fees and treasury income.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 4,
+        "summary": "Forbes Asia profile details how DBS is embedding generative and agentic AI across every part of its internal operations, not just customer-facing tools, under Group CEO Tan Su Shan. The bank raised its full-year 2026 income guidance after a record Q2, with Tan positioning AI-enabled workflow redesign as core to that growth.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "noise_level": 2,
         "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 9
       },
       {
         "id": "art02",
-        "title": "HSBC lifts debt tender offer to $6.8bn on 2028 notes",
-        "url": "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
-        "source": "MarketScreener",
+        "title": "Standard Chartered expands GIFT City presence with wealth management push",
+        "url": "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
+        "source": "Business Standard",
         "published_at": "2026-08-06",
-        "summary": "HSBC increased the maximum size of its cash tender offer for four series of senior unsecured notes maturing in 2028 to roughly $6.8 billion, up from an initial $5 billion cap. The liability-management exercise is due to close on 12 August, settling on 17 August.",
+        "summary": "Standard Chartered received in-principle IFSCA approval to distribute capital market products from India's GIFT City, and plans to launch a wealth management proposition there within months, starting with its Signature CIO Funds. The move extends the bank's India wealth footprint even as it works through senior departures in that business.",
         "hsbc_relevancy": 6,
-        "adam_rel": 3,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 3
-      },
-      {
-        "id": "art03",
-        "title": "HSBC's Q2 beat splits analysts as buyback underwhelms",
-        "url": "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
-        "source": "Proactive Investors",
-        "published_at": "2026-08-05",
-        "summary": "Analysts diverged sharply on HSBC's Q2 results: BNP Paribas downgraded the stock to Underperform and Citi cut it to Neutral, while Morgan Stanley raised its price target. The resumed $1 billion buyback fell short of the $2 billion some analysts expected, and investors read the quarter as solid but not enough to drive a sharp re-rating.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 6,
-        "noise_level": 3,
-        "category": "HSBC News",
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "art04",
-        "title": "Meta ships Muse Spark 1.2 and a terminal coding agent",
-        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
-        "source": "Meta AI Research",
-        "published_at": "2026-08-05",
-        "summary": "Meta released Muse Spark 1.2, a coding-focused model update, alongside Muse Code, a beta terminal coding agent that coordinates persistent subagents across long-running software engineering tasks. The release intensifies competition among AI labs for enterprise developer-tooling market share.",
-        "hsbc_relevancy": 3,
         "adam_rel": 7,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
         "user_relevance": 7
       },
       {
-        "id": "art05",
-        "title": "Hong Kong wealth AUM hits $5.38 trillion, SFC survey shows",
-        "url": "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
-        "source": "Caproasia",
+        "id": "art03",
+        "title": "Singapore's big three notch record wealth income, fees and AUM",
+        "url": "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
+        "source": "Asian Private Banker",
         "published_at": "2026-08-06",
-        "summary": "The SFC's 2025 Asset and Wealth Management Survey put Hong Kong's total AUM at $5.38 trillion across 2,358 licensed firms, with private banking and wealth management accounting for $1.65 trillion. Hong Kong investors and mainland China contributed 37% and 9% of AUM respectively, underscoring the city's role as a cross-border wealth hub.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
+        "summary": "DBS, OCBC and UOB all reported record wealth management income, fees and AUM in their latest results, as Singapore's largest lenders lean harder on wealth fees to offset narrowing loan margins. DBS remains the largest by AUM, but OCBC and UOB both posted double-digit net-new-money growth.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 3,
         "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 8
       }
     ],
     "categories": {
       "Competitor Intelligence": "#0891b2",
-      "HSBC News": "#dc2626",
-      "AI & Technology": "#6366f1",
       "Private Banking & Wealth": "#059669"
     }
   }
