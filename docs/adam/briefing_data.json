@@ -3,88 +3,66 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Friday, 7 August 2026",
-  "date_str": "2026-08-07",
-  "generated_at": "7 Aug 2026, 23:12 UTC",
-  "total_articles": 3,
+  "briefing_date": "Saturday, 8 August 2026",
+  "date_str": "2026-08-08",
+  "generated_at": "8 Aug 2026, 23:19 UTC",
+  "total_articles": 2,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "DBS embeds agentic AI bank-wide under Tan Su Shan, raising the APAC AI-transformation bar",
-      "context_html": "<strong>Tan Su Shan, Group CEO of DBS</strong> is pushing generative and agentic AI into every corner of the bank's internal operations, not just client-facing tools, according to an exclusive Forbes Asia profile out this week. DBS is HSBC's sharpest APAC wealth and digital rival, and its shift from AI pilots to embedded, bank-wide agentic workflows sets a delivery pace that HSBC WPB's own AI-enabled change programme needs to match or beat.",
+      "headline": "HSBC's Elhedery confirms H2 stablecoin launch and a 'thoughtful' multi-model AI stance, days after the H1 beat",
+      "context_html": "In a fresh interview following HSBC's H1 2026 results, <strong>Georges Elhedery, Group CEO of HSBC</strong> said the bank is 'growing across all our indicators' and confirmed the HKD stablecoin \u2014 integrated into PayMe and the HSBC HK App \u2014 will launch in the second half of 2026, alongside a deliberately multi-model approach to AI investment. For Adam, both threads sit squarely inside his APAC AI-enabled change remit: the stablecoin is a live digital-payments delivery programme, and the multi-model AI stance signals how HSBC intends to avoid vendor lock-in as it scales agentic tools.",
       "source_links": [
         [
-          "https://www.forbes.com/sites/naazneenkarmali/2026/08/06/an-exclusive-look-into-how-dbs-group-ceo-tan-su-shan-is-leading-singapores-banking-giant-into-an-ai-future/",
-          "DBS's Tan Su Shan leads bank into an AI future"
+          "https://www.disruptionbanking.com/2026/08/07/hsbc-growing-across-all-our-indicators/",
+          "HSBC 'growing across all our indicators'"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Standard Chartered pushes wealth management into India's GIFT City",
-      "context_html": "Standard Chartered secured in-principle IFSCA approval to distribute wealth products from GIFT City and aims to launch within months, extending its India wealth footprint through a new offshore-onshore distribution channel. For Adam, it's a live example of a competitor opening a lower-friction cross-border wealth distribution route just as HSBC weighs its own India and cross-border wealth priorities.",
+      "headline": "JPMorgan poaches a DBS private banker for Indonesia as the APAC talent war spreads",
+      "context_html": "JPMorgan Private Bank hired <strong>Aldrin Sudirgo, formerly Vice President at DBS Private Bank</strong>, to its Indonesia team, adding a 21-year veteran with stints at Standard Chartered, HSBC, Citigroup, UOB and Credit Suisse. It's a fresh instance of the cross-border private-banker talent war Adam has been tracking \u2014 following DBS's own hire of a Standard Chartered veteran for its India wealth team on 3 August \u2014 and a reminder that HSBC alumni are being actively recruited by rivals building out Southeast Asia coverage.",
       "source_links": [
         [
-          "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
-          "StanChart expands GIFT City wealth push"
-        ]
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "Singapore's DBS, OCBC and UOB all post record wealth fees as loan margins narrow",
-      "context_html": "DBS, OCBC and UOB each notched record wealth management income, fees and AUM in their latest results, with all three leaning harder on wealth fees as loan margins narrow. For Adam, it's a reminder that the competitive pressure on HSBC's Singapore wealth franchise isn't just from DBS \u2014 OCBC and UOB are scaling wealth as a core profit engine too, at a moment when wealth fee income is exactly the lever HSBC WPB is also pulling.",
-      "source_links": [
-        [
-          "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
-          "Singapore's big three notch record wealth AUM"
+          "https://www.caproasia.com/2026/08/09/jp-morgan-private-bank-hires-dbs-private-bank-aldrin-sudirgo-as-vice-president-in-indonesia-team-21-years-private-banking-wealth-management-financial-industry-experience-at-standard-chartered-bank/",
+          "JPMorgan hires DBS's Aldrin Sudirgo for Indonesia"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Competitor Intelligence": [
+    "HSBC News": [
       {
         "id": "art01",
-        "title": "An Exclusive Look Into How DBS Group CEO Tan Su Shan Is Leading Singapore's Banking Giant Into An AI Future",
-        "url": "https://www.forbes.com/sites/naazneenkarmali/2026/08/06/an-exclusive-look-into-how-dbs-group-ceo-tan-su-shan-is-leading-singapores-banking-giant-into-an-ai-future/",
-        "source": "Forbes",
-        "published_at": "2026-08-06",
-        "summary": "Forbes Asia profile details how DBS is embedding generative and agentic AI across every part of its internal operations, not just customer-facing tools, under Group CEO Tan Su Shan. The bank raised its full-year 2026 income guidance after a record Q2, with Tan positioning AI-enabled workflow redesign as core to that growth.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 9,
+        "title": "HSBC 'growing across all our indicators'",
+        "url": "https://www.disruptionbanking.com/2026/08/07/hsbc-growing-across-all-our-indicators/",
+        "source": "Disruption Banking",
+        "published_at": "2026-08-07",
+        "summary": "In a fresh interview following HSBC's H1 2026 results (covered 4 August), CEO Georges Elhedery said the bank is 'growing across all our indicators' and confirmed the HKD stablecoin \u2014 integrated into PayMe and the HSBC HK App \u2014 will launch in the second half of 2026, alongside a deliberately multi-model approach to AI investment. The comments add new detail on stablecoin timing and AI vendor posture beyond the results and simplification-target coverage already reported this week.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
         "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 9
-      },
-      {
-        "id": "art02",
-        "title": "Standard Chartered expands GIFT City presence with wealth management push",
-        "url": "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
-        "source": "Business Standard",
-        "published_at": "2026-08-06",
-        "summary": "Standard Chartered received in-principle IFSCA approval to distribute capital market products from India's GIFT City, and plans to launch a wealth management proposition there within months, starting with its Signature CIO Funds. The move extends the bank's India wealth footprint even as it works through senior departures in that business.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 7
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 8
       }
     ],
-    "Private Banking & Wealth": [
+    "Competitor Intelligence": [
       {
-        "id": "art03",
-        "title": "Singapore's big three notch record wealth income, fees and AUM",
-        "url": "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-08-06",
-        "summary": "DBS, OCBC and UOB all reported record wealth management income, fees and AUM in their latest results, as Singapore's largest lenders lean harder on wealth fees to offset narrowing loan margins. DBS remains the largest by AUM, but OCBC and UOB both posted double-digit net-new-money growth.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "Private Banking & Wealth",
-        "user_relevance": 8
+        "id": "art02",
+        "title": "JP Morgan Private Bank Hires DBS Private Bank's Aldrin Sudirgo as Vice President, Indonesia Team",
+        "url": "https://www.caproasia.com/2026/08/09/jp-morgan-private-bank-hires-dbs-private-bank-aldrin-sudirgo-as-vice-president-in-indonesia-team-21-years-private-banking-wealth-management-financial-industry-experience-at-standard-chartered-bank/",
+        "source": "Caproasia",
+        "published_at": "2026-08-08",
+        "summary": "JPMorgan Private Bank hired Aldrin Sudirgo from DBS Private Bank as Vice President on its Indonesia team; Sudirgo brings 21 years of private banking experience spanning Standard Chartered, HSBC, Citigroup, UOB and Credit Suisse. The move follows DBS's own hire of a Standard Chartered veteran for its India wealth team, reported 3 August, extending the same cross-border private-banker talent war into a new market.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 6
       }
     ]
   },
@@ -92,47 +70,36 @@
     "articles": [
       {
         "id": "art01",
-        "title": "An Exclusive Look Into How DBS Group CEO Tan Su Shan Is Leading Singapore's Banking Giant Into An AI Future",
-        "url": "https://www.forbes.com/sites/naazneenkarmali/2026/08/06/an-exclusive-look-into-how-dbs-group-ceo-tan-su-shan-is-leading-singapores-banking-giant-into-an-ai-future/",
-        "source": "Forbes",
-        "published_at": "2026-08-06",
-        "summary": "Forbes Asia profile details how DBS is embedding generative and agentic AI across every part of its internal operations, not just customer-facing tools, under Group CEO Tan Su Shan. The bank raised its full-year 2026 income guidance after a record Q2, with Tan positioning AI-enabled workflow redesign as core to that growth.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 9,
+        "title": "HSBC 'growing across all our indicators'",
+        "url": "https://www.disruptionbanking.com/2026/08/07/hsbc-growing-across-all-our-indicators/",
+        "source": "Disruption Banking",
+        "published_at": "2026-08-07",
+        "summary": "In a fresh interview following HSBC's H1 2026 results (covered 4 August), CEO Georges Elhedery said the bank is 'growing across all our indicators' and confirmed the HKD stablecoin \u2014 integrated into PayMe and the HSBC HK App \u2014 will launch in the second half of 2026, alongside a deliberately multi-model approach to AI investment. The comments add new detail on stablecoin timing and AI vendor posture beyond the results and simplification-target coverage already reported this week.",
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
         "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 9
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "Standard Chartered expands GIFT City presence with wealth management push",
-        "url": "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
-        "source": "Business Standard",
-        "published_at": "2026-08-06",
-        "summary": "Standard Chartered received in-principle IFSCA approval to distribute capital market products from India's GIFT City, and plans to launch a wealth management proposition there within months, starting with its Signature CIO Funds. The move extends the bank's India wealth footprint even as it works through senior departures in that business.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 2,
+        "title": "JP Morgan Private Bank Hires DBS Private Bank's Aldrin Sudirgo as Vice President, Indonesia Team",
+        "url": "https://www.caproasia.com/2026/08/09/jp-morgan-private-bank-hires-dbs-private-bank-aldrin-sudirgo-as-vice-president-in-indonesia-team-21-years-private-banking-wealth-management-financial-industry-experience-at-standard-chartered-bank/",
+        "source": "Caproasia",
+        "published_at": "2026-08-08",
+        "summary": "JPMorgan Private Bank hired Aldrin Sudirgo from DBS Private Bank as Vice President on its Indonesia team; Sudirgo brings 21 years of private banking experience spanning Standard Chartered, HSBC, Citigroup, UOB and Credit Suisse. The move follows DBS's own hire of a Standard Chartered veteran for its India wealth team, reported 3 August, extending the same cross-border private-banker talent war into a new market.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 1,
         "category": "Competitor Intelligence",
-        "user_relevance": 7
-      },
-      {
-        "id": "art03",
-        "title": "Singapore's big three notch record wealth income, fees and AUM",
-        "url": "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
-        "source": "Asian Private Banker",
-        "published_at": "2026-08-06",
-        "summary": "DBS, OCBC and UOB all reported record wealth management income, fees and AUM in their latest results, as Singapore's largest lenders lean harder on wealth fees to offset narrowing loan margins. DBS remains the largest by AUM, but OCBC and UOB both posted double-digit net-new-money growth.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "Private Banking & Wealth",
-        "user_relevance": 8
+        "is_update": false,
+        "user_relevance": 6
       }
     ],
     "categories": {
-      "Competitor Intelligence": "#0891b2",
-      "Private Banking & Wealth": "#059669"
+      "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2"
     }
   }
 }
