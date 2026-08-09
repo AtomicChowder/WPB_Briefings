@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-08-08",
+    "last_updated": "2026-08-09",
     "covered_urls": [
       "https://asianprivatebanker.com/private-banking-wealth-management/hsbc-1h26-asia-wealth-balances-reach-us1-1tn-with-private-banking-fee-momentum/",
       "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
@@ -18,18 +18,18 @@
       "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
       "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
       "https://www.caproasia.com/2026/08/09/jp-morgan-private-bank-hires-dbs-private-bank-aldrin-sudirgo-as-vice-president-in-indonesia-team-21-years-private-banking-wealth-management-financial-industry-experience-at-standard-chartered-bank/",
-      "https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html",
       "https://www.darkreading.com/cyber-risk/anthropic-ai-issues-result-security-gaps",
       "https://www.disruptionbanking.com/2026/08/07/hsbc-growing-across-all-our-indicators/",
       "https://www.forbes.com/sites/naazneenkarmali/2026/08/06/an-exclusive-look-into-how-dbs-group-ceo-tan-su-shan-is-leading-singapores-banking-giant-into-an-ai-future/",
-      "https://www.manilatimes.net/2026/08/02/regions/stanchart-lifts-income-target/2396462",
       "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
       "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
-      "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance"
+      "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
+      "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
+      "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure"
     ],
     "covered_topics": [
-      "Anthropic's own agents breached real systems in testing -- a live governance test as HSBC scales agentic AI",
       "Asia wealth is doing the heavy lifting: $1.1tn in balances, $57bn of this year's net new money booked in-region",
+      "Citi and BNP Paribas turn cautious on HSBC just as Morgan Stanley raises its target",
       "DBS embeds agentic AI bank-wide under Tan Su Shan, raising the APAC AI-transformation bar",
       "DBS poaches StanChart veteran for India wealth as the private-banker talent war spreads to a new market",
       "DBS wealth AUM crosses S$500bn as Q2 profit hits a record",
@@ -40,23 +40,12 @@
       "HSBC's cost story is now the swing factor: profit beat, but NII pressure and China property risk offset it",
       "JPMorgan poaches a DBS private banker for Indonesia as the APAC talent war spreads",
       "Meta's Muse Spark 1.2 raises the bar for agentic coding tools",
+      "OCBC and UOB convert Singapore's wealth boom into record Q2 profits",
       "Singapore's DBS, OCBC and UOB all post record wealth fees as loan margins narrow",
-      "StanChart's record H1 sets the bar three days before HSBC reports",
       "Standard Chartered pushes wealth management into India's GIFT City",
       "UBS's record $125m AML fine is a live warning on wire-monitoring gaps HSBC should stress-test against its own book"
     ],
     "daily": [
-      {
-        "date": "2026-08-02",
-        "urls": [
-          "https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html",
-          "https://www.manilatimes.net/2026/08/02/regions/stanchart-lifts-income-target/2396462"
-        ],
-        "topics": [
-          "StanChart's record H1 sets the bar three days before HSBC reports",
-          "Anthropic's own agents breached real systems in testing -- a live governance test as HSBC scales agentic AI"
-        ]
-      },
       {
         "date": "2026-08-04",
         "urls": [
@@ -126,6 +115,17 @@
         "topics": [
           "HSBC's Elhedery confirms H2 stablecoin launch and a 'thoughtful' multi-model AI stance, days after the H1 beat",
           "JPMorgan poaches a DBS private banker for Indonesia as the APAC talent war spreads"
+        ]
+      },
+      {
+        "date": "2026-08-09",
+        "urls": [
+          "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
+          "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure"
+        ],
+        "topics": [
+          "Citi and BNP Paribas turn cautious on HSBC just as Morgan Stanley raises its target",
+          "OCBC and UOB convert Singapore's wealth boom into record Q2 profits"
         ]
       }
     ]
