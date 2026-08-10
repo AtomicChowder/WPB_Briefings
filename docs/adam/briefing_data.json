@@ -3,66 +3,121 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Sunday, 9 August 2026",
-  "date_str": "2026-08-09",
-  "generated_at": "9 Aug 2026, 23:12 UTC",
-  "total_articles": 2,
+  "briefing_date": "Monday, 10 August 2026",
+  "date_str": "2026-08-10",
+  "generated_at": "10 Aug 2026, 23:14 UTC",
+  "total_articles": 4,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Citi and BNP Paribas turn cautious on HSBC just as Morgan Stanley raises its target",
+      "headline": "Beijing's 20% offshore insurance tax knocks HSBC and Prudential shares, testing HK's wealth-hub pitch",
+      "context_html": "China's tax authorities began enforcing a 20% levy on gains from offshore insurance policies sold in Hong Kong on 5 August, wiping as much as 7% off HSBC's London-listed shares and 13% off Prudential's before Beijing's State Taxation Administration clarified on 7 August that the rule isn't new and isn't specifically targeting Hong Kong. HSBC's insurance-linked wealth flows from mainland clients are directly exposed, making this a live stress-test of Hong Kong's 'wealth hub' pitch to Chinese HNW clients just as HSBC leans harder into the region for growth.",
       "source_links": [
         [
-          "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
-          "Citi downgrades HSBC to 'neutral' after 40% run"
+          "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
+          "Beijing: offshore insurance tax not new"
+        ],
+        [
+          "https://www.bloomberg.com/news/articles/2026-08-05/prudential-hsbc-shares-tumble-on-china-insurance-tax-report",
+          "Prudential, HSBC shares tumble on tax report"
         ]
       ],
-      "is_update": true,
-      "context_html": "The first rating actions since the Q2 beat show the street is now debating how much further HSBC's re-rating can run \u2014 a sentiment shift worth tracking as it shapes the internal narrative around the bank's simplification and AI-transformation story. <strong>Citi</strong> cut HSBC to 'neutral' from 'buy', trimming its price target to 1570p \u2014 the argument isn't that anything has gone wrong operationally, but that the shares need a breather after a 40% run this year. Exane <strong>BNP Paribas</strong> downgraded HSBC to underperform on margin-headwind concerns, while <strong>Morgan Stanley</strong> raised its target to 1,674p from 1,527p \u2014 a genuine split verdict three days after Elhedery's on-camera comments about buybacks and the bank overhaul. Sharpens last week's 'Q2 beat splits analysts' storyline with the specific rating actions behind it."
+      "is_update": true
     },
     {
-      "headline": "OCBC and UOB convert Singapore's wealth boom into record Q2 profits",
+      "headline": "Meta open-sources Muse Glimmer, putting a capable agentic model on a single consumer GPU",
+      "context_html": "Meta released Muse Glimmer on 10 August, a 30-billion-parameter distillation of its Muse Spark 1.2 model, free under an Apache 2.0 licence so it can run agentic workflows -- tool calls, coding, multi-step tasks -- locally on one consumer GPU instead of in the cloud. A credible open-weight agentic model narrows the gap between hyperscaler-dependent AI programmes and cheaper, self-hosted alternatives, sharpening the build-vs-buy question behind HSBC's own agentic rollout.",
       "source_links": [
         [
-          "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure",
-          "OCBC, UOB beat forecasts as wealth income cushions margin"
+          "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
+          "Meta releases Muse Glimmer AI model"
+        ],
+        [
+          "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+          "Meta's new Glimmer model, explained"
         ]
       ],
-      "is_update": true,
-      "context_html": "Direct APAC wealth competitors are now showing the hard P&L payoff of fee-income growth offsetting NIM compression \u2014 the exact conversion metric HSBC's own Asia wealth franchise and change programme will be benchmarked against. OCBC's Q2 net profit jumped 22% to S$2.22bn, its first quarter above S$2bn, with non-interest income up 51% YoY and wealth management now 41% of group revenue. UOB's profit rose 10% to S$1.48bn, with fee income up 5% to S$665m on record wealth management revenue. Extends the 'Singapore's Big Three' wealth-fee story from earlier in the week with the specific quarterly numbers behind it."
+      "is_update": false
+    },
+    {
+      "headline": "Standard Chartered's wealth income surges 43% to a record $1.1bn, sharpening the APAC wealth race",
+      "context_html": "Standard Chartered's Wealth Solutions income rose 43% year-on-year to a record $1.1bn in Q2 -- investment product income alone up 56% -- taking first-half wealth income to $2.11bn and adding roughly 150,000 new affluent clients. Coming straight after HSBC's own 18% wealth revenue growth and $2bn simplification target, the scale of StanChart's wealth momentum is a reminder that HSBC's APAC wealth lead is being contested on growth rate, not just absolute AUM.",
+      "source_links": [
+        [
+          "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
+          "StanChart wealth income hits record $1.1bn"
+        ],
+        [
+          "https://www.wealthbriefing.com/html/article.php/standard-chartered's-h1-2026-wealth-solutions-income-rose-38-per-cent",
+          "StanChart H1 wealth income +38%"
+        ]
+      ],
+      "is_update": true
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "Regulatory & Markets": [
       {
         "id": "art01",
-        "title": "Citi, BNP Paribas downgrade HSBC after 40% share rally; Morgan Stanley lifts target",
-        "url": "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
-        "source": "Proactive Investors",
-        "published_at": "2026-08-06",
-        "summary": "Citi cut HSBC to 'neutral' from 'buy' and trimmed its price target to 1570p, arguing the stock needs a breather after a 40% run this year even though nothing has gone wrong operationally. Exane BNP Paribas separately downgraded HSBC to underperform on margin-headwind concerns, while Morgan Stanley raised its target to 1,674p from 1,527p, leaving analysts split on the post-earnings trade.",
-        "hsbc_relevancy": 10,
-        "adam_rel": 6,
+        "title": "China's 20% Offshore Insurance Tax Rattles HSBC, Prudential Shares in Hong Kong",
+        "url": "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
+        "source": "South China Morning Post",
+        "published_at": "2026-08-07",
+        "summary": "Mainland tax authorities began enforcing a 20% personal income tax on gains from offshore insurance policies sold in Hong Kong, sending HSBC's London-listed shares down as much as 7% and Prudential's down 13% before Beijing's State Taxation Administration clarified the rule is not new and does not specifically target Hong Kong.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
         "noise_level": 4,
-        "category": "HSBC News",
+        "category": "Regulatory & Markets",
         "is_update": true,
-        "user_relevance": 6
+        "user_relevance": 8
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art02",
+        "title": "Meta Releases Muse Glimmer, an Open-Weight Agentic AI Model That Runs on One GPU",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
+        "source": "Bloomberg",
+        "published_at": "2026-08-10",
+        "summary": "Meta launched Muse Glimmer, a 30-billion-parameter open-weight model distilled from Muse Spark 1.2, released free under an Apache 2.0 licence so developers can run agentic workflows -- tool calls, coding, multi-step tasks -- locally on a single consumer GPU rather than in the cloud.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 8,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "art02",
-        "title": "OCBC, UOB post record Q2 profits as wealth income offsets margin pressure",
-        "url": "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure",
-        "source": "The Star",
-        "published_at": "2026-08-07",
-        "summary": "OCBC's Q2 net profit jumped 22% to S$2.22bn, crossing S$2bn for the first time, as non-interest income surged 51% year-on-year and wealth management climbed to 41% of group revenue. UOB's profit rose 10% to S$1.48bn, with fee income up 5% to S$665m on record wealth management revenue, as both banks offset net interest margin compression with fee growth.",
-        "hsbc_relevancy": 7,
+        "id": "art03",
+        "title": "Standard Chartered's Wealth Income Hits Record $1.1bn in Q2 as Affluent Clients Surge",
+        "url": "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
+        "source": "The Digital Banker",
+        "published_at": "2026-07-29",
+        "summary": "Standard Chartered's Wealth Solutions income rose 43% year-on-year to a record $1.1bn in Q2 -- investment product income up 56% -- taking first-half wealth income to $2.11bn (+38%), with roughly 150,000 new-to-bank affluent clients added in H1 and the full-year income guidance raised alongside a fresh $1bn buyback.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "Competitor Intelligence",
         "is_update": true,
         "user_relevance": 8
+      }
+    ],
+    "HSBC News": [
+      {
+        "id": "art04",
+        "title": "HSBC Buys Back 340,000 Shares as $1bn Programme Passes $23m Mark",
+        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html",
+        "source": "StockTitan (HSBC RNS)",
+        "published_at": "2026-08-10",
+        "summary": "HSBC repurchased 340,000 ordinary shares in Hong Kong on 10 August at a volume-weighted average price of HK$162.31, taking cumulative buy-backs since the programme's 5 August launch to 1,126,000 shares worth roughly US$23.0m.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 3,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 3
       }
     ]
   },
@@ -70,36 +125,66 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Citi, BNP Paribas downgrade HSBC after 40% share rally; Morgan Stanley lifts target",
-        "url": "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
-        "source": "Proactive Investors",
-        "published_at": "2026-08-06",
-        "summary": "Citi cut HSBC to 'neutral' from 'buy' and trimmed its price target to 1570p, arguing the stock needs a breather after a 40% run this year even though nothing has gone wrong operationally. Exane BNP Paribas separately downgraded HSBC to underperform on margin-headwind concerns, while Morgan Stanley raised its target to 1,674p from 1,527p, leaving analysts split on the post-earnings trade.",
-        "hsbc_relevancy": 10,
-        "adam_rel": 6,
+        "title": "China's 20% Offshore Insurance Tax Rattles HSBC, Prudential Shares in Hong Kong",
+        "url": "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
+        "source": "South China Morning Post",
+        "published_at": "2026-08-07",
+        "summary": "Mainland tax authorities began enforcing a 20% personal income tax on gains from offshore insurance policies sold in Hong Kong, sending HSBC's London-listed shares down as much as 7% and Prudential's down 13% before Beijing's State Taxation Administration clarified the rule is not new and does not specifically target Hong Kong.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
         "noise_level": 4,
-        "category": "HSBC News",
+        "category": "Regulatory & Markets",
         "is_update": true,
-        "user_relevance": 6
+        "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "OCBC, UOB post record Q2 profits as wealth income offsets margin pressure",
-        "url": "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure",
-        "source": "The Star",
-        "published_at": "2026-08-07",
-        "summary": "OCBC's Q2 net profit jumped 22% to S$2.22bn, crossing S$2bn for the first time, as non-interest income surged 51% year-on-year and wealth management climbed to 41% of group revenue. UOB's profit rose 10% to S$1.48bn, with fee income up 5% to S$665m on record wealth management revenue, as both banks offset net interest margin compression with fee growth.",
-        "hsbc_relevancy": 7,
+        "title": "Meta Releases Muse Glimmer, an Open-Weight Agentic AI Model That Runs on One GPU",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
+        "source": "Bloomberg",
+        "published_at": "2026-08-10",
+        "summary": "Meta launched Muse Glimmer, a 30-billion-parameter open-weight model distilled from Muse Spark 1.2, released free under an Apache 2.0 licence so developers can run agentic workflows -- tool calls, coding, multi-step tasks -- locally on a single consumer GPU rather than in the cloud.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 8,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "art03",
+        "title": "Standard Chartered's Wealth Income Hits Record $1.1bn in Q2 as Affluent Clients Surge",
+        "url": "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
+        "source": "The Digital Banker",
+        "published_at": "2026-07-29",
+        "summary": "Standard Chartered's Wealth Solutions income rose 43% year-on-year to a record $1.1bn in Q2 -- investment product income up 56% -- taking first-half wealth income to $2.11bn (+38%), with roughly 150,000 new-to-bank affluent clients added in H1 and the full-year income guidance raised alongside a fresh $1bn buyback.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "Competitor Intelligence",
         "is_update": true,
         "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "HSBC Buys Back 340,000 Shares as $1bn Programme Passes $23m Mark",
+        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html",
+        "source": "StockTitan (HSBC RNS)",
+        "published_at": "2026-08-10",
+        "summary": "HSBC repurchased 340,000 ordinary shares in Hong Kong on 10 August at a volume-weighted average price of HK$162.31, taking cumulative buy-backs since the programme's 5 August launch to 1,126,000 shares worth roughly US$23.0m.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 3,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 3
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2"
+      "Regulatory & Markets": "#d97706",
+      "AI & Technology": "#6366f1",
+      "Competitor Intelligence": "#0891b2",
+      "HSBC News": "#dc2626"
     }
   }
 }

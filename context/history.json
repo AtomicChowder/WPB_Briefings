@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-08-09",
+    "last_updated": "2026-08-10",
     "covered_urls": [
       "https://asianprivatebanker.com/private-banking-wealth-management/hsbc-1h26-asia-wealth-balances-reach-us1-1tn-with-private-banking-fee-momentum/",
       "https://asianprivatebanker.com/private-banking-wealth-management/singapores-big-three-notch-record-wealth-income-fees-and-aum/",
@@ -10,11 +10,13 @@
       "https://finance.yahoo.com/markets/stocks/articles/hsbc-weighs-20-000-job-151625639.html",
       "https://infotechlead.com/cio/hsbc-steps-up-ai-and-digital-banking-transformation-as-technology-investments-drive-global-growth-strategy-95632",
       "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
       "https://uk.finance.yahoo.com/news/hsbc-stock-stalls-1-billion-151330558.html",
       "https://www.bloomberg.com/news/articles/2026-08-03/dbs-hires-ex-standard-chartered-banker-to-lead-india-wealth-team",
       "https://www.bloomberg.com/news/articles/2026-08-03/ubs-to-pay-125-million-over-anti-money-laundering-violations",
       "https://www.bloomberg.com/news/articles/2026-08-04/hsbc-announces-fresh-1-billion-share-buyback-after-profit-beats",
       "https://www.bloomberg.com/news/articles/2026-08-05/barclays-hsbc-say-warsh-boosts-case-for-inflation-linked-bonds",
+      "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
       "https://www.business-standard.com/companies/news/standard-chartered-ifsca-approval-wealth-management-gift-city-126080601165_1.html",
       "https://www.caproasia.com/2026/08/06/hong-kong-sfc-asset-wealth-management-survey-2025-asset-wealth-management-aum-at-5-38-trillion-with-2358-licensed-firms-56557-headcount-private-banking-wealth-management-1-65-trillion-a/",
       "https://www.caproasia.com/2026/08/09/jp-morgan-private-bank-hires-dbs-private-bank-aldrin-sudirgo-as-vice-president-in-indonesia-team-21-years-private-banking-wealth-management-financial-industry-experience-at-standard-chartered-bank/",
@@ -24,11 +26,14 @@
       "https://www.marketscreener.com/news/hsbc-boosts-tender-offer-amount-for-senior-unsecured-notes-due-2028-to-6-8-billion-ce7f50ddda8bf025",
       "https://www.proactiveinvestors.com/companies/news/1096519/hsbc-return-to-buybacks-underwhelms-despite-improving-earnings-momentum-1096519.html",
       "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
+      "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
+      "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html",
       "https://www.thestar.com.my/business/business-news/2026/08/06/singapore-bank-dbs-posts-record-2q-profit-raises-2026-guidance",
       "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure"
     ],
     "covered_topics": [
       "Asia wealth is doing the heavy lifting: $1.1tn in balances, $57bn of this year's net new money booked in-region",
+      "Beijing's 20% offshore insurance tax knocks HSBC and Prudential shares, testing HK's wealth-hub pitch",
       "Citi and BNP Paribas turn cautious on HSBC just as Morgan Stanley raises its target",
       "DBS embeds agentic AI bank-wide under Tan Su Shan, raising the APAC AI-transformation bar",
       "DBS poaches StanChart veteran for India wealth as the private-banker talent war spreads to a new market",
@@ -39,10 +44,12 @@
       "HSBC's Q2 beat splits analysts despite $2bn simplification target",
       "HSBC's cost story is now the swing factor: profit beat, but NII pressure and China property risk offset it",
       "JPMorgan poaches a DBS private banker for Indonesia as the APAC talent war spreads",
+      "Meta open-sources Muse Glimmer, putting a capable agentic model on a single consumer GPU",
       "Meta's Muse Spark 1.2 raises the bar for agentic coding tools",
       "OCBC and UOB convert Singapore's wealth boom into record Q2 profits",
       "Singapore's DBS, OCBC and UOB all post record wealth fees as loan margins narrow",
       "Standard Chartered pushes wealth management into India's GIFT City",
+      "Standard Chartered's wealth income surges 43% to a record $1.1bn, sharpening the APAC wealth race",
       "UBS's record $125m AML fine is a live warning on wire-monitoring gaps HSBC should stress-test against its own book"
     ],
     "daily": [
@@ -126,6 +133,20 @@
         "topics": [
           "Citi and BNP Paribas turn cautious on HSBC just as Morgan Stanley raises its target",
           "OCBC and UOB convert Singapore's wealth boom into record Q2 profits"
+        ]
+      },
+      {
+        "date": "2026-08-10",
+        "urls": [
+          "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
+          "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
+          "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
+          "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html"
+        ],
+        "topics": [
+          "Beijing's 20% offshore insurance tax knocks HSBC and Prudential shares, testing HK's wealth-hub pitch",
+          "Meta open-sources Muse Glimmer, putting a capable agentic model on a single consumer GPU",
+          "Standard Chartered's wealth income surges 43% to a record $1.1bn, sharpening the APAC wealth race"
         ]
       }
     ]
