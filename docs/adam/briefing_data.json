@@ -3,84 +3,49 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Monday, 10 August 2026",
-  "date_str": "2026-08-10",
-  "generated_at": "10 Aug 2026, 23:14 UTC",
+  "briefing_date": "Tuesday, 11 August 2026",
+  "date_str": "2026-08-11",
+  "generated_at": "11 Aug 2026, 23:12 UTC",
   "total_articles": 4,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Beijing's 20% offshore insurance tax knocks HSBC and Prudential shares, testing HK's wealth-hub pitch",
-      "context_html": "China's tax authorities began enforcing a 20% levy on gains from offshore insurance policies sold in Hong Kong on 5 August, wiping as much as 7% off HSBC's London-listed shares and 13% off Prudential's before Beijing's State Taxation Administration clarified on 7 August that the rule isn't new and isn't specifically targeting Hong Kong. HSBC's insurance-linked wealth flows from mainland clients are directly exposed, making this a live stress-test of Hong Kong's 'wealth hub' pitch to Chinese HNW clients just as HSBC leans harder into the region for growth.",
+      "headline": "OpenAI ships offense-grade hacking model as its next system trips a 'critical' cyber threshold",
+      "context_html": "OpenAI's new GPT-5.6-Cyber model reached a \u201cHigh\u201d offensive cybersecurity capability threshold \u2014 a 95% completion rate on exploit-chain and privilege-escalation tasks \u2014 while its next model, Astra, was held back after tripping the \u201cCritical\u201d threshold under OpenAI's own Preparedness Framework. Hong Kong, Singapore and Australian regulators have already flagged frontier AI-enabled cyber risk as a 2026 supervisory priority. As HSBC scales agentic AI into RM advisory and CIB workflows under <strong>Georges Elhedery, HSBC Group CEO</strong>'s \u201cthoughtful, multi-model\u201d stance, this is a concrete marker that vendor and model risk assessment now needs to keep pace with frontier capability jumps, not lag them.",
       "source_links": [
         [
-          "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
-          "Beijing: offshore insurance tax not new"
+          "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html",
+          "OpenAI Launches GPT-5.6-Cyber"
         ],
         [
-          "https://www.bloomberg.com/news/articles/2026-08-05/prudential-hsbc-shares-tumble-on-china-insurance-tax-report",
-          "Prudential, HSBC shares tumble on tax report"
-        ]
-      ],
-      "is_update": true
-    },
-    {
-      "headline": "Meta open-sources Muse Glimmer, putting a capable agentic model on a single consumer GPU",
-      "context_html": "Meta released Muse Glimmer on 10 August, a 30-billion-parameter distillation of its Muse Spark 1.2 model, free under an Apache 2.0 licence so it can run agentic workflows -- tool calls, coding, multi-step tasks -- locally on one consumer GPU instead of in the cloud. A credible open-weight agentic model narrows the gap between hyperscaler-dependent AI programmes and cheaper, self-hosted alternatives, sharpening the build-vs-buy question behind HSBC's own agentic rollout.",
-      "source_links": [
-        [
-          "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
-          "Meta releases Muse Glimmer AI model"
-        ],
-        [
-          "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
-          "Meta's new Glimmer model, explained"
+          "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking",
+          "OpenAI unveils GPT-5.6-Cyber"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Standard Chartered's wealth income surges 43% to a record $1.1bn, sharpening the APAC wealth race",
-      "context_html": "Standard Chartered's Wealth Solutions income rose 43% year-on-year to a record $1.1bn in Q2 -- investment product income alone up 56% -- taking first-half wealth income to $2.11bn and adding roughly 150,000 new affluent clients. Coming straight after HSBC's own 18% wealth revenue growth and $2bn simplification target, the scale of StanChart's wealth momentum is a reminder that HSBC's APAC wealth lead is being contested on growth rate, not just absolute AUM.",
+      "headline": "DBS's Tan Su Shan singles out Taiwan as the next 2-3 year wealth growth engine",
+      "context_html": "Following the record S$500bn wealth AUM and Q2 profit we covered on 6 August, <strong>Tan Su Shan, CEO of DBS Group</strong> used this week's earnings commentary to name Taiwan \u2014 not Hong Kong or mainland China \u2014 as the market with the most wealth-growth potential over the next two to three years, citing semiconductor and data-centre-driven wealth creation. It's a concrete signal of where DBS will next commit relationship-manager and product investment, in a market where HSBC's own stated Asia wealth expansion map (Hong Kong, Singapore, India, mainland China) has comparatively less visible presence \u2014 worth tracking as a potential gap.",
       "source_links": [
         [
-          "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
-          "StanChart wealth income hits record $1.1bn"
-        ],
-        [
-          "https://www.wealthbriefing.com/html/article.php/standard-chartered's-h1-2026-wealth-solutions-income-rose-38-per-cent",
-          "StanChart H1 wealth income +38%"
+          "https://www.taipeitimes.com/News/biz/archives/2026/08/10/2003862204",
+          "Wealth boom propels Singapore banks"
         ]
       ],
       "is_update": true
     }
   ],
   "articles_by_category": {
-    "Regulatory & Markets": [
-      {
-        "id": "art01",
-        "title": "China's 20% Offshore Insurance Tax Rattles HSBC, Prudential Shares in Hong Kong",
-        "url": "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
-        "source": "South China Morning Post",
-        "published_at": "2026-08-07",
-        "summary": "Mainland tax authorities began enforcing a 20% personal income tax on gains from offshore insurance policies sold in Hong Kong, sending HSBC's London-listed shares down as much as 7% and Prudential's down 13% before Beijing's State Taxation Administration clarified the rule is not new and does not specifically target Hong Kong.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 4,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 8
-      }
-    ],
     "AI & Technology": [
       {
-        "id": "art02",
-        "title": "Meta Releases Muse Glimmer, an Open-Weight Agentic AI Model That Runs on One GPU",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
-        "source": "Bloomberg",
+        "id": "art01",
+        "title": "OpenAI Ships GPT-5.6-Cyber, Delays Astra Over Critical Cyber Risk",
+        "url": "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html",
+        "source": "The Hacker News",
         "published_at": "2026-08-10",
-        "summary": "Meta launched Muse Glimmer, a 30-billion-parameter open-weight model distilled from Muse Spark 1.2, released free under an Apache 2.0 licence so developers can run agentic workflows -- tool calls, coding, multi-step tasks -- locally on a single consumer GPU rather than in the cloud.",
-        "hsbc_relevancy": 3,
+        "summary": "OpenAI launched GPT-5.6-Cyber, an \u201coffense-grade\u201d model for authorised penetration testing that hit a 95% completion rate on exploit-chain and privilege-escalation tasks, while delaying its next flagship model, Astra, after internal testing tripped the \u201cCritical\u201d cyber-capability threshold under its Preparedness Framework. The launch expands OpenAI's vetted-defender Daybreak programme just as Hong Kong, Singapore and Australian regulators name frontier AI-enabled cyber risk a 2026 supervisory priority. For banks scaling agentic AI, it raises the bar on how fast defensive and vendor-risk processes need to move.",
+        "hsbc_relevancy": 4,
         "adam_rel": 8,
         "noise_level": 4,
         "category": "AI & Technology",
@@ -90,34 +55,48 @@
     ],
     "Competitor Intelligence": [
       {
-        "id": "art03",
-        "title": "Standard Chartered's Wealth Income Hits Record $1.1bn in Q2 as Affluent Clients Surge",
-        "url": "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
-        "source": "The Digital Banker",
-        "published_at": "2026-07-29",
-        "summary": "Standard Chartered's Wealth Solutions income rose 43% year-on-year to a record $1.1bn in Q2 -- investment product income up 56% -- taking first-half wealth income to $2.11bn (+38%), with roughly 150,000 new-to-bank affluent clients added in H1 and the full-year income guidance raised alongside a fresh $1bn buyback.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 3,
+        "id": "art02",
+        "title": "DBS's Tan Su Shan Names Taiwan Top Wealth Growth Market for Next 2-3 Years",
+        "url": "https://www.taipeitimes.com/News/biz/archives/2026/08/10/2003862204",
+        "source": "Taipei Times",
+        "published_at": "2026-08-10",
+        "summary": "DBS CEO Tan Su Shan told analysts Taiwan is the market with the most wealth-management growth potential over the next two to three years, pointing to semiconductor and data-centre-driven wealth creation, as the bank's Q2 wealth fees hit a record S$919 million (+42% YoY). It follows DBS's record S$500bn wealth AUM milestone reported on 6 August. The comment signals where DBS will next direct relationship-manager hiring and product build-out in Asia.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 2,
         "category": "Competitor Intelligence",
         "is_update": true,
-        "user_relevance": 8
+        "user_relevance": 7
       }
     ],
     "HSBC News": [
       {
-        "id": "art04",
-        "title": "HSBC Buys Back 340,000 Shares as $1bn Programme Passes $23m Mark",
-        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html",
-        "source": "StockTitan (HSBC RNS)",
-        "published_at": "2026-08-10",
-        "summary": "HSBC repurchased 340,000 ordinary shares in Hong Kong on 10 August at a volume-weighted average price of HK$162.31, taking cumulative buy-backs since the programme's 5 August launch to 1,126,000 shares worth roughly US$23.0m.",
-        "hsbc_relevancy": 5,
+        "id": "art03",
+        "title": "HSBC Lifts Debt Tender Offer Cap to $6.75 Billion Ahead of Aug 12 Expiry",
+        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-294468bfda28.html",
+        "source": "StockTitan",
+        "published_at": "2026-08-11",
+        "summary": "HSBC raised the maximum size of its tender offer across four series of 2028 notes to $6.75 billion from $5 billion, and lifted the sub-cap on its May 2028 notes to $1 billion from $750 million, ahead of the offer's 12 August expiry. It follows the bank's initial tender announcement covered on 6 August and is funded by a recent $6.75 billion note issuance. It's routine liability management, but the repeated upsizing signals strong demand for HSBC paper even as the bank runs a live $1 billion buyback.",
+        "hsbc_relevancy": 6,
         "adam_rel": 3,
         "noise_level": 2,
         "category": "HSBC News",
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 3
+      },
+      {
+        "id": "art04",
+        "title": "HSBC Strategists Reiterate Bullish Call on Global Equities",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-kettner-keeps-strongest-bullish-115900878.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-08-11",
+        "summary": "HSBC's equity strategy team reiterated its bullish call on global equities, arguing that AI-disruption, interest-rate and geopolitical risks are now largely priced into valuations. The bank favours US semiconductors, financials and selective consumer discretionary names, stays neutral on Europe and underweight on Japan. It's a data point on how HSBC's own house view is shaping client-facing wealth advisory positioning heading into H2.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 4,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 4
       }
     ]
   },
@@ -125,26 +104,12 @@
     "articles": [
       {
         "id": "art01",
-        "title": "China's 20% Offshore Insurance Tax Rattles HSBC, Prudential Shares in Hong Kong",
-        "url": "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
-        "source": "South China Morning Post",
-        "published_at": "2026-08-07",
-        "summary": "Mainland tax authorities began enforcing a 20% personal income tax on gains from offshore insurance policies sold in Hong Kong, sending HSBC's London-listed shares down as much as 7% and Prudential's down 13% before Beijing's State Taxation Administration clarified the rule is not new and does not specifically target Hong Kong.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 4,
-        "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "art02",
-        "title": "Meta Releases Muse Glimmer, an Open-Weight Agentic AI Model That Runs on One GPU",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
-        "source": "Bloomberg",
+        "title": "OpenAI Ships GPT-5.6-Cyber, Delays Astra Over Critical Cyber Risk",
+        "url": "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html",
+        "source": "The Hacker News",
         "published_at": "2026-08-10",
-        "summary": "Meta launched Muse Glimmer, a 30-billion-parameter open-weight model distilled from Muse Spark 1.2, released free under an Apache 2.0 licence so developers can run agentic workflows -- tool calls, coding, multi-step tasks -- locally on a single consumer GPU rather than in the cloud.",
-        "hsbc_relevancy": 3,
+        "summary": "OpenAI launched GPT-5.6-Cyber, an \u201coffense-grade\u201d model for authorised penetration testing that hit a 95% completion rate on exploit-chain and privilege-escalation tasks, while delaying its next flagship model, Astra, after internal testing tripped the \u201cCritical\u201d cyber-capability threshold under its Preparedness Framework. The launch expands OpenAI's vetted-defender Daybreak programme just as Hong Kong, Singapore and Australian regulators name frontier AI-enabled cyber risk a 2026 supervisory priority. For banks scaling agentic AI, it raises the bar on how fast defensive and vendor-risk processes need to move.",
+        "hsbc_relevancy": 4,
         "adam_rel": 8,
         "noise_level": 4,
         "category": "AI & Technology",
@@ -152,36 +117,49 @@
         "user_relevance": 8
       },
       {
-        "id": "art03",
-        "title": "Standard Chartered's Wealth Income Hits Record $1.1bn in Q2 as Affluent Clients Surge",
-        "url": "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
-        "source": "The Digital Banker",
-        "published_at": "2026-07-29",
-        "summary": "Standard Chartered's Wealth Solutions income rose 43% year-on-year to a record $1.1bn in Q2 -- investment product income up 56% -- taking first-half wealth income to $2.11bn (+38%), with roughly 150,000 new-to-bank affluent clients added in H1 and the full-year income guidance raised alongside a fresh $1bn buyback.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 3,
+        "id": "art02",
+        "title": "DBS's Tan Su Shan Names Taiwan Top Wealth Growth Market for Next 2-3 Years",
+        "url": "https://www.taipeitimes.com/News/biz/archives/2026/08/10/2003862204",
+        "source": "Taipei Times",
+        "published_at": "2026-08-10",
+        "summary": "DBS CEO Tan Su Shan told analysts Taiwan is the market with the most wealth-management growth potential over the next two to three years, pointing to semiconductor and data-centre-driven wealth creation, as the bank's Q2 wealth fees hit a record S$919 million (+42% YoY). It follows DBS's record S$500bn wealth AUM milestone reported on 6 August. The comment signals where DBS will next direct relationship-manager hiring and product build-out in Asia.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 2,
         "category": "Competitor Intelligence",
         "is_update": true,
-        "user_relevance": 8
+        "user_relevance": 7
       },
       {
-        "id": "art04",
-        "title": "HSBC Buys Back 340,000 Shares as $1bn Programme Passes $23m Mark",
-        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html",
-        "source": "StockTitan (HSBC RNS)",
-        "published_at": "2026-08-10",
-        "summary": "HSBC repurchased 340,000 ordinary shares in Hong Kong on 10 August at a volume-weighted average price of HK$162.31, taking cumulative buy-backs since the programme's 5 August launch to 1,126,000 shares worth roughly US$23.0m.",
-        "hsbc_relevancy": 5,
+        "id": "art03",
+        "title": "HSBC Lifts Debt Tender Offer Cap to $6.75 Billion Ahead of Aug 12 Expiry",
+        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-294468bfda28.html",
+        "source": "StockTitan",
+        "published_at": "2026-08-11",
+        "summary": "HSBC raised the maximum size of its tender offer across four series of 2028 notes to $6.75 billion from $5 billion, and lifted the sub-cap on its May 2028 notes to $1 billion from $750 million, ahead of the offer's 12 August expiry. It follows the bank's initial tender announcement covered on 6 August and is funded by a recent $6.75 billion note issuance. It's routine liability management, but the repeated upsizing signals strong demand for HSBC paper even as the bank runs a live $1 billion buyback.",
+        "hsbc_relevancy": 6,
         "adam_rel": 3,
         "noise_level": 2,
         "category": "HSBC News",
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 3
+      },
+      {
+        "id": "art04",
+        "title": "HSBC Strategists Reiterate Bullish Call on Global Equities",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-kettner-keeps-strongest-bullish-115900878.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-08-11",
+        "summary": "HSBC's equity strategy team reiterated its bullish call on global equities, arguing that AI-disruption, interest-rate and geopolitical risks are now largely priced into valuations. The bank favours US semiconductors, financials and selective consumer discretionary names, stays neutral on Europe and underweight on Japan. It's a data point on how HSBC's own house view is shaping client-facing wealth advisory positioning heading into H2.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 4,
+        "noise_level": 2,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 4
       }
     ],
     "categories": {
-      "Regulatory & Markets": "#d97706",
       "AI & Technology": "#6366f1",
       "Competitor Intelligence": "#0891b2",
       "HSBC News": "#dc2626"
