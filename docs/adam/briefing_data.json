@@ -3,123 +3,137 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 12 August 2026",
-  "date_str": "2026-08-12",
-  "generated_at": "12 Aug 2026, 23:12 UTC",
-  "total_articles": 5,
+  "briefing_date": "Thursday, 13 August 2026",
+  "date_str": "2026-08-13",
+  "generated_at": "13 Aug 2026, 23:12 UTC",
+  "total_articles": 6,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Anthropic starts watermarking Claude output as EU AI Act compliance bites for GenAI vendors, not just deployers",
-      "context_html": "Anthropic will embed invisible watermarks in all Claude-generated text and images to satisfy the EU AI Act's Transparency Code, which took effect on 2 August. It's the clearest sign yet that model vendors now carry documented provenance obligations of their own \u2014 not just the banks that deploy them. HSBC's Wealth Intelligence platform runs on a third-party LLM for client-facing research summaries; Adam's AI governance reviews should confirm the vendor's own compliance posture is keeping pace, since a vendor-side gap becomes HSBC's regulatory exposure.",
+      "headline": "DBS hands Hong Kong to its Taiwan chief as HSBC's top APAC rival refreshes its leadership bench",
+      "context_html": "<strong>Sebastian Paredes, outgoing CEO of DBS Bank Hong Kong</strong>, retires in March 2027 after 16 years, handing the role and DBS's Head of North Asia mandate to <strong>Ng Sier Han, CEO of DBS Taiwan</strong>, who built DBS Taiwan into the market's largest foreign bank after absorbing Citi's local consumer business. DBS is running a coordinated three-market succession across Hong Kong, Taiwan and Indonesia rather than a reactive replacement \u2014 the kind of bench-depth planning HSBC's own APAC change programme should be benchmarked against. Worth watching whether Ng brings the same integration playbook that worked in Taiwan to Hong Kong, HSBC's home wealth market.",
       "source_links": [
         [
-          "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
-          "Anthropic to watermark AI-generated text"
+          "https://www.caproasia.com/2026/08/13/singapore-largest-bank-dbs-senior-management-changes-1-head-of-north-asia-and-ceo-of-dbs-bank-hong-kong-sebastian-paredes-to-retire-in-2027-march-1-3-27-remain-as-senior-advisor-2-dbs-taiwan-c/",
+          "DBS Senior Management Changes \u2014 Caproasia"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "LSEG: 73% of wealth executives now call AI business-critical, validating the augmentation model HSBC is already building",
-      "context_html": "New LSEG Data & Analytics research finds wealth managers increasingly moving advisers from data-gathering toward \"insight orchestration,\" with generative AI absorbing prep and research so advisers focus on client judgement. That's the exact operating model behind HSBC's own Wealth Intelligence rollout in Hong Kong and Singapore. For Adam, it's an external benchmark to cite when building the case for further rollout \u2014 the market is converging on the same augmentation thesis, not a build-vs-buy debate.",
+      "headline": "A single cracked encryption key exposed hidden AI reasoning across OpenAI, Anthropic and Google",
+      "context_html": "Academic researchers cracked a single global encryption key all three providers used to protect hidden AI 'reasoning' tokens, recovering 182 real credentials from over 315,000 decoded reasoning blocks scraped from public agent logs. HSBC has committed to a deliberate multi-model AI strategy spanning these same three vendors, so this is a live third-party AI risk rather than a hypothetical one \u2014 any RM- or operations-facing tool built on their reasoning APIs needs a vendor-risk review, not just a model-selection debate. Expect procurement and infosec to raise this before any AI vendor renewal goes to Adam's next steering session.",
       "source_links": [
         [
-          "https://fintech.global/2026/08/11/ai-wont-replace-wealth-advisors-it-will-redefine-them/",
-          "AI won't replace wealth advisers, it will redefine them"
+          "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
+          "OpenAI, Anthropic, Google API Flaw \u2014 The Hacker News"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Bank of America buys into India's Jio Credit, betting on a local-partner JV over organic build-out in Asia's fastest-growing wealth market",
-      "context_html": "Bank of America agreed to acquire up to 49.9% of Jio Financial Services' lending arm, Jio Credit, pairing its balance sheet with Reliance-backed Jio's digital distribution reach across India. It's a structurally different entry route to HSBC's own India push, which has leaned on organic relationship-manager hiring and branch expansion rather than a local-partner JV. Adam's change-execution teams should weigh whether a partnership model could accelerate HSBC's India wealth ambitions faster than the current organic build.",
+      "headline": "Anthropic opens investor meetings for a fall Nasdaq debut near a $965bn valuation",
+      "context_html": "Anthropic began pre-IPO investor meetings this week, fielding questions on Chinese AI competition and infrastructure spend as it targets a September-October Nasdaq listing that some bankers see pricing above $1 trillion. A public listing puts Claude's commercial roadmap and pricing under quarterly investor scrutiny for the first time, which matters directly for HSBC given the multi-model AI stance the bank has already committed to \u2014 vendor durability, not just capability, becomes a diligence question. Adam's AI vendor-governance workstream should flag the listing as a milestone to track.",
       "source_links": [
         [
-          "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/08/bank-of-america-enters-into-a-joint-venture-agreement-with-jio-f.html",
-          "BofA-Jio Financial joint venture agreement"
+          "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
+          "Top Tech News, Aug 12 2026 \u2014 Tech Startups"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "AI & Technology": [
+    "Competitor Intelligence": [
       {
         "id": "art01",
-        "title": "Anthropic to watermark all Claude-generated text and images for EU AI Act compliance",
-        "url": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
-        "source": "TechCrunch",
-        "published_at": "2026-08-11",
-        "summary": "Anthropic said it will embed invisible watermarks in all Claude-generated text and images, complying with the EU AI Act's Transparency Code that took effect on 2 August. The watermark persists through copy-paste and editing without altering the underlying content. It is one of the first concrete moves by a major model vendor to operationalise the Act's content-provenance requirements rather than just its high-risk-system obligations.",
+        "title": "DBS Names Ng Sier Han as Hong Kong CEO, Ending Paredes' 16-Year Run",
+        "url": "https://www.caproasia.com/2026/08/13/singapore-largest-bank-dbs-senior-management-changes-1-head-of-north-asia-and-ceo-of-dbs-bank-hong-kong-sebastian-paredes-to-retire-in-2027-march-1-3-27-remain-as-senior-advisor-2-dbs-taiwan-c/",
+        "source": "Caproasia",
+        "published_at": "2026-08-13",
+        "summary": "DBS announced Sebastian Paredes, Head of North Asia and CEO of DBS Bank Hong Kong, will retire from executive duties in March 2027 and be succeeded by Ng Sier Han, current CEO of DBS Taiwan. Lim Chu Chong moves from DBS Indonesia to head Taiwan, and Adrian Chai steps up to lead Indonesia, making this a coordinated three-market succession rather than a single replacement.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 8
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art02",
+        "title": "Shared Encryption Key Exposed Hidden AI Reasoning Across OpenAI, Anthropic, Google",
+        "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
+        "source": "The Hacker News",
+        "published_at": "2026-08-12",
+        "summary": "Researchers at ELLIS Institute T\u00fcbingen and the Max Planck Institute found that OpenAI, Anthropic and Google all relied on a single global encryption key to protect hidden AI 'reasoning' tokens, letting them decode 315,320 reasoning blocks from public agent logs and recover 182 real credentials, including API keys and passwords. All three providers have since been notified of the flaw in their reasoning APIs.",
         "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "art03",
+        "title": "Anthropic Opens Investor Meetings Ahead of Fall Nasdaq Debut",
+        "url": "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
+        "source": "Tech Startups",
+        "published_at": "2026-08-12",
+        "summary": "Anthropic began pre-IPO investor meetings this week as it targets a September-October Nasdaq listing, fielding questions on Chinese AI competition, infrastructure spending and political friction in Washington. The Claude developer was last valued at $965 billion and some bankers see a listing pricing above $1 trillion.",
+        "hsbc_relevancy": 3,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 8
+      },
+      {
+        "id": "art05",
+        "title": "Google's Gemini App Crosses 1 Billion Monthly Users",
+        "url": "https://finance.yahoo.com/technology/ai/articles/googles-gemini-just-crossed-1-141234498.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-08-12",
+        "summary": "Google's Gemini app passed 1 billion monthly active users, becoming the 14th Google product to reach that scale and pulling roughly level with ChatGPT. Nearly 90% of Fortune 100 companies now use Gemini Enterprise, and Google Cloud revenue tied to generative AI products has grown sharply this year.",
+        "hsbc_relevancy": 2,
+        "adam_rel": 6,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 6
       }
     ],
     "Private Banking & Wealth": [
       {
-        "id": "art02",
-        "title": "LSEG research: AI is redefining wealth advisers' role, not replacing them",
-        "url": "https://fintech.global/2026/08/11/ai-wont-replace-wealth-advisors-it-will-redefine-them/",
-        "source": "FinTech Global",
-        "published_at": "2026-08-11",
-        "summary": "New LSEG Data & Analytics research finds 73% of wealth and asset management executives now view AI as critical to their business, with generative AI absorbing research and meeting prep so advisers can focus on client judgement and relationship depth. The report frames this as a shift from information-gathering to \"insight orchestration\" embedded directly in adviser workflows. It adds fresh industry data behind the augmentation thesis that has driven recent GenAI rollouts across private banks.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 7,
-        "noise_level": 3,
+        "id": "art04",
+        "title": "Bank of Singapore Hires Deutsche Private Bank's Penny Low in Singapore",
+        "url": "https://www.caproasia.com/2026/08/13/145-billion-bank-of-singapore-hires-deutsche-private-bank-penny-low-as-senior-relationship-manager-based-in-singapore-20-years-private-banking-financial-industry-experience-at-deutsche-bank-credi/",
+        "source": "Caproasia",
+        "published_at": "2026-08-13",
+        "summary": "Bank of Singapore, OCBC's private banking arm, hired Penny Low from Deutsche Bank's private bank as a senior relationship manager in Singapore. Low brings 20 years of private banking experience across Deutsche Bank, Credit Suisse, Mitsubishi UFJ Trust and Bank of America.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
         "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 7
+        "user_relevance": 5
       }
     ],
-    "Competitor Intelligence": [
+    "HSBC News": [
       {
-        "id": "art03",
-        "title": "Bank of America to acquire up to 49.9% of Jio Credit, entering India lending via local JV",
-        "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/08/bank-of-america-enters-into-a-joint-venture-agreement-with-jio-f.html",
-        "source": "Bank of America Newsroom",
-        "published_at": "2026-08-12",
-        "summary": "Bank of America signed a joint-venture agreement to acquire up to 49.9% of Jio Financial Services' lending subsidiary, Jio Credit, via preferential equity and warrants. The deal pairs BofA's balance sheet and global expertise with Jio's digital distribution reach across India. It marks a partnership-led route into one of Asia's fastest-growing consumer and wealth markets, in contrast to organic build-out strategies used by other global banks in the region.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "id": "art06",
+        "title": "HSBC Buys Back 1.99 Million Shares Across UK and Hong Kong Venues",
+        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-2564cb27aaa8.html",
+        "source": "StockTitan (SEC 6-K)",
+        "published_at": "2026-08-13",
+        "summary": "HSBC purchased 1,650,000 ordinary shares on UK venues and 340,000 shares on the Hong Kong Stock Exchange for cancellation on 13 August, continuing the buy-back programme expanded after its H1 results. This is routine execution against a previously disclosed capital-return commitment rather than a new strategic signal.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "category": "HSBC News",
         "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art04",
-        "title": "Swiss parliamentary committee again fails to agree on UBS's extra $20bn capital requirement",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-11/ubs-capital-decision-postponed-by-swiss-parliament-committee",
-        "source": "Bloomberg",
-        "published_at": "2026-08-11",
-        "summary": "Switzerland's Economic Affairs and Taxation Committee failed to reach agreement on proposed rules that would require UBS to hold roughly $20bn in additional CET1 capital against its foreign subsidiaries, pushing deliberation to 31 August. Some lawmakers are pressing to let UBS meet part of the requirement with cheaper Additional Tier 1 capital instead, citing competitiveness concerns. A full parliamentary vote is now targeted for September, extending more than two years of post-Credit Suisse capital-rule uncertainty for the bank.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 4
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "art05",
-        "title": "Gold holds above $4,400/oz as Iran tensions drive fresh safe-haven demand",
-        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-11-2026-gold-remains-over-4400-as-iran-situation-worsens-115212228.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-11",
-        "summary": "Gold is trading above $4,400 an ounce, up nearly 10% over the past month, as escalating US-Iran tensions add to a year of record central-bank and Chinese institutional buying. Analysts note gold's safe-haven behaviour has been inconsistent through the 2026 escalation, with the US dollar acting as the more reliable hedge. Sustained volatility in traditional havens is keeping asset-allocation conversations live for private banking clients positioning defensively.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 4,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
+        "user_relevance": 3
       }
     ]
   },
@@ -127,12 +141,40 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Anthropic to watermark all Claude-generated text and images for EU AI Act compliance",
-        "url": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
-        "source": "TechCrunch",
-        "published_at": "2026-08-11",
-        "summary": "Anthropic said it will embed invisible watermarks in all Claude-generated text and images, complying with the EU AI Act's Transparency Code that took effect on 2 August. The watermark persists through copy-paste and editing without altering the underlying content. It is one of the first concrete moves by a major model vendor to operationalise the Act's content-provenance requirements rather than just its high-risk-system obligations.",
+        "title": "DBS Names Ng Sier Han as Hong Kong CEO, Ending Paredes' 16-Year Run",
+        "url": "https://www.caproasia.com/2026/08/13/singapore-largest-bank-dbs-senior-management-changes-1-head-of-north-asia-and-ceo-of-dbs-bank-hong-kong-sebastian-paredes-to-retire-in-2027-march-1-3-27-remain-as-senior-advisor-2-dbs-taiwan-c/",
+        "source": "Caproasia",
+        "published_at": "2026-08-13",
+        "summary": "DBS announced Sebastian Paredes, Head of North Asia and CEO of DBS Bank Hong Kong, will retire from executive duties in March 2027 and be succeeded by Ng Sier Han, current CEO of DBS Taiwan. Lim Chu Chong moves from DBS Indonesia to head Taiwan, and Adrian Chai steps up to lead Indonesia, making this a coordinated three-market succession rather than a single replacement.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "art02",
+        "title": "Shared Encryption Key Exposed Hidden AI Reasoning Across OpenAI, Anthropic, Google",
+        "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
+        "source": "The Hacker News",
+        "published_at": "2026-08-12",
+        "summary": "Researchers at ELLIS Institute T\u00fcbingen and the Max Planck Institute found that OpenAI, Anthropic and Google all relied on a single global encryption key to protect hidden AI 'reasoning' tokens, letting them decode 315,320 reasoning blocks from public agent logs and recover 182 real credentials, including API keys and passwords. All three providers have since been notified of the flaw in their reasoning APIs.",
         "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "art03",
+        "title": "Anthropic Opens Investor Meetings Ahead of Fall Nasdaq Debut",
+        "url": "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
+        "source": "Tech Startups",
+        "published_at": "2026-08-12",
+        "summary": "Anthropic began pre-IPO investor meetings this week as it targets a September-October Nasdaq listing, fielding questions on Chinese AI competition, infrastructure spending and political friction in Washington. The Claude developer was last valued at $965 billion and some bankers see a listing pricing above $1 trillion.",
+        "hsbc_relevancy": 3,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
@@ -140,67 +182,53 @@
         "user_relevance": 8
       },
       {
-        "id": "art02",
-        "title": "LSEG research: AI is redefining wealth advisers' role, not replacing them",
-        "url": "https://fintech.global/2026/08/11/ai-wont-replace-wealth-advisors-it-will-redefine-them/",
-        "source": "FinTech Global",
-        "published_at": "2026-08-11",
-        "summary": "New LSEG Data & Analytics research finds 73% of wealth and asset management executives now view AI as critical to their business, with generative AI absorbing research and meeting prep so advisers can focus on client judgement and relationship depth. The report frames this as a shift from information-gathering to \"insight orchestration\" embedded directly in adviser workflows. It adds fresh industry data behind the augmentation thesis that has driven recent GenAI rollouts across private banks.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 7,
-        "noise_level": 3,
+        "id": "art04",
+        "title": "Bank of Singapore Hires Deutsche Private Bank's Penny Low in Singapore",
+        "url": "https://www.caproasia.com/2026/08/13/145-billion-bank-of-singapore-hires-deutsche-private-bank-penny-low-as-senior-relationship-manager-based-in-singapore-20-years-private-banking-financial-industry-experience-at-deutsche-bank-credi/",
+        "source": "Caproasia",
+        "published_at": "2026-08-13",
+        "summary": "Bank of Singapore, OCBC's private banking arm, hired Penny Low from Deutsche Bank's private bank as a senior relationship manager in Singapore. Low brings 20 years of private banking experience across Deutsche Bank, Credit Suisse, Mitsubishi UFJ Trust and Bank of America.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
         "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 7
+        "user_relevance": 5
       },
       {
-        "id": "art03",
-        "title": "Bank of America to acquire up to 49.9% of Jio Credit, entering India lending via local JV",
-        "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/08/bank-of-america-enters-into-a-joint-venture-agreement-with-jio-f.html",
-        "source": "Bank of America Newsroom",
+        "id": "art05",
+        "title": "Google's Gemini App Crosses 1 Billion Monthly Users",
+        "url": "https://finance.yahoo.com/technology/ai/articles/googles-gemini-just-crossed-1-141234498.html",
+        "source": "Yahoo Finance",
         "published_at": "2026-08-12",
-        "summary": "Bank of America signed a joint-venture agreement to acquire up to 49.9% of Jio Financial Services' lending subsidiary, Jio Credit, via preferential equity and warrants. The deal pairs BofA's balance sheet and global expertise with Jio's digital distribution reach across India. It marks a partnership-led route into one of Asia's fastest-growing consumer and wealth markets, in contrast to organic build-out strategies used by other global banks in the region.",
-        "hsbc_relevancy": 5,
+        "summary": "Google's Gemini app passed 1 billion monthly active users, becoming the 14th Google product to reach that scale and pulling roughly level with ChatGPT. Nearly 90% of Fortune 100 companies now use Gemini Enterprise, and Google Cloud revenue tied to generative AI products has grown sharply this year.",
+        "hsbc_relevancy": 2,
         "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "noise_level": 4,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "art04",
-        "title": "Swiss parliamentary committee again fails to agree on UBS's extra $20bn capital requirement",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-11/ubs-capital-decision-postponed-by-swiss-parliament-committee",
-        "source": "Bloomberg",
-        "published_at": "2026-08-11",
-        "summary": "Switzerland's Economic Affairs and Taxation Committee failed to reach agreement on proposed rules that would require UBS to hold roughly $20bn in additional CET1 capital against its foreign subsidiaries, pushing deliberation to 31 August. Some lawmakers are pressing to let UBS meet part of the requirement with cheaper Additional Tier 1 capital instead, citing competitiveness concerns. A full parliamentary vote is now targeted for September, extending more than two years of post-Credit Suisse capital-rule uncertainty for the bank.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
+        "id": "art06",
+        "title": "HSBC Buys Back 1.99 Million Shares Across UK and Hong Kong Venues",
+        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-2564cb27aaa8.html",
+        "source": "StockTitan (SEC 6-K)",
+        "published_at": "2026-08-13",
+        "summary": "HSBC purchased 1,650,000 ordinary shares on UK venues and 340,000 shares on the Hong Kong Stock Exchange for cancellation on 13 August, continuing the buy-back programme expanded after its H1 results. This is routine execution against a previously disclosed capital-return commitment rather than a new strategic signal.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "category": "HSBC News",
         "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "art05",
-        "title": "Gold holds above $4,400/oz as Iran tensions drive fresh safe-haven demand",
-        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-11-2026-gold-remains-over-4400-as-iran-situation-worsens-115212228.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-11",
-        "summary": "Gold is trading above $4,400 an ounce, up nearly 10% over the past month, as escalating US-Iran tensions add to a year of record central-bank and Chinese institutional buying. Analysts note gold's safe-haven behaviour has been inconsistent through the 2026 escalation, with the US dollar acting as the more reliable hedge. Sustained volatility in traditional havens is keeping asset-allocation conversations live for private banking clients positioning defensively.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 4,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
+        "user_relevance": 3
       }
     ],
     "categories": {
+      "Competitor Intelligence": "#0891b2",
       "AI & Technology": "#6366f1",
       "Private Banking & Wealth": "#059669",
-      "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706"
+      "HSBC News": "#dc2626"
     }
   }
 }
