@@ -3,135 +3,105 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Thursday, 13 August 2026",
-  "date_str": "2026-08-13",
-  "generated_at": "13 Aug 2026, 23:12 UTC",
-  "total_articles": 6,
+  "briefing_date": "Friday, 14 August 2026",
+  "date_str": "2026-08-14",
+  "generated_at": "14 Aug 2026, 23:16 UTC",
+  "total_articles": 4,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "DBS hands Hong Kong to its Taiwan chief as HSBC's top APAC rival refreshes its leadership bench",
-      "context_html": "<strong>Sebastian Paredes, outgoing CEO of DBS Bank Hong Kong</strong>, retires in March 2027 after 16 years, handing the role and DBS's Head of North Asia mandate to <strong>Ng Sier Han, CEO of DBS Taiwan</strong>, who built DBS Taiwan into the market's largest foreign bank after absorbing Citi's local consumer business. DBS is running a coordinated three-market succession across Hong Kong, Taiwan and Indonesia rather than a reactive replacement \u2014 the kind of bench-depth planning HSBC's own APAC change programme should be benchmarked against. Worth watching whether Ng brings the same integration playbook that worked in Taiwan to Hong Kong, HSBC's home wealth market.",
+      "headline": "Banks scale AI agents in compliance \u2014 but 90% are still stuck in pilot",
+      "context_html": "McKinsey estimates a single compliance officer could soon supervise 15\u201320 AI agents, unlocking productivity gains of up to 20x on tasks like KYC screening and due diligence \u2014 yet only around 10% of financial institutions have moved agents into production. For Adam's change agenda, this is the clearest signal yet that AI-enabled operating-model redesign, not just tool adoption, is becoming the real compliance battleground; WPB's own KYC and onboarding workflows are exactly the high-volume, rules-based processes this wave targets.",
       "source_links": [
         [
-          "https://www.caproasia.com/2026/08/13/singapore-largest-bank-dbs-senior-management-changes-1-head-of-north-asia-and-ceo-of-dbs-bank-hong-kong-sebastian-paredes-to-retire-in-2027-march-1-3-27-remain-as-senior-advisor-2-dbs-taiwan-c/",
-          "DBS Senior Management Changes \u2014 Caproasia"
+          "https://fintech.global/2026/08/14/ai-agents-move-from-pilot-to-workforce-in-bank-compliance/",
+          "AI agents move from pilot to workforce"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "A single cracked encryption key exposed hidden AI reasoning across OpenAI, Anthropic and Google",
-      "context_html": "Academic researchers cracked a single global encryption key all three providers used to protect hidden AI 'reasoning' tokens, recovering 182 real credentials from over 315,000 decoded reasoning blocks scraped from public agent logs. HSBC has committed to a deliberate multi-model AI strategy spanning these same three vendors, so this is a live third-party AI risk rather than a hypothetical one \u2014 any RM- or operations-facing tool built on their reasoning APIs needs a vendor-risk review, not just a model-selection debate. Expect procurement and infosec to raise this before any AI vendor renewal goes to Adam's next steering session.",
+      "headline": "Wealth-tech vendors race to build AI 'orchestration' layers for advisers",
+      "context_html": "Playbook (formerly Powder), led by <strong>Kanishk Parashar, Founder and CEO</strong>, launched an AI orchestration platform now used by roughly 40 wealth firms managing a combined $660 billion in client assets, automating onboarding, proposals and compliance reviews from plain-English instructions. It's the latest sign the wealth-tech AI layer is consolidating around orchestration rather than point tools \u2014 a build-vs-buy question Adam's team will face as HSBC's own AI initiatives mature.",
       "source_links": [
         [
-          "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
-          "OpenAI, Anthropic, Google API Flaw \u2014 The Hacker News"
+          "https://www.manilatimes.net/2026/08/13/tmt-newswire/globenewswire/playbook-launches-ai-orchestration-platform-for-wealth-management-firms/2405069",
+          "Playbook launches AI orchestration platform"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Anthropic opens investor meetings for a fall Nasdaq debut near a $965bn valuation",
-      "context_html": "Anthropic began pre-IPO investor meetings this week, fielding questions on Chinese AI competition and infrastructure spend as it targets a September-October Nasdaq listing that some bankers see pricing above $1 trillion. A public listing puts Claude's commercial roadmap and pricing under quarterly investor scrutiny for the first time, which matters directly for HSBC given the multi-model AI stance the bank has already committed to \u2014 vendor durability, not just capability, becomes a diligence question. Adam's AI vendor-governance workstream should flag the listing as a milestone to track.",
+      "headline": "Held-away assets are private banking's data blind spot \u2014 and its next AI use case",
+      "context_html": "A new industry analysis flags that clients' assets held outside a bank's own platform routinely go untracked, weakening suitability assessments and cross-sell economics at exactly the moment banks are racing to deepen share of wallet. It's a sharper version of the completeness problem HSBC's own PRISM (Aladdin-based) advisory tooling was built to help close \u2014 the gap isn't model quality, it's visibility into assets the bank never sees in the first place, which is a data-aggregation and client-disclosure problem before it's an AI problem.",
       "source_links": [
         [
-          "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
-          "Top Tech News, Aug 12 2026 \u2014 Tech Startups"
+          "https://fintech.global/2026/08/13/why-wealthy-clients-hidden-assets-are-banks-biggest-blind-spot/",
+          "Wealthy clients' hidden assets blind spot"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Competitor Intelligence": [
-      {
-        "id": "art01",
-        "title": "DBS Names Ng Sier Han as Hong Kong CEO, Ending Paredes' 16-Year Run",
-        "url": "https://www.caproasia.com/2026/08/13/singapore-largest-bank-dbs-senior-management-changes-1-head-of-north-asia-and-ceo-of-dbs-bank-hong-kong-sebastian-paredes-to-retire-in-2027-march-1-3-27-remain-as-senior-advisor-2-dbs-taiwan-c/",
-        "source": "Caproasia",
-        "published_at": "2026-08-13",
-        "summary": "DBS announced Sebastian Paredes, Head of North Asia and CEO of DBS Bank Hong Kong, will retire from executive duties in March 2027 and be succeeded by Ng Sier Han, current CEO of DBS Taiwan. Lim Chu Chong moves from DBS Indonesia to head Taiwan, and Adrian Chai steps up to lead Indonesia, making this a coordinated three-market succession rather than a single replacement.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 8
-      }
-    ],
     "AI & Technology": [
       {
-        "id": "art02",
-        "title": "Shared Encryption Key Exposed Hidden AI Reasoning Across OpenAI, Anthropic, Google",
-        "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
-        "source": "The Hacker News",
-        "published_at": "2026-08-12",
-        "summary": "Researchers at ELLIS Institute T\u00fcbingen and the Max Planck Institute found that OpenAI, Anthropic and Google all relied on a single global encryption key to protect hidden AI 'reasoning' tokens, letting them decode 315,320 reasoning blocks from public agent logs and recover 182 real credentials, including API keys and passwords. All three providers have since been notified of the flaw in their reasoning APIs.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
+        "id": "art01",
+        "title": "AI agents move from pilot to workforce in bank compliance",
+        "url": "https://fintech.global/2026/08/14/ai-agents-move-from-pilot-to-workforce-in-bank-compliance/",
+        "source": "FinTech Global",
+        "published_at": "2026-08-14",
+        "summary": "Banks are deploying specialised AI agents to automate compliance work such as KYC screening and due diligence, with McKinsey estimating productivity gains of up to 20x when one compliance officer supervises 15-20 agents. Only about 10% of financial institutions have scaled AI agents into production so far, though fraud detection and customer onboarding are top priorities; one platform cited cut onboarding from eight days to under a minute. For Adam, this is the clearest signal yet that AI-enabled operating-model redesign is becoming the real compliance battleground, and WPB's own KYC and onboarding workflows are exactly the high-volume, rules-based processes this wave targets.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 9,
         "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 9
+      },
+      {
+        "id": "art02",
+        "title": "Playbook launches AI orchestration platform for wealth management firms",
+        "url": "https://www.manilatimes.net/2026/08/13/tmt-newswire/globenewswire/playbook-launches-ai-orchestration-platform-for-wealth-management-firms/2405069",
+        "source": "GlobeNewswire / Manila Times",
+        "published_at": "2026-08-13",
+        "summary": "Wealth-tech firm Playbook (formerly Powder) launched an AI orchestration platform that lets RIAs, family offices and wealth managers automate workflows including client onboarding, proposal creation, estate planning analysis and compliance reviews using plain-English 'plays.' The platform already serves roughly 40 firms representing about $660 billion in combined client assets, with founder Kanishk Parashar positioning it around cost, quality and ROI optimisation. It's a further sign the wealth-tech AI layer is consolidating around orchestration rather than point tools \u2014 a build-vs-buy question relevant as HSBC's own AI initiatives (Wealth Intelligence, Model ML) mature.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 7,
+        "noise_level": 2,
         "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 7
-      },
-      {
-        "id": "art03",
-        "title": "Anthropic Opens Investor Meetings Ahead of Fall Nasdaq Debut",
-        "url": "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
-        "source": "Tech Startups",
-        "published_at": "2026-08-12",
-        "summary": "Anthropic began pre-IPO investor meetings this week as it targets a September-October Nasdaq listing, fielding questions on Chinese AI competition, infrastructure spending and political friction in Washington. The Claude developer was last valued at $965 billion and some bankers see a listing pricing above $1 trillion.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art05",
-        "title": "Google's Gemini App Crosses 1 Billion Monthly Users",
-        "url": "https://finance.yahoo.com/technology/ai/articles/googles-gemini-just-crossed-1-141234498.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-12",
-        "summary": "Google's Gemini app passed 1 billion monthly active users, becoming the 14th Google product to reach that scale and pulling roughly level with ChatGPT. Nearly 90% of Fortune 100 companies now use Gemini Enterprise, and Google Cloud revenue tied to generative AI products has grown sharply this year.",
-        "hsbc_relevancy": 2,
-        "adam_rel": 6,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 6
       }
     ],
     "Private Banking & Wealth": [
       {
-        "id": "art04",
-        "title": "Bank of Singapore Hires Deutsche Private Bank's Penny Low in Singapore",
-        "url": "https://www.caproasia.com/2026/08/13/145-billion-bank-of-singapore-hires-deutsche-private-bank-penny-low-as-senior-relationship-manager-based-in-singapore-20-years-private-banking-financial-industry-experience-at-deutsche-bank-credi/",
-        "source": "Caproasia",
+        "id": "art03",
+        "title": "Wealthy clients' hidden assets are banks' biggest blind spot",
+        "url": "https://fintech.global/2026/08/13/why-wealthy-clients-hidden-assets-are-banks-biggest-blind-spot/",
+        "source": "FinTech Global",
         "published_at": "2026-08-13",
-        "summary": "Bank of Singapore, OCBC's private banking arm, hired Penny Low from Deutsche Bank's private bank as a senior relationship manager in Singapore. Low brings 20 years of private banking experience across Deutsche Bank, Credit Suisse, Mitsubishi UFJ Trust and Bank of America.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 5,
-        "noise_level": 1,
+        "summary": "A new analysis argues that wealthy clients' undisclosed or poorly tracked assets held outside a bank's core wealth platform represent a significant blind spot for private banks trying to build a complete picture of client wealth. The gap undermines suitability assessments and cross-sell opportunities as banks compete for a greater share of client wallets, and the piece calls for better data-aggregation tools to surface held-away assets. This directly touches WPB's share-of-wallet ambitions in Asia \u2014 the same completeness problem PRISM/Aladdin-based advisory tools are meant to help close, but only for assets banks can already see.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 2,
         "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 6
       }
     ],
-    "HSBC News": [
+    "Regulatory & Markets": [
       {
-        "id": "art06",
-        "title": "HSBC Buys Back 1.99 Million Shares Across UK and Hong Kong Venues",
-        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-2564cb27aaa8.html",
-        "source": "StockTitan (SEC 6-K)",
-        "published_at": "2026-08-13",
-        "summary": "HSBC purchased 1,650,000 ordinary shares on UK venues and 340,000 shares on the Hong Kong Stock Exchange for cancellation on 13 August, continuing the buy-back programme expanded after its H1 results. This is routine execution against a previously disclosed capital-return commitment rather than a new strategic signal.",
-        "hsbc_relevancy": 6,
+        "id": "art04",
+        "title": "Hong Kong stocks fall Friday as tech and property shares weigh on market",
+        "url": "https://www.marketscreener.com/news/hong-kong-stocks-fall-on-friday-amid-tech-property-weakness-jd-com-plunges-11-ce7859dedf89f227",
+        "source": "MarketScreener",
+        "published_at": "2026-08-14",
+        "summary": "Hong Kong stocks closed lower on Friday as technology and property shares weighed on the market, diverging from broader gains elsewhere in Asia. CK Hutchison fell 3.4% after its H1 2026 results, while investors digested Tencent's Q2 earnings and continued optimism around Shein's planned Hong Kong IPO. A soft session in HSBC's home market, though driven by idiosyncratic single-stock moves rather than a broad risk-off shift.",
+        "hsbc_relevancy": 3,
         "adam_rel": 3,
-        "noise_level": 1,
-        "category": "HSBC News",
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 3
       }
@@ -141,94 +111,65 @@
     "articles": [
       {
         "id": "art01",
-        "title": "DBS Names Ng Sier Han as Hong Kong CEO, Ending Paredes' 16-Year Run",
-        "url": "https://www.caproasia.com/2026/08/13/singapore-largest-bank-dbs-senior-management-changes-1-head-of-north-asia-and-ceo-of-dbs-bank-hong-kong-sebastian-paredes-to-retire-in-2027-march-1-3-27-remain-as-senior-advisor-2-dbs-taiwan-c/",
-        "source": "Caproasia",
-        "published_at": "2026-08-13",
-        "summary": "DBS announced Sebastian Paredes, Head of North Asia and CEO of DBS Bank Hong Kong, will retire from executive duties in March 2027 and be succeeded by Ng Sier Han, current CEO of DBS Taiwan. Lim Chu Chong moves from DBS Indonesia to head Taiwan, and Adrian Chai steps up to lead Indonesia, making this a coordinated three-market succession rather than a single replacement.",
+        "title": "AI agents move from pilot to workforce in bank compliance",
+        "url": "https://fintech.global/2026/08/14/ai-agents-move-from-pilot-to-workforce-in-bank-compliance/",
+        "source": "FinTech Global",
+        "published_at": "2026-08-14",
+        "summary": "Banks are deploying specialised AI agents to automate compliance work such as KYC screening and due diligence, with McKinsey estimating productivity gains of up to 20x when one compliance officer supervises 15-20 agents. Only about 10% of financial institutions have scaled AI agents into production so far, though fraud detection and customer onboarding are top priorities; one platform cited cut onboarding from eight days to under a minute. For Adam, this is the clearest signal yet that AI-enabled operating-model redesign is becoming the real compliance battleground, and WPB's own KYC and onboarding workflows are exactly the high-volume, rules-based processes this wave targets.",
         "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "adam_rel": 9,
+        "noise_level": 3,
+        "category": "AI & Technology",
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 9
       },
       {
         "id": "art02",
-        "title": "Shared Encryption Key Exposed Hidden AI Reasoning Across OpenAI, Anthropic, Google",
-        "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
-        "source": "The Hacker News",
-        "published_at": "2026-08-12",
-        "summary": "Researchers at ELLIS Institute T\u00fcbingen and the Max Planck Institute found that OpenAI, Anthropic and Google all relied on a single global encryption key to protect hidden AI 'reasoning' tokens, letting them decode 315,320 reasoning blocks from public agent logs and recover 182 real credentials, including API keys and passwords. All three providers have since been notified of the flaw in their reasoning APIs.",
-        "hsbc_relevancy": 5,
+        "title": "Playbook launches AI orchestration platform for wealth management firms",
+        "url": "https://www.manilatimes.net/2026/08/13/tmt-newswire/globenewswire/playbook-launches-ai-orchestration-platform-for-wealth-management-firms/2405069",
+        "source": "GlobeNewswire / Manila Times",
+        "published_at": "2026-08-13",
+        "summary": "Wealth-tech firm Playbook (formerly Powder) launched an AI orchestration platform that lets RIAs, family offices and wealth managers automate workflows including client onboarding, proposal creation, estate planning analysis and compliance reviews using plain-English 'plays.' The platform already serves roughly 40 firms representing about $660 billion in combined client assets, with founder Kanishk Parashar positioning it around cost, quality and ROI optimisation. It's a further sign the wealth-tech AI layer is consolidating around orchestration rather than point tools \u2014 a build-vs-buy question relevant as HSBC's own AI initiatives (Wealth Intelligence, Model ML) mature.",
+        "hsbc_relevancy": 4,
         "adam_rel": 7,
-        "noise_level": 3,
+        "noise_level": 2,
         "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 7
       },
       {
         "id": "art03",
-        "title": "Anthropic Opens Investor Meetings Ahead of Fall Nasdaq Debut",
-        "url": "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
-        "source": "Tech Startups",
-        "published_at": "2026-08-12",
-        "summary": "Anthropic began pre-IPO investor meetings this week as it targets a September-October Nasdaq listing, fielding questions on Chinese AI competition, infrastructure spending and political friction in Washington. The Claude developer was last valued at $965 billion and some bankers see a listing pricing above $1 trillion.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art04",
-        "title": "Bank of Singapore Hires Deutsche Private Bank's Penny Low in Singapore",
-        "url": "https://www.caproasia.com/2026/08/13/145-billion-bank-of-singapore-hires-deutsche-private-bank-penny-low-as-senior-relationship-manager-based-in-singapore-20-years-private-banking-financial-industry-experience-at-deutsche-bank-credi/",
-        "source": "Caproasia",
+        "title": "Wealthy clients' hidden assets are banks' biggest blind spot",
+        "url": "https://fintech.global/2026/08/13/why-wealthy-clients-hidden-assets-are-banks-biggest-blind-spot/",
+        "source": "FinTech Global",
         "published_at": "2026-08-13",
-        "summary": "Bank of Singapore, OCBC's private banking arm, hired Penny Low from Deutsche Bank's private bank as a senior relationship manager in Singapore. Low brings 20 years of private banking experience across Deutsche Bank, Credit Suisse, Mitsubishi UFJ Trust and Bank of America.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art05",
-        "title": "Google's Gemini App Crosses 1 Billion Monthly Users",
-        "url": "https://finance.yahoo.com/technology/ai/articles/googles-gemini-just-crossed-1-141234498.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-08-12",
-        "summary": "Google's Gemini app passed 1 billion monthly active users, becoming the 14th Google product to reach that scale and pulling roughly level with ChatGPT. Nearly 90% of Fortune 100 companies now use Gemini Enterprise, and Google Cloud revenue tied to generative AI products has grown sharply this year.",
-        "hsbc_relevancy": 2,
+        "summary": "A new analysis argues that wealthy clients' undisclosed or poorly tracked assets held outside a bank's core wealth platform represent a significant blind spot for private banks trying to build a complete picture of client wealth. The gap undermines suitability assessments and cross-sell opportunities as banks compete for a greater share of client wallets, and the piece calls for better data-aggregation tools to surface held-away assets. This directly touches WPB's share-of-wallet ambitions in Asia \u2014 the same completeness problem PRISM/Aladdin-based advisory tools are meant to help close, but only for assets banks can already see.",
+        "hsbc_relevancy": 5,
         "adam_rel": 6,
-        "noise_level": 4,
-        "category": "AI & Technology",
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
         "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "art06",
-        "title": "HSBC Buys Back 1.99 Million Shares Across UK and Hong Kong Venues",
-        "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-2564cb27aaa8.html",
-        "source": "StockTitan (SEC 6-K)",
-        "published_at": "2026-08-13",
-        "summary": "HSBC purchased 1,650,000 ordinary shares on UK venues and 340,000 shares on the Hong Kong Stock Exchange for cancellation on 13 August, continuing the buy-back programme expanded after its H1 results. This is routine execution against a previously disclosed capital-return commitment rather than a new strategic signal.",
-        "hsbc_relevancy": 6,
+        "id": "art04",
+        "title": "Hong Kong stocks fall Friday as tech and property shares weigh on market",
+        "url": "https://www.marketscreener.com/news/hong-kong-stocks-fall-on-friday-amid-tech-property-weakness-jd-com-plunges-11-ce7859dedf89f227",
+        "source": "MarketScreener",
+        "published_at": "2026-08-14",
+        "summary": "Hong Kong stocks closed lower on Friday as technology and property shares weighed on the market, diverging from broader gains elsewhere in Asia. CK Hutchison fell 3.4% after its H1 2026 results, while investors digested Tencent's Q2 earnings and continued optimism around Shein's planned Hong Kong IPO. A soft session in HSBC's home market, though driven by idiosyncratic single-stock moves rather than a broad risk-off shift.",
+        "hsbc_relevancy": 3,
         "adam_rel": 3,
-        "noise_level": 1,
-        "category": "HSBC News",
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 3
       }
     ],
     "categories": {
-      "Competitor Intelligence": "#0891b2",
       "AI & Technology": "#6366f1",
       "Private Banking & Wealth": "#059669",
-      "HSBC News": "#dc2626"
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
