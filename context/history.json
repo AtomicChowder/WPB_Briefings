@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-08-15",
+    "last_updated": "2026-08-16",
     "covered_urls": [
       "https://finance.yahoo.com/markets/stocks/articles/hsbc-kettner-keeps-strongest-bullish-115900878.html",
       "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-11-2026-gold-remains-over-4400-as-iran-situation-worsens-115212228.html",
@@ -8,6 +8,8 @@
       "https://fintech.global/2026/08/11/ai-wont-replace-wealth-advisors-it-will-redefine-them/",
       "https://fintech.global/2026/08/13/why-wealthy-clients-hidden-assets-are-banks-biggest-blind-spot/",
       "https://fintech.global/2026/08/14/ai-agents-move-from-pilot-to-workforce-in-bank-compliance/",
+      "https://fintechmagazine.com/news/this-weeks-top-5-stories-in-fintech-15-08-2026",
+      "https://github.com/anthropics/claude-code/releases",
       "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/08/bank-of-america-enters-into-a-joint-venture-agreement-with-jio-f.html",
       "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
       "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
@@ -21,7 +23,6 @@
       "https://www.cnbc.com/2026/08/11/stock-market-today-live-updates.html",
       "https://www.manilatimes.net/2026/08/13/tmt-newswire/globenewswire/playbook-launches-ai-orchestration-platform-for-wealth-management-firms/2405069",
       "https://www.marketscreener.com/news/hong-kong-stocks-fall-on-friday-amid-tech-property-weakness-jd-com-plunges-11-ce7859dedf89f227",
-      "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
       "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
       "https://www.scmp.com/business/banking-finance/article/3363951/hong-kong-reappoint-insurance-regulator-industry-braces-tough-period-sources",
       "https://www.scmp.com/business/banking-finance/article/3363969/hong-kong-insurers-weather-beijings-tax-shift-8-10-premium-growth-sp",
@@ -30,24 +31,23 @@
       "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-2564cb27aaa8.html",
       "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-294468bfda28.html",
       "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html",
-      "https://www.taipeitimes.com/News/biz/archives/2026/08/10/2003862204",
-      "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure"
+      "https://www.taipeitimes.com/News/biz/archives/2026/08/10/2003862204"
     ],
     "covered_topics": [
       "A single cracked encryption key exposed hidden AI reasoning across OpenAI, Anthropic and Google",
       "Anthropic opens investor meetings for a fall Nasdaq debut near a $965bn valuation",
       "Anthropic starts watermarking Claude output as EU AI Act compliance bites for GenAI vendors, not just deployers",
       "Bank of America buys into India's Jio Credit, betting on a local-partner JV over organic build-out in Asia's fastest-growing wealth market",
+      "Banks on legacy cores pay 4.7x more for compliance \u2014 a sharper case for modernisation pace",
       "Banks scale AI agents in compliance \u2014 but 90% are still stuck in pilot",
       "Beijing's 20% offshore insurance tax knocks HSBC and Prudential shares, testing HK's wealth-hub pitch",
       "China's rookie fund managers get an early, brutal lesson in AI-driven market risk",
-      "Citi and BNP Paribas turn cautious on HSBC just as Morgan Stanley raises its target",
+      "Claude Code's security-hardening cadence is a live benchmark for agentic AI governance",
       "DBS hands Hong Kong to its Taiwan chief as HSBC's top APAC rival refreshes its leadership bench",
       "DBS's Tan Su Shan singles out Taiwan as the next 2-3 year wealth growth engine",
       "Held-away assets are private banking's data blind spot \u2014 and its next AI use case",
       "LSEG: 73% of wealth executives now call AI business-critical, validating the augmentation model HSBC is already building",
       "Meta open-sources Muse Glimmer, putting a capable agentic model on a single consumer GPU",
-      "OCBC and UOB convert Singapore's wealth boom into record Q2 profits",
       "OpenAI ships offense-grade hacking model as its next system trips a 'critical' cyber threshold",
       "Pictet tells clients to cut US dollar exposure \u2014 and they're not the only ones",
       "S&P: Hong Kong insurers to keep growing 8-10% despite Beijing's new offshore tax bite",
@@ -55,17 +55,6 @@
       "Wealth-tech vendors race to build AI 'orchestration' layers for advisers"
     ],
     "daily": [
-      {
-        "date": "2026-08-09",
-        "urls": [
-          "https://www.proactiveinvestors.com/companies/news/1096574/citi-downgrades-hsbc-to-neutral-after-40-run-1096574.html",
-          "https://www.thestar.com.my/business/business-news/2026/08/07/singapore039s-ocbc-uob-beat-forecasts-as-wealth-income-cushions-margin-pressure"
-        ],
-        "topics": [
-          "Citi and BNP Paribas turn cautious on HSBC just as Morgan Stanley raises its target",
-          "OCBC and UOB convert Singapore's wealth boom into record Q2 profits"
-        ]
-      },
       {
         "date": "2026-08-10",
         "urls": [
@@ -151,6 +140,17 @@
           "S&P: Hong Kong insurers to keep growing 8-10% despite Beijing's new offshore tax bite",
           "Pictet tells clients to cut US dollar exposure \u2014 and they're not the only ones",
           "China's rookie fund managers get an early, brutal lesson in AI-driven market risk"
+        ]
+      },
+      {
+        "date": "2026-08-16",
+        "urls": [
+          "https://fintechmagazine.com/news/this-weeks-top-5-stories-in-fintech-15-08-2026",
+          "https://github.com/anthropics/claude-code/releases"
+        ],
+        "topics": [
+          "Claude Code's security-hardening cadence is a live benchmark for agentic AI governance",
+          "Banks on legacy cores pay 4.7x more for compliance \u2014 a sharper case for modernisation pace"
         ]
       }
     ]
