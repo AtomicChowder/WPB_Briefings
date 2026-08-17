@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-08-16",
+    "last_updated": "2026-08-17",
     "covered_urls": [
       "https://finance.yahoo.com/markets/stocks/articles/hsbc-kettner-keeps-strongest-bullish-115900878.html",
       "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-11-2026-gold-remains-over-4400-as-iran-situation-worsens-115212228.html",
@@ -9,66 +9,52 @@
       "https://fintech.global/2026/08/13/why-wealthy-clients-hidden-assets-are-banks-biggest-blind-spot/",
       "https://fintech.global/2026/08/14/ai-agents-move-from-pilot-to-workforce-in-bank-compliance/",
       "https://fintechmagazine.com/news/this-weeks-top-5-stories-in-fintech-15-08-2026",
+      "https://fortune.com/2026/08/17/jamie-dimon-jpmorgan-valuation/",
       "https://github.com/anthropics/claude-code/releases",
       "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/08/bank-of-america-enters-into-a-joint-venture-agreement-with-jio-f.html",
       "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
       "https://techstartups.com/2026/08/12/top-tech-news-today-august-12-2026-anthropic-google-ibm-lovable-nvidia-openai-more/",
-      "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
       "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
       "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html",
-      "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
       "https://www.bloomberg.com/news/articles/2026-08-11/ubs-capital-decision-postponed-by-swiss-parliament-committee",
+      "https://www.bloomberg.com/news/articles/2026-08-17/ai-is-driving-up-treasury-yields-it-just-touches-everything",
       "https://www.caproasia.com/2026/08/13/145-billion-bank-of-singapore-hires-deutsche-private-bank-penny-low-as-senior-relationship-manager-based-in-singapore-20-years-private-banking-financial-industry-experience-at-deutsche-bank-credi/",
       "https://www.caproasia.com/2026/08/13/singapore-largest-bank-dbs-senior-management-changes-1-head-of-north-asia-and-ceo-of-dbs-bank-hong-kong-sebastian-paredes-to-retire-in-2027-march-1-3-27-remain-as-senior-advisor-2-dbs-taiwan-c/",
       "https://www.cnbc.com/2026/08/11/stock-market-today-live-updates.html",
+      "https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/",
       "https://www.manilatimes.net/2026/08/13/tmt-newswire/globenewswire/playbook-launches-ai-orchestration-platform-for-wealth-management-firms/2405069",
       "https://www.marketscreener.com/news/hong-kong-stocks-fall-on-friday-amid-tech-property-weakness-jd-com-plunges-11-ce7859dedf89f227",
-      "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
+      "https://www.pymnts.com/legal/2026/federal-regulators-reach-deadline-identify-fintech-barriers/",
       "https://www.scmp.com/business/banking-finance/article/3363951/hong-kong-reappoint-insurance-regulator-industry-braces-tough-period-sources",
       "https://www.scmp.com/business/banking-finance/article/3363969/hong-kong-insurers-weather-beijings-tax-shift-8-10-premium-growth-sp",
       "https://www.scmp.com/business/banking-finance/article/3364034/how-chinas-young-managers-grappled-billion-yuan-mandates-ai-shocks-hit-portfolios",
       "https://www.scmp.com/business/markets/article/3364067/reduce-your-exposure-us-assets-they-lose-value-pictet-warns-investors",
       "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-2564cb27aaa8.html",
       "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-294468bfda28.html",
-      "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html",
       "https://www.taipeitimes.com/News/biz/archives/2026/08/10/2003862204"
     ],
     "covered_topics": [
       "A single cracked encryption key exposed hidden AI reasoning across OpenAI, Anthropic and Google",
       "Anthropic opens investor meetings for a fall Nasdaq debut near a $965bn valuation",
+      "Anthropic posts its first profitable quarter as Q2 revenue tops $11.5bn, fast-tracking a fall IPO",
       "Anthropic starts watermarking Claude output as EU AI Act compliance bites for GenAI vendors, not just deployers",
       "Bank of America buys into India's Jio Credit, betting on a local-partner JV over organic build-out in Asia's fastest-growing wealth market",
       "Banks on legacy cores pay 4.7x more for compliance \u2014 a sharper case for modernisation pace",
       "Banks scale AI agents in compliance \u2014 but 90% are still stuck in pilot",
-      "Beijing's 20% offshore insurance tax knocks HSBC and Prudential shares, testing HK's wealth-hub pitch",
       "China's rookie fund managers get an early, brutal lesson in AI-driven market risk",
       "Claude Code's security-hardening cadence is a live benchmark for agentic AI governance",
       "DBS hands Hong Kong to its Taiwan chief as HSBC's top APAC rival refreshes its leadership bench",
       "DBS's Tan Su Shan singles out Taiwan as the next 2-3 year wealth growth engine",
       "Held-away assets are private banking's data blind spot \u2014 and its next AI use case",
+      "JPMorgan nears the first $1 trillion market cap in banking history, powered by an AI-driven earnings beat",
       "LSEG: 73% of wealth executives now call AI business-critical, validating the augmentation model HSBC is already building",
-      "Meta open-sources Muse Glimmer, putting a capable agentic model on a single consumer GPU",
       "OpenAI ships offense-grade hacking model as its next system trips a 'critical' cyber threshold",
       "Pictet tells clients to cut US dollar exposure \u2014 and they're not the only ones",
       "S&P: Hong Kong insurers to keep growing 8-10% despite Beijing's new offshore tax bite",
-      "Standard Chartered's wealth income surges 43% to a record $1.1bn, sharpening the APAC wealth race",
+      "US regulators hit their deadline to strip rules protecting banks from fintech competition",
       "Wealth-tech vendors race to build AI 'orchestration' layers for advisers"
     ],
     "daily": [
-      {
-        "date": "2026-08-10",
-        "urls": [
-          "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
-          "https://www.bloomberg.com/news/articles/2026-08-10/meta-releases-muse-glimmer-ai-model-people-can-run-on-their-laptop",
-          "https://www.scmp.com/business/banking-finance/article/3363348/beijing-says-20-offshore-insurance-tax-not-new-and-does-not-target-hong-kong",
-          "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-3d292f1c7f74.html"
-        ],
-        "topics": [
-          "Beijing's 20% offshore insurance tax knocks HSBC and Prudential shares, testing HK's wealth-hub pitch",
-          "Meta open-sources Muse Glimmer, putting a capable agentic model on a single consumer GPU",
-          "Standard Chartered's wealth income surges 43% to a record $1.1bn, sharpening the APAC wealth race"
-        ]
-      },
       {
         "date": "2026-08-11",
         "urls": [
@@ -151,6 +137,20 @@
         "topics": [
           "Claude Code's security-hardening cadence is a live benchmark for agentic AI governance",
           "Banks on legacy cores pay 4.7x more for compliance \u2014 a sharper case for modernisation pace"
+        ]
+      },
+      {
+        "date": "2026-08-17",
+        "urls": [
+          "https://fortune.com/2026/08/17/jamie-dimon-jpmorgan-valuation/",
+          "https://www.bloomberg.com/news/articles/2026-08-17/ai-is-driving-up-treasury-yields-it-just-touches-everything",
+          "https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/",
+          "https://www.pymnts.com/legal/2026/federal-regulators-reach-deadline-identify-fintech-barriers/"
+        ],
+        "topics": [
+          "JPMorgan nears the first $1 trillion market cap in banking history, powered by an AI-driven earnings beat",
+          "Anthropic posts its first profitable quarter as Q2 revenue tops $11.5bn, fast-tracking a fall IPO",
+          "US regulators hit their deadline to strip rules protecting banks from fintech competition"
         ]
       }
     ]
