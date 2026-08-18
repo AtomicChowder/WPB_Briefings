@@ -3,107 +3,181 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Monday, 17 August 2026",
-  "date_str": "2026-08-17",
-  "generated_at": "17 Aug 2026, 23:13 UTC",
-  "total_articles": 4,
+  "briefing_date": "Tuesday, 18 August 2026",
+  "date_str": "2026-08-18",
+  "generated_at": "18 Aug 2026, 23:16 UTC",
+  "total_articles": 9,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "JPMorgan nears the first $1 trillion market cap in banking history, powered by an AI-driven earnings beat",
-      "context_html": "JPMorgan's market value hit roughly $970bn on 17 August after Wells Fargo lifted its price target to $390, citing the productivity gains <strong>Derek Waldron, JPMorgan's Chief Analytics Officer</strong>, has driven through long-running autonomous banker agents. For Adam, this is the clearest market validation yet that AI-enabled change execution, not just cost-cutting, is what investors are now pricing into bank valuations, sharpening the case for accelerating WPB's own agentic AI roadmap rather than treating it as a pilot.",
+      "headline": "Synchrony wires OpenAI directly into its card products \u2014 a live test of AI-native financial services",
+      "context_html": "Synchrony has embedded its store-card financing and rewards programmes directly into ChatGPT's shopping and checkout flow \u2014 moving beyond an internal AI pilot into a live, revenue-facing product surface \u2014 while also deploying OpenAI's models across its own engineering and product workflows. This is the pace and depth of AI-native deployment that pressure-tests the sequencing of HSBC WPB's own AI roadmap: a financial institution has gone from LLM interface to embedded, monetised distribution channel, not just a chatbot copilot, and is a live benchmark against HSBC's own agentic-AI and Wealth Intelligence rollout timeline.",
       "source_links": [
         [
-          "https://fortune.com/2026/08/17/jamie-dimon-jpmorgan-valuation/",
-          "Fortune: JPMorgan nears $1tn valuation"
+          "https://www.cnbc.com/2026/08/17/synchrony-openai.html",
+          "Synchrony, OpenAI ink enterprise AI deal"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Anthropic posts its first profitable quarter as Q2 revenue tops $11.5bn, fast-tracking a fall IPO",
-      "context_html": "Anthropic's revenue grew fourteen-fold year-on-year to more than $11.5bn with positive operating income, and <strong>Krishna Rao, Anthropic's Chief Financial Officer</strong>, is now running early investor meetings ahead of a possible autumn listing. As JPMorgan and Goldman deepen Claude into private-banking workflows, Anthropic's scale and looming IPO strengthen its position against OpenAI, the vendor behind HSBC's own Wealth Intelligence platform, sharpening the two-horse AI vendor race Adam's change programme will need to navigate.",
+      "headline": "Hong Kong rewrites hedge fund tax rules to head off a talent exodus to Singapore and Dubai",
+      "context_html": "Hong Kong's government has tabled legislation sharply expanding carried-interest tax exemptions for fund managers, explicitly aimed at stemming an exodus of trading talent to Singapore and Dubai \u2014 though proprietary trading desks are carved out, forcing banks and funds into rapid licensing and structuring manoeuvres to qualify. This is a live case study in how fast Hong Kong regulators will move to defend the city's wealth-hub status once competitive pressure builds, and a direct input into HSBC WPB's own Hong Kong talent-retention and location-strategy conversations.",
       "source_links": [
         [
-          "https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/",
-          "Forbes: Anthropic's $11.5bn quarter"
+          "https://www.bloomberg.com/news/articles/2026-08-17/hedge-fund-tax-break-grips-hong-kong-as-banks-fear-exodus",
+          "Hedge Fund Tax Break Grips Hong Kong"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "US regulators hit their deadline to strip rules protecting banks from fintech competition",
-      "context_html": "Six US regulators reached the 17 August deadline under President Trump's May executive order to identify rules that unnecessarily block fintechs from partnering with, or competing against, regulated banks, with required agency action due by 15 November. Findings won't be published, but the review could ease fintech access to charters and payment rails in HSBC's largest market, adding urgency to the pace of WPB's own digital and AI-enabled delivery relative to less-regulated challengers.",
+      "headline": "UBS rebuilds its China wealth coverage in Hong Kong with a 20-year private banking veteran",
+      "context_html": "UBS Global Wealth Management has appointed <strong>Seamus Yin, Market Team Head for China, UBS Global Wealth Management</strong> \u2014 previously of EFG, Citi Private Bank and JP Morgan Private Bank \u2014 to lead its China international client team in Hong Kong, reporting to <strong>Marina Lui, Head of Wealth Management for China, UBS Global Wealth Management</strong>. The hire continues UBS's post-Credit Suisse push to rebuild senior China-facing relationship-manager capacity, a direct benchmark for HSBC's own China UHNW coverage investment and a leading indicator worth tracking when reviewing HSBC WPB's China headcount and retention plans.",
       "source_links": [
         [
-          "https://www.pymnts.com/legal/2026/federal-regulators-reach-deadline-identify-fintech-barriers/",
-          "PYMNTS: Regulators hit fintech deadline"
+          "https://asianprivatebanker.com/people-news/ubs-gwm-hires-ex-efg-senior-exec-for-china-team/",
+          "UBS GWM hires ex-EFG exec for China team"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "AI & Technology": [
-      {
-        "id": "art01",
-        "title": "Anthropic posts first profitable quarter as Q2 revenue tops $11.5bn",
-        "url": "https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/",
-        "source": "Forbes",
-        "published_at": "2026-08-17",
-        "summary": "Anthropic's preliminary Q2 2026 revenue topped $11.5bn, a fourteen-fold jump year-on-year, with the company posting its first quarter of positive operating income. CFO Krishna Rao has begun investor meetings for a fall IPO advised by Morgan Stanley, Goldman Sachs and JPMorgan. As JPMorgan and Goldman deepen Claude into private-banking workflows, Anthropic is emerging as the credible second vendor alongside OpenAI, the model behind HSBC's own Wealth Intelligence platform, reshaping the AI vendor landscape WPB's change programme will need to navigate.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "Competitor Intelligence": [
-      {
-        "id": "art02",
-        "title": "JPMorgan nears the first $1 trillion market cap in banking history",
-        "url": "https://fortune.com/2026/08/17/jamie-dimon-jpmorgan-valuation/",
-        "source": "Fortune",
-        "published_at": "2026-08-17",
-        "summary": "JPMorgan Chase's market capitalisation reached roughly $970bn on 17 August, putting it within a rally of becoming the first bank ever to cross $1 trillion, after Wells Fargo raised its price target to $390 on a Q2 earnings beat. The bank credits part of its productivity gains to long-running autonomous AI agents for bankers that Chief Analytics Officer Derek Waldron says can now work coherently for hours rather than minutes. The market is now visibly pricing AI-enabled execution into bank valuations, sharpening the case that agentic AI investment, not just cost programmes, is what is differentiating HSBC's key strategic rival.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
     "Regulatory & Markets": [
       {
-        "id": "art03",
-        "title": "US regulators hit deadline to strip rules blocking fintech-bank competition",
-        "url": "https://www.pymnts.com/legal/2026/federal-regulators-reach-deadline-identify-fintech-barriers/",
-        "source": "PYMNTS",
+        "id": "art01",
+        "title": "Hedge Fund Tax Break Grips Hong Kong as Banks Fear Exodus",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-17/hedge-fund-tax-break-grips-hong-kong-as-banks-fear-exodus",
+        "source": "Bloomberg",
         "published_at": "2026-08-17",
-        "summary": "Six US regulators, including the OCC, FDIC and SEC, reached the 17 August deadline under President Trump's 19 May executive order requiring them to identify rules that unnecessarily block fintechs from partnering with, or competing against, regulated banks, with agency action due by 15 November. The review itself will not be published, but it signals a deregulatory direction that could ease fintech access to bank charters and payment rails in HSBC's largest single market, adding competitive pressure to the pace of WPB's own digital and AI-enabled delivery.",
-        "hsbc_relevancy": 5,
+        "summary": "Hong Kong's government has sent legislators a bill sharply expanding carried-interest tax exemptions for fund managers, aiming to prevent an exodus of trading talent to Singapore and Dubai. Proprietary trading firms are excluded from the concession, sharpening competition among firms scrambling to restructure to qualify. For HSBC WPB this reshapes the competitive landscape for hiring and retaining front-office talent in Hong Kong, and signals regulators moving fast to defend the city's wealth-hub status.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
         "noise_level": 2,
         "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 6
+      }
+    ],
+    "HSBC News": [
+      {
+        "id": "art02",
+        "title": "HSBC Surpasses 9.7 Million Shares Repurchased in Ongoing August Buy-Back Programme",
+        "url": "https://www.foreignpolicyjournal.com/2026/08/18/hsbc-holdings-nyse-hsbc-surpasses-9-7-million-shares-repurchased-in-ongoing-august-buy-back-programme/",
+        "source": "Foreign Policy Journal",
+        "published_at": "2026-08-18",
+        "summary": "HSBC disclosed it repurchased a further roughly 1.19 million shares on 17 August across UK and Hong Kong venues, taking cumulative buybacks since 5 August to about 9.7 million shares (~US$201m), part of the post-results US$1bn capital-return programme. It's a routine capital-management disclosure rather than a strategic shift, but the pace confirms management's continued commitment to buybacks even as competitors reallocate capital toward AI and platform investment.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 2,
+        "noise_level": 1,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 2
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art03",
+        "title": "Synchrony Announces Enterprise Collaboration With OpenAI to Power Agentic Commerce",
+        "url": "https://www.cnbc.com/2026/08/17/synchrony-openai.html",
+        "source": "CNBC",
+        "published_at": "2026-08-17",
+        "summary": "Synchrony, a major US consumer-credit issuer, struck an enterprise deal with OpenAI to embed its store-card financing and rewards into ChatGPT's shopping and checkout flow, while deploying OpenAI's models internally via ChatGPT Work, Codex and AWS Bedrock to speed product development. It is one of the most concrete 'AI-native financial services' deployments yet \u2014 a lender wiring its core product distribution directly into an LLM interface, not just piloting an internal copilot.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
       },
       {
-        "id": "art04",
-        "title": "AI infrastructure borrowing binge pushes Treasury yields to 25-year highs",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-17/ai-is-driving-up-treasury-yields-it-just-touches-everything",
-        "source": "Bloomberg",
+        "id": "art08",
+        "title": "Stripe to Acquire AI Model-Routing Platform OpenRouter for Over $7 Billion",
+        "url": "https://finance.yahoo.com/technology/ai/articles/stripe-acquires-openrouter-7b-turning-091812340.html",
+        "source": "Yahoo Finance / Axios",
         "published_at": "2026-08-17",
-        "summary": "Hyperscalers' bond issuance to fund AI data-centre build-outs now equals roughly a quarter of net US Treasury note and bond issuance to private investors, five times the 2025 share, and is a growing contributor to long-term Treasury yields hitting a 25-year high. Investment-grade bond issuance overall is up 36% year-on-year as governments, tech companies and other borrowers compete for capital. Rising long-end yields flow directly into the mortgage, corporate and fixed-income pricing that shapes HSBC private-banking clients' portfolios.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "summary": "Stripe agreed to acquire OpenRouter, a platform giving developers unified access to 400+ AI models, for over $7bn \u2014 more than five times its valuation three months earlier. The deal positions Stripe as core infrastructure connecting AI model providers, developers and payments rails, a striking data point on how fast valuations are compounding in the AI-infrastructure layer.",
+        "hsbc_relevancy": 2,
+        "adam_rel": 7,
         "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "art05",
+        "title": "Ripple Brings Real-Time Cross-Border Payments to Korea's Banks",
+        "url": "https://fintech.global/2026/08/18/ripple-brings-real-time-payments-to-koreas-banks/",
+        "source": "fintech.global",
+        "published_at": "2026-08-18",
+        "summary": "Ripple has partnered with Jeonbuk Bank \u2014 the first Korean regional bank to adopt Ripple Payments \u2014 to enable near-instant cross-border settlement for business customers, replacing multi-day SWIFT transfers. It's a regional but concrete example of blockchain-based payment rails displacing correspondent banking for a mainstream lender rather than a pilot announcement.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 5
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art04",
+        "title": "UBS GWM Hires Ex-EFG Senior Executive Seamus Yin for China Team",
+        "url": "https://asianprivatebanker.com/people-news/ubs-gwm-hires-ex-efg-senior-exec-for-china-team/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-08-18",
+        "summary": "UBS Global Wealth Management has hired Seamus Yin \u2014 a 20-year private banking veteran of EFG, Citi Private Bank and JP Morgan Private Bank \u2014 as market team head for its China international client team in Hong Kong, reporting to Marina Lui. The hire continues UBS's push to rebuild senior China-facing coverage in Hong Kong following its Credit Suisse integration.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 6
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art06",
+        "title": "Partners Group Wins $1 Billion Private Credit Mandate From Asian Institutional Investor",
+        "url": "https://www.caproasia.com/2026/08/17/switzerland-186-billion-private-markets-asset-manager-partners-group-receives-1-billion-private-credit-mandate-discretionary-co-investment-from-1-single-institutional-investor-in-asia-to-invest/",
+        "source": "Caproasia",
+        "published_at": "2026-08-17",
+        "summary": "Partners Group, the $186bn Swiss private-markets manager, secured a $1bn discretionary and co-investment private-credit mandate from a single Asian institutional investor, targeting senior and junior direct-lending opportunities across APAC. The award underscores continuing institutional appetite for private credit even as public credit spreads stay tight \u2014 a segment HSBC WPB's own alternatives shelf competes against directly.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art07",
+        "title": "Wealth Management Emerges as Bright Spot in Southeast Asia Financial Services M&A",
+        "url": "https://e27.co/wealth-management-emerges-bright-spot-in-southeast-asia-financial-services-ma-20260817/",
+        "source": "e27",
+        "published_at": "2026-08-17",
+        "summary": "New EY analysis finds wealth management is the standout growth area in Southeast Asian financial-services M&A, with rising regional affluence drawing investor and acquirer interest even as broader banking deal volumes soften. The finding reinforces that capital continues to flow toward wealth platforms in HSBC's core APAC markets even in a subdued overall dealmaking environment.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art10",
+        "title": "Wealth Managers Point to AI Infrastructure, Not App Stocks, for Durable Returns",
+        "url": "https://www.scmp.com/specialist-publications/special-reports/topics/wealth-alternative-investments-august-2026/article/3364237/look-diverse-infrastructure-durable-ai-returns-experts-say",
+        "source": "South China Morning Post",
+        "published_at": "2026-08-17",
+        "summary": "Wealth advisers quoted by SCMP argue that after recent wobbles in AI-application share prices, durable AI-linked investment returns now sit in infrastructure \u2014 semiconductors, data centres, power and connectivity \u2014 rather than in AI software names, even as corporate AI capex keeps climbing. The piece reflects a rotation in how private banks are positioning AI exposure for HNW clients, away from concentrated single-stock bets.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 6
       }
     ]
   },
@@ -111,40 +185,12 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Anthropic posts first profitable quarter as Q2 revenue tops $11.5bn",
-        "url": "https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/",
-        "source": "Forbes",
+        "title": "Hedge Fund Tax Break Grips Hong Kong as Banks Fear Exodus",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-17/hedge-fund-tax-break-grips-hong-kong-as-banks-fear-exodus",
+        "source": "Bloomberg",
         "published_at": "2026-08-17",
-        "summary": "Anthropic's preliminary Q2 2026 revenue topped $11.5bn, a fourteen-fold jump year-on-year, with the company posting its first quarter of positive operating income. CFO Krishna Rao has begun investor meetings for a fall IPO advised by Morgan Stanley, Goldman Sachs and JPMorgan. As JPMorgan and Goldman deepen Claude into private-banking workflows, Anthropic is emerging as the credible second vendor alongside OpenAI, the model behind HSBC's own Wealth Intelligence platform, reshaping the AI vendor landscape WPB's change programme will need to navigate.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art02",
-        "title": "JPMorgan nears the first $1 trillion market cap in banking history",
-        "url": "https://fortune.com/2026/08/17/jamie-dimon-jpmorgan-valuation/",
-        "source": "Fortune",
-        "published_at": "2026-08-17",
-        "summary": "JPMorgan Chase's market capitalisation reached roughly $970bn on 17 August, putting it within a rally of becoming the first bank ever to cross $1 trillion, after Wells Fargo raised its price target to $390 on a Q2 earnings beat. The bank credits part of its productivity gains to long-running autonomous AI agents for bankers that Chief Analytics Officer Derek Waldron says can now work coherently for hours rather than minutes. The market is now visibly pricing AI-enabled execution into bank valuations, sharpening the case that agentic AI investment, not just cost programmes, is what is differentiating HSBC's key strategic rival.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art03",
-        "title": "US regulators hit deadline to strip rules blocking fintech-bank competition",
-        "url": "https://www.pymnts.com/legal/2026/federal-regulators-reach-deadline-identify-fintech-barriers/",
-        "source": "PYMNTS",
-        "published_at": "2026-08-17",
-        "summary": "Six US regulators, including the OCC, FDIC and SEC, reached the 17 August deadline under President Trump's 19 May executive order requiring them to identify rules that unnecessarily block fintechs from partnering with, or competing against, regulated banks, with agency action due by 15 November. The review itself will not be published, but it signals a deregulatory direction that could ease fintech access to bank charters and payment rails in HSBC's largest single market, adding competitive pressure to the pace of WPB's own digital and AI-enabled delivery.",
-        "hsbc_relevancy": 5,
+        "summary": "Hong Kong's government has sent legislators a bill sharply expanding carried-interest tax exemptions for fund managers, aiming to prevent an exodus of trading talent to Singapore and Dubai. Proprietary trading firms are excluded from the concession, sharpening competition among firms scrambling to restructure to qualify. For HSBC WPB this reshapes the competitive landscape for hiring and retaining front-office talent in Hong Kong, and signals regulators moving fast to defend the city's wealth-hub status.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
         "noise_level": 2,
         "category": "Regulatory & Markets",
@@ -152,24 +198,124 @@
         "user_relevance": 6
       },
       {
-        "id": "art04",
-        "title": "AI infrastructure borrowing binge pushes Treasury yields to 25-year highs",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-17/ai-is-driving-up-treasury-yields-it-just-touches-everything",
-        "source": "Bloomberg",
+        "id": "art02",
+        "title": "HSBC Surpasses 9.7 Million Shares Repurchased in Ongoing August Buy-Back Programme",
+        "url": "https://www.foreignpolicyjournal.com/2026/08/18/hsbc-holdings-nyse-hsbc-surpasses-9-7-million-shares-repurchased-in-ongoing-august-buy-back-programme/",
+        "source": "Foreign Policy Journal",
+        "published_at": "2026-08-18",
+        "summary": "HSBC disclosed it repurchased a further roughly 1.19 million shares on 17 August across UK and Hong Kong venues, taking cumulative buybacks since 5 August to about 9.7 million shares (~US$201m), part of the post-results US$1bn capital-return programme. It's a routine capital-management disclosure rather than a strategic shift, but the pace confirms management's continued commitment to buybacks even as competitors reallocate capital toward AI and platform investment.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 2,
+        "noise_level": 1,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 2
+      },
+      {
+        "id": "art03",
+        "title": "Synchrony Announces Enterprise Collaboration With OpenAI to Power Agentic Commerce",
+        "url": "https://www.cnbc.com/2026/08/17/synchrony-openai.html",
+        "source": "CNBC",
         "published_at": "2026-08-17",
-        "summary": "Hyperscalers' bond issuance to fund AI data-centre build-outs now equals roughly a quarter of net US Treasury note and bond issuance to private investors, five times the 2025 share, and is a growing contributor to long-term Treasury yields hitting a 25-year high. Investment-grade bond issuance overall is up 36% year-on-year as governments, tech companies and other borrowers compete for capital. Rising long-end yields flow directly into the mortgage, corporate and fixed-income pricing that shapes HSBC private-banking clients' portfolios.",
+        "summary": "Synchrony, a major US consumer-credit issuer, struck an enterprise deal with OpenAI to embed its store-card financing and rewards into ChatGPT's shopping and checkout flow, while deploying OpenAI's models internally via ChatGPT Work, Codex and AWS Bedrock to speed product development. It is one of the most concrete 'AI-native financial services' deployments yet \u2014 a lender wiring its core product distribution directly into an LLM interface, not just piloting an internal copilot.",
         "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "adam_rel": 8,
         "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "UBS GWM Hires Ex-EFG Senior Executive Seamus Yin for China Team",
+        "url": "https://asianprivatebanker.com/people-news/ubs-gwm-hires-ex-efg-senior-exec-for-china-team/",
+        "source": "Asian Private Banker",
+        "published_at": "2026-08-18",
+        "summary": "UBS Global Wealth Management has hired Seamus Yin \u2014 a 20-year private banking veteran of EFG, Citi Private Bank and JP Morgan Private Bank \u2014 as market team head for its China international client team in Hong Kong, reporting to Marina Lui. The hire continues UBS's push to rebuild senior China-facing coverage in Hong Kong following its Credit Suisse integration.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art05",
+        "title": "Ripple Brings Real-Time Cross-Border Payments to Korea's Banks",
+        "url": "https://fintech.global/2026/08/18/ripple-brings-real-time-payments-to-koreas-banks/",
+        "source": "fintech.global",
+        "published_at": "2026-08-18",
+        "summary": "Ripple has partnered with Jeonbuk Bank \u2014 the first Korean regional bank to adopt Ripple Payments \u2014 to enable near-instant cross-border settlement for business customers, replacing multi-day SWIFT transfers. It's a regional but concrete example of blockchain-based payment rails displacing correspondent banking for a mainstream lender rather than a pilot announcement.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 5
+      },
+      {
+        "id": "art06",
+        "title": "Partners Group Wins $1 Billion Private Credit Mandate From Asian Institutional Investor",
+        "url": "https://www.caproasia.com/2026/08/17/switzerland-186-billion-private-markets-asset-manager-partners-group-receives-1-billion-private-credit-mandate-discretionary-co-investment-from-1-single-institutional-investor-in-asia-to-invest/",
+        "source": "Caproasia",
+        "published_at": "2026-08-17",
+        "summary": "Partners Group, the $186bn Swiss private-markets manager, secured a $1bn discretionary and co-investment private-credit mandate from a single Asian institutional investor, targeting senior and junior direct-lending opportunities across APAC. The award underscores continuing institutional appetite for private credit even as public credit spreads stay tight \u2014 a segment HSBC WPB's own alternatives shelf competes against directly.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art07",
+        "title": "Wealth Management Emerges as Bright Spot in Southeast Asia Financial Services M&A",
+        "url": "https://e27.co/wealth-management-emerges-bright-spot-in-southeast-asia-financial-services-ma-20260817/",
+        "source": "e27",
+        "published_at": "2026-08-17",
+        "summary": "New EY analysis finds wealth management is the standout growth area in Southeast Asian financial-services M&A, with rising regional affluence drawing investor and acquirer interest even as broader banking deal volumes soften. The finding reinforces that capital continues to flow toward wealth platforms in HSBC's core APAC markets even in a subdued overall dealmaking environment.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art08",
+        "title": "Stripe to Acquire AI Model-Routing Platform OpenRouter for Over $7 Billion",
+        "url": "https://finance.yahoo.com/technology/ai/articles/stripe-acquires-openrouter-7b-turning-091812340.html",
+        "source": "Yahoo Finance / Axios",
+        "published_at": "2026-08-17",
+        "summary": "Stripe agreed to acquire OpenRouter, a platform giving developers unified access to 400+ AI models, for over $7bn \u2014 more than five times its valuation three months earlier. The deal positions Stripe as core infrastructure connecting AI model providers, developers and payments rails, a striking data point on how fast valuations are compounding in the AI-infrastructure layer.",
+        "hsbc_relevancy": 2,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "art10",
+        "title": "Wealth Managers Point to AI Infrastructure, Not App Stocks, for Durable Returns",
+        "url": "https://www.scmp.com/specialist-publications/special-reports/topics/wealth-alternative-investments-august-2026/article/3364237/look-diverse-infrastructure-durable-ai-returns-experts-say",
+        "source": "South China Morning Post",
+        "published_at": "2026-08-17",
+        "summary": "Wealth advisers quoted by SCMP argue that after recent wobbles in AI-application share prices, durable AI-linked investment returns now sit in infrastructure \u2014 semiconductors, data centres, power and connectivity \u2014 rather than in AI software names, even as corporate AI capex keeps climbing. The piece reflects a rotation in how private banks are positioning AI exposure for HNW clients, away from concentrated single-stock bets.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 6
       }
     ],
     "categories": {
+      "Regulatory & Markets": "#d97706",
+      "HSBC News": "#dc2626",
       "AI & Technology": "#6366f1",
       "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706"
+      "Private Banking & Wealth": "#059669"
     }
   }
 }
