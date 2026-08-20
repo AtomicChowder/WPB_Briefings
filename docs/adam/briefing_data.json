@@ -3,138 +3,115 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 19 August 2026",
-  "date_str": "2026-08-19",
-  "generated_at": "19 Aug 2026, 23:11 UTC",
-  "total_articles": 6,
+  "briefing_date": "Thursday, 20 August 2026",
+  "date_str": "2026-08-20",
+  "generated_at": "20 Aug 2026, 23:12 UTC",
+  "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Singapore counters Hong Kong's carried-interest tax cut, escalating a wealth-hub tax war",
-      "context_html": "Following the Hong Kong hedge fund tax break we covered on 18 August, Singapore's Monetary Authority has proposed matching profit-share tax exemptions for fund managers, directly countering Hong Kong's move to stem a talent exodus to Singapore and Dubai. The two-day turnaround shows how quickly Hong Kong's policy advantage can erode, and sharpens the case for HSBC WPB to move faster on its own Hong Kong hiring and retention plans before the tax gap narrows further.",
+      "headline": "HSBC and Standard Chartered complete first live interbank transaction on Swift's blockchain ledger",
+      "context_html": "HSBC and Standard Chartered settled the first live cross-border transaction between two banks on Swift's new blockchain-based ledger on 19 August, ahead of 17 other banks \u2014 including Citi, UBS and DBS \u2014 still queued to pilot their own transactions. For Adam, this is the clearest signal yet that HSBC's Tokenised Deposit Service is moving from internal capability to interoperable market infrastructure, which changes the change-execution calculus for how fast 24/7 cross-border settlement gets built into WPB's own platforms.",
       "source_links": [
         [
-          "https://www.bloomberg.com/news/articles/2026-08-19/singapore-pledges-tax-breaks-for-fund-managers-after-hk-move",
-          "Singapore Pledges Tax Breaks for Fund Managers"
-        ],
-        [
-          "https://www.bloomberg.com/news/articles/2026-08-17/hedge-fund-tax-break-grips-hong-kong-as-banks-fear-exodus",
-          "Hedge Fund Tax Break Grips Hong Kong (18 Aug)"
-        ]
-      ],
-      "is_update": true
-    },
-    {
-      "headline": "UBS lands second senior China private banking hire in two days",
-      "context_html": "UBS Wealth Management has hired <strong>Seamus Yin, Market Team Head for China</strong>, a 20-year veteran of EFG, Citi Private Bank and JP Morgan Private Bank \u2014 its second senior Greater China appointment in as many days after Wednesday's ex-EFG hire. The pace signals UBS is rebuilding its China coverage in Hong Kong aggressively, drawing from the same limited pool of UHNW-focused relationship managers HSBC competes for, which raises near-term retention risk worth flagging to Adam's team.",
-      "source_links": [
-        [
-          "https://www.caproasia.com/2026/08/19/ubs-wealth-management-hires-ex-citi-private-bank-jp-morgan-private-bank-seamus-yin-as-market-team-head-for-china-20-years-of-private-banking-financial-industry-experience-at-efg-citi-private-ban/",
-          "UBS Hires Seamus Yin as Market Team Head for China"
+          "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
+          "StanChart & HSBC first Swift ledger transaction"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "JPMorgan strategist warns AI-driven market concentration risk has spread from stocks into bonds",
-      "context_html": "<strong>Gabriela Santos, JPMorgan Asset Management strategist</strong>, warned that AI-driven concentration risk is no longer confined to equities and is now visible in fixed income, even as she remains structurally bullish on the AI investment theme. For Adam, this is a timely portfolio-construction signal for HSBC WPB's AI-led investment narrative, and a reminder to watch for the same concentration risk internally where change programmes and technology bets are increasingly AI-themed.",
+      "headline": "HSBC joins Citi, Deutsche Bank, StanChart and Barclays adopting Ant International's FalconTST AI model",
+      "context_html": "HSBC adopted Ant International's upgraded FalconTST 2.0 model \u2014 which cuts FX hedging costs by over 60% \u2014 into its foreign-exchange operations this week, alongside Citi, Deutsche Bank, Standard Chartered and Barclays. Six major banks converging on one third-party forecasting model in a single announcement is a live case of the vendor-concentration dynamic worth raising: it isn't HSBC catching up, but a fast-moving signal of how quickly narrow, high-ROI AI tools are becoming shared infrastructure across the exact peer set Adam benchmarks against.",
       "source_links": [
         [
-          "https://www.bloomberg.com/news/articles/2026-08-18/jpmorgan-s-santos-says-ai-tentacle-risk-spans-bonds-and-stocks",
-          "JPMorgan's Santos on AI Concentration Risk"
+          "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
+          "Ant's FalconTST 2.0 AI model press release"
+        ]
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "DBS scales agentic AI to 1,500 relationship and credit risk managers, automating 70+ credit tasks",
+      "context_html": "DBS is rolling its agentic AI credit-assessment tool out to roughly 1,500 relationship managers and credit risk managers worldwide, targeting a 30%+ cut in the ~40% of RM time spent on credit-memo preparation. It's DBS's most concrete agentic-AI capacity number yet, and a direct benchmark for Adam's change-execution agenda: a specific process, a specific headcount and a specific time-savings target \u2014 the kind of proof point WPB's own AI rollouts should be measured against.",
+      "source_links": [
+        [
+          "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
+          "DBS scales agentic AI to corporate bankers"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Regulatory & Markets": [
+    "HSBC News": [
       {
         "id": "art01",
-        "title": "Singapore Pledges Tax Breaks for Fund Managers After Hong Kong Move",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/singapore-pledges-tax-breaks-for-fund-managers-after-hk-move",
-        "source": "Bloomberg",
+        "title": "HSBC, Standard Chartered complete first live transaction on Swift blockchain ledger",
+        "url": "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
+        "source": "Standard Chartered",
         "published_at": "2026-08-19",
-        "summary": "Singapore's Monetary Authority announced proposed profit-share tax exemptions for fund managers and investment professionals delivering strong investor returns, a direct countermove to Hong Kong's recently announced carried-interest tax break. The proposal follows the Hong Kong hedge fund tax reform covered on 18 August, and escalates a policy contest between the two hubs for asset management talent and AUM. For Adam, the speed of Singapore's response shows Hong Kong's tax advantage window may be narrowing fast, adding urgency to HSBC WPB's Hong Kong retention and hiring plans.",
-        "hsbc_relevancy": 6,
+        "summary": "HSBC and Standard Chartered settled the first live cross-border interbank transaction on Swift's new blockchain-based ledger on 19 August, moving tokenised deposits between the two banks' separate systems. It is the first interbank use of the ledger since Swift declared it ready for piloting in July, with 17 banks \u2014 including Citi, UBS, DBS and Wells Fargo \u2014 still queued to run their own transactions. For HSBC this puts its Tokenised Deposit Service ahead of peers as a live node on emerging 24/7 cross-border settlement infrastructure, directly relevant to the pace at which WPB's own payment rails can modernise.",
+        "hsbc_relevancy": 9,
         "adam_rel": 8,
         "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": true,
+        "category": "HSBC News",
         "user_relevance": 8
       },
       {
-        "id": "art03",
-        "title": "JPMorgan's Santos Says 'AI Tentacle' Risk Now Spans Bonds and Stocks",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-18/jpmorgan-s-santos-says-ai-tentacle-risk-spans-bonds-and-stocks",
-        "source": "Bloomberg",
-        "published_at": "2026-08-18",
-        "summary": "JPMorgan Asset Management strategist Gabriela Santos warned that AI-driven market concentration risk has spread beyond equities and is now visible in fixed income, even as she remains structurally bullish on the broader AI investment theme. She cautioned that investors can be bullish on AI while still needing to think carefully about portfolio construction as the exposure widens across asset classes. The warning is a timely input for HSBC WPB's AI-driven investment narrative, and for internal awareness of concentration risk in both client portfolios and change programmes built around the same theme.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 7
+        "id": "art02",
+        "title": "HSBC, Citi, Deutsche Bank, StanChart, Barclays adopt Ant's FalconTST 2.0 AI FX model",
+        "url": "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
+        "source": "Business Wire",
+        "published_at": "2026-08-19",
+        "summary": "HSBC has adopted Ant International's upgraded FalconTST 2.0 forecasting model into its foreign-exchange operations, alongside Citi, Deutsche Bank, Standard Chartered and Barclays; the model hits over 93% forecast accuracy and can cut FX hedging and allocation costs by more than 60%. Unlike HSBC's Aladdin-based PRISM stack, this is a narrow, shared third-party layer that six major banks are converging on simultaneously for the same FX use case. For Adam, six peers standing up identical AI infrastructure in one announcement is a concrete marker of how fast narrow, high-ROI AI tools are becoming shared utility rather than differentiator \u2014 and a vendor-concentration point worth flagging upward.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "user_relevance": 9
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "art02",
-        "title": "UBS Wealth Management Hires Seamus Yin as Market Team Head for China",
-        "url": "https://www.caproasia.com/2026/08/19/ubs-wealth-management-hires-ex-citi-private-bank-jp-morgan-private-bank-seamus-yin-as-market-team-head-for-china-20-years-of-private-banking-financial-industry-experience-at-efg-citi-private-ban/",
-        "source": "Caproasia",
+        "id": "art03",
+        "title": "DBS scales agentic AI to 1,500 relationship and credit risk managers",
+        "url": "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
+        "source": "DBS Newsroom",
         "published_at": "2026-08-19",
-        "summary": "UBS Wealth Management has appointed Seamus Yin, a 20-year private banking veteran of EFG, Citi Private Bank and JP Morgan Private Bank, as Market Team Head for China, based in Hong Kong. The hire comes one day after UBS brought in a senior ex-EFG executive for the same China team, making it two senior Greater China appointments in as many days. The pace of hiring signals UBS is moving aggressively to rebuild its China private banking coverage, intensifying competition for the same pool of UHNW-focused relationship managers that HSBC also draws from.",
+        "summary": "DBS is rolling out an agentic AI system to roughly 1,500 relationship managers and credit risk managers worldwide, automating more than 70 discrete tasks in preparing corporate credit memos, following a 150-person pilot. The bank is targeting at least a 30% cut in the roughly 40% of RM time currently spent on credit-memo preparation, building on its separate push to make consumer-facing assistants DBS Joy and digibot agentic for 10 million customers. This is DBS's most concrete agentic-AI capacity number yet \u2014 a specific process, headcount and time-savings target that gives Adam a direct external benchmark for what WPB's own AI-enabled change programmes should be able to show.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "user_relevance": 9
+      },
+      {
+        "id": "art04",
+        "title": "DBS Hong Kong, Visa, Preface launch AI-readiness training for customers",
+        "url": "https://www.manilatimes.net/2026/08/19/tmt-newswire/pr-newswire/dbs-hong-kong-partners-with-visa-preface-to-empower-customers-with-ai-readiness-skills-for-the-future-of-intelligent-payments/2408149",
+        "source": "Manila Times (PR Newswire)",
+        "published_at": "2026-08-19",
+        "summary": "DBS Hong Kong partnered with Visa and Preface on 19 August to give customers AI-readiness skills training framed around \"the future of intelligent payments.\" It lands the same week as DBS's substantive agentic-AI credit rollout, pairing the technical build-out with a customer- and brand-facing AI literacy push. For Adam, it's a useful template for how a competitor sequences a high-visibility, low-cost trust-building initiative alongside its real AI infrastructure investment.",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
-        "is_update": false,
         "user_relevance": 6
-      },
-      {
-        "id": "art04",
-        "title": "StanChart Revamps Leveraged Finance Team to Focus on Sponsors",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/stanchart-revamps-leveraged-finance-team-to-focus-on-sponsors",
-        "source": "Bloomberg",
-        "published_at": "2026-08-19",
-        "summary": "Standard Chartered has reorganised its leveraged finance team to sharpen its focus on funding sponsor-led deals, appointing David Law as Global Head of Sponsor Financing and Private Credit. The move follows StanChart's record first-half wealth performance and upgraded 2026 outlook, and points to a broader push into private credit alongside its wealth franchise. It is a reminder that StanChart, one of HSBC's key APAC competitors, is investing across both its wealth and financing businesses simultaneously.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 3,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 3
       }
     ],
-    "AI & Technology": [
-      {
-        "id": "art06",
-        "title": "Bloomberg Extends ASKB AI Assistant to Mobile Devices",
-        "url": "https://fintech.global/2026/08/19/bloomberg-extends-askb-ai-assistant-to-mobile-devices/",
-        "source": "FinTech Global",
-        "published_at": "2026-08-19",
-        "summary": "Bloomberg has updated ASKB, its conversational AI assistant embedded in the Bloomberg Terminal, so that financial professionals can start a query on desktop and continue the same thread on a mobile phone or tablet without restating context. The update reflects the broader push by market-data incumbents to embed generative AI directly into the daily workflow tools that HSBC's own relationship managers and investment counsellors rely on. It is a small but concrete data point on how fast AI assistants are becoming table stakes across the wealth industry's core infrastructure.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 5
-      },
+    "Regulatory & Markets": [
       {
         "id": "art05",
-        "title": "OpenAI Previews 'Private Safety Processing' for Paid API Customers",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/openai-to-enhance-safety-processes-for-paid-tool-customers",
+        "title": "UBS strategist warns of margin pressure risk for stocks in 2027",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-20/ubs-s-baweja-says-margin-pressure-is-a-risk-for-stocks-in-2027",
         "source": "Bloomberg",
-        "published_at": "2026-08-19",
-        "summary": "OpenAI is previewing Private Safety Processing, a technique designed to identify misuse patterns across multiple related interactions without exposing underlying content to OpenAI staff, while preserving zero-data-retention guarantees for paying API customers. The feature responds to the fact that some risks from longer, more autonomous AI tasks only become visible across a sequence of interactions rather than any single one. It is a useful reference point for Adam as HSBC evaluates governance controls for its own growing use of agentic AI tools across the bank.",
-        "hsbc_relevancy": 2,
+        "published_at": "2026-08-20",
+        "summary": "UBS chief strategist Bhanu Baweja said on 20 August that current US earnings growth of 35-40% should push equities to new highs through the rest of 2026, but that margin pressure becomes a genuine risk to the outlook in 2027. It's a house view from a direct wealth-management competitor being fed into client-facing research at the same time HSBC WPB is forming its own year-ahead positioning. For Adam, it's a data point on how rivals are framing the client conversation about when the current AI-driven earnings cycle turns.",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
+        "category": "Regulatory & Markets",
         "user_relevance": 5
       }
     ]
@@ -143,93 +120,74 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Singapore Pledges Tax Breaks for Fund Managers After Hong Kong Move",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/singapore-pledges-tax-breaks-for-fund-managers-after-hk-move",
-        "source": "Bloomberg",
+        "title": "HSBC, Standard Chartered complete first live transaction on Swift blockchain ledger",
+        "url": "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
+        "source": "Standard Chartered",
         "published_at": "2026-08-19",
-        "summary": "Singapore's Monetary Authority announced proposed profit-share tax exemptions for fund managers and investment professionals delivering strong investor returns, a direct countermove to Hong Kong's recently announced carried-interest tax break. The proposal follows the Hong Kong hedge fund tax reform covered on 18 August, and escalates a policy contest between the two hubs for asset management talent and AUM. For Adam, the speed of Singapore's response shows Hong Kong's tax advantage window may be narrowing fast, adding urgency to HSBC WPB's Hong Kong retention and hiring plans.",
-        "hsbc_relevancy": 6,
+        "summary": "HSBC and Standard Chartered settled the first live cross-border interbank transaction on Swift's new blockchain-based ledger on 19 August, moving tokenised deposits between the two banks' separate systems. It is the first interbank use of the ledger since Swift declared it ready for piloting in July, with 17 banks \u2014 including Citi, UBS, DBS and Wells Fargo \u2014 still queued to run their own transactions. For HSBC this puts its Tokenised Deposit Service ahead of peers as a live node on emerging 24/7 cross-border settlement infrastructure, directly relevant to the pace at which WPB's own payment rails can modernise.",
+        "hsbc_relevancy": 9,
         "adam_rel": 8,
         "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": true,
+        "category": "HSBC News",
         "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "UBS Wealth Management Hires Seamus Yin as Market Team Head for China",
-        "url": "https://www.caproasia.com/2026/08/19/ubs-wealth-management-hires-ex-citi-private-bank-jp-morgan-private-bank-seamus-yin-as-market-team-head-for-china-20-years-of-private-banking-financial-industry-experience-at-efg-citi-private-ban/",
-        "source": "Caproasia",
+        "title": "HSBC, Citi, Deutsche Bank, StanChart, Barclays adopt Ant's FalconTST 2.0 AI FX model",
+        "url": "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
+        "source": "Business Wire",
         "published_at": "2026-08-19",
-        "summary": "UBS Wealth Management has appointed Seamus Yin, a 20-year private banking veteran of EFG, Citi Private Bank and JP Morgan Private Bank, as Market Team Head for China, based in Hong Kong. The hire comes one day after UBS brought in a senior ex-EFG executive for the same China team, making it two senior Greater China appointments in as many days. The pace of hiring signals UBS is moving aggressively to rebuild its China private banking coverage, intensifying competition for the same pool of UHNW-focused relationship managers that HSBC also draws from.",
+        "summary": "HSBC has adopted Ant International's upgraded FalconTST 2.0 forecasting model into its foreign-exchange operations, alongside Citi, Deutsche Bank, Standard Chartered and Barclays; the model hits over 93% forecast accuracy and can cut FX hedging and allocation costs by more than 60%. Unlike HSBC's Aladdin-based PRISM stack, this is a narrow, shared third-party layer that six major banks are converging on simultaneously for the same FX use case. For Adam, six peers standing up identical AI infrastructure in one announcement is a concrete marker of how fast narrow, high-ROI AI tools are becoming shared utility rather than differentiator \u2014 and a vendor-concentration point worth flagging upward.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
+        "noise_level": 4,
+        "category": "HSBC News",
+        "user_relevance": 9
+      },
+      {
+        "id": "art03",
+        "title": "DBS scales agentic AI to 1,500 relationship and credit risk managers",
+        "url": "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
+        "source": "DBS Newsroom",
+        "published_at": "2026-08-19",
+        "summary": "DBS is rolling out an agentic AI system to roughly 1,500 relationship managers and credit risk managers worldwide, automating more than 70 discrete tasks in preparing corporate credit memos, following a 150-person pilot. The bank is targeting at least a 30% cut in the roughly 40% of RM time currently spent on credit-memo preparation, building on its separate push to make consumer-facing assistants DBS Joy and digibot agentic for 10 million customers. This is DBS's most concrete agentic-AI capacity number yet \u2014 a specific process, headcount and time-savings target that gives Adam a direct external benchmark for what WPB's own AI-enabled change programmes should be able to show.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 9,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "user_relevance": 9
+      },
+      {
+        "id": "art04",
+        "title": "DBS Hong Kong, Visa, Preface launch AI-readiness training for customers",
+        "url": "https://www.manilatimes.net/2026/08/19/tmt-newswire/pr-newswire/dbs-hong-kong-partners-with-visa-preface-to-empower-customers-with-ai-readiness-skills-for-the-future-of-intelligent-payments/2408149",
+        "source": "Manila Times (PR Newswire)",
+        "published_at": "2026-08-19",
+        "summary": "DBS Hong Kong partnered with Visa and Preface on 19 August to give customers AI-readiness skills training framed around \"the future of intelligent payments.\" It lands the same week as DBS's substantive agentic-AI credit rollout, pairing the technical build-out with a customer- and brand-facing AI literacy push. For Adam, it's a useful template for how a competitor sequences a high-visibility, low-cost trust-building initiative alongside its real AI infrastructure investment.",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 2,
         "category": "Competitor Intelligence",
-        "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "art03",
-        "title": "JPMorgan's Santos Says 'AI Tentacle' Risk Now Spans Bonds and Stocks",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-18/jpmorgan-s-santos-says-ai-tentacle-risk-spans-bonds-and-stocks",
+        "id": "art05",
+        "title": "UBS strategist warns of margin pressure risk for stocks in 2027",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-20/ubs-s-baweja-says-margin-pressure-is-a-risk-for-stocks-in-2027",
         "source": "Bloomberg",
-        "published_at": "2026-08-18",
-        "summary": "JPMorgan Asset Management strategist Gabriela Santos warned that AI-driven market concentration risk has spread beyond equities and is now visible in fixed income, even as she remains structurally bullish on the broader AI investment theme. She cautioned that investors can be bullish on AI while still needing to think carefully about portfolio construction as the exposure widens across asset classes. The warning is a timely input for HSBC WPB's AI-driven investment narrative, and for internal awareness of concentration risk in both client portfolios and change programmes built around the same theme.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
+        "published_at": "2026-08-20",
+        "summary": "UBS chief strategist Bhanu Baweja said on 20 August that current US earnings growth of 35-40% should push equities to new highs through the rest of 2026, but that margin pressure becomes a genuine risk to the outlook in 2027. It's a house view from a direct wealth-management competitor being fed into client-facing research at the same time HSBC WPB is forming its own year-ahead positioning. For Adam, it's a data point on how rivals are framing the client conversation about when the current AI-driven earnings cycle turns.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
         "noise_level": 3,
         "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art04",
-        "title": "StanChart Revamps Leveraged Finance Team to Focus on Sponsors",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/stanchart-revamps-leveraged-finance-team-to-focus-on-sponsors",
-        "source": "Bloomberg",
-        "published_at": "2026-08-19",
-        "summary": "Standard Chartered has reorganised its leveraged finance team to sharpen its focus on funding sponsor-led deals, appointing David Law as Global Head of Sponsor Financing and Private Credit. The move follows StanChart's record first-half wealth performance and upgraded 2026 outlook, and points to a broader push into private credit alongside its wealth franchise. It is a reminder that StanChart, one of HSBC's key APAC competitors, is investing across both its wealth and financing businesses simultaneously.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 3,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 3
-      },
-      {
-        "id": "art05",
-        "title": "OpenAI Previews 'Private Safety Processing' for Paid API Customers",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/openai-to-enhance-safety-processes-for-paid-tool-customers",
-        "source": "Bloomberg",
-        "published_at": "2026-08-19",
-        "summary": "OpenAI is previewing Private Safety Processing, a technique designed to identify misuse patterns across multiple related interactions without exposing underlying content to OpenAI staff, while preserving zero-data-retention guarantees for paying API customers. The feature responds to the fact that some risks from longer, more autonomous AI tasks only become visible across a sequence of interactions rather than any single one. It is a useful reference point for Adam as HSBC evaluates governance controls for its own growing use of agentic AI tools across the bank.",
-        "hsbc_relevancy": 2,
-        "adam_rel": 5,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art06",
-        "title": "Bloomberg Extends ASKB AI Assistant to Mobile Devices",
-        "url": "https://fintech.global/2026/08/19/bloomberg-extends-askb-ai-assistant-to-mobile-devices/",
-        "source": "FinTech Global",
-        "published_at": "2026-08-19",
-        "summary": "Bloomberg has updated ASKB, its conversational AI assistant embedded in the Bloomberg Terminal, so that financial professionals can start a query on desktop and continue the same thread on a mobile phone or tablet without restating context. The update reflects the broader push by market-data incumbents to embed generative AI directly into the daily workflow tools that HSBC's own relationship managers and investment counsellors rely on. It is a small but concrete data point on how fast AI assistants are becoming table stakes across the wealth industry's core infrastructure.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": false,
         "user_relevance": 5
       }
     ],
     "categories": {
-      "Regulatory & Markets": "#d97706",
+      "HSBC News": "#dc2626",
       "Competitor Intelligence": "#0891b2",
-      "AI & Technology": "#6366f1"
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
