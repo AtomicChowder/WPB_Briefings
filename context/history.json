@@ -1,17 +1,16 @@
 {
   "adam": {
-    "last_updated": "2026-08-20",
+    "last_updated": "2026-08-21",
     "covered_urls": [
       "https://asianprivatebanker.com/people-news/ubs-gwm-hires-ex-efg-senior-exec-for-china-team/",
       "https://e27.co/wealth-management-emerges-bright-spot-in-southeast-asia-financial-services-ma-20260817/",
       "https://finance.yahoo.com/technology/ai/articles/stripe-acquires-openrouter-7b-turning-091812340.html",
-      "https://fintech.global/2026/08/13/why-wealthy-clients-hidden-assets-are-banks-biggest-blind-spot/",
-      "https://fintech.global/2026/08/14/ai-agents-move-from-pilot-to-workforce-in-bank-compliance/",
       "https://fintech.global/2026/08/18/ripple-brings-real-time-payments-to-koreas-banks/",
       "https://fintech.global/2026/08/19/bloomberg-extends-askb-ai-assistant-to-mobile-devices/",
       "https://fintechmagazine.com/news/this-weeks-top-5-stories-in-fintech-15-08-2026",
       "https://fortune.com/2026/08/17/jamie-dimon-jpmorgan-valuation/",
       "https://github.com/anthropics/claude-code/releases",
+      "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
       "https://www.bloomberg.com/news/articles/2026-08-17/ai-is-driving-up-treasury-yields-it-just-touches-everything",
       "https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo",
       "https://www.bloomberg.com/news/articles/2026-08-17/hedge-fund-tax-break-grips-hong-kong-as-banks-fear-exodus",
@@ -19,7 +18,10 @@
       "https://www.bloomberg.com/news/articles/2026-08-19/openai-to-enhance-safety-processes-for-paid-tool-customers",
       "https://www.bloomberg.com/news/articles/2026-08-19/singapore-pledges-tax-breaks-for-fund-managers-after-hk-move",
       "https://www.bloomberg.com/news/articles/2026-08-19/stanchart-revamps-leveraged-finance-team-to-focus-on-sponsors",
+      "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
       "https://www.bloomberg.com/news/articles/2026-08-20/ubs-s-baweja-says-margin-pressure-is-a-risk-for-stocks-in-2027",
+      "https://www.bloomberg.com/news/articles/2026-08-21/hsbc-leveraged-finance-banker-vikram-lamba-departs-bank",
+      "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
       "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
       "https://www.caproasia.com/2026/08/17/switzerland-186-billion-private-markets-asset-manager-partners-group-receives-1-billion-private-credit-mandate-discretionary-co-investment-from-1-single-institutional-investor-in-asia-to-invest/",
       "https://www.caproasia.com/2026/08/19/ubs-wealth-management-hires-ex-citi-private-bank-jp-morgan-private-bank-seamus-yin-as-market-team-head-for-china-20-years-of-private-banking-financial-industry-experience-at-efg-citi-private-ban/",
@@ -27,27 +29,27 @@
       "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
       "https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/",
       "https://www.foreignpolicyjournal.com/2026/08/18/hsbc-holdings-nyse-hsbc-surpasses-9-7-million-shares-repurchased-in-ongoing-august-buy-back-programme/",
-      "https://www.manilatimes.net/2026/08/13/tmt-newswire/globenewswire/playbook-launches-ai-orchestration-platform-for-wealth-management-firms/2405069",
       "https://www.manilatimes.net/2026/08/19/tmt-newswire/pr-newswire/dbs-hong-kong-partners-with-visa-preface-to-empower-customers-with-ai-readiness-skills-for-the-future-of-intelligent-payments/2408149",
-      "https://www.marketscreener.com/news/hong-kong-stocks-fall-on-friday-amid-tech-property-weakness-jd-com-plunges-11-ce7859dedf89f227",
       "https://www.pymnts.com/legal/2026/federal-regulators-reach-deadline-identify-fintech-barriers/",
       "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
       "https://www.scmp.com/business/banking-finance/article/3363951/hong-kong-reappoint-insurance-regulator-industry-braces-tough-period-sources",
       "https://www.scmp.com/business/banking-finance/article/3363969/hong-kong-insurers-weather-beijings-tax-shift-8-10-premium-growth-sp",
       "https://www.scmp.com/business/banking-finance/article/3364034/how-chinas-young-managers-grappled-billion-yuan-mandates-ai-shocks-hit-portfolios",
+      "https://www.scmp.com/business/china-business/article/3364752/hong-kongs-stock-benchmark-may-see-more-tech-additions-review-result-looms",
       "https://www.scmp.com/business/markets/article/3364067/reduce-your-exposure-us-assets-they-lose-value-pictet-warns-investors",
       "https://www.scmp.com/specialist-publications/special-reports/topics/wealth-alternative-investments-august-2026/article/3364237/look-diverse-infrastructure-durable-ai-returns-experts-say"
     ],
     "covered_topics": [
+      "Anthropic accelerates toward a ~$2 trillion IPO \u2014 a stress test for the AI vendor now embedded in bank operations",
       "Anthropic posts its first profitable quarter as Q2 revenue tops $11.5bn, fast-tracking a fall IPO",
+      "Bank of China (Hong Kong) embeds Ant's AI-powered payments rails \u2014 a live competitor benchmark for HSBC",
       "Banks on legacy cores pay 4.7x more for compliance \u2014 a sharper case for modernisation pace",
-      "Banks scale AI agents in compliance \u2014 but 90% are still stuck in pilot",
       "China's rookie fund managers get an early, brutal lesson in AI-driven market risk",
       "Claude Code's security-hardening cadence is a live benchmark for agentic AI governance",
       "DBS scales agentic AI to 1,500 relationship and credit risk managers, automating 70+ credit tasks",
       "HSBC and Standard Chartered complete first live interbank transaction on Swift's blockchain ledger",
       "HSBC joins Citi, Deutsche Bank, StanChart and Barclays adopting Ant International's FalconTST AI model",
-      "Held-away assets are private banking's data blind spot \u2014 and its next AI use case",
+      "Hong Kong formally tables its hedge fund tax break as Singapore counters \u2014 the wealth-hub fee war turns legislative",
       "Hong Kong rewrites hedge fund tax rules to head off a talent exodus to Singapore and Dubai",
       "JPMorgan nears the first $1 trillion market cap in banking history, powered by an AI-driven earnings beat",
       "JPMorgan strategist warns AI-driven market concentration risk has spread from stocks into bonds",
@@ -57,24 +59,9 @@
       "Synchrony wires OpenAI directly into its card products \u2014 a live test of AI-native financial services",
       "UBS lands second senior China private banking hire in two days",
       "UBS rebuilds its China wealth coverage in Hong Kong with a 20-year private banking veteran",
-      "US regulators hit their deadline to strip rules protecting banks from fintech competition",
-      "Wealth-tech vendors race to build AI 'orchestration' layers for advisers"
+      "US regulators hit their deadline to strip rules protecting banks from fintech competition"
     ],
     "daily": [
-      {
-        "date": "2026-08-14",
-        "urls": [
-          "https://fintech.global/2026/08/13/why-wealthy-clients-hidden-assets-are-banks-biggest-blind-spot/",
-          "https://fintech.global/2026/08/14/ai-agents-move-from-pilot-to-workforce-in-bank-compliance/",
-          "https://www.manilatimes.net/2026/08/13/tmt-newswire/globenewswire/playbook-launches-ai-orchestration-platform-for-wealth-management-firms/2405069",
-          "https://www.marketscreener.com/news/hong-kong-stocks-fall-on-friday-amid-tech-property-weakness-jd-com-plunges-11-ce7859dedf89f227"
-        ],
-        "topics": [
-          "Banks scale AI agents in compliance \u2014 but 90% are still stuck in pilot",
-          "Wealth-tech vendors race to build AI 'orchestration' layers for advisers",
-          "Held-away assets are private banking's data blind spot \u2014 and its next AI use case"
-        ]
-      },
       {
         "date": "2026-08-15",
         "urls": [
@@ -163,6 +150,21 @@
           "HSBC and Standard Chartered complete first live interbank transaction on Swift's blockchain ledger",
           "HSBC joins Citi, Deutsche Bank, StanChart and Barclays adopting Ant International's FalconTST AI model",
           "DBS scales agentic AI to 1,500 relationship and credit risk managers, automating 70+ credit tasks"
+        ]
+      },
+      {
+        "date": "2026-08-21",
+        "urls": [
+          "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
+          "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
+          "https://www.bloomberg.com/news/articles/2026-08-21/hsbc-leveraged-finance-banker-vikram-lamba-departs-bank",
+          "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
+          "https://www.scmp.com/business/china-business/article/3364752/hong-kongs-stock-benchmark-may-see-more-tech-additions-review-result-looms"
+        ],
+        "topics": [
+          "Bank of China (Hong Kong) embeds Ant's AI-powered payments rails \u2014 a live competitor benchmark for HSBC",
+          "Anthropic accelerates toward a ~$2 trillion IPO \u2014 a stress test for the AI vendor now embedded in bank operations",
+          "Hong Kong formally tables its hedge fund tax break as Singapore counters \u2014 the wealth-hub fee war turns legislative"
         ]
       }
     ]

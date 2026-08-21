@@ -3,116 +3,127 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Thursday, 20 August 2026",
-  "date_str": "2026-08-20",
-  "generated_at": "20 Aug 2026, 23:12 UTC",
+  "briefing_date": "Friday, 21 August 2026",
+  "date_str": "2026-08-21",
+  "generated_at": "21 Aug 2026, 23:11 UTC",
   "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC and Standard Chartered complete first live interbank transaction on Swift's blockchain ledger",
-      "context_html": "HSBC and Standard Chartered settled the first live cross-border transaction between two banks on Swift's new blockchain-based ledger on 19 August, ahead of 17 other banks \u2014 including Citi, UBS and DBS \u2014 still queued to pilot their own transactions. For Adam, this is the clearest signal yet that HSBC's Tokenised Deposit Service is moving from internal capability to interoperable market infrastructure, which changes the change-execution calculus for how fast 24/7 cross-border settlement gets built into WPB's own platforms.",
+      "headline": "Bank of China (Hong Kong) embeds Ant's AI-powered payments rails \u2014 a live competitor benchmark for HSBC",
+      "context_html": "<strong>Sun Yu, Vice Chairman and Chief Executive of BOCHK</strong>, and <strong>Eric Jing, Chairman of Ant International</strong>, unveiled a strategic partnership wiring Alipay+'s 2 billion-plus wallet network, AlipayHK retail linkage and WorldFirst's cross-border SME fund management directly into BOCHK's banking infrastructure. It lands the same week Ant's FalconTST AI model went live inside HSBC, Citi, Deutsche Bank, StanChart and Barclays, underlining how fast HSBC's Hong Kong competitors are turning Ant's AI stack into retail and SME advantage. For Adam, it's a concrete yardstick for how quickly WPB's own AI-enabled payments and SME wealth journeys need to move to stay ahead of a domestic rival.",
       "source_links": [
         [
-          "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
-          "StanChart & HSBC first Swift ledger transaction"
+          "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
+          "BOCHK, Ant International partner on payments"
+        ],
+        [
+          "https://www.finextra.com/pressarticle/110690/bochk-and-ant-international-team-up-for-cross-border-payments",
+          "BOCHK and Ant International team up"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC joins Citi, Deutsche Bank, StanChart and Barclays adopting Ant International's FalconTST AI model",
-      "context_html": "HSBC adopted Ant International's upgraded FalconTST 2.0 model \u2014 which cuts FX hedging costs by over 60% \u2014 into its foreign-exchange operations this week, alongside Citi, Deutsche Bank, Standard Chartered and Barclays. Six major banks converging on one third-party forecasting model in a single announcement is a live case of the vendor-concentration dynamic worth raising: it isn't HSBC catching up, but a fast-moving signal of how quickly narrow, high-ROI AI tools are becoming shared infrastructure across the exact peer set Adam benchmarks against.",
+      "headline": "Anthropic accelerates toward a ~$2 trillion IPO \u2014 a stress test for the AI vendor now embedded in bank operations",
+      "context_html": "Following Anthropic's first profitable quarter we covered on 17 August, the company is reportedly preparing to file for an IPO as early as late August, targeting a market debut in October at a valuation near $2 trillion \u2014 sized to rival SpaceX's record offering. Annualised revenue has already reached roughly $65 billion, with financial services now Anthropic's second-largest segment behind technology and Claude already in production at JPMorgan, Goldman Sachs, Citi, AIG and Visa. For Adam, the IPO is both a market gauge of AI valuations broadly and a scaling signal for a vendor increasingly threaded through the AI tooling HSBC and its peers are building change programmes around.",
       "source_links": [
         [
-          "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
-          "Ant's FalconTST 2.0 AI model press release"
+          "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
+          "Anthropic expects record IPO size"
         ]
       ],
-      "is_update": false
+      "is_update": true
     },
     {
-      "headline": "DBS scales agentic AI to 1,500 relationship and credit risk managers, automating 70+ credit tasks",
-      "context_html": "DBS is rolling its agentic AI credit-assessment tool out to roughly 1,500 relationship managers and credit risk managers worldwide, targeting a 30%+ cut in the ~40% of RM time spent on credit-memo preparation. It's DBS's most concrete agentic-AI capacity number yet, and a direct benchmark for Adam's change-execution agenda: a specific process, a specific headcount and a specific time-savings target \u2014 the kind of proof point WPB's own AI rollouts should be measured against.",
+      "headline": "Hong Kong formally tables its hedge fund tax break as Singapore counters \u2014 the wealth-hub fee war turns legislative",
+      "context_html": "Following the carried-interest tax break story we covered from 17-19 August, Hong Kong has now sent a formal bill to lawmakers to erase carried-interest levies for fund managers, while Singapore's Monetary Authority has floated matching profit-share exemptions for top-performing managers. The contest has moved from signalling to statute on both sides, directly targeting where UHNW capital and fund-manager talent concentrate. For Adam, the outcome is a live input to WPB's regional wealth-hub positioning between HSBC's two largest APAC franchises.",
       "source_links": [
         [
-          "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
-          "DBS scales agentic AI to corporate bankers"
+          "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
+          "Hedge fund tax race: Hong Kong, Singapore"
         ]
       ],
-      "is_update": false
+      "is_update": true
     }
   ],
   "articles_by_category": {
     "HSBC News": [
       {
         "id": "art01",
-        "title": "HSBC, Standard Chartered complete first live transaction on Swift blockchain ledger",
-        "url": "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
-        "source": "Standard Chartered",
-        "published_at": "2026-08-19",
-        "summary": "HSBC and Standard Chartered settled the first live cross-border interbank transaction on Swift's new blockchain-based ledger on 19 August, moving tokenised deposits between the two banks' separate systems. It is the first interbank use of the ledger since Swift declared it ready for piloting in July, with 17 banks \u2014 including Citi, UBS, DBS and Wells Fargo \u2014 still queued to run their own transactions. For HSBC this puts its Tokenised Deposit Service ahead of peers as a live node on emerging 24/7 cross-border settlement infrastructure, directly relevant to the pace at which WPB's own payment rails can modernise.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "noise_level": 3,
+        "title": "HSBC Leveraged Finance Banker Vikram Lamba Departs Bank",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-21/hsbc-leveraged-finance-banker-vikram-lamba-departs-bank",
+        "source": "Bloomberg",
+        "published_at": "2026-08-21",
+        "summary": "HSBC Managing Director in Leveraged and Acquisition Finance Vikram Lamba has left the bank, according to people familiar with the matter, with the Hong Kong-based exit reported by Bloomberg on 21 August. Lamba previously held roles at Merrill Lynch, Citigroup, Deutsche Bank and CIBC World Markets before joining HSBC. The departure adds to a run of senior exits across HSBC's Asia dealmaking franchise \u2014 a talent-retention data point that sits adjacent to, though outside, Adam's WPB remit.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 3,
+        "noise_level": 1,
         "category": "HSBC News",
-        "user_relevance": 8
-      },
-      {
-        "id": "art02",
-        "title": "HSBC, Citi, Deutsche Bank, StanChart, Barclays adopt Ant's FalconTST 2.0 AI FX model",
-        "url": "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
-        "source": "Business Wire",
-        "published_at": "2026-08-19",
-        "summary": "HSBC has adopted Ant International's upgraded FalconTST 2.0 forecasting model into its foreign-exchange operations, alongside Citi, Deutsche Bank, Standard Chartered and Barclays; the model hits over 93% forecast accuracy and can cut FX hedging and allocation costs by more than 60%. Unlike HSBC's Aladdin-based PRISM stack, this is a narrow, shared third-party layer that six major banks are converging on simultaneously for the same FX use case. For Adam, six peers standing up identical AI infrastructure in one announcement is a concrete marker of how fast narrow, high-ROI AI tools are becoming shared utility rather than differentiator \u2014 and a vendor-concentration point worth flagging upward.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 9,
-        "noise_level": 4,
-        "category": "HSBC News",
-        "user_relevance": 9
+        "is_update": false,
+        "user_relevance": 3
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "art03",
-        "title": "DBS scales agentic AI to 1,500 relationship and credit risk managers",
-        "url": "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
-        "source": "DBS Newsroom",
-        "published_at": "2026-08-19",
-        "summary": "DBS is rolling out an agentic AI system to roughly 1,500 relationship managers and credit risk managers worldwide, automating more than 70 discrete tasks in preparing corporate credit memos, following a 150-person pilot. The bank is targeting at least a 30% cut in the roughly 40% of RM time currently spent on credit-memo preparation, building on its separate push to make consumer-facing assistants DBS Joy and digibot agentic for 10 million customers. This is DBS's most concrete agentic-AI capacity number yet \u2014 a specific process, headcount and time-savings target that gives Adam a direct external benchmark for what WPB's own AI-enabled change programmes should be able to show.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 9,
+        "id": "art02",
+        "title": "BOCHK and Ant International Forge Strategic Cross-Border Payments Partnership",
+        "url": "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
+        "source": "TechNode Global",
+        "published_at": "2026-08-20",
+        "summary": "Bank of China (Hong Kong) and Ant International announced a strategic partnership on 20 August wiring Alipay+'s wallet network, AlipayHK retail linkage and WorldFirst's cross-border SME fund-management tools directly into BOCHK's banking infrastructure. It lands the same week Ant's FalconTST AI model went live inside HSBC, Citi, Deutsche Bank, StanChart and Barclays. It shows a Hong Kong competitor converting Ant's AI and payments stack into retail and SME advantage \u2014 a live benchmark for how fast WPB's own AI-enabled client journeys need to move.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
         "noise_level": 3,
         "category": "Competitor Intelligence",
-        "user_relevance": 9
-      },
-      {
-        "id": "art04",
-        "title": "DBS Hong Kong, Visa, Preface launch AI-readiness training for customers",
-        "url": "https://www.manilatimes.net/2026/08/19/tmt-newswire/pr-newswire/dbs-hong-kong-partners-with-visa-preface-to-empower-customers-with-ai-readiness-skills-for-the-future-of-intelligent-payments/2408149",
-        "source": "Manila Times (PR Newswire)",
-        "published_at": "2026-08-19",
-        "summary": "DBS Hong Kong partnered with Visa and Preface on 19 August to give customers AI-readiness skills training framed around \"the future of intelligent payments.\" It lands the same week as DBS's substantive agentic-AI credit rollout, pairing the technical build-out with a customer- and brand-facing AI literacy push. For Adam, it's a useful template for how a competitor sequences a high-visibility, low-cost trust-building initiative alongside its real AI infrastructure investment.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 6
+        "is_update": false,
+        "user_relevance": 8
       }
     ],
     "Regulatory & Markets": [
       {
         "id": "art05",
-        "title": "UBS strategist warns of margin pressure risk for stocks in 2027",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-20/ubs-s-baweja-says-margin-pressure-is-a-risk-for-stocks-in-2027",
+        "title": "Hong Kong Sends Hedge Fund Tax Bill to Lawmakers as Singapore Race Escalates",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
         "source": "Bloomberg",
         "published_at": "2026-08-20",
-        "summary": "UBS chief strategist Bhanu Baweja said on 20 August that current US earnings growth of 35-40% should push equities to new highs through the rest of 2026, but that margin pressure becomes a genuine risk to the outlook in 2027. It's a house view from a direct wealth-management competitor being fed into client-facing research at the same time HSBC WPB is forming its own year-ahead positioning. For Adam, it's a data point on how rivals are framing the client conversation about when the current AI-driven earnings cycle turns.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "summary": "Following the carried-interest tax break story covered 17-19 August, Hong Kong has now sent a formal bill to lawmakers to erase carried-interest levies for fund managers, while Singapore's Monetary Authority has floated matching profit-share exemptions for top-performing managers. The contest has moved from signalling to statute on both sides, directly targeting where UHNW capital and fund-manager talent concentrate. The outcome is a live input to WPB's regional wealth-hub positioning between HSBC's two largest APAC franchises.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
         "noise_level": 3,
         "category": "Regulatory & Markets",
-        "user_relevance": 5
+        "is_update": true,
+        "user_relevance": 6
+      },
+      {
+        "id": "art03",
+        "title": "Hong Kong's Hang Seng Index Set for More AI-Stock Additions as Quarterly Review Lands",
+        "url": "https://www.scmp.com/business/china-business/article/3364752/hong-kongs-stock-benchmark-may-see-more-tech-additions-review-result-looms",
+        "source": "South China Morning Post",
+        "published_at": "2026-08-21",
+        "summary": "Hang Seng Indexes Company was due to publish its quarterly constituent review on 21 August, with AI developers among the names seen as likely additions to further tilt the benchmark toward technology, as Hong Kong shares closed the session up 1.2% to 26,009. The move continues a trend that saw AI firms MiniMax and Zhipu added to the Hang Seng Tech Index earlier this year. A more AI-weighted flagship index reinforces Hong Kong's positioning as a China-AI listing venue, shaping the market narrative WPB relationship managers use with Hong Kong-based clients.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 4,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 4
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "art04",
+        "title": "Anthropic Targets Roughly $2 Trillion Valuation, Accelerates IPO Timeline to October",
+        "url": "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
+        "source": "Bloomberg",
+        "published_at": "2026-08-21",
+        "summary": "Following Anthropic's first profitable quarter covered on 17 August, the company is reportedly preparing to file for an IPO as early as late August, targeting an October debut at a valuation near $2 trillion \u2014 sized to rival SpaceX's record offering. Annualised revenue has reportedly reached roughly $65 billion, with financial services now Anthropic's second-largest segment and Claude already in production at JPMorgan, Goldman Sachs, Citi, AIG and Visa. The IPO is both a market gauge of AI valuations and a scaling signal for a vendor increasingly threaded through bank AI programmes.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 8,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 8
       }
     ]
   },
@@ -120,74 +131,80 @@
     "articles": [
       {
         "id": "art01",
-        "title": "HSBC, Standard Chartered complete first live transaction on Swift blockchain ledger",
-        "url": "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
-        "source": "Standard Chartered",
-        "published_at": "2026-08-19",
-        "summary": "HSBC and Standard Chartered settled the first live cross-border interbank transaction on Swift's new blockchain-based ledger on 19 August, moving tokenised deposits between the two banks' separate systems. It is the first interbank use of the ledger since Swift declared it ready for piloting in July, with 17 banks \u2014 including Citi, UBS, DBS and Wells Fargo \u2014 still queued to run their own transactions. For HSBC this puts its Tokenised Deposit Service ahead of peers as a live node on emerging 24/7 cross-border settlement infrastructure, directly relevant to the pace at which WPB's own payment rails can modernise.",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "noise_level": 3,
+        "title": "HSBC Leveraged Finance Banker Vikram Lamba Departs Bank",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-21/hsbc-leveraged-finance-banker-vikram-lamba-departs-bank",
+        "source": "Bloomberg",
+        "published_at": "2026-08-21",
+        "summary": "HSBC Managing Director in Leveraged and Acquisition Finance Vikram Lamba has left the bank, according to people familiar with the matter, with the Hong Kong-based exit reported by Bloomberg on 21 August. Lamba previously held roles at Merrill Lynch, Citigroup, Deutsche Bank and CIBC World Markets before joining HSBC. The departure adds to a run of senior exits across HSBC's Asia dealmaking franchise \u2014 a talent-retention data point that sits adjacent to, though outside, Adam's WPB remit.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 3,
+        "noise_level": 1,
         "category": "HSBC News",
-        "user_relevance": 8
+        "is_update": false,
+        "user_relevance": 3
       },
       {
         "id": "art02",
-        "title": "HSBC, Citi, Deutsche Bank, StanChart, Barclays adopt Ant's FalconTST 2.0 AI FX model",
-        "url": "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
-        "source": "Business Wire",
-        "published_at": "2026-08-19",
-        "summary": "HSBC has adopted Ant International's upgraded FalconTST 2.0 forecasting model into its foreign-exchange operations, alongside Citi, Deutsche Bank, Standard Chartered and Barclays; the model hits over 93% forecast accuracy and can cut FX hedging and allocation costs by more than 60%. Unlike HSBC's Aladdin-based PRISM stack, this is a narrow, shared third-party layer that six major banks are converging on simultaneously for the same FX use case. For Adam, six peers standing up identical AI infrastructure in one announcement is a concrete marker of how fast narrow, high-ROI AI tools are becoming shared utility rather than differentiator \u2014 and a vendor-concentration point worth flagging upward.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 9,
-        "noise_level": 4,
-        "category": "HSBC News",
-        "user_relevance": 9
+        "title": "BOCHK and Ant International Forge Strategic Cross-Border Payments Partnership",
+        "url": "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
+        "source": "TechNode Global",
+        "published_at": "2026-08-20",
+        "summary": "Bank of China (Hong Kong) and Ant International announced a strategic partnership on 20 August wiring Alipay+'s wallet network, AlipayHK retail linkage and WorldFirst's cross-border SME fund-management tools directly into BOCHK's banking infrastructure. It lands the same week Ant's FalconTST AI model went live inside HSBC, Citi, Deutsche Bank, StanChart and Barclays. It shows a Hong Kong competitor converting Ant's AI and payments stack into retail and SME advantage \u2014 a live benchmark for how fast WPB's own AI-enabled client journeys need to move.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 8
       },
       {
         "id": "art03",
-        "title": "DBS scales agentic AI to 1,500 relationship and credit risk managers",
-        "url": "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
-        "source": "DBS Newsroom",
-        "published_at": "2026-08-19",
-        "summary": "DBS is rolling out an agentic AI system to roughly 1,500 relationship managers and credit risk managers worldwide, automating more than 70 discrete tasks in preparing corporate credit memos, following a 150-person pilot. The bank is targeting at least a 30% cut in the roughly 40% of RM time currently spent on credit-memo preparation, building on its separate push to make consumer-facing assistants DBS Joy and digibot agentic for 10 million customers. This is DBS's most concrete agentic-AI capacity number yet \u2014 a specific process, headcount and time-savings target that gives Adam a direct external benchmark for what WPB's own AI-enabled change programmes should be able to show.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 9,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "user_relevance": 9
+        "title": "Hong Kong's Hang Seng Index Set for More AI-Stock Additions as Quarterly Review Lands",
+        "url": "https://www.scmp.com/business/china-business/article/3364752/hong-kongs-stock-benchmark-may-see-more-tech-additions-review-result-looms",
+        "source": "South China Morning Post",
+        "published_at": "2026-08-21",
+        "summary": "Hang Seng Indexes Company was due to publish its quarterly constituent review on 21 August, with AI developers among the names seen as likely additions to further tilt the benchmark toward technology, as Hong Kong shares closed the session up 1.2% to 26,009. The move continues a trend that saw AI firms MiniMax and Zhipu added to the Hang Seng Tech Index earlier this year. A more AI-weighted flagship index reinforces Hong Kong's positioning as a China-AI listing venue, shaping the market narrative WPB relationship managers use with Hong Kong-based clients.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 4,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 4
       },
       {
         "id": "art04",
-        "title": "DBS Hong Kong, Visa, Preface launch AI-readiness training for customers",
-        "url": "https://www.manilatimes.net/2026/08/19/tmt-newswire/pr-newswire/dbs-hong-kong-partners-with-visa-preface-to-empower-customers-with-ai-readiness-skills-for-the-future-of-intelligent-payments/2408149",
-        "source": "Manila Times (PR Newswire)",
-        "published_at": "2026-08-19",
-        "summary": "DBS Hong Kong partnered with Visa and Preface on 19 August to give customers AI-readiness skills training framed around \"the future of intelligent payments.\" It lands the same week as DBS's substantive agentic-AI credit rollout, pairing the technical build-out with a customer- and brand-facing AI literacy push. For Adam, it's a useful template for how a competitor sequences a high-visibility, low-cost trust-building initiative alongside its real AI infrastructure investment.",
+        "title": "Anthropic Targets Roughly $2 Trillion Valuation, Accelerates IPO Timeline to October",
+        "url": "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
+        "source": "Bloomberg",
+        "published_at": "2026-08-21",
+        "summary": "Following Anthropic's first profitable quarter covered on 17 August, the company is reportedly preparing to file for an IPO as early as late August, targeting an October debut at a valuation near $2 trillion \u2014 sized to rival SpaceX's record offering. Annualised revenue has reportedly reached roughly $65 billion, with financial services now Anthropic's second-largest segment and Claude already in production at JPMorgan, Goldman Sachs, Citi, AIG and Visa. The IPO is both a market gauge of AI valuations and a scaling signal for a vendor increasingly threaded through bank AI programmes.",
         "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 6
+        "adam_rel": 8,
+        "noise_level": 4,
+        "category": "AI & Technology",
+        "is_update": true,
+        "user_relevance": 8
       },
       {
         "id": "art05",
-        "title": "UBS strategist warns of margin pressure risk for stocks in 2027",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-20/ubs-s-baweja-says-margin-pressure-is-a-risk-for-stocks-in-2027",
+        "title": "Hong Kong Sends Hedge Fund Tax Bill to Lawmakers as Singapore Race Escalates",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
         "source": "Bloomberg",
         "published_at": "2026-08-20",
-        "summary": "UBS chief strategist Bhanu Baweja said on 20 August that current US earnings growth of 35-40% should push equities to new highs through the rest of 2026, but that margin pressure becomes a genuine risk to the outlook in 2027. It's a house view from a direct wealth-management competitor being fed into client-facing research at the same time HSBC WPB is forming its own year-ahead positioning. For Adam, it's a data point on how rivals are framing the client conversation about when the current AI-driven earnings cycle turns.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "summary": "Following the carried-interest tax break story covered 17-19 August, Hong Kong has now sent a formal bill to lawmakers to erase carried-interest levies for fund managers, while Singapore's Monetary Authority has floated matching profit-share exemptions for top-performing managers. The contest has moved from signalling to statute on both sides, directly targeting where UHNW capital and fund-manager talent concentrate. The outcome is a live input to WPB's regional wealth-hub positioning between HSBC's two largest APAC franchises.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
         "noise_level": 3,
         "category": "Regulatory & Markets",
-        "user_relevance": 5
+        "is_update": true,
+        "user_relevance": 6
       }
     ],
     "categories": {
       "HSBC News": "#dc2626",
       "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706"
+      "Regulatory & Markets": "#d97706",
+      "AI & Technology": "#6366f1"
     }
   }
 }
