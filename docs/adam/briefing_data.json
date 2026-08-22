@@ -3,108 +3,90 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Friday, 21 August 2026",
-  "date_str": "2026-08-21",
-  "generated_at": "21 Aug 2026, 23:11 UTC",
+  "briefing_date": "Saturday, 22 August 2026",
+  "date_str": "2026-08-22",
+  "generated_at": "22 Aug 2026, 23:09 UTC",
   "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Bank of China (Hong Kong) embeds Ant's AI-powered payments rails \u2014 a live competitor benchmark for HSBC",
-      "context_html": "<strong>Sun Yu, Vice Chairman and Chief Executive of BOCHK</strong>, and <strong>Eric Jing, Chairman of Ant International</strong>, unveiled a strategic partnership wiring Alipay+'s 2 billion-plus wallet network, AlipayHK retail linkage and WorldFirst's cross-border SME fund management directly into BOCHK's banking infrastructure. It lands the same week Ant's FalconTST AI model went live inside HSBC, Citi, Deutsche Bank, StanChart and Barclays, underlining how fast HSBC's Hong Kong competitors are turning Ant's AI stack into retail and SME advantage. For Adam, it's a concrete yardstick for how quickly WPB's own AI-enabled payments and SME wealth journeys need to move to stay ahead of a domestic rival.",
+      "headline": "Citadel's forced unwind of an AI-infrastructure hedge fund turns concentration-risk warnings into a real deleveraging event",
+      "context_html": "<strong>Ken Griffin, CEO of Citadel</strong> disclosed his firm has unwound over 80% (more than $4bn) of the AI-infrastructure stock portfolio it rescued from <strong>Leopold Aschenbrenner, founder of Situational Awareness</strong>, after that fund's 400%-leveraged, AI-buildout-heavy bets lost roughly $35bn and triggered margin calls. Following the strategist warning we covered on 19 August that AI-driven concentration risk had spread from stocks into bonds, this is the first major forced deleveraging to prove that call right in practice. For Adam, it is a concrete data point for HSBC's own risk and change governance conversations around AI-infrastructure exposure \u2014 concentration risk in the AI trade is no longer hypothetical.",
       "source_links": [
         [
-          "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
-          "BOCHK, Ant International partner on payments"
+          "https://qz.com/citadel-situational-awareness-portfolio-unwound-082126",
+          "Citadel unwound Situational Awareness portfolio"
         ],
         [
-          "https://www.finextra.com/pressarticle/110690/bochk-and-ant-international-team-up-for-cross-border-payments",
-          "BOCHK and Ant International team up"
+          "https://www.zerohedge.com/news/2026-08-21/ken-griffin-details-citadels-unwind-situational-awareness-portfolio-risk",
+          "Ken Griffin details Citadel's unwind"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Anthropic accelerates toward a ~$2 trillion IPO \u2014 a stress test for the AI vendor now embedded in bank operations",
-      "context_html": "Following Anthropic's first profitable quarter we covered on 17 August, the company is reportedly preparing to file for an IPO as early as late August, targeting a market debut in October at a valuation near $2 trillion \u2014 sized to rival SpaceX's record offering. Annualised revenue has already reached roughly $65 billion, with financial services now Anthropic's second-largest segment behind technology and Claude already in production at JPMorgan, Goldman Sachs, Citi, AIG and Visa. For Adam, the IPO is both a market gauge of AI valuations broadly and a scaling signal for a vendor increasingly threaded through the AI tooling HSBC and its peers are building change programmes around.",
+      "headline": "Anthropic pushes Claude Mythos 5 into enterprise security scanning, setting a new agentic-AI governance benchmark",
+      "context_html": "Anthropic has embedded its most capable model, Claude Mythos 5, into Claude Security for Enterprise customers, returning classified vulnerability findings and suggested patches without exposing direct model access \u2014 and backed it with a $35m Defender Advantage Fund for open-source security work. This builds directly on the security-hardening cadence flagged in our 15 August coverage as a live benchmark for agentic AI governance. For Adam, this is the emerging control-layer playbook \u2014 scan-and-patch automation with no raw prompt access \u2014 that WPB's own agentic AI rollouts will increasingly be measured against as governance scrutiny intensifies.",
       "source_links": [
         [
-          "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
-          "Anthropic expects record IPO size"
+          "https://www.marktechpost.com/2026/08/21/anthropic-brings-claude-mythos-5-to-claude-security/",
+          "Anthropic brings Claude Mythos 5 to Claude Security"
         ]
       ],
-      "is_update": true
+      "is_update": false
     },
     {
-      "headline": "Hong Kong formally tables its hedge fund tax break as Singapore counters \u2014 the wealth-hub fee war turns legislative",
-      "context_html": "Following the carried-interest tax break story we covered from 17-19 August, Hong Kong has now sent a formal bill to lawmakers to erase carried-interest levies for fund managers, while Singapore's Monetary Authority has floated matching profit-share exemptions for top-performing managers. The contest has moved from signalling to statute on both sides, directly targeting where UHNW capital and fund-manager talent concentrate. For Adam, the outcome is a live input to WPB's regional wealth-hub positioning between HSBC's two largest APAC franchises.",
+      "headline": "HKEX loosens listing rules just as Hong Kong's IPO revival feeds the private-wealth pipeline",
+      "context_html": "Hong Kong Exchanges and Clearing will extend new listing application validity from six to twelve months for three years, an SFC-cleared waiver meant to cut refiling burden as the city's IPO market rebounds toward 2021-era volumes. Every fresh listing is a liquidity event that feeds new-money flows into private banking coverage \u2014 for Adam, a friction-lighter listing regime is a structural tailwind for HSBC WPB's Hong Kong pipeline just as the city races Singapore for wealth-hub primacy.",
       "source_links": [
         [
-          "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
-          "Hedge fund tax race: Hong Kong, Singapore"
+          "https://www.scmp.com/business/banking-finance/article/3364835/hong-kong-stock-exchange-extends-listing-application-window-12-months",
+          "HKEX extends listing application window to 12 months"
         ]
       ],
-      "is_update": true
+      "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
-      {
-        "id": "art01",
-        "title": "HSBC Leveraged Finance Banker Vikram Lamba Departs Bank",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-21/hsbc-leveraged-finance-banker-vikram-lamba-departs-bank",
-        "source": "Bloomberg",
-        "published_at": "2026-08-21",
-        "summary": "HSBC Managing Director in Leveraged and Acquisition Finance Vikram Lamba has left the bank, according to people familiar with the matter, with the Hong Kong-based exit reported by Bloomberg on 21 August. Lamba previously held roles at Merrill Lynch, Citigroup, Deutsche Bank and CIBC World Markets before joining HSBC. The departure adds to a run of senior exits across HSBC's Asia dealmaking franchise \u2014 a talent-retention data point that sits adjacent to, though outside, Adam's WPB remit.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 3,
-        "noise_level": 1,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 3
-      }
-    ],
-    "Competitor Intelligence": [
-      {
-        "id": "art02",
-        "title": "BOCHK and Ant International Forge Strategic Cross-Border Payments Partnership",
-        "url": "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
-        "source": "TechNode Global",
-        "published_at": "2026-08-20",
-        "summary": "Bank of China (Hong Kong) and Ant International announced a strategic partnership on 20 August wiring Alipay+'s wallet network, AlipayHK retail linkage and WorldFirst's cross-border SME fund-management tools directly into BOCHK's banking infrastructure. It lands the same week Ant's FalconTST AI model went live inside HSBC, Citi, Deutsche Bank, StanChart and Barclays. It shows a Hong Kong competitor converting Ant's AI and payments stack into retail and SME advantage \u2014 a live benchmark for how fast WPB's own AI-enabled client journeys need to move.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 8
-      }
-    ],
     "Regulatory & Markets": [
       {
-        "id": "art05",
-        "title": "Hong Kong Sends Hedge Fund Tax Bill to Lawmakers as Singapore Race Escalates",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
-        "source": "Bloomberg",
-        "published_at": "2026-08-20",
-        "summary": "Following the carried-interest tax break story covered 17-19 August, Hong Kong has now sent a formal bill to lawmakers to erase carried-interest levies for fund managers, while Singapore's Monetary Authority has floated matching profit-share exemptions for top-performing managers. The contest has moved from signalling to statute on both sides, directly targeting where UHNW capital and fund-manager talent concentrate. The outcome is a live input to WPB's regional wealth-hub positioning between HSBC's two largest APAC franchises.",
+        "id": "art01",
+        "title": "Citadel unwinds over 80% of the AI-infrastructure portfolio it rescued from Situational Awareness",
+        "url": "https://qz.com/citadel-situational-awareness-portfolio-unwound-082126",
+        "source": "Quartz",
+        "published_at": "2026-08-21",
+        "summary": "Ken Griffin disclosed that Citadel has executed over 100 block trades worth more than $4bn to unwind above 80% of the AI-infrastructure-heavy stock portfolio it bought from Leopold Aschenbrenner's Situational Awareness fund, which lost roughly $35bn of assets after 400% leverage and margin calls forced a distressed sale in July.",
         "hsbc_relevancy": 5,
-        "adam_rel": 6,
+        "adam_rel": 8,
         "noise_level": 3,
         "category": "Regulatory & Markets",
-        "is_update": true,
-        "user_relevance": 6
+        "is_update": false,
+        "user_relevance": 8
       },
       {
         "id": "art03",
-        "title": "Hong Kong's Hang Seng Index Set for More AI-Stock Additions as Quarterly Review Lands",
-        "url": "https://www.scmp.com/business/china-business/article/3364752/hong-kongs-stock-benchmark-may-see-more-tech-additions-review-result-looms",
+        "title": "HKEX extends IPO listing application validity from 6 to 12 months",
+        "url": "https://www.scmp.com/business/banking-finance/article/3364835/hong-kong-stock-exchange-extends-listing-application-window-12-months",
         "source": "South China Morning Post",
         "published_at": "2026-08-21",
-        "summary": "Hang Seng Indexes Company was due to publish its quarterly constituent review on 21 August, with AI developers among the names seen as likely additions to further tilt the benchmark toward technology, as Hong Kong shares closed the session up 1.2% to 26,009. The move continues a trend that saw AI firms MiniMax and Zhipu added to the Hang Seng Tech Index earlier this year. A more AI-weighted flagship index reinforces Hong Kong's positioning as a China-AI listing venue, shaping the market narrative WPB relationship managers use with Hong Kong-based clients.",
+        "summary": "Hong Kong Exchanges and Clearing will extend the validity period of eligible new listing applications from six to twelve months for three years (21 Aug 2026 to 20 Aug 2029), a temporary waiver cleared by the SFC to reduce refiling frequency and give sponsors more flexibility on listing timetables without changing investor protections.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art04",
+        "title": "Monte dei Paschi launches \u20ac34bn twin bids for Banco BPM and wealth manager Banca Generali",
+        "url": "https://www.euronews.com/business/2026/08/21/monte-dei-paschi-details-of-bid-for-banco-bpm-and-banca-generali",
+        "source": "Euronews",
+        "published_at": "2026-08-21",
+        "summary": "Monte dei Paschi di Siena launched simultaneous all-share bids worth roughly \u20ac34bn for Banco BPM (\u20ac25.3bn) and wealth manager Banca Generali (\u20ac8.7bn), aiming to build an \u201880bn Italian banking group and fend off Intesa Sanpaolo's hostile \u201836bn approach for MPS. The acceptance period is expected to run from December 2026 to February 2027.",
         "hsbc_relevancy": 3,
         "adam_rel": 4,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 4
@@ -112,18 +94,32 @@
     ],
     "AI & Technology": [
       {
-        "id": "art04",
-        "title": "Anthropic Targets Roughly $2 Trillion Valuation, Accelerates IPO Timeline to October",
-        "url": "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
-        "source": "Bloomberg",
+        "id": "art02",
+        "title": "Anthropic brings Claude Mythos 5 to Claude Security, launches $35m Defender Advantage Fund",
+        "url": "https://www.marktechpost.com/2026/08/21/anthropic-brings-claude-mythos-5-to-claude-security/",
+        "source": "MarkTechPost",
         "published_at": "2026-08-21",
-        "summary": "Following Anthropic's first profitable quarter covered on 17 August, the company is reportedly preparing to file for an IPO as early as late August, targeting an October debut at a valuation near $2 trillion \u2014 sized to rival SpaceX's record offering. Annualised revenue has reportedly reached roughly $65 billion, with financial services now Anthropic's second-largest segment and Claude already in production at JPMorgan, Goldman Sachs, Citi, AIG and Visa. The IPO is both a market gauge of AI valuations and a scaling signal for a vendor increasingly threaded through bank AI programmes.",
-        "hsbc_relevancy": 5,
+        "summary": "Claude Security for Enterprise now runs Anthropic's most capable model, Claude Mythos 5, to scan customer codebases for vulnerabilities and return CWE-classified findings with suggested patches, without giving direct model access. Anthropic also launched the Defender Advantage Fund (0xDAF), offering $35m in credits to organisations patching open-source security flaws.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "art05",
+        "title": "Anthropic confidentially files draft S-1, revenue run-rate tops $65bn ahead of IPO",
+        "url": "https://techstartups.com/2026/08/21/top-tech-news-today-august-21-2026-anthropic-apple-broadcom-google-nvidia-openai-tesla-more/",
+        "source": "Tech Startups",
+        "published_at": "2026-08-21",
+        "summary": "Anthropic has confidentially submitted a draft S-1 registration statement to the SEC and could publicly file by end of August, with annualised revenue now exceeding $65bn \u2014 more than sevenfold its pace at the end of last year \u2014 as it eyes a listing that could match or top SpaceX's record $75bn flotation.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
         "noise_level": 4,
         "category": "AI & Technology",
         "is_update": true,
-        "user_relevance": 8
+        "user_relevance": 6
       }
     ]
   },
@@ -131,78 +127,76 @@
     "articles": [
       {
         "id": "art01",
-        "title": "HSBC Leveraged Finance Banker Vikram Lamba Departs Bank",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-21/hsbc-leveraged-finance-banker-vikram-lamba-departs-bank",
-        "source": "Bloomberg",
+        "title": "Citadel unwinds over 80% of the AI-infrastructure portfolio it rescued from Situational Awareness",
+        "url": "https://qz.com/citadel-situational-awareness-portfolio-unwound-082126",
+        "source": "Quartz",
         "published_at": "2026-08-21",
-        "summary": "HSBC Managing Director in Leveraged and Acquisition Finance Vikram Lamba has left the bank, according to people familiar with the matter, with the Hong Kong-based exit reported by Bloomberg on 21 August. Lamba previously held roles at Merrill Lynch, Citigroup, Deutsche Bank and CIBC World Markets before joining HSBC. The departure adds to a run of senior exits across HSBC's Asia dealmaking franchise \u2014 a talent-retention data point that sits adjacent to, though outside, Adam's WPB remit.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 3,
-        "noise_level": 1,
-        "category": "HSBC News",
+        "summary": "Ken Griffin disclosed that Citadel has executed over 100 block trades worth more than $4bn to unwind above 80% of the AI-infrastructure-heavy stock portfolio it bought from Leopold Aschenbrenner's Situational Awareness fund, which lost roughly $35bn of assets after 400% leverage and margin calls forced a distressed sale in July.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 8,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "BOCHK and Ant International Forge Strategic Cross-Border Payments Partnership",
-        "url": "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
-        "source": "TechNode Global",
-        "published_at": "2026-08-20",
-        "summary": "Bank of China (Hong Kong) and Ant International announced a strategic partnership on 20 August wiring Alipay+'s wallet network, AlipayHK retail linkage and WorldFirst's cross-border SME fund-management tools directly into BOCHK's banking infrastructure. It lands the same week Ant's FalconTST AI model went live inside HSBC, Citi, Deutsche Bank, StanChart and Barclays. It shows a Hong Kong competitor converting Ant's AI and payments stack into retail and SME advantage \u2014 a live benchmark for how fast WPB's own AI-enabled client journeys need to move.",
+        "title": "Anthropic brings Claude Mythos 5 to Claude Security, launches $35m Defender Advantage Fund",
+        "url": "https://www.marktechpost.com/2026/08/21/anthropic-brings-claude-mythos-5-to-claude-security/",
+        "source": "MarkTechPost",
+        "published_at": "2026-08-21",
+        "summary": "Claude Security for Enterprise now runs Anthropic's most capable model, Claude Mythos 5, to scan customer codebases for vulnerabilities and return CWE-classified findings with suggested patches, without giving direct model access. Anthropic also launched the Defender Advantage Fund (0xDAF), offering $35m in credits to organisations patching open-source security flaws.",
         "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 3,
-        "category": "Competitor Intelligence",
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 8
       },
       {
         "id": "art03",
-        "title": "Hong Kong's Hang Seng Index Set for More AI-Stock Additions as Quarterly Review Lands",
-        "url": "https://www.scmp.com/business/china-business/article/3364752/hong-kongs-stock-benchmark-may-see-more-tech-additions-review-result-looms",
+        "title": "HKEX extends IPO listing application validity from 6 to 12 months",
+        "url": "https://www.scmp.com/business/banking-finance/article/3364835/hong-kong-stock-exchange-extends-listing-application-window-12-months",
         "source": "South China Morning Post",
         "published_at": "2026-08-21",
-        "summary": "Hang Seng Indexes Company was due to publish its quarterly constituent review on 21 August, with AI developers among the names seen as likely additions to further tilt the benchmark toward technology, as Hong Kong shares closed the session up 1.2% to 26,009. The move continues a trend that saw AI firms MiniMax and Zhipu added to the Hang Seng Tech Index earlier this year. A more AI-weighted flagship index reinforces Hong Kong's positioning as a China-AI listing venue, shaping the market narrative WPB relationship managers use with Hong Kong-based clients.",
+        "summary": "Hong Kong Exchanges and Clearing will extend the validity period of eligible new listing applications from six to twelve months for three years (21 Aug 2026 to 20 Aug 2029), a temporary waiver cleared by the SFC to reduce refiling frequency and give sponsors more flexibility on listing timetables without changing investor protections.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art04",
+        "title": "Monte dei Paschi launches \u20ac34bn twin bids for Banco BPM and wealth manager Banca Generali",
+        "url": "https://www.euronews.com/business/2026/08/21/monte-dei-paschi-details-of-bid-for-banco-bpm-and-banca-generali",
+        "source": "Euronews",
+        "published_at": "2026-08-21",
+        "summary": "Monte dei Paschi di Siena launched simultaneous all-share bids worth roughly \u20ac34bn for Banco BPM (\u20ac25.3bn) and wealth manager Banca Generali (\u20ac8.7bn), aiming to build an \u201880bn Italian banking group and fend off Intesa Sanpaolo's hostile \u201836bn approach for MPS. The acceptance period is expected to run from December 2026 to February 2027.",
         "hsbc_relevancy": 3,
         "adam_rel": 4,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 4
       },
       {
-        "id": "art04",
-        "title": "Anthropic Targets Roughly $2 Trillion Valuation, Accelerates IPO Timeline to October",
-        "url": "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
-        "source": "Bloomberg",
-        "published_at": "2026-08-21",
-        "summary": "Following Anthropic's first profitable quarter covered on 17 August, the company is reportedly preparing to file for an IPO as early as late August, targeting an October debut at a valuation near $2 trillion \u2014 sized to rival SpaceX's record offering. Annualised revenue has reportedly reached roughly $65 billion, with financial services now Anthropic's second-largest segment and Claude already in production at JPMorgan, Goldman Sachs, Citi, AIG and Visa. The IPO is both a market gauge of AI valuations and a scaling signal for a vendor increasingly threaded through bank AI programmes.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 8,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
         "id": "art05",
-        "title": "Hong Kong Sends Hedge Fund Tax Bill to Lawmakers as Singapore Race Escalates",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
-        "source": "Bloomberg",
-        "published_at": "2026-08-20",
-        "summary": "Following the carried-interest tax break story covered 17-19 August, Hong Kong has now sent a formal bill to lawmakers to erase carried-interest levies for fund managers, while Singapore's Monetary Authority has floated matching profit-share exemptions for top-performing managers. The contest has moved from signalling to statute on both sides, directly targeting where UHNW capital and fund-manager talent concentrate. The outcome is a live input to WPB's regional wealth-hub positioning between HSBC's two largest APAC franchises.",
+        "title": "Anthropic confidentially files draft S-1, revenue run-rate tops $65bn ahead of IPO",
+        "url": "https://techstartups.com/2026/08/21/top-tech-news-today-august-21-2026-anthropic-apple-broadcom-google-nvidia-openai-tesla-more/",
+        "source": "Tech Startups",
+        "published_at": "2026-08-21",
+        "summary": "Anthropic has confidentially submitted a draft S-1 registration statement to the SEC and could publicly file by end of August, with annualised revenue now exceeding $65bn \u2014 more than sevenfold its pace at the end of last year \u2014 as it eyes a listing that could match or top SpaceX's record $75bn flotation.",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "noise_level": 4,
+        "category": "AI & Technology",
         "is_update": true,
         "user_relevance": 6
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2",
       "Regulatory & Markets": "#d97706",
       "AI & Technology": "#6366f1"
     }
