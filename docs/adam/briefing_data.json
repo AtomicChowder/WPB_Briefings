@@ -3,41 +3,49 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Monday, 24 August 2026",
-  "date_str": "2026-08-24",
-  "generated_at": "24 Aug 2026, 23:33 UTC",
-  "total_articles": 4,
+  "briefing_date": "Tuesday, 25 August 2026",
+  "date_str": "2026-08-25",
+  "generated_at": "25 Aug 2026, 23:14 UTC",
+  "total_articles": 6,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Hang Seng keeps opening HK wealth centres even as Beijing tightens scrutiny of mainland money flowing in",
-      "context_html": "Hang Seng, HSBC's Hong Kong-listed subsidiary, opened its second new wealth centre this year at Hysan Place, betting on continued high-net-worth demand even as Beijing tightens oversight of mainland investors' cross-border capital into Hong Kong wealth products. As a live read on how the wider HSBC group is sequencing wealth infrastructure investment against regulatory risk, this is a useful proxy for how WPB's own Hong Kong build-out should weigh expansion pace against the same scrutiny.",
+      "headline": "Standard Chartered beats HSBC to market as first bank live on HK's regulated HKD stablecoin",
+      "context_html": "Standard Chartered Bank (Hong Kong) went live on 24 August as the first bank distributing HKDAP, built by Anchorpoint \u2014 the joint venture Standard Chartered leads with HKT and Animoca Brands, and one of only two entities the HKMA has licensed to issue a stablecoin. HSBC holds the other licence but has yet to launch its own coin, still slated for PayMe integration in H2 2026, and industry commentary is already framing HSBC's approach as the passive one in an infrastructure race built on HSBC's own regulatory head start. For Adam, this is a live test case of what happens when a WPB competitor out-executes HSBC on delivery, not licensing \u2014 the change-execution gap is now the competitive risk, not the regulatory one.",
       "source_links": [
         [
-          "https://www.scmp.com/business/money/wealth/article/3365071/hang-seng-bank-doubles-down-wealth-hubs-despite-beijings-tighter-investment-scrutiny",
-          "Hang Seng doubles down on wealth hubs \u2014 SCMP"
+          "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
+          "StanChart first bank to distribute HKDAP"
+        ],
+        [
+          "https://en.cryptonomist.ch/2026/08/25/hkdap-stablecoin-launch-hong-kong/",
+          "HKDAP stablecoin launch marks HK breakthrough"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Following the IPO run-up we covered on 21 August, Anthropic posts its first operating profit \u2014 a vendor-concentration signal, not just a valuation story",
-      "context_html": "Following Anthropic's climb toward a ~$2 trillion IPO valuation covered on 21 August, Anthropic has now posted its first-ever operating profit, with Q2 revenue up 50% sequentially to $11.6bn, while OpenAI's Q2 revenue reached $6.7bn but with widening losses. Anthropic is not a hypothetical vendor for HSBC \u2014 Wealth Intelligence and the Project Glasswing cybersecurity work already run on Anthropic models \u2014 so a profitable, IPO-bound Anthropic reduces near-term vendor-continuity risk just as that dependency deepens, and is worth tracking as a concentration-risk item rather than pure AI-market colour.",
+      "headline": "Deutsche Bank helps shape Google's new banking AI platform \u2014 the same cloud partner HSBC's AI bet rides on",
+      "context_html": "Google Cloud launched Gemini Enterprise for Financial Services on 25 August with Deutsche Bank and CME Group as design partners, shipping a managed research agent and 50+ role-specific skills for capital markets and corporate banking. HSBC runs its own multi-year strategic AI partnership with Google Cloud, so a direct competitor co-authoring the requirements of that same vendor's flagship enterprise product is worth watching closely: the workflows Deutsche Bank prioritised are the ones Google optimises for next, whether or not they match HSBC WPB's own roadmap. It sharpens the vendor-concentration dynamic already visible across the sector \u2014 convergence on shared AI infrastructure shifts differentiation to who shapes the platform, not just who licenses it.",
       "source_links": [
         [
-          "https://www.fool.com/investing/2026/08/22/ipo-fever-heats-up-for-openai-and-anthropic/",
-          "IPO fever heats up for OpenAI and Anthropic \u2014 Motley Fool"
+          "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services",
+          "Introducing Gemini Enterprise for Financial Services"
+        ],
+        [
+          "https://www.db.com/news/detail/20260825-deutsche-bank-helps-shape-google-cloud-s-new-ai-solution-for-financial-services?language_id=1",
+          "Deutsche Bank helps shape Google Cloud AI"
         ]
       ],
-      "is_update": true
+      "is_update": false
     },
     {
-      "headline": "Yuan and HKD bonds outpace USD issuance as borrowing costs rise \u2014 a funding-cost shift with a wealth-flow read-through",
-      "context_html": "Issuers across Hong Kong and mainland China are rotating toward yuan- and HKD-denominated bonds as US borrowing costs climb, continuing a broader move away from dollar funding. For WPB this is a treasury-cost signal worth watching alongside client demand for RMB/HKD-denominated wealth products, and it reinforces the same de-dollarisation backdrop behind Hong Kong and Singapore's ongoing wealth-hub tax competition.",
+      "headline": "DBS locks in Singapore's first bank-government AI-reskilling pact \u2014 a playbook HSBC hasn't matched",
+      "context_html": "DBS signed Singapore's first MoU of its kind with the Institute of Banking and Finance on 24 August, pairing a 100-plus-strong Career Advisory Service with AI tools iGrow and iCoach to manage staff through AI-driven role change, building on its record reskilling more than 11,000 employees already affected. This is the workforce and change-execution side of the AI story that gets less attention than flashy agent rollouts \u2014 and it sits squarely in Adam's remit. A formal, government-endorsed reskilling framework gives DBS a defensible public narrative on AI-driven workforce change that HSBC's own transformation programme has not yet matched.",
       "source_links": [
         [
-          "https://www.scmp.com/business/banking-finance/article/3364976/yuan-hong-kong-dollar-bonds-surge-issuers-seek-cheaper-funding-amid-rising-us-costs",
-          "Yuan, HKD bonds surge on rising US costs \u2014 SCMP"
+          "https://www.dbs.com/newsroom/DBS_inks_industrys_first_MOU_with_IBF_to_jointly_uplift_upskill_and_upbuild_Singapores_financial_sector_workforce_for_the_AI_era",
+          "DBS inks first AI-era MOU with IBF"
         ]
       ],
       "is_update": false
@@ -47,63 +55,89 @@
     "Competitor Intelligence": [
       {
         "id": "art01",
-        "title": "Hang Seng Bank doubles down on wealth hubs despite Beijing's tighter investment scrutiny",
-        "url": "https://www.scmp.com/business/money/wealth/article/3365071/hang-seng-bank-doubles-down-wealth-hubs-despite-beijings-tighter-investment-scrutiny",
-        "source": "South China Morning Post",
+        "title": "Standard Chartered becomes first bank to distribute HK's HKDAP stablecoin",
+        "url": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
+        "source": "CoinDesk",
         "published_at": "2026-08-24",
-        "summary": "Hang Seng Bank opened a new wealth centre at Hysan Place in Causeway Bay, its second such facility this year, even as Beijing tightens scrutiny of mainland Chinese investors' cross-border capital flows into Hong Kong wealth products. The bank says it is continuing to invest in its wealth centre network to capture high-net-worth demand despite the regulatory headwind.",
+        "summary": "Standard Chartered Bank (Hong Kong) went live on 24 August as the first bank distributing HKDAP, the HKD stablecoin issued by Anchorpoint \u2014 the StanChart-led joint venture with HKT and Animoca Brands that holds one of only two stablecoin issuer licences the HKMA has granted. The bank will route institutional clients into HKDAP for fund settlement and cross-border payments now, with tokenised money-market fund subscriptions planned for Q4. HSBC holds the other licence but has not yet launched its own HKD stablecoin, still slated for PayMe integration in H2 2026.",
         "hsbc_relevancy": 8,
         "adam_rel": 8,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "Competitor Intelligence",
-        "is_update": false,
         "user_relevance": 8
-      },
-      {
-        "id": "art04",
-        "title": "Nomura hires ex-UOB Private Bank veteran Chomplern Ueavivatsakul in Singapore",
-        "url": "https://www.caproasia.com/2026/08/24/japan-nomura-international-wealth-management-hires-uob-private-bank-chomplern-ueavivatsakul-as-executive-director-in-singapore-16-years-private-banking-financial-industry-experience-at-citigroup-k/",
-        "source": "Caproasia",
-        "published_at": "2026-08-24",
-        "summary": "Nomura International Wealth Management hired Chomplern Ueavivatsakul, a 16-year private banking veteran of Citigroup, KPMG and UOB, as Executive Director in Singapore. The move is the latest in a run of senior private-banker moves across Singapore this month.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 4
       }
     ],
-    "Regulatory & Markets": [
+    "Operations & Change": [
       {
         "id": "art02",
-        "title": "Yuan, Hong Kong dollar bonds surge as issuers seek cheaper funding amid rising US costs",
-        "url": "https://www.scmp.com/business/banking-finance/article/3364976/yuan-hong-kong-dollar-bonds-surge-issuers-seek-cheaper-funding-amid-rising-us-costs",
-        "source": "South China Morning Post",
+        "title": "DBS signs first-of-its-kind AI workforce MoU with IBF, launches Career Advisory Service",
+        "url": "https://www.dbs.com/newsroom/DBS_inks_industrys_first_MOU_with_IBF_to_jointly_uplift_upskill_and_upbuild_Singapores_financial_sector_workforce_for_the_AI_era",
+        "source": "DBS Newsroom",
         "published_at": "2026-08-24",
-        "summary": "Issuers are rotating toward yuan- and Hong Kong dollar-denominated bonds as US borrowing costs climb, with bond issuance in both currencies expected to keep growing through the rest of the year. The shift reflects a broader move away from US dollar funding across Hong Kong and mainland China credit markets.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
+        "summary": "DBS signed the financial industry's first MoU with Singapore's Institute of Banking and Finance to jointly upskill, reskill and rebuild the sector's talent pipeline for the AI era, alongside launching a Career Advisory Service staffed by over 100 internal advisors paired with AI tools iGrow and iCoach. The programme builds on DBS's experience reskilling more than 11,000 staff whose roles have already been reshaped by AI, and is framed explicitly as managing AI-driven workforce transition rather than just cutting headcount.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 9,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 9
       }
     ],
     "AI & Technology": [
       {
         "id": "art03",
-        "title": "Anthropic posts first operating profit as Q2 revenue hits $11.6bn; OpenAI narrows the gap",
-        "url": "https://www.fool.com/investing/2026/08/22/ipo-fever-heats-up-for-openai-and-anthropic/",
-        "source": "The Motley Fool",
-        "published_at": "2026-08-22",
-        "summary": "Anthropic recorded its first-ever operating profit as Q2 revenue jumped 50% sequentially to $11.6bn, while OpenAI's Q2 revenue rose 18% sequentially to $6.7bn but with widening losses. Both companies are moving toward IPOs, intensifying comparisons of their underlying financial health.",
-        "hsbc_relevancy": 6,
+        "title": "Google Cloud launches Gemini Enterprise for Financial Services with Deutsche Bank as design partner",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services",
+        "source": "Google Cloud Blog",
+        "published_at": "2026-08-25",
+        "summary": "Google Cloud launched Gemini Enterprise for Financial Services on 25 August, an agentic AI platform built around a managed Financial Research agent and more than 50 role-specific skills, with Deutsche Bank and CME Group as early institutional users and rollout support from Accenture, Deloitte, KPMG and PwC. The product is initially scoped to capital markets and corporate banking workflows. HSBC runs its own multi-year strategic AI partnership with Google Cloud, making a rival's role in shaping this same vendor's flagship financial-services product a direct read on where that shared platform is headed.",
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
-        "is_update": true,
         "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "Claude suffers global outage as banks scale their dependence on Anthropic's agents",
+        "url": "https://www.androidauthority.com/claude-outage-august-24-3702012/",
+        "source": "Android Authority",
+        "published_at": "2026-08-24",
+        "summary": "Anthropic's Claude platform suffered a multi-hour global outage on 24 August, with elevated errors hitting Claude.ai, the Claude API, Claude Code and Claude Cowork across the Mythos 5, Fable 5, Opus 5 and Opus 4.8 models \u2014 at least the sixth such disruption logged since early August. The incident lands as banks increasingly wire Claude into live operations, including FIS's financial-crimes agent and Ant International's AI stack, turning model reliability into a genuine operational-risk line for any bank building critical workflows on it.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art05",
+        "title": "HSBC deploys diaspora deposit windfall into $3bn-plus India bond buying spree",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-25/hsbc-buys-at-least-3-billion-india-bonds-after-fx-deposit-boost",
+        "source": "Bloomberg",
+        "published_at": "2026-08-25",
+        "summary": "HSBC has bought at least $3 billion of Indian government bonds since July, deploying funds raised through India's FCNR(B) diaspora dollar-deposit scheme into five-year maturities. The move shows HSBC actively putting a large non-resident-Indian deposit pool to work rather than sitting on it as low-yielding cash, at a moment when rival wealth franchises are racing to capture the same NRI and diaspora wealth flows across Asia and the Gulf.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 5
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "art06",
+        "title": "PBOC signals discomfort with yuan's rapid rise, sets widest weak-side fixing in six months",
+        "url": "https://www.brecorder.com/news/40436446/chinese-yuan-slips-from-3-12-year-high-after-pboc-signals-unease-over-rapid-gains",
+        "source": "Business Recorder (Reuters)",
+        "published_at": "2026-08-25",
+        "summary": "The People's Bank of China set its daily yuan fixing at the widest weak-side deviation from market estimates in six months on 25 August, pulling the currency down from a 3.5-year high and signalling discomfort with its roughly 4% year-to-date appreciation. The move comes as weak July data feeds into this week's National People's Congress Standing Committee meeting, and follows a summer in which offshore yuan and HKD bond issuance has already been surging as borrowers chase cheaper funding than USD debt offers.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 4,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "user_relevance": 4
       }
     ]
   },
@@ -111,65 +145,89 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Hang Seng Bank doubles down on wealth hubs despite Beijing's tighter investment scrutiny",
-        "url": "https://www.scmp.com/business/money/wealth/article/3365071/hang-seng-bank-doubles-down-wealth-hubs-despite-beijings-tighter-investment-scrutiny",
-        "source": "South China Morning Post",
+        "title": "Standard Chartered becomes first bank to distribute HK's HKDAP stablecoin",
+        "url": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
+        "source": "CoinDesk",
         "published_at": "2026-08-24",
-        "summary": "Hang Seng Bank opened a new wealth centre at Hysan Place in Causeway Bay, its second such facility this year, even as Beijing tightens scrutiny of mainland Chinese investors' cross-border capital flows into Hong Kong wealth products. The bank says it is continuing to invest in its wealth centre network to capture high-net-worth demand despite the regulatory headwind.",
+        "summary": "Standard Chartered Bank (Hong Kong) went live on 24 August as the first bank distributing HKDAP, the HKD stablecoin issued by Anchorpoint \u2014 the StanChart-led joint venture with HKT and Animoca Brands that holds one of only two stablecoin issuer licences the HKMA has granted. The bank will route institutional clients into HKDAP for fund settlement and cross-border payments now, with tokenised money-market fund subscriptions planned for Q4. HSBC holds the other licence but has not yet launched its own HKD stablecoin, still slated for PayMe integration in H2 2026.",
         "hsbc_relevancy": 8,
         "adam_rel": 8,
-        "noise_level": 2,
+        "noise_level": 3,
         "category": "Competitor Intelligence",
-        "is_update": false,
         "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "Yuan, Hong Kong dollar bonds surge as issuers seek cheaper funding amid rising US costs",
-        "url": "https://www.scmp.com/business/banking-finance/article/3364976/yuan-hong-kong-dollar-bonds-surge-issuers-seek-cheaper-funding-amid-rising-us-costs",
-        "source": "South China Morning Post",
+        "title": "DBS signs first-of-its-kind AI workforce MoU with IBF, launches Career Advisory Service",
+        "url": "https://www.dbs.com/newsroom/DBS_inks_industrys_first_MOU_with_IBF_to_jointly_uplift_upskill_and_upbuild_Singapores_financial_sector_workforce_for_the_AI_era",
+        "source": "DBS Newsroom",
         "published_at": "2026-08-24",
-        "summary": "Issuers are rotating toward yuan- and Hong Kong dollar-denominated bonds as US borrowing costs climb, with bond issuance in both currencies expected to keep growing through the rest of the year. The shift reflects a broader move away from US dollar funding across Hong Kong and mainland China credit markets.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
+        "summary": "DBS signed the financial industry's first MoU with Singapore's Institute of Banking and Finance to jointly upskill, reskill and rebuild the sector's talent pipeline for the AI era, alongside launching a Career Advisory Service staffed by over 100 internal advisors paired with AI tools iGrow and iCoach. The programme builds on DBS's experience reskilling more than 11,000 staff whose roles have already been reshaped by AI, and is framed explicitly as managing AI-driven workforce transition rather than just cutting headcount.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 9,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 9
       },
       {
         "id": "art03",
-        "title": "Anthropic posts first operating profit as Q2 revenue hits $11.6bn; OpenAI narrows the gap",
-        "url": "https://www.fool.com/investing/2026/08/22/ipo-fever-heats-up-for-openai-and-anthropic/",
-        "source": "The Motley Fool",
-        "published_at": "2026-08-22",
-        "summary": "Anthropic recorded its first-ever operating profit as Q2 revenue jumped 50% sequentially to $11.6bn, while OpenAI's Q2 revenue rose 18% sequentially to $6.7bn but with widening losses. Both companies are moving toward IPOs, intensifying comparisons of their underlying financial health.",
-        "hsbc_relevancy": 6,
+        "title": "Google Cloud launches Gemini Enterprise for Financial Services with Deutsche Bank as design partner",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services",
+        "source": "Google Cloud Blog",
+        "published_at": "2026-08-25",
+        "summary": "Google Cloud launched Gemini Enterprise for Financial Services on 25 August, an agentic AI platform built around a managed Financial Research agent and more than 50 role-specific skills, with Deutsche Bank and CME Group as early institutional users and rollout support from Accenture, Deloitte, KPMG and PwC. The product is initially scoped to capital markets and corporate banking workflows. HSBC runs its own multi-year strategic AI partnership with Google Cloud, making a rival's role in shaping this same vendor's flagship financial-services product a direct read on where that shared platform is headed.",
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
-        "is_update": true,
         "user_relevance": 8
       },
       {
         "id": "art04",
-        "title": "Nomura hires ex-UOB Private Bank veteran Chomplern Ueavivatsakul in Singapore",
-        "url": "https://www.caproasia.com/2026/08/24/japan-nomura-international-wealth-management-hires-uob-private-bank-chomplern-ueavivatsakul-as-executive-director-in-singapore-16-years-private-banking-financial-industry-experience-at-citigroup-k/",
-        "source": "Caproasia",
+        "title": "Claude suffers global outage as banks scale their dependence on Anthropic's agents",
+        "url": "https://www.androidauthority.com/claude-outage-august-24-3702012/",
+        "source": "Android Authority",
         "published_at": "2026-08-24",
-        "summary": "Nomura International Wealth Management hired Chomplern Ueavivatsakul, a 16-year private banking veteran of Citigroup, KPMG and UOB, as Executive Director in Singapore. The move is the latest in a run of senior private-banker moves across Singapore this month.",
-        "hsbc_relevancy": 4,
+        "summary": "Anthropic's Claude platform suffered a multi-hour global outage on 24 August, with elevated errors hitting Claude.ai, the Claude API, Claude Code and Claude Cowork across the Mythos 5, Fable 5, Opus 5 and Opus 4.8 models \u2014 at least the sixth such disruption logged since early August. The incident lands as banks increasingly wire Claude into live operations, including FIS's financial-crimes agent and Ant International's AI stack, turning model reliability into a genuine operational-risk line for any bank building critical workflows on it.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 7
+      },
+      {
+        "id": "art05",
+        "title": "HSBC deploys diaspora deposit windfall into $3bn-plus India bond buying spree",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-25/hsbc-buys-at-least-3-billion-india-bonds-after-fx-deposit-boost",
+        "source": "Bloomberg",
+        "published_at": "2026-08-25",
+        "summary": "HSBC has bought at least $3 billion of Indian government bonds since July, deploying funds raised through India's FCNR(B) diaspora dollar-deposit scheme into five-year maturities. The move shows HSBC actively putting a large non-resident-Indian deposit pool to work rather than sitting on it as low-yielding cash, at a moment when rival wealth franchises are racing to capture the same NRI and diaspora wealth flows across Asia and the Gulf.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 5
+      },
+      {
+        "id": "art06",
+        "title": "PBOC signals discomfort with yuan's rapid rise, sets widest weak-side fixing in six months",
+        "url": "https://www.brecorder.com/news/40436446/chinese-yuan-slips-from-3-12-year-high-after-pboc-signals-unease-over-rapid-gains",
+        "source": "Business Recorder (Reuters)",
+        "published_at": "2026-08-25",
+        "summary": "The People's Bank of China set its daily yuan fixing at the widest weak-side deviation from market estimates in six months on 25 August, pulling the currency down from a 3.5-year high and signalling discomfort with its roughly 4% year-to-date appreciation. The move comes as weak July data feeds into this week's National People's Congress Standing Committee meeting, and follows a summer in which offshore yuan and HKD bond issuance has already been surging as borrowers chase cheaper funding than USD debt offers.",
+        "hsbc_relevancy": 5,
         "adam_rel": 4,
-        "noise_level": 1,
-        "category": "Competitor Intelligence",
-        "is_update": false,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
         "user_relevance": 4
       }
     ],
     "categories": {
       "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706",
-      "AI & Technology": "#6366f1"
+      "Operations & Change": "#7c3aed",
+      "AI & Technology": "#6366f1",
+      "Private Banking & Wealth": "#059669",
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
