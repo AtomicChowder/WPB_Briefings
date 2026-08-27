@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-08-26",
+    "last_updated": "2026-08-27",
     "covered_urls": [
       "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services",
       "https://fundselectorasia.com/hsbc-private-bank-bolsters-singapore-and-india-leadership-teams/",
@@ -9,27 +9,26 @@
       "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
       "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/",
       "https://technode.global/2026/08/20/hong-kongs-bochk-singapores-ant-international-partner-on-cross-border-payments-treasury-sme-services/",
+      "https://technode.global/2026/08/27/hong-kong-genai-sandbox-agentic-ai-pilots/",
       "https://techstartups.com/2026/08/21/top-tech-news-today-august-21-2026-anthropic-apple-broadcom-google-nvidia-openai-tesla-more/",
       "https://www.androidauthority.com/claude-outage-august-24-3702012/",
+      "https://www.anthropic.com/news",
       "https://www.bloomberg.com/news/articles/2026-08-20/hedge-fund-stars-spark-race-to-cut-taxes-in-hong-kong-singapore",
-      "https://www.bloomberg.com/news/articles/2026-08-20/ubs-s-baweja-says-margin-pressure-is-a-risk-for-stocks-in-2027",
       "https://www.bloomberg.com/news/articles/2026-08-21/hsbc-leveraged-finance-banker-vikram-lamba-departs-bank",
       "https://www.bloomberg.com/news/articles/2026-08-25/hsbc-buys-at-least-3-billion-india-bonds-after-fx-deposit-boost",
+      "https://www.bloomberg.com/news/articles/2026-08-27/hsbc-mulls-restructuring-singapore-units-to-simplify-operations",
       "https://www.bloomberg.com/news/newsletters/2026-08-21/anthropic-expects-to-match-or-top-spacex-s-record-ipo-size",
       "https://www.brecorder.com/news/40436446/chinese-yuan-slips-from-3-12-year-high-after-pboc-signals-unease-over-rapid-gains",
-      "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
       "https://www.caproasia.com/2026/08/24/japan-nomura-international-wealth-management-hires-uob-private-bank-chomplern-ueavivatsakul-as-executive-director-in-singapore-16-years-private-banking-financial-industry-experience-at-citigroup-k/",
       "https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html",
       "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
       "https://www.dbs.com/newsroom/DBS_inks_industrys_first_MOU_with_IBF_to_jointly_uplift_upskill_and_upbuild_Singapores_financial_sector_workforce_for_the_AI_era",
       "https://www.dbs.com/newsroom/DBS_records_near_threefold_growth_in_millennial_affluent_clients_as_wealth_advice_and_investments_gain_ground_in_Singapore",
-      "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
       "https://www.euronews.com/business/2026/08/21/monte-dei-paschi-details-of-bid-for-banco-bpm-and-banca-generali",
       "https://www.fool.com/investing/2026/08/22/ipo-fever-heats-up-for-openai-and-anthropic/",
-      "https://www.manilatimes.net/2026/08/19/tmt-newswire/pr-newswire/dbs-hong-kong-partners-with-visa-preface-to-empower-customers-with-ai-readiness-skills-for-the-future-of-intelligent-payments/2408149",
+      "https://www.manilatimes.net/2026/08/26/tmt-newswire/pr-newswire/growhill-wealth-launches-ai-workforce-to-power-independent-advisors-across-asia/2412223",
       "https://www.marktechpost.com/2026/08/21/anthropic-brings-claude-mythos-5-to-claude-security/",
       "https://www.privatebankerinternational.com/news/jpmorgan-softens-share-backed-loans/",
-      "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/",
       "https://www.scmp.com/business/banking-finance/article/3364835/hong-kong-stock-exchange-extends-listing-application-window-12-months",
       "https://www.scmp.com/business/banking-finance/article/3364838/wall-street-helped-build-modern-china-it-now-being-cast-aside",
       "https://www.scmp.com/business/banking-finance/article/3364976/yuan-hong-kong-dollar-bonds-surge-issuers-seek-cheaper-funding-amid-rising-us-costs",
@@ -45,37 +44,22 @@
       "Bank of China (Hong Kong) embeds Ant's AI-powered payments rails \u2014 a live competitor benchmark for HSBC",
       "Citadel's forced unwind of an AI-infrastructure hedge fund turns concentration-risk warnings into a real deleveraging event",
       "DBS locks in Singapore's first bank-government AI-reskilling pact \u2014 a playbook HSBC hasn't matched",
-      "DBS scales agentic AI to 1,500 relationship and credit risk managers, automating 70+ credit tasks",
       "DBS's near-threefold jump in millennial affluent clients is a direct AUM threat in HSBC's Singapore backyard",
       "Deutsche Bank helps shape Google's new banking AI platform \u2014 the same cloud partner HSBC's AI bet rides on",
       "Following the IPO run-up we covered on 21 August, Anthropic posts its first operating profit \u2014 a vendor-concentration signal, not just a valuation story",
       "HKEX loosens listing rules just as Hong Kong's IPO revival feeds the private-wealth pipeline",
       "HSBC Private Bank adds four senior Asia hires as UBS and Deutsche Bank race to staff up for the same AI-wealth boom",
-      "HSBC and Standard Chartered complete first live interbank transaction on Swift's blockchain ledger",
-      "HSBC joins Citi, Deutsche Bank, StanChart and Barclays adopting Ant International's FalconTST AI model",
+      "HSBC weighs merging Singapore's wholesale, retail and private banking units into one entity",
       "Hang Seng keeps opening HK wealth centres even as Beijing tightens scrutiny of mainland money flowing in",
       "Hong Kong formally tables its hedge fund tax break as Singapore counters \u2014 the wealth-hub fee war turns legislative",
+      "Hong Kong regulators wave through 36 agentic-AI pilots spanning banking, payments and wealth",
+      "Hong Kong wealthtech Growhill switches on an AI workforce for independent advisors",
       "JPMorgan loosens its 135-day share-lending rule specifically to capture AI-boom wealth ahead of an expected Anthropic IPO",
       "Standard Chartered beats HSBC to market as first bank live on HK's regulated HKD stablecoin",
       "Wall Street's fading access in Beijing is a quiet tailwind for Asia-based HSBC",
       "Yuan and HKD bonds outpace USD issuance as borrowing costs rise \u2014 a funding-cost shift with a wealth-flow read-through"
     ],
     "daily": [
-      {
-        "date": "2026-08-20",
-        "urls": [
-          "https://www.bloomberg.com/news/articles/2026-08-20/ubs-s-baweja-says-margin-pressure-is-a-risk-for-stocks-in-2027",
-          "https://www.businesswire.com/news/home/20260819055561/en/Ant-Internationals-FalconTST-Model-2.0-Achieves-SOTA-Elevating-Predictive-AI-Application-in-Finance-to-New-Levels",
-          "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
-          "https://www.manilatimes.net/2026/08/19/tmt-newswire/pr-newswire/dbs-hong-kong-partners-with-visa-preface-to-empower-customers-with-ai-readiness-skills-for-the-future-of-intelligent-payments/2408149",
-          "https://www.sc.com/en/press-release/standard-chartered-and-hsbc-execute-first-live-tokenised-deposit-transaction-on-swifts-blockchain-based-ledger/"
-        ],
-        "topics": [
-          "HSBC and Standard Chartered complete first live interbank transaction on Swift's blockchain ledger",
-          "HSBC joins Citi, Deutsche Bank, StanChart and Barclays adopting Ant International's FalconTST AI model",
-          "DBS scales agentic AI to 1,500 relationship and credit risk managers, automating 70+ credit tasks"
-        ]
-      },
       {
         "date": "2026-08-21",
         "urls": [
@@ -163,6 +147,20 @@
           "HSBC Private Bank adds four senior Asia hires as UBS and Deutsche Bank race to staff up for the same AI-wealth boom",
           "JPMorgan loosens its 135-day share-lending rule specifically to capture AI-boom wealth ahead of an expected Anthropic IPO",
           "Anthropic's $45bn Nscale compute deal deepens the vendor-concentration exposure already flagged inside banking"
+        ]
+      },
+      {
+        "date": "2026-08-27",
+        "urls": [
+          "https://technode.global/2026/08/27/hong-kong-genai-sandbox-agentic-ai-pilots/",
+          "https://www.anthropic.com/news",
+          "https://www.bloomberg.com/news/articles/2026-08-27/hsbc-mulls-restructuring-singapore-units-to-simplify-operations",
+          "https://www.manilatimes.net/2026/08/26/tmt-newswire/pr-newswire/growhill-wealth-launches-ai-workforce-to-power-independent-advisors-across-asia/2412223"
+        ],
+        "topics": [
+          "HSBC weighs merging Singapore's wholesale, retail and private banking units into one entity",
+          "Hong Kong regulators wave through 36 agentic-AI pilots spanning banking, payments and wealth",
+          "Hong Kong wealthtech Growhill switches on an AI workforce for independent advisors"
         ]
       }
     ]
