@@ -10,7 +10,7 @@ Usage:
 import json
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import date as _date, datetime, timezone
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -34,6 +34,36 @@ def _format_date(iso_str: str) -> str:
         return iso_str[:10]
 
 
+def _fmt_nav_date(iso_str: str) -> str:
+    """Short date label for the nav bar, e.g. '25 Aug 2026'."""
+    try:
+        return _date.fromisoformat(iso_str).strftime("%-d %b %Y")
+    except Exception:
+        return iso_str
+
+
+def _prev_nav_link(user_dir: Path, date_str: str):
+    """Find the most recent archived edition strictly before date_str.
+
+    nav.json is regenerated from the actual archived .html files by the
+    routine's own archive step (see ROUTINE.md step 7) after this render
+    runs, so at render time it holds every PRIOR day but not today yet —
+    read it as-is rather than mutating it here.
+    """
+    nav_path = user_dir / "nav.json"
+    if not nav_path.exists():
+        return None, None
+    try:
+        nav_dates = json.loads(nav_path.read_text(encoding="utf-8"))
+    except Exception:
+        return None, None
+    earlier = sorted(d for d in nav_dates if d < date_str)
+    if not earlier:
+        return None, None
+    prev_date = earlier[-1]
+    return f"./{prev_date}.html", _fmt_nav_date(prev_date)
+
+
 def render(user_id: str) -> None:
     data_path = DOCS_DIR / user_id / "briefing_data.json"
     if not data_path.exists():
@@ -41,6 +71,7 @@ def render(user_id: str) -> None:
         sys.exit(1)
 
     data = json.loads(data_path.read_text(encoding="utf-8"))
+    prev_url, prev_label = _prev_nav_link(DOCS_DIR / user_id, data["date_str"])
 
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
@@ -72,6 +103,8 @@ def render(user_id: str) -> None:
         chart_data_json=json.dumps(data["chart_data"]),
         generated_at=data.get("generated_at", ""),
         total_articles=data.get("total_articles", 0),
+        prev_url=prev_url,
+        prev_label=prev_label,
     )
 
     out_path = DOCS_DIR / user_id / "index.html"
