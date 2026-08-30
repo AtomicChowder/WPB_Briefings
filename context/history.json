@@ -1,14 +1,12 @@
 {
   "adam": {
-    "last_updated": "2026-08-29",
+    "last_updated": "2026-08-30",
     "covered_urls": [
       "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services",
       "https://finance.yahoo.com/technology/ai/articles/anthropic-pitches-ipo-investors-30-172107288.html",
       "https://fintech.global/2026/08/28/only-21-of-banks-measure-ais-revenue-impact/",
       "https://fintechnews.sg/136424/digitalassets/uob-hsbc-tokenised-deposits/",
       "https://fundselectorasia.com/hsbc-private-bank-bolsters-singapore-and-india-leadership-teams/",
-      "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
-      "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
       "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/",
       "https://technode.global/2026/08/27/hong-kong-genai-sandbox-agentic-ai-pilots/",
       "https://www.androidauthority.com/claude-outage-august-24-3702012/",
@@ -16,29 +14,27 @@
       "https://www.bloomberg.com/news/articles/2026-08-25/hsbc-buys-at-least-3-billion-india-bonds-after-fx-deposit-boost",
       "https://www.bloomberg.com/news/articles/2026-08-27/hsbc-mulls-restructuring-singapore-units-to-simplify-operations",
       "https://www.bloomberg.com/news/articles/2026-08-28/softbank-seeks-another-10-billion-loan-for-openai-stake-funding",
+      "https://www.bloomberg.com/news/articles/2026-08-30/stock-market-today-dow-s-p-live-updates",
       "https://www.brecorder.com/news/40436446/chinese-yuan-slips-from-3-12-year-high-after-pboc-signals-unease-over-rapid-gains",
       "https://www.caproasia.com/2026/08/24/japan-nomura-international-wealth-management-hires-uob-private-bank-chomplern-ueavivatsakul-as-executive-director-in-singapore-16-years-private-banking-financial-industry-experience-at-citigroup-k/",
       "https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html",
       "https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html",
+      "https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html",
       "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
       "https://www.dbs.com/newsroom/DBS_inks_industrys_first_MOU_with_IBF_to_jointly_uplift_upskill_and_upbuild_Singapores_financial_sector_workforce_for_the_AI_era",
-      "https://www.dbs.com/newsroom/DBS_records_near_threefold_growth_in_millennial_affluent_clients_as_wealth_advice_and_investments_gain_ground_in_Singapore",
       "https://www.fool.com/investing/2026/08/22/ipo-fever-heats-up-for-openai-and-anthropic/",
       "https://www.japantimes.co.jp/business/2026/08/28/tech/anthropic-claude-ai-robots/",
       "https://www.manilatimes.net/2026/08/26/tmt-newswire/pr-newswire/growhill-wealth-launches-ai-workforce-to-power-independent-advisors-across-asia/2412223",
       "https://www.privatebankerinternational.com/news/jpmorgan-softens-share-backed-loans/",
-      "https://www.scmp.com/business/banking-finance/article/3364838/wall-street-helped-build-modern-china-it-now-being-cast-aside",
       "https://www.scmp.com/business/banking-finance/article/3364976/yuan-hong-kong-dollar-bonds-surge-issuers-seek-cheaper-funding-amid-rising-us-costs",
       "https://www.scmp.com/business/money/wealth/article/3365071/hang-seng-bank-doubles-down-wealth-hubs-despite-beijings-tighter-investment-scrutiny",
       "https://www.thenationalnews.com/business/banking/2026/08/25/banks-cant-afford-to-fall-behind-on-ai-but-can-they-afford-for-it-to-fail/"
     ],
     "covered_topics": [
-      "A 27bn-parameter challenger just out-performed Anthropic and OpenAI at scientific research replication",
       "Anthropic pushes Claude beyond software into robots and lab hardware with a new Model Hardware Standard",
       "Anthropic's $30tn TAM pitch to IPO investors turns a vendor-risk story into a valuation-credibility one",
       "Anthropic's $45bn Nscale compute deal deepens the vendor-concentration exposure already flagged inside banking",
       "DBS locks in Singapore's first bank-government AI-reskilling pact \u2014 a playbook HSBC hasn't matched",
-      "DBS's near-threefold jump in millennial affluent clients is a direct AUM threat in HSBC's Singapore backyard",
       "Deutsche Bank helps shape Google's new banking AI platform \u2014 the same cloud partner HSBC's AI bet rides on",
       "Following the IPO run-up we covered on 21 August, Anthropic posts its first operating profit \u2014 a vendor-concentration signal, not just a valuation story",
       "HSBC Private Bank adds four senior Asia hires as UBS and Deutsche Bank race to staff up for the same AI-wealth boom",
@@ -48,27 +44,13 @@
       "Hong Kong wealthtech Growhill switches on an AI workforce for independent advisors",
       "JPMorgan loosens its 135-day share-lending rule specifically to capture AI-boom wealth ahead of an expected Anthropic IPO",
       "Judge rules Pentagon's blacklisting of Anthropic was illegal, testing whether AI labs can enforce their own safety lines",
+      "OpenAI cuts off Musk's Cursor; Anthropic doubles down \u2014 a live vendor lock-in case study",
       "SoftBank's second $10bn OpenAI-stake loan shows banks are now underwriting AI-lab equity risk directly",
       "Standard Chartered beats HSBC to market as first bank live on HK's regulated HKD stablecoin",
       "UOB joins HSBC's tokenised-deposit rail on Swift, becoming first Singapore-headquartered bank live on the ledger",
-      "Wall Street's fading access in Beijing is a quiet tailwind for Asia-based HSBC",
       "Yuan and HKD bonds outpace USD issuance as borrowing costs rise \u2014 a funding-cost shift with a wealth-flow read-through"
     ],
     "daily": [
-      {
-        "date": "2026-08-23",
-        "urls": [
-          "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
-          "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
-          "https://www.dbs.com/newsroom/DBS_records_near_threefold_growth_in_millennial_affluent_clients_as_wealth_advice_and_investments_gain_ground_in_Singapore",
-          "https://www.scmp.com/business/banking-finance/article/3364838/wall-street-helped-build-modern-china-it-now-being-cast-aside"
-        ],
-        "topics": [
-          "DBS's near-threefold jump in millennial affluent clients is a direct AUM threat in HSBC's Singapore backyard",
-          "A 27bn-parameter challenger just out-performed Anthropic and OpenAI at scientific research replication",
-          "Wall Street's fading access in Beijing is a quiet tailwind for Asia-based HSBC"
-        ]
-      },
       {
         "date": "2026-08-24",
         "urls": [
@@ -151,6 +133,16 @@
           "Judge rules Pentagon's blacklisting of Anthropic was illegal, testing whether AI labs can enforce their own safety lines",
           "UOB joins HSBC's tokenised-deposit rail on Swift, becoming first Singapore-headquartered bank live on the ledger",
           "Anthropic pushes Claude beyond software into robots and lab hardware with a new Model Hardware Standard"
+        ]
+      },
+      {
+        "date": "2026-08-30",
+        "urls": [
+          "https://www.bloomberg.com/news/articles/2026-08-30/stock-market-today-dow-s-p-live-updates",
+          "https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html"
+        ],
+        "topics": [
+          "OpenAI cuts off Musk's Cursor; Anthropic doubles down \u2014 a live vendor lock-in case study"
         ]
       }
     ]
