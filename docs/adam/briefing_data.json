@@ -3,137 +3,157 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 2 September 2026",
-  "date_str": "2026-09-02",
-  "generated_at": "2 Sep 2026, 23:11 UTC",
-  "total_articles": 6,
+  "briefing_date": "Thursday, 3 September 2026",
+  "date_str": "2026-09-03",
+  "generated_at": "3 Sep 2026, 23:11 UTC",
+  "total_articles": 7,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Citi, UBS and Deutsche Bank commit to a joint dollar stablecoin \u2014 HSBC isn't in the room",
-      "context_html": "Citi, UBS, Deutsche Bank, Bank of America and Goldman Sachs are among 21 banks and asset managers committing to build a jointly-owned company to issue a US-dollar stablecoin by H1 2027, aimed at wholesale settlement and cross-border payments. HSBC \u2014 which already holds one of Hong Kong's first stablecoin licences and runs a live tokenised-deposit rail across Hong Kong, Singapore, the UK and Luxembourg \u2014 sits outside this particular consortium, leaving a real question for Adam's team: is that a deliberate bet on HSBC's own regulator-anchored rail over a bank-consortium coin, or ground being ceded on infrastructure three direct competitors are now building together.",
+      "headline": "Anthropic scraps blanket Claude data retention for a customer-held-data model \u2014 the governance bar for every bank AI vendor just moved",
+      "context_html": "Anthropic's new Enterprise Frontier Safeguards keeps misuse-detection scanning but moves the underlying activity logs into the customer's own cloud rather than Anthropic's, directly answering the objection regulated firms have raised about GenAI vendor data retention. <strong>Kate Jensen, who leads Anthropic's Americas business</strong>, said the design lets enterprises get the safety benefits \"without having to compromise on their own privacy posture.\" For Adam, this is a template competitors and vendors alike will now be measured against as HSBC evaluates which LLM providers meet regulated-industry data-control requirements for Wealth Intelligence and future agentic rollouts.",
       "source_links": [
         [
-          "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
-          "21 banks team up on stablecoin venture"
+          "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+          "Anthropic: Enterprise Frontier Safeguards"
+        ],
+        [
+          "https://www.theregister.com/ai-and-ml/2026/09/02/anthropic-promises-zero-data-retention-but-customers-must-check-it-worked/5293789",
+          "Anthropic promises zero data retention"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "OpenAI's Astra is the first model to cross the 'Critical' cyber-risk line",
-      "context_html": "Astra is OpenAI's first model rated capable of independently finding and exploiting zero-day vulnerabilities without a human directing each step \u2014 a governance bar that has moved twice in a single week, coming days after 1,200 experimental agents self-organised a real attack on Hugging Face infrastructure. For Adam, every AI vendor touching HSBC client data or agentic workflows needs its risk review re-run against this new ceiling, not deferred to the next scheduled cycle.",
+      "headline": "Standard Chartered becomes the first G-SIB to offer institutional crypto trading in the UAE, widening the digital-asset gap with HSBC's tokenisation-only approach",
+      "context_html": "Standard Chartered now lets institutional clients trade Bitcoin and Ether spot through its existing FX platforms in the DIFC, extending the UK launch it pioneered in 2025. <strong>Rola Abu Manneh, CEO for UAE, Middle East and Pakistan at Standard Chartered</strong>, called it \"a significant step in broadening our regulated digital asset proposition.\" HSBC's digital-asset strategy remains anchored in tokenised deposits and its forthcoming PayMe stablecoin \u2014 a deliberately narrower bet than StanChart's move into direct crypto-asset trading, and a live test of which approach institutional and private banking clients actually want.",
       "source_links": [
         [
-          "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
-          "OpenAI's Astra crosses 'Critical' cyber threshold"
+          "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
+          "StanChart first G-SIB on UAE crypto trading"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Iran-driven oil spike revives Fed hike bets, now pricing 57.5% odds for September",
-      "context_html": "Renewed US-Iran hostilities pushed oil above $95 a barrel and the 10-year Treasury yield to 4.75%, flipping futures markets to price a near-60% chance the Fed hikes a quarter point at its 15-16 September meeting \u2014 even as the NY Fed's John Williams publicly pushed back on the need for one. A surprise hike would tighten financial conditions just as HSBC's wealth business leans on AUM growth and risk appetite for fee income, making the next two weeks worth watching closely on the COO dashboard.",
+      "headline": "Deloitte data shows a trust gap that could stall RM-facing AI rollouts: clients use gen AI but don't believe what it tells them",
+      "context_html": "Only 46% of banking customers trust gen-AI-generated information versus 79% who trust a bank's own website, even as most already use the tools \u2014 and over 40% of financial professionals have now personally encountered deepfake-enabled fraud attempts. <strong>Val Srinivas of Deloitte's Center for Financial Services</strong> co-authored the research underpinning the finding. For Adam, this is a direct data point for the change-execution case on Wealth Intelligence and any RM-facing GenAI tool: adoption metrics alone won't prove value if clients quietly discount what the AI tells them, and the deepfake trendline raises the bar on RM identity-verification controls.",
       "source_links": [
         [
-          "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-1-dow-sp-500-nasdaq-080617884.html",
-          "Stocks drop as oil tops $95, Fed bets shift"
+          "http://bankingjournal.aba.com/2026/09/survey-finds-many-bank-customers-use-gen-ai-but-dont-trust-it/",
+          "Survey: bank customers use gen AI but don't trust it"
+        ],
+        [
+          "https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html",
+          "Deloitte: deepfake banking fraud risk rising"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Competitor Intelligence": [
-      {
-        "id": "art01",
-        "title": "Citi, UBS, Deutsche Bank among 21 banks forming joint dollar stablecoin venture",
-        "url": "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
-        "source": "CoinDesk",
-        "published_at": "2026-09-01",
-        "summary": "Twenty-one banks and asset managers \u2014 including Citi, UBS, Deutsche Bank, Bank of America, Goldman Sachs, Wells Fargo and Fidelity \u2014 committed on 1 September to form a jointly-owned company to issue a US-dollar stablecoin, targeted for launch in the first half of 2027. The group, which has more than doubled in size since an initial 10-bank exploration in October 2025, plans to focus first on wholesale payments and digital-asset settlement, with a euro token to follow.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 4,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 8
-      }
-    ],
     "AI & Technology": [
       {
-        "id": "art02",
-        "title": "OpenAI's Astra becomes first model to cross 'Critical' cybersecurity threshold",
-        "url": "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
-        "source": "CNBC",
-        "published_at": "2026-09-01",
-        "summary": "OpenAI's forthcoming Astra model is the first to cross the company's 'Critical' cybersecurity capability threshold, able to independently discover and exploit previously unknown security flaws without step-by-step human guidance. OpenAI has delayed broader release and is initially limiting hands-on access to vetted testers under its Preparedness Framework safeguards.",
+        "id": "art01",
+        "title": "Anthropic launches Enterprise Frontier Safeguards, ending blanket Claude data retention",
+        "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+        "source": "Anthropic / The Register",
+        "published_at": "2026-09-02",
+        "summary": "Anthropic unveiled Enterprise Frontier Safeguards (EFS), replacing its 30-day default data-retention policy with a model where Claude activity logs are scanned for misuse but stored in the customer's own cloud infrastructure rather than Anthropic's. The offering rolls out in phases from this autumn and will not change model behaviour, pricing or rate limits.",
         "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 4,
         "category": "AI & Technology",
-        "is_update": false,
         "user_relevance": 8
-      },
-      {
-        "id": "art05",
-        "title": "Anthropic launches Claude Fable 5.1 and Mythos 5.1, its most capable models yet",
-        "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
-        "source": "VentureBeat",
-        "published_at": "2026-09-01",
-        "summary": "Anthropic released Claude Fable 5.1 and Claude Mythos 5.1, its most capable models yet, three months after Fable 5's June launch, with claimed gains over Fable 5, Opus 5 and GPT-5.6 Sol on coding and reasoning benchmarks. An improved prompt-caching mechanism cuts typical workload costs by 25%, rising to 45% for agent-heavy applications, and Claude Code users should see roughly 60% fewer cybersecurity false positives.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 7,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
       },
       {
         "id": "art06",
-        "title": "Google ships Gemini 3.8 Flash, its third Flash update in three months",
-        "url": "https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049",
-        "source": "The Register",
+        "title": "Deloitte: bank customers use gen AI tools but still don't trust them with sensitive information",
+        "url": "http://bankingjournal.aba.com/2026/09/survey-finds-many-bank-customers-use-gen-ai-but-dont-trust-it/",
+        "source": "ABA Banking Journal",
         "published_at": "2026-09-02",
-        "summary": "Google shipped Gemini 3.8 Flash on 2 September, its third Flash-tier update in three months, with gains in software engineering, agentic tasks and multi-step reasoning over 3.7 Flash. It is priced the same as its predecessor and is already live across the Gemini app, AI Mode, Google Sheets and developer tools including AI Studio and the Gemini API.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 6,
+        "summary": "A Deloitte Center for Financial Services survey of roughly 2,600 banking customers found 72% are wary of sharing financial details with gen AI tools and only 46% trust AI-generated banking information, versus 79% who trust a bank's own website. Separately, Deloitte's fraud research found over 40% of financial professionals have already encountered deepfakes used in fraud attempts.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
-        "is_update": false,
+        "user_relevance": 8
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art02",
+        "title": "Standard Chartered becomes first G-SIB to offer institutional Bitcoin and Ether spot trading in the UAE",
+        "url": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
+        "source": "CoinDesk",
+        "published_at": "2026-09-03",
+        "summary": "Standard Chartered's DIFC-regulated entity began offering institutional clients spot Bitcoin and Ether trading integrated into its existing FX platforms, with settlement through a custodian of the client's choice. It is the first Global Systemically Important Bank to offer the capability in the UAE, extending a service it first launched in the UK in 2025.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 4,
+        "category": "Competitor Intelligence",
         "user_relevance": 6
       }
     ],
-    "Regulatory & Markets": [
+    "Private Banking & Wealth": [
       {
         "id": "art03",
-        "title": "US stocks slide as Iran tensions push oil above $95, Fed hike odds near 60%",
-        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-1-dow-sp-500-nasdaq-080617884.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-09-01",
-        "summary": "US stocks fell for a second straight session on 1 September as renewed US-Iran hostilities pushed oil above $95 a barrel and lifted the 10-year Treasury yield to 4.75%. Futures markets priced a roughly 57.5% chance of a quarter-point Fed rate hike at the 15-16 September FOMC meeting, even as New York Fed President John Williams pushed back publicly, saying there are 'no clear signs' a hike is needed.",
-        "hsbc_relevancy": 6,
+        "title": "WealthAi launches AI-native platform for independent wealth advisers",
+        "url": "https://fintech.global/2026/09/03/wealthai-launches-ai-platform-for-independent-advisers/",
+        "source": "FinTech Global",
+        "published_at": "2026-09-03",
+        "summary": "WealthAi expanded its wealth-management operating system with a version aimed at independent advisers and smaller firms, bundling AI meeting notetaking, CRM, document generation and compliance monitoring into one platform. Beta firms reported routine client-administration time falling 60% and the platform can be deployed within days without replacing existing practice-management systems.",
+        "hsbc_relevancy": 3,
         "adam_rel": 7,
-        "noise_level": 5,
-        "category": "Regulatory & Markets",
-        "is_update": false,
+        "noise_level": 1,
+        "category": "Private Banking & Wealth",
         "user_relevance": 7
       }
     ],
     "HSBC News": [
       {
         "id": "art04",
-        "title": "HSBC's Liao: China now drives 30% of global AI-related exports",
-        "url": "https://www.thestandard.com.hk/finance/article/341526/China-leads-global-tech-exports-triple-boost-from-AI-robotics-and-biotech-HSBC",
-        "source": "The Standard (HK)",
-        "published_at": "2026-09-01",
-        "summary": "At HSBC's 13th Annual China Conference in Shenzhen, co-CEO for Asia and the Middle East David Liao told more than 1,500 attendees that mainland China and Hong Kong now account for 30% of global AI-related exports by value, with robotics, AI and innovative medicines emerging as new export categories. Liao pointed to Shenzhen \u2014 which hosts the APEC Economic Leaders' Meeting in November \u2014 as a hub for AI-driven investment opportunity across the region.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 6,
-        "noise_level": 2,
+        "title": "HSBC Asset Management adds sterling-hedged share classes to its Sukuk UCITS ETF",
+        "url": "https://etfexpress.com/2026/09/03/hsbc-am-launches-sterling-hedged-share-classes-for-sukuk-ucits-etf/",
+        "source": "ETF Express",
+        "published_at": "2026-09-03",
+        "summary": "HSBC Asset Management introduced GBP FX-hedged share classes for its HSBC Global Funds ICAV \u2013 Global Sukuk UCITS ETF, which had previously offered only USD-based classes. The move is aimed at UK defined-contribution pension clients seeking Shariah-compliant fixed income exposure without unhedged currency risk.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 3,
+        "noise_level": 1,
         "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 3
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "art05",
+        "title": "New York Fed's Williams: bond-yield surge reflects AI investment boom, not inflation panic",
+        "url": "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
+        "source": "CNBC",
+        "published_at": "2026-09-02",
+        "summary": "New York Fed President John Williams said the recent rise in Treasury yields reflects strong investment demand tied to AI and data-centre buildout rather than runaway inflation, and that he is taking a wait-and-see approach on a September rate move. He described inflation expectations as \"well-anchored\" despite tariff- and Iran-war-linked price pressure.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 4,
+        "category": "Regulatory & Markets",
+        "is_update": true,
+        "user_relevance": 5
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art07",
+        "title": "Bank of America, Wells Fargo and BNY detail how AI is reshaping day-to-day operations",
+        "url": "https://www.bankingdive.com/news/banks-report-operational-changes-ai/825625/",
+        "source": "Banking Dive",
+        "published_at": "2026-09-02",
+        "summary": "Major US banks disclosed the operational scale of their AI rollouts: Bank of America said over 200,000 staff now use AI tools generating 400,000+ prompts a day, Wells Fargo said nearly 9 in 10 staff use its AI Teammate copilot, and BNY's CEO pointed to AI-driven productivity as a core value driver. McKinsey estimates AI could cut banking industry costs by up to 20%.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 7
       }
     ]
   },
@@ -141,94 +161,104 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Citi, UBS, Deutsche Bank among 21 banks forming joint dollar stablecoin venture",
-        "url": "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
-        "source": "CoinDesk",
-        "published_at": "2026-09-01",
-        "summary": "Twenty-one banks and asset managers \u2014 including Citi, UBS, Deutsche Bank, Bank of America, Goldman Sachs, Wells Fargo and Fidelity \u2014 committed on 1 September to form a jointly-owned company to issue a US-dollar stablecoin, targeted for launch in the first half of 2027. The group, which has more than doubled in size since an initial 10-bank exploration in October 2025, plans to focus first on wholesale payments and digital-asset settlement, with a euro token to follow.",
-        "hsbc_relevancy": 8,
+        "title": "Anthropic launches Enterprise Frontier Safeguards, ending blanket Claude data retention",
+        "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+        "source": "Anthropic / The Register",
+        "published_at": "2026-09-02",
+        "summary": "Anthropic unveiled Enterprise Frontier Safeguards (EFS), replacing its 30-day default data-retention policy with a model where Claude activity logs are scanned for misuse but stored in the customer's own cloud infrastructure rather than Anthropic's. The offering rolls out in phases from this autumn and will not change model behaviour, pricing or rate limits.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 4,
-        "category": "Competitor Intelligence",
-        "is_update": false,
+        "category": "AI & Technology",
         "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "OpenAI's Astra becomes first model to cross 'Critical' cybersecurity threshold",
-        "url": "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
-        "source": "CNBC",
-        "published_at": "2026-09-01",
-        "summary": "OpenAI's forthcoming Astra model is the first to cross the company's 'Critical' cybersecurity capability threshold, able to independently discover and exploit previously unknown security flaws without step-by-step human guidance. OpenAI has delayed broader release and is initially limiting hands-on access to vetted testers under its Preparedness Framework safeguards.",
+        "title": "Standard Chartered becomes first G-SIB to offer institutional Bitcoin and Ether spot trading in the UAE",
+        "url": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
+        "source": "CoinDesk",
+        "published_at": "2026-09-03",
+        "summary": "Standard Chartered's DIFC-regulated entity began offering institutional clients spot Bitcoin and Ether trading integrated into its existing FX platforms, with settlement through a custodian of the client's choice. It is the first Global Systemically Important Bank to offer the capability in the UAE, extending a service it first launched in the UK in 2025.",
         "hsbc_relevancy": 6,
-        "adam_rel": 8,
+        "adam_rel": 6,
         "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 8
+        "category": "Competitor Intelligence",
+        "user_relevance": 6
       },
       {
         "id": "art03",
-        "title": "US stocks slide as Iran tensions push oil above $95, Fed hike odds near 60%",
-        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-1-dow-sp-500-nasdaq-080617884.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-09-01",
-        "summary": "US stocks fell for a second straight session on 1 September as renewed US-Iran hostilities pushed oil above $95 a barrel and lifted the 10-year Treasury yield to 4.75%. Futures markets priced a roughly 57.5% chance of a quarter-point Fed rate hike at the 15-16 September FOMC meeting, even as New York Fed President John Williams pushed back publicly, saying there are 'no clear signs' a hike is needed.",
-        "hsbc_relevancy": 6,
+        "title": "WealthAi launches AI-native platform for independent wealth advisers",
+        "url": "https://fintech.global/2026/09/03/wealthai-launches-ai-platform-for-independent-advisers/",
+        "source": "FinTech Global",
+        "published_at": "2026-09-03",
+        "summary": "WealthAi expanded its wealth-management operating system with a version aimed at independent advisers and smaller firms, bundling AI meeting notetaking, CRM, document generation and compliance monitoring into one platform. Beta firms reported routine client-administration time falling 60% and the platform can be deployed within days without replacing existing practice-management systems.",
+        "hsbc_relevancy": 3,
         "adam_rel": 7,
-        "noise_level": 5,
-        "category": "Regulatory & Markets",
-        "is_update": false,
+        "noise_level": 1,
+        "category": "Private Banking & Wealth",
         "user_relevance": 7
       },
       {
         "id": "art04",
-        "title": "HSBC's Liao: China now drives 30% of global AI-related exports",
-        "url": "https://www.thestandard.com.hk/finance/article/341526/China-leads-global-tech-exports-triple-boost-from-AI-robotics-and-biotech-HSBC",
-        "source": "The Standard (HK)",
-        "published_at": "2026-09-01",
-        "summary": "At HSBC's 13th Annual China Conference in Shenzhen, co-CEO for Asia and the Middle East David Liao told more than 1,500 attendees that mainland China and Hong Kong now account for 30% of global AI-related exports by value, with robotics, AI and innovative medicines emerging as new export categories. Liao pointed to Shenzhen \u2014 which hosts the APEC Economic Leaders' Meeting in November \u2014 as a hub for AI-driven investment opportunity across the region.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 6,
-        "noise_level": 2,
+        "title": "HSBC Asset Management adds sterling-hedged share classes to its Sukuk UCITS ETF",
+        "url": "https://etfexpress.com/2026/09/03/hsbc-am-launches-sterling-hedged-share-classes-for-sukuk-ucits-etf/",
+        "source": "ETF Express",
+        "published_at": "2026-09-03",
+        "summary": "HSBC Asset Management introduced GBP FX-hedged share classes for its HSBC Global Funds ICAV \u2013 Global Sukuk UCITS ETF, which had previously offered only USD-based classes. The move is aimed at UK defined-contribution pension clients seeking Shariah-compliant fixed income exposure without unhedged currency risk.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 3,
+        "noise_level": 1,
         "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 3
       },
       {
         "id": "art05",
-        "title": "Anthropic launches Claude Fable 5.1 and Mythos 5.1, its most capable models yet",
-        "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
-        "source": "VentureBeat",
-        "published_at": "2026-09-01",
-        "summary": "Anthropic released Claude Fable 5.1 and Claude Mythos 5.1, its most capable models yet, three months after Fable 5's June launch, with claimed gains over Fable 5, Opus 5 and GPT-5.6 Sol on coding and reasoning benchmarks. An improved prompt-caching mechanism cuts typical workload costs by 25%, rising to 45% for agent-heavy applications, and Claude Code users should see roughly 60% fewer cybersecurity false positives.",
+        "title": "New York Fed's Williams: bond-yield surge reflects AI investment boom, not inflation panic",
+        "url": "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
+        "source": "CNBC",
+        "published_at": "2026-09-02",
+        "summary": "New York Fed President John Williams said the recent rise in Treasury yields reflects strong investment demand tied to AI and data-centre buildout rather than runaway inflation, and that he is taking a wait-and-see approach on a September rate move. He described inflation expectations as \"well-anchored\" despite tariff- and Iran-war-linked price pressure.",
         "hsbc_relevancy": 4,
-        "adam_rel": 7,
+        "adam_rel": 5,
         "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 7
+        "category": "Regulatory & Markets",
+        "is_update": true,
+        "user_relevance": 5
       },
       {
         "id": "art06",
-        "title": "Google ships Gemini 3.8 Flash, its third Flash update in three months",
-        "url": "https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049",
-        "source": "The Register",
+        "title": "Deloitte: bank customers use gen AI tools but still don't trust them with sensitive information",
+        "url": "http://bankingjournal.aba.com/2026/09/survey-finds-many-bank-customers-use-gen-ai-but-dont-trust-it/",
+        "source": "ABA Banking Journal",
         "published_at": "2026-09-02",
-        "summary": "Google shipped Gemini 3.8 Flash on 2 September, its third Flash-tier update in three months, with gains in software engineering, agentic tasks and multi-step reasoning over 3.7 Flash. It is priced the same as its predecessor and is already live across the Gemini app, AI Mode, Google Sheets and developer tools including AI Studio and the Gemini API.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 6,
+        "summary": "A Deloitte Center for Financial Services survey of roughly 2,600 banking customers found 72% are wary of sharing financial details with gen AI tools and only 46% trust AI-generated banking information, versus 79% who trust a bank's own website. Separately, Deloitte's fraud research found over 40% of financial professionals have already encountered deepfakes used in fraud attempts.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 8,
         "noise_level": 3,
         "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 8
+      },
+      {
+        "id": "art07",
+        "title": "Bank of America, Wells Fargo and BNY detail how AI is reshaping day-to-day operations",
+        "url": "https://www.bankingdive.com/news/banks-report-operational-changes-ai/825625/",
+        "source": "Banking Dive",
+        "published_at": "2026-09-02",
+        "summary": "Major US banks disclosed the operational scale of their AI rollouts: Bank of America said over 200,000 staff now use AI tools generating 400,000+ prompts a day, Wells Fargo said nearly 9 in 10 staff use its AI Teammate copilot, and BNY's CEO pointed to AI-driven productivity as a core value driver. McKinsey estimates AI could cut banking industry costs by up to 20%.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "Operations & Change",
+        "user_relevance": 7
       }
     ],
     "categories": {
-      "Competitor Intelligence": "#0891b2",
       "AI & Technology": "#6366f1",
+      "Competitor Intelligence": "#0891b2",
+      "Private Banking & Wealth": "#059669",
+      "HSBC News": "#dc2626",
       "Regulatory & Markets": "#d97706",
-      "HSBC News": "#dc2626"
+      "Operations & Change": "#7c3aed"
     }
   }
 }
