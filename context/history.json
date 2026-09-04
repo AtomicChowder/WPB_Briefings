@@ -1,12 +1,11 @@
 {
   "adam": {
-    "last_updated": "2026-09-03",
+    "last_updated": "2026-09-04",
     "covered_urls": [
       "http://bankingjournal.aba.com/2026/09/survey-finds-many-bank-customers-use-gen-ai-but-dont-trust-it/",
       "https://asianprivatebanker.com/private-wealth/technology-digital-innovation-private-wealth/augmenting-not-replacing-citi-hsbc-dbs-bet-on-ai-to-cut-rm-admin/",
       "https://etfexpress.com/2026/09/03/hsbc-am-launches-sterling-hedged-share-classes-for-sukuk-ucits-etf/",
       "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-1-dow-sp-500-nasdaq-080617884.html",
-      "https://finance.yahoo.com/technology/ai/articles/anthropic-pitches-ipo-investors-30-172107288.html",
       "https://fintech.global/2026/08/28/only-21-of-banks-measure-ais-revenue-impact/",
       "https://fintech.global/2026/09/03/wealthai-launches-ai-platform-for-independent-advisers/",
       "https://fintechnews.sg/136424/digitalassets/uob-hsbc-tokenised-deposits/",
@@ -15,24 +14,29 @@
       "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
       "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "https://www.bankingdive.com/news/banks-report-operational-changes-ai/825625/",
-      "https://www.bloomberg.com/news/articles/2026-08-28/softbank-seeks-another-10-billion-loan-for-openai-stake-funding",
       "https://www.bloomberg.com/news/articles/2026-08-30/stock-market-today-dow-s-p-live-updates",
+      "https://www.bloomberg.com/news/articles/2026-09-03/anthropic-nears-finalizing-15-billion-pre-ipo-credit-facility",
+      "https://www.bloomberg.com/news/articles/2026-09-03/openai-anthropic-spacexai-hit-by-service-outages-for-ai-models",
+      "https://www.bnnbloomberg.ca/business/company-news/2026/09/03/td-bank-coo-departing-after-less-than-one-year-in-the-job-in-latest-executive-shakeup/",
       "https://www.caproasia.com/2026/09/01/hong-kong-exchange-fund-reports-562-billion-hkd-4-4-trillion-aum-in-2026-july-lower-than-569-billion-hkd-4-46-trillion-aum-in-2026-june/",
       "https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html",
       "https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html",
       "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
       "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
+      "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
       "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
       "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
       "https://www.japantimes.co.jp/business/2026/08/28/tech/anthropic-claude-ai-robots/",
+      "https://www.scmp.com/business/banking-finance/article/3366260/hong-kong-regulator-reclassifies-certain-funds-exposure-private-markets",
+      "https://www.theasianbanker.com/press-releases/payme-and-global-payments-announce-strategic-partnership-to-drive-digital-payment-adoption-in-hong-kong",
       "https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049",
-      "https://www.thestandard.com.hk/finance/article/341526/China-leads-global-tech-exports-triple-boost-from-AI-robotics-and-biotech-HSBC"
+      "https://www.thestandard.com.hk/finance/article/341526/China-leads-global-tech-exports-triple-boost-from-AI-robotics-and-biotech-HSBC",
+      "https://www.thestandard.com.hk/finance/article/341833/Hang-Seng-Index-rises-300-points-at-open-amid-easing-rate-hike-fears"
     ],
     "covered_topics": [
       "1,200 OpenAI agents self-organised a real cyberattack \u2014 the governance floor for every bank agent programme just rose",
       "Anthropic pushes Claude beyond software into robots and lab hardware with a new Model Hardware Standard",
       "Anthropic scraps blanket Claude data retention for a customer-held-data model \u2014 the governance bar for every bank AI vendor just moved",
-      "Anthropic's $30tn TAM pitch to IPO investors turns a vendor-risk story into a valuation-credibility one",
       "Citi, HSBC and DBS converge on AI to strip RM admin \u2014 differentiation now rests on delivery pace",
       "Citi, UBS and Deutsche Bank commit to a joint dollar stablecoin \u2014 HSBC isn't in the room",
       "Deloitte data shows a trust gap that could stall RM-facing AI rollouts: clients use gen AI but don't believe what it tells them",
@@ -40,23 +44,14 @@
       "Judge rules Pentagon's blacklisting of Anthropic was illegal, testing whether AI labs can enforce their own safety lines",
       "OpenAI cuts off Musk's Cursor; Anthropic doubles down \u2014 a live vendor lock-in case study",
       "OpenAI's Astra is the first model to cross the 'Critical' cyber-risk line",
-      "SoftBank's second $10bn OpenAI-stake loan shows banks are now underwriting AI-lab equity risk directly",
+      "OpenAI's GPT-6 Astra goes enterprise-wide, raising the bar every bank AI vendor must now clear",
+      "OpenAI, Anthropic and xAI go down together \u2014 a live stress test of bank AI vendor concentration",
+      "PayMe's merchant-network deal with Global Payments shows HSBC scaling its own super-app ambitions",
       "Sony and Warner sue Anthropic on the eve of its IPO \u2014 GenAI vendor legal risk is now a board-level line item",
       "Standard Chartered becomes the first G-SIB to offer institutional crypto trading in the UAE, widening the digital-asset gap with HSBC's tokenisation-only approach",
       "UOB joins HSBC's tokenised-deposit rail on Swift, becoming first Singapore-headquartered bank live on the ledger"
     ],
     "daily": [
-      {
-        "date": "2026-08-28",
-        "urls": [
-          "https://finance.yahoo.com/technology/ai/articles/anthropic-pitches-ipo-investors-30-172107288.html",
-          "https://www.bloomberg.com/news/articles/2026-08-28/softbank-seeks-another-10-billion-loan-for-openai-stake-funding"
-        ],
-        "topics": [
-          "Anthropic's $30tn TAM pitch to IPO investors turns a vendor-risk story into a valuation-credibility one",
-          "SoftBank's second $10bn OpenAI-stake loan shows banks are now underwriting AI-lab equity risk directly"
-        ]
-      },
       {
         "date": "2026-08-29",
         "urls": [
@@ -126,6 +121,23 @@
           "Anthropic scraps blanket Claude data retention for a customer-held-data model \u2014 the governance bar for every bank AI vendor just moved",
           "Standard Chartered becomes the first G-SIB to offer institutional crypto trading in the UAE, widening the digital-asset gap with HSBC's tokenisation-only approach",
           "Deloitte data shows a trust gap that could stall RM-facing AI rollouts: clients use gen AI but don't believe what it tells them"
+        ]
+      },
+      {
+        "date": "2026-09-04",
+        "urls": [
+          "https://www.bloomberg.com/news/articles/2026-09-03/anthropic-nears-finalizing-15-billion-pre-ipo-credit-facility",
+          "https://www.bloomberg.com/news/articles/2026-09-03/openai-anthropic-spacexai-hit-by-service-outages-for-ai-models",
+          "https://www.bnnbloomberg.ca/business/company-news/2026/09/03/td-bank-coo-departing-after-less-than-one-year-in-the-job-in-latest-executive-shakeup/",
+          "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+          "https://www.scmp.com/business/banking-finance/article/3366260/hong-kong-regulator-reclassifies-certain-funds-exposure-private-markets",
+          "https://www.theasianbanker.com/press-releases/payme-and-global-payments-announce-strategic-partnership-to-drive-digital-payment-adoption-in-hong-kong",
+          "https://www.thestandard.com.hk/finance/article/341833/Hang-Seng-Index-rises-300-points-at-open-amid-easing-rate-hike-fears"
+        ],
+        "topics": [
+          "OpenAI, Anthropic and xAI go down together \u2014 a live stress test of bank AI vendor concentration",
+          "OpenAI's GPT-6 Astra goes enterprise-wide, raising the bar every bank AI vendor must now clear",
+          "PayMe's merchant-network deal with Global Payments shows HSBC scaling its own super-app ambitions"
         ]
       }
     ]
