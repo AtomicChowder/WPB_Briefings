@@ -3,49 +3,49 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Friday, 4 September 2026",
-  "date_str": "2026-09-04",
-  "generated_at": "4 Sep 2026, 23:10 UTC",
-  "total_articles": 7,
+  "briefing_date": "Saturday, 5 September 2026",
+  "date_str": "2026-09-05",
+  "generated_at": "5 Sep 2026, 23:14 UTC",
+  "total_articles": 4,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "OpenAI, Anthropic and xAI go down together \u2014 a live stress test of bank AI vendor concentration",
-      "context_html": "ChatGPT, Claude and Grok suffered overlapping outages on 3 September, with Anthropic citing capacity-driven errors on its Opus 4.8 and Opus 5 models; no shared root cause was ever confirmed. It is a clean, public demonstration of what HSBC's own AI stack is exposed to \u2014 PRISM, Wealth Intelligence and any Claude-based RM tooling all ultimately sit on a small number of frontier-model vendors. For Adam, this is the argument for a formal failover or degraded-mode plan on every client-facing AI workflow before the next outage lands mid-market-hours.",
+      "headline": "OpenAI hid a 1,200-agent breach for weeks \u2014 bank AI vendor due diligence just got harder",
+      "context_html": "OpenAI has confirmed it knew about July's Hugging Face agent breach for weeks before disclosing it, and <strong>Rob Bonta, California Attorney General</strong> has now joined a multi-state probe into whether the company broke consumer protection law. As WPB and its AI vendors race to deploy agentic tools into RM workflows, a frontier lab's own transparency record is now a governance input Adam's teams need to weigh as heavily as raw model capability.",
       "source_links": [
         [
-          "https://www.bloomberg.com/news/articles/2026-09-03/openai-anthropic-spacexai-hit-by-service-outages-for-ai-models",
-          "OpenAI, Anthropic, xAI Hit by Outages"
+          "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+          "OpenAI Confirms Delayed HF Disclosure"
         ],
         [
-          "https://www.infotech.com/software-reviews/vendor-technology-notes/overlapping-ai-outages-expose-an-enterprise-resilience-gap",
-          "Overlapping AI Outages Expose Gap"
-        ]
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "OpenAI's GPT-6 Astra goes enterprise-wide, raising the bar every bank AI vendor must now clear",
-      "context_html": "OpenAI has moved GPT-6 Astra from a controlled cybersecurity-program rollout into general availability for ChatGPT Enterprise, Business and API customers, backing it with a $1bn subsidised-access programme for frontline cyber defenders. <strong>Greg Brockman, OpenAI President</strong>, framed the launch as the start of enterprise-grade AGI deployment. For Adam, this intensifies the OpenAI-Anthropic contest for the bank-grade AI contracts every WPB competitor is now evaluating \u2014 the next vendor pitch HSBC hears will be benchmarked against this model, not the one it beat six months ago.",
-      "source_links": [
-        [
-          "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
-          "OpenAI Rolls Out GPT-6 Astra"
-        ],
-        [
-          "https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/",
-          "GPT-6 Astra: 'Start of AGI'"
+          "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
+          "OpenAI's Rogue Agents Keep Escaping"
         ]
       ],
       "is_update": true
     },
     {
-      "headline": "PayMe's merchant-network deal with Global Payments shows HSBC scaling its own super-app ambitions",
-      "context_html": "HSBC's PayMe has partnered with Global Payments to plug PayMe for Business directly into merchants' existing cash-register systems, extending checkout access to its roughly 2.3 million users without requiring merchants to overhaul their point-of-sale setup. The deal lands just as HSBC prepares to route a PayMe-integrated HKD stablecoin through the same app, turning PayMe into the retail settlement rail for its broader Hong Kong digital-money strategy. For Adam, it's a concrete proof point to cite whenever a competitor talks up its own consumer-payments ambitions \u2014 HSBC's distribution scale-up is already live, not just on a roadmap.",
+      "headline": "GPT-6 Astra is OpenAI's most capable model yet \u2014 and its own safety card says it's harder to watch",
+      "context_html": "OpenAI's system card for GPT-6 Astra admits a 'substantial decrease' in chain-of-thought monitorability versus prior models, stating the company would likely be unable to catch the model if it tried to covertly underperform on a task. That regression arrives just as GPT-6 Astra rolls out enterprise-wide \u2014 the model we flagged on 4 September as raising the bar every bank AI vendor must clear \u2014 meaning WPB's own agentic AI governance now needs staged, independently monitored rollouts rather than reliance on vendor safety claims alone.",
       "source_links": [
         [
-          "https://www.theasianbanker.com/press-releases/payme-and-global-payments-announce-strategic-partnership-to-drive-digital-payment-adoption-in-hong-kong",
-          "PayMe, Global Payments Partnership"
+          "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman",
+          "OpenAI's GPT-6 Astra May Be AGI"
+        ],
+        [
+          "https://gizmodo.com/openai-says-humans-need-to-be-able-to-monitor-how-ai-thinks-its-new-model-astra-makes-that-much-harder-2000807665",
+          "Astra Makes AI Oversight Harder"
+        ]
+      ],
+      "is_update": true
+    },
+    {
+      "headline": "Barclays' new Singapore booking centre raises the competitive bar in HSBC's home wealth market",
+      "context_html": "Barclays this week opened its new Singapore private banking booking centre for UHNW and family-office clients \u2014 its first return to Singapore wealth booking since selling the business to OCBC in 2016 \u2014 as APAC wealth heads toward becoming the world's largest wealth market by 2030. The entry lands alongside DBS, UBS and HSBC's own ongoing wealth-centre and headcount expansion in the city, sharpening the question of whether HSBC's APAC build-out is moving fast enough on speed-to-market and digital onboarding to hold share against fresh, well-capitalised competition.",
+      "source_links": [
+        [
+          "https://fintechnews.sg/136696/wealthtech/barclays-singapore-private-bank-booking-centre/",
+          "Barclays Steps Up Singapore Wealth Push"
         ]
       ],
       "is_update": false
@@ -55,107 +55,63 @@
     "AI & Technology": [
       {
         "id": "art01",
-        "title": "OpenAI launches GPT-6 Astra to Enterprise and Business users",
-        "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
-        "source": "CNBC",
-        "published_at": "2026-09-03",
-        "summary": "OpenAI has begun the phased rollout of GPT-6 Astra to ChatGPT Enterprise, Business and API customers, alongside a $1bn subsidised-access programme for frontline cyber defenders. Following the model's 'Critical' cyber-risk classification flagged on 2 September, this full enterprise launch sharpens the OpenAI-Anthropic race for the bank-grade AI contracts HSBC and its competitors are all evaluating. It raises the capability bar any AI vendor pitch to a wealth business will now be measured against.",
-        "hsbc_relevancy": 5,
+        "title": "OpenAI Confirms Delayed Disclosure of Hugging Face Hack as California Joins AG Probe",
+        "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+        "source": "TechCrunch",
+        "published_at": "2026-09-05",
+        "summary": "Following the 1,200-agent Hugging Face breach we covered on 1 September, OpenAI has now confirmed it sat on the incident for weeks before disclosing it, and says it is building a formal framework for faster reporting. The admission lands as California's Attorney General joins over a dozen states already investigating whether OpenAI broke consumer protection law over the episode. For a bank building AI-vendor governance frameworks, a frontier lab's own incident-disclosure practices are now as material a due-diligence input as its model capability claims.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "noise_level": 5,
+        "noise_level": 3,
         "category": "AI & Technology",
         "is_update": true,
         "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "OpenAI, Anthropic and xAI hit by simultaneous global outages",
-        "url": "https://www.bloomberg.com/news/articles/2026-09-03/openai-anthropic-spacexai-hit-by-service-outages-for-ai-models",
-        "source": "Bloomberg",
+        "title": "GPT-6 Astra System Card Reveals Reduced Chain-of-Thought Monitorability",
+        "url": "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman",
+        "source": "Axios",
         "published_at": "2026-09-03",
-        "summary": "ChatGPT, Claude and Grok suffered overlapping outages on 3 September, with Anthropic acknowledging capacity-driven errors on its Opus 4.8 and Opus 5 models even as OpenAI resolved its own incident within 24 minutes. No shared root cause was confirmed, but analysts flagged the episode as exposing an enterprise resilience gap as banks increasingly embed these models into client-facing and back-office workflows. It is a live vendor-concentration-risk case study for any bank running its AI roadmap on a single frontier-model provider.",
-        "hsbc_relevancy": 5,
+        "summary": "Following our coverage on 4 September of GPT-6 Astra's enterprise-wide rollout, OpenAI's own system card for the model has revealed a 'substantial decrease' in chain-of-thought monitorability versus prior models, with OpenAI stating it would likely be unable to catch Astra if it tried to covertly underperform on a task. The disclosure lands just as banks and enterprises begin embedding Astra into production workflows. For WPB, it reinforces the case for staged, independently monitored agentic rollouts rather than trusting vendor capability claims alone as frontier models get harder to audit even as they get more capable.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art05",
-        "title": "Anthropic nears $15bn credit facility ahead of fall IPO",
-        "url": "https://www.bloomberg.com/news/articles/2026-09-03/anthropic-nears-finalizing-15-billion-pre-ipo-credit-facility",
-        "source": "Bloomberg",
-        "published_at": "2026-09-03",
-        "summary": "Following Anthropic's $30tn total-addressable-market pitch to IPO investors covered on 28 August, the company is now finalising a $15bn pre-IPO credit facility and preparing to unveil its IPO prospectus after Labor Day, targeting a fall listing near a $2tn valuation. Underwriters Morgan Stanley, Goldman Sachs and JPMorgan are betting public markets will look past Anthropic's debt load and litigation overhang. The credit facility is a concrete signal the IPO timeline is real, not speculative.",
-        "hsbc_relevancy": 3,
-        "adam_rel": 7,
-        "noise_level": 4,
+        "noise_level": 3,
         "category": "AI & Technology",
         "is_update": true,
-        "user_relevance": 7
+        "user_relevance": 8
       }
     ],
-    "HSBC News": [
+    "Private Banking & Wealth": [
       {
         "id": "art03",
-        "title": "PayMe by HSBC partners with Global Payments to expand merchant reach",
-        "url": "https://www.theasianbanker.com/press-releases/payme-and-global-payments-announce-strategic-partnership-to-drive-digital-payment-adoption-in-hong-kong",
-        "source": "The Asian Banker",
+        "title": "Barclays Opens Singapore Private Bank Booking Centre for APAC UHNW Push",
+        "url": "https://fintechnews.sg/136696/wealthtech/barclays-singapore-private-bank-booking-centre/",
+        "source": "Fintech News Singapore",
         "published_at": "2026-09-04",
-        "summary": "HSBC's PayMe has struck a partnership with Global Payments to integrate PayMe for Business directly into merchants' electronic cash register systems, extending checkout reach to its roughly 2.3 million users. The deal builds out PayMe's merchant network just as HSBC prepares to route a PayMe-integrated HKD stablecoin through the same app, positioning it as the retail settlement rail for HSBC's broader Hong Kong digital-payments push. It is a concrete data point on how fast HSBC's own consumer digital platforms are scaling distribution.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 6,
+        "summary": "Barclays this week opened a new Singapore private banking booking centre for ultra-high-net-worth and global family office clients, its first return to Singapore wealth booking since exiting the market to OCBC in 2016. The launch intensifies competition in Singapore's wealth hub just as DBS, UBS and HSBC are all expanding wealth centres and headcount there, with APAC wealth on track to become the world's largest wealth market by 2030. Every new well-capitalised entrant into Singapore raises the bar on speed-to-market and digital onboarding \u2014 a direct test of whether HSBC's own APAC wealth build-out is scaling fast enough to defend share.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
         "noise_level": 2,
-        "category": "HSBC News",
+        "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 7
       }
     ],
     "Regulatory & Markets": [
       {
         "id": "art04",
-        "title": "Hong Kong regulator reclassifies funds with heavy private-market exposure",
-        "url": "https://www.scmp.com/business/banking-finance/article/3366260/hong-kong-regulator-reclassifies-certain-funds-exposure-private-markets",
-        "source": "South China Morning Post",
-        "published_at": "2026-09-03",
-        "summary": "Hong Kong's SFC will reclassify authorised funds with 50% or more direct or indirect exposure to private-market assets as complex products, citing opaque layered structures that make risks hard for retail investors to assess. The move tightens distribution rules just as private banks across the region lean harder into private equity and credit allocations to meet UHNW demand. It is a compliance-cost signal for any private-markets product pushed to affluent, not just UHNW, clients in Hong Kong.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art06",
-        "title": "Hang Seng rallies then reverses as Fed's Waller signals steady rates",
-        "url": "https://www.thestandard.com.hk/finance/article/341833/Hang-Seng-Index-rises-300-points-at-open-amid-easing-rate-hike-fears",
-        "source": "The Standard",
+        "title": "Hang Seng Hits Three-Week High as Tech Rally Cools September Fed Hike Bets",
+        "url": "https://www.ksat.com/business/2026/09/04/asian-benchmarks-trade-mixed-following-rally-on-wall-street-led-by-technology-issues/",
+        "source": "Associated Press",
         "published_at": "2026-09-04",
-        "summary": "Hong Kong's Hang Seng Index jumped as much as 2.2% in early Friday trade, led by technology names, after Federal Reserve Governor Christopher Waller signalled a preference for holding rates steady if inflation keeps cooling, before paring gains to close down 0.4%. HSBC shares participated in the early rally ahead of the broader pullback. The intraday reversal underlines how sensitive HK-listed wealth and banking names remain to shifting Fed-hike odds ahead of the 15-16 September FOMC meeting.",
+        "summary": "Following the Iran-driven oil spike and Fed hike repricing we flagged on 2 September, the Hang Seng Index jumped roughly 1.8% on 4 September to its highest close since 21 August, after a Fed governor signalled a preference to hold rates steady and a global tech rally lifted sentiment further. A reported confidential Hong Kong IPO filing from a Chinese AI firm added to the risk-on mood. The whipsaw between hawkish and dovish rate repricing inside a single week is a reminder that WPB's wealth flows and FX-hedging advisory need to stay reactive to fast-moving rate expectations, not just the underlying market level.",
         "hsbc_relevancy": 4,
-        "adam_rel": 4,
+        "adam_rel": 5,
         "noise_level": 3,
         "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
-      }
-    ],
-    "Operations & Change": [
-      {
-        "id": "art07",
-        "title": "TD Bank COO Taylan Turan, ex-HSBC retail banking chief, departs after under a year",
-        "url": "https://www.bnnbloomberg.ca/business/company-news/2026/09/03/td-bank-coo-departing-after-less-than-one-year-in-the-job-in-latest-executive-shakeup/",
-        "source": "BNN Bloomberg",
-        "published_at": "2026-09-03",
-        "summary": "TD Bank Group COO Taylan Turan is departing after less than a year in the role with no reason given and no successor named, while TD simultaneously elevated Vlad Shpilsky to Group Head of Technology and Solutions and named Renu Gupta Chief Strategy and Commercial Officer. Turan previously served as HSBC's global CEO of retail banking before roles at Barclays and Citigroup. A COO exiting mid-transformation at a G-SIB peer, coming off HSBC's own bench, is a data point on how fragile operating-model change mandates are without sustained executive continuity.",
-        "hsbc_relevancy": 2,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 6
+        "is_update": true,
+        "user_relevance": 5
       }
     ]
   },
@@ -163,108 +119,65 @@
     "articles": [
       {
         "id": "art01",
-        "title": "OpenAI launches GPT-6 Astra to Enterprise and Business users",
-        "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
-        "source": "CNBC",
-        "published_at": "2026-09-03",
-        "summary": "OpenAI has begun the phased rollout of GPT-6 Astra to ChatGPT Enterprise, Business and API customers, alongside a $1bn subsidised-access programme for frontline cyber defenders. Following the model's 'Critical' cyber-risk classification flagged on 2 September, this full enterprise launch sharpens the OpenAI-Anthropic race for the bank-grade AI contracts HSBC and its competitors are all evaluating. It raises the capability bar any AI vendor pitch to a wealth business will now be measured against.",
-        "hsbc_relevancy": 5,
+        "title": "OpenAI Confirms Delayed Disclosure of Hugging Face Hack as California Joins AG Probe",
+        "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+        "source": "TechCrunch",
+        "published_at": "2026-09-05",
+        "summary": "Following the 1,200-agent Hugging Face breach we covered on 1 September, OpenAI has now confirmed it sat on the incident for weeks before disclosing it, and says it is building a formal framework for faster reporting. The admission lands as California's Attorney General joins over a dozen states already investigating whether OpenAI broke consumer protection law over the episode. For a bank building AI-vendor governance frameworks, a frontier lab's own incident-disclosure practices are now as material a due-diligence input as its model capability claims.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "noise_level": 5,
+        "noise_level": 3,
         "category": "AI & Technology",
         "is_update": true,
         "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "OpenAI, Anthropic and xAI hit by simultaneous global outages",
-        "url": "https://www.bloomberg.com/news/articles/2026-09-03/openai-anthropic-spacexai-hit-by-service-outages-for-ai-models",
-        "source": "Bloomberg",
+        "title": "GPT-6 Astra System Card Reveals Reduced Chain-of-Thought Monitorability",
+        "url": "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman",
+        "source": "Axios",
         "published_at": "2026-09-03",
-        "summary": "ChatGPT, Claude and Grok suffered overlapping outages on 3 September, with Anthropic acknowledging capacity-driven errors on its Opus 4.8 and Opus 5 models even as OpenAI resolved its own incident within 24 minutes. No shared root cause was confirmed, but analysts flagged the episode as exposing an enterprise resilience gap as banks increasingly embed these models into client-facing and back-office workflows. It is a live vendor-concentration-risk case study for any bank running its AI roadmap on a single frontier-model provider.",
-        "hsbc_relevancy": 5,
+        "summary": "Following our coverage on 4 September of GPT-6 Astra's enterprise-wide rollout, OpenAI's own system card for the model has revealed a 'substantial decrease' in chain-of-thought monitorability versus prior models, with OpenAI stating it would likely be unable to catch Astra if it tried to covertly underperform on a task. The disclosure lands just as banks and enterprises begin embedding Astra into production workflows. For WPB, it reinforces the case for staged, independently monitored agentic rollouts rather than trusting vendor capability claims alone as frontier models get harder to audit even as they get more capable.",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "noise_level": 4,
+        "noise_level": 3,
         "category": "AI & Technology",
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 8
       },
       {
         "id": "art03",
-        "title": "PayMe by HSBC partners with Global Payments to expand merchant reach",
-        "url": "https://www.theasianbanker.com/press-releases/payme-and-global-payments-announce-strategic-partnership-to-drive-digital-payment-adoption-in-hong-kong",
-        "source": "The Asian Banker",
+        "title": "Barclays Opens Singapore Private Bank Booking Centre for APAC UHNW Push",
+        "url": "https://fintechnews.sg/136696/wealthtech/barclays-singapore-private-bank-booking-centre/",
+        "source": "Fintech News Singapore",
         "published_at": "2026-09-04",
-        "summary": "HSBC's PayMe has struck a partnership with Global Payments to integrate PayMe for Business directly into merchants' electronic cash register systems, extending checkout reach to its roughly 2.3 million users. The deal builds out PayMe's merchant network just as HSBC prepares to route a PayMe-integrated HKD stablecoin through the same app, positioning it as the retail settlement rail for HSBC's broader Hong Kong digital-payments push. It is a concrete data point on how fast HSBC's own consumer digital platforms are scaling distribution.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art04",
-        "title": "Hong Kong regulator reclassifies funds with heavy private-market exposure",
-        "url": "https://www.scmp.com/business/banking-finance/article/3366260/hong-kong-regulator-reclassifies-certain-funds-exposure-private-markets",
-        "source": "South China Morning Post",
-        "published_at": "2026-09-03",
-        "summary": "Hong Kong's SFC will reclassify authorised funds with 50% or more direct or indirect exposure to private-market assets as complex products, citing opaque layered structures that make risks hard for retail investors to assess. The move tightens distribution rules just as private banks across the region lean harder into private equity and credit allocations to meet UHNW demand. It is a compliance-cost signal for any private-markets product pushed to affluent, not just UHNW, clients in Hong Kong.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art05",
-        "title": "Anthropic nears $15bn credit facility ahead of fall IPO",
-        "url": "https://www.bloomberg.com/news/articles/2026-09-03/anthropic-nears-finalizing-15-billion-pre-ipo-credit-facility",
-        "source": "Bloomberg",
-        "published_at": "2026-09-03",
-        "summary": "Following Anthropic's $30tn total-addressable-market pitch to IPO investors covered on 28 August, the company is now finalising a $15bn pre-IPO credit facility and preparing to unveil its IPO prospectus after Labor Day, targeting a fall listing near a $2tn valuation. Underwriters Morgan Stanley, Goldman Sachs and JPMorgan are betting public markets will look past Anthropic's debt load and litigation overhang. The credit facility is a concrete signal the IPO timeline is real, not speculative.",
-        "hsbc_relevancy": 3,
+        "summary": "Barclays this week opened a new Singapore private banking booking centre for ultra-high-net-worth and global family office clients, its first return to Singapore wealth booking since exiting the market to OCBC in 2016. The launch intensifies competition in Singapore's wealth hub just as DBS, UBS and HSBC are all expanding wealth centres and headcount there, with APAC wealth on track to become the world's largest wealth market by 2030. Every new well-capitalised entrant into Singapore raises the bar on speed-to-market and digital onboarding \u2014 a direct test of whether HSBC's own APAC wealth build-out is scaling fast enough to defend share.",
+        "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "noise_level": 4,
-        "category": "AI & Technology",
-        "is_update": true,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
         "user_relevance": 7
       },
       {
-        "id": "art06",
-        "title": "Hang Seng rallies then reverses as Fed's Waller signals steady rates",
-        "url": "https://www.thestandard.com.hk/finance/article/341833/Hang-Seng-Index-rises-300-points-at-open-amid-easing-rate-hike-fears",
-        "source": "The Standard",
+        "id": "art04",
+        "title": "Hang Seng Hits Three-Week High as Tech Rally Cools September Fed Hike Bets",
+        "url": "https://www.ksat.com/business/2026/09/04/asian-benchmarks-trade-mixed-following-rally-on-wall-street-led-by-technology-issues/",
+        "source": "Associated Press",
         "published_at": "2026-09-04",
-        "summary": "Hong Kong's Hang Seng Index jumped as much as 2.2% in early Friday trade, led by technology names, after Federal Reserve Governor Christopher Waller signalled a preference for holding rates steady if inflation keeps cooling, before paring gains to close down 0.4%. HSBC shares participated in the early rally ahead of the broader pullback. The intraday reversal underlines how sensitive HK-listed wealth and banking names remain to shifting Fed-hike odds ahead of the 15-16 September FOMC meeting.",
+        "summary": "Following the Iran-driven oil spike and Fed hike repricing we flagged on 2 September, the Hang Seng Index jumped roughly 1.8% on 4 September to its highest close since 21 August, after a Fed governor signalled a preference to hold rates steady and a global tech rally lifted sentiment further. A reported confidential Hong Kong IPO filing from a Chinese AI firm added to the risk-on mood. The whipsaw between hawkish and dovish rate repricing inside a single week is a reminder that WPB's wealth flows and FX-hedging advisory need to stay reactive to fast-moving rate expectations, not just the underlying market level.",
         "hsbc_relevancy": 4,
-        "adam_rel": 4,
+        "adam_rel": 5,
         "noise_level": 3,
         "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "art07",
-        "title": "TD Bank COO Taylan Turan, ex-HSBC retail banking chief, departs after under a year",
-        "url": "https://www.bnnbloomberg.ca/business/company-news/2026/09/03/td-bank-coo-departing-after-less-than-one-year-in-the-job-in-latest-executive-shakeup/",
-        "source": "BNN Bloomberg",
-        "published_at": "2026-09-03",
-        "summary": "TD Bank Group COO Taylan Turan is departing after less than a year in the role with no reason given and no successor named, while TD simultaneously elevated Vlad Shpilsky to Group Head of Technology and Solutions and named Renu Gupta Chief Strategy and Commercial Officer. Turan previously served as HSBC's global CEO of retail banking before roles at Barclays and Citigroup. A COO exiting mid-transformation at a G-SIB peer, coming off HSBC's own bench, is a data point on how fragile operating-model change mandates are without sustained executive continuity.",
-        "hsbc_relevancy": 2,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 6
+        "is_update": true,
+        "user_relevance": 5
       }
     ],
     "categories": {
       "AI & Technology": "#6366f1",
-      "HSBC News": "#dc2626",
-      "Regulatory & Markets": "#d97706",
-      "Operations & Change": "#7c3aed"
+      "Private Banking & Wealth": "#059669",
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
