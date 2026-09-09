@@ -1,30 +1,30 @@
 {
   "adam": {
-    "last_updated": "2026-09-08",
+    "last_updated": "2026-09-09",
     "covered_urls": [
       "http://bankingjournal.aba.com/2026/09/survey-finds-many-bank-customers-use-gen-ai-but-dont-trust-it/",
       "https://ca.finance.yahoo.com/news/hsbcs-8-100-p-target-212653100.html",
       "https://etfexpress.com/2026/09/03/hsbc-am-launches-sterling-hedged-share-classes-for-sukuk-ucits-etf/",
-      "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-1-dow-sp-500-nasdaq-080617884.html",
       "https://fintech.global/2026/09/03/wealthai-launches-ai-platform-for-independent-advisers/",
       "https://fintechnews.sg/136696/wealthtech/barclays-singapore-private-bank-booking-centre/",
       "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
       "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
-      "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
+      "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+      "https://theintercept.com/2026/09/08/military-ai-weapons-contracts-openai-anthropic-google/",
       "https://www.ad-hoc-news.de/boerse/news/corporate-news/hsbc-stock-holds-steady-as-hong-kong-banks-h1-2026-profit-rebound/70065968",
       "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman",
       "https://www.bankingdive.com/news/banks-report-operational-changes-ai/825625/",
       "https://www.bloomberg.com/news/articles/2026-09-03/anthropic-nears-finalizing-15-billion-pre-ipo-credit-facility",
       "https://www.bloomberg.com/news/articles/2026-09-03/openai-anthropic-spacexai-hit-by-service-outages-for-ai-models",
+      "https://www.bloomberg.com/news/articles/2026-09-07/jpmorgan-says-europe-s-transition-fund-label-is-too-narrow",
       "https://www.bnnbloomberg.ca/business/company-news/2026/09/03/td-bank-coo-departing-after-less-than-one-year-in-the-job-in-latest-executive-shakeup/",
-      "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
       "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
       "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
       "https://www.cnbc.com/2026/09/07/oil-prices-rise-to-6-week-high-after-iran-and-us-trade-blows-saudi-aramco-facilities-reportedly-hit.html",
-      "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
       "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
       "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger",
+      "https://www.globalbankingandfinance.com/hsbc-wind-down-german-business-transaction-services-over-300/",
       "https://www.ksat.com/business/2026/09/04/asian-benchmarks-trade-mixed-following-rally-on-wall-street-led-by-technology-issues/",
       "https://www.manilatimes.net/2026/09/08/tmt-newswire/media-outreach-newswire/ifast-hong-kong-and-jp-morgan-asset-management-partner-to-expand-discretionary-portfolio-solutions-for-wealth-advisers/2420112",
       "https://www.privatebankerinternational.com/news/citi-wealth-liz-mcelherne-aims-lead/",
@@ -33,9 +33,8 @@
       "https://www.scmp.com/business/banking-finance/article/3366559/china-rolls-out-massive-us54b-package-insurers-banks-financial-powerhouse-push",
       "https://www.scmp.com/business/banking-finance/article/3366722/expand-hong-kongs-mpf-investment-choices-lure-mainland-pension-funds-financial-council",
       "https://www.scmp.com/business/china-business/article/3366810/hku-launches-wealth-management-academy-boost-citys-role-hub-new-money",
+      "https://www.scmp.com/news/asia/southeast-asia/article/3366959/singapores-dbs-sued-us1-billion-alleged-1mdb-linked-claim",
       "https://www.theasianbanker.com/press-releases/payme-and-global-payments-announce-strategic-partnership-to-drive-digital-payment-adoption-in-hong-kong",
-      "https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049",
-      "https://www.thestandard.com.hk/finance/article/341526/China-leads-global-tech-exports-triple-boost-from-AI-robotics-and-biotech-HSBC",
       "https://www.thestandard.com.hk/finance/article/341833/Hang-Seng-Index-rises-300-points-at-open-amid-easing-rate-hike-fears"
     ],
     "covered_topics": [
@@ -45,39 +44,23 @@
       "Barclays' new Singapore booking centre raises the competitive bar in HSBC's home wealth market",
       "Beijing's $54bn capital injection into state banks signals a more interventionist fiscal stance",
       "Citi Wealth hires an alternatives platform chief \u2014 private-markets access is the next RM battleground",
-      "Citi, UBS and Deutsche Bank commit to a joint dollar stablecoin \u2014 HSBC isn't in the room",
       "DBS and Citi settle first weekend cross-border USD payment in minutes via tokenised deposits",
+      "DBS hit with ~US$1 billion 1MDB-linked lawsuit despite top-ranked wealth franchise",
       "Deloitte data shows a trust gap that could stall RM-facing AI rollouts: clients use gen AI but don't believe what it tells them",
       "GPT-6 Astra is OpenAI's most capable model yet \u2014 and its own safety card says it's harder to watch",
+      "HSBC to shut German transaction-services unit, cutting 300+ jobs by 2028",
       "Hong Kong council wants pension money in alternatives and mainland capital flowing in \u2014 a new funding pool for wealth managers",
       "Hong Kong's first university-led Wealth Management Academy opens \u2014 a shared fix for the RM hiring war",
-      "Iran-driven oil spike revives Fed hike bets, now pricing 57.5% odds for September",
       "JPMorgan ranks Standard Chartered above HSBC even as HK bank H1 profits rebound 33%",
       "OpenAI hid a 1,200-agent breach for weeks \u2014 bank AI vendor due diligence just got harder",
-      "OpenAI's Astra is the first model to cross the 'Critical' cyber-risk line",
       "OpenAI's GPT-6 Astra goes enterprise-wide, raising the bar every bank AI vendor must now clear",
       "OpenAI, Anthropic and xAI go down together \u2014 a live stress test of bank AI vendor concentration",
       "PayMe's merchant-network deal with Global Payments shows HSBC scaling its own super-app ambitions",
+      "Pentagon contract row shows Anthropic will walk away from a client over AI governance",
       "Standard Chartered becomes the first G-SIB to offer institutional crypto trading in the UAE, widening the digital-asset gap with HSBC's tokenisation-only approach",
       "US-Iran weekend military clash sends oil to a six-week high, reviving September rate-hike risk"
     ],
     "daily": [
-      {
-        "date": "2026-09-02",
-        "urls": [
-          "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-1-dow-sp-500-nasdaq-080617884.html",
-          "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
-          "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
-          "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
-          "https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049",
-          "https://www.thestandard.com.hk/finance/article/341526/China-leads-global-tech-exports-triple-boost-from-AI-robotics-and-biotech-HSBC"
-        ],
-        "topics": [
-          "Citi, UBS and Deutsche Bank commit to a joint dollar stablecoin \u2014 HSBC isn't in the room",
-          "OpenAI's Astra is the first model to cross the 'Critical' cyber-risk line",
-          "Iran-driven oil spike revives Fed hike bets, now pricing 57.5% odds for September"
-        ]
-      },
       {
         "date": "2026-09-03",
         "urls": [
@@ -165,6 +148,21 @@
           "Citi Wealth hires an alternatives platform chief \u2014 private-markets access is the next RM battleground",
           "Hong Kong's first university-led Wealth Management Academy opens \u2014 a shared fix for the RM hiring war",
           "Hong Kong council wants pension money in alternatives and mainland capital flowing in \u2014 a new funding pool for wealth managers"
+        ]
+      },
+      {
+        "date": "2026-09-09",
+        "urls": [
+          "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+          "https://theintercept.com/2026/09/08/military-ai-weapons-contracts-openai-anthropic-google/",
+          "https://www.bloomberg.com/news/articles/2026-09-07/jpmorgan-says-europe-s-transition-fund-label-is-too-narrow",
+          "https://www.globalbankingandfinance.com/hsbc-wind-down-german-business-transaction-services-over-300/",
+          "https://www.scmp.com/news/asia/southeast-asia/article/3366959/singapores-dbs-sued-us1-billion-alleged-1mdb-linked-claim"
+        ],
+        "topics": [
+          "HSBC to shut German transaction-services unit, cutting 300+ jobs by 2028",
+          "Pentagon contract row shows Anthropic will walk away from a client over AI governance",
+          "DBS hit with ~US$1 billion 1MDB-linked lawsuit despite top-ranked wealth franchise"
         ]
       }
     ]
