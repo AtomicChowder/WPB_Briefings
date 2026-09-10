@@ -1,33 +1,32 @@
 {
   "adam": {
-    "last_updated": "2026-09-09",
+    "last_updated": "2026-09-10",
     "covered_urls": [
-      "http://bankingjournal.aba.com/2026/09/survey-finds-many-bank-customers-use-gen-ai-but-dont-trust-it/",
+      "https://businessnewsthisweek.com/business/dbs-bank-india-expands-dbs-max-to-simplify-multi-gateway-digital-payment-collections-for-businesses/",
+      "https://ca.finance.yahoo.com/news/anthropic-reports-fourth-cybersecurity-incident-194842259.html",
       "https://ca.finance.yahoo.com/news/hsbcs-8-100-p-target-212653100.html",
-      "https://etfexpress.com/2026/09/03/hsbc-am-launches-sterling-hedged-share-classes-for-sukuk-ucits-etf/",
-      "https://fintech.global/2026/09/03/wealthai-launches-ai-platform-for-independent-advisers/",
       "https://fintechnews.sg/136696/wealthtech/barclays-singapore-private-bank-booking-centre/",
       "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
       "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
       "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
       "https://theintercept.com/2026/09/08/military-ai-weapons-contracts-openai-anthropic-google/",
       "https://www.ad-hoc-news.de/boerse/news/corporate-news/hsbc-stock-holds-steady-as-hong-kong-banks-h1-2026-profit-rebound/70065968",
-      "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman",
-      "https://www.bankingdive.com/news/banks-report-operational-changes-ai/825625/",
       "https://www.bloomberg.com/news/articles/2026-09-03/anthropic-nears-finalizing-15-billion-pre-ipo-credit-facility",
       "https://www.bloomberg.com/news/articles/2026-09-03/openai-anthropic-spacexai-hit-by-service-outages-for-ai-models",
       "https://www.bloomberg.com/news/articles/2026-09-07/jpmorgan-says-europe-s-transition-fund-label-is-too-narrow",
       "https://www.bnnbloomberg.ca/business/company-news/2026/09/03/td-bank-coo-departing-after-less-than-one-year-in-the-job-in-latest-executive-shakeup/",
-      "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
       "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
       "https://www.cnbc.com/2026/09/07/oil-prices-rise-to-6-week-high-after-iran-and-us-trade-blows-saudi-aramco-facilities-reportedly-hit.html",
-      "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
+      "https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html",
       "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger",
       "https://www.globalbankingandfinance.com/hsbc-wind-down-german-business-transaction-services-over-300/",
+      "https://www.gtreview.com/news/digital-trade/faster-digitalisation-could-add-us2-8tn-to-global-trade-by-2031-standard-chartered-finds/",
       "https://www.ksat.com/business/2026/09/04/asian-benchmarks-trade-mixed-following-rally-on-wall-street-led-by-technology-issues/",
       "https://www.manilatimes.net/2026/09/08/tmt-newswire/media-outreach-newswire/ifast-hong-kong-and-jp-morgan-asset-management-partner-to-expand-discretionary-portfolio-solutions-for-wealth-advisers/2420112",
+      "https://www.marketing-interactive.com/standard-chartered-takes-its-wealth-push-into-the-ai-era",
       "https://www.privatebankerinternational.com/news/citi-wealth-liz-mcelherne-aims-lead/",
+      "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-global-private-banking-announces-senior-appointments/",
       "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-said-to-postpone-ipo-to-just-before-midterms/",
       "https://www.scmp.com/business/banking-finance/article/3366260/hong-kong-regulator-reclassifies-certain-funds-exposure-private-markets",
       "https://www.scmp.com/business/banking-finance/article/3366559/china-rolls-out-massive-us54b-package-insurers-banks-financial-powerhouse-push",
@@ -35,19 +34,20 @@
       "https://www.scmp.com/business/china-business/article/3366810/hku-launches-wealth-management-academy-boost-citys-role-hub-new-money",
       "https://www.scmp.com/news/asia/southeast-asia/article/3366959/singapores-dbs-sued-us1-billion-alleged-1mdb-linked-claim",
       "https://www.theasianbanker.com/press-releases/payme-and-global-payments-announce-strategic-partnership-to-drive-digital-payment-adoption-in-hong-kong",
+      "https://www.theasset.com/article/57116/singapore-banks-complete-first-live-sgd-deals-on-swift-ledger",
       "https://www.thestandard.com.hk/finance/article/341833/Hang-Seng-Index-rises-300-points-at-open-amid-easing-rate-hike-fears"
     ],
     "covered_topics": [
       "Anthropic pushes its IPO to late October, complicating banks' AI-vendor due diligence timelines",
-      "Anthropic scraps blanket Claude data retention for a customer-held-data model \u2014 the governance bar for every bank AI vendor just moved",
       "Anthropic's book-copyright settlement is unravelling into a publisher-vs-author payout dispute",
+      "Anthropic's fourth Claude security incident keeps compounding bank AI vendor risk",
       "Barclays' new Singapore booking centre raises the competitive bar in HSBC's home wealth market",
       "Beijing's $54bn capital injection into state banks signals a more interventionist fiscal stance",
       "Citi Wealth hires an alternatives platform chief \u2014 private-markets access is the next RM battleground",
       "DBS and Citi settle first weekend cross-border USD payment in minutes via tokenised deposits",
       "DBS hit with ~US$1 billion 1MDB-linked lawsuit despite top-ranked wealth franchise",
-      "Deloitte data shows a trust gap that could stall RM-facing AI rollouts: clients use gen AI but don't believe what it tells them",
       "GPT-6 Astra is OpenAI's most capable model yet \u2014 and its own safety card says it's harder to watch",
+      "HSBC Private Bank poaches Citi's family-office and US private-bank chiefs",
       "HSBC to shut German transaction-services unit, cutting 300+ jobs by 2028",
       "Hong Kong council wants pension money in alternatives and mainland capital flowing in \u2014 a new funding pool for wealth managers",
       "Hong Kong's first university-led Wealth Management Academy opens \u2014 a shared fix for the RM hiring war",
@@ -57,27 +57,10 @@
       "OpenAI, Anthropic and xAI go down together \u2014 a live stress test of bank AI vendor concentration",
       "PayMe's merchant-network deal with Global Payments shows HSBC scaling its own super-app ambitions",
       "Pentagon contract row shows Anthropic will walk away from a client over AI governance",
-      "Standard Chartered becomes the first G-SIB to offer institutional crypto trading in the UAE, widening the digital-asset gap with HSBC's tokenisation-only approach",
+      "Standard Chartered turns AI loose on wealth marketing, not just advice",
       "US-Iran weekend military clash sends oil to a six-week high, reviving September rate-hike risk"
     ],
     "daily": [
-      {
-        "date": "2026-09-03",
-        "urls": [
-          "http://bankingjournal.aba.com/2026/09/survey-finds-many-bank-customers-use-gen-ai-but-dont-trust-it/",
-          "https://etfexpress.com/2026/09/03/hsbc-am-launches-sterling-hedged-share-classes-for-sukuk-ucits-etf/",
-          "https://fintech.global/2026/09/03/wealthai-launches-ai-platform-for-independent-advisers/",
-          "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-          "https://www.bankingdive.com/news/banks-report-operational-changes-ai/825625/",
-          "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
-          "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae"
-        ],
-        "topics": [
-          "Anthropic scraps blanket Claude data retention for a customer-held-data model \u2014 the governance bar for every bank AI vendor just moved",
-          "Standard Chartered becomes the first G-SIB to offer institutional crypto trading in the UAE, widening the digital-asset gap with HSBC's tokenisation-only approach",
-          "Deloitte data shows a trust gap that could stall RM-facing AI rollouts: clients use gen AI but don't believe what it tells them"
-        ]
-      },
       {
         "date": "2026-09-04",
         "urls": [
@@ -163,6 +146,23 @@
           "HSBC to shut German transaction-services unit, cutting 300+ jobs by 2028",
           "Pentagon contract row shows Anthropic will walk away from a client over AI governance",
           "DBS hit with ~US$1 billion 1MDB-linked lawsuit despite top-ranked wealth franchise"
+        ]
+      },
+      {
+        "date": "2026-09-10",
+        "urls": [
+          "https://businessnewsthisweek.com/business/dbs-bank-india-expands-dbs-max-to-simplify-multi-gateway-digital-payment-collections-for-businesses/",
+          "https://ca.finance.yahoo.com/news/anthropic-reports-fourth-cybersecurity-incident-194842259.html",
+          "https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html",
+          "https://www.gtreview.com/news/digital-trade/faster-digitalisation-could-add-us2-8tn-to-global-trade-by-2031-standard-chartered-finds/",
+          "https://www.marketing-interactive.com/standard-chartered-takes-its-wealth-push-into-the-ai-era",
+          "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-global-private-banking-announces-senior-appointments/",
+          "https://www.theasset.com/article/57116/singapore-banks-complete-first-live-sgd-deals-on-swift-ledger"
+        ],
+        "topics": [
+          "HSBC Private Bank poaches Citi's family-office and US private-bank chiefs",
+          "Standard Chartered turns AI loose on wealth marketing, not just advice",
+          "Anthropic's fourth Claude security incident keeps compounding bank AI vendor risk"
         ]
       }
     ]
