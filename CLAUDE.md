@@ -266,3 +266,75 @@ docs/adam/briefing_data.json
 ROUTINE.md                — Claude Code Routine setup instructions
 CLAUDE.md                 — This file (loaded automatically by Claude Code)
 ```
+
+---
+
+## Internal Context Lens (MANDATORY since 2026-09-13 — read before Step 1 of the Routine)
+
+Adam's meeting pipeline (Plaud → Whisper → Notion, local) writes ONE Notion page every morning
+at ~05:15 HKT: **"MI Context — current"**, page id `3da6f349-23b7-810c-aa64-f291d14948c0`.
+It lists, as labelled plain-text lines inside a code block: `workstream:` / `thread:` labels,
+`entity:` lines (canonical name | category | count | expansion), `decision:`, `open:`,
+`upcoming:` lines from the last 14 days of minutes, and `canonical:` spellings.
+
+This page is a SECOND LENS. It never narrows the scan. Adam, 2026-09-13: "i still need to see
+outside world contextual information that might change the macro environment i operate in" —
+AND the context of his current top challenges. Both, kept apart.
+
+### 1. Read it (between Routine steps 1 and 2)
+
+`notion-fetch` the page. Parse the `generated:` line. If the page is unreachable, or `generated`
+is more than 3 days before today, run in **macro-only mode**: skip §2 and §4 below, and write
+`Context lens: unavailable (<reason>)` in the Notion callout (§5). Never fail the briefing over it.
+
+### 2. Expand the search (Routine step 2)
+
+Run EVERY standing query above as before. THEN add up to 8 queries built from the page's
+`entity:` lines with category `vendor`, `platform`, `programme` or `market` (highest count
+first) and from the top `thread:` labels — outside-world news only, e.g.
+`Avaloq core banking 2026`, `Aladdin wealth platform Asia`, `HKMA private banking rules`,
+`Taiwan wealth management regulation`. Never search for internal decision text, figures or
+people. The 48-hour window and the history dedup apply unchanged.
+
+### 3. Score the lens (Routine step 4)
+
+For every surviving article assign, IN ADDITION to `hsbc_relevancy` / `adam_rel` / `noise_level`:
+- `thread_rel` (0–10): how directly it bears on a live thread — 0–2 none; 5–6 touches an
+  `entity:` or `thread:` in play; 8–10 bears on a `decision:` or `open:` line directly.
+- `threads`: the matching `thread:` / `workstream:` label(s) from section 1 of the page, or
+  `macro` when none applies. Labels ONLY — never a decision or open-question text.
+
+**Do NOT write `thread_rel` or `threads` into `briefing_input.json`.** `docs/` and
+`briefing_data.json` are committed to a PUBLIC GitHub Pages repo; internal thread labels never
+go there. Keep the lens in a separate `/tmp/thread_map.json` (`{article_id: {thread_rel, threads}}`)
+used only for §4 and §5. The public page is unchanged by this lens.
+
+The combined-score ≥ 6 gate and the 3-per-category cap are UNCHANGED — a macro item is never
+dropped for lacking an internal thread.
+
+### 4. Pick the talking points (Routine step 5) — the 2 + 1 split
+
+- Two talking points = the two most strategically significant items whose `threads` is
+  `macro` (environment change), chosen exactly as before.
+- One talking point = the item with the highest `thread_rel` (≥ 5) — the one that lands on
+  Adam's desk this week. If no item reaches 5, publish three macro points and say so in §5.
+- An item that is both (a regulator moves on something Adam has a live decision on) is tagged
+  with its thread AND counts as the thread pick; the callout says it is both.
+- `context_html` on the public page stays purely external — no thread label, no internal text.
+
+### 5. Annotate the Notion page ONLY (Routine step 8)
+
+On the Notion briefing page (private) and nowhere else:
+- Under the red callout add one line: `Context lens: <generated timestamp from the page> ·
+  <N> thread-linked · <N> macro · mode: lens|macro-only`.
+- Under each Key Talking Point paragraph add a line `Internal thread: <label>` — or
+  `Internal thread: macro`. Optionally one clause on how it touches the thread, using the LABEL
+  only, never the decision text.
+- In the Intelligence Feed, extend each score bracket: `[HSBC 7/10 · Rel 9/10 · Thread avaloq-credit]`
+  or `[HSBC 7/10 · Rel 9/10 · macro]`.
+- Set the page properties `Briefing Date` and `Date Published` to today's date (ISO), so the
+  database views and the downstream jobs (daily email 07:00 HKT, Sunday weekly) can find it.
+
+The daily email and the Sunday weekly read these annotations; the GitHub page is never read by
+them. Nothing from the "MI Context — current" page is ever quoted, paraphrased or linked in
+`docs/`, `briefing_input.json`, `history.json` or a commit message.
