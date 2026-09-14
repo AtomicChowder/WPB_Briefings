@@ -1,7 +1,8 @@
 {
   "adam": {
-    "last_updated": "2026-09-13",
+    "last_updated": "2026-09-14",
     "covered_urls": [
+      "http://bankingjournal.aba.com/2026/09/banks-wealth-units-pursue-ai-carefully/",
       "https://businessnewsthisweek.com/business/dbs-bank-india-expands-dbs-max-to-simplify-multi-gateway-digital-payment-collections-for-businesses/",
       "https://ca.finance.yahoo.com/news/anthropic-reports-fourth-cybersecurity-incident-194842259.html",
       "https://ca.finance.yahoo.com/news/hsbcs-8-100-p-target-212653100.html",
@@ -10,16 +11,17 @@
       "https://sundayguardianlive.com/business/hong-kong-stocks-today-september-11-hang-seng-index-falls-nearly-1-as-middle-east-conflict-sends-brent-crude-above-109-check-why-markets-are-falling-and-which-major-stocks-declined-282094/",
       "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
       "https://theintercept.com/2026/09/08/military-ai-weapons-contracts-openai-anthropic-google/",
-      "https://www.ad-hoc-news.de/boerse/news/corporate-news/hsbc-stock-holds-steady-as-hong-kong-banks-h1-2026-profit-rebound/70065968",
       "https://www.advisorhub.com/citi-hires-3-billion-private-banker-from-bank-of-america/",
       "https://www.bloomberg.com/news/articles/2026-09-07/jpmorgan-says-europe-s-transition-fund-label-is-too-narrow",
       "https://www.bloomberg.com/news/articles/2026-09-12/here-s-who-hsbc-may-tap-as-its-next-chief-financial-officer",
-      "https://www.cnbc.com/2026/09/07/oil-prices-rise-to-6-week-high-after-iran-and-us-trade-blows-saudi-aramco-facilities-reportedly-hit.html",
+      "https://www.bloomberg.com/news/articles/2026-09-14/bofa-ceo-sees-trading-revenue-relatively-flat-in-third-quarter",
+      "https://www.business-standard.com/technology/tech-news/indian-banks-bet-on-ai-but-hold-back-on-scale-amid-deployment-concerns-126091300771_1.html",
       "https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html",
-      "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger",
+      "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/",
       "https://www.globalbankingandfinance.com/hsbc-wind-down-german-business-transaction-services-over-300/",
       "https://www.gtreview.com/news/digital-trade/faster-digitalisation-could-add-us2-8tn-to-global-trade-by-2031-standard-chartered-finds/",
       "https://www.manilatimes.net/2026/09/08/tmt-newswire/media-outreach-newswire/ifast-hong-kong-and-jp-morgan-asset-management-partner-to-expand-discretionary-portfolio-solutions-for-wealth-advisers/2420112",
+      "https://www.manilatimes.net/2026/09/14/tmt-newswire/media-outreach-newswire/citi-private-bank-convenes-asias-leading-family-offices-in-hong-kong-to-explore-the-next-decade-of-wealth-creation/2424195",
       "https://www.marketing-interactive.com/standard-chartered-takes-its-wealth-push-into-the-ai-era",
       "https://www.privatebankerinternational.com/news/citi-wealth-liz-mcelherne-aims-lead/",
       "https://www.privatebanking.hsbc.com/media-releases-and-news/hsbc-global-private-banking-announces-senior-appointments/",
@@ -39,12 +41,13 @@
       "https://www.theasset.com/article/57116/singapore-banks-complete-first-live-sgd-deals-on-swift-ledger"
     ],
     "covered_topics": [
+      "Anthropic's Amodei calls for an industry-wide AI slowdown \u2014 with partial buy-in from OpenAI",
       "Anthropic's Q3 threat report exposes bioweapons, Russian espionage and Chinese distillation attacks on Claude",
       "Anthropic's fourth Claude security incident keeps compounding bank AI vendor risk",
+      "BofA's Moynihan flags flat Q3 trading revenue, dragging competitor bank stocks down",
       "Broker AI is commoditising research from below \u2014 the private bank's differentiator moves to judgement and execution",
       "Citi Wealth hires an alternatives platform chief \u2014 private-markets access is the next RM battleground",
       "Citi keeps poaching: $3bn adviser hired from Bank of America for UHNW push",
-      "DBS and Citi settle first weekend cross-border USD payment in minutes via tokenised deposits",
       "DBS hit with ~US$1 billion 1MDB-linked lawsuit despite top-ranked wealth franchise",
       "HSBC Private Bank poaches Citi's family-office and US private-bank chiefs",
       "HSBC opens CFO succession search after Pam Kaur sets 2027 exit",
@@ -52,28 +55,14 @@
       "Hong Kong council wants pension money in alternatives and mainland capital flowing in \u2014 a new funding pool for wealth managers",
       "Hong Kong's first university-led Wealth Management Academy opens \u2014 a shared fix for the RM hiring war",
       "Hong Kong's next generation is converting property into bankable assets \u2014 an addressable-wallet expansion, if capacity exists",
-      "JPMorgan ranks Standard Chartered above HSBC even as HK bank H1 profits rebound 33%",
       "Mainland investors on track to hold 68% of Hong Kong's wealth AUM by 2030, HKAB/Deloitte report finds",
       "Pentagon contract row shows Anthropic will walk away from a client over AI governance",
       "Standard Chartered turns AI loose on wealth marketing, not just advice",
+      "Survey: Indian bank CDOs embrace AI for low-risk tasks, stall before end-to-end scale",
       "UBS shutters its China fund-distribution platform, conceding ground to online-first domestic rivals",
-      "US-Iran weekend military clash sends oil to a six-week high, reviving September rate-hike risk",
       "Yen carry unwind begins as BOJ heads for 1.25% \u2014 leveraged wealth books face margin pressure before headlines"
     ],
     "daily": [
-      {
-        "date": "2026-09-07",
-        "urls": [
-          "https://www.ad-hoc-news.de/boerse/news/corporate-news/hsbc-stock-holds-steady-as-hong-kong-banks-h1-2026-profit-rebound/70065968",
-          "https://www.cnbc.com/2026/09/07/oil-prices-rise-to-6-week-high-after-iran-and-us-trade-blows-saudi-aramco-facilities-reportedly-hit.html",
-          "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger"
-        ],
-        "topics": [
-          "DBS and Citi settle first weekend cross-border USD payment in minutes via tokenised deposits",
-          "JPMorgan ranks Standard Chartered above HSBC even as HK bank H1 profits rebound 33%",
-          "US-Iran weekend military clash sends oil to a six-week high, reviving September rate-hike risk"
-        ]
-      },
       {
         "date": "2026-09-08",
         "urls": [
@@ -163,6 +152,21 @@
           "Broker AI is commoditising research from below \u2014 the private bank's differentiator moves to judgement and execution",
           "Yen carry unwind begins as BOJ heads for 1.25% \u2014 leveraged wealth books face margin pressure before headlines",
           "Hong Kong's next generation is converting property into bankable assets \u2014 an addressable-wallet expansion, if capacity exists"
+        ]
+      },
+      {
+        "date": "2026-09-14",
+        "urls": [
+          "http://bankingjournal.aba.com/2026/09/banks-wealth-units-pursue-ai-carefully/",
+          "https://www.bloomberg.com/news/articles/2026-09-14/bofa-ceo-sees-trading-revenue-relatively-flat-in-third-quarter",
+          "https://www.business-standard.com/technology/tech-news/indian-banks-bet-on-ai-but-hold-back-on-scale-amid-deployment-concerns-126091300771_1.html",
+          "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/",
+          "https://www.manilatimes.net/2026/09/14/tmt-newswire/media-outreach-newswire/citi-private-bank-convenes-asias-leading-family-offices-in-hong-kong-to-explore-the-next-decade-of-wealth-creation/2424195"
+        ],
+        "topics": [
+          "Anthropic's Amodei calls for an industry-wide AI slowdown \u2014 with partial buy-in from OpenAI",
+          "BofA's Moynihan flags flat Q3 trading revenue, dragging competitor bank stocks down",
+          "Survey: Indian bank CDOs embrace AI for low-risk tasks, stall before end-to-end scale"
         ]
       }
     ]
