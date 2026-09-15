@@ -100,7 +100,8 @@ open('docs/adam/nav.json','w').write(json.dumps(files, indent=2))
 
 **8. Publish to Notion**
 Using the Notion MCP connector, create a new page in the database
-**"WPB Weekly Intelligence Briefings"** with:
+**"WPB Weekly Intelligence Briefings"** (data source id
+`3336f349-23b7-8053-9230-000b278a9f1a`) with:
 - Title: `[Adam] WPB Briefing — {date}` (e.g. `[Adam] WPB Briefing — 26 Apr 2026`)
 - A red callout with Adam's name and title
 - A divider
@@ -110,6 +111,22 @@ Using the Notion MCP connector, create a new page in the database
   with scores: `[HSBC 7/10 · Rel 9/10] Article title` linked to article URL,
   followed by a grey paragraph for the summary
 - Set the "Recipient" property to `Adam Chow`
+
+**CRITICAL — always pass `parent` explicitly on the `notion-create-pages` call:**
+```json
+"parent": { "type": "data_source_id", "data_source_id": "3336f349-23b7-8053-9230-000b278a9f1a" }
+```
+Omitting `parent` does NOT fail loudly — Notion silently creates an orphaned,
+workspace-level private page instead. It won't show up in the database, won't
+be visible to Adam, and gets garbage-collected within a day or two, leaving no
+error and no trace beyond a stale page ID. This has already happened once
+(the 14 Sep 2026 briefing page was created without `parent`, vanished, and had
+to be recovered with `notion-move-pages` + `notion-update-page` to reattach it
+to the data source and restore its properties). After creating the page,
+immediately re-`fetch` it and confirm the result shows
+`<parent-data-source url="collection://3336f349-23b7-8053-9230-000b278a9f1a" .../>`
+in its `<ancestor-path>` before moving on to step 9 — if it doesn't, the page
+is orphaned and must be fixed the same way before considering step 8 done.
 
 **9. Commit and push directly to `main`**
 ```bash
