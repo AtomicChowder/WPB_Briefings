@@ -100,6 +100,7 @@ Assign every article to exactly one of these categories:
 | **Private Banking & Wealth** | Wealth management trends, HNW/UHNW, investment products, AUM flows |
 | **Regulatory & Markets** | Regulatory changes, macro events, market conditions affecting banking |
 | **Operations & Change** | Operational transformation, agile delivery, change management, cost efficiency |
+| **On Adam's Desk** | Thread hits, routed by the builder, emitted first, relaxed gate. Never assign this category yourself — `src/build_briefing.py` moves any article with `thread_rel >= 5` here |
 
 Category colours (used in the chart — do not change):
 ```json
@@ -311,10 +312,10 @@ For every surviving article assign, IN ADDITION to `hsbc_relevancy` / `adam_rel`
 - `threads`: the matching `thread:` / `workstream:` label(s) from section 1 of the page, or
   `macro` when none applies. Labels ONLY — never a decision or open-question text.
 
-**Do NOT write `thread_rel` or `threads` into `briefing_input.json`.** `docs/` and
-`briefing_data.json` are committed to a PUBLIC GitHub Pages repo; internal thread labels never
-go there. Keep the lens in a separate `/tmp/thread_map.json` (`{article_id: {thread_rel, threads}}`)
-used only for §4 and §5. The public page is unchanged by this lens.
+**`thread_rel` and `threads` must never appear in `docs/` or `briefing_data.json`** — those are
+committed to a PUBLIC GitHub Pages repo and internal thread labels never go there. That rule is
+now enforced in code: `src/build_briefing.py` strips both fields from everything it writes. The
+public page is unchanged by this lens.
 
 ### Thread hits are gated separately (added 2026-09-17)
 
@@ -323,10 +324,14 @@ That is the wrong test for an article found by a section-8 query — an Avaloq o
 about HSBC, scores 2–3 on `hsbc_relevancy`, and was being dropped before the lens ever saw it.
 So, for articles with `thread_rel >= 5` ONLY:
 
-- Admit on a combined (`hsbc_relevancy` + `user_relevance`) score of >= 3, not >= 6.
-- Put them in their own category, "On Adam's Desk", emitted FIRST, with its own cap of 3. It does
-  not compete with HSBC News, Competitor Intelligence or any other category.
-- Of those 3, reserve at least 1 for an article with `thread_rel >= 8` if one exists.
+Write `thread_rel` (0-10) and `threads` onto each article in /tmp/briefing_input.json. That file
+is NEVER committed - only docs/ and docs/adam/briefing_data.json are public, and the builder
+strips both fields from everything it writes.
+
+Do NOT invent or assign a category for thread hits. Keep giving every article its normal
+category. src/build_briefing.py owns the routing, the relaxed gate, the cap and the ordering -
+it moves any article with thread_rel >= 5 into "On Adam's Desk" itself. Emitting that category
+name from here crashes the build on the unknown-category check.
 
 Macro items are unaffected: the >= 6 gate and the 3-per-category cap still apply to them, and a
 macro item is never dropped for lacking an internal thread.

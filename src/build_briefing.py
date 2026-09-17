@@ -60,6 +60,7 @@ CATEGORY_COLOURS = {
     "Private Banking & Wealth": "#059669",
     "Regulatory & Markets":     "#d97706",
     "Operations & Change":      "#7c3aed",
+    "On Adam's Desk":           "#be123c",
 }
 
 # Single source of truth for user metadata. Names are hardcoded here so a
@@ -83,6 +84,21 @@ REQUIRED_ARTICLE_FIELDS = (
 
 MAX_PER_CATEGORY = 3
 MIN_COMBINED_SCORE = 6
+
+# Thread hits (added 2026-09-17). The combined-score gate asks "is this about HSBC"; an Avaloq
+# or eCRM story is not, scores 2-3 on hsbc_relevancy, and was dropped before it could be seen.
+# thread_rel / threads arrive on /tmp/briefing_input.json (never committed) and are STRIPPED
+# from every output below, so internal thread labels cannot reach docs/ or briefing_data.json.
+THREAD_CATEGORY = "On Adam's Desk"
+MIN_THREAD_REL = 5                  # at or above this, an article is a thread hit
+HIGH_THREAD_REL = 8                 # reserve a slot for one of these
+MIN_COMBINED_SCORE_THREAD = 3       # relaxed gate, thread hits only
+LENS_FIELDS = ("thread_rel", "threads")
+
+
+def _strip_lens(a: dict) -> dict:
+    """Remove internal lens fields. docs/ and briefing_data.json are PUBLIC."""
+    return {k: v for k, v in a.items() if k not in LENS_FIELDS}
 
 
 def _validate_articles(articles):
@@ -143,23 +159,48 @@ def _build_for_user(user_id: str, raw: dict, generated_at: str,
             continue
 
         combined = a["hsbc_relevancy"] + a[score_key]
-        if combined < MIN_COMBINED_SCORE:
+        try:
+            thread_rel = int(a.get("thread_rel") or 0)
+        except (TypeError, ValueError):
+            thread_rel = 0
+        is_thread_hit = thread_rel >= MIN_THREAD_REL
+        floor = MIN_COMBINED_SCORE_THREAD if is_thread_hit else MIN_COMBINED_SCORE
+        if combined < floor:
             continue
         art = dict(a)
         art["user_relevance"] = a[score_key]
-        cats.setdefault(a["category"], []).append(art)
+        # The BUILDER routes, not the routine - the routine never emits this category name.
+        cats.setdefault(THREAD_CATEGORY if is_thread_hit else a["category"], []).append(art)
 
     # Sort each category by combined score, cap at MAX_PER_CATEGORY
     for cat, items in cats.items():
-        items.sort(key=lambda x: x["hsbc_relevancy"] + x[score_key], reverse=True)
-        cats[cat] = items[:MAX_PER_CATEGORY]
+        if cat == THREAD_CATEGORY:
+            # Rank by how directly it lands on a live thread, then by combined score.
+            items.sort(key=lambda x: (int(x.get("thread_rel") or 0),
+                                      x["hsbc_relevancy"] + x[score_key]), reverse=True)
+            kept = items[:MAX_PER_CATEGORY]
+            # Reserve one slot for a thread_rel >= 8 item if one exists but missed the cut.
+            if not any(int(i.get("thread_rel") or 0) >= HIGH_THREAD_REL for i in kept):
+                high = next((i for i in items[MAX_PER_CATEGORY:]
+                             if int(i.get("thread_rel") or 0) >= HIGH_THREAD_REL), None)
+                if high is not None and kept:
+                    kept[-1] = high
+            cats[cat] = kept
+        else:
+            items.sort(key=lambda x: x["hsbc_relevancy"] + x[score_key], reverse=True)
+            cats[cat] = items[:MAX_PER_CATEGORY]
+
+    # "On Adam's Desk" is emitted FIRST; the rest keep their existing order.
+    if THREAD_CATEGORY in cats:
+        cats = {THREAD_CATEGORY: cats[THREAD_CATEGORY],
+                **{k: v for k, v in cats.items() if k != THREAD_CATEGORY}}
 
     # Drop empty categories (none should be, but be defensive)
-    cats = {k: v for k, v in cats.items() if v}
+    cats = {k: [_strip_lens(a) for a in v] for k, v in cats.items() if v}
 
     # Flat list mirrors what's in articles_by_category (post-cap)
     final_ids: set[str] = {a["id"] for arts in cats.values() for a in arts}
-    flat = [dict(a, user_relevance=a[score_key])
+    flat = [_strip_lens(dict(a, user_relevance=a[score_key]))
             for a in raw["articles"] if a["id"] in final_ids]
 
     user_block = (raw.get("users") or {}).get(user_id, {}) or {}
