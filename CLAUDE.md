@@ -289,12 +289,19 @@ is more than 3 days before today, run in **macro-only mode**: skip §2 and §4 b
 
 ### 2. Expand the search (Routine step 2)
 
-Run EVERY standing query above as before. THEN add up to 8 queries built from the page's
-`entity:` lines with category `vendor`, `platform`, `programme` or `market` (highest count
-first) and from the top `thread:` labels — outside-world news only, e.g.
-`Avaloq core banking 2026`, `Aladdin wealth platform Asia`, `HKMA private banking rules`,
-`Taiwan wealth management regulation`. Never search for internal decision text, figures or
-people. The 48-hour window and the history dedup apply unchanged.
+Run EVERY standing query above. THEN run EVERY `query:` line in SECTION 8 of the context page.
+
+Do not select, rank or trim them, and do not build your own queries from the page. Section 8 is
+already ranked, it is rebuilt every run from the rolling window of Adam's minutes, and it changes
+daily. The previous rule here — "up to 8 queries built from the page's `entity:` lines, highest
+count first" — put internal acronyms (SVS, Capability, WPS, WTP, MSII) at the head of the list.
+They return nothing outside HSBC and the targeted scan fell to zero thread-linked items over
+13–16 September.
+
+Never search decision text, figures, open-question text or people. Section 8's queries are already
+safe by construction: each is a canonical lexicon name or a geography label plus a fixed tail.
+
+The 48-hour window and the history dedup apply unchanged.
 
 ### 3. Score the lens (Routine step 4)
 
@@ -309,8 +316,23 @@ For every surviving article assign, IN ADDITION to `hsbc_relevancy` / `adam_rel`
 go there. Keep the lens in a separate `/tmp/thread_map.json` (`{article_id: {thread_rel, threads}}`)
 used only for §4 and §5. The public page is unchanged by this lens.
 
-The combined-score ≥ 6 gate and the 3-per-category cap are UNCHANGED — a macro item is never
-dropped for lacking an internal thread.
+### Thread hits are gated separately (added 2026-09-17)
+
+The combined-score gate and the category caps judge "is this about HSBC or a major competitor".
+That is the wrong test for an article found by a section-8 query — an Avaloq or eCRM story is not
+about HSBC, scores 2–3 on `hsbc_relevancy`, and was being dropped before the lens ever saw it.
+So, for articles with `thread_rel >= 5` ONLY:
+
+- Admit on a combined (`hsbc_relevancy` + `user_relevance`) score of >= 3, not >= 6.
+- Put them in their own category, "On Adam's Desk", emitted FIRST, with its own cap of 3. It does
+  not compete with HSBC News, Competitor Intelligence or any other category.
+- Of those 3, reserve at least 1 for an article with `thread_rel >= 8` if one exists.
+
+Macro items are unaffected: the >= 6 gate and the 3-per-category cap still apply to them, and a
+macro item is never dropped for lacking an internal thread.
+
+If no article reaches `thread_rel >= 5`, emit no "On Adam's Desk" category and say so in the
+talking-point note, exactly as now.
 
 ### 4. Pick the talking points (Routine step 5) — the 2 + 1 split
 
