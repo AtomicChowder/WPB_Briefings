@@ -110,7 +110,8 @@ Category colours (used in the chart — do not change):
   "Competitor Intelligence": "#0891b2",
   "Private Banking & Wealth": "#059669",
   "Regulatory & Markets":   "#d97706",
-  "Operations & Change":    "#7c3aed"
+  "Operations & Change":    "#7c3aed",
+  "On Adam's Desk":          "#be123c"
 }
 ```
 
@@ -239,7 +240,8 @@ schema below.
       "Competitor Intelligence": "#0891b2",
       "Private Banking & Wealth": "#059669",
       "Regulatory & Markets": "#d97706",
-      "Operations & Change": "#7c3aed"
+      "Operations & Change": "#7c3aed",
+      "On Adam's Desk": "#be123c"
     }
   }
 }

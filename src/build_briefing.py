@@ -91,7 +91,7 @@ MIN_COMBINED_SCORE = 6
 # from every output below, so internal thread labels cannot reach docs/ or briefing_data.json.
 THREAD_CATEGORY = "On Adam's Desk"
 MIN_THREAD_REL = 5                  # at or above this, an article is a thread hit
-HIGH_THREAD_REL = 8                 # reserve a slot for one of these
+HIGH_THREAD_REL = 8                 # "lands on his desk" band; reserved by the sort order
 MIN_COMBINED_SCORE_THREAD = 3       # relaxed gate, thread hits only
 LENS_FIELDS = ("thread_rel", "threads")
 
@@ -176,16 +176,12 @@ def _build_for_user(user_id: str, raw: dict, generated_at: str,
     for cat, items in cats.items():
         if cat == THREAD_CATEGORY:
             # Rank by how directly it lands on a live thread, then by combined score.
+            # thread_rel leads the sort key, so a thread_rel >= HIGH_THREAD_REL article is
+            # always inside the cap when one exists — the reserved slot is structural and
+            # needs no separate swap. Keep thread_rel first if this sort is ever revisited.
             items.sort(key=lambda x: (int(x.get("thread_rel") or 0),
                                       x["hsbc_relevancy"] + x[score_key]), reverse=True)
-            kept = items[:MAX_PER_CATEGORY]
-            # Reserve one slot for a thread_rel >= 8 item if one exists but missed the cut.
-            if not any(int(i.get("thread_rel") or 0) >= HIGH_THREAD_REL for i in kept):
-                high = next((i for i in items[MAX_PER_CATEGORY:]
-                             if int(i.get("thread_rel") or 0) >= HIGH_THREAD_REL), None)
-                if high is not None and kept:
-                    kept[-1] = high
-            cats[cat] = kept
+            cats[cat] = items[:MAX_PER_CATEGORY]
         else:
             items.sort(key=lambda x: x["hsbc_relevancy"] + x[score_key], reverse=True)
             cats[cat] = items[:MAX_PER_CATEGORY]
