@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-09-18",
+    "last_updated": "2026-09-19",
     "covered_urls": [
       "http://bankingjournal.aba.com/2026/09/banks-wealth-units-pursue-ai-carefully/",
       "http://bankingjournal.aba.com/2026/09/global-ultra-wealthy-ranks-increase-at-double-digit-pace/",
@@ -12,8 +12,6 @@
       "https://sundayguardianlive.com/business/hang-seng-index-today-september-15-why-are-hong-kong-stocks-falling-check-hk50-at-24837-impact-of-higher-oil-prices-us-treasury-yields-and-fed-rate-decision-284995/",
       "https://technode.global/2026/09/16/hong-kong-first-five-year-plan-ai-fintech/",
       "https://theaiinsider.tech/2026/09/16/openai-confirms-weeks-of-ai-safety-talks-with-anthropic-and-google-deepmind/",
-      "https://www.advisorhub.com/citi-hires-3-billion-private-banker-from-bank-of-america/",
-      "https://www.bloomberg.com/news/articles/2026-09-12/here-s-who-hsbc-may-tap-as-its-next-chief-financial-officer",
       "https://www.bloomberg.com/news/articles/2026-09-14/bofa-ceo-sees-trading-revenue-relatively-flat-in-third-quarter",
       "https://www.bloomberg.com/news/articles/2026-09-15/openai-weighing-funding-round-at-over-1-2-trillion-valuation",
       "https://www.bloomberg.com/news/articles/2026-09-17/anthropic-says-claude-drives-26-of-its-research-and-development",
@@ -23,8 +21,10 @@
       "https://www.caixinglobal.com/2026-09-18/cicc-calls-for-advisory-overhaul-to-unlock-greater-bay-area-wealth-link-102486039.html",
       "https://www.caproasia.com/2026/09/16/uk-196-billion-schroders-wealth-management-expands-team-in-asia-with-hiring-of-1-jp-morgan-private-bank-andrea-li-as-head-of-investment-advisory-asia-2-thailand-red-bull-yoovidhya-family-office-cr/",
       "https://www.db.com/news/detail/20260916-deutsche-bank-tops-apac-fixed-income-client-rankings?language_id=1",
+      "https://www.euronews.com/business/2026/09/18/what-to-expect-from-the-trump-xi-summit-from-tariffs-to-a-possible-30-billion-deal",
       "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/",
       "https://www.hubbis.com/news/hsbc-private-bank-launches-hsbc-access-in-singapore",
+      "https://www.investing.com/news/stock-market-news/exclusiveanthropic-considers-releasing-new-ai-model-ahead-of-ipo-sources-say-4908007",
       "https://www.lse.co.uk/news/GGP/london-broker-ratings-kbw-cuts-hsbc-and-raises-standard-chartered-od0ntpgxmmmuy4r.html",
       "https://www.manilatimes.net/2026/09/14/tmt-newswire/media-outreach-newswire/citi-private-bank-convenes-asias-leading-family-offices-in-hong-kong-to-explore-the-next-decade-of-wealth-creation/2424195",
       "https://www.marketscreener.com/news/dbs-hong-kong-survey-businesses-confident-on-outlook-and-seek-clearer-strategic-direction-and-targe-ce785bdcdb8bf025",
@@ -42,16 +42,15 @@
     "covered_topics": [
       "Altman rules out an OpenAI IPO before 2027, citing AI-safety concerns",
       "Anthropic launches Claude for Financial Advisors, escalating the AI wealth-advisory tooling race",
+      "Anthropic weighs a new model launch days after its own CEO called for an industry slowdown",
       "Anthropic's Amodei calls for an industry-wide AI slowdown \u2014 with partial buy-in from OpenAI",
       "Anthropic: Claude now drives 26% of the company's own AI research and development",
       "BofA's Moynihan flags flat Q3 trading revenue, dragging competitor bank stocks down",
       "Broker AI is commoditising research from below \u2014 the private bank's differentiator moves to judgement and execution",
       "CICC calls for advisory rule overhaul to unlock Greater Bay Area cross-border wealth flows",
-      "Citi keeps poaching: $3bn adviser hired from Bank of America for UHNW push",
       "Fed's first hike since 2023 tips Hang Seng into correction, HKMA follows to 4.25%",
       "Following Amodei's slowdown call we covered on 14 September, OpenAI confirms it is now coordinating with Anthropic and Google on AI safety",
       "HSBC Access lands in Singapore \u2014 HSBC deepens its own UHNW/family-office direct-investment platform",
-      "HSBC opens CFO succession search after Pam Kaur sets 2027 exit",
       "HSBC quietly ends Hong Kong school-fee perk for new hires as Elhedery's cost drive bites",
       "Hong Kong's Policy Address bets on gold and 220 more family offices \u2014 the wealth-hub contest just got another lever",
       "Hong Kong's next generation is converting property into bankable assets \u2014 an addressable-wallet expansion, if capacity exists",
@@ -59,20 +58,10 @@
       "Schroders raids JPMorgan and Standard Chartered for senior Asia wealth roles",
       "Singapore's DBS expands gold vaults as Hong Kong and Singapore race to be Asia's physical gold hub",
       "Survey: Indian bank CDOs embrace AI for low-risk tasks, stall before end-to-end scale",
+      "Trump-Xi summit on 24 September adds a second macro catalyst for HK wealth books this month",
       "Yen carry unwind begins as BOJ heads for 1.25% \u2014 leveraged wealth books face margin pressure before headlines"
     ],
     "daily": [
-      {
-        "date": "2026-09-12",
-        "urls": [
-          "https://www.advisorhub.com/citi-hires-3-billion-private-banker-from-bank-of-america/",
-          "https://www.bloomberg.com/news/articles/2026-09-12/here-s-who-hsbc-may-tap-as-its-next-chief-financial-officer"
-        ],
-        "topics": [
-          "HSBC opens CFO succession search after Pam Kaur sets 2027 exit",
-          "Citi keeps poaching: $3bn adviser hired from Bank of America for UHNW push"
-        ]
-      },
       {
         "date": "2026-09-13",
         "urls": [
@@ -165,6 +154,17 @@
           "CICC calls for advisory rule overhaul to unlock Greater Bay Area cross-border wealth flows",
           "Singapore's DBS expands gold vaults as Hong Kong and Singapore race to be Asia's physical gold hub",
           "Anthropic: Claude now drives 26% of the company's own AI research and development"
+        ]
+      },
+      {
+        "date": "2026-09-19",
+        "urls": [
+          "https://www.euronews.com/business/2026/09/18/what-to-expect-from-the-trump-xi-summit-from-tariffs-to-a-possible-30-billion-deal",
+          "https://www.investing.com/news/stock-market-news/exclusiveanthropic-considers-releasing-new-ai-model-ahead-of-ipo-sources-say-4908007"
+        ],
+        "topics": [
+          "Anthropic weighs a new model launch days after its own CEO called for an industry slowdown",
+          "Trump-Xi summit on 24 September adds a second macro catalyst for HK wealth books this month"
         ]
       }
     ]
