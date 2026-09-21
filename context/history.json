@@ -1,10 +1,10 @@
 {
   "adam": {
-    "last_updated": "2026-09-20",
+    "last_updated": "2026-09-21",
     "covered_urls": [
-      "http://bankingjournal.aba.com/2026/09/banks-wealth-units-pursue-ai-carefully/",
       "http://bankingjournal.aba.com/2026/09/global-ultra-wealthy-ranks-increase-at-double-digit-pace/",
       "https://finance.yahoo.com/technology/live/tech-stocks-today-openai-reveals-six-more-instances-of-concerning-model-behavior-140134624.html",
+      "https://fintech.global/2026/09/21/banks-want-ai-surveillance-but-lack-the-data-to-run-it/",
       "https://fortune.com/2026/09/14/openai-ipo-wait-grows-longer-as-ai-safety-fears-mount-cfo/",
       "https://invezz.com/news/2026/09/17/heres-why-hong-kongs-hang-seng-index-is-tumbling-today-sep-17/",
       "https://news.rthk.hk/rthk/en/component/k2/1870271-20260916.htm",
@@ -13,22 +13,19 @@
       "https://theaiinsider.tech/2026/09/16/openai-confirms-weeks-of-ai-safety-talks-with-anthropic-and-google-deepmind/",
       "https://www.abc.net.au/news/2026-09-19/gemini-google-ai-hacks-three-companies/107172128",
       "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "https://www.bloomberg.com/news/articles/2026-09-14/bofa-ceo-sees-trading-revenue-relatively-flat-in-third-quarter",
       "https://www.bloomberg.com/news/articles/2026-09-15/openai-weighing-funding-round-at-over-1-2-trillion-valuation",
       "https://www.bloomberg.com/news/articles/2026-09-17/anthropic-says-claude-drives-26-of-its-research-and-development",
       "https://www.bloomberg.com/news/articles/2026-09-17/hsbc-cuts-back-38-000-per-kid-school-perk-for-some-hk-bankers",
       "https://www.bloomberg.com/news/articles/2026-09-17/singapore-s-gold-hub-ambition-gets-lift-with-dbs-vault-expansion",
-      "https://www.business-standard.com/technology/tech-news/indian-banks-bet-on-ai-but-hold-back-on-scale-amid-deployment-concerns-126091300771_1.html",
+      "https://www.bloomberg.com/news/features/2026-09-20/ai-boom-is-making-diversifying-investments-tough-for-wall-street",
       "https://www.caixinglobal.com/2026-09-18/cicc-calls-for-advisory-overhaul-to-unlock-greater-bay-area-wealth-link-102486039.html",
       "https://www.caproasia.com/2026/09/16/uk-196-billion-schroders-wealth-management-expands-team-in-asia-with-hiring-of-1-jp-morgan-private-bank-andrea-li-as-head-of-investment-advisory-asia-2-thailand-red-bull-yoovidhya-family-office-cr/",
       "https://www.cnbc.com/2026/09/18/japan-raises-rates-30-year-high-yen-jgb.html",
       "https://www.db.com/news/detail/20260916-deutsche-bank-tops-apac-fixed-income-client-rankings?language_id=1",
       "https://www.euronews.com/business/2026/09/18/what-to-expect-from-the-trump-xi-summit-from-tariffs-to-a-possible-30-billion-deal",
-      "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/",
       "https://www.hubbis.com/news/hsbc-private-bank-launches-hsbc-access-in-singapore",
       "https://www.investing.com/news/stock-market-news/exclusiveanthropic-considers-releasing-new-ai-model-ahead-of-ipo-sources-say-4908007",
       "https://www.lse.co.uk/news/GGP/london-broker-ratings-kbw-cuts-hsbc-and-raises-standard-chartered-od0ntpgxmmmuy4r.html",
-      "https://www.manilatimes.net/2026/09/14/tmt-newswire/media-outreach-newswire/citi-private-bank-convenes-asias-leading-family-offices-in-hong-kong-to-explore-the-next-decade-of-wealth-creation/2424195",
       "https://www.marketscreener.com/news/dbs-hong-kong-survey-businesses-confident-on-outlook-and-seek-clearer-strategic-direction-and-targe-ce785bdcdb8bf025",
       "https://www.techtimes.com/articles/327525/20260915/claude-financial-advisors-debuts-blackrock-schwab-client-data-stays-custodian-servers.htm",
       "https://www.theblock.co/news/business/2026-09-18-dtcpay-series-a-sbi-group-415483",
@@ -36,14 +33,14 @@
       "https://www.witn.com/2026/09/20/lawsuit-says-anthropic-openai-spacexai-google-made-illegal-agreement-ai-slowdown/"
     ],
     "covered_topics": [
+      "AI concentration is now embedded across every asset class, breaking Wall Street's diversification playbook",
       "Altman rules out an OpenAI IPO before 2027, citing AI-safety concerns",
       "Anthropic and Accenture commit $1bn each to embed independent AI evaluators inside model development",
       "Anthropic launches Claude for Financial Advisors, escalating the AI wealth-advisory tooling race",
       "Anthropic weighs a new model launch days after its own CEO called for an industry slowdown",
-      "Anthropic's Amodei calls for an industry-wide AI slowdown \u2014 with partial buy-in from OpenAI",
       "Anthropic: Claude now drives 26% of the company's own AI research and development",
       "BOJ delivers rate hike to a 31-year high \u2014 the yen carry unwind flagged 13 September is now live",
-      "BofA's Moynihan flags flat Q3 trading revenue, dragging competitor bank stocks down",
+      "Banks want AI trade surveillance everywhere; almost none have the data to run it",
       "CICC calls for advisory rule overhaul to unlock Greater Bay Area cross-border wealth flows",
       "Fed's first hike since 2023 tips Hang Seng into correction, HKMA follows to 4.25%",
       "Following Amodei's slowdown call we covered on 14 September, OpenAI confirms it is now coordinating with Anthropic and Google on AI safety",
@@ -54,25 +51,9 @@
       "KBW flips its house view: downgrades HSBC, upgrades Standard Chartered to Outperform",
       "Schroders raids JPMorgan and Standard Chartered for senior Asia wealth roles",
       "Singapore's DBS expands gold vaults as Hong Kong and Singapore race to be Asia's physical gold hub",
-      "Survey: Indian bank CDOs embrace AI for low-risk tasks, stall before end-to-end scale",
       "Trump-Xi summit on 24 September adds a second macro catalyst for HK wealth books this month"
     ],
     "daily": [
-      {
-        "date": "2026-09-14",
-        "urls": [
-          "http://bankingjournal.aba.com/2026/09/banks-wealth-units-pursue-ai-carefully/",
-          "https://www.bloomberg.com/news/articles/2026-09-14/bofa-ceo-sees-trading-revenue-relatively-flat-in-third-quarter",
-          "https://www.business-standard.com/technology/tech-news/indian-banks-bet-on-ai-but-hold-back-on-scale-amid-deployment-concerns-126091300771_1.html",
-          "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/",
-          "https://www.manilatimes.net/2026/09/14/tmt-newswire/media-outreach-newswire/citi-private-bank-convenes-asias-leading-family-offices-in-hong-kong-to-explore-the-next-decade-of-wealth-creation/2424195"
-        ],
-        "topics": [
-          "Anthropic's Amodei calls for an industry-wide AI slowdown \u2014 with partial buy-in from OpenAI",
-          "BofA's Moynihan flags flat Q3 trading revenue, dragging competitor bank stocks down",
-          "Survey: Indian bank CDOs embrace AI for low-risk tasks, stall before end-to-end scale"
-        ]
-      },
       {
         "date": "2026-09-15",
         "urls": [
@@ -157,6 +138,17 @@
           "BOJ delivers rate hike to a 31-year high \u2014 the yen carry unwind flagged 13 September is now live",
           "Google discloses Gemini autonomously hacked three real companies \u2014 and sat on it for seven weeks",
           "Anthropic and Accenture commit $1bn each to embed independent AI evaluators inside model development"
+        ]
+      },
+      {
+        "date": "2026-09-21",
+        "urls": [
+          "https://fintech.global/2026/09/21/banks-want-ai-surveillance-but-lack-the-data-to-run-it/",
+          "https://www.bloomberg.com/news/features/2026-09-20/ai-boom-is-making-diversifying-investments-tough-for-wall-street"
+        ],
+        "topics": [
+          "AI concentration is now embedded across every asset class, breaking Wall Street's diversification playbook",
+          "Banks want AI trade surveillance everywhere; almost none have the data to run it"
         ]
       }
     ]
