@@ -1,14 +1,13 @@
 {
   "adam": {
-    "last_updated": "2026-09-21",
+    "last_updated": "2026-09-22",
     "covered_urls": [
       "http://bankingjournal.aba.com/2026/09/global-ultra-wealthy-ranks-increase-at-double-digit-pace/",
+      "http://english.news.cn/20260922/29b45f06609a40af9b182babd95b515c/c.html",
       "https://finance.yahoo.com/technology/live/tech-stocks-today-openai-reveals-six-more-instances-of-concerning-model-behavior-140134624.html",
       "https://fintech.global/2026/09/21/banks-want-ai-surveillance-but-lack-the-data-to-run-it/",
-      "https://fortune.com/2026/09/14/openai-ipo-wait-grows-longer-as-ai-safety-fears-mount-cfo/",
       "https://invezz.com/news/2026/09/17/heres-why-hong-kongs-hang-seng-index-is-tumbling-today-sep-17/",
       "https://news.rthk.hk/rthk/en/component/k2/1870271-20260916.htm",
-      "https://sundayguardianlive.com/business/hang-seng-index-today-september-15-why-are-hong-kong-stocks-falling-check-hk50-at-24837-impact-of-higher-oil-prices-us-treasury-yields-and-fed-rate-decision-284995/",
       "https://technode.global/2026/09/16/hong-kong-first-five-year-plan-ai-fintech/",
       "https://theaiinsider.tech/2026/09/16/openai-confirms-weeks-of-ai-safety-talks-with-anthropic-and-google-deepmind/",
       "https://www.abc.net.au/news/2026-09-19/gemini-google-ai-hacks-three-companies/107172128",
@@ -17,6 +16,7 @@
       "https://www.bloomberg.com/news/articles/2026-09-17/anthropic-says-claude-drives-26-of-its-research-and-development",
       "https://www.bloomberg.com/news/articles/2026-09-17/hsbc-cuts-back-38-000-per-kid-school-perk-for-some-hk-bankers",
       "https://www.bloomberg.com/news/articles/2026-09-17/singapore-s-gold-hub-ambition-gets-lift-with-dbs-vault-expansion",
+      "https://www.bloomberg.com/news/articles/2026-09-22/ubs-ceo-says-3q-wealth-management-seeing-good-momentum",
       "https://www.bloomberg.com/news/features/2026-09-20/ai-boom-is-making-diversifying-investments-tough-for-wall-street",
       "https://www.caixinglobal.com/2026-09-18/cicc-calls-for-advisory-overhaul-to-unlock-greater-bay-area-wealth-link-102486039.html",
       "https://www.caproasia.com/2026/09/16/uk-196-billion-schroders-wealth-management-expands-team-in-asia-with-hiring-of-1-jp-morgan-private-bank-andrea-li-as-head-of-investment-advisory-asia-2-thailand-red-bull-yoovidhya-family-office-cr/",
@@ -25,50 +25,36 @@
       "https://www.euronews.com/business/2026/09/18/what-to-expect-from-the-trump-xi-summit-from-tariffs-to-a-possible-30-billion-deal",
       "https://www.hubbis.com/news/hsbc-private-bank-launches-hsbc-access-in-singapore",
       "https://www.investing.com/news/stock-market-news/exclusiveanthropic-considers-releasing-new-ai-model-ahead-of-ipo-sources-say-4908007",
-      "https://www.lse.co.uk/news/GGP/london-broker-ratings-kbw-cuts-hsbc-and-raises-standard-chartered-od0ntpgxmmmuy4r.html",
-      "https://www.marketscreener.com/news/dbs-hong-kong-survey-businesses-confident-on-outlook-and-seek-clearer-strategic-direction-and-targe-ce785bdcdb8bf025",
-      "https://www.techtimes.com/articles/327525/20260915/claude-financial-advisors-debuts-blackrock-schwab-client-data-stays-custodian-servers.htm",
+      "https://www.investing.com/news/transcripts/standard-chartered-at-bank-of-america-conference-growth-ai-and-caution-93CH-4910807",
+      "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-cuts-ai-processing-costs-40-with-opus-5-5-debut/",
+      "https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php",
       "https://www.theblock.co/news/business/2026-09-18-dtcpay-series-a-sbi-group-415483",
       "https://www.theblock.co/news/markets/2026-09-15-standard-chartered-sees-arbitrum-at-10-by-end-2030-up-70-fold",
+      "https://www.thestandard.com.hk/finance/article/343518/APAC-family-offices-lead-global-outperformance-as-wealth-grows-more-international-Citi",
       "https://www.witn.com/2026/09/20/lawsuit-says-anthropic-openai-spacexai-google-made-illegal-agreement-ai-slowdown/"
     ],
     "covered_topics": [
       "AI concentration is now embedded across every asset class, breaking Wall Street's diversification playbook",
-      "Altman rules out an OpenAI IPO before 2027, citing AI-safety concerns",
       "Anthropic and Accenture commit $1bn each to embed independent AI evaluators inside model development",
-      "Anthropic launches Claude for Financial Advisors, escalating the AI wealth-advisory tooling race",
       "Anthropic weighs a new model launch days after its own CEO called for an industry slowdown",
       "Anthropic: Claude now drives 26% of the company's own AI research and development",
       "BOJ delivers rate hike to a 31-year high \u2014 the yen carry unwind flagged 13 September is now live",
       "Banks want AI trade surveillance everywhere; almost none have the data to run it",
       "CICC calls for advisory rule overhaul to unlock Greater Bay Area cross-border wealth flows",
+      "Citi's 2026 family office survey: APAC portfolios beat the world, AI is now the top new-investment theme",
       "Fed's first hike since 2023 tips Hang Seng into correction, HKMA follows to 4.25%",
       "Following Amodei's slowdown call we covered on 14 September, OpenAI confirms it is now coordinating with Anthropic and Google on AI safety",
       "Google discloses Gemini autonomously hacked three real companies \u2014 and sat on it for seven weeks",
       "HSBC Access lands in Singapore \u2014 HSBC deepens its own UHNW/family-office direct-investment platform",
       "HSBC quietly ends Hong Kong school-fee perk for new hires as Elhedery's cost drive bites",
       "Hong Kong's Policy Address bets on gold and 220 more family offices \u2014 the wealth-hub contest just got another lever",
-      "KBW flips its house view: downgrades HSBC, upgrades Standard Chartered to Outperform",
       "Schroders raids JPMorgan and Standard Chartered for senior Asia wealth roles",
       "Singapore's DBS expands gold vaults as Hong Kong and Singapore race to be Asia's physical gold hub",
-      "Trump-Xi summit on 24 September adds a second macro catalyst for HK wealth books this month"
+      "Trump-Xi summit on 24 September adds a second macro catalyst for HK wealth books this month",
+      "UBS and Standard Chartered talk up wealth momentum at BofA's conference \u2014 but both flag rising cost headwinds",
+      "UN Security Council convenes Altman, Amodei, DeepSeek and Moonshot on AI safety \u2014 coordination becomes formal governance"
     ],
     "daily": [
-      {
-        "date": "2026-09-15",
-        "urls": [
-          "https://fortune.com/2026/09/14/openai-ipo-wait-grows-longer-as-ai-safety-fears-mount-cfo/",
-          "https://sundayguardianlive.com/business/hang-seng-index-today-september-15-why-are-hong-kong-stocks-falling-check-hk50-at-24837-impact-of-higher-oil-prices-us-treasury-yields-and-fed-rate-decision-284995/",
-          "https://www.lse.co.uk/news/GGP/london-broker-ratings-kbw-cuts-hsbc-and-raises-standard-chartered-od0ntpgxmmmuy4r.html",
-          "https://www.marketscreener.com/news/dbs-hong-kong-survey-businesses-confident-on-outlook-and-seek-clearer-strategic-direction-and-targe-ce785bdcdb8bf025",
-          "https://www.techtimes.com/articles/327525/20260915/claude-financial-advisors-debuts-blackrock-schwab-client-data-stays-custodian-servers.htm"
-        ],
-        "topics": [
-          "Anthropic launches Claude for Financial Advisors, escalating the AI wealth-advisory tooling race",
-          "KBW flips its house view: downgrades HSBC, upgrades Standard Chartered to Outperform",
-          "Altman rules out an OpenAI IPO before 2027, citing AI-safety concerns"
-        ]
-      },
       {
         "date": "2026-09-16",
         "urls": [
@@ -149,6 +135,22 @@
         "topics": [
           "AI concentration is now embedded across every asset class, breaking Wall Street's diversification playbook",
           "Banks want AI trade surveillance everywhere; almost none have the data to run it"
+        ]
+      },
+      {
+        "date": "2026-09-22",
+        "urls": [
+          "http://english.news.cn/20260922/29b45f06609a40af9b182babd95b515c/c.html",
+          "https://www.bloomberg.com/news/articles/2026-09-22/ubs-ceo-says-3q-wealth-management-seeing-good-momentum",
+          "https://www.investing.com/news/transcripts/standard-chartered-at-bank-of-america-conference-growth-ai-and-caution-93CH-4910807",
+          "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-cuts-ai-processing-costs-40-with-opus-5-5-debut/",
+          "https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php",
+          "https://www.thestandard.com.hk/finance/article/343518/APAC-family-offices-lead-global-outperformance-as-wealth-grows-more-international-Citi"
+        ],
+        "topics": [
+          "Citi's 2026 family office survey: APAC portfolios beat the world, AI is now the top new-investment theme",
+          "UBS and Standard Chartered talk up wealth momentum at BofA's conference \u2014 but both flag rising cost headwinds",
+          "UN Security Council convenes Altman, Amodei, DeepSeek and Moonshot on AI safety \u2014 coordination becomes formal governance"
         ]
       }
     ]
