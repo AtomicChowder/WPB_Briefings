@@ -235,7 +235,8 @@ def main(argv: list[str]) -> int:
 
     _validate_articles(raw["articles"])
 
-    generated_at = datetime.now(timezone.utc).strftime("%-d %b %Y, %H:%M UTC")
+    _now = datetime.now(timezone.utc)
+    generated_at = f"{_now.day} {_now.strftime('%b %Y, %H:%M UTC')}"  # portable '%-d' (Windows-safe)
     briefing_dt = date.fromisoformat(raw["date_str"])
 
     hist = {}

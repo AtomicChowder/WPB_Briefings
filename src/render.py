@@ -24,12 +24,17 @@ def _slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
+def _day_month_year(dt) -> str:
+    """Portable '%-d %b %Y' — the '-' flag is Linux-only and crashes on Windows."""
+    return f"{dt.day} {dt.strftime('%b %Y')}"
+
+
 def _format_date(iso_str: str) -> str:
     if not iso_str:
         return ""
     try:
         dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
-        return dt.strftime("%-d %b %Y")
+        return _day_month_year(dt)
     except Exception:
         return iso_str[:10]
 
@@ -37,7 +42,7 @@ def _format_date(iso_str: str) -> str:
 def _fmt_nav_date(iso_str: str) -> str:
     """Short date label for the nav bar, e.g. '25 Aug 2026'."""
     try:
-        return _date.fromisoformat(iso_str).strftime("%-d %b %Y")
+        return _day_month_year(_date.fromisoformat(iso_str))
     except Exception:
         return iso_str
 
@@ -46,7 +51,7 @@ def _prev_nav_link(user_dir: Path, date_str: str):
     """Find the most recent archived edition strictly before date_str.
 
     nav.json is regenerated from the actual archived .html files by the
-    routine's own archive step (see ROUTINE.md step 7) after this render
+    routine's archive step (see ROUTINE.md step 7) after this render
     runs, so at render time it holds every PRIOR day but not today yet —
     read it as-is rather than mutating it here.
     """
@@ -99,6 +104,7 @@ def render(user_id: str) -> None:
             "Private Banking & Wealth": "#059669",
             "Regulatory & Markets": "#d97706",
             "Operations & Change": "#7c3aed",
+            "On Adam's Desk": "#be123c",
         },
         chart_data_json=json.dumps(data["chart_data"]),
         generated_at=data.get("generated_at", ""),
