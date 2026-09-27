@@ -292,7 +292,7 @@
         <div class="tp-body">
           
           <h3 class="tp-headline">DBS deepens its 18-year Avaloq alliance to chase S$1tn AUM — convergence on the shared vendor stack continues</h3>
-          <p class="tp-context">DBS and Avaloq signed an MoU on Friday to expand their 18-year partnership across enterprise growth, co-innovation and capability building, with <strong>Shee Tse Koon, Group Executive and Head of Consumer Banking and Wealth Management at DBS</strong>, targeting S$1 trillion in retail and wealth AUM by 2030 and <strong>Martin Greweldinger, Group CEO of Avaloq</strong>, framing an 'AI-enabled industry' skills agenda. DBS is betting platform scalability closes Asia's adviser shortage — 7 in 10 investors already have an adviser while demand keeps rising — faster than hiring can. As more regional wealth franchises converge on the same core vendor stack, differentiation shifts to advisory workflow, adoption pace and delivery execution: precisely the terrain a change-execution agenda competes on, and a live input to how HSBC sequences its own platform decisions this quarter.</p>
+          <p class="tp-context">DBS and Avaloq signed an MoU on Friday to expand their 18-year partnership across enterprise growth, co-innovation and capability building, with <strong>Shee Tse Koon, Group Executive and Head of Consumer Banking and Wealth Management at DBS</strong> targeting S$1 trillion in retail and wealth AUM by 2030 and <strong>Martin Greweldinger, Group CEO of Avaloq</strong> framing an 'AI-enabled industry' skills agenda. DBS is betting platform scalability closes Asia's adviser shortage — 7 in 10 investors already have an adviser while demand keeps rising — faster than hiring can. As more regional wealth franchises converge on the same core vendor stack, differentiation shifts to advisory workflow, adoption pace and delivery execution: precisely the terrain a change-execution agenda competes on, and a live input to how HSBC sequences its own platform decisions this quarter.</p>
           
           <div class="tp-sources">
             
@@ -464,7 +464,7 @@
           <div class="article-title">
             <a href="https://financialit.net/news/payments/payme-hsbc-x-payment-asia-empowering-merchants-ai-driven-digital-payment-solutions" target="_blank" rel="noopener">PayMe by HSBC and Payment Asia push AI-driven merchant onboarding in Hong Kong</a>
           </div>
-          <p class="article-summary">PayMe by HSBC, which reports 3.3 million users, has deepened its partnership with Payment Asia, offering an exclusive 1.25% merchant welcome rate and AI-automated merchant application processing. The two framed the move around Hong Kong's shift to a cashless mainstream, with surveys cited showing up to 60% of citizens no longer carry cash. It is a live example of HSBC industrialising AI in customer-facing operations at local-market scale.</p>
+          <p class="article-summary">PayMe by HSBC, which reports 3.3 million users, has deepened its partnership with Payment Asia, offering an exclusive 1.25% merchant welcome rate and AI-automated merchant application processing. The two framed the move around Hong Kong&#39;s shift to a cashless mainstream, with surveys cited showing up to 60% of citizens no longer carry cash. It is a live example of HSBC industrialising AI in customer-facing operations at local-market scale.</p>
           <div class="article-footer">
             <span class="article-source">Financial IT</span>
             <span>27 Sep 2026</span>
@@ -675,7 +675,7 @@ function renderChart() {
       const card = document.getElementById('article-' + d.id);
       if (card) card.classList.add('chart-highlighted');
     })
-    .on('mousemove', function(event, d) {
+    .on('mousemove', function(event) {
       tooltip.style.left = (event.clientX + 14) + 'px';
       tooltip.style.top  = (event.clientY - 12) + 'px';
     })
@@ -729,8 +729,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const color = CHART_DATA.categories[d.category] || '#64748b';
           const baseR = +d3.select(this).select('circle').attr('data-base-r');
           d3.select(this).select('circle')
-            .attr('fill', color + 'ff').attr('stroke-width', 2.5)
-            .attr('r', baseR * 1.18);
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
         }
       });
     });
