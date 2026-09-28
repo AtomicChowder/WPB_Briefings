@@ -1,55 +1,40 @@
 {
   "adam": {
-    "last_updated": "2026-09-28",
+    "last_updated": "2026-09-29",
     "covered_urls": [
-      "http://english.news.cn/20260922/29b45f06609a40af9b182babd95b515c/c.html",
+      "https://asianbankingandfinance.net/",
       "https://finance.yahoo.com/energy/articles/oil-rises-slightly-ahead-potential-003404571.html",
       "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-falls-3-despite-165238714.html",
       "https://finance.yahoo.com/technology/articles/tencent-cloud-boost-collaborate-accelerate-060000816.html",
       "https://financialit.net/news/payments/payme-hsbc-x-payment-asia-empowering-merchants-ai-driven-digital-payment-solutions",
+      "https://icapital.com/newsroom/press-releases/dtcc-and-icapital-collaborate-to-advance-private-market-infrastructure-expand-access-and-support-the-industrys-next-phase-of-growth-and-scale/",
       "https://insuranceasia.com/insurance/news/prudential-singapore-ceo-exits-eastspring-role",
       "https://kpmg.com/kw/en/insights/2026/09/pulse-of-fintech-h1-2026/aspac.html",
       "https://smartinvestor.com.my/media-outreach/2026/09/23/489694/prudential-singapore-expands-advisory-services-to-help-customers-plan-and-grow-wealth-for-retirement/",
       "https://stocktwits.com/news-articles/markets/equity/openai-anthropic-investigate-tens-thousands-ai-incidents-guardrails/cZMiZE5RBfE",
       "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+      "https://thefintechtimes.com/sibos-2026-preview-ai-tokenised-money-and-the-ledger-take-the-stage/",
       "https://www.ad-hoc-news.de/boerse/news/corporate-news/dbs-group-stock-rises-as-jefferies-sets-sgd-91-target/70154437",
-      "https://www.bloomberg.com/news/articles/2026-09-22/ubs-ceo-says-3q-wealth-management-seeing-good-momentum",
       "https://www.businesstimes.com.sg/wealth/wealth-investing/ex-goldman-trader-quietly-turns-singapore-based-family-office-mini-pod-shop-offbeat-hires",
-      "https://www.investing.com/news/transcripts/standard-chartered-at-bank-of-america-conference-growth-ai-and-caution-93CH-4910807",
-      "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-cuts-ai-processing-costs-40-with-opus-5-5-debut/",
+      "https://www.globalbankingandfinance.com/foreign-banks-expressed-ubs-merger-interest-swiss-newspaper/",
       "https://www.retailnews.asia/bitcoin-spot-etfs-attract-2-4-billion-in-inflows-as-daily-momentum-slows",
-      "https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php",
-      "https://www.thestandard.com.hk/finance/article/343518/APAC-family-offices-lead-global-outperformance-as-wealth-grows-more-international-Citi",
-      "https://www.wealthbriefing.com/html/article.php/dbs%2C-avaloq-expand-partnership%2C-tap-further-into-asia%27s-wealth-boom-"
+      "https://www.thebanker.com/content/a1160bc2-5d38-40f2-9f7c-0113294a72cf",
+      "https://www.theedgesingapore.com/news/banking-finance/hsbc-makes-big-push-affluent-clients-india-fuel-growth",
+      "https://www.wealthbriefing.com/html/article.php/dbs%2C-avaloq-expand-partnership%2C-tap-further-into-asia%27s-wealth-boom-",
+      "https://www.wealthbriefing.com/html/article.php/singapore%27s-seviora%2C-first-abu-dhabi-bank-enter-partnership"
     ],
     "covered_topics": [
       "AI Model Price War Escalates: OpenAI Undercuts Anthropic's Opus 5.5 Within Hours",
-      "Citi's 2026 family office survey: APAC portfolios beat the world, AI is now the top new-investment theme",
       "DBS deepens its 18-year Avaloq alliance to chase S$1tn AUM — convergence on the shared vendor stack continues",
+      "Eight global banks circle UBS as Swiss capital rules bite — StanChart and Deutsche among reported suitors",
+      "HSBC Private Bank poaches UBS veteran Francesca Chan to lead APAC family advisory and philanthropy",
       "JPMorgan Converts a $20bn Qatar Sovereign-Wealth Tie-Up Into a New Growth Lever",
       "OpenAI and Anthropic are probing tens of thousands of AI safety incidents — bank AI gating just got harder",
       "PayMe by HSBC industrialises AI merchant onboarding as Hong Kong's wallet race shifts to ecosystems",
-      "Tencent Cloud Wires AI and Cloud Infrastructure Into a Malaysia/Indonesia Digital Bank",
-      "UBS and Standard Chartered talk up wealth momentum at BofA's conference — but both flag rising cost headwinds",
-      "UN Security Council convenes Altman, Amodei, DeepSeek and Moonshot on AI safety — coordination becomes formal governance"
+      "Singapore draws the AI-agent governance line: proposed framework sets controls for AI actions at runtime",
+      "Tencent Cloud Wires AI and Cloud Infrastructure Into a Malaysia/Indonesia Digital Bank"
     ],
     "daily": [
-      {
-        "date": "2026-09-22",
-        "urls": [
-          "http://english.news.cn/20260922/29b45f06609a40af9b182babd95b515c/c.html",
-          "https://www.bloomberg.com/news/articles/2026-09-22/ubs-ceo-says-3q-wealth-management-seeing-good-momentum",
-          "https://www.investing.com/news/transcripts/standard-chartered-at-bank-of-america-conference-growth-ai-and-caution-93CH-4910807",
-          "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-cuts-ai-processing-costs-40-with-opus-5-5-debut/",
-          "https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php",
-          "https://www.thestandard.com.hk/finance/article/343518/APAC-family-offices-lead-global-outperformance-as-wealth-grows-more-international-Citi"
-        ],
-        "topics": [
-          "Citi's 2026 family office survey: APAC portfolios beat the world, AI is now the top new-investment theme",
-          "UBS and Standard Chartered talk up wealth momentum at BofA's conference — but both flag rising cost headwinds",
-          "UN Security Council convenes Altman, Amodei, DeepSeek and Moonshot on AI safety — coordination becomes formal governance"
-        ]
-      },
       {
         "date": "2026-09-23",
         "urls": [
@@ -81,6 +66,23 @@
           "OpenAI and Anthropic are probing tens of thousands of AI safety incidents — bank AI gating just got harder",
           "DBS deepens its 18-year Avaloq alliance to chase S$1tn AUM — convergence on the shared vendor stack continues",
           "PayMe by HSBC industrialises AI merchant onboarding as Hong Kong's wallet race shifts to ecosystems"
+        ]
+      },
+      {
+        "date": "2026-09-29",
+        "urls": [
+          "https://asianbankingandfinance.net/",
+          "https://icapital.com/newsroom/press-releases/dtcc-and-icapital-collaborate-to-advance-private-market-infrastructure-expand-access-and-support-the-industrys-next-phase-of-growth-and-scale/",
+          "https://thefintechtimes.com/sibos-2026-preview-ai-tokenised-money-and-the-ledger-take-the-stage/",
+          "https://www.globalbankingandfinance.com/foreign-banks-expressed-ubs-merger-interest-swiss-newspaper/",
+          "https://www.thebanker.com/content/a1160bc2-5d38-40f2-9f7c-0113294a72cf",
+          "https://www.theedgesingapore.com/news/banking-finance/hsbc-makes-big-push-affluent-clients-india-fuel-growth",
+          "https://www.wealthbriefing.com/html/article.php/singapore%27s-seviora%2C-first-abu-dhabi-bank-enter-partnership"
+        ],
+        "topics": [
+          "Eight global banks circle UBS as Swiss capital rules bite — StanChart and Deutsche among reported suitors",
+          "HSBC Private Bank poaches UBS veteran Francesca Chan to lead APAC family advisory and philanthropy",
+          "Singapore draws the AI-agent governance line: proposed framework sets controls for AI actions at runtime"
         ]
       }
     ]
