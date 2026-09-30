@@ -1,56 +1,42 @@
 {
   "adam": {
-    "last_updated": "2026-09-29",
+    "last_updated": "2026-10-01",
     "covered_urls": [
       "https://asianbankingandfinance.net/",
-      "https://finance.yahoo.com/energy/articles/oil-rises-slightly-ahead-potential-003404571.html",
-      "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-falls-3-despite-165238714.html",
-      "https://finance.yahoo.com/technology/articles/tencent-cloud-boost-collaborate-accelerate-060000816.html",
+      "https://finance.biggo.com/news/c2610d0d-a885-41d4-9eb6-cf6d1393ecef",
       "https://financialit.net/news/payments/payme-hsbc-x-payment-asia-empowering-merchants-ai-driven-digital-payment-solutions",
+      "https://fintechnews.hk/41008/virtual-banking/ping-an-digital-bank-assets-deposits-wealth/",
+      "https://globalprivatebanker.net/hsbc-private-bank-ai-dominates-agenda-for-entrepreneurs-globally/",
       "https://icapital.com/newsroom/press-releases/dtcc-and-icapital-collaborate-to-advance-private-market-infrastructure-expand-access-and-support-the-industrys-next-phase-of-growth-and-scale/",
       "https://insuranceasia.com/insurance/news/prudential-singapore-ceo-exits-eastspring-role",
       "https://kpmg.com/kw/en/insights/2026/09/pulse-of-fintech-h1-2026/aspac.html",
-      "https://smartinvestor.com.my/media-outreach/2026/09/23/489694/prudential-singapore-expands-advisory-services-to-help-customers-plan-and-grow-wealth-for-retirement/",
       "https://stocktwits.com/news-articles/markets/equity/openai-anthropic-investigate-tens-thousands-ai-incidents-guardrails/cZMiZE5RBfE",
-      "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
       "https://thefintechtimes.com/sibos-2026-preview-ai-tokenised-money-and-the-ledger-take-the-stage/",
-      "https://www.ad-hoc-news.de/boerse/news/corporate-news/dbs-group-stock-rises-as-jefferies-sets-sgd-91-target/70154437",
+      "https://vietnamnews.vn/media-outreach/1800844/allianz-global-wealth-report-2026-markets-drive-record-wealth-as-ai-raises-the-stakes.html",
+      "https://www.bloomberg.com/news/videos/2026-09-30/rbc-says-30-year-treasury-yield-at-6-is-possible-video",
       "https://www.businesstimes.com.sg/wealth/wealth-investing/ex-goldman-trader-quietly-turns-singapore-based-family-office-mini-pod-shop-offbeat-hires",
+      "https://www.fintechfutures.com/wealth-management-software/gulf-bank-powers-investgb-with-avaloq-platform",
       "https://www.globalbankingandfinance.com/foreign-banks-expressed-ubs-merger-interest-swiss-newspaper/",
+      "https://www.regtech.com/news/hong-kong-fourth-digital-green-bonds-tokenised-deposits",
       "https://www.retailnews.asia/bitcoin-spot-etfs-attract-2-4-billion-in-inflows-as-daily-momentum-slows",
+      "https://www.scmp.com/business/banking-finance/article/3369284/hsbc-unveils-redcoin-name-its-hong-kong-stablecoin-33-million-payme-users",
       "https://www.thebanker.com/content/a1160bc2-5d38-40f2-9f7c-0113294a72cf",
       "https://www.theedgesingapore.com/news/banking-finance/hsbc-makes-big-push-affluent-clients-india-fuel-growth",
       "https://www.wealthbriefing.com/html/article.php/dbs%2C-avaloq-expand-partnership%2C-tap-further-into-asia%27s-wealth-boom-",
       "https://www.wealthbriefing.com/html/article.php/singapore%27s-seviora%2C-first-abu-dhabi-bank-enter-partnership"
     ],
     "covered_topics": [
-      "AI Model Price War Escalates: OpenAI Undercuts Anthropic's Opus 5.5 Within Hours",
       "DBS deepens its 18-year Avaloq alliance to chase S$1tn AUM — convergence on the shared vendor stack continues",
       "Eight global banks circle UBS as Swiss capital rules bite — StanChart and Deutsche among reported suitors",
       "HSBC Private Bank poaches UBS veteran Francesca Chan to lead APAC family advisory and philanthropy",
-      "JPMorgan Converts a $20bn Qatar Sovereign-Wealth Tie-Up Into a New Growth Lever",
+      "HSBC names RedCoin stablecoin, will push it to 3.3m PayMe users before year-end",
+      "Hong Kong's record HK$20bn digital green bond settles on HSBC Orion, with HSBC at every layer",
+      "On Adam's desk: Avaloq goes live front-to-back at Gulf Bank's InvestGB — credit and RM desktop included",
       "OpenAI and Anthropic are probing tens of thousands of AI safety incidents — bank AI gating just got harder",
       "PayMe by HSBC industrialises AI merchant onboarding as Hong Kong's wallet race shifts to ecosystems",
-      "Singapore draws the AI-agent governance line: proposed framework sets controls for AI actions at runtime",
-      "Tencent Cloud Wires AI and Cloud Infrastructure Into a Malaysia/Indonesia Digital Bank"
+      "Singapore draws the AI-agent governance line: proposed framework sets controls for AI actions at runtime"
     ],
     "daily": [
-      {
-        "date": "2026-09-23",
-        "urls": [
-          "https://finance.yahoo.com/energy/articles/oil-rises-slightly-ahead-potential-003404571.html",
-          "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-falls-3-despite-165238714.html",
-          "https://finance.yahoo.com/technology/articles/tencent-cloud-boost-collaborate-accelerate-060000816.html",
-          "https://smartinvestor.com.my/media-outreach/2026/09/23/489694/prudential-singapore-expands-advisory-services-to-help-customers-plan-and-grow-wealth-for-retirement/",
-          "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-          "https://www.ad-hoc-news.de/boerse/news/corporate-news/dbs-group-stock-rises-as-jefferies-sets-sgd-91-target/70154437"
-        ],
-        "topics": [
-          "AI Model Price War Escalates: OpenAI Undercuts Anthropic's Opus 5.5 Within Hours",
-          "JPMorgan Converts a $20bn Qatar Sovereign-Wealth Tie-Up Into a New Growth Lever",
-          "Tencent Cloud Wires AI and Cloud Infrastructure Into a Malaysia/Indonesia Digital Bank"
-        ]
-      },
       {
         "date": "2026-09-28",
         "urls": [
@@ -83,6 +69,24 @@
           "Eight global banks circle UBS as Swiss capital rules bite — StanChart and Deutsche among reported suitors",
           "HSBC Private Bank poaches UBS veteran Francesca Chan to lead APAC family advisory and philanthropy",
           "Singapore draws the AI-agent governance line: proposed framework sets controls for AI actions at runtime"
+        ]
+      },
+      {
+        "date": "2026-10-01",
+        "urls": [
+          "https://finance.biggo.com/news/c2610d0d-a885-41d4-9eb6-cf6d1393ecef",
+          "https://fintechnews.hk/41008/virtual-banking/ping-an-digital-bank-assets-deposits-wealth/",
+          "https://globalprivatebanker.net/hsbc-private-bank-ai-dominates-agenda-for-entrepreneurs-globally/",
+          "https://vietnamnews.vn/media-outreach/1800844/allianz-global-wealth-report-2026-markets-drive-record-wealth-as-ai-raises-the-stakes.html",
+          "https://www.bloomberg.com/news/videos/2026-09-30/rbc-says-30-year-treasury-yield-at-6-is-possible-video",
+          "https://www.fintechfutures.com/wealth-management-software/gulf-bank-powers-investgb-with-avaloq-platform",
+          "https://www.regtech.com/news/hong-kong-fourth-digital-green-bonds-tokenised-deposits",
+          "https://www.scmp.com/business/banking-finance/article/3369284/hsbc-unveils-redcoin-name-its-hong-kong-stablecoin-33-million-payme-users"
+        ],
+        "topics": [
+          "HSBC names RedCoin stablecoin, will push it to 3.3m PayMe users before year-end",
+          "Hong Kong's record HK$20bn digital green bond settles on HSBC Orion, with HSBC at every layer",
+          "On Adam's desk: Avaloq goes live front-to-back at Gulf Bank's InvestGB — credit and RM desktop included"
         ]
       }
     ]
