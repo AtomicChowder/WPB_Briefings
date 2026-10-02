@@ -3,127 +3,170 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Friday, 2 October 2026",
-  "date_str": "2026-10-02",
-  "generated_at": "1 Oct 2026, 23:13 UTC",
-  "total_articles": 6,
+  "briefing_date": "Saturday, 3 October 2026",
+  "date_str": "2026-10-03",
+  "generated_at": "2 Oct 2026, 23:23 UTC",
+  "total_articles": 9,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC and Citi put $10.5m behind Singapore FX fintech Spark Systems",
-      "context_html": "HSBC has co-invested $10.5 million with Citi and OSK Ventures in Spark Systems, a Singapore fintech building ultra-low-latency FX trading platforms for the buy side, with Goldman Sachs already on the register \u2014 <strong>Wong Joo Seng, founder and CEO of Spark Systems</strong>, will put the money into the firm's in-house stack, client onboarding and analytics as it expands toward New York and London. Coming in the same week as the Swift tokenised-deposit pilot and Hong Kong's Orion-settled bond, it shows major banks buying stakes in shared market plumbing rather than building everything in-house. For Adam, the pattern is the point: the partnering-and-delivery muscle WPB is exercising on its own platform programmes is becoming the industry's default operating model for infrastructure.",
+      "headline": "Hong Kong financials slump most since March — HSBC down 5.7% as rate pressure bites",
+      "context_html": "Hong Kong stocks fell as much as 3% on the October 2 reopen — the Hang Seng's worst day since March — with HSBC down 5.7% as the biggest single drag, as the US 10-year Treasury yield touched its highest since 2002 and UK bank-tax worries compounded the pressure; <strong>Homin Lee, Senior Macro Strategist at Lombard Odier Singapore</strong>, reads the move as rates-driven repricing of financials. It is the clearest macro signal of the week: higher-for-longer is now visibly pricing bank equities, not just bond yields. For Adam, this is the backdrop his 2027 planning conversations will be held against — the NII-versus-fee-mix argument just moved from theory to HSBC's share price, and every WPB investment case will need to answer it.",
       "source_links": [
         [
-          "https://www.fintechfutures.com/bankingtech/singapore-fintech-spark-systems-lands-10-5m-from-citi-and-hsbc",
-          "FinTech Futures: Spark Systems lands $10.5m"
+          "https://theedgemalaysia.com/node/820301",
+          "The Edge: HK stocks slump most since March"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Maybank takes a tokenised money market fund live in Singapore \u2014 the region's first bank-led distribution",
-      "context_html": "Maybank has launched a tokenised SGD money market fund share class in Singapore, distributed through regulated intermediaries on the Synthesys Network \u2014 the first time a regional bank has taken tokenised fund distribution live rather than running it as a pilot. It follows Hong Kong's HK$20 billion Orion-settled green bond and the Swift tokenised-deposit pilot this week, marking tokenisation's shift from settlement experiments to client-facing distribution in both hubs. For Adam, every live tokenised fund drags transfer-agency, NAV, custody and client-disclosure delivery work into WPB's scope \u2014 and Maybank's move sets the regional benchmark his platform teams will be measured against.",
+      "headline": "UOB makes the branch bookable — Singapore's first online appointment system finds older advice-seekers",
+      "context_html": "UOB has gone live with Singapore's first online branch-appointment booking, covering more than 25 services from banker's guarantees to advisory and wealth meetings, after a six-branch pilot in which almost half of users were over 50 and half booked advisory services; <strong>Benny Chan, Managing Director for Group Channels and Digitalisation at UOB</strong>, is leading the rollout while DBS and OCBC confirmed they have no equivalent. The counter-intuitive finding: the cohort everyone assumes avoids digital — older, advice-hungry clients — will use it when the journey leads to a person. For Adam, that is the design brief for WPB's RM-desk and channel work in one sentence: digital that routes to humans, not digital that replaces them, plus a measurable competitor baseline to benchmark against.",
       "source_links": [
         [
-          "https://fintechnews.sg/138369/wealthtech/maybank-tokenised-sgd-money-market-fund-synthesys/",
-          "Fintech News SG: Maybank tokenised SGD money market fund"
+          "https://www.businesstimes.com.sg/companies-markets/uob-rolls-out-online-booking-branch-appointments",
+          "Business Times: UOB online branch booking"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "On Adam's desk: private-bank AI hits the deployment wall \u2014 Hubbis maps the way through",
-      "context_html": "Hubbis, drawing on 60-plus AI projects across Asian private banks this year, reports that strategies and pilots are plentiful but almost nothing has changed how an adviser works on a Monday morning \u2014 and its fixes are explicit: choose top-line or cost-line, redesign workflows rather than decorate them, supercharge the RM, and treat the MAS AI Risk Management Toolkit as the signed industry handbook for shipping with controls. It arrives weeks before WPB's own AI-coach go/no-go and the October/November uplift-attribution question. For Adam, this is the sharpest external validation yet that the bottleneck is deployment discipline \u2014 the exact ground his change-execution agenda is built to hold.",
+      "headline": "Nubank puts AI inside compliance at scale — a ship-with-controls reference case",
+      "context_html": "Nubank has rolled out Cardamon's AI compliance platform across every jurisdiction it operates in, with the RegTech claiming it maps regulatory positions up to 20x faster than legacy processes at a bank serving more than 140 million customers; <strong>Amanda Hauch F. Silva, compliance expert at Nubank</strong>, is quoted on the deployment. AI has crossed from productivity pilots into the control function itself — the most change-resistant layer of any bank. For Adam, this is the sharpest live template yet for the ship-with-controls model his change teams are advocating: automated obligations with auditability, in production, at scale — ready ammunition for the next WPB AI-in-controls discussion.",
       "source_links": [
         [
-          "https://hubbis.com/article/ai-what-s-working-in-private-wealth",
-          "Hubbis: AI \u2014 what's working in private wealth"
+          "https://fintech.global/2026/10/02/nubank-bets-on-ai-to-scale-global-compliance-with-cardamon/",
+          "FinTech Global: Nubank AI compliance"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "On Adam's Desk": [
-      {
-        "id": "art07",
-        "title": "AI: What's actually working in private wealth \u2014 Hubbis maps the deployment gap",
-        "url": "https://hubbis.com/article/ai-what-s-working-in-private-wealth",
-        "source": "Hubbis",
-        "published_at": "2026-10-01",
-        "summary": "Drawing on more than 60 AI projects it has shaped this year, Hubbis reports that every private bank in Singapore now has an AI strategy but very few have deployments that change how an adviser works \u2014 the gap between pilots and production, not the technology, is now the defining challenge in Asian private wealth. Its takeaways: choose revenue growth or cost take-out explicitly; redesign workflows rather than decorate them; supercharge the RM because clients still want a human with institutional-grade tooling; and note that the MAS AI Risk Management Toolkit published in March 2026 with around two dozen banks and insurers has effectively become the industry handbook, with controls shifting from after-the-fact review to in-the-moment. For Adam, this is the clearest external synthesis yet of exactly his delivery problem \u2014 it lands weeks before his own AI-coach go/no-go and validates the ship-with-controls operating model the WPB AI work is built around.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "user_relevance": 8
-      },
-      {
-        "id": "art06",
-        "title": "Maybank 2Q FY26 net profit rises 2.4% to $668m, 1H profit reaches $1.28bn",
-        "url": "https://www.theasianbanker.com/press-releases/maybank-s-2q-fy26-net-profit-rises-2-4-to-668-million-1h-profit-reaches-1-28-billion",
-        "source": "The Asian Banker",
-        "published_at": "2026-10-01",
-        "summary": "Maybank posted a 2.4% rise in second-quarter net profit to US$668 million, with first-half profit at US$1.28 billion, as <strong>Khairussaleh Ramli, president and group CEO of Maybank</strong>, credited continued traction across wealth, investment banking and Global Market flow businesses under its ROAR30 strategy, with technology deepening customer engagement and productivity. The region's anchor Malaysian bank is compounding steadily while explicitly leaning on wealth as a growth engine. For Adam, Maybank is the reference point for Malaysia wealth-solutions delivery \u2014 its cadence of shipping wealth capability on a disciplined cost base is the external bar for the Malaysia reprioritisation conversation now under way.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 5
-      }
-    ],
-    "HSBC News": [
+    "Regulatory & Markets": [
       {
         "id": "art01",
-        "title": "Singapore fintech Spark Systems lands $10.5m from Citi and HSBC",
-        "url": "https://www.fintechfutures.com/bankingtech/singapore-fintech-spark-systems-lands-10-5m-from-citi-and-hsbc",
-        "source": "FinTech Futures",
-        "published_at": "2026-10-01",
-        "summary": "Spark Systems, a Singapore-based fintech building ultra-low-latency FX trading platforms for the buy side, has raised a $10.5m Series BB from Citi, HSBC and Malaysia's OSK Ventures, joining existing backer Goldman Sachs. <strong>Wong Joo Seng, founder and CEO of Spark Systems</strong>, says the capital deepens its in-house technology stack, client-onboarding modules and analytics, while <strong>Alaa Saeed, CitiFX managing director and global head of electronic platforms and distribution</strong>, frames it as advancing Singapore as a low-latency financial hub; Spark is already an MAS Financial Sector Technology and Innovation grant recipient and plans expansion into New York and London. It is the second infrastructure bet in a week involving HSBC alongside shared-market-plumbing stories such as the Swift tokenised-deposit pilot. For Adam, the signal is how HSBC now participates in market infrastructure \u2014 as investor and ecosystem partner rather than only operator \u2014 a partnering-and-delivery model that WPB's own platform work keeps encountering.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "noise_level": 2,
-        "category": "HSBC News",
-        "user_relevance": 7
+        "title": "Hong Kong stocks slump most since March, led by financials; HSBC down 5.7%",
+        "url": "https://theedgemalaysia.com/node/820301",
+        "source": "The Edge Malaysia (Bloomberg)",
+        "published_at": "2026-10-02",
+        "summary": "Hong Kong stocks posted their biggest drop since March as trading resumed after the National Day holiday, the Hang Seng Index falling as much as 3% with HSBC down 5.7% as the single biggest drag, as the US 10-year Treasury yield touched its highest since 2002 and UK bank-tax worries compounded the pressure on financials. <strong>Homin Lee, Senior Macro Strategist at Lombard Odier Singapore</strong>, framed the move as rates-driven repricing, with <strong>Gerald Gan, CIO of Reed Capital Partners</strong>, noting financials-led selling. The rates-versus-banks tension is now visibly pricing HSBC's stock. For Adam, the selloff is the macro backdrop talking: higher-for-longer rates reprice bank equities and wealth margins at the same time, and it lands the week before 2027 planning conversations where the NII-versus-fee mix will frame every investment case.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 4,
+        "category": "Regulatory & Markets",
+        "user_relevance": 5
       }
     ],
     "Competitor Intelligence": [
       {
+        "id": "art02",
+        "title": "UOB rolls out online booking for branch appointments",
+        "url": "https://www.businesstimes.com.sg/companies-markets/uob-rolls-out-online-booking-branch-appointments",
+        "source": "The Business Times",
+        "published_at": "2026-10-02",
+        "summary": "UOB has launched Singapore's first online branch-appointment booking system, covering more than 25 services from banker's guarantees to advisory and wealth appointments, with instant confirmation and self-serve redirects; a six-branch pilot in July–August found almost half of users were over 50 and half booked advisory services. <strong>Benny Chan, Managing Director for Group Channels and Digitalisation at UOB</strong>, is leading the rollout, while DBS and OCBC confirmed they offer no comparable advance booking — <strong>Jacqueline Lim, COO of Consumer Banking Group at DBS</strong>, pointed to digital-queue alternatives instead. A decade of branch-decline narratives just met a bank making the branch bookable like a restaurant. For Adam, the pilot data is the story: older, advice-seeking clients will use digital channels when the journey respects their need for a person — the exact design question sitting inside WPB's RM-desk and channel programmes.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "user_relevance": 6
+      },
+      {
         "id": "art05",
-        "title": "Maybank brings first SGD tokenised money market fund share class to market via Synthesys",
-        "url": "https://fintechnews.sg/138369/wealthtech/maybank-tokenised-sgd-money-market-fund-synthesys/",
-        "source": "Fintech News Singapore",
-        "published_at": "2026-10-01",
-        "summary": "Maybank's SGD tokenised money market share class is now available through the Synthesys Network platform via regulated intermediaries \u2014 one of the first live bank tokenised-fund distributions in Southeast Asia, arriving days after Hong Kong's record digital green bond settled in tokenised deposits on HSBC Orion. Tokenised funds are moving from proof-of-concept into regulated distribution, with Singapore and Hong Kong racing on parallel tracks. For Adam, the operational tail matters more than the headline: tokenised products pull transfer-agency, NAV, custody and client-disclosure work into WPB's delivery scope, and Maybank's first-mover move sets a regional benchmark.",
+        "title": "OCBC Securities to remove minimum commissions for online SGX trades from 5 October",
+        "url": "https://www.caproasia.com/2026/10/02/singapore-brokerage-ocbc-securities-to-remove-minimum-commissions-for-online-trades-on-singapore-exchange-sgx-effective-2026-october-5-10-26/",
+        "source": "Caproasia",
+        "published_at": "2026-10-02",
+        "summary": "OCBC Securities will remove minimum commissions for online SGX trades from 5 October 2026 — the same day SGX cuts board-lot sizes for 11 stocks including DBS, OCBC and UOB — a coordinated push on retail trading economics in Singapore. The zero-minimum move undercuts digital brokerages such as Futu and moomoo on headline pricing while the lot-size change lowers entry barriers to high-priced bank shares. For Adam, retail wealth pricing is compressing toward zero on the transactional layer — the value migration to advice and planning is accelerating, and that is a WPB proposition question as much as a brokerage one.",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
         "noise_level": 2,
         "category": "Competitor Intelligence",
         "user_relevance": 5
-      },
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art03",
+        "title": "Nubank bets on AI to scale global compliance with Cardamon",
+        "url": "https://fintech.global/2026/10/02/nubank-bets-on-ai-to-scale-global-compliance-with-cardamon/",
+        "source": "FinTech Global",
+        "published_at": "2026-10-02",
+        "summary": "Nubank has rolled out Cardamon's AI compliance platform across all of its jurisdictions, using the Y Combinator-backed RegTech to map its regulatory position at a claimed 20x speed versus legacy processes, at a bank with a US$70 billion market capitalisation and more than 140 million customers. <strong>Amanda Hauch F. Silva, compliance expert at Nubank</strong>, is quoted on the rollout. AI is moving from productivity pilots into the control functions themselves — the most change-resistant layer of any bank. For Adam, this is a live reference case for the ship-with-controls model: compliance obligations automated at scale, with auditability, is the template his change teams can cite when WPB's own AI-in-controls questions come up.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "user_relevance": 6
+      }
+    ],
+    "HSBC News": [
       {
         "id": "art04",
-        "title": "UBS hires top manager Michael Santini from Deutsche Bank",
-        "url": "https://www.finews.com/news/english-news/25367-ubs-hires-top-manager-from-deutsche",
-        "source": "finews.com",
-        "published_at": "2026-10-01",
-        "summary": "<strong>Michael Santini, incoming vice chairman of the UBS investment bank</strong>, is joining UBS from Deutsche Bank at the start of the new year, per finews \u2014 another senior move in the continuing chess game between Europe's universal banks as they rebuild franchise depth after years of restructuring. UBS has been staffing up selectively while integrating its enlarged wealth and investment-banking footprint. For Adam, competitor org charts are a delivery input: senior migrations like this usually presage desk consolidations and platform migrations downstream \u2014 worth watching for second-order wealth-technology implications.",
+        "title": "HSBC hires Cantor's Paras Jain to lead global TMT banking, sources say",
+        "url": "https://www.reuters.com/legal/transactional/hsbc-hires-cantors-paras-jain-lead-global-tmt-banking-sources-say-2026-10-02/",
+        "source": "Reuters",
+        "published_at": "2026-10-02",
+        "summary": "HSBC has hired <strong>Paras Jain from Cantor Fitzgerald</strong> as global head of TMT banking, per Reuters sources — a senior investment-banking build-out in the technology, media and telecom coverage franchise where AI-era deal flow is concentrating. The move signals HSBC continuing to invest in sector coverage even as it disciplines costs elsewhere. For Adam, senior franchise hires of this kind usually carry a follow-on delivery tail — new sector platforms, coverage tooling and integration work that eventually surfaces in change-execution backlogs.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 4,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "user_relevance": 4
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art06",
+        "title": "SGX to reduce board lot sizes for 11 stocks including DBS, OCBC and UOB from 5 October",
+        "url": "https://www.caproasia.com/2026/10/02/singapore-exchange-sgx-to-reduce-board-lot-sizes-for-11-stocks-effective-2026-october-5-10-26-11-stocks-are-dbs-ocbc-uob-sgx-prudential-great-eastern-keppel-jardine-matheson-jardine-cycle/",
+        "source": "Caproasia",
+        "published_at": "2026-10-02",
+        "summary": "SGX will reduce board-lot sizes for 11 stocks — DBS, OCBC, UOB, SGX itself, Prudential, Great Eastern, Keppel, Jardine Matheson, Jardine Cycle & Carriage, Venture Corporation and Haw Par — effective 5 October 2026, lowering the minimum ticket for high-priced shares such as DBS at S$75.80. The exchange is explicitly targeting retail accessibility to deepen its investor base. For Adam, cheaper access to bank and insurer shares pulls retail savings further into capital markets — a structural tailwind for wealth platforms that can capture the flow with suitable products and guidance.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "user_relevance": 5
+      },
+      {
+        "id": "art07",
+        "title": "Will higher rates boost Morgan Stanley's wealth management growth?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/higher-rates-boost-morgan-stanleys-121500966.html",
+        "source": "Yahoo Finance (Zacks)",
+        "published_at": "2026-10-02",
+        "summary": "Zacks analysis of US wealth franchises shows Morgan Stanley's wealth management revenue up 15% year on year to US$17.4 billion in H1 2026, with net interest income up 16% to US$4.4 billion and record net new assets of US$266.5 billion, after the Federal Reserve's September hike to 3.75–4.00%; JPMorgan AWM revenue rose 15% to US$13.2 billion on US$5.14 trillion of AUM and Goldman Sachs AWM rose 15% to US$8.7 billion. The rate cycle is testing whether wealth businesses are net beneficiaries or net victims of higher NII. For Adam, the APAC read is direct: WPB's own fee-versus-NII mix will be argued through exactly this lens in 2027 planning, and Morgan Stanley's net-new-asset machine shows what fee resilience looks like at scale.",
         "hsbc_relevancy": 4,
         "adam_rel": 4,
         "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "category": "Private Banking & Wealth",
         "user_relevance": 4
       }
     ],
     "AI & Technology": [
       {
         "id": "art08",
-        "title": "US-headquartered SEI signals Asia-Pacific ambitions with Singapore office",
-        "url": "https://www.familywealthreport.com/article.php/US_dash_Headquartered-SEI-Signals-Asia_dash_Pacific-Ambitions-With-Singapore-Office",
-        "source": "Family Wealth Report",
-        "published_at": "2026-10-01",
-        "summary": "SEI, the US wealth-management technology and investment-processing firm, has opened a Singapore office as its first major step into Asia-Pacific, betting on regional demand for outsourced wealth infrastructure as global vendors localise. The move joins iFAST's regional platform build-out and Avaloq's APAC expansion in a widening field of wealth-infrastructure providers setting up near their target markets. For Adam, each new regional vendor presence adds options \u2014 and integration, vendor-due-diligence and exit-strategy work \u2014 to the platform decisions WPB's delivery teams are making this planning season.",
+        "title": "AI Update, 2 October 2026: Copilot's digital coworker, Amazon's Ads Agent and the FTC's agent probe",
+        "url": "https://www.marketingprofs.com/opinions/2026/56056/ai-update-october-02-2026-ai-news-and-views-from-the-past-week",
+        "source": "MarketingProfs",
+        "published_at": "2026-10-02",
+        "summary": "The week's enterprise-AI column rounds up Microsoft's Copilot expansion — a Code feature for natural-language app building, an Autopilot digital coworker with its own identity and permissions, and deeper Office embedding — alongside Amazon unifying its ad console into an AI agent, OpenAI's always-on agent features and an FTC industry-wide investigation of AI-agent risks under <strong>Andrew Ferguson, FTC Chairman</strong>. Agentic assistants with governed permissions are becoming the enterprise norm, and US regulators are now formally circling the category. For Adam, the permission-and-identity layer for agents is where bank AI governance will be won or lost — the same controls conversation as WPB's own AI-coach deployment, one week after the MAS toolkit theme confirmed the direction.",
         "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 5
+      },
+      {
+        "id": "art09",
+        "title": "Perplexity open-sources pplx-decider and launches a $0.04 Decisions API",
+        "url": "https://explainx.ai/blog/perplexity-pplx-decider-decisions-api-2026",
+        "source": "ExplainX",
+        "published_at": "2026-10-02",
+        "summary": "Perplexity open-sourced pplx-decider-v1-27b on 1 October under Apache-2.0 — a roughly 26B-parameter fine-tune of Qwen3.8-27B purpose-built to route and structure decisions — and launched a hosted Decisions API at US$0.04 per million input tokens with output free, scoring 85.71% across an 11-benchmark panel. Decision models are emerging as an infrastructure category for cheap, structured agent routing. For Adam, it is early-stage, but the cost curve for the reasoning layer underneath bank copilots is collapsing — relevant to any build-versus-rent assessment of the AI-coach stack.",
+        "hsbc_relevancy": 2,
         "adam_rel": 4,
         "noise_level": 2,
         "category": "AI & Technology",
@@ -135,37 +178,63 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Singapore fintech Spark Systems lands $10.5m from Citi and HSBC",
-        "url": "https://www.fintechfutures.com/bankingtech/singapore-fintech-spark-systems-lands-10-5m-from-citi-and-hsbc",
-        "source": "FinTech Futures",
-        "published_at": "2026-10-01",
-        "summary": "Spark Systems, a Singapore-based fintech building ultra-low-latency FX trading platforms for the buy side, has raised a $10.5m Series BB from Citi, HSBC and Malaysia's OSK Ventures, joining existing backer Goldman Sachs. <strong>Wong Joo Seng, founder and CEO of Spark Systems</strong>, says the capital deepens its in-house technology stack, client-onboarding modules and analytics, while <strong>Alaa Saeed, CitiFX managing director and global head of electronic platforms and distribution</strong>, frames it as advancing Singapore as a low-latency financial hub; Spark is already an MAS Financial Sector Technology and Innovation grant recipient and plans expansion into New York and London. It is the second infrastructure bet in a week involving HSBC alongside shared-market-plumbing stories such as the Swift tokenised-deposit pilot. For Adam, the signal is how HSBC now participates in market infrastructure \u2014 as investor and ecosystem partner rather than only operator \u2014 a partnering-and-delivery model that WPB's own platform work keeps encountering.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
+        "title": "Hong Kong stocks slump most since March, led by financials; HSBC down 5.7%",
+        "url": "https://theedgemalaysia.com/node/820301",
+        "source": "The Edge Malaysia (Bloomberg)",
+        "published_at": "2026-10-02",
+        "summary": "Hong Kong stocks posted their biggest drop since March as trading resumed after the National Day holiday, the Hang Seng Index falling as much as 3% with HSBC down 5.7% as the single biggest drag, as the US 10-year Treasury yield touched its highest since 2002 and UK bank-tax worries compounded the pressure on financials. <strong>Homin Lee, Senior Macro Strategist at Lombard Odier Singapore</strong>, framed the move as rates-driven repricing, with <strong>Gerald Gan, CIO of Reed Capital Partners</strong>, noting financials-led selling. The rates-versus-banks tension is now visibly pricing HSBC's stock. For Adam, the selloff is the macro backdrop talking: higher-for-longer rates reprice bank equities and wealth margins at the same time, and it lands the week before 2027 planning conversations where the NII-versus-fee mix will frame every investment case.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 4,
+        "category": "Regulatory & Markets",
+        "user_relevance": 5
+      },
+      {
+        "id": "art02",
+        "title": "UOB rolls out online booking for branch appointments",
+        "url": "https://www.businesstimes.com.sg/companies-markets/uob-rolls-out-online-booking-branch-appointments",
+        "source": "The Business Times",
+        "published_at": "2026-10-02",
+        "summary": "UOB has launched Singapore's first online branch-appointment booking system, covering more than 25 services from banker's guarantees to advisory and wealth appointments, with instant confirmation and self-serve redirects; a six-branch pilot in July–August found almost half of users were over 50 and half booked advisory services. <strong>Benny Chan, Managing Director for Group Channels and Digitalisation at UOB</strong>, is leading the rollout, while DBS and OCBC confirmed they offer no comparable advance booking — <strong>Jacqueline Lim, COO of Consumer Banking Group at DBS</strong>, pointed to digital-queue alternatives instead. A decade of branch-decline narratives just met a bank making the branch bookable like a restaurant. For Adam, the pilot data is the story: older, advice-seeking clients will use digital channels when the journey respects their need for a person — the exact design question sitting inside WPB's RM-desk and channel programmes.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
         "noise_level": 2,
-        "category": "HSBC News",
-        "user_relevance": 7
+        "category": "Competitor Intelligence",
+        "user_relevance": 6
+      },
+      {
+        "id": "art03",
+        "title": "Nubank bets on AI to scale global compliance with Cardamon",
+        "url": "https://fintech.global/2026/10/02/nubank-bets-on-ai-to-scale-global-compliance-with-cardamon/",
+        "source": "FinTech Global",
+        "published_at": "2026-10-02",
+        "summary": "Nubank has rolled out Cardamon's AI compliance platform across all of its jurisdictions, using the Y Combinator-backed RegTech to map its regulatory position at a claimed 20x speed versus legacy processes, at a bank with a US$70 billion market capitalisation and more than 140 million customers. <strong>Amanda Hauch F. Silva, compliance expert at Nubank</strong>, is quoted on the rollout. AI is moving from productivity pilots into the control functions themselves — the most change-resistant layer of any bank. For Adam, this is a live reference case for the ship-with-controls model: compliance obligations automated at scale, with auditability, is the template his change teams can cite when WPB's own AI-in-controls questions come up.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "user_relevance": 6
       },
       {
         "id": "art04",
-        "title": "UBS hires top manager Michael Santini from Deutsche Bank",
-        "url": "https://www.finews.com/news/english-news/25367-ubs-hires-top-manager-from-deutsche",
-        "source": "finews.com",
-        "published_at": "2026-10-01",
-        "summary": "<strong>Michael Santini, incoming vice chairman of the UBS investment bank</strong>, is joining UBS from Deutsche Bank at the start of the new year, per finews \u2014 another senior move in the continuing chess game between Europe's universal banks as they rebuild franchise depth after years of restructuring. UBS has been staffing up selectively while integrating its enlarged wealth and investment-banking footprint. For Adam, competitor org charts are a delivery input: senior migrations like this usually presage desk consolidations and platform migrations downstream \u2014 worth watching for second-order wealth-technology implications.",
-        "hsbc_relevancy": 4,
+        "title": "HSBC hires Cantor's Paras Jain to lead global TMT banking, sources say",
+        "url": "https://www.reuters.com/legal/transactional/hsbc-hires-cantors-paras-jain-lead-global-tmt-banking-sources-say-2026-10-02/",
+        "source": "Reuters",
+        "published_at": "2026-10-02",
+        "summary": "HSBC has hired <strong>Paras Jain from Cantor Fitzgerald</strong> as global head of TMT banking, per Reuters sources — a senior investment-banking build-out in the technology, media and telecom coverage franchise where AI-era deal flow is concentrating. The move signals HSBC continuing to invest in sector coverage even as it disciplines costs elsewhere. For Adam, senior franchise hires of this kind usually carry a follow-on delivery tail — new sector platforms, coverage tooling and integration work that eventually surfaces in change-execution backlogs.",
+        "hsbc_relevancy": 7,
         "adam_rel": 4,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "noise_level": 3,
+        "category": "HSBC News",
         "user_relevance": 4
       },
       {
         "id": "art05",
-        "title": "Maybank brings first SGD tokenised money market fund share class to market via Synthesys",
-        "url": "https://fintechnews.sg/138369/wealthtech/maybank-tokenised-sgd-money-market-fund-synthesys/",
-        "source": "Fintech News Singapore",
-        "published_at": "2026-10-01",
-        "summary": "Maybank's SGD tokenised money market share class is now available through the Synthesys Network platform via regulated intermediaries \u2014 one of the first live bank tokenised-fund distributions in Southeast Asia, arriving days after Hong Kong's record digital green bond settled in tokenised deposits on HSBC Orion. Tokenised funds are moving from proof-of-concept into regulated distribution, with Singapore and Hong Kong racing on parallel tracks. For Adam, the operational tail matters more than the headline: tokenised products pull transfer-agency, NAV, custody and client-disclosure work into WPB's delivery scope, and Maybank's first-mover move sets a regional benchmark.",
+        "title": "OCBC Securities to remove minimum commissions for online SGX trades from 5 October",
+        "url": "https://www.caproasia.com/2026/10/02/singapore-brokerage-ocbc-securities-to-remove-minimum-commissions-for-online-trades-on-singapore-exchange-sgx-effective-2026-october-5-10-26/",
+        "source": "Caproasia",
+        "published_at": "2026-10-02",
+        "summary": "OCBC Securities will remove minimum commissions for online SGX trades from 5 October 2026 — the same day SGX cuts board-lot sizes for 11 stocks including DBS, OCBC and UOB — a coordinated push on retail trading economics in Singapore. The zero-minimum move undercuts digital brokerages such as Futu and moomoo on headline pricing while the lot-size change lowers entry barriers to high-priced bank shares. For Adam, retail wealth pricing is compressing toward zero on the transactional layer — the value migration to advice and planning is accelerating, and that is a WPB proposition question as much as a brokerage one.",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
         "noise_level": 2,
@@ -174,38 +243,51 @@
       },
       {
         "id": "art06",
-        "title": "Maybank 2Q FY26 net profit rises 2.4% to $668m, 1H profit reaches $1.28bn",
-        "url": "https://www.theasianbanker.com/press-releases/maybank-s-2q-fy26-net-profit-rises-2-4-to-668-million-1h-profit-reaches-1-28-billion",
-        "source": "The Asian Banker",
-        "published_at": "2026-10-01",
-        "summary": "Maybank posted a 2.4% rise in second-quarter net profit to US$668 million, with first-half profit at US$1.28 billion, as <strong>Khairussaleh Ramli, president and group CEO of Maybank</strong>, credited continued traction across wealth, investment banking and Global Market flow businesses under its ROAR30 strategy, with technology deepening customer engagement and productivity. The region's anchor Malaysian bank is compounding steadily while explicitly leaning on wealth as a growth engine. For Adam, Maybank is the reference point for Malaysia wealth-solutions delivery \u2014 its cadence of shipping wealth capability on a disciplined cost base is the external bar for the Malaysia reprioritisation conversation now under way.",
-        "hsbc_relevancy": 5,
+        "title": "SGX to reduce board lot sizes for 11 stocks including DBS, OCBC and UOB from 5 October",
+        "url": "https://www.caproasia.com/2026/10/02/singapore-exchange-sgx-to-reduce-board-lot-sizes-for-11-stocks-effective-2026-october-5-10-26-11-stocks-are-dbs-ocbc-uob-sgx-prudential-great-eastern-keppel-jardine-matheson-jardine-cycle/",
+        "source": "Caproasia",
+        "published_at": "2026-10-02",
+        "summary": "SGX will reduce board-lot sizes for 11 stocks — DBS, OCBC, UOB, SGX itself, Prudential, Great Eastern, Keppel, Jardine Matheson, Jardine Cycle & Carriage, Venture Corporation and Haw Par — effective 5 October 2026, lowering the minimum ticket for high-priced shares such as DBS at S$75.80. The exchange is explicitly targeting retail accessibility to deepen its investor base. For Adam, cheaper access to bank and insurer shares pulls retail savings further into capital markets — a structural tailwind for wealth platforms that can capture the flow with suitable products and guidance.",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "category": "Private Banking & Wealth",
         "user_relevance": 5
       },
       {
         "id": "art07",
-        "title": "AI: What's actually working in private wealth \u2014 Hubbis maps the deployment gap",
-        "url": "https://hubbis.com/article/ai-what-s-working-in-private-wealth",
-        "source": "Hubbis",
-        "published_at": "2026-10-01",
-        "summary": "Drawing on more than 60 AI projects it has shaped this year, Hubbis reports that every private bank in Singapore now has an AI strategy but very few have deployments that change how an adviser works \u2014 the gap between pilots and production, not the technology, is now the defining challenge in Asian private wealth. Its takeaways: choose revenue growth or cost take-out explicitly; redesign workflows rather than decorate them; supercharge the RM because clients still want a human with institutional-grade tooling; and note that the MAS AI Risk Management Toolkit published in March 2026 with around two dozen banks and insurers has effectively become the industry handbook, with controls shifting from after-the-fact review to in-the-moment. For Adam, this is the clearest external synthesis yet of exactly his delivery problem \u2014 it lands weeks before his own AI-coach go/no-go and validates the ship-with-controls operating model the WPB AI work is built around.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 8,
+        "title": "Will higher rates boost Morgan Stanley's wealth management growth?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/higher-rates-boost-morgan-stanleys-121500966.html",
+        "source": "Yahoo Finance (Zacks)",
+        "published_at": "2026-10-02",
+        "summary": "Zacks analysis of US wealth franchises shows Morgan Stanley's wealth management revenue up 15% year on year to US$17.4 billion in H1 2026, with net interest income up 16% to US$4.4 billion and record net new assets of US$266.5 billion, after the Federal Reserve's September hike to 3.75–4.00%; JPMorgan AWM revenue rose 15% to US$13.2 billion on US$5.14 trillion of AUM and Goldman Sachs AWM rose 15% to US$8.7 billion. The rate cycle is testing whether wealth businesses are net beneficiaries or net victims of higher NII. For Adam, the APAC read is direct: WPB's own fee-versus-NII mix will be argued through exactly this lens in 2027 planning, and Morgan Stanley's net-new-asset machine shows what fee resilience looks like at scale.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 4,
         "noise_level": 2,
-        "category": "AI & Technology",
-        "user_relevance": 8
+        "category": "Private Banking & Wealth",
+        "user_relevance": 4
       },
       {
         "id": "art08",
-        "title": "US-headquartered SEI signals Asia-Pacific ambitions with Singapore office",
-        "url": "https://www.familywealthreport.com/article.php/US_dash_Headquartered-SEI-Signals-Asia_dash_Pacific-Ambitions-With-Singapore-Office",
-        "source": "Family Wealth Report",
-        "published_at": "2026-10-01",
-        "summary": "SEI, the US wealth-management technology and investment-processing firm, has opened a Singapore office as its first major step into Asia-Pacific, betting on regional demand for outsourced wealth infrastructure as global vendors localise. The move joins iFAST's regional platform build-out and Avaloq's APAC expansion in a widening field of wealth-infrastructure providers setting up near their target markets. For Adam, each new regional vendor presence adds options \u2014 and integration, vendor-due-diligence and exit-strategy work \u2014 to the platform decisions WPB's delivery teams are making this planning season.",
+        "title": "AI Update, 2 October 2026: Copilot's digital coworker, Amazon's Ads Agent and the FTC's agent probe",
+        "url": "https://www.marketingprofs.com/opinions/2026/56056/ai-update-october-02-2026-ai-news-and-views-from-the-past-week",
+        "source": "MarketingProfs",
+        "published_at": "2026-10-02",
+        "summary": "The week's enterprise-AI column rounds up Microsoft's Copilot expansion — a Code feature for natural-language app building, an Autopilot digital coworker with its own identity and permissions, and deeper Office embedding — alongside Amazon unifying its ad console into an AI agent, OpenAI's always-on agent features and an FTC industry-wide investigation of AI-agent risks under <strong>Andrew Ferguson, FTC Chairman</strong>. Agentic assistants with governed permissions are becoming the enterprise norm, and US regulators are now formally circling the category. For Adam, the permission-and-identity layer for agents is where bank AI governance will be won or lost — the same controls conversation as WPB's own AI-coach deployment, one week after the MAS toolkit theme confirmed the direction.",
         "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "user_relevance": 5
+      },
+      {
+        "id": "art09",
+        "title": "Perplexity open-sources pplx-decider and launches a $0.04 Decisions API",
+        "url": "https://explainx.ai/blog/perplexity-pplx-decider-decisions-api-2026",
+        "source": "ExplainX",
+        "published_at": "2026-10-02",
+        "summary": "Perplexity open-sourced pplx-decider-v1-27b on 1 October under Apache-2.0 — a roughly 26B-parameter fine-tune of Qwen3.8-27B purpose-built to route and structure decisions — and launched a hosted Decisions API at US$0.04 per million input tokens with output free, scoring 85.71% across an 11-benchmark panel. Decision models are emerging as an infrastructure category for cheap, structured agent routing. For Adam, it is early-stage, but the cost curve for the reasoning layer underneath bank copilots is collapsing — relevant to any build-versus-rent assessment of the AI-coach stack.",
+        "hsbc_relevancy": 2,
         "adam_rel": 4,
         "noise_level": 2,
         "category": "AI & Technology",
@@ -213,9 +295,11 @@
       }
     ],
     "categories": {
-      "On Adam's Desk": "#be123c",
-      "HSBC News": "#dc2626",
+      "Regulatory & Markets": "#d97706",
       "Competitor Intelligence": "#0891b2",
+      "Operations & Change": "#7c3aed",
+      "HSBC News": "#dc2626",
+      "Private Banking & Wealth": "#059669",
       "AI & Technology": "#6366f1"
     }
   }
