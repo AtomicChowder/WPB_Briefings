@@ -110,7 +110,7 @@ Category colours (used in the chart — do not change):
   "Competitor Intelligence": "#0891b2",
   "Private Banking & Wealth": "#059669",
   "Regulatory & Markets":   "#d97706",
-  "Operations & Change":    "#7c3aed",
+  "Operations & Change":      "#7c3aed",
   "On Adam's Desk":          "#be123c"
 }
 ```
@@ -350,6 +350,13 @@ talking-point note, exactly as now.
 - An item that is both (a regulator moves on something Adam has a live decision on) is tagged
   with its thread AND counts as the thread pick; the callout says it is both.
 - `context_html` on the public page stays purely external — no thread label, no internal text.
+- **Tag every talking point with `threads` in `/tmp/briefing_input.json`** (expected since
+  2026-10-04): the same internal label(s) as the article(s) it draws on, or `macro` — plain
+  string or list of strings, exactly the article `threads` vocabulary. The local daily email
+  and the Sunday weekly read this to line talking points up with Adam's internal threads.
+  Like the article lens fields it stays ONLY in the never-committed input;
+  `src/build_briefing.py` strips it from `docs/` and `briefing_data.json` (enforced in
+  `_normalize_talking_points`), so internal labels never reach the public repo.
 
 ### 5. Annotate the Notion page ONLY (Routine step 8)
 
