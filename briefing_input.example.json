@@ -29,7 +29,8 @@
           "source_links": [
             { "url": "https://example.com/article", "title": "Source label (max 55 chars)" }
           ],
-          "is_update": false
+          "is_update": false,
+          "threads": "macro"
         }
       ]
     }

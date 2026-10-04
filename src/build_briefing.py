@@ -38,7 +38,11 @@ Input schema (briefing_input.json):
     "adam": {"talking_points": [{"headline": "...", "why_it_matters": "...",
                                   "bullets": ["...", "..."],
                                   "source_links": [{"url": "...", "title": "..."}],
-                                  "is_update": false}]}
+                                  "is_update": false,
+                                  "threads": "avaloq-credit"}]}
+      // threads (or "macro") on a talking point = the internal thread label(s) it draws
+      // on, same vocabulary as article `threads`. Optional but expected since 2026-10-04.
+      // Internal lens field: stripped from every public output below, like articles'.
   },
   "breaking_news": {"adam": []}   // optional
 }
@@ -89,6 +93,10 @@ MIN_COMBINED_SCORE = 6
 # or eCRM story is not, scores 2-3 on hsbc_relevancy, and was dropped before it could be seen.
 # thread_rel / threads arrive on /tmp/briefing_input.json (never committed) and are STRIPPED
 # from every output below, so internal thread labels cannot reach docs/ or briefing_data.json.
+# Same for talking points since 2026-10-04: the routine tags each talking point with the
+# thread label(s) it draws on (or "macro") so the LOCAL daily email / Sunday weekly can line
+# talking points up with internal threads; _normalize_talking_points strips the tag from the
+# public output exactly as _strip_lens does for articles.
 THREAD_CATEGORY = "On Adam's Desk"
 MIN_THREAD_REL = 5                  # at or above this, an article is a thread hit
 HIGH_THREAD_REL = 8                 # "lands on his desk" band; reserved by the sort order
@@ -116,10 +124,12 @@ def _validate_articles(articles):
 
 def _normalize_talking_points(tps: list[dict]) -> list[dict]:
     """Coerce talking points into the exact shape templates/briefing.html expects:
-    headline, context_html (analysis), source_links as [[url, title], ...] pairs."""
+    headline, context_html (analysis), source_links as [[url, title], ...] pairs.
+    Internal lens fields (threads / thread_rel, tagged by the routine in the input)
+    are stripped here — the public briefing_data.json must never carry them."""
     out = []
     for tp in tps or []:
-        tp = dict(tp)
+        tp = {k: v for k, v in dict(tp).items() if k not in LENS_FIELDS}
         if not tp.get("context_html"):
             parts = [tp.pop("why_it_matters", "")] + list(tp.pop("bullets", []))
             tp["context_html"] = " ".join(p for p in parts if p)
