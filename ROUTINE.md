@@ -49,8 +49,8 @@ not that there was no news.
 - Do NOT discard a story just because it touches a broad theme covered before (e.g.
   "AI vendor strategy", "private banker hiring", "bank cost-cutting"). A different
   bank's earnings, a different executive's comment, a different hire, or a different
-  deal is a distinct story even if last week's briefing covered the same theme with a
-  different specific instance. Only exclude when it is genuinely the same event
+  deal is a distinct story even if last week's briefing covered the same theme with
+  a different specific instance. Only exclude when it is genuinely the same event
   re-reported.
 - The 8–15 article target (step 2) is for the full Intelligence Feed, not just for
   finding 3 talking-point candidates. Do not stop searching/triaging once you have 3
@@ -65,11 +65,15 @@ matters to Adam. For `is_update` articles, the summary must open by anchoring th
 prior coverage ("Following X we covered on {date}, …").
 
 **5. Write 3 talking points**
-The 3 most strategically significant NEW stories. Each needs:
+The 3 most strategically significant NEW stories (2 macro + 1 thread pick per CLAUDE.md §4). Each needs:
 - A sharp headline (max 120 chars)
 - `context_html`: 2–3 sentences of genuine analysis answering "so what for Adam?" —
   wrap person names in `<strong>Name, Title</strong>` tags
 - 1–3 supporting source links
+- `threads`: the internal thread label(s) the point draws on, or `macro` — same
+  vocabulary as article `threads` (plain string or list of strings). Required; the
+  local daily email and Sunday weekly read it. It stays in the never-committed input
+  only — build_briefing.py strips it from the public output.
 
 Do not repeat talking points from the last 7 days unless flagged as an update.
 
@@ -117,8 +121,8 @@ Using the Notion MCP connector, create a new page in the database
 "parent": { "type": "data_source_id", "data_source_id": "3336f349-23b7-8053-9230-000b278a9f1a" }
 ```
 Omitting `parent` does NOT fail loudly — Notion silently creates an orphaned,
-workspace-level private page instead. It won't show up in the database, won't
-be visible to Adam, and gets garbage-collected within a day or two, leaving no
+workspace-level private page instead. It won't show up in the database, won't be
+visible to Adam, and gets garbage-collected within a day or two, leaving no
 error and no trace beyond a stale page ID. This has already happened once
 (the 14 Sep 2026 briefing page was created without `parent`, vanished, and had
 to be recovered with `notion-move-pages` + `notion-update-page` to reattach it
