@@ -422,7 +422,7 @@
           </div>
           <p class="article-summary">HSBC Asset Management has invested in Model ML, an AI platform for banks, as part of a funding round taking the startup's total raised to $100m. The check size was not disclosed, but the move continues HSBC's pattern of taking equity positions in the AI ecosystem rather than only buying tools.</p>
           <div class="article-footer">
-            <span class="article-source">AI Business Weekly</span>
+                       <span class="article-source">AI Business Weekly</span>
             <span>5 Oct 2026</span>
           </div>
         </article>
@@ -636,7 +636,7 @@ const CHART_DATA = {
    "url": "https://transactionfinance.tabinsights.com/article/-nubank--webank-and-mybank-top-the-2026-world-s-best-digital-banks-ranking",
    "source": "TAB Insights",
    "published_at": "2026-10-05",
-   "summary": "The 2026 World's Best Digital Banks ranking puts Nubank, WeBank and MYBank on top, with the top 100 digital banks growing customers ~13% and showing median FY2024 growth of 21.6% in assets and 24.8% in revenue. WeBank set up a Hong Kong technology-services arm to sell its capabilities into international finance, signalling Chinese digital-bank technology exporting into Asia's wealth markets.",
+   "summary": "The 2026 World's Best Digital Banks ranking puts Nubank, WeBank and MYBank on top, with the top 100 digital banks growing customers ~13% and median FY2024 growth of 21.6% in assets and 24.8% in revenue. WeBank set up a Hong Kong technology-services arm to sell its capabilities into international finance, signalling Chinese digital-bank technology exporting into Asia's wealth markets.",
    "hsbc_relevancy": 4,
    "adam_rel": 5,
    "noise_level": 2,
@@ -848,7 +848,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('category-tabs').addEventListener('click', e => {
     const btn = e.target.closest('.cat-tab');
     if (!btn) return;
-    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'))
+;
     btn.classList.add('active');
     const cat = btn.dataset.cat;
     document.querySelectorAll('.category-section').forEach(sec => {
