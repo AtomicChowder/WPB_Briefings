@@ -3,174 +3,171 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Saturday, 3 October 2026",
-  "date_str": "2026-10-03",
-  "generated_at": "2 Oct 2026, 23:23 UTC",
-  "total_articles": 9,
+  "briefing_date": "Monday, 5 October 2026",
+  "date_str": "2026-10-05",
+  "generated_at": "5 Oct 2026, 00:45 UTC",
+  "total_articles": 8,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Hong Kong financials slump most since March — HSBC down 5.7% as rate pressure bites",
-      "context_html": "Hong Kong stocks fell as much as 3% on the October 2 reopen — the Hang Seng's worst day since March — with HSBC down 5.7% as the biggest single drag, as the US 10-year Treasury yield touched its highest since 2002 and UK bank-tax worries compounded the pressure; <strong>Homin Lee, Senior Macro Strategist at Lombard Odier Singapore</strong>, reads the move as rates-driven repricing of financials. It is the clearest macro signal of the week: higher-for-longer is now visibly pricing bank equities, not just bond yields. For Adam, this is the backdrop his 2027 planning conversations will be held against — the NII-versus-fee-mix argument just moved from theory to HSBC's share price, and every WPB investment case will need to answer it.",
+      "headline": "Singapore moves on two fronts at once: MAS governance consultation reaches HSBC entities, stablecoin regime closes 16 Oct",
+      "context_html": "MAS consultation P016-2026 proposes revised corporate-governance and key-appointment-holder rules that explicitly cover the Singapore DSIB groups including HSBC, while the separate statutory stablecoin consultation under the Payment Services Act closes 16 October. Compliance and product teams in the Singapore book need to track both in parallel \u2014 governance changes affect appointment processes, and the stablecoin licence class shapes WPB's digital-asset product roadmap in a market where DBS and others are already moving.",
       "source_links": [
         [
-          "https://theedgemalaysia.com/node/820301",
-          "The Edge: HK stocks slump most since March"
+          "https://regreportingdesk.com/mas-corporate-governance-consultation-banks-insurers-dfhcs/",
+          "RegReportingDesk: MAS P016-2026 explained"
+        ],
+        [
+          "https://www.fintechweekly.com/magazine/articles/weekly-regulation-recap-mica-genius-act-pix-2026-w40",
+          "FinTech Weekly: weekly regulation recap"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "UOB makes the branch bookable — Singapore's first online appointment system finds older advice-seekers",
-      "context_html": "UOB has gone live with Singapore's first online branch-appointment booking, covering more than 25 services from banker's guarantees to advisory and wealth meetings, after a six-branch pilot in which almost half of users were over 50 and half booked advisory services; <strong>Benny Chan, Managing Director for Group Channels and Digitalisation at UOB</strong>, is leading the rollout while DBS and OCBC confirmed they have no equivalent. The counter-intuitive finding: the cohort everyone assumes avoids digital — older, advice-hungry clients — will use it when the journey leads to a person. For Adam, that is the design brief for WPB's RM-desk and channel work in one sentence: digital that routes to humans, not digital that replaces them, plus a measurable competitor baseline to benchmark against.",
+      "headline": "BOCHK named world's best retail bank \u2014 its AI-avatar, RM-chat model sets the Hong Kong bar HSBC must clear",
+      "context_html": "TAB Global rated Bank of China (Hong Kong) the best retail bank in the world, Asia Pacific and Hong Kong for 2026, crediting a model built around cross-boundary customers: RM Chat Service, generative-AI avatars for market insights and 19% growth in active mobile users. For Adam this is the clearest local benchmark for the AI-enabled advisory journey HSBC WPB is executing \u2014 the competition is no longer product features but how coherently digital advice is wired around client behaviour.",
       "source_links": [
         [
-          "https://www.businesstimes.com.sg/companies-markets/uob-rolls-out-online-booking-branch-appointments",
-          "Business Times: UOB online branch booking"
+          "https://www.theasianbanker.com/updates-and-articles/what-the-best-retail-bank-is-doing-differently",
+          "The Asian Banker: what the best retail bank does differently"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Nubank puts AI inside compliance at scale — a ship-with-controls reference case",
-      "context_html": "Nubank has rolled out Cardamon's AI compliance platform across every jurisdiction it operates in, with the RegTech claiming it maps regulatory positions up to 20x faster than legacy processes at a bank serving more than 140 million customers; <strong>Amanda Hauch F. Silva, compliance expert at Nubank</strong>, is quoted on the deployment. AI has crossed from productivity pilots into the control function itself — the most change-resistant layer of any bank. For Adam, this is the sharpest live template yet for the ship-with-controls model his change teams are advocating: automated obligations with auditability, in production, at scale — ready ammunition for the next WPB AI-in-controls discussion.",
+      "headline": "Ping An Digital Bank turns toward high-end wealth \u2014 Hong Kong's virtual banks are coming upmarket",
+      "context_html": "Hong Kong virtual bank Ping An Digital Bank, with assets and deposits both up over 130% year-on-year, now plans to expand into high-end wealth management with investment commissions as a new fee driver, per Chief Executive <strong>Ronald Iu</strong>. Virtual banks starting life as deposit-and-payments plays are now explicitly targeting the affluent advice segment \u2014 a structural signal for how Hong Kong's lower-to-mid wealth tiers will be served and at what price point.",
       "source_links": [
         [
-          "https://fintech.global/2026/10/02/nubank-bets-on-ai-to-scale-global-compliance-with-cardamon/",
-          "FinTech Global: Nubank AI compliance"
+          "https://vietnamnews.vn/media-outreach/1800843/ping-an-digital-bank-celebrates-6th-anniversary-total-assets-and-customer-deposits-both-surge-over-130-yoy-net-interest-income-rises-55-yoy.html",
+          "Vietnam News: Ping An Digital Bank 6th anniversary"
         ]
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Regulatory & Markets": [
+    "AI & Technology": [
       {
         "id": "art01",
-        "title": "Hong Kong stocks slump most since March, led by financials; HSBC down 5.7%",
-        "url": "https://theedgemalaysia.com/node/820301",
-        "source": "The Edge Malaysia (Bloomberg)",
-        "published_at": "2026-10-02",
-        "summary": "Hong Kong stocks posted their biggest drop since March as trading resumed after the National Day holiday, the Hang Seng Index falling as much as 3% with HSBC down 5.7% as the single biggest drag, as the US 10-year Treasury yield touched its highest since 2002 and UK bank-tax worries compounded the pressure on financials. <strong>Homin Lee, Senior Macro Strategist at Lombard Odier Singapore</strong>, framed the move as rates-driven repricing, with <strong>Gerald Gan, CIO of Reed Capital Partners</strong>, noting financials-led selling. The rates-versus-banks tension is now visibly pricing HSBC's stock. For Adam, the selloff is the macro backdrop talking: higher-for-longer rates reprice bank equities and wealth margins at the same time, and it lands the week before 2027 planning conversations where the NII-versus-fee mix will frame every investment case.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 5,
-        "noise_level": 4,
-        "category": "Regulatory & Markets",
-        "user_relevance": 5
-      }
-    ],
-    "Competitor Intelligence": [
-      {
-        "id": "art02",
-        "title": "UOB rolls out online booking for branch appointments",
-        "url": "https://www.businesstimes.com.sg/companies-markets/uob-rolls-out-online-booking-branch-appointments",
-        "source": "The Business Times",
-        "published_at": "2026-10-02",
-        "summary": "UOB has launched Singapore's first online branch-appointment booking system, covering more than 25 services from banker's guarantees to advisory and wealth appointments, with instant confirmation and self-serve redirects; a six-branch pilot in July–August found almost half of users were over 50 and half booked advisory services. <strong>Benny Chan, Managing Director for Group Channels and Digitalisation at UOB</strong>, is leading the rollout, while DBS and OCBC confirmed they offer no comparable advance booking — <strong>Jacqueline Lim, COO of Consumer Banking Group at DBS</strong>, pointed to digital-queue alternatives instead. A decade of branch-decline narratives just met a bank making the branch bookable like a restaurant. For Adam, the pilot data is the story: older, advice-seeking clients will use digital channels when the journey respects their need for a person — the exact design question sitting inside WPB's RM-desk and channel programmes.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 6
-      },
-      {
-        "id": "art05",
-        "title": "OCBC Securities to remove minimum commissions for online SGX trades from 5 October",
-        "url": "https://www.caproasia.com/2026/10/02/singapore-brokerage-ocbc-securities-to-remove-minimum-commissions-for-online-trades-on-singapore-exchange-sgx-effective-2026-october-5-10-26/",
-        "source": "Caproasia",
-        "published_at": "2026-10-02",
-        "summary": "OCBC Securities will remove minimum commissions for online SGX trades from 5 October 2026 — the same day SGX cuts board-lot sizes for 11 stocks including DBS, OCBC and UOB — a coordinated push on retail trading economics in Singapore. The zero-minimum move undercuts digital brokerages such as Futu and moomoo on headline pricing while the lot-size change lowers entry barriers to high-priced bank shares. For Adam, retail wealth pricing is compressing toward zero on the transactional layer — the value migration to advice and planning is accelerating, and that is a WPB proposition question as much as a brokerage one.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "category": "Competitor Intelligence",
-        "user_relevance": 5
-      }
-    ],
-    "Operations & Change": [
-      {
-        "id": "art03",
-        "title": "Nubank bets on AI to scale global compliance with Cardamon",
-        "url": "https://fintech.global/2026/10/02/nubank-bets-on-ai-to-scale-global-compliance-with-cardamon/",
-        "source": "FinTech Global",
-        "published_at": "2026-10-02",
-        "summary": "Nubank has rolled out Cardamon's AI compliance platform across all of its jurisdictions, using the Y Combinator-backed RegTech to map its regulatory position at a claimed 20x speed versus legacy processes, at a bank with a US$70 billion market capitalisation and more than 140 million customers. <strong>Amanda Hauch F. Silva, compliance expert at Nubank</strong>, is quoted on the rollout. AI is moving from productivity pilots into the control functions themselves — the most change-resistant layer of any bank. For Adam, this is a live reference case for the ship-with-controls model: compliance obligations automated at scale, with auditability, is the template his change teams can cite when WPB's own AI-in-controls questions come up.",
+        "title": "Omada purchases EmpowerID to govern AI agents at runtime",
+        "url": "https://www.bankinfosecurity.com/omada-purchases-empowerid-to-govern-ai-agents-at-runtime-a-33000",
+        "source": "BankInfoSecurity",
+        "published_at": "2026-10-05",
+        "summary": "Identity-governance vendor Omada acquired EmpowerID to add AI-agent identity governance and runtime authorisation \u2014 controls over what deployed, consequential AI agents can see and do, not just who built them. As banks move from copilots to acting agents, runtime identity and permissioning is emerging as a distinct control layer.",
         "hsbc_relevancy": 4,
         "adam_rel": 6,
         "noise_level": 2,
-        "category": "Operations & Change",
+        "category": "AI & Technology",
+        "is_update": false,
         "user_relevance": 6
       }
     ],
     "HSBC News": [
       {
-        "id": "art04",
-        "title": "HSBC hires Cantor's Paras Jain to lead global TMT banking, sources say",
-        "url": "https://www.reuters.com/legal/transactional/hsbc-hires-cantors-paras-jain-lead-global-tmt-banking-sources-say-2026-10-02/",
-        "source": "Reuters",
-        "published_at": "2026-10-02",
-        "summary": "HSBC has hired <strong>Paras Jain from Cantor Fitzgerald</strong> as global head of TMT banking, per Reuters sources — a senior investment-banking build-out in the technology, media and telecom coverage franchise where AI-era deal flow is concentrating. The move signals HSBC continuing to invest in sector coverage even as it disciplines costs elsewhere. For Adam, senior franchise hires of this kind usually carry a follow-on delivery tail — new sector platforms, coverage tooling and integration work that eventually surfaces in change-execution backlogs.",
+        "id": "art02",
+        "title": "HSBC Asset Management backs AI finance startup Model ML",
+        "url": "https://aibusinessweekly.net/p/hsbc-asset-management-model-ml-investment",
+        "source": "AI Business Weekly",
+        "published_at": "2026-10-05",
+        "summary": "HSBC Asset Management has invested in Model ML, an AI platform for banks, as part of a funding round taking the startup's total raised to $100m. The check size was not disclosed, but the move continues HSBC's pattern of taking equity positions in the AI ecosystem rather than only buying tools.",
         "hsbc_relevancy": 7,
-        "adam_rel": 4,
-        "noise_level": 3,
+        "adam_rel": 6,
+        "noise_level": 2,
         "category": "HSBC News",
-        "user_relevance": 4
+        "is_update": false,
+        "user_relevance": 6
+      }
+    ],
+    "Competitor Intelligence": [
+      {
+        "id": "art03",
+        "title": "What the best retail bank is doing differently",
+        "url": "https://www.theasianbanker.com/updates-and-articles/what-the-best-retail-bank-is-doing-differently",
+        "source": "The Asian Banker",
+        "published_at": "2026-10-04",
+        "summary": "Bank of China (Hong Kong), named by TAB Global as the best retail bank in the world, Asia Pacific and Hong Kong for 2026, is profiled as the benchmark for organising capabilities around customer behaviour: 19% growth in active mobile banking personal customers in 2025, RM Chat Service extending advisory beyond branches, free real-time HK stock quotes, AI Avatar-powered market insights, and the BeLeaf personal finance tool \u2014 all built around cross-boundary customers rather than product silos.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art04",
+        "title": "Ping An Digital Bank celebrates 6th anniversary \u2014 assets and deposits both surge over 130% YoY",
+        "url": "https://vietnamnews.vn/media-outreach/1800843/ping-an-digital-bank-celebrates-6th-anniversary-total-assets-and-customer-deposits-both-surge-over-130-yoy-net-interest-income-rises-55-yoy.html",
+        "source": "Vietnam News",
+        "published_at": "2026-10-04",
+        "summary": "Hong Kong virtual bank Ping An Digital Bank reported total assets above HK$15.6bn and deposits near HK$13.7bn at end-June 2026, both up over 130% year-on-year, with net interest income up 55% to HK$140m. Chief Executive Ronald Iu says the bank will now expand into high-end wealth management, adding investment commissions as a fee-income driver.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art05",
+        "title": "Nubank, WeBank and MYBank top the 2026 World's Best Digital Banks Ranking",
+        "url": "https://transactionfinance.tabinsights.com/article/-nubank--webank-and-mybank-top-the-2026-world-s-best-digital-banks-ranking",
+        "source": "TAB Insights",
+        "published_at": "2026-10-05",
+        "summary": "The 2026 World's Best Digital Banks ranking puts Nubank, WeBank and MYBank on top, with the top 100 digital banks growing customers ~13% and showing median FY2024 growth of 21.6% in assets and 24.8% in revenue. WeBank set up a Hong Kong technology-services arm to sell its capabilities into international finance, signalling Chinese digital-bank technology exporting into Asia's wealth markets.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 5
       }
     ],
     "Private Banking & Wealth": [
       {
         "id": "art06",
-        "title": "SGX to reduce board lot sizes for 11 stocks including DBS, OCBC and UOB from 5 October",
-        "url": "https://www.caproasia.com/2026/10/02/singapore-exchange-sgx-to-reduce-board-lot-sizes-for-11-stocks-effective-2026-october-5-10-26-11-stocks-are-dbs-ocbc-uob-sgx-prudential-great-eastern-keppel-jardine-matheson-jardine-cycle/",
-        "source": "Caproasia",
-        "published_at": "2026-10-02",
-        "summary": "SGX will reduce board-lot sizes for 11 stocks — DBS, OCBC, UOB, SGX itself, Prudential, Great Eastern, Keppel, Jardine Matheson, Jardine Cycle & Carriage, Venture Corporation and Haw Par — effective 5 October 2026, lowering the minimum ticket for high-priced shares such as DBS at S$75.80. The exchange is explicitly targeting retail accessibility to deepen its investor base. For Adam, cheaper access to bank and insurer shares pulls retail savings further into capital markets — a structural tailwind for wealth platforms that can capture the flow with suitable products and guidance.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "user_relevance": 5
-      },
-      {
-        "id": "art07",
-        "title": "Will higher rates boost Morgan Stanley's wealth management growth?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/higher-rates-boost-morgan-stanleys-121500966.html",
-        "source": "Yahoo Finance (Zacks)",
-        "published_at": "2026-10-02",
-        "summary": "Zacks analysis of US wealth franchises shows Morgan Stanley's wealth management revenue up 15% year on year to US$17.4 billion in H1 2026, with net interest income up 16% to US$4.4 billion and record net new assets of US$266.5 billion, after the Federal Reserve's September hike to 3.75–4.00%; JPMorgan AWM revenue rose 15% to US$13.2 billion on US$5.14 trillion of AUM and Goldman Sachs AWM rose 15% to US$8.7 billion. The rate cycle is testing whether wealth businesses are net beneficiaries or net victims of higher NII. For Adam, the APAC read is direct: WPB's own fee-versus-NII mix will be argued through exactly this lens in 2027 planning, and Morgan Stanley's net-new-asset machine shows what fee resilience looks like at scale.",
+        "title": "Vietnam has 1,233 ultra-rich individuals, population set for 4th-fastest growth globally",
+        "url": "https://e.vnexpress.net/news/business/economy/vietnam-has-1233-ultra-rich-individuals-population-set-for-4th-fastest-growth-globally-5128226.html",
+        "source": "VnExpress International",
+        "published_at": "2026-10-04",
+        "summary": "Knight Frank's Wealth Report 2026 counts 1,233 people in Vietnam worth at least US$30m, projected to grow 59% by 2031 \u2014 the fourth-fastest rate globally \u2014 with BCG expecting Vietnamese financial wealth to compound at over 9% annually through 2030. Southeast Asia's newer wealth corridors keep deepening as private-banking battlegrounds.",
         "hsbc_relevancy": 4,
         "adam_rel": 4,
         "noise_level": 2,
         "category": "Private Banking & Wealth",
+        "is_update": false,
         "user_relevance": 4
       }
     ],
-    "AI & Technology": [
+    "Regulatory & Markets": [
       {
-        "id": "art08",
-        "title": "AI Update, 2 October 2026: Copilot's digital coworker, Amazon's Ads Agent and the FTC's agent probe",
-        "url": "https://www.marketingprofs.com/opinions/2026/56056/ai-update-october-02-2026-ai-news-and-views-from-the-past-week",
-        "source": "MarketingProfs",
-        "published_at": "2026-10-02",
-        "summary": "The week's enterprise-AI column rounds up Microsoft's Copilot expansion — a Code feature for natural-language app building, an Autopilot digital coworker with its own identity and permissions, and deeper Office embedding — alongside Amazon unifying its ad console into an AI agent, OpenAI's always-on agent features and an FTC industry-wide investigation of AI-agent risks under <strong>Andrew Ferguson, FTC Chairman</strong>. Agentic assistants with governed permissions are becoming the enterprise norm, and US regulators are now formally circling the category. For Adam, the permission-and-identity layer for agents is where bank AI governance will be won or lost — the same controls conversation as WPB's own AI-coach deployment, one week after the MAS toolkit theme confirmed the direction.",
-        "hsbc_relevancy": 4,
+        "id": "art07",
+        "title": "MAS Corporate Governance Consultation: P016-2026 explained",
+        "url": "https://regreportingdesk.com/mas-corporate-governance-consultation-banks-insurers-dfhcs/",
+        "source": "RegReportingDesk",
+        "published_at": "2026-10-04",
+        "summary": "A detailed read of MAS consultation paper P016-2026 on corporate governance for banks, insurers and financial holding companies: the proposal reaches Singapore's DSIB groups \u2014 DBS, OCBC, UOB, Citibank, Maybank, Standard Chartered and HSBC \u2014 with revised approval requirements for key appointment holders and ex-post notification changes that differ by bank tier and legal form.",
+        "hsbc_relevancy": 6,
         "adam_rel": 5,
-        "noise_level": 3,
-        "category": "AI & Technology",
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "is_update": false,
         "user_relevance": 5
       },
       {
-        "id": "art09",
-        "title": "Perplexity open-sources pplx-decider and launches a $0.04 Decisions API",
-        "url": "https://explainx.ai/blog/perplexity-pplx-decider-decisions-api-2026",
-        "source": "ExplainX",
-        "published_at": "2026-10-02",
-        "summary": "Perplexity open-sourced pplx-decider-v1-27b on 1 October under Apache-2.0 — a roughly 26B-parameter fine-tune of Qwen3.8-27B purpose-built to route and structure decisions — and launched a hosted Decisions API at US$0.04 per million input tokens with output free, scoring 85.71% across an 11-benchmark panel. Decision models are emerging as an infrastructure category for cheap, structured agent routing. For Adam, it is early-stage, but the cost curve for the reasoning layer underneath bank copilots is collapsing — relevant to any build-versus-rent assessment of the AI-coach stack.",
-        "hsbc_relevancy": 2,
-        "adam_rel": 4,
+        "id": "art08",
+        "title": "No big law passed this week. The rulebook changed anyway \u2014 weekly regulation recap",
+        "url": "https://www.fintechweekly.com/magazine/articles/weekly-regulation-recap-mica-genius-act-pix-2026-w40",
+        "source": "FinTech Weekly",
+        "published_at": "2026-10-05",
+        "summary": "This week's regulatory recap highlights MAS's statutory stablecoin-regime consultation under the Payment Services Act closing 16 October, with a new licence class for issuers of 'MAS-regulated stablecoins', and Japan's FSA approving a stablecoin trade-finance settlement pilot linking TradeWaltz, NTT Data and the three megabanks' joint yen stablecoin \u2014 programmable money moving into banking's paper-heavy corners.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
         "noise_level": 2,
-        "category": "AI & Technology",
-        "user_relevance": 4
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 5
       }
     ]
   },
@@ -178,129 +175,123 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Hong Kong stocks slump most since March, led by financials; HSBC down 5.7%",
-        "url": "https://theedgemalaysia.com/node/820301",
-        "source": "The Edge Malaysia (Bloomberg)",
-        "published_at": "2026-10-02",
-        "summary": "Hong Kong stocks posted their biggest drop since March as trading resumed after the National Day holiday, the Hang Seng Index falling as much as 3% with HSBC down 5.7% as the single biggest drag, as the US 10-year Treasury yield touched its highest since 2002 and UK bank-tax worries compounded the pressure on financials. <strong>Homin Lee, Senior Macro Strategist at Lombard Odier Singapore</strong>, framed the move as rates-driven repricing, with <strong>Gerald Gan, CIO of Reed Capital Partners</strong>, noting financials-led selling. The rates-versus-banks tension is now visibly pricing HSBC's stock. For Adam, the selloff is the macro backdrop talking: higher-for-longer rates reprice bank equities and wealth margins at the same time, and it lands the week before 2027 planning conversations where the NII-versus-fee mix will frame every investment case.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 5,
-        "noise_level": 4,
-        "category": "Regulatory & Markets",
-        "user_relevance": 5
+        "title": "Omada purchases EmpowerID to govern AI agents at runtime",
+        "url": "https://www.bankinfosecurity.com/omada-purchases-empowerid-to-govern-ai-agents-at-runtime-a-33000",
+        "source": "BankInfoSecurity",
+        "published_at": "2026-10-05",
+        "summary": "Identity-governance vendor Omada acquired EmpowerID to add AI-agent identity governance and runtime authorisation \u2014 controls over what deployed, consequential AI agents can see and do, not just who built them. As banks move from copilots to acting agents, runtime identity and permissioning is emerging as a distinct control layer.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 6
       },
       {
         "id": "art02",
-        "title": "UOB rolls out online booking for branch appointments",
-        "url": "https://www.businesstimes.com.sg/companies-markets/uob-rolls-out-online-booking-branch-appointments",
-        "source": "The Business Times",
-        "published_at": "2026-10-02",
-        "summary": "UOB has launched Singapore's first online branch-appointment booking system, covering more than 25 services from banker's guarantees to advisory and wealth appointments, with instant confirmation and self-serve redirects; a six-branch pilot in July–August found almost half of users were over 50 and half booked advisory services. <strong>Benny Chan, Managing Director for Group Channels and Digitalisation at UOB</strong>, is leading the rollout, while DBS and OCBC confirmed they offer no comparable advance booking — <strong>Jacqueline Lim, COO of Consumer Banking Group at DBS</strong>, pointed to digital-queue alternatives instead. A decade of branch-decline narratives just met a bank making the branch bookable like a restaurant. For Adam, the pilot data is the story: older, advice-seeking clients will use digital channels when the journey respects their need for a person — the exact design question sitting inside WPB's RM-desk and channel programmes.",
-        "hsbc_relevancy": 5,
+        "title": "HSBC Asset Management backs AI finance startup Model ML",
+        "url": "https://aibusinessweekly.net/p/hsbc-asset-management-model-ml-investment",
+        "source": "AI Business Weekly",
+        "published_at": "2026-10-05",
+        "summary": "HSBC Asset Management has invested in Model ML, an AI platform for banks, as part of a funding round taking the startup's total raised to $100m. The check size was not disclosed, but the move continues HSBC's pattern of taking equity positions in the AI ecosystem rather than only buying tools.",
+        "hsbc_relevancy": 7,
         "adam_rel": 6,
         "noise_level": 2,
-        "category": "Competitor Intelligence",
+        "category": "HSBC News",
+        "is_update": false,
         "user_relevance": 6
       },
       {
         "id": "art03",
-        "title": "Nubank bets on AI to scale global compliance with Cardamon",
-        "url": "https://fintech.global/2026/10/02/nubank-bets-on-ai-to-scale-global-compliance-with-cardamon/",
-        "source": "FinTech Global",
-        "published_at": "2026-10-02",
-        "summary": "Nubank has rolled out Cardamon's AI compliance platform across all of its jurisdictions, using the Y Combinator-backed RegTech to map its regulatory position at a claimed 20x speed versus legacy processes, at a bank with a US$70 billion market capitalisation and more than 140 million customers. <strong>Amanda Hauch F. Silva, compliance expert at Nubank</strong>, is quoted on the rollout. AI is moving from productivity pilots into the control functions themselves — the most change-resistant layer of any bank. For Adam, this is a live reference case for the ship-with-controls model: compliance obligations automated at scale, with auditability, is the template his change teams can cite when WPB's own AI-in-controls questions come up.",
-        "hsbc_relevancy": 4,
+        "title": "What the best retail bank is doing differently",
+        "url": "https://www.theasianbanker.com/updates-and-articles/what-the-best-retail-bank-is-doing-differently",
+        "source": "The Asian Banker",
+        "published_at": "2026-10-04",
+        "summary": "Bank of China (Hong Kong), named by TAB Global as the best retail bank in the world, Asia Pacific and Hong Kong for 2026, is profiled as the benchmark for organising capabilities around customer behaviour: 19% growth in active mobile banking personal customers in 2025, RM Chat Service extending advisory beyond branches, free real-time HK stock quotes, AI Avatar-powered market insights, and the BeLeaf personal finance tool \u2014 all built around cross-boundary customers rather than product silos.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Operations & Change",
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": false,
         "user_relevance": 6
       },
       {
         "id": "art04",
-        "title": "HSBC hires Cantor's Paras Jain to lead global TMT banking, sources say",
-        "url": "https://www.reuters.com/legal/transactional/hsbc-hires-cantors-paras-jain-lead-global-tmt-banking-sources-say-2026-10-02/",
-        "source": "Reuters",
-        "published_at": "2026-10-02",
-        "summary": "HSBC has hired <strong>Paras Jain from Cantor Fitzgerald</strong> as global head of TMT banking, per Reuters sources — a senior investment-banking build-out in the technology, media and telecom coverage franchise where AI-era deal flow is concentrating. The move signals HSBC continuing to invest in sector coverage even as it disciplines costs elsewhere. For Adam, senior franchise hires of this kind usually carry a follow-on delivery tail — new sector platforms, coverage tooling and integration work that eventually surfaces in change-execution backlogs.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 4,
-        "noise_level": 3,
-        "category": "HSBC News",
-        "user_relevance": 4
-      },
-      {
-        "id": "art05",
-        "title": "OCBC Securities to remove minimum commissions for online SGX trades from 5 October",
-        "url": "https://www.caproasia.com/2026/10/02/singapore-brokerage-ocbc-securities-to-remove-minimum-commissions-for-online-trades-on-singapore-exchange-sgx-effective-2026-october-5-10-26/",
-        "source": "Caproasia",
-        "published_at": "2026-10-02",
-        "summary": "OCBC Securities will remove minimum commissions for online SGX trades from 5 October 2026 — the same day SGX cuts board-lot sizes for 11 stocks including DBS, OCBC and UOB — a coordinated push on retail trading economics in Singapore. The zero-minimum move undercuts digital brokerages such as Futu and moomoo on headline pricing while the lot-size change lowers entry barriers to high-priced bank shares. For Adam, retail wealth pricing is compressing toward zero on the transactional layer — the value migration to advice and planning is accelerating, and that is a WPB proposition question as much as a brokerage one.",
+        "title": "Ping An Digital Bank celebrates 6th anniversary \u2014 assets and deposits both surge over 130% YoY",
+        "url": "https://vietnamnews.vn/media-outreach/1800843/ping-an-digital-bank-celebrates-6th-anniversary-total-assets-and-customer-deposits-both-surge-over-130-yoy-net-interest-income-rises-55-yoy.html",
+        "source": "Vietnam News",
+        "published_at": "2026-10-04",
+        "summary": "Hong Kong virtual bank Ping An Digital Bank reported total assets above HK$15.6bn and deposits near HK$13.7bn at end-June 2026, both up over 130% year-on-year, with net interest income up 55% to HK$140m. Chief Executive Ronald Iu says the bank will now expand into high-end wealth management, adding investment commissions as a fee-income driver.",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
         "noise_level": 2,
         "category": "Competitor Intelligence",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art05",
+        "title": "Nubank, WeBank and MYBank top the 2026 World's Best Digital Banks Ranking",
+        "url": "https://transactionfinance.tabinsights.com/article/-nubank--webank-and-mybank-top-the-2026-world-s-best-digital-banks-ranking",
+        "source": "TAB Insights",
+        "published_at": "2026-10-05",
+        "summary": "The 2026 World's Best Digital Banks ranking puts Nubank, WeBank and MYBank on top, with the top 100 digital banks growing customers ~13% and showing median FY2024 growth of 21.6% in assets and 24.8% in revenue. WeBank set up a Hong Kong technology-services arm to sell its capabilities into international finance, signalling Chinese digital-bank technology exporting into Asia's wealth markets.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Competitor Intelligence",
+        "is_update": false,
         "user_relevance": 5
       },
       {
         "id": "art06",
-        "title": "SGX to reduce board lot sizes for 11 stocks including DBS, OCBC and UOB from 5 October",
-        "url": "https://www.caproasia.com/2026/10/02/singapore-exchange-sgx-to-reduce-board-lot-sizes-for-11-stocks-effective-2026-october-5-10-26-11-stocks-are-dbs-ocbc-uob-sgx-prudential-great-eastern-keppel-jardine-matheson-jardine-cycle/",
-        "source": "Caproasia",
-        "published_at": "2026-10-02",
-        "summary": "SGX will reduce board-lot sizes for 11 stocks — DBS, OCBC, UOB, SGX itself, Prudential, Great Eastern, Keppel, Jardine Matheson, Jardine Cycle & Carriage, Venture Corporation and Haw Par — effective 5 October 2026, lowering the minimum ticket for high-priced shares such as DBS at S$75.80. The exchange is explicitly targeting retail accessibility to deepen its investor base. For Adam, cheaper access to bank and insurer shares pulls retail savings further into capital markets — a structural tailwind for wealth platforms that can capture the flow with suitable products and guidance.",
+        "title": "Vietnam has 1,233 ultra-rich individuals, population set for 4th-fastest growth globally",
+        "url": "https://e.vnexpress.net/news/business/economy/vietnam-has-1233-ultra-rich-individuals-population-set-for-4th-fastest-growth-globally-5128226.html",
+        "source": "VnExpress International",
+        "published_at": "2026-10-04",
+        "summary": "Knight Frank's Wealth Report 2026 counts 1,233 people in Vietnam worth at least US$30m, projected to grow 59% by 2031 \u2014 the fourth-fastest rate globally \u2014 with BCG expecting Vietnamese financial wealth to compound at over 9% annually through 2030. Southeast Asia's newer wealth corridors keep deepening as private-banking battlegrounds.",
         "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "adam_rel": 4,
         "noise_level": 2,
         "category": "Private Banking & Wealth",
-        "user_relevance": 5
+        "is_update": false,
+        "user_relevance": 4
       },
       {
         "id": "art07",
-        "title": "Will higher rates boost Morgan Stanley's wealth management growth?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/higher-rates-boost-morgan-stanleys-121500966.html",
-        "source": "Yahoo Finance (Zacks)",
-        "published_at": "2026-10-02",
-        "summary": "Zacks analysis of US wealth franchises shows Morgan Stanley's wealth management revenue up 15% year on year to US$17.4 billion in H1 2026, with net interest income up 16% to US$4.4 billion and record net new assets of US$266.5 billion, after the Federal Reserve's September hike to 3.75–4.00%; JPMorgan AWM revenue rose 15% to US$13.2 billion on US$5.14 trillion of AUM and Goldman Sachs AWM rose 15% to US$8.7 billion. The rate cycle is testing whether wealth businesses are net beneficiaries or net victims of higher NII. For Adam, the APAC read is direct: WPB's own fee-versus-NII mix will be argued through exactly this lens in 2027 planning, and Morgan Stanley's net-new-asset machine shows what fee resilience looks like at scale.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "user_relevance": 4
-      },
-      {
-        "id": "art08",
-        "title": "AI Update, 2 October 2026: Copilot's digital coworker, Amazon's Ads Agent and the FTC's agent probe",
-        "url": "https://www.marketingprofs.com/opinions/2026/56056/ai-update-october-02-2026-ai-news-and-views-from-the-past-week",
-        "source": "MarketingProfs",
-        "published_at": "2026-10-02",
-        "summary": "The week's enterprise-AI column rounds up Microsoft's Copilot expansion — a Code feature for natural-language app building, an Autopilot digital coworker with its own identity and permissions, and deeper Office embedding — alongside Amazon unifying its ad console into an AI agent, OpenAI's always-on agent features and an FTC industry-wide investigation of AI-agent risks under <strong>Andrew Ferguson, FTC Chairman</strong>. Agentic assistants with governed permissions are becoming the enterprise norm, and US regulators are now formally circling the category. For Adam, the permission-and-identity layer for agents is where bank AI governance will be won or lost — the same controls conversation as WPB's own AI-coach deployment, one week after the MAS toolkit theme confirmed the direction.",
-        "hsbc_relevancy": 4,
+        "title": "MAS Corporate Governance Consultation: P016-2026 explained",
+        "url": "https://regreportingdesk.com/mas-corporate-governance-consultation-banks-insurers-dfhcs/",
+        "source": "RegReportingDesk",
+        "published_at": "2026-10-04",
+        "summary": "A detailed read of MAS consultation paper P016-2026 on corporate governance for banks, insurers and financial holding companies: the proposal reaches Singapore's DSIB groups \u2014 DBS, OCBC, UOB, Citibank, Maybank, Standard Chartered and HSBC \u2014 with revised approval requirements for key appointment holders and ex-post notification changes that differ by bank tier and legal form.",
+        "hsbc_relevancy": 6,
         "adam_rel": 5,
-        "noise_level": 3,
-        "category": "AI & Technology",
+        "noise_level": 2,
+        "category": "Regulatory & Markets",
+        "is_update": false,
         "user_relevance": 5
       },
       {
-        "id": "art09",
-        "title": "Perplexity open-sources pplx-decider and launches a $0.04 Decisions API",
-        "url": "https://explainx.ai/blog/perplexity-pplx-decider-decisions-api-2026",
-        "source": "ExplainX",
-        "published_at": "2026-10-02",
-        "summary": "Perplexity open-sourced pplx-decider-v1-27b on 1 October under Apache-2.0 — a roughly 26B-parameter fine-tune of Qwen3.8-27B purpose-built to route and structure decisions — and launched a hosted Decisions API at US$0.04 per million input tokens with output free, scoring 85.71% across an 11-benchmark panel. Decision models are emerging as an infrastructure category for cheap, structured agent routing. For Adam, it is early-stage, but the cost curve for the reasoning layer underneath bank copilots is collapsing — relevant to any build-versus-rent assessment of the AI-coach stack.",
-        "hsbc_relevancy": 2,
-        "adam_rel": 4,
+        "id": "art08",
+        "title": "No big law passed this week. The rulebook changed anyway \u2014 weekly regulation recap",
+        "url": "https://www.fintechweekly.com/magazine/articles/weekly-regulation-recap-mica-genius-act-pix-2026-w40",
+        "source": "FinTech Weekly",
+        "published_at": "2026-10-05",
+        "summary": "This week's regulatory recap highlights MAS's statutory stablecoin-regime consultation under the Payment Services Act closing 16 October, with a new licence class for issuers of 'MAS-regulated stablecoins', and Japan's FSA approving a stablecoin trade-finance settlement pilot linking TradeWaltz, NTT Data and the three megabanks' joint yen stablecoin \u2014 programmable money moving into banking's paper-heavy corners.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
         "noise_level": 2,
-        "category": "AI & Technology",
-        "user_relevance": 4
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 5
       }
     ],
     "categories": {
-      "Regulatory & Markets": "#d97706",
-      "Competitor Intelligence": "#0891b2",
-      "Operations & Change": "#7c3aed",
+      "AI & Technology": "#6366f1",
       "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2",
       "Private Banking & Wealth": "#059669",
-      "AI & Technology": "#6366f1"
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
