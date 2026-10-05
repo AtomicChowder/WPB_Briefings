@@ -61,7 +61,9 @@ not that there was no news.
 For each surviving article assign `hsbc_relevancy` (0–10), `adam_rel` (0–10),
 `noise_level` (1–5), and `category`. Write the summary in three beats:
 the new fact → context (link to prior coverage or competitive landscape) → why it
-matters to Adam. For `is_update` articles, the summary must open by anchoring the
+matters to Adam. Wrap person names in `<strong>Name, Title</strong>` tags — the
+template renders summaries as inline HTML, same convention as `context_html`.
+For `is_update` articles, the summary must open by anchoring the
 prior coverage ("Following X we covered on {date}, …").
 
 **5. Write 3 talking points**

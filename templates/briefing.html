@@ -351,7 +351,7 @@
           <div class="article-title">
             <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
           </div>
-          <p class="article-summary">{{ article.summary }}</p>
+          <p class="article-summary">{{ article.summary | safe }}</p>
           <div class="article-footer">
             <span class="article-source">{{ article.source }}</span>
             <span>{{ article.published_at | format_date }}</span>
