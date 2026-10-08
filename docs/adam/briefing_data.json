@@ -3,151 +3,159 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 7 October 2026",
-  "date_str": "2026-10-07",
-  "generated_at": "6 Oct 2026, 23:07 UTC",
+  "briefing_date": "Thursday, 8 October 2026",
+  "date_str": "2026-10-08",
+  "generated_at": "8 Oct 2026, 00:20 UTC",
   "total_articles": 7,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Hong Kong puts HSBC's Singapore AI hub in the spotlight \u2014 location is now political",
-      "context_html": "Hong Kong has publicly questioned HSBC's decision to build its new AI centre \u2014 100+ specialists for wealth management and payments \u2014 in Singapore rather than at home. The centre reports into <strong>David Rice, HSBC's chief AI officer</strong>. For Adam, this raises the stakes on every AI investment location decision in APAC private banking: the Hong Kong-Singapore rivalry means capability placement is now read as a political signal, not just a delivery choice.",
+      "headline": "HSBC readies 'deep, wide and brutal' UK wealth cuts \u2014 up to 70% of advisers \u2014 as AI takes the servicing load",
+      "context_html": "HSBC is reportedly preparing to cut up to 70% of financial adviser roles in its UK wealth business, reversing a post-2021 hiring spree, as AI and digital servicing absorb more of the high-net-worth client journey. The plan is being read inside the bank as the first unambiguous bet that AI can carry core RM workload at scale. For Adam, this lands directly on his desk as the change-execution precedent: the APAC PB&WS platform, RM-workbench and Wealth-Intelligence investments will increasingly be judged against exactly this kind of AI-led servicing economics \u2014 and against the political cost of getting the human transition wrong.",
       "source_links": [
         [
-          "https://www.ft.com/content/1a4458ce-6317-4dce-a43e-95e724d7c33f",
-          "FT: Hong Kong quizzes HSBC over Singapore AI hub"
+          "https://www.finextra.com/newsarticle/48549/hsbc-to-make-deep-wide-and-brutal-uk-wealth-management-job-cuts-in-ai-push",
+          "Finextra: HSBC UK wealth cuts in AI push"
+        ],
+        [
+          "https://www.forbes.com/sites/sheilacallaham/2026/10/07/hsbc-to-cut-advisors-even-while-investors-want-human-judgment/",
+          "Forbes: cuts even as investors want human judgment"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "UBS, Standard Chartered and Deutsche turn wealth into the region's profit engine \u2014 record numbers",
-      "context_html": "UBS pulled in $73bn of H1 net new assets as the Credit Suisse integration completes, Standard Chartered's wealth income hit a record $2.1bn (+38%), and Deutsche Bank closed on a $1.1tn private-bank asset target. Competitors are converting integration and AI investment into record wealth P&L \u2014 the benchmark HSBC WPB's change agenda will be measured against keeps ratcheting up.",
+      "headline": "Tokenised settlement hardens: HSBC, DBS, StanChart and Citi go live on Swift's ledger \u2014 but Taurus says key layers are still missing",
+      "context_html": "HSBC, Standard Chartered, DBS and Citi have completed live transactions on Swift's shared blockchain ledger, settling in minutes including on weekends, while Taurus' co-founder warns the network still lacks the internal layers needed for scaled production. The trials come on top of OCBC's tokenised-deposit firsts and HSBC's own Orion and RedCoin moves, so tokenised money is quietly becoming a production-rail question rather than a pilot question. For Adam, the near-term issue is readiness: WPB product and payments roadmaps will be expected to interoperate with these rails, and the build-vs-connect choices on his plate age quickly in this environment.",
       "source_links": [
         [
-          "https://www.wealthandsociety.com/updates-and-articles/ubs-wealth-inflows-reach-$73-billion,-as-standard-chartered-posts-record-wealth-income",
-          "Wealth & Society: UBS inflows, StanChart record income"
+          "https://www.coindesk.com/business/2026/10/07/swift-blockchain-ledger-requires-key-internal-layers-taurus-co-founder-warns",
+          "CoinDesk: Swift ledger needs key internal layers"
         ]
       ],
       "is_update": false
     },
     {
-      "headline": "Temenos ships agentic AI copilots inside core banking \u2014 the platform-AI bar just moved",
-      "context_html": "Temenos announced agentic AI copilots for Workbench, Payments, FCM and Wealth, with <strong>Takis Spiliopoulos, Temenos CEO and interim CFO</strong>, making AI a standard platform feature. Any bank mid-core-banking-upgrade should now ask what agentic capability its platform roadmap commits to \u2014 a directly relevant benchmark as the Avaloq 6.1 upgrade debate continues. (No item this cycle reached the thread-rel 5 desk threshold; the three points are macro.)",
+      "headline": "On Adam's desk: DBS rolls Avaloq out across Asia with a S$1tn-by-2030 AUM target \u2014 the platform vendor HSBC runs on becomes a competitor weapon",
+      "context_html": "Following the DBS\u2013Avaloq alliance deepening we covered on 6 October, DBS is now rolling Avaloq wealth software out across Asia as it extends the 18-year partnership, explicitly targeting S$1 trillion of assets under management by 2030. A direct competitor is turning HSBC's own core-banking vendor into a co-built distribution weapon, with a dated AUM ambition attached. For Adam's Avaloq 6.1 and credit-engine roadmap, DBS's rollout pace and delivery economics are the live external benchmark his stakeholders will quote back at him.",
       "source_links": [
         [
-          "https://finance.yahoo.com/quote/0QOA.L/earnings/0QOA.L-Q2-2026-earnings_call-545733.html",
-          "Temenos Q2 FY2026 earnings call"
+          "https://www.instagram.com/p/DeKifb4l9IA/",
+          "International Finance: DBS-Avaloq 18-year alliance"
         ]
       ],
-      "is_update": false
+      "is_update": true
     }
   ],
   "articles_by_category": {
+    "On Adam's Desk": [
+      {
+        "id": "art03",
+        "title": "DBS deepens Asia wealth push as DBS and Avaloq expand their 18-year alliance",
+        "url": "https://www.instagram.com/p/DeKifb4l9IA/",
+        "source": "Instagram (International Finance Magazine)",
+        "published_at": "2026-10-07",
+        "summary": "DBS is rolling out Avaloq wealth software across Asia as it extends its 18-year vendor alliance, targeting S$1 trillion of assets under management by 2030. The update follows the alliance-deepening announcement covered earlier this week. Adam runs change execution on the same vendor platform, so DBS's rollout pace and its S$1tn ambition directly sharpen the competitive benchmark for his own Avaloq roadmap.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 7
+      }
+    ],
     "HSBC News": [
       {
         "id": "art01",
-        "title": "Hong Kong quizzes HSBC over Singapore AI hub decision",
-        "url": "https://www.ft.com/content/1a4458ce-6317-4dce-a43e-95e724d7c33f",
-        "source": "Financial Times",
-        "published_at": "2026-10-06",
-        "summary": "Hong Kong has questioned HSBC's decision to locate its new artificial-intelligence centre in Singapore; the centre, announced in July, will recruit more than 100 AI specialists to bolster the bank's wealth management and payments technology. The team will work with <strong>David Rice, HSBC's chief AI officer</strong>, covering wealth management and global payment solutions. The episode shows the political optics of where HSBC builds AI capability now matter as much as the capability itself, with Hong Kong-Singapore rivalry pressuring every future location call.",
+        "title": "HSBC to make 'deep, wide and brutal' UK wealth management job cuts in AI push",
+        "url": "https://www.finextra.com/newsarticle/48549/hsbc-to-make-deep-wide-and-brutal-uk-wealth-management-job-cuts-in-ai-push",
+        "source": "Finextra Research",
+        "published_at": "2026-10-07",
+        "summary": "HSBC is planning to cut up to 70% of financial adviser roles in its UK wealth business as it ramps AI and digital servicing for high-net-worth clients, the FT reported. The move reverses a post-2021 hiring spree that brought hundreds of advisers into the UK franchise. For Adam it is the sharpest signal yet that the industry thinks AI can absorb core RM workload \u2014 the exact change-execution question his APAC platform work is racing to answer.",
         "hsbc_relevancy": 9,
         "adam_rel": 8,
-        "noise_level": 3,
+        "noise_level": 5,
         "category": "HSBC News",
         "is_update": false,
         "user_relevance": 8
       }
     ],
-    "Private Banking & Wealth": [
+    "Regulatory & Markets": [
       {
         "id": "art02",
-        "title": "UBS wealth inflows reach $73 billion, as Standard Chartered posts record wealth income",
-        "url": "https://www.wealthandsociety.com/updates-and-articles/ubs-wealth-inflows-reach-$73-billion,-as-standard-chartered-posts-record-wealth-income",
-        "source": "Wealth & Society",
-        "published_at": "2026-10-06",
-        "summary": "UBS attracted $73 billion in net new assets in the first half as the Credit Suisse integration nears completion, while Standard Chartered's wealth solutions income rose 38% to a record $2.1 billion and Deutsche Bank advanced toward its $1.1 trillion private-bank asset target. The week's results confirm wealth management as the region's profit engine, with OCBC deploying agentic AI to speed private-banking onboarding and Indosuez moving global advisory leadership to Singapore. Competitors are converting integration and AI investments into record wealth P&L, so the performance bar for every APAC wealth platform keeps rising.",
+        "title": "Swift blockchain ledger requires key internal layers, Taurus co-founder warns",
+        "url": "https://www.coindesk.com/business/2026/10/07/swift-blockchain-ledger-requires-key-internal-layers-taurus-co-founder-warns",
+        "source": "CoinDesk",
+        "published_at": "2026-10-07",
+        "summary": "HSBC, Standard Chartered, DBS and Citi have completed live transactions on Swift's shared blockchain ledger, settling payments in minutes including on weekends, but Taurus' co-founder warns the network still needs key internal layers before scaled production use. The trials extend the tokenised-deposit work already running across the region. For Adam, tokenised settlement is shifting from pilot theatre to production plumbing on the vendor rails WPB's product roadmap will have to interoperate with.",
         "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art07",
-        "title": "Half of private bank accounts in Singapore now opened in under a month",
-        "url": "https://asianbankingandfinance.net/news/half-private-bank-accounts-opened-in-under-month",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-10-06",
-        "summary": "Singapore's Private Banking Industry Group said half of private-bank accounts are now opened within a month, up from barely a fifth previously, after MAS and the industry agreed risk-proportionate account-opening standards and ran masterclasses in September 2026. <strong>Gillian Tan, Assistant Managing Director (Development and International) of MAS</strong>, said the progress signals the industry's commitment to Singapore's competitiveness as a wealth centre. Faster onboarding is becoming a competitive battleground among APAC booking centres, with regulator blessing.",
-        "hsbc_relevancy": 5,
         "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 6
       }
     ],
-    "AI & Technology": [
+    "Competitor Intelligence": [
       {
         "id": "art04",
-        "title": "Can data, AI and digital money expand what Philippine banks can profitably serve?",
-        "url": "https://www.theasianbanker.com/updates-and-articles/can-data-ai-and-digital-money-expand-what-philippine-banks-can-profitably-serve",
-        "source": "The Asian Banker",
-        "published_at": "2026-10-06",
-        "summary": "Philippine banks argued at a recent forum that AI changes the cost equation for serving mass-affluent wealth clients, but only where technology supports the adviser rather than replacing the relationship. EastWest Bank's executives stressed that deploying AI to automate servicing lets relationship managers cover larger books while keeping the human trust that justifies a wealth relationship. The hybrid model \u2014 AI for preparation and grunt work, humans for advice \u2014 is emerging as the region's consensus architecture for scaled wealth service.",
+        "title": "OCBC launches tokenised deposit solution with Ant International for Singapore-Malaysia treasury",
+        "url": "https://idocs.alipay.com/intl-website/intl-website/en/ocbc-launches-tokenised-deposit-solution-with-ant-international-for-treasury-management-between-singapore-and-malaysia",
+        "source": "Ant International (press release)",
+        "published_at": "2026-10-07",
+        "summary": "OCBC is the first bank live on Ant International's WhaleRTP platform, letting the group move SGD and USD tokenised deposits 24/7 between Singapore and Malaysia with near-real-time settlement. <strong>Carmen Chan, Deputy Head of Global Transaction Banking at OCBC</strong>, called it tokenisation moving beyond experimentation, while <strong>Kelvin Li, General Manager of Platform Tech at Ant International</strong>, framed it as scalable adoption. It builds on OCBC's September cross-border tokenised deposit tests on Swift's ledger with Citi.",
         "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 2,
-        "category": "AI & Technology",
+        "category": "Competitor Intelligence",
         "is_update": false,
         "user_relevance": 5
       }
     ],
     "Operations & Change": [
       {
-        "id": "art06",
-        "title": "IBF launches Job Redesign Playbook as Singapore's AI workforce Co-Lab expands",
-        "url": "https://www.ibf.org.sg/home/for-financial-institutions/talent-development-and-training-support/co-lab",
-        "source": "Institute of Banking and Finance",
+        "id": "art05",
+        "title": "Hyperlayer joins Asia Pacific fintech lab as finalist",
+        "url": "https://itbrief.com.au/story/hyperlayer-joins-asia-pacific-fintech-lab-as-finalist",
+        "source": "ITBrief Australia",
         "published_at": "2026-10-07",
-        "summary": "Singapore's Institute of Banking and Finance has launched a Job Redesign Playbook for financial services and expanded its AI Workforce Co-Lab, with pioneer institutions spanning DBS, HSBC Singapore, Standard Chartered, Citi, UBS and Deutsche Bank. The initiative signals that AI-driven workforce redesign is being institutionalised at sector level rather than left to individual firms. For change executives, the playbook is a ready external reference for structuring role redesign alongside AI adoption.",
+        "summary": "Hyperlayer, founded by former Morgan Stanley executives <strong>Rob Rooney</strong> and <strong>Paul Rolles</strong>, joined an APAC fintech lab whose backers include HSBC, JP Morgan, Standard Chartered, UBS, Citi, DBS, OCBC and Hang Seng. Its pitch is letting banks ship product change without full core replacement \u2014 connecting multiple cores, in-house and vendor, at once. For Adam's core-banking change agenda, it is a live data point that 'wrap and extend' is attracting Tier-1 sponsorship as an alternative to big-bang migration.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "is_update": false,
+        "user_relevance": 6
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art06",
+        "title": "Singapore's private banking client assets grew 15% in 2025, ~50% over five years",
+        "url": "https://www.instagram.com/reel/DeMj6y7h4HY/",
+        "source": "Instagram (Alvin Tan)",
+        "published_at": "2026-10-07",
+        "summary": "Singapore's wealth management sector continues to grow, with private banking client assets up 15% last year and around 50% over five years, per <strong>Alvin Tan, Minister of State for Foreign Affairs and MAS board member</strong>, citing Deputy Prime Minister Gan Kim Yong's remarks at the WMI Global-Asia Family Office Summit. MAS separately said it will trial tokenised MAS Bills settled in wholesale CBDC this year. The numbers reinforce why Singapore stays the region's deepest wealth battleground.",
         "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 2,
-        "category": "Operations & Change",
+        "category": "Private Banking & Wealth",
         "is_update": false,
         "user_relevance": 5
       }
     ],
-    "Regulatory & Markets": [
+    "AI & Technology": [
       {
         "id": "art08",
-        "title": "Hong Kong to explore stablecoin use cases with Malaysia",
-        "url": "https://www.centralbanking.com/central-banks/currency/digital-currencies/7977242/hong-kong-to-explore-stablecoin-use-cases-with-malaysia",
-        "source": "Central Banking",
-        "published_at": "2026-10-06",
-        "summary": "Hong Kong and Malaysia announced an agreement on October 6 to explore cross-border stablecoin use cases between the two financial centres. The pact extends the stablecoin momentum that has seen Hong Kong grant its first licences under the new regime. Cross-border experimentation between Asian centres is turning stablecoins from a domestic licensing story into a payments-infrastructure race.",
-        "hsbc_relevancy": 5,
+        "title": "Aveni CEO: why small AI models matter to UK finance",
+        "url": "https://channellife.co.uk/story/aveni-ceo-why-small-ai-models-matter-to-uk-finance",
+        "source": "ChannelLife UK",
+        "published_at": "2026-10-07",
+        "summary": "<strong>Joseph Twigg, CEO of Aveni</strong>, argued that smaller specialist models are becoming a practical priority for UK financial firms because they cost less to run, suit compliance work and reduce dependence on a few US providers \u2014 citing its 1-24 billion parameter FinLLM range co-developed with Lloyds Banking Group and Nationwide. He warned that hyperscaler disintermediation could turn banks into mere manufacturers if customers interact with their finances through ChatGPT or Anthropic. The 'requisite intelligence' framing is a useful counterweight to bigger-is-better model lobbying.",
+        "hsbc_relevancy": 3,
         "adam_rel": 5,
-        "noise_level": 2,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art09",
-        "title": "Korea's Lee orders probe after seven banks hit by AI-driven hacks",
-        "url": "https://aiweekly.co/ai-news-today",
-        "source": "AI Weekly / Korea JoongAng Daily",
-        "published_at": "2026-10-06",
-        "summary": "South Korean President <strong>Lee Jae Myung</strong> ordered a comprehensive probe after breaches hit seven financial firms including Shinhan Bank and KB Kookmin, with investigators tracing the attack infrastructure to ARTEX AI, an open-source penetration-testing framework. Exposed data spans names, income, loan limits and in some cases resident registration numbers. As banks deploy AI, attackers are using AI tooling too \u2014 a live case for securing the agent stack before scaling it.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "noise_level": 1,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 5
       }
@@ -157,109 +165,111 @@
     "articles": [
       {
         "id": "art01",
-        "title": "Hong Kong quizzes HSBC over Singapore AI hub decision",
-        "url": "https://www.ft.com/content/1a4458ce-6317-4dce-a43e-95e724d7c33f",
-        "source": "Financial Times",
-        "published_at": "2026-10-06",
-        "summary": "Hong Kong has questioned HSBC's decision to locate its new artificial-intelligence centre in Singapore; the centre, announced in July, will recruit more than 100 AI specialists to bolster the bank's wealth management and payments technology. The team will work with <strong>David Rice, HSBC's chief AI officer</strong>, covering wealth management and global payment solutions. The episode shows the political optics of where HSBC builds AI capability now matter as much as the capability itself, with Hong Kong-Singapore rivalry pressuring every future location call.",
+        "title": "HSBC to make 'deep, wide and brutal' UK wealth management job cuts in AI push",
+        "url": "https://www.finextra.com/newsarticle/48549/hsbc-to-make-deep-wide-and-brutal-uk-wealth-management-job-cuts-in-ai-push",
+        "source": "Finextra Research",
+        "published_at": "2026-10-07",
+        "summary": "HSBC is planning to cut up to 70% of financial adviser roles in its UK wealth business as it ramps AI and digital servicing for high-net-worth clients, the FT reported. The move reverses a post-2021 hiring spree that brought hundreds of advisers into the UK franchise. For Adam it is the sharpest signal yet that the industry thinks AI can absorb core RM workload \u2014 the exact change-execution question his APAC platform work is racing to answer.",
         "hsbc_relevancy": 9,
         "adam_rel": 8,
-        "noise_level": 3,
+        "noise_level": 5,
         "category": "HSBC News",
         "is_update": false,
         "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "UBS wealth inflows reach $73 billion, as Standard Chartered posts record wealth income",
-        "url": "https://www.wealthandsociety.com/updates-and-articles/ubs-wealth-inflows-reach-$73-billion,-as-standard-chartered-posts-record-wealth-income",
-        "source": "Wealth & Society",
-        "published_at": "2026-10-06",
-        "summary": "UBS attracted $73 billion in net new assets in the first half as the Credit Suisse integration nears completion, while Standard Chartered's wealth solutions income rose 38% to a record $2.1 billion and Deutsche Bank advanced toward its $1.1 trillion private-bank asset target. The week's results confirm wealth management as the region's profit engine, with OCBC deploying agentic AI to speed private-banking onboarding and Indosuez moving global advisory leadership to Singapore. Competitors are converting integration and AI investments into record wealth P&L, so the performance bar for every APAC wealth platform keeps rising.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art04",
-        "title": "Can data, AI and digital money expand what Philippine banks can profitably serve?",
-        "url": "https://www.theasianbanker.com/updates-and-articles/can-data-ai-and-digital-money-expand-what-philippine-banks-can-profitably-serve",
-        "source": "The Asian Banker",
-        "published_at": "2026-10-06",
-        "summary": "Philippine banks argued at a recent forum that AI changes the cost equation for serving mass-affluent wealth clients, but only where technology supports the adviser rather than replacing the relationship. EastWest Bank's executives stressed that deploying AI to automate servicing lets relationship managers cover larger books while keeping the human trust that justifies a wealth relationship. The hybrid model \u2014 AI for preparation and grunt work, humans for advice \u2014 is emerging as the region's consensus architecture for scaled wealth service.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art06",
-        "title": "IBF launches Job Redesign Playbook as Singapore's AI workforce Co-Lab expands",
-        "url": "https://www.ibf.org.sg/home/for-financial-institutions/talent-development-and-training-support/co-lab",
-        "source": "Institute of Banking and Finance",
+        "title": "Swift blockchain ledger requires key internal layers, Taurus co-founder warns",
+        "url": "https://www.coindesk.com/business/2026/10/07/swift-blockchain-ledger-requires-key-internal-layers-taurus-co-founder-warns",
+        "source": "CoinDesk",
         "published_at": "2026-10-07",
-        "summary": "Singapore's Institute of Banking and Finance has launched a Job Redesign Playbook for financial services and expanded its AI Workforce Co-Lab, with pioneer institutions spanning DBS, HSBC Singapore, Standard Chartered, Citi, UBS and Deutsche Bank. The initiative signals that AI-driven workforce redesign is being institutionalised at sector level rather than left to individual firms. For change executives, the playbook is a ready external reference for structuring role redesign alongside AI adoption.",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art07",
-        "title": "Half of private bank accounts in Singapore now opened in under a month",
-        "url": "https://asianbankingandfinance.net/news/half-private-bank-accounts-opened-in-under-month",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-10-06",
-        "summary": "Singapore's Private Banking Industry Group said half of private-bank accounts are now opened within a month, up from barely a fifth previously, after MAS and the industry agreed risk-proportionate account-opening standards and ran masterclasses in September 2026. <strong>Gillian Tan, Assistant Managing Director (Development and International) of MAS</strong>, said the progress signals the industry's commitment to Singapore's competitiveness as a wealth centre. Faster onboarding is becoming a competitive battleground among APAC booking centres, with regulator blessing.",
-        "hsbc_relevancy": 5,
+        "summary": "HSBC, Standard Chartered, DBS and Citi have completed live transactions on Swift's shared blockchain ledger, settling payments in minutes including on weekends, but Taurus' co-founder warns the network still needs key internal layers before scaled production use. The trials extend the tokenised-deposit work already running across the region. For Adam, tokenised settlement is shifting from pilot theatre to production plumbing on the vendor rails WPB's product roadmap will have to interoperate with.",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "art08",
-        "title": "Hong Kong to explore stablecoin use cases with Malaysia",
-        "url": "https://www.centralbanking.com/central-banks/currency/digital-currencies/7977242/hong-kong-to-explore-stablecoin-use-cases-with-malaysia",
-        "source": "Central Banking",
-        "published_at": "2026-10-06",
-        "summary": "Hong Kong and Malaysia announced an agreement on October 6 to explore cross-border stablecoin use cases between the two financial centres. The pact extends the stablecoin momentum that has seen Hong Kong grant its first licences under the new regime. Cross-border experimentation between Asian centres is turning stablecoins from a domestic licensing story into a payments-infrastructure race.",
+        "id": "art03",
+        "title": "DBS deepens Asia wealth push as DBS and Avaloq expand their 18-year alliance",
+        "url": "https://www.instagram.com/p/DeKifb4l9IA/",
+        "source": "Instagram (International Finance Magazine)",
+        "published_at": "2026-10-07",
+        "summary": "DBS is rolling out Avaloq wealth software across Asia as it extends its 18-year vendor alliance, targeting S$1 trillion of assets under management by 2030. The update follows the alliance-deepening announcement covered earlier this week. Adam runs change execution on the same vendor platform, so DBS's rollout pace and its S$1tn ambition directly sharpen the competitive benchmark for his own Avaloq roadmap.",
         "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "Competitor Intelligence",
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "art04",
+        "title": "OCBC launches tokenised deposit solution with Ant International for Singapore-Malaysia treasury",
+        "url": "https://idocs.alipay.com/intl-website/intl-website/en/ocbc-launches-tokenised-deposit-solution-with-ant-international-for-treasury-management-between-singapore-and-malaysia",
+        "source": "Ant International (press release)",
+        "published_at": "2026-10-07",
+        "summary": "OCBC is the first bank live on Ant International's WhaleRTP platform, letting the group move SGD and USD tokenised deposits 24/7 between Singapore and Malaysia with near-real-time settlement. <strong>Carmen Chan, Deputy Head of Global Transaction Banking at OCBC</strong>, called it tokenisation moving beyond experimentation, while <strong>Kelvin Li, General Manager of Platform Tech at Ant International</strong>, framed it as scalable adoption. It builds on OCBC's September cross-border tokenised deposit tests on Swift's ledger with Citi.",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 2,
-        "category": "Regulatory & Markets",
+        "category": "Competitor Intelligence",
         "is_update": false,
         "user_relevance": 5
       },
       {
-        "id": "art09",
-        "title": "Korea's Lee orders probe after seven banks hit by AI-driven hacks",
-        "url": "https://aiweekly.co/ai-news-today",
-        "source": "AI Weekly / Korea JoongAng Daily",
-        "published_at": "2026-10-06",
-        "summary": "South Korean President <strong>Lee Jae Myung</strong> ordered a comprehensive probe after breaches hit seven financial firms including Shinhan Bank and KB Kookmin, with investigators tracing the attack infrastructure to ARTEX AI, an open-source penetration-testing framework. Exposed data spans names, income, loan limits and in some cases resident registration numbers. As banks deploy AI, attackers are using AI tooling too \u2014 a live case for securing the agent stack before scaling it.",
+        "id": "art05",
+        "title": "Hyperlayer joins Asia Pacific fintech lab as finalist",
+        "url": "https://itbrief.com.au/story/hyperlayer-joins-asia-pacific-fintech-lab-as-finalist",
+        "source": "ITBrief Australia",
+        "published_at": "2026-10-07",
+        "summary": "Hyperlayer, founded by former Morgan Stanley executives <strong>Rob Rooney</strong> and <strong>Paul Rolles</strong>, joined an APAC fintech lab whose backers include HSBC, JP Morgan, Standard Chartered, UBS, Citi, DBS, OCBC and Hang Seng. Its pitch is letting banks ship product change without full core replacement \u2014 connecting multiple cores, in-house and vendor, at once. For Adam's core-banking change agenda, it is a live data point that 'wrap and extend' is attracting Tier-1 sponsorship as an alternative to big-bang migration.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Operations & Change",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art06",
+        "title": "Singapore's private banking client assets grew 15% in 2025, ~50% over five years",
+        "url": "https://www.instagram.com/reel/DeMj6y7h4HY/",
+        "source": "Instagram (Alvin Tan)",
+        "published_at": "2026-10-07",
+        "summary": "Singapore's wealth management sector continues to grow, with private banking client assets up 15% last year and around 50% over five years, per <strong>Alvin Tan, Minister of State for Foreign Affairs and MAS board member</strong>, citing Deputy Prime Minister Gan Kim Yong's remarks at the WMI Global-Asia Family Office Summit. MAS separately said it will trial tokenised MAS Bills settled in wholesale CBDC this year. The numbers reinforce why Singapore stays the region's deepest wealth battleground.",
         "hsbc_relevancy": 4,
         "adam_rel": 5,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "art08",
+        "title": "Aveni CEO: why small AI models matter to UK finance",
+        "url": "https://channellife.co.uk/story/aveni-ceo-why-small-ai-models-matter-to-uk-finance",
+        "source": "ChannelLife UK",
+        "published_at": "2026-10-07",
+        "summary": "<strong>Joseph Twigg, CEO of Aveni</strong>, argued that smaller specialist models are becoming a practical priority for UK financial firms because they cost less to run, suit compliance work and reduce dependence on a few US providers \u2014 citing its 1-24 billion parameter FinLLM range co-developed with Lloyds Banking Group and Nationwide. He warned that hyperscaler disintermediation could turn banks into mere manufacturers if customers interact with their finances through ChatGPT or Anthropic. The 'requisite intelligence' framing is a useful counterweight to bigger-is-better model lobbying.",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 5
       }
     ],
     "categories": {
+      "On Adam's Desk": "#be123c",
       "HSBC News": "#dc2626",
-      "Private Banking & Wealth": "#059669",
-      "AI & Technology": "#6366f1",
+      "Regulatory & Markets": "#d97706",
+      "Competitor Intelligence": "#0891b2",
       "Operations & Change": "#7c3aed",
-      "Regulatory & Markets": "#d97706"
+      "Private Banking & Wealth": "#059669",
+      "AI & Technology": "#6366f1"
     }
   }
 }
