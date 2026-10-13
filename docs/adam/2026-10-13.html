@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Tuesday, 13 October 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Tuesday, 13 October 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-10-09.html">‹ 9 Oct 2026</a>
+    
+    <span class="nav-current">Tuesday, 13 October 2026</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">11 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">A peer bank just went live on Avaloq for cross-border HNW wealth — mid-way through HSBC&#39;s own 6.1 re-plan and credit-engine cost fight</h3>
+          <p class="tp-context">Bank SinoPac's Hong Kong offshore wealth business is now live on Avaloq, with <strong>Angus Lin, Head of Overseas Business Division, Bank SinoPac</strong>, and <strong>Vibhooti Chaturvedi, Managing Director for Region Asia Pacific at Avaloq</strong>, both framing it as the scalable core for cross-border HNW growth. The timing is pointed: HSBC is mid-way through re-planning its own Avaloq 6.1 upgrade — UAT extended to eight weeks, EU go-live early March with Asia immediately after — and Adam's Asia Credit Engine negotiation with the same vendor family is live this week. A competitor's public go-live on the platform his programmes are upgrading is the strongest available external benchmark: it validates the 6.1 direction while arming the cost conversation with evidence of what peers expect from the same stack.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.avaloq.com/insights/news/bank-sinopac-goes-live-on-avaloq-platform-to-scale-wealth-management-business-in-hong-kong" target="_blank" rel="noopener" class="tp-source-link" title="Bank SinoPac goes live on Avaloq (Avaloq press release)">Bank SinoPac goes live on Avaloq (Avaloq press release)</a>
+            
+            <a href="https://ffnews.com/news/bank-sinopac-goes-live-on-avaloq-platform-to-scale-wealth-management-business-in-0c7b7db9" target="_blank" rel="noopener" class="tp-source-link" title="Bank SinoPac goes live on Avaloq (FF News)">Bank SinoPac goes live on Avaloq (FF News)</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">DBS is monetising AI at S$1bn a year and hiring 600 advisors — the ROI bar for every 2027 AI narrative Adam&#39;s plans must clear</h3>
+          <p class="tp-context"><strong>Tan Su Shan, CEO of DBS</strong>, told the market this week that repricing of AI financing risk is 'healthy' as the bank logs roughly S$25 billion in AI-related deals, with AI and data initiatives already generating S$1 billion of annual economic value and <strong>Shee Tse Koon, Group Head of Consumer Banking and Wealth Management, DBS</strong>, committing to 600 frontline advisors and platform engineers by 2028. DBS's stated path — AI-enabled, then AI-powered, then AI-native — is now backed by booked numbers rather than aspiration. For Adam's 2027 planning conversations, 'we are doing AI' no longer competes: the benchmark is a peer that can attribute nine figures of value and advisor productivity to named tools, and every AI ask in his book needs that kind of arithmetic.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://fintechnews.sg/138858/ai/dbs-ai-financing-risk-repricing/" target="_blank" rel="noopener" class="tp-source-link" title="DBS CEO: repricing of AI financing risk &#39;healthy&#39; (Fintech News SG)">DBS CEO: repricing of AI financing risk &#39;healthy&#39; (Fintech News SG)</a>
+            
+            <a href="https://www.thestandard.com.hk/finance/article/345130/DBS-chief-Hong-Kong-can-bridge-Chinas-AI-innovation-and-the-world" target="_blank" rel="noopener" class="tp-source-link" title="DBS chief: Hong Kong can bridge China&#39;s AI innovation (The Standard)">DBS chief: Hong Kong can bridge China&#39;s AI innovation (The Standard)</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">HSBC doubles down on Singapore as its ASEAN wealth hub — 100 RMs, 100 AI specialists and a Citi wealth veteran to run the client layer</h3>
+          <p class="tp-context">HSBC has hired <strong>Henry Tong, incoming Head of Customer, International and Marketing for HSBC Singapore</strong> — effective 19 October from Citi, where he ran wealth continuum for Asia South — to lead proposition, experience and brand for International Wealth and Premier Banking in the city-state. The appointment rides a disclosed build-out: four Wealth Centres since 2024, technology spend doubling over five years, 100 new relationship managers, more than 100 AI specialists and a Global AI Centre of Excellence in a market that is HSBC's fifth-largest profit contributor and its primary wholesale offshore booking centre. For Adam, Singapore is where the ASEAN booking-centre race is being visibly funded — the proposition and experience machinery his transformation programmes supply is now the named battleground, and delivery pace there is strategy, not support.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.wealthbriefingasia.com/article.php/Who%27s-Moving-Where-In-Wealth-Management%3F-%E2%80%93-HSBC---?id=209034" target="_blank" rel="noopener" class="tp-source-link" title="HSBC appoints Henry Tong for Singapore (WealthBriefing Asia)">HSBC appoints Henry Tong for Singapore (WealthBriefing Asia)</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (11)</button>
+      
+      <button class="cat-tab" data-cat="On Adam&#39;s Desk">
+        On Adam&#39;s Desk (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (3)
+      </button>
+      
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
+        Private Banking &amp; Wealth (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (1)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="On Adam&#39;s Desk">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #be123c"></span>
+        On Adam&#39;s Desk
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art02" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 9/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.avaloq.com/insights/news/bank-sinopac-goes-live-on-avaloq-platform-to-scale-wealth-management-business-in-hong-kong" target="_blank" rel="noopener">Bank SinoPac goes live on Avaloq platform to scale Hong Kong wealth business</a>
+          </div>
+          <p class="article-summary">Bank SinoPac has gone live on Avaloq as the core system for its Hong Kong offshore wealth management business, targeting HNW and UHNW cross-border clients, with <strong>Angus Lin, Head of Overseas Business Division, Bank SinoPac</strong>, citing scalability and <strong>Vibhooti Chaturvedi, Managing Director for Region Asia Pacific at Avaloq</strong>, flagging demand from institutions with cross-border needs. The go-live lands mid-way through HSBC's own Avaloq 6.1 re-plan — UAT extended to eight weeks, EU go-live early March with Asia immediately after — and while Adam's Asia Credit Engine cost negotiation with the same vendor ecosystem is live. For Adam, a peer bank now bets its cross-border HNW franchise on the platform his programmes are upgrading, which both validates the vendor roadmap and sharpens the benchmarking questions in the credit-engine cost conversation.</p>
+          <div class="article-footer">
+            <span class="article-source">Avaloq</span>
+            <span>13 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art01" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 10/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.wealthbriefingasia.com/article.php/Who%27s-Moving-Where-In-Wealth-Management%3F-%E2%80%93-HSBC---?id=209034" target="_blank" rel="noopener">HSBC names Henry Tong as Singapore head of customer, international and marketing</a>
+          </div>
+          <p class="article-summary">HSBC has appointed <strong>Henry Tong, incoming Head of Customer, International and Marketing for HSBC Singapore</strong>, effective 19 October, poaching him from Citi where he was managing director and head of wealth continuum for Asia South. The hire sits inside a much bigger Singapore bet: the market is HSBC's fifth-largest profit contributor, its primary wholesale offshore booking centre and its ASEAN wealth hub, with four new Wealth Centres since 2024, a plan to double technology spend over five years, 100 additional relationship managers, 100-plus AI specialists and a Global AI Centre of Excellence. For Adam, it signals that the cross-border proposition and client-experience layer his change portfolio feeds is staffing up for the ASEAN booking-centre race — experience and proposition delivery pace are now the visible competitive front.</p>
+          <div class="article-footer">
+            <span class="article-source">WealthBriefing Asia</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art03" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/138858/ai/dbs-ai-financing-risk-repricing/" target="_blank" rel="noopener">DBS CEO Tan Su Shan: repricing of AI financing risk is &#39;healthy&#39; as bank logs S$25bn in AI deals</a>
+          </div>
+          <p class="article-summary"><strong>Tan Su Shan, CEO of DBS</strong>, said markets are repricing AI investment risk in a 'healthy' way as the bank logs about S$25 billion in AI-related financing deals, with DBS's AI, machine-learning and data initiatives generating S$1 billion of economic value in 2025 and group head of consumer banking <strong>Shee Tse Koon, Group Head of Consumer Banking and Wealth Management, DBS</strong>, committing to hire 600 frontline advisors and platform engineers by 2028. DBS frames its path as AI-enabled to AI-powered to AI-native, with RM-facing tools such as Aura, Clara and Joy already stripping servicing grunt work from assistants. For Adam, the region's benchmark AI bank is converting AI into booked value and advisor capacity at exactly the moment his 2027 planning conversations need an AI-ROI narrative that stands up next to DBS's numbers.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech News Singapore</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art10" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.theasianbanker.com/updates-and-articles/fab-closes-2025-with-24-net-earnings-growth-as-ai-deployment-anchors-core-banking-operations" target="_blank" rel="noopener">FAB closes 2025 with 24% net earnings growth as AI deployment anchors core banking operations</a>
+          </div>
+          <p class="article-summary">First Abu Dhabi Bank reported 24% net profit growth and a 22.4% cost-income ratio for 2025, with <strong>Lars Kramer, Group CFO of FAB</strong>, attributing the performance to diversified revenue and disciplined execution, while the bank disclosed more than 1,000 AI Copilot agents deployed and over 30 AI solutions in development across payments, trade operations and workflow automation, plus the region's first $100 million blockchain bond. Retail AUM grew 28% on advisory and managed-solution flows. For Adam, the UAE's flagship bank is pairing AI-at-scale with an explicit wealth-fee expansion — the competitive backdrop for any Gulf-facing PB growth and hiring decisions in his portfolio.</p>
+          <div class="article-footer">
+            <span class="article-source">The Asian Banker</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art04" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://asianprivatebanker.com/investments/morgan-stanley-pwm-asia-adds-ai-to-fund-screening-tightens-risk-rules/" target="_blank" rel="noopener">Morgan Stanley Private Wealth Management Asia adds agentic AI to fund screening, tightens risk rules</a>
+          </div>
+          <p class="article-summary">Morgan Stanley Private Wealth Management Asia has integrated agentic artificial intelligence into its fund due-diligence framework, increasing annual screening capacity while tightening risk rules around how the agents operate. The move follows a run of private-bank agentic-AI deployments that started with client-facing assistants and is now reaching the control layer — due diligence, screening and risk workflow. For Adam, this is the signal that matters: agentic AI is moving from novelty to governed production inside the checks his own organisation cares most about, which raises the bar for the guardrails and runtime controls around any agent pilots his teams stand up.</p>
+          <div class="article-footer">
+            <span class="article-source">Asian Private Banker</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art09" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.privatebankerinternational.com/news/former-hsbc-executive-starts-ai-driven-wealth-firm-report/" target="_blank" rel="noopener">Former HSBC executive Trista Sun launches AI-driven wealth platform Equora</a>
+          </div>
+          <p class="article-summary"><strong>Trista Sun, Founder of Equora and former HSBC executive</strong>, has launched Equora, an AI-powered wealth-management start-up targeting Hong Kong, the US and Singapore, with its A2B2 platform presented as a team of AI agents that monitor holdings, research questions and prepare investor briefings — explicitly not executing trades. The launch follows other HSBC-alumni wealth ventures and lands while banks weigh how far agentic advice can go inside regulated workflows. For Adam, it marks HSBC alumni becoming competitors in the AI-advisory space — both a talent signal and a live experiment whose regulatory treatment will shape what agent-led client tooling his own teams can ship.</p>
+          <div class="article-footer">
+            <span class="article-source">Private Banker International</span>
+            <span>13 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art08" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://uptech-media.com/uob-aws-to-explore-ai-data-analytics-and-personalised-banking-services/" target="_blank" rel="noopener">UOB and AWS sign MOU on hybrid cloud and AI across five markets</a>
+          </div>
+          <p class="article-summary">UOB and AWS have signed a memorandum of understanding to explore hybrid cloud and generative AI — including Amazon Bedrock — across five ASEAN markets, with a dedicated cloud environment hosted in Singapore to support regulatory requirements in each market. The partnership extends UOB's enterprise GenAI platform and includes workforce upskilling in cloud, AI and data. For Adam, another regional peer is building a sovereign-ready hybrid AI stack with a hyperscaler — a reference architecture worth watching as his own platforms face data-residency and regulator expectations across Asian markets.</p>
+          <div class="article-footer">
+            <span class="article-source">UPTECH Media</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #059669"></span>
+        Private Banking &amp; Wealth
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art05" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://vietnamnews.vn/media-outreach/1801598/ping-an-digital-bank-becomes-hong-kong-s-first-digital-bank-to-enter-high-end-wealth-management-segment.html" target="_blank" rel="noopener">Ping An Digital Bank becomes Hong Kong&#39;s first digital bank to enter high-end wealth management</a>
+          </div>
+          <p class="article-summary">Ping An Digital Bank has become Hong Kong's first virtual bank to enter the high-end wealth segment, launching private-fund services built with JPMorgan Asset Management and Aberdeen Investments — semi-liquid fund products paired with dedicated offline wealth managers, under <strong>Ronald Iu, Chief Executive of Ping An Digital Bank</strong>. The launch rides an official backdrop of Hong Kong AUM up 20% to a record HK$42.2 trillion, with private-banking and private-wealth AUM near HK$12.9 trillion. For Adam, a digital-bank entrant is compressing the minimum threshold for alternative and global-allocation products — precisely the HNW-adjacent segment where traditional private banks must defend proposition and pricing.</p>
+          <div class="article-footer">
+            <span class="article-source">Vietnam News (media outreach)</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art11" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 2/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/138836/wealthtech/syfe-income-max-options-income/" target="_blank" rel="noopener">Syfe launches Income+ Max targeting 8-10% annual payouts with JPMorgan AM</a>
+          </div>
+          <p class="article-summary">Syfe has launched Income+ Max, a multi-asset income portfolio built with JPMorgan Asset Management and ETF issuers REX Advisors and First Trust, using covered-call overlays on equities and gold to target 8-10% annual payouts, for investors above S$5,000 on a platform managing over S$20 billion across APAC. The structure allocates 55% equities, 35% short-to-medium fixed income and 10% gold, with automatic six-month rebalancing. For Adam, retail-scale alternative-income products packaged with global asset managers keep compressing the space between mass-affluent platforms and private-bank propositions — a pricing and shelf-design pressure point for the products his WPS colleagues defend.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech News Singapore</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art07" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 2/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.tokenpost.com/news/regulation/30053" target="_blank" rel="noopener">Beijing police open criminal investigation into CreditEase-linked companies</a>
+          </div>
+          <p class="article-summary">Beijing's Chaoyang public security bureau opened a criminal investigation into companies linked to CreditEase, with several actual controllers placed under compulsory criminal measures — four months after the group suspended payments on roughly RMB 30 billion of fixed-income-like products affecting nearly 100,000 predominantly HNW clients. CreditEase's affiliated funds have invested in crypto and fintech names including Circle and Figure, and it holds a MAS-licensed Singapore asset-management entity. For Adam, it is a cautionary tale for China-linked wealth products sitting inside regional private-banking shelves — conduct, suitability and reputational exposure on exactly the client base his books serve.</p>
+          <div class="article-footer">
+            <span class="article-source">TokenPost</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art12" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://stockanalysis.com/quote/lon/HSBA/transcripts/384056-barclays-23rd-annual-global-financial-services-conference/" target="_blank" rel="noopener">HSBC: wealth fees up over 20%, Hong Kong delivering 35% ROTE — Barclays conference remarks</a>
+          </div>
+          <p class="article-summary">Speaking at the Barclays Global Financial Services Conference, HSBC's management team reiterated that the wealth business is on a double-digit growth trajectory with wealth fees up more than 20%, Hong Kong delivering a 35% return on tangible equity despite low HIBOR and elevated ECLs, deposits up 9%, and the group managed to a mid-teens ROTE with all four businesses growing. The tone frames wealth as the group's structural growth engine while markets stay volatile. For Adam, the message from the top is unchanged and quantified: wealth growth is the group's proof point — which keeps delivery risk on his change portfolio firmly in the spotlight when markets turn.</p>
+          <div class="article-footer">
+            <span class="article-source">Stock Analysis (HSBC conference transcript)</span>
+            <span>12 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 13 Oct 2026, 13:58 UTC &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {
+ "articles": [
+  {
+   "id": "art01",
+   "title": "HSBC names Henry Tong as Singapore head of customer, international and marketing",
+   "url": "https://www.wealthbriefingasia.com/article.php/Who%27s-Moving-Where-In-Wealth-Management%3F-%E2%80%93-HSBC---?id=209034",
+   "source": "WealthBriefing Asia",
+   "published_at": "2026-10-12",
+   "summary": "HSBC has appointed <strong>Henry Tong, incoming Head of Customer, International and Marketing for HSBC Singapore</strong>, effective 19 October, poaching him from Citi where he was managing director and head of wealth continuum for Asia South. The hire sits inside a much bigger Singapore bet: the market is HSBC's fifth-largest profit contributor, its primary wholesale offshore booking centre and its ASEAN wealth hub, with four new Wealth Centres since 2024, a plan to double technology spend over five years, 100 additional relationship managers, 100-plus AI specialists and a Global AI Centre of Excellence. For Adam, it signals that the cross-border proposition and client-experience layer his change portfolio feeds is staffing up for the ASEAN booking-centre race — experience and proposition delivery pace are now the visible competitive front.",
+   "hsbc_relevancy": 10,
+   "adam_rel": 7,
+   "noise_level": 1,
+   "category": "HSBC News",
+   "is_update": false,
+   "user_relevance": 7
+  },
+  {
+   "id": "art02",
+   "title": "Bank SinoPac goes live on Avaloq platform to scale Hong Kong wealth business",
+   "url": "https://www.avaloq.com/insights/news/bank-sinopac-goes-live-on-avaloq-platform-to-scale-wealth-management-business-in-hong-kong",
+   "source": "Avaloq",
+   "published_at": "2026-10-13",
+   "summary": "Bank SinoPac has gone live on Avaloq as the core system for its Hong Kong offshore wealth management business, targeting HNW and UHNW cross-border clients, with <strong>Angus Lin, Head of Overseas Business Division, Bank SinoPac</strong>, citing scalability and <strong>Vibhooti Chaturvedi, Managing Director for Region Asia Pacific at Avaloq</strong>, flagging demand from institutions with cross-border needs. The go-live lands mid-way through HSBC's own Avaloq 6.1 re-plan — UAT extended to eight weeks, EU go-live early March with Asia immediately after — and while Adam's Asia Credit Engine cost negotiation with the same vendor ecosystem is live. For Adam, a peer bank now bets its cross-border HNW franchise on the platform his programmes are upgrading, which both validates the vendor roadmap and sharpens the benchmarking questions in the credit-engine cost conversation.",
+   "hsbc_relevancy": 4,
+   "adam_rel": 9,
+   "noise_level": 1,
+   "category": "Competitor Intelligence",
+   "is_update": false,
+   "user_relevance": 9
+  },
+  {
+   "id": "art03",
+   "title": "DBS CEO Tan Su Shan: repricing of AI financing risk is 'healthy' as bank logs S$25bn in AI deals",
+   "url": "https://fintechnews.sg/138858/ai/dbs-ai-financing-risk-repricing/",
+   "source": "Fintech News Singapore",
+   "published_at": "2026-10-12",
+   "summary": "<strong>Tan Su Shan, CEO of DBS</strong>, said markets are repricing AI investment risk in a 'healthy' way as the bank logs about S$25 billion in AI-related financing deals, with DBS's AI, machine-learning and data initiatives generating S$1 billion of economic value in 2025 and group head of consumer banking <strong>Shee Tse Koon, Group Head of Consumer Banking and Wealth Management, DBS</strong>, committing to hire 600 frontline advisors and platform engineers by 2028. DBS frames its path as AI-enabled to AI-powered to AI-native, with RM-facing tools such as Aura, Clara and Joy already stripping servicing grunt work from assistants. For Adam, the region's benchmark AI bank is converting AI into booked value and advisor capacity at exactly the moment his 2027 planning conversations need an AI-ROI narrative that stands up next to DBS's numbers.",
+   "hsbc_relevancy": 5,
+   "adam_rel": 8,
+   "noise_level": 2,
+   "category": "Competitor Intelligence",
+   "is_update": false,
+   "user_relevance": 8
+  },
+  {
+   "id": "art04",
+   "title": "Morgan Stanley Private Wealth Management Asia adds agentic AI to fund screening, tightens risk rules",
+   "url": "https://asianprivatebanker.com/investments/morgan-stanley-pwm-asia-adds-ai-to-fund-screening-tightens-risk-rules/",
+   "source": "Asian Private Banker",
+   "published_at": "2026-10-12",
+   "summary": "Morgan Stanley Private Wealth Management Asia has integrated agentic artificial intelligence into its fund due-diligence framework, increasing annual screening capacity while tightening risk rules around how the agents operate. The move follows a run of private-bank agentic-AI deployments that started with client-facing assistants and is now reaching the control layer — due diligence, screening and risk workflow. For Adam, this is the signal that matters: agentic AI is moving from novelty to governed production inside the checks his own organisation cares most about, which raises the bar for the guardrails and runtime controls around any agent pilots his teams stand up.",
+   "hsbc_relevancy": 4,
+   "adam_rel": 7,
+   "noise_level": 2,
+   "category": "AI & Technology",
+   "is_update": false,
+   "user_relevance": 7
+  },
+  {
+   "id": "art05",
+   "title": "Ping An Digital Bank becomes Hong Kong's first digital bank to enter high-end wealth management",
+   "url": "https://vietnamnews.vn/media-outreach/1801598/ping-an-digital-bank-becomes-hong-kong-s-first-digital-bank-to-enter-high-end-wealth-management-segment.html",
+   "source": "Vietnam News (media outreach)",
+   "published_at": "2026-10-12",
+   "summary": "Ping An Digital Bank has become Hong Kong's first virtual bank to enter the high-end wealth segment, launching private-fund services built with JPMorgan Asset Management and Aberdeen Investments — semi-liquid fund products paired with dedicated offline wealth managers, under <strong>Ronald Iu, Chief Executive of Ping An Digital Bank</strong>. The launch rides an official backdrop of Hong Kong AUM up 20% to a record HK$42.2 trillion, with private-banking and private-wealth AUM near HK$12.9 trillion. For Adam, a digital-bank entrant is compressing the minimum threshold for alternative and global-allocation products — precisely the HNW-adjacent segment where traditional private banks must defend proposition and pricing.",
+   "hsbc_relevancy": 3,
+   "adam_rel": 6,
+   "noise_level": 2,
+   "category": "Private Banking & Wealth",
+   "is_update": false,
+   "user_relevance": 6
+  },
+  {
+   "id": "art07",
+   "title": "Beijing police open criminal investigation into CreditEase-linked companies",
+   "url": "https://www.tokenpost.com/news/regulation/30053",
+   "source": "TokenPost",
+   "published_at": "2026-10-12",
+   "summary": "Beijing's Chaoyang public security bureau opened a criminal investigation into companies linked to CreditEase, with several actual controllers placed under compulsory criminal measures — four months after the group suspended payments on roughly RMB 30 billion of fixed-income-like products affecting nearly 100,000 predominantly HNW clients. CreditEase's affiliated funds have invested in crypto and fintech names including Circle and Figure, and it holds a MAS-licensed Singapore asset-management entity. For Adam, it is a cautionary tale for China-linked wealth products sitting inside regional private-banking shelves — conduct, suitability and reputational exposure on exactly the client base his books serve.",
+   "hsbc_relevancy": 2,
+   "adam_rel": 6,
+   "noise_level": 2,
+   "category": "Regulatory & Markets",
+   "is_update": false,
+   "user_relevance": 6
+  },
+  {
+   "id": "art08",
+   "title": "UOB and AWS sign MOU on hybrid cloud and AI across five markets",
+   "url": "https://uptech-media.com/uob-aws-to-explore-ai-data-analytics-and-personalised-banking-services/",
+   "source": "UPTECH Media",
+   "published_at": "2026-10-12",
+   "summary": "UOB and AWS have signed a memorandum of understanding to explore hybrid cloud and generative AI — including Amazon Bedrock — across five ASEAN markets, with a dedicated cloud environment hosted in Singapore to support regulatory requirements in each market. The partnership extends UOB's enterprise GenAI platform and includes workforce upskilling in cloud, AI and data. For Adam, another regional peer is building a sovereign-ready hybrid AI stack with a hyperscaler — a reference architecture worth watching as his own platforms face data-residency and regulator expectations across Asian markets.",
+   "hsbc_relevancy": 3,
+   "adam_rel": 6,
+   "noise_level": 2,
+   "category": "AI & Technology",
+   "is_update": false,
+   "user_relevance": 6
+  },
+  {
+   "id": "art09",
+   "title": "Former HSBC executive Trista Sun launches AI-driven wealth platform Equora",
+   "url": "https://www.privatebankerinternational.com/news/former-hsbc-executive-starts-ai-driven-wealth-firm-report/",
+   "source": "Private Banker International",
+   "published_at": "2026-10-13",
+   "summary": "<strong>Trista Sun, Founder of Equora and former HSBC executive</strong>, has launched Equora, an AI-powered wealth-management start-up targeting Hong Kong, the US and Singapore, with its A2B2 platform presented as a team of AI agents that monitor holdings, research questions and prepare investor briefings — explicitly not executing trades. The launch follows other HSBC-alumni wealth ventures and lands while banks weigh how far agentic advice can go inside regulated workflows. For Adam, it marks HSBC alumni becoming competitors in the AI-advisory space — both a talent signal and a live experiment whose regulatory treatment will shape what agent-led client tooling his own teams can ship.",
+   "hsbc_relevancy": 5,
+   "adam_rel": 6,
+   "noise_level": 2,
+   "category": "AI & Technology",
+   "is_update": false,
+   "user_relevance": 6
+  },
+  {
+   "id": "art10",
+   "title": "FAB closes 2025 with 24% net earnings growth as AI deployment anchors core banking operations",
+   "url": "https://www.theasianbanker.com/updates-and-articles/fab-closes-2025-with-24-net-earnings-growth-as-ai-deployment-anchors-core-banking-operations",
+   "source": "The Asian Banker",
+   "published_at": "2026-10-12",
+   "summary": "First Abu Dhabi Bank reported 24% net profit growth and a 22.4% cost-income ratio for 2025, with <strong>Lars Kramer, Group CFO of FAB</strong>, attributing the performance to diversified revenue and disciplined execution, while the bank disclosed more than 1,000 AI Copilot agents deployed and over 30 AI solutions in development across payments, trade operations and workflow automation, plus the region's first $100 million blockchain bond. Retail AUM grew 28% on advisory and managed-solution flows. For Adam, the UAE's flagship bank is pairing AI-at-scale with an explicit wealth-fee expansion — the competitive backdrop for any Gulf-facing PB growth and hiring decisions in his portfolio.",
+   "hsbc_relevancy": 3,
+   "adam_rel": 5,
+   "noise_level": 2,
+   "category": "Competitor Intelligence",
+   "is_update": false,
+   "user_relevance": 5
+  },
+  {
+   "id": "art11",
+   "title": "Syfe launches Income+ Max targeting 8-10% annual payouts with JPMorgan AM",
+   "url": "https://fintechnews.sg/138836/wealthtech/syfe-income-max-options-income/",
+   "source": "Fintech News Singapore",
+   "published_at": "2026-10-12",
+   "summary": "Syfe has launched Income+ Max, a multi-asset income portfolio built with JPMorgan Asset Management and ETF issuers REX Advisors and First Trust, using covered-call overlays on equities and gold to target 8-10% annual payouts, for investors above S$5,000 on a platform managing over S$20 billion across APAC. The structure allocates 55% equities, 35% short-to-medium fixed income and 10% gold, with automatic six-month rebalancing. For Adam, retail-scale alternative-income products packaged with global asset managers keep compressing the space between mass-affluent platforms and private-bank propositions — a pricing and shelf-design pressure point for the products his WPS colleagues defend.",
+   "hsbc_relevancy": 2,
+   "adam_rel": 5,
+   "noise_level": 2,
+   "category": "Private Banking & Wealth",
+   "is_update": false,
+   "user_relevance": 5
+  },
+  {
+   "id": "art12",
+   "title": "HSBC: wealth fees up over 20%, Hong Kong delivering 35% ROTE — Barclays conference remarks",
+   "url": "https://stockanalysis.com/quote/lon/HSBA/transcripts/384056-barclays-23rd-annual-global-financial-services-conference/",
+   "source": "Stock Analysis (HSBC conference transcript)",
+   "published_at": "2026-10-12",
+   "summary": "Speaking at the Barclays Global Financial Services Conference, HSBC's management team reiterated that the wealth business is on a double-digit growth trajectory with wealth fees up more than 20%, Hong Kong delivering a 35% return on tangible equity despite low HIBOR and elevated ECLs, deposits up 9%, and the group managed to a mid-teens ROTE with all four businesses growing. The tone frames wealth as the group's structural growth engine while markets stay volatile. For Adam, the message from the top is unchanged and quantified: wealth growth is the group's proof point — which keeps delivery risk on his change portfolio firmly in the spotlight when markets turn.",
+   "hsbc_relevancy": 8,
+   "adam_rel": 6,
+   "noise_level": 2,
+   "category": "HSBC News",
+   "is_update": false,
+   "user_relevance": 6
+  }
+ ],
+ "categories": {
+  "On Adam's Desk": "#be123c",
+  "Competitor Intelligence": "#0891b2",
+  "AI & Technology": "#6366f1",
+  "Private Banking & Wealth": "#059669",
+  "Regulatory & Markets": "#d97706",
+  "HSBC News": "#dc2626"
+ }
+};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
