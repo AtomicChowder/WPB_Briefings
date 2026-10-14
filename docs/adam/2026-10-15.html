@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Thursday, 15 October 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Thursday, 15 October 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-10-14.html">‹ 14 Oct 2026</a>
+    
+    <span class="nav-current">Thursday, 15 October 2026</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">7 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">BlackRock&#39;s Q3 shows Aladdin demand still compounding — the stack PRISM runs on is outgrowing the market</h3>
+          <p class="tp-context">BlackRock's Q3 print put technology services revenue up 14% year on year on sustained Aladdin demand, with <strong>Laurence Fink, Chairman and CEO of BlackRock</strong>, naming Aladdin as a core earnings driver — a day after Wells Fargo's Aladdin Wealth advisor announcement showed competitors still converging on the same stack. The platform HSBC's PRISM advisory service is built on is compounding commercially, which cuts both ways: roadmap leverage and vendor dependency in one package. For Adam, this is the moment to make sure advisory-stack platform planning and vendor negotiations assume a confident, pricing-powerful Aladdin — not a static one.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://s24.q4cdn.com/856567660/files/doc_financials/2026/Q3/BLK-3Q26-Earnings-Release.pdf" target="_blank" rel="noopener" class="tp-source-link" title="BlackRock Q3 2026 earnings release">BlackRock Q3 2026 earnings release</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Regulators close in on agentic AI: US watchdogs quiz banks on controls as BoE and ECB press recovery plans</h3>
+          <p class="tp-context">Reuters reports the Federal Reserve, OCC and FDIC are quizzing banks on advanced AI use — Chinese-developed models, AI agents in cyber defence, and whether autonomous systems can be audited and shut down — while the Bank of England and ECB push stronger recovery plans against AI-driven market disruption, with <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, urging an industry group on AI risk. For Adam, the controls half of the agentic-AI agenda has arrived: programmes moving agents toward production now need audit trails, human-override and kill-switch answers ready before examiners ask.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.manilatimes.net/2026/10/14/business/foreign-business/banking-watchdogs-ramp-upaiscrutiny/2444833" target="_blank" rel="noopener" class="tp-source-link" title="Reuters: Banking watchdogs ramp up AI scrutiny">Reuters: Banking watchdogs ramp up AI scrutiny</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Morgan Stanley gathers a record US$232bn in a single quarter — the wealth-flows bar for every 2027 growth plan</h3>
+          <p class="tp-context">Morgan Stanley's Q3 delivered record wealth revenue of US$9.1bn and a record US$232bn of net new assets, with <strong>Ted Pick, Chairman and CEO of Morgan Stanley</strong>, citing a 22.6% return on tangible common equity. The US advice-led platforms are now compounding flows at a scale that resets what 'ambitious' means for wealth-gathering targets. For Adam, flow assumptions in 2027 planning should be sized against this benchmark — and the RM-efficiency agenda is what makes comparable flow economics possible at HSBC's cost base.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-beats-estimates-strong-120905680.html" target="_blank" rel="noopener" class="tp-source-link" title="Morgan Stanley Q3 2026 results">Morgan Stanley Q3 2026 results</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (7)</button>
+      
+      <button class="cat-tab" data-cat="On Adam&#39;s Desk">
+        On Adam&#39;s Desk (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Operations &amp; Change">
+        Operations &amp; Change (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (1)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="On Adam&#39;s Desk">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #be123c"></span>
+        On Adam&#39;s Desk
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art01" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://s24.q4cdn.com/856567660/files/doc_financials/2026/Q3/BLK-3Q26-Earnings-Release.pdf" target="_blank" rel="noopener">BlackRock Q3 2026: $205bn inflows fuel fifth straight EPS beat as Aladdin demand grows</a>
+          </div>
+          <p class="article-summary">BlackRock reported Q3 2026 results with AUM at a record US$15.5tn after US$205bn of net inflows, and technology services and subscription revenue up 14% year on year on sustained Aladdin demand, with technology ACV up 12%. <strong>Laurence Fink, Chairman and CEO of BlackRock</strong>, cited 'sustained demand for Aladdin and multi-product solutions' as a core earnings driver. This lands a day after Wells Fargo's Aladdin Wealth advisor-tool announcement we covered yesterday: the vendor HSBC's PRISM advisory service is built on is compounding commercially while competitors converge on the same stack. For Adam, vendor health plus rising tech ACV means pricing power, roadmap leverage and deeper dependency in one package — worth factoring into advisory-stack platform planning and vendor negotiations.</p>
+          <div class="article-footer">
+            <span class="article-source">BlackRock Investor Relations</span>
+            <span>14 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art02" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.manilatimes.net/2026/10/14/business/foreign-business/banking-watchdogs-ramp-upaiscrutiny/2444833" target="_blank" rel="noopener">Banking watchdogs ramp up AI scrutiny</a>
+          </div>
+          <p class="article-summary">Reuters reports that US banking regulators — the Federal Reserve, the OCC and the FDIC — are quizzing banks on their use of advanced AI models, including whether they deploy Chinese-developed technology, how AI agents are used in cyber defence, and whether increasingly autonomous systems can be controlled, audited and shut down. In Europe, the Bank of England and the ECB are pressing banks to strengthen recovery plans against AI-driven market disruption; the piece cites <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, urging corporate leaders to join a US industry group on AI risk, and <strong>Michael Woodbridge, cybersecurity partner at Grant Thornton</strong>, warning that AI adoption is outpacing control-building. For Adam, this is the controls half of the agentic-AI adoption agenda arriving now: every programme moving agents toward production will need audit trails, human-override and kill-switch answers before regulators ask, not after.</p>
+          <div class="article-footer">
+            <span class="article-source">Reuters via The Manila Times</span>
+            <span>14 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art07" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.reuters.com/business/finance/bank-america-profit-hurt-by-12-billion-fine-over-anti-money-laundering-2026-10-14/" target="_blank" rel="noopener">Bank of America profit hit by $1.2bn fine over anti-money laundering breaches</a>
+          </div>
+          <p class="article-summary">Bank of America missed Q3 profit estimates on trading weakness and booked a US$1.2bn charge after the US Treasury said the bank failed to alert authorities to more than US$5bn in suspicious transactions — some allegedly linked to Chinese money-laundering groups — and breached Iran and Russia sanctions; the bank said it has spent billions on technology and manpower to fight financial crime. For Adam, large AML enforcement actions raise the financial-crime change bar for every bank running cross-border corridors: compliance remediation is a permanent change-programme workload, and APAC corridors are where the next test likely lands.</p>
+          <div class="article-footer">
+            <span class="article-source">Reuters</span>
+            <span>14 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art03" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●●</span>
+          </div>
+          <div class="article-title">
+            <a href="https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-beats-estimates-strong-120905680.html" target="_blank" rel="noopener">Morgan Stanley beats estimates as wealth unit posts record US$232bn net new assets</a>
+          </div>
+          <p class="article-summary">Morgan Stanley's Q3 2026 results beat expectations with record Wealth Management revenue of US$9.1bn (up 10% YoY) and a record US$232bn of net new assets — over half tied to IPO-related flows — taking total client assets to US$10.5tn; <strong>Ted Pick, Chairman and CEO of Morgan Stanley</strong>, flagged a 22.6% return on tangible common equity. The wealth engine is now the steady core while equity trading revenue surged 41%. For Adam, Morgan Stanley is setting the public benchmark for what a scaled, advice-led wealth platform gathers in a single quarter — flow expectations embedded in growth plans should be sized against this kind of compounding, not against regional peers.</p>
+          <div class="article-footer">
+            <span class="article-source">Investing.com via Yahoo Finance</span>
+            <span>14 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art08" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.gadgets360.com/cryptocurrency/news/standard-chartered-broadens-uae-crypto-services-with-direct-bitcoin-and-ethereum-trading-btc-eth-crypto-regulations-12184068" target="_blank" rel="noopener">Standard Chartered broadens UAE crypto services with direct Bitcoin and Ethereum trading</a>
+          </div>
+          <p class="article-summary">Standard Chartered has introduced bank-managed Bitcoin and Ethereum trading for eligible UAE clients, with plans to explore expansion into other markets, extending its digital-asset services in the region beyond custody. The move takes another regulated hub bank from custody into active client trading in digital assets. For Adam, StanChart's UAE build-out is a peer data point on client appetite and regulatory comfort in a market HSBC also serves — and on how quickly a digital-asset proposition is becoming a standard wealth-menu item rather than a pilot.</p>
+          <div class="article-footer">
+            <span class="article-source">Gadgets 360</span>
+            <span>14 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Operations &amp; Change">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #7c3aed"></span>
+        Operations &amp; Change
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art05" data-category="Operations &amp; Change">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.semafor.com/article/10/14/2026/a-quarter-of-financial-firms-tie-pay-and-promotions-to-ai-proficiency-survey" target="_blank" rel="noopener">A quarter of financial firms tie pay and promotions to AI proficiency: survey</a>
+          </div>
+          <p class="article-summary">Semafor reports a survey of 500 US financial firms in which a quarter have tied raises, promotions and bonuses to AI proficiency, and applicants' AI skills now weigh nearly four times as heavily in hiring decisions as they did previously. Compensation is becoming the explicit adoption lever in financial services. For Adam, incentive design is a change-execution instrument: if peers are wiring AI proficiency into pay, adoption curves in his programmes will increasingly assume it — teams without a proficiency-linked enablement and incentive story will lag the market's baseline.</p>
+          <div class="article-footer">
+            <span class="article-source">Semafor</span>
+            <span>14 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art09" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://dealroom.co/news/162582-fragment-raises-12m-to-keep-ai-agents-from-mishandling-company-money/" target="_blank" rel="noopener">Fragment raises $12M to keep AI agents from mishandling company money</a>
+          </div>
+          <p class="article-summary">New York-based startup Fragment has raised a US$12m Series A to build software that lets AI agents safely handle billing and accounting tasks without mishandling corporate funds. The round is one of a growing cluster of agentic-AI control startups — alongside zero-trust agent identity and AI red-teaming vendors — betting that enterprise agent deployments will be gated on financial guardrails, not just model capability. For Adam, the venture money is a leading indicator of where agentic-AI controls are heading: audit, authorization and spending limits for agents are becoming a product category, which makes them easier to buy than to build for his programmes' first production agents.</p>
+          <div class="article-footer">
+            <span class="article-source">Dealroom</span>
+            <span>15 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 14 Oct 2026, 23:13 UTC &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "art01", "title": "BlackRock Q3 2026: $205bn inflows fuel fifth straight EPS beat as Aladdin demand grows", "url": "https://s24.q4cdn.com/856567660/files/doc_financials/2026/Q3/BLK-3Q26-Earnings-Release.pdf", "source": "BlackRock Investor Relations", "published_at": "2026-10-14", "summary": "BlackRock reported Q3 2026 results with AUM at a record US$15.5tn after US$205bn of net inflows, and technology services and subscription revenue up 14% year on year on sustained Aladdin demand, with technology ACV up 12%. <strong>Laurence Fink, Chairman and CEO of BlackRock</strong>, cited 'sustained demand for Aladdin and multi-product solutions' as a core earnings driver. This lands a day after Wells Fargo's Aladdin Wealth advisor-tool announcement we covered yesterday: the vendor HSBC's PRISM advisory service is built on is compounding commercially while competitors converge on the same stack. For Adam, vendor health plus rising tech ACV means pricing power, roadmap leverage and deeper dependency in one package \u2014 worth factoring into advisory-stack platform planning and vendor negotiations.", "hsbc_relevancy": 6, "adam_rel": 7, "noise_level": 4, "category": "AI & Technology", "is_update": false, "user_relevance": 7}, {"id": "art02", "title": "Banking watchdogs ramp up AI scrutiny", "url": "https://www.manilatimes.net/2026/10/14/business/foreign-business/banking-watchdogs-ramp-upaiscrutiny/2444833", "source": "Reuters via The Manila Times", "published_at": "2026-10-14", "summary": "Reuters reports that US banking regulators \u2014 the Federal Reserve, the OCC and the FDIC \u2014 are quizzing banks on their use of advanced AI models, including whether they deploy Chinese-developed technology, how AI agents are used in cyber defence, and whether increasingly autonomous systems can be controlled, audited and shut down. In Europe, the Bank of England and the ECB are pressing banks to strengthen recovery plans against AI-driven market disruption; the piece cites <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, urging corporate leaders to join a US industry group on AI risk, and <strong>Michael Woodbridge, cybersecurity partner at Grant Thornton</strong>, warning that AI adoption is outpacing control-building. For Adam, this is the controls half of the agentic-AI adoption agenda arriving now: every programme moving agents toward production will need audit trails, human-override and kill-switch answers before regulators ask, not after.", "hsbc_relevancy": 7, "adam_rel": 8, "noise_level": 4, "category": "Regulatory & Markets", "is_update": false, "user_relevance": 8}, {"id": "art03", "title": "Morgan Stanley beats estimates as wealth unit posts record US$232bn net new assets", "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-beats-estimates-strong-120905680.html", "source": "Investing.com via Yahoo Finance", "published_at": "2026-10-14", "summary": "Morgan Stanley's Q3 2026 results beat expectations with record Wealth Management revenue of US$9.1bn (up 10% YoY) and a record US$232bn of net new assets \u2014 over half tied to IPO-related flows \u2014 taking total client assets to US$10.5tn; <strong>Ted Pick, Chairman and CEO of Morgan Stanley</strong>, flagged a 22.6% return on tangible common equity. The wealth engine is now the steady core while equity trading revenue surged 41%. For Adam, Morgan Stanley is setting the public benchmark for what a scaled, advice-led wealth platform gathers in a single quarter \u2014 flow expectations embedded in growth plans should be sized against this kind of compounding, not against regional peers.", "hsbc_relevancy": 7, "adam_rel": 7, "noise_level": 5, "category": "Competitor Intelligence", "is_update": false, "user_relevance": 7}, {"id": "art05", "title": "A quarter of financial firms tie pay and promotions to AI proficiency: survey", "url": "https://www.semafor.com/article/10/14/2026/a-quarter-of-financial-firms-tie-pay-and-promotions-to-ai-proficiency-survey", "source": "Semafor", "published_at": "2026-10-14", "summary": "Semafor reports a survey of 500 US financial firms in which a quarter have tied raises, promotions and bonuses to AI proficiency, and applicants' AI skills now weigh nearly four times as heavily in hiring decisions as they did previously. Compensation is becoming the explicit adoption lever in financial services. For Adam, incentive design is a change-execution instrument: if peers are wiring AI proficiency into pay, adoption curves in his programmes will increasingly assume it \u2014 teams without a proficiency-linked enablement and incentive story will lag the market's baseline.", "hsbc_relevancy": 5, "adam_rel": 7, "noise_level": 3, "category": "Operations & Change", "is_update": false, "user_relevance": 7}, {"id": "art07", "title": "Bank of America profit hit by $1.2bn fine over anti-money laundering breaches", "url": "https://www.reuters.com/business/finance/bank-america-profit-hurt-by-12-billion-fine-over-anti-money-laundering-2026-10-14/", "source": "Reuters", "published_at": "2026-10-14", "summary": "Bank of America missed Q3 profit estimates on trading weakness and booked a US$1.2bn charge after the US Treasury said the bank failed to alert authorities to more than US$5bn in suspicious transactions \u2014 some allegedly linked to Chinese money-laundering groups \u2014 and breached Iran and Russia sanctions; the bank said it has spent billions on technology and manpower to fight financial crime. For Adam, large AML enforcement actions raise the financial-crime change bar for every bank running cross-border corridors: compliance remediation is a permanent change-programme workload, and APAC corridors are where the next test likely lands.", "hsbc_relevancy": 6, "adam_rel": 5, "noise_level": 4, "category": "Regulatory & Markets", "is_update": false, "user_relevance": 5}, {"id": "art08", "title": "Standard Chartered broadens UAE crypto services with direct Bitcoin and Ethereum trading", "url": "https://www.gadgets360.com/cryptocurrency/news/standard-chartered-broadens-uae-crypto-services-with-direct-bitcoin-and-ethereum-trading-btc-eth-crypto-regulations-12184068", "source": "Gadgets 360", "published_at": "2026-10-14", "summary": "Standard Chartered has introduced bank-managed Bitcoin and Ethereum trading for eligible UAE clients, with plans to explore expansion into other markets, extending its digital-asset services in the region beyond custody. The move takes another regulated hub bank from custody into active client trading in digital assets. For Adam, StanChart's UAE build-out is a peer data point on client appetite and regulatory comfort in a market HSBC also serves \u2014 and on how quickly a digital-asset proposition is becoming a standard wealth-menu item rather than a pilot.", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 3, "category": "Competitor Intelligence", "is_update": false, "user_relevance": 5}, {"id": "art09", "title": "Fragment raises $12M to keep AI agents from mishandling company money", "url": "https://dealroom.co/news/162582-fragment-raises-12m-to-keep-ai-agents-from-mishandling-company-money/", "source": "Dealroom", "published_at": "2026-10-15", "summary": "New York-based startup Fragment has raised a US$12m Series A to build software that lets AI agents safely handle billing and accounting tasks without mishandling corporate funds. The round is one of a growing cluster of agentic-AI control startups \u2014 alongside zero-trust agent identity and AI red-teaming vendors \u2014 betting that enterprise agent deployments will be gated on financial guardrails, not just model capability. For Adam, the venture money is a leading indicator of where agentic-AI controls are heading: audit, authorization and spending limits for agents are becoming a product category, which makes them easier to buy than to build for his programmes' first production agents.", "hsbc_relevancy": 4, "adam_rel": 6, "noise_level": 2, "category": "AI & Technology", "is_update": false, "user_relevance": 6}], "categories": {"On Adam's Desk": "#be123c", "Regulatory & Markets": "#d97706", "Competitor Intelligence": "#0891b2", "Operations & Change": "#7c3aed", "AI & Technology": "#6366f1"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
