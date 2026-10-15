@@ -3,58 +3,72 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Thursday, 15 October 2026",
-  "date_str": "2026-10-15",
-  "generated_at": "14 Oct 2026, 23:13 UTC",
-  "total_articles": 7,
+  "briefing_date": "Friday, 16 October 2026",
+  "date_str": "2026-10-16",
+  "generated_at": "15 Oct 2026, 23:12 UTC",
+  "total_articles": 6,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "BlackRock's Q3 shows Aladdin demand still compounding — the stack PRISM runs on is outgrowing the market",
-      "context_html": "BlackRock's Q3 print put technology services revenue up 14% year on year on sustained Aladdin demand, with <strong>Laurence Fink, Chairman and CEO of BlackRock</strong>, naming Aladdin as a core earnings driver — a day after Wells Fargo's Aladdin Wealth advisor announcement showed competitors still converging on the same stack. The platform HSBC's PRISM advisory service is built on is compounding commercially, which cuts both ways: roadmap leverage and vendor dependency in one package. For Adam, this is the moment to make sure advisory-stack platform planning and vendor negotiations assume a confident, pricing-powerful Aladdin — not a static one.",
+      "headline": "The agentic fault line opens: JPMorgan walls out outside AI agents while BofA, BBVA and Wells Fargo back the Sierra-Meta protocol",
+      "context_html": "<strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, said the bank will not let outside AI agents into customer accounts, even as Bank of America, BBVA and Wells Fargo joined the Sierra-Meta Personal Agent Protocol to give agents verifiable credentials \u2014 while <strong>Jane Fraser, CEO of Citigroup</strong>, said AI benefits 'significantly outweigh' costs and <strong>Jeremy Barnum, CFO of JPMorgan</strong>, walked the bank's AI-spend estimate down from US$2bn. Agentic finance just split into two public strategies: walled gardens versus interoperable agents. For Adam, the fault line matters more than the winner \u2014 wealth programmes will soon have to pick a third-party-agent posture, and the industry's two answers are now on record.",
       "source_links": [
         {
-          "url": "https://s24.q4cdn.com/856567660/files/doc_financials/2026/Q3/BLK-3Q26-Earnings-Release.pdf",
-          "title": "BlackRock Q3 2026 earnings release"
+          "url": "https://evidentinsights.com/bankingbrief/ai-manifest-destiny",
+          "title": "Evident AI Banking Brief: agentic fault line"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Regulators close in on agentic AI: US watchdogs quiz banks on controls as BoE and ECB press recovery plans",
-      "context_html": "Reuters reports the Federal Reserve, OCC and FDIC are quizzing banks on advanced AI use — Chinese-developed models, AI agents in cyber defence, and whether autonomous systems can be audited and shut down — while the Bank of England and ECB push stronger recovery plans against AI-driven market disruption, with <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, urging an industry group on AI risk. For Adam, the controls half of the agentic-AI agenda has arrived: programmes moving agents toward production now need audit trails, human-override and kill-switch answers ready before examiners ask.",
+      "headline": "The FSB writes the supervisory baseline for bank AI \u2014 agentic case studies included, human approval mandatory",
+      "context_html": "The Financial Stability Board's 'Sound Practices for Responsible Adoption of Artificial Intelligence', published 15 October, sets the global supervisory baseline with concrete agentic case studies: one bank's in-house fraud agent now authors ~75% of card-fraud rule updates with human approval of every rule, cutting fraud losses over 20%. It lands a day after US and European regulators' AI scrutiny we reported yesterday. For Adam, this is the checklist his programmes will be examined against \u2014 human-in-the-loop approval points, red-teaming and auditable agent behaviour are now baseline, and the case studies give him ready-made patterns to cite in design conversations.",
       "source_links": [
         {
-          "url": "https://www.manilatimes.net/2026/10/14/business/foreign-business/banking-watchdogs-ramp-upaiscrutiny/2444833",
-          "title": "Reuters: Banking watchdogs ramp up AI scrutiny"
+          "url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "title": "FSB: Sound Practices for Responsible AI"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Morgan Stanley gathers a record US$232bn in a single quarter — the wealth-flows bar for every 2027 growth plan",
-      "context_html": "Morgan Stanley's Q3 delivered record wealth revenue of US$9.1bn and a record US$232bn of net new assets, with <strong>Ted Pick, Chairman and CEO of Morgan Stanley</strong>, citing a 22.6% return on tangible common equity. The US advice-led platforms are now compounding flows at a scale that resets what 'ambitious' means for wealth-gathering targets. For Adam, flow assumptions in 2027 planning should be sized against this benchmark — and the RM-efficiency agenda is what makes comparable flow economics possible at HSBC's cost base.",
+      "headline": "HSBC's own voice enters the AI delivery debate: CIB CEO Roberts on implementation progress and quantum",
+      "context_html": "<strong>Michael Roberts, CEO of HSBC Corporate & Institutional Banking</strong>, told Bloomberg on 15 October about implementation progress on AI and quantum computing \u2014 the most senior HSBC delivery voice on AI this earnings week, as peers quantified AI returns and regulators circled. For Adam, the framing lands directly on his mandate: AI as an implementation story, with progress evidenced and controls in place \u2014 exactly the posture his change portfolio is expected to demonstrate as 2027 planning sharpens.",
       "source_links": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-beats-estimates-strong-120905680.html",
-          "title": "Morgan Stanley Q3 2026 results"
+          "url": "https://www.bloomberg.com/news/videos/2026-10-15/hsbc-on-using-ai-and-quantum-computing-video",
+          "title": "Bloomberg: HSBC's Roberts on AI and quantum"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "On Adam's Desk": [
+    "AI & Technology": [
       {
         "id": "art01",
-        "title": "BlackRock Q3 2026: $205bn inflows fuel fifth straight EPS beat as Aladdin demand grows",
-        "url": "https://s24.q4cdn.com/856567660/files/doc_financials/2026/Q3/BLK-3Q26-Earnings-Release.pdf",
-        "source": "BlackRock Investor Relations",
-        "published_at": "2026-10-14",
-        "summary": "BlackRock reported Q3 2026 results with AUM at a record US$15.5tn after US$205bn of net inflows, and technology services and subscription revenue up 14% year on year on sustained Aladdin demand, with technology ACV up 12%. <strong>Laurence Fink, Chairman and CEO of BlackRock</strong>, cited 'sustained demand for Aladdin and multi-product solutions' as a core earnings driver. This lands a day after Wells Fargo's Aladdin Wealth advisor-tool announcement we covered yesterday: the vendor HSBC's PRISM advisory service is built on is compounding commercially while competitors converge on the same stack. For Adam, vendor health plus rising tech ACV means pricing power, roadmap leverage and deeper dependency in one package — worth factoring into advisory-stack platform planning and vendor negotiations.",
+        "title": "JPMorgan bars outside AI agents from accounts as rivals join Sierra-Meta agent protocol",
+        "url": "https://evidentinsights.com/bankingbrief/ai-manifest-destiny",
+        "source": "Evident AI Banking Brief",
+        "published_at": "2026-10-15",
+        "summary": "During earnings week <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, said the bank will not allow outside AI agents to access customer accounts with client credentials ('We're not going to allow just any outside agent to come in'), even as JPMorgan pushes its own Smart Cash money-movement tool. Bank of America, BBVA and Wells Fargo took the opposite side, joining the Personal Agent Protocol led by Sierra and Meta to give agents their own verifiable credentials. The same coverage has <strong>Jeremy Barnum, CFO of JPMorgan</strong>, revising the bank's AI-spend estimate down from US$2bn and <strong>Jane Fraser, CEO of Citigroup</strong>, saying AI benefits 'significantly outweigh' investment, citing Devin adoption to cut tech-vendor spend 30%. This is the first open strategic split on agentic finance: walled-garden agents versus interoperable credentialed agents. For Adam, the fault line matters more than the winner \u2014 client-facing agent strategies in his programmes will have to pick a posture on third-party agent access, and the industry's two answers just became public.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "noise_level": 3,
+        "category": "AI & Technology",
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "art04",
+        "title": "Citi patents point to an AI wealth 'Avatar' that could reshape the advisor role",
+        "url": "https://www.efinancialcareers.com/news/citi-s-new-patents-for-an-ai-wealth-avatar-might-make-its-advisors-nervous",
+        "source": "eFinancialCareers",
+        "published_at": "2026-10-15",
+        "summary": "eFinancialCareers reports that newly published Citi patent filings reveal work on an AI 'Avatar' for wealth management \u2014 a digital agent able to carry elements of the client-advisor relationship, framed as potentially displacing or reshaping the traditional advisor role. The filings land amid a week of agentic-finance headlines from JPMorgan, Wells Fargo and the FSB. For Adam, Citi's patents are an early-warning signal on the wealth side of agentic AI: if a money-centre bank is staking claims on AI delivered advice, the RM role-design, client-coverage and adoption questions in his wealth programmes move from hypothetical to near-term roadmap items.",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "noise_level": 4,
+        "noise_level": 3,
         "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 7
@@ -63,93 +77,63 @@
     "Regulatory & Markets": [
       {
         "id": "art02",
-        "title": "Banking watchdogs ramp up AI scrutiny",
-        "url": "https://www.manilatimes.net/2026/10/14/business/foreign-business/banking-watchdogs-ramp-upaiscrutiny/2444833",
-        "source": "Reuters via The Manila Times",
-        "published_at": "2026-10-14",
-        "summary": "Reuters reports that US banking regulators — the Federal Reserve, the OCC and the FDIC — are quizzing banks on their use of advanced AI models, including whether they deploy Chinese-developed technology, how AI agents are used in cyber defence, and whether increasingly autonomous systems can be controlled, audited and shut down. In Europe, the Bank of England and the ECB are pressing banks to strengthen recovery plans against AI-driven market disruption; the piece cites <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, urging corporate leaders to join a US industry group on AI risk, and <strong>Michael Woodbridge, cybersecurity partner at Grant Thornton</strong>, warning that AI adoption is outpacing control-building. For Adam, this is the controls half of the agentic-AI adoption agenda arriving now: every programme moving agents toward production will need audit trails, human-override and kill-switch answers before regulators ask, not after.",
+        "title": "FSB issues sound practices for responsible bank AI, with agentic case studies",
+        "url": "https://www.fsb.org/uploads/P151026-1.pdf",
+        "source": "Financial Stability Board",
+        "published_at": "2026-10-15",
+        "summary": "The Financial Stability Board published 'Sound Practices for Responsible Adoption of Artificial Intelligence' on 15 October, its supervisory baseline for AI in financial services, including agentic-AI case studies: one large international bank built an in-house agentic fraud-detection system in three months that now authors about 75% of card-fraud rule updates \u2014 with human approval of every new rule \u2014 and cut fraud losses more than 20%; another regional bank red-teams agents by attempting to force unauthorised actions. The publication follows the US and European supervisory scrutiny of bank AI we reported yesterday. For Adam, the FSB document is the checklist his programmes will eventually be examined against: human-in-the-loop approval points, red-teaming discipline and auditable agent behaviour are now written into the global supervisory baseline, not best practice.",
         "hsbc_relevancy": 7,
         "adam_rel": 8,
-        "noise_level": 4,
+        "noise_level": 3,
         "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 8
-      },
-      {
-        "id": "art07",
-        "title": "Bank of America profit hit by $1.2bn fine over anti-money laundering breaches",
-        "url": "https://www.reuters.com/business/finance/bank-america-profit-hurt-by-12-billion-fine-over-anti-money-laundering-2026-10-14/",
-        "source": "Reuters",
-        "published_at": "2026-10-14",
-        "summary": "Bank of America missed Q3 profit estimates on trading weakness and booked a US$1.2bn charge after the US Treasury said the bank failed to alert authorities to more than US$5bn in suspicious transactions — some allegedly linked to Chinese money-laundering groups — and breached Iran and Russia sanctions; the bank said it has spent billions on technology and manpower to fight financial crime. For Adam, large AML enforcement actions raise the financial-crime change bar for every bank running cross-border corridors: compliance remediation is a permanent change-programme workload, and APAC corridors are where the next test likely lands.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
-        "noise_level": 4,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 5
       }
     ],
-    "Competitor Intelligence": [
+    "HSBC News": [
       {
         "id": "art03",
-        "title": "Morgan Stanley beats estimates as wealth unit posts record US$232bn net new assets",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-beats-estimates-strong-120905680.html",
-        "source": "Investing.com via Yahoo Finance",
-        "published_at": "2026-10-14",
-        "summary": "Morgan Stanley's Q3 2026 results beat expectations with record Wealth Management revenue of US$9.1bn (up 10% YoY) and a record US$232bn of net new assets — over half tied to IPO-related flows — taking total client assets to US$10.5tn; <strong>Ted Pick, Chairman and CEO of Morgan Stanley</strong>, flagged a 22.6% return on tangible common equity. The wealth engine is now the steady core while equity trading revenue surged 41%. For Adam, Morgan Stanley is setting the public benchmark for what a scaled, advice-led wealth platform gathers in a single quarter — flow expectations embedded in growth plans should be sized against this kind of compounding, not against regional peers.",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
-        "noise_level": 5,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art08",
-        "title": "Standard Chartered broadens UAE crypto services with direct Bitcoin and Ethereum trading",
-        "url": "https://www.gadgets360.com/cryptocurrency/news/standard-chartered-broadens-uae-crypto-services-with-direct-bitcoin-and-ethereum-trading-btc-eth-crypto-regulations-12184068",
-        "source": "Gadgets 360",
-        "published_at": "2026-10-14",
-        "summary": "Standard Chartered has introduced bank-managed Bitcoin and Ethereum trading for eligible UAE clients, with plans to explore expansion into other markets, extending its digital-asset services in the region beyond custody. The move takes another regulated hub bank from custody into active client trading in digital assets. For Adam, StanChart's UAE build-out is a peer data point on client appetite and regulatory comfort in a market HSBC also serves — and on how quickly a digital-asset proposition is becoming a standard wealth-menu item rather than a pilot.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 5
-      }
-    ],
-    "Operations & Change": [
-      {
-        "id": "art05",
-        "title": "A quarter of financial firms tie pay and promotions to AI proficiency: survey",
-        "url": "https://www.semafor.com/article/10/14/2026/a-quarter-of-financial-firms-tie-pay-and-promotions-to-ai-proficiency-survey",
-        "source": "Semafor",
-        "published_at": "2026-10-14",
-        "summary": "Semafor reports a survey of 500 US financial firms in which a quarter have tied raises, promotions and bonuses to AI proficiency, and applicants' AI skills now weigh nearly four times as heavily in hiring decisions as they did previously. Compensation is becoming the explicit adoption lever in financial services. For Adam, incentive design is a change-execution instrument: if peers are wiring AI proficiency into pay, adoption curves in his programmes will increasingly assume it — teams without a proficiency-linked enablement and incentive story will lag the market's baseline.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "AI & Technology": [
-      {
-        "id": "art09",
-        "title": "Fragment raises $12M to keep AI agents from mishandling company money",
-        "url": "https://dealroom.co/news/162582-fragment-raises-12m-to-keep-ai-agents-from-mishandling-company-money/",
-        "source": "Dealroom",
+        "title": "HSBC CIB chief Michael Roberts on the bank's AI and quantum computing progress",
+        "url": "https://www.bloomberg.com/news/videos/2026-10-15/hsbc-on-using-ai-and-quantum-computing-video",
+        "source": "Bloomberg",
         "published_at": "2026-10-15",
-        "summary": "New York-based startup Fragment has raised a US$12m Series A to build software that lets AI agents safely handle billing and accounting tasks without mishandling corporate funds. The round is one of a growing cluster of agentic-AI control startups — alongside zero-trust agent identity and AI red-teaming vendors — betting that enterprise agent deployments will be gated on financial guardrails, not just model capability. For Adam, the venture money is a leading indicator of where agentic-AI controls are heading: audit, authorization and spending limits for agents are becoming a product category, which makes them easier to buy than to build for his programmes' first production agents.",
-        "hsbc_relevancy": 4,
+        "summary": "<strong>Michael Roberts, CEO of HSBC Corporate & Institutional Banking</strong>, told Bloomberg on 15 October about implementation progress on AI and quantum computing at the bank, in a week when agentic-AI controls and AI returns dominated peer earnings commentary. The interview is the most senior HSBC voice on AI delivery since the group's wealth and payments units detailed their AI stacks. For Adam, the CIB CEO framing AI as an implementation story \u2014 not an experiment \u2014 is consistent with the posture his own change portfolio is expected to demonstrate: delivery progress, controls in place, value evidenced.",
+        "hsbc_relevancy": 8,
         "adam_rel": 6,
-        "noise_level": 2,
-        "category": "AI & Technology",
+        "noise_level": 3,
+        "category": "HSBC News",
         "is_update": false,
         "user_relevance": 6
+      }
+    ],
+    "Private Banking & Wealth": [
+      {
+        "id": "art05",
+        "title": "RBC Wealth Management names Daniel Soo head of private banking, Singapore, in RM hiring push",
+        "url": "https://www.rbcwealthmanagement.com/en-asia/newsroom/2026-10-15/rbc-wealth-management-appoints-daniel-soo-as-head-of-private-banking-singapore-and-expands-relationship-manager-team",
+        "source": "RBC Wealth Management",
+        "published_at": "2026-10-15",
+        "summary": "RBC Wealth Management Asia appointed <strong>Daniel Soo, Managing Director and Head of Private Banking, Singapore</strong> \u2014 a veteran of UBS, Credit Suisse and Standard Chartered private banking \u2014 alongside seven relationship-manager hires and appointments across Singapore and Hong Kong drawn from Barclays, UBS, Julius Baer, J. Safra Sarasin, Citi and UOB private banking. The moves signal continued aggressive build-out of RBC's Asia PB franchise by a non-APAC player. For Adam, it is further evidence that senior RM talent in Singapore and Hong Kong is being actively repriced and poached \u2014 retention and capacity plans for his own RM population should assume this level of market aggression through 2027 planning.",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art06",
+        "title": "Nomura International Wealth Management appoints Vijay Solomon MD in Singapore",
+        "url": "https://hubbis.com/news/nomura-international-wealth-management-appoints-vijay-solomon-as-managing-director-in-singapore",
+        "source": "Hubbis",
+        "published_at": "2026-10-16",
+        "summary": "Nomura International Wealth Management has appointed <strong>Vijay Solomon, Managing Director</strong> in Singapore, as the Japanese private bank continues building its Southeast Asia franchise. The hire follows RBC's Singapore private-banking appointment announced a day earlier, marking a week of international wealth managers reinforcing senior Singapore coverage. For Adam, the back-to-back moves confirm Singapore private banking as an active talent and franchise battleground \u2014 the market where his platform and RM-efficiency investments will be most directly compared against new-entrant energy.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 5
       }
     ]
   },
@@ -157,109 +141,94 @@
     "articles": [
       {
         "id": "art01",
-        "title": "BlackRock Q3 2026: $205bn inflows fuel fifth straight EPS beat as Aladdin demand grows",
-        "url": "https://s24.q4cdn.com/856567660/files/doc_financials/2026/Q3/BLK-3Q26-Earnings-Release.pdf",
-        "source": "BlackRock Investor Relations",
-        "published_at": "2026-10-14",
-        "summary": "BlackRock reported Q3 2026 results with AUM at a record US$15.5tn after US$205bn of net inflows, and technology services and subscription revenue up 14% year on year on sustained Aladdin demand, with technology ACV up 12%. <strong>Laurence Fink, Chairman and CEO of BlackRock</strong>, cited 'sustained demand for Aladdin and multi-product solutions' as a core earnings driver. This lands a day after Wells Fargo's Aladdin Wealth advisor-tool announcement we covered yesterday: the vendor HSBC's PRISM advisory service is built on is compounding commercially while competitors converge on the same stack. For Adam, vendor health plus rising tech ACV means pricing power, roadmap leverage and deeper dependency in one package — worth factoring into advisory-stack platform planning and vendor negotiations.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 4,
+        "title": "JPMorgan bars outside AI agents from accounts as rivals join Sierra-Meta agent protocol",
+        "url": "https://evidentinsights.com/bankingbrief/ai-manifest-destiny",
+        "source": "Evident AI Banking Brief",
+        "published_at": "2026-10-15",
+        "summary": "During earnings week <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, said the bank will not allow outside AI agents to access customer accounts with client credentials ('We're not going to allow just any outside agent to come in'), even as JPMorgan pushes its own Smart Cash money-movement tool. Bank of America, BBVA and Wells Fargo took the opposite side, joining the Personal Agent Protocol led by Sierra and Meta to give agents their own verifiable credentials. The same coverage has <strong>Jeremy Barnum, CFO of JPMorgan</strong>, revising the bank's AI-spend estimate down from US$2bn and <strong>Jane Fraser, CEO of Citigroup</strong>, saying AI benefits 'significantly outweigh' investment, citing Devin adoption to cut tech-vendor spend 30%. This is the first open strategic split on agentic finance: walled-garden agents versus interoperable credentialed agents. For Adam, the fault line matters more than the winner \u2014 client-facing agent strategies in his programmes will have to pick a posture on third-party agent access, and the industry's two answers just became public.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 8,
+        "noise_level": 3,
         "category": "AI & Technology",
         "is_update": false,
-        "user_relevance": 7
+        "user_relevance": 8
       },
       {
         "id": "art02",
-        "title": "Banking watchdogs ramp up AI scrutiny",
-        "url": "https://www.manilatimes.net/2026/10/14/business/foreign-business/banking-watchdogs-ramp-upaiscrutiny/2444833",
-        "source": "Reuters via The Manila Times",
-        "published_at": "2026-10-14",
-        "summary": "Reuters reports that US banking regulators — the Federal Reserve, the OCC and the FDIC — are quizzing banks on their use of advanced AI models, including whether they deploy Chinese-developed technology, how AI agents are used in cyber defence, and whether increasingly autonomous systems can be controlled, audited and shut down. In Europe, the Bank of England and the ECB are pressing banks to strengthen recovery plans against AI-driven market disruption; the piece cites <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, urging corporate leaders to join a US industry group on AI risk, and <strong>Michael Woodbridge, cybersecurity partner at Grant Thornton</strong>, warning that AI adoption is outpacing control-building. For Adam, this is the controls half of the agentic-AI adoption agenda arriving now: every programme moving agents toward production will need audit trails, human-override and kill-switch answers before regulators ask, not after.",
+        "title": "FSB issues sound practices for responsible bank AI, with agentic case studies",
+        "url": "https://www.fsb.org/uploads/P151026-1.pdf",
+        "source": "Financial Stability Board",
+        "published_at": "2026-10-15",
+        "summary": "The Financial Stability Board published 'Sound Practices for Responsible Adoption of Artificial Intelligence' on 15 October, its supervisory baseline for AI in financial services, including agentic-AI case studies: one large international bank built an in-house agentic fraud-detection system in three months that now authors about 75% of card-fraud rule updates \u2014 with human approval of every new rule \u2014 and cut fraud losses more than 20%; another regional bank red-teams agents by attempting to force unauthorised actions. The publication follows the US and European supervisory scrutiny of bank AI we reported yesterday. For Adam, the FSB document is the checklist his programmes will eventually be examined against: human-in-the-loop approval points, red-teaming discipline and auditable agent behaviour are now written into the global supervisory baseline, not best practice.",
         "hsbc_relevancy": 7,
         "adam_rel": 8,
-        "noise_level": 4,
+        "noise_level": 3,
         "category": "Regulatory & Markets",
         "is_update": false,
         "user_relevance": 8
       },
       {
         "id": "art03",
-        "title": "Morgan Stanley beats estimates as wealth unit posts record US$232bn net new assets",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-beats-estimates-strong-120905680.html",
-        "source": "Investing.com via Yahoo Finance",
-        "published_at": "2026-10-14",
-        "summary": "Morgan Stanley's Q3 2026 results beat expectations with record Wealth Management revenue of US$9.1bn (up 10% YoY) and a record US$232bn of net new assets — over half tied to IPO-related flows — taking total client assets to US$10.5tn; <strong>Ted Pick, Chairman and CEO of Morgan Stanley</strong>, flagged a 22.6% return on tangible common equity. The wealth engine is now the steady core while equity trading revenue surged 41%. For Adam, Morgan Stanley is setting the public benchmark for what a scaled, advice-led wealth platform gathers in a single quarter — flow expectations embedded in growth plans should be sized against this kind of compounding, not against regional peers.",
-        "hsbc_relevancy": 7,
+        "title": "HSBC CIB chief Michael Roberts on the bank's AI and quantum computing progress",
+        "url": "https://www.bloomberg.com/news/videos/2026-10-15/hsbc-on-using-ai-and-quantum-computing-video",
+        "source": "Bloomberg",
+        "published_at": "2026-10-15",
+        "summary": "<strong>Michael Roberts, CEO of HSBC Corporate & Institutional Banking</strong>, told Bloomberg on 15 October about implementation progress on AI and quantum computing at the bank, in a week when agentic-AI controls and AI returns dominated peer earnings commentary. The interview is the most senior HSBC voice on AI delivery since the group's wealth and payments units detailed their AI stacks. For Adam, the CIB CEO framing AI as an implementation story \u2014 not an experiment \u2014 is consistent with the posture his own change portfolio is expected to demonstrate: delivery progress, controls in place, value evidenced.",
+        "hsbc_relevancy": 8,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art04",
+        "title": "Citi patents point to an AI wealth 'Avatar' that could reshape the advisor role",
+        "url": "https://www.efinancialcareers.com/news/citi-s-new-patents-for-an-ai-wealth-avatar-might-make-its-advisors-nervous",
+        "source": "eFinancialCareers",
+        "published_at": "2026-10-15",
+        "summary": "eFinancialCareers reports that newly published Citi patent filings reveal work on an AI 'Avatar' for wealth management \u2014 a digital agent able to carry elements of the client-advisor relationship, framed as potentially displacing or reshaping the traditional advisor role. The filings land amid a week of agentic-finance headlines from JPMorgan, Wells Fargo and the FSB. For Adam, Citi's patents are an early-warning signal on the wealth side of agentic AI: if a money-centre bank is staking claims on AI delivered advice, the RM role-design, client-coverage and adoption questions in his wealth programmes move from hypothetical to near-term roadmap items.",
+        "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "noise_level": 5,
-        "category": "Competitor Intelligence",
+        "noise_level": 3,
+        "category": "AI & Technology",
         "is_update": false,
         "user_relevance": 7
       },
       {
         "id": "art05",
-        "title": "A quarter of financial firms tie pay and promotions to AI proficiency: survey",
-        "url": "https://www.semafor.com/article/10/14/2026/a-quarter-of-financial-firms-tie-pay-and-promotions-to-ai-proficiency-survey",
-        "source": "Semafor",
-        "published_at": "2026-10-14",
-        "summary": "Semafor reports a survey of 500 US financial firms in which a quarter have tied raises, promotions and bonuses to AI proficiency, and applicants' AI skills now weigh nearly four times as heavily in hiring decisions as they did previously. Compensation is becoming the explicit adoption lever in financial services. For Adam, incentive design is a change-execution instrument: if peers are wiring AI proficiency into pay, adoption curves in his programmes will increasingly assume it — teams without a proficiency-linked enablement and incentive story will lag the market's baseline.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 3,
-        "category": "Operations & Change",
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "art07",
-        "title": "Bank of America profit hit by $1.2bn fine over anti-money laundering breaches",
-        "url": "https://www.reuters.com/business/finance/bank-america-profit-hurt-by-12-billion-fine-over-anti-money-laundering-2026-10-14/",
-        "source": "Reuters",
-        "published_at": "2026-10-14",
-        "summary": "Bank of America missed Q3 profit estimates on trading weakness and booked a US$1.2bn charge after the US Treasury said the bank failed to alert authorities to more than US$5bn in suspicious transactions — some allegedly linked to Chinese money-laundering groups — and breached Iran and Russia sanctions; the bank said it has spent billions on technology and manpower to fight financial crime. For Adam, large AML enforcement actions raise the financial-crime change bar for every bank running cross-border corridors: compliance remediation is a permanent change-programme workload, and APAC corridors are where the next test likely lands.",
-        "hsbc_relevancy": 6,
-        "adam_rel": 5,
-        "noise_level": 4,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art08",
-        "title": "Standard Chartered broadens UAE crypto services with direct Bitcoin and Ethereum trading",
-        "url": "https://www.gadgets360.com/cryptocurrency/news/standard-chartered-broadens-uae-crypto-services-with-direct-bitcoin-and-ethereum-trading-btc-eth-crypto-regulations-12184068",
-        "source": "Gadgets 360",
-        "published_at": "2026-10-14",
-        "summary": "Standard Chartered has introduced bank-managed Bitcoin and Ethereum trading for eligible UAE clients, with plans to explore expansion into other markets, extending its digital-asset services in the region beyond custody. The move takes another regulated hub bank from custody into active client trading in digital assets. For Adam, StanChart's UAE build-out is a peer data point on client appetite and regulatory comfort in a market HSBC also serves — and on how quickly a digital-asset proposition is becoming a standard wealth-menu item rather than a pilot.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 3,
-        "category": "Competitor Intelligence",
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "art09",
-        "title": "Fragment raises $12M to keep AI agents from mishandling company money",
-        "url": "https://dealroom.co/news/162582-fragment-raises-12m-to-keep-ai-agents-from-mishandling-company-money/",
-        "source": "Dealroom",
+        "title": "RBC Wealth Management names Daniel Soo head of private banking, Singapore, in RM hiring push",
+        "url": "https://www.rbcwealthmanagement.com/en-asia/newsroom/2026-10-15/rbc-wealth-management-appoints-daniel-soo-as-head-of-private-banking-singapore-and-expands-relationship-manager-team",
+        "source": "RBC Wealth Management",
         "published_at": "2026-10-15",
-        "summary": "New York-based startup Fragment has raised a US$12m Series A to build software that lets AI agents safely handle billing and accounting tasks without mishandling corporate funds. The round is one of a growing cluster of agentic-AI control startups — alongside zero-trust agent identity and AI red-teaming vendors — betting that enterprise agent deployments will be gated on financial guardrails, not just model capability. For Adam, the venture money is a leading indicator of where agentic-AI controls are heading: audit, authorization and spending limits for agents are becoming a product category, which makes them easier to buy than to build for his programmes' first production agents.",
-        "hsbc_relevancy": 4,
+        "summary": "RBC Wealth Management Asia appointed <strong>Daniel Soo, Managing Director and Head of Private Banking, Singapore</strong> \u2014 a veteran of UBS, Credit Suisse and Standard Chartered private banking \u2014 alongside seven relationship-manager hires and appointments across Singapore and Hong Kong drawn from Barclays, UBS, Julius Baer, J. Safra Sarasin, Citi and UOB private banking. The moves signal continued aggressive build-out of RBC's Asia PB franchise by a non-APAC player. For Adam, it is further evidence that senior RM talent in Singapore and Hong Kong is being actively repriced and poached \u2014 retention and capacity plans for his own RM population should assume this level of market aggression through 2027 planning.",
+        "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 2,
-        "category": "AI & Technology",
+        "category": "Private Banking & Wealth",
         "is_update": false,
         "user_relevance": 6
+      },
+      {
+        "id": "art06",
+        "title": "Nomura International Wealth Management appoints Vijay Solomon MD in Singapore",
+        "url": "https://hubbis.com/news/nomura-international-wealth-management-appoints-vijay-solomon-as-managing-director-in-singapore",
+        "source": "Hubbis",
+        "published_at": "2026-10-16",
+        "summary": "Nomura International Wealth Management has appointed <strong>Vijay Solomon, Managing Director</strong> in Singapore, as the Japanese private bank continues building its Southeast Asia franchise. The hire follows RBC's Singapore private-banking appointment announced a day earlier, marking a week of international wealth managers reinforcing senior Singapore coverage. For Adam, the back-to-back moves confirm Singapore private banking as an active talent and franchise battleground \u2014 the market where his platform and RM-efficiency investments will be most directly compared against new-entrant energy.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "category": "Private Banking & Wealth",
+        "is_update": false,
+        "user_relevance": 5
       }
     ],
     "categories": {
-      "On Adam's Desk": "#be123c",
+      "AI & Technology": "#6366f1",
       "Regulatory & Markets": "#d97706",
-      "Competitor Intelligence": "#0891b2",
-      "Operations & Change": "#7c3aed",
-      "AI & Technology": "#6366f1"
+      "HSBC News": "#dc2626",
+      "Private Banking & Wealth": "#059669"
     }
   }
 }
