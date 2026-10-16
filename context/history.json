@@ -1,14 +1,16 @@
 {
   "adam": {
-    "last_updated": "2026-10-16",
+    "last_updated": "2026-10-17",
     "covered_urls": [
       "https://asianprivatebanker.com/investments/morgan-stanley-pwm-asia-adds-ai-to-fund-screening-tightens-risk-rules/",
       "https://asianprivatebanker.com/private-banking-wealth-management/apb-summit-stanchart-bnp-paribas-wm-prioritise-rm-efficiency-to-protect-bottom-line/",
+      "https://citywire.com/asia/news/hsbc-relocates-hong-kong-wealth-veteran-to-lead-uae-and-me-business/a2499980",
       "https://dealroom.co/news/162582-fragment-raises-12m-to-keep-ai-agents-from-mishandling-company-money/",
       "https://evidentinsights.com/bankingbrief/ai-manifest-destiny",
       "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-beats-estimates-strong-120905680.html",
       "https://finance.yahoo.com/quote/WFC/earnings/WFC-Q3-2026-earnings-call-650783.html",
       "https://finance.yahoo.com/technology/ai/articles/deutsche-bank-deploys-farsight-premise-130000245.html",
+      "https://fintech.global/2026/10/16/compliance-sprawl-firms-juggle-nearly-14-systems-mco-finds/",
       "https://fintechnews.sg/138836/wealthtech/syfe-income-max-options-income/",
       "https://fintechnews.sg/138858/ai/dbs-ai-financing-risk-repricing/",
       "https://hubbis.com/news/nomura-international-wealth-management-appoints-vijay-solomon-as-managing-director-in-singapore",
@@ -22,10 +24,15 @@
       "https://www.bloomberg.com/news/videos/2026-10-15/hsbc-on-using-ai-and-quantum-computing-video",
       "https://www.credit-agricole.com/en/pdfPreview/211487",
       "https://www.efinancialcareers.com/news/citi-s-new-patents-for-an-ai-wealth-avatar-might-make-its-advisors-nervous",
+      "https://www.explainx.ai/catch-up-on-ai/2026-10-16",
       "https://www.fsb.org/uploads/P151026-1.pdf",
       "https://www.gadgets360.com/cryptocurrency/news/standard-chartered-broadens-uae-crypto-services-with-direct-bitcoin-and-ethereum-trading-btc-eth-crypto-regulations-12184068",
+      "https://www.gurufocus.com/news/9128089/major-banks-limit-ai-access-to-customer-accounts-amid-concerns",
       "https://www.hubbis.com/article/investbanq-s-berik-yernazarov-on-ai-native-wealth-management",
+      "https://www.iseas.edu.sg/library/blog/daily-news-alerts/261016",
+      "https://www.linkedin.com/pulse/breaking-china-announces-new-technology-export-controls-baokui-guan-x9xzc",
       "https://www.manilatimes.net/2026/10/14/business/foreign-business/banking-watchdogs-ramp-upaiscrutiny/2444833",
+      "https://www.policyaddress.gov.hk/2026/eng/supp_pdf.html",
       "https://www.privatebankerinternational.com/news/former-hsbc-executive-starts-ai-driven-wealth-firm-report/",
       "https://www.rbcwealthmanagement.com/en-asia/newsroom/2026-10-15/rbc-wealth-management-appoints-daniel-soo-as-head-of-private-banking-singapore-and-expands-relationship-manager-team",
       "https://www.reuters.com/business/finance/bank-america-profit-hurt-by-12-billion-fine-over-anti-money-laundering-2026-10-14/",
@@ -36,6 +43,7 @@
       "https://www.theasianbanker.com/updates-and-articles/how-will-next-generation-digital-wealth-platforms-change-the-game",
       "https://www.thebanker.com/content/c866644f-717b-493b-8862-d8c5efd7e3db",
       "https://www.tokenpost.com/news/regulation/30053",
+      "https://www.wealthbriefing.com/",
       "https://www.wealthbriefingasia.com/article.php/-AI%E2%80%99s-Value-In-Wealth-Management-Starts-With-Better-Processes?id=209040",
       "https://www.wealthbriefingasia.com/article.php/-AI-Shifts-Advisor-Time-From-Administration-To-Client-Relationships-%C2%A0?id=209019",
       "https://www.wealthbriefingasia.com/article.php/Who%27s-Moving-Where-In-Wealth-Management%3F-%E2%80%93-HSBC---?id=209034"
@@ -43,14 +51,17 @@
     "covered_topics": [
       "A peer bank just went live on Avaloq for cross-border HNW wealth \u2014 mid-way through HSBC's own 6.1 re-plan and credit-engine cost fight",
       "BlackRock's Q3 shows Aladdin demand still compounding \u2014 the stack PRISM runs on is outgrowing the market",
+      "China proposes export controls on 40 technologies \u2014 23 AI items \u2014 with registration effective now",
       "DBS is monetising AI at S$1bn a year and hiring 600 advisors \u2014 the ROI bar for every 2027 AI narrative Adam's plans must clear",
       "HSBC doubles down on Singapore as its ASEAN wealth hub \u2014 100 RMs, 100 AI specialists and a Citi wealth veteran to run the client layer",
+      "HSBC moves a Hong Kong wealth veteran to head its UAE and Middle East business",
       "HSBC moves to cut fixed-pay allowances and adopt a US-style bonus model \u2014 a comp shift with real change-execution weight",
       "HSBC's own voice enters the AI delivery debate: CIB CEO Roberts on implementation progress and quantum",
       "Morgan Stanley gathers a record US$232bn in a single quarter \u2014 the wealth-flows bar for every 2027 growth plan",
       "Regulators close in on agentic AI: US watchdogs quiz banks on controls as BoE and ECB press recovery plans",
       "StanChart and BNP Paribas WM put RM efficiency at the centre of the profitability fight \u2014 the agenda now on Adam's desk",
       "The FSB writes the supervisory baseline for bank AI \u2014 agentic case studies included, human approval mandatory",
+      "The agentic fault line hardens: Citi and BofA now restrict AI agents' access to customer accounts",
       "The agentic fault line opens: JPMorgan walls out outside AI agents while BofA, BBVA and Wells Fargo back the Sierra-Meta protocol",
       "Wells Fargo ships an AI assistant for advisors on Aladdin Wealth \u2014 catching up to a stack HSBC has run for six years"
     ],
@@ -130,6 +141,24 @@
           "The agentic fault line opens: JPMorgan walls out outside AI agents while BofA, BBVA and Wells Fargo back the Sierra-Meta protocol",
           "The FSB writes the supervisory baseline for bank AI \u2014 agentic case studies included, human approval mandatory",
           "HSBC's own voice enters the AI delivery debate: CIB CEO Roberts on implementation progress and quantum"
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "urls": [
+          "https://citywire.com/asia/news/hsbc-relocates-hong-kong-wealth-veteran-to-lead-uae-and-me-business/a2499980",
+          "https://fintech.global/2026/10/16/compliance-sprawl-firms-juggle-nearly-14-systems-mco-finds/",
+          "https://www.explainx.ai/catch-up-on-ai/2026-10-16",
+          "https://www.gurufocus.com/news/9128089/major-banks-limit-ai-access-to-customer-accounts-amid-concerns",
+          "https://www.iseas.edu.sg/library/blog/daily-news-alerts/261016",
+          "https://www.linkedin.com/pulse/breaking-china-announces-new-technology-export-controls-baokui-guan-x9xzc",
+          "https://www.policyaddress.gov.hk/2026/eng/supp_pdf.html",
+          "https://www.wealthbriefing.com/"
+        ],
+        "topics": [
+          "HSBC moves a Hong Kong wealth veteran to head its UAE and Middle East business",
+          "The agentic fault line hardens: Citi and BofA now restrict AI agents' access to customer accounts",
+          "China proposes export controls on 40 technologies \u2014 23 AI items \u2014 with registration effective now"
         ]
       }
     ]

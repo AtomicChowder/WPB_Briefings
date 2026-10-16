@@ -3,70 +3,72 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Friday, 16 October 2026",
-  "date_str": "2026-10-16",
-  "generated_at": "15 Oct 2026, 23:12 UTC",
-  "total_articles": 6,
+  "briefing_date": "Saturday, 17 October 2026",
+  "date_str": "2026-10-17",
+  "generated_at": "16 Oct 2026, 23:14 UTC",
+  "total_articles": 8,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "The agentic fault line opens: JPMorgan walls out outside AI agents while BofA, BBVA and Wells Fargo back the Sierra-Meta protocol",
-      "context_html": "<strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, said the bank will not let outside AI agents into customer accounts, even as Bank of America, BBVA and Wells Fargo joined the Sierra-Meta Personal Agent Protocol to give agents verifiable credentials \u2014 while <strong>Jane Fraser, CEO of Citigroup</strong>, said AI benefits 'significantly outweigh' costs and <strong>Jeremy Barnum, CFO of JPMorgan</strong>, walked the bank's AI-spend estimate down from US$2bn. Agentic finance just split into two public strategies: walled gardens versus interoperable agents. For Adam, the fault line matters more than the winner \u2014 wealth programmes will soon have to pick a third-party-agent posture, and the industry's two answers are now on record.",
+      "headline": "HSBC moves a Hong Kong wealth veteran to head its UAE and Middle East business",
+      "context_html": "Citywire reports HSBC is relocating a senior Hong Kong wealth manager to lead its UAE and Middle East wealth business \u2014 the latest move in the group's push to deepen leadership across growth-corridor wealth markets. For Adam, the significance is organisational as much as geographic: coverage models, product roadmaps and RM-capability decisions for the Gulf corridor will now be shaped by a leader formed in the Hong Kong business \u2014 a direct counterpart for APAC platform and change delivery, and a signal of where the group expects wealth growth to come from.",
       "source_links": [
         {
-          "url": "https://evidentinsights.com/bankingbrief/ai-manifest-destiny",
-          "title": "Evident AI Banking Brief: agentic fault line"
+          "url": "https://citywire.com/asia/news/hsbc-relocates-hong-kong-wealth-veteran-to-lead-uae-and-me-business/a2499980",
+          "title": "Citywire: HSBC UAE/ME wealth leadership move"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "The FSB writes the supervisory baseline for bank AI \u2014 agentic case studies included, human approval mandatory",
-      "context_html": "The Financial Stability Board's 'Sound Practices for Responsible Adoption of Artificial Intelligence', published 15 October, sets the global supervisory baseline with concrete agentic case studies: one bank's in-house fraud agent now authors ~75% of card-fraud rule updates with human approval of every rule, cutting fraud losses over 20%. It lands a day after US and European regulators' AI scrutiny we reported yesterday. For Adam, this is the checklist his programmes will be examined against \u2014 human-in-the-loop approval points, red-teaming and auditable agent behaviour are now baseline, and the case studies give him ready-made patterns to cite in design conversations.",
+      "headline": "The agentic fault line hardens: Citi and BofA now restrict AI agents' access to customer accounts",
+      "context_html": "Citigroup and Bank of America moved on 16 October to restrict AI agents' access to customer accounts over fund-security concerns \u2014 the first concrete account-boundary enforcement since JPMorgan ruled out outside agents and rivals backed the Sierra-Meta protocol this week. Agent governance is moving from strategy decks to account controls. For Adam, account-level agent permissions \u2014 what an agent may see, move and execute, under whose credential \u2014 are becoming a control surface that wealth programmes will have to design for explicitly, product by product.",
       "source_links": [
         {
-          "url": "https://www.fsb.org/uploads/P151026-1.pdf",
-          "title": "FSB: Sound Practices for Responsible AI"
+          "url": "https://www.gurufocus.com/news/9128089/major-banks-limit-ai-access-to-customer-accounts-amid-concerns",
+          "title": "GuruFocus: banks limit AI account access"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC's own voice enters the AI delivery debate: CIB CEO Roberts on implementation progress and quantum",
-      "context_html": "<strong>Michael Roberts, CEO of HSBC Corporate & Institutional Banking</strong>, told Bloomberg on 15 October about implementation progress on AI and quantum computing \u2014 the most senior HSBC delivery voice on AI this earnings week, as peers quantified AI returns and regulators circled. For Adam, the framing lands directly on his mandate: AI as an implementation story, with progress evidenced and controls in place \u2014 exactly the posture his change portfolio is expected to demonstrate as 2027 planning sharpens.",
+      "headline": "China proposes export controls on 40 technologies \u2014 23 AI items \u2014 with registration effective now",
+      "context_html": "China's commerce and science ministries issued Announcement No. 48 on 16 October, proposing 40 technologies \u2014 23 AI-related \u2014 for the prohibited or restricted export catalogue, with interim pre-export registration already effective and consultation open to 15 November. For Adam, if confirmed, AI models, tooling and know-how crossing the mainland border face a new licensing layer \u2014 change plans touching China-based AI capability in the GBA will need to absorb it, and the four-week consultation window is the time to size the exposure.",
       "source_links": [
         {
-          "url": "https://www.bloomberg.com/news/videos/2026-10-15/hsbc-on-using-ai-and-quantum-computing-video",
-          "title": "Bloomberg: HSBC's Roberts on AI and quantum"
+          "url": "https://www.linkedin.com/pulse/breaking-china-announces-new-technology-export-controls-baokui-guan-x9xzc",
+          "title": "AllBright: China export controls analysis"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "AI & Technology": [
+    "On Adam's Desk": [
       {
         "id": "art01",
-        "title": "JPMorgan bars outside AI agents from accounts as rivals join Sierra-Meta agent protocol",
-        "url": "https://evidentinsights.com/bankingbrief/ai-manifest-destiny",
-        "source": "Evident AI Banking Brief",
-        "published_at": "2026-10-15",
-        "summary": "During earnings week <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, said the bank will not allow outside AI agents to access customer accounts with client credentials ('We're not going to allow just any outside agent to come in'), even as JPMorgan pushes its own Smart Cash money-movement tool. Bank of America, BBVA and Wells Fargo took the opposite side, joining the Personal Agent Protocol led by Sierra and Meta to give agents their own verifiable credentials. The same coverage has <strong>Jeremy Barnum, CFO of JPMorgan</strong>, revising the bank's AI-spend estimate down from US$2bn and <strong>Jane Fraser, CEO of Citigroup</strong>, saying AI benefits 'significantly outweigh' investment, citing Devin adoption to cut tech-vendor spend 30%. This is the first open strategic split on agentic finance: walled-garden agents versus interoperable credentialed agents. For Adam, the fault line matters more than the winner \u2014 client-facing agent strategies in his programmes will have to pick a posture on third-party agent access, and the industry's two answers just became public.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "AI & Technology",
+        "title": "HSBC relocates Hong Kong wealth veteran to lead UAE and Middle East business",
+        "url": "https://citywire.com/asia/news/hsbc-relocates-hong-kong-wealth-veteran-to-lead-uae-and-me-business/a2499980",
+        "source": "Citywire Middle East",
+        "published_at": "2026-10-17",
+        "summary": "Citywire reports that HSBC is relocating a senior Hong Kong wealth manager to head its UAE and Middle East wealth business, continuing the group's regional wealth-footprint expansion. The move follows HSBC's pattern of deepening senior leadership in growth-corridor wealth markets. For Adam, a UAE/ME wealth leadership landing matters to the platform and delivery organisation: coverage-model, product and RM-capability decisions for the Gulf corridor will now flow through a leader built in the Hong Kong business \u2014 a natural counterpart for APAC change and platform work.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "HSBC News",
         "is_update": false,
-        "user_relevance": 8
-      },
+        "user_relevance": 6
+      }
+    ],
+    "AI & Technology": [
       {
-        "id": "art04",
-        "title": "Citi patents point to an AI wealth 'Avatar' that could reshape the advisor role",
-        "url": "https://www.efinancialcareers.com/news/citi-s-new-patents-for-an-ai-wealth-avatar-might-make-its-advisors-nervous",
-        "source": "eFinancialCareers",
-        "published_at": "2026-10-15",
-        "summary": "eFinancialCareers reports that newly published Citi patent filings reveal work on an AI 'Avatar' for wealth management \u2014 a digital agent able to carry elements of the client-advisor relationship, framed as potentially displacing or reshaping the traditional advisor role. The filings land amid a week of agentic-finance headlines from JPMorgan, Wells Fargo and the FSB. For Adam, Citi's patents are an early-warning signal on the wealth side of agentic AI: if a money-centre bank is staking claims on AI delivered advice, the RM role-design, client-coverage and adoption questions in his wealth programmes move from hypothetical to near-term roadmap items.",
-        "hsbc_relevancy": 6,
+        "id": "art02",
+        "title": "Major banks limit AI access to customer accounts amid concerns",
+        "url": "https://www.gurufocus.com/news/9128089/major-banks-limit-ai-access-to-customer-accounts-amid-concerns",
+        "source": "GuruFocus",
+        "published_at": "2026-10-17",
+        "summary": "GuruFocus reports that Citigroup and Bank of America moved on 16 October to restrict AI agents' access to customer accounts amid fund-security concerns \u2014 the first concrete account-access restrictions since the agentic-banking fault line opened this week, when JPMorgan ruled out outside agents and rivals backed the Sierra-Meta Personal Agent Protocol. The pattern is hardening: agent governance is now being enforced at the account boundary, not just debated in strategy decks. For Adam, account-level agent permissions \u2014 what an agent may see, move and execute, and under whose credential \u2014 is becoming a control surface his programmes will have to design for explicitly, product by product.",
+        "hsbc_relevancy": 7,
         "adam_rel": 7,
         "noise_level": 3,
         "category": "AI & Technology",
@@ -76,64 +78,94 @@
     ],
     "Regulatory & Markets": [
       {
-        "id": "art02",
-        "title": "FSB issues sound practices for responsible bank AI, with agentic case studies",
-        "url": "https://www.fsb.org/uploads/P151026-1.pdf",
-        "source": "Financial Stability Board",
-        "published_at": "2026-10-15",
-        "summary": "The Financial Stability Board published 'Sound Practices for Responsible Adoption of Artificial Intelligence' on 15 October, its supervisory baseline for AI in financial services, including agentic-AI case studies: one large international bank built an in-house agentic fraud-detection system in three months that now authors about 75% of card-fraud rule updates \u2014 with human approval of every new rule \u2014 and cut fraud losses more than 20%; another regional bank red-teams agents by attempting to force unauthorised actions. The publication follows the US and European supervisory scrutiny of bank AI we reported yesterday. For Adam, the FSB document is the checklist his programmes will eventually be examined against: human-in-the-loop approval points, red-teaming discipline and auditable agent behaviour are now written into the global supervisory baseline, not best practice.",
+        "id": "art04",
+        "title": "HK Policy Address supplement pledges talks to enhance GBA Cross-boundary Wealth Management Connect",
+        "url": "https://www.policyaddress.gov.hk/2026/eng/supp_pdf.html",
+        "source": "Hong Kong SAR Government",
+        "published_at": "2026-10-16",
+        "summary": "The Hong Kong government's 2026 Policy Address supplement, published 16 October, pledges support for Nansha as a high-standard opening-up gateway and commits the Financial Services and the Treasury Bureau to 'actively discuss with relevant Mainland authorities further enhancements to the Cross-boundary Wealth Management Connect Scheme in the Greater Bay Area'. It is a primary-source policy signal rather than a concluded rule change. For Adam, an enhanced WMC would expand the corridor plumbing that GBA wealth clients depend on \u2014 product shelf, quota and onboarding changes that would land as delivery work on the platforms his programmes run.",
         "hsbc_relevancy": 7,
-        "adam_rel": 8,
+        "adam_rel": 7,
         "noise_level": 3,
         "category": "Regulatory & Markets",
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 7
+      },
+      {
+        "id": "art03",
+        "title": "China proposes export controls on 40 technologies including 23 AI items",
+        "url": "https://www.linkedin.com/pulse/breaking-china-announces-new-technology-export-controls-baokui-guan-x9xzc",
+        "source": "AllBright Law Offices (legal analysis)",
+        "published_at": "2026-10-16",
+        "summary": "China's Ministry of Commerce and Ministry of Science and Technology jointly issued Announcement No. 48 of 2026 on 16 October, proposing to add 40 technologies \u2014 23 of them AI-related \u2014 to the prohibited or restricted export catalogue, with interim pre-export registration effective immediately and a public consultation running 16 October to 15 November. The controls bear directly on cross-border AI technology licensing and in-China technology operations. For Adam, if the catalogue is confirmed, AI models, tooling and know-how moving across the mainland border \u2014 including bank technology delivery in the GBA \u2014 face a new licensing layer that change plans touching China-based AI capability will need to absorb.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 4,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art06",
+        "title": "G7 finance leaders agree to run tabletop exercises on AI-driven cyberattacks",
+        "url": "https://www.explainx.ai/catch-up-on-ai/2026-10-16",
+        "source": "ExplainX AI roundup (G7 Bangkok)",
+        "published_at": "2026-10-16",
+        "summary": "G7 finance ministers and central bank governors, meeting alongside the IMF-World Bank annual meetings in Bangkok, agreed to run tabletop exercises on AI-driven cyberattacks \u2014 a concrete coordination step that follows the FSB's AI sound practices published two days earlier. Supervisory concern about AI-driven disruption is moving from principles to rehearsed response. For Adam, tabletop exercises are the kind of commitment that eventually becomes bank-level drills: resilience and recovery runbooks for AI-amplified cyber events will need to exist, be tested and be evidenced \u2014 delivery work as much as risk work.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 6
       }
     ],
     "HSBC News": [
       {
-        "id": "art03",
-        "title": "HSBC CIB chief Michael Roberts on the bank's AI and quantum computing progress",
-        "url": "https://www.bloomberg.com/news/videos/2026-10-15/hsbc-on-using-ai-and-quantum-computing-video",
-        "source": "Bloomberg",
-        "published_at": "2026-10-15",
-        "summary": "<strong>Michael Roberts, CEO of HSBC Corporate & Institutional Banking</strong>, told Bloomberg on 15 October about implementation progress on AI and quantum computing at the bank, in a week when agentic-AI controls and AI returns dominated peer earnings commentary. The interview is the most senior HSBC voice on AI delivery since the group's wealth and payments units detailed their AI stacks. For Adam, the CIB CEO framing AI as an implementation story \u2014 not an experiment \u2014 is consistent with the posture his own change portfolio is expected to demonstrate: delivery progress, controls in place, value evidenced.",
-        "hsbc_relevancy": 8,
+        "id": "art05",
+        "title": "HSBC Private Bank starts education programme for UHNW heirs",
+        "url": "https://www.wealthbriefing.com/",
+        "source": "WealthBriefing",
+        "published_at": "2026-10-16",
+        "summary": "WealthBriefing reports HSBC Private Bank has launched an education programme for ultra-high-net-worth heirs, developed with a business school and aimed at preparing the next generation of family-wealth owners \u2014 a productised response to the intergenerational wealth transfer the industry has been sizing for years. It follows Hubbis coverage this week of AI-native wealth management aimed at younger inheritors. For Adam, heir education is the human complement to the AI-native servicing stack: client-facing programmes that prepare inheritors are also delivery programmes \u2014 content, events, RM enablement and client-data journeys that have to be built and run, and that reinforce retention where it is most at risk.",
+        "hsbc_relevancy": 7,
         "adam_rel": 6,
-        "noise_level": 3,
+        "noise_level": 2,
         "category": "HSBC News",
+        "is_update": false,
+        "user_relevance": 6
+      }
+    ],
+    "Operations & Change": [
+      {
+        "id": "art07",
+        "title": "Compliance sprawl: financial firms juggle nearly 14 systems, MCO finds",
+        "url": "https://fintech.global/2026/10/16/compliance-sprawl-firms-juggle-nearly-14-systems-mco-finds/",
+        "source": "FinTech Global",
+        "published_at": "2026-10-16",
+        "summary": "FinTech Global reports a MyComplianceOffice survey finding that financial firms now operate nearly 14 separate compliance systems on average \u2014 'compliance sprawl' that adds cost, integration burden and audit friction as regulatory obligations multiply across jurisdictions. Consolidation pressure on compliance technology stacks is rising. For Adam, the survey quantifies a familiar portfolio problem: every additional regulatory platform (information-sharing regimes, financial-crime tooling, AI governance) lands on an already-fragmented stack \u2014 and consolidation or integration cases for compliance technology are change programmes he can expect to be asked to sequence.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 2,
+        "category": "Operations & Change",
         "is_update": false,
         "user_relevance": 6
       }
     ],
     "Private Banking & Wealth": [
       {
-        "id": "art05",
-        "title": "RBC Wealth Management names Daniel Soo head of private banking, Singapore, in RM hiring push",
-        "url": "https://www.rbcwealthmanagement.com/en-asia/newsroom/2026-10-15/rbc-wealth-management-appoints-daniel-soo-as-head-of-private-banking-singapore-and-expands-relationship-manager-team",
-        "source": "RBC Wealth Management",
-        "published_at": "2026-10-15",
-        "summary": "RBC Wealth Management Asia appointed <strong>Daniel Soo, Managing Director and Head of Private Banking, Singapore</strong> \u2014 a veteran of UBS, Credit Suisse and Standard Chartered private banking \u2014 alongside seven relationship-manager hires and appointments across Singapore and Hong Kong drawn from Barclays, UBS, Julius Baer, J. Safra Sarasin, Citi and UOB private banking. The moves signal continued aggressive build-out of RBC's Asia PB franchise by a non-APAC player. For Adam, it is further evidence that senior RM talent in Singapore and Hong Kong is being actively repriced and poached \u2014 retention and capacity plans for his own RM population should assume this level of market aggression through 2027 planning.",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "category": "Private Banking & Wealth",
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "art06",
-        "title": "Nomura International Wealth Management appoints Vijay Solomon MD in Singapore",
-        "url": "https://hubbis.com/news/nomura-international-wealth-management-appoints-vijay-solomon-as-managing-director-in-singapore",
-        "source": "Hubbis",
+        "id": "art08",
+        "title": "MSCI mulls Indonesia index downgrade, market plunges over 10%",
+        "url": "https://www.iseas.edu.sg/library/blog/daily-news-alerts/261016",
+        "source": "Nikkei Asia via ISEAS",
         "published_at": "2026-10-16",
-        "summary": "Nomura International Wealth Management has appointed <strong>Vijay Solomon, Managing Director</strong> in Singapore, as the Japanese private bank continues building its Southeast Asia franchise. The hire follows RBC's Singapore private-banking appointment announced a day earlier, marking a week of international wealth managers reinforcing senior Singapore coverage. For Adam, the back-to-back moves confirm Singapore private banking as an active talent and franchise battleground \u2014 the market where his platform and RM-efficiency investments will be most directly compared against new-entrant energy.",
+        "summary": "Nikkei Asia reports MSCI has opened a consultation on downgrading Indonesia's index classification, prompting a single-day market fall of more than 10% \u2014 a sharp reminder of how index-infrastructure decisions transmit into APAC market stress. For Adam, the episode is less about Indonesia than about transmission speed: index and market-structure events now hit client portfolios and sentiment faster than manual advisory workflows can respond, which is precisely the gap scalable, platform-led advisory and client-communication capabilities are built to close.",
         "hsbc_relevancy": 4,
-        "adam_rel": 5,
-        "noise_level": 2,
+        "adam_rel": 4,
+        "noise_level": 4,
         "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 4
       }
     ]
   },
@@ -141,54 +173,26 @@
     "articles": [
       {
         "id": "art01",
-        "title": "JPMorgan bars outside AI agents from accounts as rivals join Sierra-Meta agent protocol",
-        "url": "https://evidentinsights.com/bankingbrief/ai-manifest-destiny",
-        "source": "Evident AI Banking Brief",
-        "published_at": "2026-10-15",
-        "summary": "During earnings week <strong>Jamie Dimon, CEO of JPMorgan Chase</strong>, said the bank will not allow outside AI agents to access customer accounts with client credentials ('We're not going to allow just any outside agent to come in'), even as JPMorgan pushes its own Smart Cash money-movement tool. Bank of America, BBVA and Wells Fargo took the opposite side, joining the Personal Agent Protocol led by Sierra and Meta to give agents their own verifiable credentials. The same coverage has <strong>Jeremy Barnum, CFO of JPMorgan</strong>, revising the bank's AI-spend estimate down from US$2bn and <strong>Jane Fraser, CEO of Citigroup</strong>, saying AI benefits 'significantly outweigh' investment, citing Devin adoption to cut tech-vendor spend 30%. This is the first open strategic split on agentic finance: walled-garden agents versus interoperable credentialed agents. For Adam, the fault line matters more than the winner \u2014 client-facing agent strategies in his programmes will have to pick a posture on third-party agent access, and the industry's two answers just became public.",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "AI & Technology",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art02",
-        "title": "FSB issues sound practices for responsible bank AI, with agentic case studies",
-        "url": "https://www.fsb.org/uploads/P151026-1.pdf",
-        "source": "Financial Stability Board",
-        "published_at": "2026-10-15",
-        "summary": "The Financial Stability Board published 'Sound Practices for Responsible Adoption of Artificial Intelligence' on 15 October, its supervisory baseline for AI in financial services, including agentic-AI case studies: one large international bank built an in-house agentic fraud-detection system in three months that now authors about 75% of card-fraud rule updates \u2014 with human approval of every new rule \u2014 and cut fraud losses more than 20%; another regional bank red-teams agents by attempting to force unauthorised actions. The publication follows the US and European supervisory scrutiny of bank AI we reported yesterday. For Adam, the FSB document is the checklist his programmes will eventually be examined against: human-in-the-loop approval points, red-teaming discipline and auditable agent behaviour are now written into the global supervisory baseline, not best practice.",
+        "title": "HSBC relocates Hong Kong wealth veteran to lead UAE and Middle East business",
+        "url": "https://citywire.com/asia/news/hsbc-relocates-hong-kong-wealth-veteran-to-lead-uae-and-me-business/a2499980",
+        "source": "Citywire Middle East",
+        "published_at": "2026-10-17",
+        "summary": "Citywire reports that HSBC is relocating a senior Hong Kong wealth manager to head its UAE and Middle East wealth business, continuing the group's regional wealth-footprint expansion. The move follows HSBC's pattern of deepening senior leadership in growth-corridor wealth markets. For Adam, a UAE/ME wealth leadership landing matters to the platform and delivery organisation: coverage-model, product and RM-capability decisions for the Gulf corridor will now flow through a leader built in the Hong Kong business \u2014 a natural counterpart for APAC change and platform work.",
         "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "noise_level": 3,
-        "category": "Regulatory & Markets",
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "art03",
-        "title": "HSBC CIB chief Michael Roberts on the bank's AI and quantum computing progress",
-        "url": "https://www.bloomberg.com/news/videos/2026-10-15/hsbc-on-using-ai-and-quantum-computing-video",
-        "source": "Bloomberg",
-        "published_at": "2026-10-15",
-        "summary": "<strong>Michael Roberts, CEO of HSBC Corporate & Institutional Banking</strong>, told Bloomberg on 15 October about implementation progress on AI and quantum computing at the bank, in a week when agentic-AI controls and AI returns dominated peer earnings commentary. The interview is the most senior HSBC voice on AI delivery since the group's wealth and payments units detailed their AI stacks. For Adam, the CIB CEO framing AI as an implementation story \u2014 not an experiment \u2014 is consistent with the posture his own change portfolio is expected to demonstrate: delivery progress, controls in place, value evidenced.",
-        "hsbc_relevancy": 8,
         "adam_rel": 6,
-        "noise_level": 3,
+        "noise_level": 2,
         "category": "HSBC News",
         "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "art04",
-        "title": "Citi patents point to an AI wealth 'Avatar' that could reshape the advisor role",
-        "url": "https://www.efinancialcareers.com/news/citi-s-new-patents-for-an-ai-wealth-avatar-might-make-its-advisors-nervous",
-        "source": "eFinancialCareers",
-        "published_at": "2026-10-15",
-        "summary": "eFinancialCareers reports that newly published Citi patent filings reveal work on an AI 'Avatar' for wealth management \u2014 a digital agent able to carry elements of the client-advisor relationship, framed as potentially displacing or reshaping the traditional advisor role. The filings land amid a week of agentic-finance headlines from JPMorgan, Wells Fargo and the FSB. For Adam, Citi's patents are an early-warning signal on the wealth side of agentic AI: if a money-centre bank is staking claims on AI delivered advice, the RM role-design, client-coverage and adoption questions in his wealth programmes move from hypothetical to near-term roadmap items.",
-        "hsbc_relevancy": 6,
+        "id": "art02",
+        "title": "Major banks limit AI access to customer accounts amid concerns",
+        "url": "https://www.gurufocus.com/news/9128089/major-banks-limit-ai-access-to-customer-accounts-amid-concerns",
+        "source": "GuruFocus",
+        "published_at": "2026-10-17",
+        "summary": "GuruFocus reports that Citigroup and Bank of America moved on 16 October to restrict AI agents' access to customer accounts amid fund-security concerns \u2014 the first concrete account-access restrictions since the agentic-banking fault line opened this week, when JPMorgan ruled out outside agents and rivals backed the Sierra-Meta Personal Agent Protocol. The pattern is hardening: agent governance is now being enforced at the account boundary, not just debated in strategy decks. For Adam, account-level agent permissions \u2014 what an agent may see, move and execute, and under whose credential \u2014 is becoming a control surface his programmes will have to design for explicitly, product by product.",
+        "hsbc_relevancy": 7,
         "adam_rel": 7,
         "noise_level": 3,
         "category": "AI & Technology",
@@ -196,38 +200,96 @@
         "user_relevance": 7
       },
       {
+        "id": "art03",
+        "title": "China proposes export controls on 40 technologies including 23 AI items",
+        "url": "https://www.linkedin.com/pulse/breaking-china-announces-new-technology-export-controls-baokui-guan-x9xzc",
+        "source": "AllBright Law Offices (legal analysis)",
+        "published_at": "2026-10-16",
+        "summary": "China's Ministry of Commerce and Ministry of Science and Technology jointly issued Announcement No. 48 of 2026 on 16 October, proposing to add 40 technologies \u2014 23 of them AI-related \u2014 to the prohibited or restricted export catalogue, with interim pre-export registration effective immediately and a public consultation running 16 October to 15 November. The controls bear directly on cross-border AI technology licensing and in-China technology operations. For Adam, if the catalogue is confirmed, AI models, tooling and know-how moving across the mainland border \u2014 including bank technology delivery in the GBA \u2014 face a new licensing layer that change plans touching China-based AI capability will need to absorb.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 4,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art04",
+        "title": "HK Policy Address supplement pledges talks to enhance GBA Cross-boundary Wealth Management Connect",
+        "url": "https://www.policyaddress.gov.hk/2026/eng/supp_pdf.html",
+        "source": "Hong Kong SAR Government",
+        "published_at": "2026-10-16",
+        "summary": "The Hong Kong government's 2026 Policy Address supplement, published 16 October, pledges support for Nansha as a high-standard opening-up gateway and commits the Financial Services and the Treasury Bureau to 'actively discuss with relevant Mainland authorities further enhancements to the Cross-boundary Wealth Management Connect Scheme in the Greater Bay Area'. It is a primary-source policy signal rather than a concluded rule change. For Adam, an enhanced WMC would expand the corridor plumbing that GBA wealth clients depend on \u2014 product shelf, quota and onboarding changes that would land as delivery work on the platforms his programmes run.",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
         "id": "art05",
-        "title": "RBC Wealth Management names Daniel Soo head of private banking, Singapore, in RM hiring push",
-        "url": "https://www.rbcwealthmanagement.com/en-asia/newsroom/2026-10-15/rbc-wealth-management-appoints-daniel-soo-as-head-of-private-banking-singapore-and-expands-relationship-manager-team",
-        "source": "RBC Wealth Management",
-        "published_at": "2026-10-15",
-        "summary": "RBC Wealth Management Asia appointed <strong>Daniel Soo, Managing Director and Head of Private Banking, Singapore</strong> \u2014 a veteran of UBS, Credit Suisse and Standard Chartered private banking \u2014 alongside seven relationship-manager hires and appointments across Singapore and Hong Kong drawn from Barclays, UBS, Julius Baer, J. Safra Sarasin, Citi and UOB private banking. The moves signal continued aggressive build-out of RBC's Asia PB franchise by a non-APAC player. For Adam, it is further evidence that senior RM talent in Singapore and Hong Kong is being actively repriced and poached \u2014 retention and capacity plans for his own RM population should assume this level of market aggression through 2027 planning.",
-        "hsbc_relevancy": 5,
+        "title": "HSBC Private Bank starts education programme for UHNW heirs",
+        "url": "https://www.wealthbriefing.com/",
+        "source": "WealthBriefing",
+        "published_at": "2026-10-16",
+        "summary": "WealthBriefing reports HSBC Private Bank has launched an education programme for ultra-high-net-worth heirs, developed with a business school and aimed at preparing the next generation of family-wealth owners \u2014 a productised response to the intergenerational wealth transfer the industry has been sizing for years. It follows Hubbis coverage this week of AI-native wealth management aimed at younger inheritors. For Adam, heir education is the human complement to the AI-native servicing stack: client-facing programmes that prepare inheritors are also delivery programmes \u2014 content, events, RM enablement and client-data journeys that have to be built and run, and that reinforce retention where it is most at risk.",
+        "hsbc_relevancy": 7,
         "adam_rel": 6,
         "noise_level": 2,
-        "category": "Private Banking & Wealth",
+        "category": "HSBC News",
         "is_update": false,
         "user_relevance": 6
       },
       {
         "id": "art06",
-        "title": "Nomura International Wealth Management appoints Vijay Solomon MD in Singapore",
-        "url": "https://hubbis.com/news/nomura-international-wealth-management-appoints-vijay-solomon-as-managing-director-in-singapore",
-        "source": "Hubbis",
+        "title": "G7 finance leaders agree to run tabletop exercises on AI-driven cyberattacks",
+        "url": "https://www.explainx.ai/catch-up-on-ai/2026-10-16",
+        "source": "ExplainX AI roundup (G7 Bangkok)",
         "published_at": "2026-10-16",
-        "summary": "Nomura International Wealth Management has appointed <strong>Vijay Solomon, Managing Director</strong> in Singapore, as the Japanese private bank continues building its Southeast Asia franchise. The hire follows RBC's Singapore private-banking appointment announced a day earlier, marking a week of international wealth managers reinforcing senior Singapore coverage. For Adam, the back-to-back moves confirm Singapore private banking as an active talent and franchise battleground \u2014 the market where his platform and RM-efficiency investments will be most directly compared against new-entrant energy.",
+        "summary": "G7 finance ministers and central bank governors, meeting alongside the IMF-World Bank annual meetings in Bangkok, agreed to run tabletop exercises on AI-driven cyberattacks \u2014 a concrete coordination step that follows the FSB's AI sound practices published two days earlier. Supervisory concern about AI-driven disruption is moving from principles to rehearsed response. For Adam, tabletop exercises are the kind of commitment that eventually becomes bank-level drills: resilience and recovery runbooks for AI-amplified cyber events will need to exist, be tested and be evidenced \u2014 delivery work as much as risk work.",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "category": "Regulatory & Markets",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art07",
+        "title": "Compliance sprawl: financial firms juggle nearly 14 systems, MCO finds",
+        "url": "https://fintech.global/2026/10/16/compliance-sprawl-firms-juggle-nearly-14-systems-mco-finds/",
+        "source": "FinTech Global",
+        "published_at": "2026-10-16",
+        "summary": "FinTech Global reports a MyComplianceOffice survey finding that financial firms now operate nearly 14 separate compliance systems on average \u2014 'compliance sprawl' that adds cost, integration burden and audit friction as regulatory obligations multiply across jurisdictions. Consolidation pressure on compliance technology stacks is rising. For Adam, the survey quantifies a familiar portfolio problem: every additional regulatory platform (information-sharing regimes, financial-crime tooling, AI governance) lands on an already-fragmented stack \u2014 and consolidation or integration cases for compliance technology are change programmes he can expect to be asked to sequence.",
         "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "adam_rel": 6,
         "noise_level": 2,
+        "category": "Operations & Change",
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "art08",
+        "title": "MSCI mulls Indonesia index downgrade, market plunges over 10%",
+        "url": "https://www.iseas.edu.sg/library/blog/daily-news-alerts/261016",
+        "source": "Nikkei Asia via ISEAS",
+        "published_at": "2026-10-16",
+        "summary": "Nikkei Asia reports MSCI has opened a consultation on downgrading Indonesia's index classification, prompting a single-day market fall of more than 10% \u2014 a sharp reminder of how index-infrastructure decisions transmit into APAC market stress. For Adam, the episode is less about Indonesia than about transmission speed: index and market-structure events now hit client portfolios and sentiment faster than manual advisory workflows can respond, which is precisely the gap scalable, platform-led advisory and client-communication capabilities are built to close.",
+        "hsbc_relevancy": 4,
+        "adam_rel": 4,
+        "noise_level": 4,
         "category": "Private Banking & Wealth",
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 4
       }
     ],
     "categories": {
+      "On Adam's Desk": "#be123c",
       "AI & Technology": "#6366f1",
       "Regulatory & Markets": "#d97706",
       "HSBC News": "#dc2626",
+      "Operations & Change": "#7c3aed",
       "Private Banking & Wealth": "#059669"
     }
   }
