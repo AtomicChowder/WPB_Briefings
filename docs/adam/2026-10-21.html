@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Wednesday, 21 October 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Wednesday, 21 October 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-10-20.html">‹ 20 Oct 2026</a>
+    
+    <span class="nav-current">Wednesday, 21 October 2026</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">8 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Bloomberg builds the governed MCP layer — agentic AI&#39;s data boundary is becoming a product category</h3>
+          <p class="tp-context">Bloomberg has launched Enterprise MCP, letting clients' AI agents pull licensed data across 100+ million securities and 50,000+ fields through the Model Context Protocol, with entitlement validation, tool-level limits and audit-friendly workflow skills — the same week the industry debated Schwab and JPMorgan's read-only agent restrictions that we covered yesterday. The signal: the market is converging on governed, entitlement-checked agent access as the sanctioned pattern, and the data vendors who own that boundary will set its terms. For Adam, this is the reference architecture for 'what may an AI agent touch' inside a bank — read yesterday's agent-blocking story as demand, and Bloomberg's move as the supply-side answer; his platform and data-governance workstreams will be asked to pick a side of this pattern.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://cfotech.co.uk/story/bloomberg-launches-enterprise-mcp-for-ai-data-access-2b30df70-9f5e-4dd1-b66a-5bbd3a1f7661" target="_blank" rel="noopener" class="tp-source-link" title="Bloomberg launches Enterprise MCP for AI data access — CFOtech UK">Bloomberg launches Enterprise MCP for AI data access — CFOtech UK</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Hong Kong&#39;s earnings season confirms it: wealth flows are now the franchise engine — StanChart HK affluent revenue +28%, BEA private-banking clients +40%</h3>
+          <p class="tp-context">TAB Insights' read of Hong Kong banks' results shows the post-rate-cut franchise pivot in hard numbers: Standard Chartered Hong Kong grew profit 13.2% with affluent-client revenue up 28% and cross-border corporate and investment banking up 16%; BOCHK grew AUM over 10%; Bank of East Asia doubled discretionary portfolio assets and added 40% more private-banking customers, more than half from affluent Chinese clients. For Adam, these are the benchmarks his own WPB Hong Kong transformation will be measured against — the growth is real, it is concentrated exactly in the affluent and cross-border segments his change portfolio serves, and competitors are already converting it into fee income while margin-driven models stall.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://transactionfinance.tabinsights.com/article/hong-kong-banks-turn-wealth-and-client-flows-into-the-next-earnings-engine" target="_blank" rel="noopener" class="tp-source-link" title="Hong Kong banks turn wealth and client flows into the next earnings engine — TAB Insights">Hong Kong banks turn wealth and client flows into the next earnings engine — TAB Insights</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Singapore wealth talent war sharpens: Deutsche poaches Bank of Singapore&#39;s managed-solutions chief — managed-investment specialists are the scarcest asset in the market</h3>
+          <p class="tp-context">Deutsche Bank has hired the head of Bank of Singapore's managed-solutions advisory unit to run managed investments for emerging markets, Citywire Asia reports — the latest in a quarter-long series of senior Singapore wealth moves spanning RBC, Julius Baer and Citi. The pattern matters more than the single hire: as every regional private bank pivots to fee-based managed books (BNP Paribas WM and Indosuez both confirmed their DPM-led strategies this week), the people who can run managed-solutions operating models have become the market's scarcest and most-poached profile. For Adam, this is the human-capital edge of the same operating-model question his portfolio carries — retention and succession for managed-investment expertise inside a market where competitors are paying up for it.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://citywire.com/asia/news/deutsche-bank-recruits-bank-of-singapores-managed-solutions-advisory-head/a2501456" target="_blank" rel="noopener" class="tp-source-link" title="Deutsche Bank recruits Bank of Singapore&#39;s managed-solutions advisory head — Citywire Asia">Deutsche Bank recruits Bank of Singapore&#39;s managed-solutions advisory head — Citywire Asia</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (8)</button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (3)
+      </button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
+        Private Banking &amp; Wealth (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (2)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art01" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://cfotech.co.uk/story/bloomberg-launches-enterprise-mcp-for-ai-data-access-2b30df70-9f5e-4dd1-b66a-5bbd3a1f7661" target="_blank" rel="noopener">Bloomberg launches Enterprise MCP to connect licensed data to AI agents</a>
+          </div>
+          <p class="article-summary">Bloomberg has launched Enterprise MCP, an access layer over its Data Licence Plus service that lets clients' AI agents retrieve licensed market and reference data — more than 100 million securities and over 50,000 fields — through the Model Context Protocol, with entitlement checks, tool-level limits and workflow-specific 'skills' such as point-in-time universe retrieval and sanctions exposure screening. The launch lands in the same week the industry debated agent-blocking (Schwab and JPMorgan restricting AI agents to read-only access) that this briefing covered yesterday: Bloomberg is racing to be the governed data pipe that makes agentic workflows permissible inside banks. For Adam, this is the market building the sanctioned MCP boundary around enterprise data — directly relevant to how a bank decides what AI agents may touch, and a template for governed agent access in wealth and banking platforms.</p>
+          <div class="article-footer">
+            <span class="article-source">CFOtech UK</span>
+            <span>21 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art08" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://wireeast.com/" target="_blank" rel="noopener">PRecious index: 43% of AI answers swap leading banks, single visibility scores fail</a>
+          </div>
+          <p class="article-summary">The PRecious AI Authority Index, testing 11 AI routes including ChatGPT, Gemini, Perplexity, Claude, Kimi and DeepSeek across eight Asian languages and 16 banks (including HSBC, Standard Chartered and Citibank), found 43% of AI answers swap which bank they name as leading — meaning single visibility scores mislead, and banks' AI-era brand presence is fragmented and language-dependent. The study frames AI answers as a new distribution surface for trust: what an LLM says about a bank increasingly shapes client perception before any RM conversation. For Adam, this reframes digital presence as an AI-answerability problem — yet another reason data quality, public evidence and governance of what models can cite matter to a wealth franchise, and a marketing-tech angle that sits adjacent to his platform and data agendas.</p>
+          <div class="article-footer">
+            <span class="article-source">WireEast / PRecious Communications</span>
+            <span>20 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art07" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://ffnews.com/news/uk-wealth-managers-lead-global-ai-charge-but-clients-remain-cautious-995e0fad" target="_blank" rel="noopener">UK wealth managers outpace global peers in AI adoption — Avaloq-tracked survey</a>
+          </div>
+          <p class="article-summary">A UK wealth-management AI survey tracked by FF News finds British wealth managers adopting AI faster than global peers, while clients remain cautious about AI-generated advice — a gap between back-office adoption and front-office trust that echoes the trust-over-technology theme APAC bank leaders voiced this week. The finding aligns with the 'AI supports, not replaces, advice' position taken by BNP Paribas WM's Lalau and with the APAC pattern where bankers cite trust and governance, not cost, as the main AI hurdle. For Adam, the adoption-versus-trust gap is the crux of any wealth-AI rollout: productivity tools clear the bar easily, but client-facing AI needs the governance, explainability and human-oversight scaffolding that his change portfolio is being asked to design.</p>
+          <div class="article-footer">
+            <span class="article-source">FF News</span>
+            <span>20 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art02" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://transactionfinance.tabinsights.com/article/hong-kong-banks-turn-wealth-and-client-flows-into-the-next-earnings-engine" target="_blank" rel="noopener">Hong Kong banks turn wealth and client flows into the next earnings engine</a>
+          </div>
+          <p class="article-summary">TAB Insights reports that Hong Kong banks' latest results show wealth and client-flow revenue models becoming the primary earnings driver: Standard Chartered Hong Kong posted 7.0% revenue and 13.2% profit growth with affluent-client revenue up 28% and cross-border corporate and investment banking revenue up 16%, while BOCHK grew AUM over 10% and Bank of East Asia saw investment-sales income rise 23%, digital revenue up 32%, discretionary portfolio assets more than double and new private-banking customers up 40% — more than half of that growth from affluent Chinese clients. The pattern confirms the post-rate-cut shift we have been tracking: HK franchise value is now concentrated in wealth flows, not net interest margin. For Adam, every one of these figures is a benchmark a WPB Hong Kong transformation portfolio will be measured against — the affluent and cross-border growth StanChart and BEA are posting is precisely the client-flow engine his change agenda is meant to power.</p>
+          <div class="article-footer">
+            <span class="article-source">TAB Insights</span>
+            <span>20 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #059669"></span>
+        Private Banking &amp; Wealth
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art03" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.hubbis.com/article/from-product-selection-to-portfolio-purpose-adrien-lalau-on-bnp-paribas-wealth-management-s-funds-advisory-agenda" target="_blank" rel="noopener">BNP Paribas WM&#39;s Lalau: from product selection to portfolio purpose in funds advisory</a>
+          </div>
+          <p class="article-summary"><strong>Adrien Lalau, Head of Investment Funds Advisory, Asia at BNP Paribas Wealth Management</strong> tells Hubbis the funds-advisory agenda in Asia is shifting from product selection to portfolio purpose: passive strategies have changed fund-selection economics, alternatives have moved into mainstream private-client portfolios, and DPM and CIO-led managed solutions are the growth lever, with AI improving research and portfolio construction while 'trust does not come from an engine'. He also flags next-generation programmes in Singapore, Hong Kong and Bangkok to bring younger family members into investment conversations. The interview is a clean statement of where a top-5 Asian private bank is placing its advisory bets: managed solutions, alternatives access and intergenerational engagement. For Adam, Lalau's framing mirrors the managed-investment and advisory-modernisation themes running through WPB's own platform debates, and the next-gen programme angle connects directly to the succession/wealth-transfer wave we flagged this week.</p>
+          <div class="article-footer">
+            <span class="article-source">Hubbis</span>
+            <span>21 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art04" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 4/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://asianprivatebanker.com/private-banking-wealth-management/indosuez-wm-eyes-bigger-fund-range-as-dpm-posts-double-digit-growth/" target="_blank" rel="noopener">Indosuez WM eyes bigger fund range as DPM posts double-digit growth</a>
+          </div>
+          <p class="article-summary">Indosuez Wealth Management is planning to expand its fund range after discretionary portfolio management posted double-digit growth, according to Asian Private Banker's report — a further sign that DPM and managed-solutions books are the fastest-growing profit pools in Asian private banking. The move follows the same logic as BNP Paribas WM's funds-advisory push and the managed-investment hiring we track across competitors: banks are converting advisory relationships into fee-based managed books at pace. For Adam, Indosuez's DPM growth is another data point that the managed-solutions operating model — product governance, CIO integration, fee architecture — is where private-banking investment priorities are concentrating, which is exactly the delivery surface his wealth-platform change portfolio touches.</p>
+          <div class="article-footer">
+            <span class="article-source">Asian Private Banker</span>
+            <span>20 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art05" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://citywire.com/asia/news/deutsche-bank-recruits-bank-of-singapores-managed-solutions-advisory-head/a2501456" target="_blank" rel="noopener">Deutsche Bank recruits Bank of Singapore&#39;s managed-solutions advisory head for EM managed investments</a>
+          </div>
+          <p class="article-summary">Deutsche Bank has named the head of Bank of Singapore's managed-solutions advisory unit as its new head of managed investments for emerging markets, Citywire Asia reports — a senior poach that moves managed-solutions expertise from one Singapore-based private bank to a global competitor betting on EM wealth flows. The hire follows the pattern of aggressive Singapore wealth-talent moves we have tracked across RBC, Julius Baer and Citi this quarter, and signals Deutsche is building out its managed-investment franchise in Asia. For Adam, it is a concrete marker of the Singapore wealth talent war (managed-solutions specialists are the scarcest profile) and a reminder that the operating-model and retention questions inside his own portfolio sit in the same market where competitors are paying up for exactly this expertise.</p>
+          <div class="article-footer">
+            <span class="article-source">Citywire Asia</span>
+            <span>20 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art06" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 4/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://asianbankingandfinance.net/investment-banking/news/citis-asean-investment-banking-revenue-jumps-35" target="_blank" rel="noopener">Citi&#39;s ASEAN investment banking revenue jumps 35%</a>
+          </div>
+          <p class="article-summary">Citi's ASEAN investment-banking revenue rose 35%, Asian Banking & Finance reports, underscoring how the US bank is monetising its regional network just as rivals including DBS (whose Q3 profit is forecast to fall 3.2% to $2.86 billion on lower interest income) face NIM pressure — a widening divergence between flow-driven and margin-driven ASEAN earnings models. The figure follows Citi's steady series of senior ASEAN wealth and banking hires and its Singapore-anchored regional strategy. For Adam, Citi's ASEAN momentum is the competitive backdrop for any Singapore/ASEAN-facing growth discussion: the region's fee and flow pools are growing even as rate-driven income fades, reinforcing the case that client-flow engines (wealth, cross-border IB) — not balance-sheet spread — are where regional franchises are being won.</p>
+          <div class="article-footer">
+            <span class="article-source">Asian Banking &amp; Finance</span>
+            <span>20 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 20 Oct 2026, 23:08 UTC &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "art01", "title": "Bloomberg launches Enterprise MCP to connect licensed data to AI agents", "url": "https://cfotech.co.uk/story/bloomberg-launches-enterprise-mcp-for-ai-data-access-2b30df70-9f5e-4dd1-b66a-5bbd3a1f7661", "source": "CFOtech UK", "published_at": "2026-10-21", "summary": "Bloomberg has launched Enterprise MCP, an access layer over its Data Licence Plus service that lets clients' AI agents retrieve licensed market and reference data \u2014 more than 100 million securities and over 50,000 fields \u2014 through the Model Context Protocol, with entitlement checks, tool-level limits and workflow-specific 'skills' such as point-in-time universe retrieval and sanctions exposure screening. The launch lands in the same week the industry debated agent-blocking (Schwab and JPMorgan restricting AI agents to read-only access) that this briefing covered yesterday: Bloomberg is racing to be the governed data pipe that makes agentic workflows permissible inside banks. For Adam, this is the market building the sanctioned MCP boundary around enterprise data \u2014 directly relevant to how a bank decides what AI agents may touch, and a template for governed agent access in wealth and banking platforms.", "hsbc_relevancy": 5, "adam_rel": 8, "noise_level": 2, "category": "AI \u0026 Technology", "user_relevance": 8}, {"id": "art02", "title": "Hong Kong banks turn wealth and client flows into the next earnings engine", "url": "https://transactionfinance.tabinsights.com/article/hong-kong-banks-turn-wealth-and-client-flows-into-the-next-earnings-engine", "source": "TAB Insights", "published_at": "2026-10-20", "summary": "TAB Insights reports that Hong Kong banks' latest results show wealth and client-flow revenue models becoming the primary earnings driver: Standard Chartered Hong Kong posted 7.0% revenue and 13.2% profit growth with affluent-client revenue up 28% and cross-border corporate and investment banking revenue up 16%, while BOCHK grew AUM over 10% and Bank of East Asia saw investment-sales income rise 23%, digital revenue up 32%, discretionary portfolio assets more than double and new private-banking customers up 40% \u2014 more than half of that growth from affluent Chinese clients. The pattern confirms the post-rate-cut shift we have been tracking: HK franchise value is now concentrated in wealth flows, not net interest margin. For Adam, every one of these figures is a benchmark a WPB Hong Kong transformation portfolio will be measured against \u2014 the affluent and cross-border growth StanChart and BEA are posting is precisely the client-flow engine his change agenda is meant to power.", "hsbc_relevancy": 7, "adam_rel": 6, "noise_level": 2, "category": "Regulatory \u0026 Markets", "user_relevance": 6}, {"id": "art03", "title": "BNP Paribas WM's Lalau: from product selection to portfolio purpose in funds advisory", "url": "https://www.hubbis.com/article/from-product-selection-to-portfolio-purpose-adrien-lalau-on-bnp-paribas-wealth-management-s-funds-advisory-agenda", "source": "Hubbis", "published_at": "2026-10-21", "summary": "\u003cstrong\u003eAdrien Lalau, Head of Investment Funds Advisory, Asia at BNP Paribas Wealth Management\u003c/strong\u003e tells Hubbis the funds-advisory agenda in Asia is shifting from product selection to portfolio purpose: passive strategies have changed fund-selection economics, alternatives have moved into mainstream private-client portfolios, and DPM and CIO-led managed solutions are the growth lever, with AI improving research and portfolio construction while 'trust does not come from an engine'. He also flags next-generation programmes in Singapore, Hong Kong and Bangkok to bring younger family members into investment conversations. The interview is a clean statement of where a top-5 Asian private bank is placing its advisory bets: managed solutions, alternatives access and intergenerational engagement. For Adam, Lalau's framing mirrors the managed-investment and advisory-modernisation themes running through WPB's own platform debates, and the next-gen programme angle connects directly to the succession/wealth-transfer wave we flagged this week.", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 2, "category": "Private Banking \u0026 Wealth", "user_relevance": 5}, {"id": "art04", "title": "Indosuez WM eyes bigger fund range as DPM posts double-digit growth", "url": "https://asianprivatebanker.com/private-banking-wealth-management/indosuez-wm-eyes-bigger-fund-range-as-dpm-posts-double-digit-growth/", "source": "Asian Private Banker", "published_at": "2026-10-20", "summary": "Indosuez Wealth Management is planning to expand its fund range after discretionary portfolio management posted double-digit growth, according to Asian Private Banker's report \u2014 a further sign that DPM and managed-solutions books are the fastest-growing profit pools in Asian private banking. The move follows the same logic as BNP Paribas WM's funds-advisory push and the managed-investment hiring we track across competitors: banks are converting advisory relationships into fee-based managed books at pace. For Adam, Indosuez's DPM growth is another data point that the managed-solutions operating model \u2014 product governance, CIO integration, fee architecture \u2014 is where private-banking investment priorities are concentrating, which is exactly the delivery surface his wealth-platform change portfolio touches.", "hsbc_relevancy": 4, "adam_rel": 4, "noise_level": 2, "category": "Private Banking \u0026 Wealth", "user_relevance": 4}, {"id": "art05", "title": "Deutsche Bank recruits Bank of Singapore's managed-solutions advisory head for EM managed investments", "url": "https://citywire.com/asia/news/deutsche-bank-recruits-bank-of-singapores-managed-solutions-advisory-head/a2501456", "source": "Citywire Asia", "published_at": "2026-10-20", "summary": "Deutsche Bank has named the head of Bank of Singapore's managed-solutions advisory unit as its new head of managed investments for emerging markets, Citywire Asia reports \u2014 a senior poach that moves managed-solutions expertise from one Singapore-based private bank to a global competitor betting on EM wealth flows. The hire follows the pattern of aggressive Singapore wealth-talent moves we have tracked across RBC, Julius Baer and Citi this quarter, and signals Deutsche is building out its managed-investment franchise in Asia. For Adam, it is a concrete marker of the Singapore wealth talent war (managed-solutions specialists are the scarcest profile) and a reminder that the operating-model and retention questions inside his own portfolio sit in the same market where competitors are paying up for exactly this expertise.", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 2, "category": "Competitor Intelligence", "user_relevance": 5}, {"id": "art06", "title": "Citi's ASEAN investment banking revenue jumps 35%", "url": "https://asianbankingandfinance.net/investment-banking/news/citis-asean-investment-banking-revenue-jumps-35", "source": "Asian Banking \u0026 Finance", "published_at": "2026-10-20", "summary": "Citi's ASEAN investment-banking revenue rose 35%, Asian Banking \u0026 Finance reports, underscoring how the US bank is monetising its regional network just as rivals including DBS (whose Q3 profit is forecast to fall 3.2% to $2.86 billion on lower interest income) face NIM pressure \u2014 a widening divergence between flow-driven and margin-driven ASEAN earnings models. The figure follows Citi's steady series of senior ASEAN wealth and banking hires and its Singapore-anchored regional strategy. For Adam, Citi's ASEAN momentum is the competitive backdrop for any Singapore/ASEAN-facing growth discussion: the region's fee and flow pools are growing even as rate-driven income fades, reinforcing the case that client-flow engines (wealth, cross-border IB) \u2014 not balance-sheet spread \u2014 are where regional franchises are being won.", "hsbc_relevancy": 5, "adam_rel": 4, "noise_level": 2, "category": "Competitor Intelligence", "user_relevance": 4}, {"id": "art07", "title": "UK wealth managers outpace global peers in AI adoption \u2014 Avaloq-tracked survey", "url": "https://ffnews.com/news/uk-wealth-managers-lead-global-ai-charge-but-clients-remain-cautious-995e0fad", "source": "FF News", "published_at": "2026-10-20", "summary": "A UK wealth-management AI survey tracked by FF News finds British wealth managers adopting AI faster than global peers, while clients remain cautious about AI-generated advice \u2014 a gap between back-office adoption and front-office trust that echoes the trust-over-technology theme APAC bank leaders voiced this week. The finding aligns with the 'AI supports, not replaces, advice' position taken by BNP Paribas WM's Lalau and with the APAC pattern where bankers cite trust and governance, not cost, as the main AI hurdle. For Adam, the adoption-versus-trust gap is the crux of any wealth-AI rollout: productivity tools clear the bar easily, but client-facing AI needs the governance, explainability and human-oversight scaffolding that his change portfolio is being asked to design.", "hsbc_relevancy": 4, "adam_rel": 5, "noise_level": 3, "category": "AI \u0026 Technology", "user_relevance": 5}, {"id": "art08", "title": "PRecious index: 43% of AI answers swap leading banks, single visibility scores fail", "url": "https://wireeast.com/", "source": "WireEast / PRecious Communications", "published_at": "2026-10-20", "summary": "The PRecious AI Authority Index, testing 11 AI routes including ChatGPT, Gemini, Perplexity, Claude, Kimi and DeepSeek across eight Asian languages and 16 banks (including HSBC, Standard Chartered and Citibank), found 43% of AI answers swap which bank they name as leading \u2014 meaning single visibility scores mislead, and banks' AI-era brand presence is fragmented and language-dependent. The study frames AI answers as a new distribution surface for trust: what an LLM says about a bank increasingly shapes client perception before any RM conversation. For Adam, this reframes digital presence as an AI-answerability problem \u2014 yet another reason data quality, public evidence and governance of what models can cite matter to a wealth franchise, and a marketing-tech angle that sits adjacent to his platform and data agendas.", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 3, "category": "AI \u0026 Technology", "user_relevance": 5}], "categories": {"AI \u0026 Technology": "#6366f1", "Regulatory \u0026 Markets": "#d97706", "Private Banking \u0026 Wealth": "#059669", "Competitor Intelligence": "#0891b2"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
