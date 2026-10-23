@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Saturday, 24 October 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Saturday, 24 October 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-10-22.html">‹ 22 Oct 2026</a>
+    
+    <span class="nav-current">Saturday, 24 October 2026</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">7 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">RedCoin is live: HSBC puts a regulated HKD stablecoin into 3.3 million PayMe wallets — and tokenised funds are next</h3>
+          <p class="tp-context">HSBC flipped the switch on RedCoin on Friday 23 October, rolling its Hong Kong dollar-backed stablecoin out to PayMe's 3.3 million users for P2P transfers and merchant payments, with <strong>Lawrence Li, Head of PayMe at HSBC</strong> framing phase one as a reliability-and-trust build. The strategic payload is the announced year-end link to tokenised money-market funds from HK$100 inside the HSBC app — the point where a payments token becomes an investment rail. As one of only two HKMA-licensed issuers, HSBC is defining what a bank-issued retail stablecoin looks like in a regulated market. For Adam, this is the most concrete tokenisation milestone his change portfolio has a live dependency on: app integration, fund-access workflows and the operating model around them will land on platform teams he stewards, and the launch gives him an in-house reference for every tokenised-asset conversation.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://investinglive.com/cryptocurrency/hsbc-s-redcoin-stablecoin-goes-live-in-hong-kong-what-the-launch-answers-and-what-it-still-doesn-t/" target="_blank" rel="noopener" class="tp-source-link" title="HSBC&#39;s RedCoin stablecoin goes live in Hong Kong — investingLive">HSBC&#39;s RedCoin stablecoin goes live in Hong Kong — investingLive</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Fitch lands a verdict on AI and wealth: disruption risk is &#39;moderate&#39; — the model-upgrade case beats the disruption-defence case</h3>
+          <p class="tp-context">Fitch Ratings assesses that AI-enabled tools pose only moderate disruption risk to wealth managers and retail banks, capable of automating investment advice, portfolio construction, research support and advisory execution without disintermediating incumbent franchises near-term. The call cuts across this week's louder signals — banks racing to open services to client AI agents, agentic fintechs raising capital — and effectively prices the doomsday scenario out of the base case. For Adam, the agency framing is ammunition for how he sequences his AI change portfolio: it argues for investment in advisory-model upgrade (copilots, agent-access rails, RM workflow redesign) rather than defensive spend, and it is an external, board-credible authority he can cite when wealth-AI business cases face budget scrutiny.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.investmentnews.com/transformation/ai-poses-moderate-disruption-risk-to-wealth-managers-and-retail-banks-fitch-says/268717" target="_blank" rel="noopener" class="tp-source-link" title="AI poses moderate disruption risk to wealth managers — Fitch via InvestmentNews">AI poses moderate disruption risk to wealth managers — Fitch via InvestmentNews</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">HSBC&#39;s Dubai summit makes it official — family offices now dominate UAE private banking, and the servicing model must flex</h3>
+          <p class="tp-context">At its UAE Wealth Investment Summit, HSBC signalled that family offices and institutional wealth now constitute most of the UAE private-banking client base — the demand-side follow-through to the senior UAE leadership appointment we covered this week. Gulf books increasingly mean multi-entity family structures, cross-border structuring and governance-led advisory rather than classic individual HNW coverage. This one touches the live uae thread directly: the operating-model question is what his platform and change streams must answer — which credit, servicing and advisory workflows flex for family-office clients, and how fast.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://gulfnews.com/business/hsbc-uae-wealth-investment-summit-2026-live-from-dubai-1.500719264" target="_blank" rel="noopener" class="tp-source-link" title="HSBC UAE Wealth Investment Summit 2026 — Gulf News">HSBC UAE Wealth Investment Summit 2026 — Gulf News</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (7)</button>
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
+        Private Banking &amp; Wealth (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (2)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art01" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 9/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://investinglive.com/cryptocurrency/hsbc-s-redcoin-stablecoin-goes-live-in-hong-kong-what-the-launch-answers-and-what-it-still-doesn-t/" target="_blank" rel="noopener">HSBC&#39;s RedCoin goes live: HKD stablecoin rolls out to 3.3 million PayMe users</a>
+          </div>
+          <p class="article-summary">HSBC began its phased rollout of RedCoin (RCHKD), its Hong Kong dollar-backed stablecoin, on Friday 23 October, opening it to the more than 3.3 million users of its PayMe app for person-to-person transfers and payments to over 100,000 merchants, with no minimum balance or extra account-opening step. <strong>Lawrence Li, Head of PayMe at HSBC</strong>, told the South China Morning Post the first phase prioritises reliability and customer trust, and HSBC plans to bring RedCoin to its HK mobile banking app by year-end with tokenised money market fund subscriptions from HK$100. The launch makes HSBC — one of only two HKMA-licensed stablecoin issuers, alongside Anchorpoint Financial's HKDAP — the first major bank to put a regulated retail stablecoin into a mainstream consumer payments app in Hong Kong. For Adam, RedCoin is the flagship live case of HSBC product strategy meeting regulated digital assets: the agentic and tokenisation themes running through this week's briefing now have an in-house retail proof point, and the year-end tokenised-fund link is a build dependency several of his platform streams will be asked to support.</p>
+          <div class="article-footer">
+            <span class="article-source">investingLive (SCMP reporting)</span>
+            <span>23 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art02" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://english.news.cn/20261023/af0dc1262cb6465b86a157d7b041da2e/c.html" target="_blank" rel="noopener">China approves Citigroup&#39;s wholly-owned securities company in financial opening-up push</a>
+          </div>
+          <p class="article-summary">China's securities regulator on Friday approved Citigroup's plan to establish a wholly-owned securities company in the country — Citigroup Securities (China), to be registered in Shanghai with RMB 1.2 billion of registered capital — allowing it to offer equities brokerage, advisory, underwriting and proprietary trading onshore. It becomes the seventh wholly foreign-owned securities firm approved, after J.P. Morgan, Goldman Sachs, Standard Chartered, BNP Paribas, UBS and Mizuho; <strong>Jane Fraser, Chair and Chief Executive Officer of Citi</strong>, said the onshore licence will let Citi do more for clients in China's domestic capital markets, while <strong>Yang Jingdong, Executive Committee Member at Ping An Securities</strong>, said foreign entrants will push domestic firms to accelerate wealth-management and cross-border capabilities. For Adam, each new foreign-owned licence widens the onshore China battlefield for wealth-linked capital-markets business — the capability HSBC's Greater China wealth platform competes on, and a reminder that foreign rivals are buying full-control onshore distribution rather than joint-venture structures.</p>
+          <div class="article-footer">
+            <span class="article-source">Xinhua</span>
+            <span>23 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art04" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.investmentnews.com/transformation/ai-poses-moderate-disruption-risk-to-wealth-managers-and-retail-banks-fitch-says/268717" target="_blank" rel="noopener">Fitch: AI poses only &#39;moderate&#39; disruption risk to wealth managers and retail banks</a>
+          </div>
+          <p class="article-summary">Fitch Ratings says AI-enabled tools pose a moderate — not existential — disruption risk to wealth managers and retail banks, assessing that AI can automate or reduce the cost of investment advice, portfolio construction, research support and advisory execution without disintermediating established franchises near-term. The agency's framing lands amid this week's competing signals: banks racing to expose services to client AI agents on one side, and agentic-fintech challengers raising capital on the other. For Adam, a rating agency's 'moderate' baseline is a useful counterweight in internal AI-investment debates — it validates change portfolios that upgrade the advisory operating model rather than chase disruption defence, and it arms him with an external authority when sequencing wealth-AI build vs buy decisions under budget scrutiny.</p>
+          <div class="article-footer">
+            <span class="article-source">InvestmentNews</span>
+            <span>23 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art05" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.fool.com/earnings/call-transcripts/2026/10/22/ssc-technologies-ssnc-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener">SS&amp;C&#39;s agentic scale-up: 900+ agentic workflows and 200 AI agents inside its wealth-platform business</a>
+          </div>
+          <p class="article-summary">SS&C Technologies' Q3 2026 earnings call revealed the scale of its internal agentic-AI build: over 900 agentic workflows, 200 AI agents and more than 60 digital workers operating in its WorkHQ orchestration environment, with <strong>Bill Stone, Chairman and Chief Executive Officer of SS&C</strong>, and <strong>Rahul Kanwar, President of SS&amp;C</strong>, reporting that Black Diamond — its primary wealth platform — is growing at double digits, and its Calastone acquisition now underpins tokenisation infrastructure for a ~7,000-fund network. The numbers matter less as vendor earnings and more as a calibration point: a major wealth-tech platform operator now runs AI agents at production scale inside its own operating model while selling those same rails to banks. For Adam, SS&C is a live preview of what platform vendors will expect bank change functions to absorb next — agentic workflow orchestration is moving from slideware to contractual roadmap, and wealth-platform RFPs will increasingly assume it.</p>
+          <div class="article-footer">
+            <span class="article-source">Motley Fool (SS&amp;C Q3 earnings call)</span>
+            <span>23 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #059669"></span>
+        Private Banking &amp; Wealth
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art07" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/139515/wealthtech/singapore-wealth-citi-report-ai-hnw/" target="_blank" rel="noopener">Citi Wealth research: Singapore HNW client assets climb 6% to US$1.5 million average</a>
+          </div>
+          <p class="article-summary">Citi Wealth research shows Singapore's high-net-worth clients now hold average assets of US$1.50 million, up 6% in a year, with domestic and cross-border wealth pools expanding steadily — part of the same data set in which Singapore's mutual-fund ownership reached an Asia-high 31%. The figures quantify the pool every regional wealth franchise is fighting for, and pair with this week's talent-war and succession coverage to show demand and capability being built on parallel tracks. For Adam, the 6% asset growth is a planning number: Singapore-book revenue models, RM coverage ratios and platform capacity assumptions in his portfolio should be benchmarked against a growing, not static, per-client asset base — and against Citi publishing the data as a client-acquisition asset in itself.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech News Singapore (Citi Wealth research)</span>
+            <span>23 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art08" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://finance.yahoo.com/economy/policy/articles/historic-apec-finance-ministers-meeting-121500685.html" target="_blank" rel="noopener">APEC Finance Ministers&#39; meeting wraps in Hong Kong — HK positions as &#39;super connector&#39; for regional flows</a>
+          </div>
+          <p class="article-summary">Following the joint statement we covered on 22 October, the first-ever Hong Kong-hosted APEC Finance Ministers' meeting has wrapped, with Financial Secretary Paul Chan telling delegates Hong Kong will act as a 'super connector' and 'super value-adder' for Asia-Pacific trade and investment flows amid geopolitical tension and trade-policy uncertainty. The closing sessions carried forward the statement's themes — digital-infrastructure financing, household fiscal support and regional funds-passport cooperation — from communiqué language into host-market positioning. For Adam, the wrap-up confirms the meeting's practical legacy for HSBC: a Hong Kong government actively marketing the city's financing channels and professional services to APEC economies, which is tailwind context for any WPB platform work that rides Hong Kong's cross-border wealth-connectivity pitch.</p>
+          <div class="article-footer">
+            <span class="article-source">Yahoo Finance</span>
+            <span>23 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art09" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.hk-lawyer.org/content/nansha-flagship-financial-innovation-zone-%E2%80%93-implications-hong-kong-legal-practitioners" target="_blank" rel="noopener">Nansha, one year on: the GBA&#39;s flagship financial-innovation zone in numbers</a>
+          </div>
+          <p class="article-summary">A year after the 'Nansha Financial 30 Measures', the Guangzhou Nansha district has consolidated its position as the Greater Bay Area's premier financial-innovation laboratory: 9,990 free-trade accounts holding RMB 5.6 trillion in cumulative transfers, 13 fully implemented cross-border opening-up pilot measures with 3.9 million transactions totalling US$62.6 billion, and a '3+N' fund system targeting over RMB 30 billion. The Hong Kong Law Society's journal surveys the regulatory architecture for practitioners advising on cross-border funds, fintech licensing and digital assets — including the m-CBDC Bridge and digital RMB pilots that sit beside Nansha's FT-account highway. For Adam, Nansha is the mainland-side counterpart to every cross-border wealth initiative his platform touches: the account plumbing and capital-use pilots described here are the rails that will decide how far GBA wealth-connectivity products can actually scale, and the article is a compact map of that infrastructure as it stands today.</p>
+          <div class="article-footer">
+            <span class="article-source">Hong Kong Lawyer</span>
+            <span>23 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 23 Oct 2026, 23:09 UTC &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "art01", "title": "HSBC's RedCoin goes live: HKD stablecoin rolls out to 3.3 million PayMe users", "url": "https://investinglive.com/cryptocurrency/hsbc-s-redcoin-stablecoin-goes-live-in-hong-kong-what-the-launch-answers-and-what-it-still-doesn-t/", "source": "investingLive (SCMP reporting)", "published_at": "2026-10-23", "summary": "HSBC began its phased rollout of RedCoin (RCHKD), its Hong Kong dollar-backed stablecoin, on Friday 23 October, opening it to the more than 3.3 million users of its PayMe app for person-to-person transfers and payments to over 100,000 merchants, with no minimum balance or extra account-opening step. \u003cstrong\u003eLawrence Li, Head of PayMe at HSBC\u003c/strong\u003e, told the South China Morning Post the first phase prioritises reliability and customer trust, and HSBC plans to bring RedCoin to its HK mobile banking app by year-end with tokenised money market fund subscriptions from HK$100. The launch makes HSBC \u2014 one of only two HKMA-licensed stablecoin issuers, alongside Anchorpoint Financial's HKDAP \u2014 the first major bank to put a regulated retail stablecoin into a mainstream consumer payments app in Hong Kong. For Adam, RedCoin is the flagship live case of HSBC product strategy meeting regulated digital assets: the agentic and tokenisation themes running through this week's briefing now have an in-house retail proof point, and the year-end tokenised-fund link is a build dependency several of his platform streams will be asked to support.", "hsbc_relevancy": 9, "adam_rel": 8, "noise_level": 4, "category": "HSBC News", "user_relevance": 8}, {"id": "art02", "title": "China approves Citigroup's wholly-owned securities company in financial opening-up push", "url": "https://english.news.cn/20261023/af0dc1262cb6465b86a157d7b041da2e/c.html", "source": "Xinhua", "published_at": "2026-10-23", "summary": "China's securities regulator on Friday approved Citigroup's plan to establish a wholly-owned securities company in the country \u2014 Citigroup Securities (China), to be registered in Shanghai with RMB 1.2 billion of registered capital \u2014 allowing it to offer equities brokerage, advisory, underwriting and proprietary trading onshore. It becomes the seventh wholly foreign-owned securities firm approved, after J.P. Morgan, Goldman Sachs, Standard Chartered, BNP Paribas, UBS and Mizuho; \u003cstrong\u003eJane Fraser, Chair and Chief Executive Officer of Citi\u003c/strong\u003e, said the onshore licence will let Citi do more for clients in China's domestic capital markets, while \u003cstrong\u003eYang Jingdong, Executive Committee Member at Ping An Securities\u003c/strong\u003e, said foreign entrants will push domestic firms to accelerate wealth-management and cross-border capabilities. For Adam, each new foreign-owned licence widens the onshore China battlefield for wealth-linked capital-markets business \u2014 the capability HSBC's Greater China wealth platform competes on, and a reminder that foreign rivals are buying full-control onshore distribution rather than joint-venture structures.", "hsbc_relevancy": 6, "adam_rel": 6, "noise_level": 3, "category": "Competitor Intelligence", "user_relevance": 6}, {"id": "art04", "title": "Fitch: AI poses only 'moderate' disruption risk to wealth managers and retail banks", "url": "https://www.investmentnews.com/transformation/ai-poses-moderate-disruption-risk-to-wealth-managers-and-retail-banks-fitch-says/268717", "source": "InvestmentNews", "published_at": "2026-10-23", "summary": "Fitch Ratings says AI-enabled tools pose a moderate \u2014 not existential \u2014 disruption risk to wealth managers and retail banks, assessing that AI can automate or reduce the cost of investment advice, portfolio construction, research support and advisory execution without disintermediating established franchises near-term. The agency's framing lands amid this week's competing signals: banks racing to expose services to client AI agents on one side, and agentic-fintech challengers raising capital on the other. For Adam, a rating agency's 'moderate' baseline is a useful counterweight in internal AI-investment debates \u2014 it validates change portfolios that upgrade the advisory operating model rather than chase disruption defence, and it arms him with an external authority when sequencing wealth-AI build vs buy decisions under budget scrutiny.", "hsbc_relevancy": 6, "adam_rel": 8, "noise_level": 3, "category": "AI \u0026 Technology", "user_relevance": 8}, {"id": "art05", "title": "SS\u0026C's agentic scale-up: 900+ agentic workflows and 200 AI agents inside its wealth-platform business", "url": "https://www.fool.com/earnings/call-transcripts/2026/10/22/ssc-technologies-ssnc-q3-2026-earnings-call-transcript/", "source": "Motley Fool (SS\u0026C Q3 earnings call)", "published_at": "2026-10-23", "summary": "SS\u0026C Technologies' Q3 2026 earnings call revealed the scale of its internal agentic-AI build: over 900 agentic workflows, 200 AI agents and more than 60 digital workers operating in its WorkHQ orchestration environment, with \u003cstrong\u003eBill Stone, Chairman and Chief Executive Officer of SS\u0026C\u003c/strong\u003e, and \u003cstrong\u003eRahul Kanwar, President of SS\u0026amp;C\u003c/strong\u003e, reporting that Black Diamond \u2014 its primary wealth platform \u2014 is growing at double digits, and its Calastone acquisition now underpins tokenisation infrastructure for a ~7,000-fund network. The numbers matter less as vendor earnings and more as a calibration point: a major wealth-tech platform operator now runs AI agents at production scale inside its own operating model while selling those same rails to banks. For Adam, SS\u0026C is a live preview of what platform vendors will expect bank change functions to absorb next \u2014 agentic workflow orchestration is moving from slideware to contractual roadmap, and wealth-platform RFPs will increasingly assume it.", "hsbc_relevancy": 4, "adam_rel": 6, "noise_level": 2, "category": "AI \u0026 Technology", "user_relevance": 6}, {"id": "art07", "title": "Citi Wealth research: Singapore HNW client assets climb 6% to US$1.5 million average", "url": "https://fintechnews.sg/139515/wealthtech/singapore-wealth-citi-report-ai-hnw/", "source": "Fintech News Singapore (Citi Wealth research)", "published_at": "2026-10-23", "summary": "Citi Wealth research shows Singapore's high-net-worth clients now hold average assets of US$1.50 million, up 6% in a year, with domestic and cross-border wealth pools expanding steadily \u2014 part of the same data set in which Singapore's mutual-fund ownership reached an Asia-high 31%. The figures quantify the pool every regional wealth franchise is fighting for, and pair with this week's talent-war and succession coverage to show demand and capability being built on parallel tracks. For Adam, the 6% asset growth is a planning number: Singapore-book revenue models, RM coverage ratios and platform capacity assumptions in his portfolio should be benchmarked against a growing, not static, per-client asset base \u2014 and against Citi publishing the data as a client-acquisition asset in itself.", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 2, "category": "Private Banking \u0026 Wealth", "user_relevance": 6}, {"id": "art08", "title": "APEC Finance Ministers' meeting wraps in Hong Kong \u2014 HK positions as 'super connector' for regional flows", "url": "https://finance.yahoo.com/economy/policy/articles/historic-apec-finance-ministers-meeting-121500685.html", "source": "Yahoo Finance", "published_at": "2026-10-23", "summary": "Following the joint statement we covered on 22 October, the first-ever Hong Kong-hosted APEC Finance Ministers' meeting has wrapped, with Financial Secretary Paul Chan telling delegates Hong Kong will act as a 'super connector' and 'super value-adder' for Asia-Pacific trade and investment flows amid geopolitical tension and trade-policy uncertainty. The closing sessions carried forward the statement's themes \u2014 digital-infrastructure financing, household fiscal support and regional funds-passport cooperation \u2014 from communiqu\u00e9 language into host-market positioning. For Adam, the wrap-up confirms the meeting's practical legacy for HSBC: a Hong Kong government actively marketing the city's financing channels and professional services to APEC economies, which is tailwind context for any WPB platform work that rides Hong Kong's cross-border wealth-connectivity pitch.", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 3, "category": "Regulatory \u0026 Markets", "user_relevance": 6}, {"id": "art09", "title": "Nansha, one year on: the GBA's flagship financial-innovation zone in numbers", "url": "https://www.hk-lawyer.org/content/nansha-flagship-financial-innovation-zone-%E2%80%93-implications-hong-kong-legal-practitioners", "source": "Hong Kong Lawyer", "published_at": "2026-10-23", "summary": "A year after the 'Nansha Financial 30 Measures', the Guangzhou Nansha district has consolidated its position as the Greater Bay Area's premier financial-innovation laboratory: 9,990 free-trade accounts holding RMB 5.6 trillion in cumulative transfers, 13 fully implemented cross-border opening-up pilot measures with 3.9 million transactions totalling US$62.6 billion, and a '3+N' fund system targeting over RMB 30 billion. The Hong Kong Law Society's journal surveys the regulatory architecture for practitioners advising on cross-border funds, fintech licensing and digital assets \u2014 including the m-CBDC Bridge and digital RMB pilots that sit beside Nansha's FT-account highway. For Adam, Nansha is the mainland-side counterpart to every cross-border wealth initiative his platform touches: the account plumbing and capital-use pilots described here are the rails that will decide how far GBA wealth-connectivity products can actually scale, and the article is a compact map of that infrastructure as it stands today.", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 2, "category": "Regulatory \u0026 Markets", "user_relevance": 5}], "categories": {"HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "AI \u0026 Technology": "#6366f1", "Private Banking \u0026 Wealth": "#059669", "Regulatory \u0026 Markets": "#d97706"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
