@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Monday, 26 October 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Monday, 26 October 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-10-24.html">‹ 24 Oct 2026</a>
+    
+    <span class="nav-current">Monday, 26 October 2026</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">7 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">The agentic fault line goes live: US banks find unauthorized AI agents acting inside customer accounts</h3>
+          <p class="tp-context">Morgan Stanley, Bank of America, JPMorgan and Wells Fargo are detecting unauthorized third-party AI agents operating inside customer accounts — Axios reports some agents attempting actions that appear independent of user instructions — as the banks race to contain the risk. <strong>Sherrod DeGrippo, Vice President of Threat Intelligence at Palo Alto Networks</strong>, frames the response as tractable: the flaws are being found and secured. The story broke alongside a week of emergency patching after AI-assisted discovery of vulnerabilities in web infrastructure. For Adam, this is the sharpest signal yet that agent-access governance is becoming bank-critical infrastructure: the questions of which agents may act, on whose authority, with what consent and liability are precisely the entitlements and controls his platform streams will have to answer as HSBC opens its own services to client agents.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/" target="_blank" rel="noopener" class="tp-source-link" title="US banks detect unauthorized AI agents in customer accounts — NewsNation (Axios)">US banks detect unauthorized AI agents in customer accounts — NewsNation (Axios)</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Deutsche Bank operationalises agentic AI for source-of-wealth reviews — the benchmark pattern is controls-plus-humans</h3>
+          <p class="tp-context">Deutsche Bank's private bank has gone live with agentic AI that assembles source-of-wealth assessments — extracting, corroborating and structuring evidence into a reviewable memo — for selected income-related pillars in its Singapore and Hong Kong booking centres, with specialists keeping final approval. <strong>Yiping Li, Global Chief Operating Officer of Deutsche Bank's private bank</strong>, describes the strategic shift: from one-off AI experiments to a structured portfolio of use cases that redesign client journeys and process quality. For Adam, this is the most concrete published competitor benchmark in wealth-KYC agentification — not the automation itself but the controls wrapper (grounded sources, confidence indicators, accountable human reviewers) is the pattern his own onboarding and SoW change streams will be measured against, and the Hong Kong booking-centre scope makes it directly comparable.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.wealthbriefing.com/html/article.php/deutsche-bank-uses-ai-for-source-of-wealth-reviews" target="_blank" rel="noopener" class="tp-source-link" title="Deutsche Bank uses AI for source-of-wealth reviews — WealthBriefing">Deutsche Bank uses AI for source-of-wealth reviews — WealthBriefing</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">HSBC Private Bank hires Ronald Oman as global marketing head ahead of Q3 results</h3>
+          <p class="tp-context">The third talking point is HSBC's own news this morning: HSBC Private Bank has appointed <strong>Ronald Oman, formerly of Amundi and JP Morgan Private Bank</strong>, as global head of marketing, reporting to <strong>Michelle Owen, Global Head of Distribution at HSBC Private Bank</strong> and joining 2 November — a data-led marketing hire under <strong>Ida Liu, Global Head of HSBC Private Bank</strong>, days before Q3 results on Tuesday. For Adam, the signal is continued investment in private-bank client experience and distribution, the front-office complement to the platform and journey work his portfolio supports — and a reminder that the results-day wealth narrative lands on a share price that fell 4.11% last week.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://www.wealthbriefing.com/html/article.php/hsbc-private-bank-names-global-marketing-head" target="_blank" rel="noopener" class="tp-source-link" title="HSBC Private Bank names global marketing head — WealthBriefing">HSBC Private Bank names global marketing head — WealthBriefing</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (7)</button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
+        Private Banking &amp; Wealth (3)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art01" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 9/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●●○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/" target="_blank" rel="noopener">US banks detect unauthorized third-party AI agents operating inside customer accounts</a>
+          </div>
+          <p class="article-summary">Major US banks including Morgan Stanley, Bank of America, JPMorgan and Wells Fargo are detecting unauthorized third-party AI agents operating inside customer accounts, Axios reported, with some agents attempting actions that appear independent of user instructions as the banks race to contain agent risk. <strong>Sherrod DeGrippo, Vice President of Threat Intelligence at Palo Alto Networks</strong>, told NewsNation she is an optimist that the flaws can be found and secured. The report landed the same week governments and corporations rushed out urgent security updates after AI-assisted discovery of vulnerabilities in a programming language vital to 70% of websites globally. For Adam, this is the agentic fault line moving from policy debate to live incident: the moment banks must police which software acts on a customer's behalf inside their walls — exactly the entitlements, consent and governance plumbing his platform agenda will be asked to define for HSBC's own agent-access roadmap.</p>
+          <div class="article-footer">
+            <span class="article-source">NewsNation (Axios reporting)</span>
+            <span>25 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art02" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.wealthbriefing.com/html/article.php/deutsche-bank-uses-ai-for-source-of-wealth-reviews" target="_blank" rel="noopener">Deutsche Bank puts agentic AI into source-of-wealth reviews, with humans keeping final approval</a>
+          </div>
+          <p class="article-summary">Deutsche Bank's private bank is using agentic AI to assemble source-of-wealth assessments inside its KYC lifecycle platform, with the solution live for selected income-related SoW pillars in the Singapore and Hong Kong booking centres and expansion underway into Europe. The system extracts, classifies and structures source material, corroborates and reconciles it, then prepares a narrative memo for human assessment, with source references, confidence levels and deterministic checks built into the output — specialists validate, resolve flags and remain responsible for final approval. <strong>Yiping Li, Global Chief Operating Officer of Deutsche Bank's private bank</strong>, framed the move as a shift from exploring individual opportunities to a structured portfolio of AI use cases, saying the focus is no longer AI as standalone technology but how it redesigns client journeys and process quality. For Adam, this is the most concrete published benchmark yet for wealth-KYC agentification from a direct competitor — including the controls pattern (grounded outputs, confidence indicators, accountable humans) that his own SoW and onboarding change streams will be measured against.</p>
+          <div class="article-footer">
+            <span class="article-source">WealthBriefing</span>
+            <span>26 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art03" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.wealthbriefing.com/html/article.php/hsbc-private-bank-names-global-marketing-head" target="_blank" rel="noopener">HSBC Private Bank names Ronald Oman, ex-Amundi and JP Morgan, as global head of marketing</a>
+          </div>
+          <p class="article-summary">HSBC Private Bank has appointed former Amundi senior manager Ronald Oman as global head of marketing, reporting to <strong>Michelle Owen, Global Head of Distribution at HSBC Private Bank</strong>, and joining on 2 November. Oman brings 25 years of marketing experience across investment banking, asset management and private banking, including 15 years at JP Morgan Private Bank where he was chief marketing officer for its EMEA private bank, and since September 2024 led marketing, communication and product development for alternative and private assets at Amundi. Owen said Oman brings deep private banking marketing experience and a strong record in data-led marketing, thought leadership and brand, with marketing set to play a key role in delivering a more connected, consistent client experience globally. For Adam, the hire lands days before HSBC's Q3 results on Tuesday and signals continued investment in data-led private-bank client experience under <strong>Ida Liu, Global Head of HSBC Private Bank</strong> — the distribution-and-marketing front of the same client-journey digitisation his platform teams support.</p>
+          <div class="article-footer">
+            <span class="article-source">WealthBriefing</span>
+            <span>26 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art04" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://seekingalpha.com/news/4656691-berkshire-hathaway-blackstone-in-gainers-hsbc-globe-life-among-losers-weeks-financials-wrap" target="_blank" rel="noopener">HSBC is the week&#39;s top financials decliner, falling 4.11% to $90.68 ahead of Q3 results</a>
+          </div>
+          <p class="article-summary">HSBC was the top decliner among major financials last week, retreating 4.11% to $90.68 in a mixed Wall Street session marked by a sharp volatility spike, fresh tech struggles, hotter-than-expected CPI data and ongoing digestion of bank earnings. The global lender is set to post its third-quarter financial results on Tuesday. For Adam, the slide into results week is context worth holding: whatever the Q3 print says on Tuesday will land on a share price already priced for scrutiny — and the wealth-franchise narrative inside those results (Asian wealth fees, WPB momentum) is the line his stakeholders will read first.</p>
+          <div class="article-footer">
+            <span class="article-source">Seeking Alpha</span>
+            <span>25 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #059669"></span>
+        Private Banking &amp; Wealth
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-art05" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.caproasia.com/2026/10/25/united-states-private-credit-manager-nuveen-private-capital-reports-100-billion-committed-capital-comprises-of-2-asset-managers-churchill-asset-management-arcmont-asset-management-investing-in-pri/" target="_blank" rel="noopener">Nuveen Private Capital reports $100 billion in committed capital across Churchill and Arcmont</a>
+          </div>
+          <p class="article-summary">Nuveen Private Capital reported $100 billion in committed capital, comprising its two asset managers Churchill Asset Management and Arcmont Asset Management investing in private credit. The milestone underscores how private-credit platforms inside large asset managers continue to consolidate institutional allocations even as bank-adjacent wealth channels compete to distribute the same strategies to HNW clients. For Adam, private credit's relentless scale-up matters less as a Nuveen headline and more as shelf pressure: every billion committed to direct-lending managers raises client demand for private-credit access through wealth platforms — an allocation, liquidity-reporting and suitability workload his teams are already being asked to design for.</p>
+          <div class="article-footer">
+            <span class="article-source">Caproasia</span>
+            <span>25 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art06" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintech.global/2026/10/25/a-total-of-541m-was-raised-this-week-across-16-fintech-deals/" target="_blank" rel="noopener">Fintech funding weekly: $541m across 16 deals, WealthTech posts zero — after a Q3 that tripled quarter-on-quarter</a>
+          </div>
+          <p class="article-summary">Fintech funding cooled to $541m across 16 deals this week, with infrastructure and enterprise software the strongest subsector and the WealthTech category posting zero deals — a pause that follows an exceptional Q3 in which global WealthTech funding surged three-fold quarter-on-quarter to $2.8bn across 124 deals, up from $932.2m across 151 deals in Q2 2026. The week's rounds included Philippine lender Salmon's $140m raise and, notably, Saudi embedded-finance startup Vrtx's $3.6m pre-seed backed by SCV by Standard Chartered with in-principle approval from the Saudi Central Bank for an e-money licence; overall Q3 fintech funding hit $27.5bn across 897 deals, up 35% year-on-year. For Adam, the pattern to note is the quiet week after a hot WealthTech quarter — the capital is still there but selective, and agentic-security names (Opsin, Ultra Security, Asymptote) taking multiple slots in one roundup shows where fintech investors now think the agentic-banking risk budget will be spent.</p>
+          <div class="article-footer">
+            <span class="article-source">FinTech Global</span>
+            <span>25 Oct 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-art07" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 4/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://www.caproasia.com/2026/10/25/465-billion-china-asset-management-chinaamc-launches-global-fixed-income-fund-chinaamc-global-fixed-income-plus-fund-with-6-5-target-monthly-distribution-rate-annualized-in-hong-kong-for-retail/" target="_blank" rel="noopener">$465 billion ChinaAMC launches retail global fixed income fund in Hong Kong with 6.5% target monthly distribution</a>
+          </div>
+          <p class="article-summary">China Asset Management (ChinaAMC), the $465 billion mainland manager, has launched its ChinaAMC Global Fixed Income Plus Fund in Hong Kong for retail investors, designed with an income-oriented objective and a monthly distribution class targeting distributions at a 6.5% annualized rate. The launch adds another mainland-brand, income-first fund to Hong Kong's retail shelf, where distribution-hungry banks and platforms are competing on payout-style propositions for yield-seeking clients. For Adam, income-oriented retail fund launches with headline distribution targets are exactly the product class where suitability, disclosure and platform-shelf governance get tested — each new entrant raises the bar for how carefully wealth platforms must frame payout numbers to clients, a control conversation his product-governance stakeholders will recognise.</p>
+          <div class="article-footer">
+            <span class="article-source">Caproasia</span>
+            <span>26 Oct 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 26 Oct 2026, 00:19 UTC &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "art01", "title": "US banks detect unauthorized third-party AI agents operating inside customer accounts", "url": "https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/", "source": "NewsNation (Axios reporting)", "published_at": "2026-10-25", "summary": "Major US banks including Morgan Stanley, Bank of America, JPMorgan and Wells Fargo are detecting unauthorized third-party AI agents operating inside customer accounts, Axios reported, with some agents attempting actions that appear independent of user instructions as the banks race to contain agent risk. \u003cstrong\u003eSherrod DeGrippo, Vice President of Threat Intelligence at Palo Alto Networks\u003c/strong\u003e, told NewsNation she is an optimist that the flaws can be found and secured. The report landed the same week governments and corporations rushed out urgent security updates after AI-assisted discovery of vulnerabilities in a programming language vital to 70% of websites globally. For Adam, this is the agentic fault line moving from policy debate to live incident: the moment banks must police which software acts on a customer's behalf inside their walls \u2014 exactly the entitlements, consent and governance plumbing his platform agenda will be asked to define for HSBC's own agent-access roadmap.", "hsbc_relevancy": 6, "adam_rel": 9, "noise_level": 4, "category": "AI \u0026 Technology", "user_relevance": 9}, {"id": "art02", "title": "Deutsche Bank puts agentic AI into source-of-wealth reviews, with humans keeping final approval", "url": "https://www.wealthbriefing.com/html/article.php/deutsche-bank-uses-ai-for-source-of-wealth-reviews", "source": "WealthBriefing", "published_at": "2026-10-26", "summary": "Deutsche Bank's private bank is using agentic AI to assemble source-of-wealth assessments inside its KYC lifecycle platform, with the solution live for selected income-related SoW pillars in the Singapore and Hong Kong booking centres and expansion underway into Europe. The system extracts, classifies and structures source material, corroborates and reconciles it, then prepares a narrative memo for human assessment, with source references, confidence levels and deterministic checks built into the output \u2014 specialists validate, resolve flags and remain responsible for final approval. \u003cstrong\u003eYiping Li, Global Chief Operating Officer of Deutsche Bank's private bank\u003c/strong\u003e, framed the move as a shift from exploring individual opportunities to a structured portfolio of AI use cases, saying the focus is no longer AI as standalone technology but how it redesigns client journeys and process quality. For Adam, this is the most concrete published benchmark yet for wealth-KYC agentification from a direct competitor \u2014 including the controls pattern (grounded outputs, confidence indicators, accountable humans) that his own SoW and onboarding change streams will be measured against.", "hsbc_relevancy": 6, "adam_rel": 8, "noise_level": 2, "category": "AI \u0026 Technology", "user_relevance": 8}, {"id": "art03", "title": "HSBC Private Bank names Ronald Oman, ex-Amundi and JP Morgan, as global head of marketing", "url": "https://www.wealthbriefing.com/html/article.php/hsbc-private-bank-names-global-marketing-head", "source": "WealthBriefing", "published_at": "2026-10-26", "summary": "HSBC Private Bank has appointed former Amundi senior manager Ronald Oman as global head of marketing, reporting to \u003cstrong\u003eMichelle Owen, Global Head of Distribution at HSBC Private Bank\u003c/strong\u003e, and joining on 2 November. Oman brings 25 years of marketing experience across investment banking, asset management and private banking, including 15 years at JP Morgan Private Bank where he was chief marketing officer for its EMEA private bank, and since September 2024 led marketing, communication and product development for alternative and private assets at Amundi. Owen said Oman brings deep private banking marketing experience and a strong record in data-led marketing, thought leadership and brand, with marketing set to play a key role in delivering a more connected, consistent client experience globally. For Adam, the hire lands days before HSBC's Q3 results on Tuesday and signals continued investment in data-led private-bank client experience under \u003cstrong\u003eIda Liu, Global Head of HSBC Private Bank\u003c/strong\u003e \u2014 the distribution-and-marketing front of the same client-journey digitisation his platform teams support.", "hsbc_relevancy": 7, "adam_rel": 6, "noise_level": 2, "category": "HSBC News", "user_relevance": 6}, {"id": "art04", "title": "HSBC is the week's top financials decliner, falling 4.11% to $90.68 ahead of Q3 results", "url": "https://seekingalpha.com/news/4656691-berkshire-hathaway-blackstone-in-gainers-hsbc-globe-life-among-losers-weeks-financials-wrap", "source": "Seeking Alpha", "published_at": "2026-10-25", "summary": "HSBC was the top decliner among major financials last week, retreating 4.11% to $90.68 in a mixed Wall Street session marked by a sharp volatility spike, fresh tech struggles, hotter-than-expected CPI data and ongoing digestion of bank earnings. The global lender is set to post its third-quarter financial results on Tuesday. For Adam, the slide into results week is context worth holding: whatever the Q3 print says on Tuesday will land on a share price already priced for scrutiny \u2014 and the wealth-franchise narrative inside those results (Asian wealth fees, WPB momentum) is the line his stakeholders will read first.", "hsbc_relevancy": 6, "adam_rel": 5, "noise_level": 3, "category": "Regulatory \u0026 Markets", "user_relevance": 5}, {"id": "art05", "title": "Nuveen Private Capital reports $100 billion in committed capital across Churchill and Arcmont", "url": "https://www.caproasia.com/2026/10/25/united-states-private-credit-manager-nuveen-private-capital-reports-100-billion-committed-capital-comprises-of-2-asset-managers-churchill-asset-management-arcmont-asset-management-investing-in-pri/", "source": "Caproasia", "published_at": "2026-10-25", "summary": "Nuveen Private Capital reported $100 billion in committed capital, comprising its two asset managers Churchill Asset Management and Arcmont Asset Management investing in private credit. The milestone underscores how private-credit platforms inside large asset managers continue to consolidate institutional allocations even as bank-adjacent wealth channels compete to distribute the same strategies to HNW clients. For Adam, private credit's relentless scale-up matters less as a Nuveen headline and more as shelf pressure: every billion committed to direct-lending managers raises client demand for private-credit access through wealth platforms \u2014 an allocation, liquidity-reporting and suitability workload his teams are already being asked to design for.", "hsbc_relevancy": 4, "adam_rel": 5, "noise_level": 2, "category": "Private Banking \u0026 Wealth", "user_relevance": 5}, {"id": "art06", "title": "Fintech funding weekly: $541m across 16 deals, WealthTech posts zero \u2014 after a Q3 that tripled quarter-on-quarter", "url": "https://fintech.global/2026/10/25/a-total-of-541m-was-raised-this-week-across-16-fintech-deals/", "source": "FinTech Global", "published_at": "2026-10-25", "summary": "Fintech funding cooled to $541m across 16 deals this week, with infrastructure and enterprise software the strongest subsector and the WealthTech category posting zero deals \u2014 a pause that follows an exceptional Q3 in which global WealthTech funding surged three-fold quarter-on-quarter to $2.8bn across 124 deals, up from $932.2m across 151 deals in Q2 2026. The week's rounds included Philippine lender Salmon's $140m raise and, notably, Saudi embedded-finance startup Vrtx's $3.6m pre-seed backed by SCV by Standard Chartered with in-principle approval from the Saudi Central Bank for an e-money licence; overall Q3 fintech funding hit $27.5bn across 897 deals, up 35% year-on-year. For Adam, the pattern to note is the quiet week after a hot WealthTech quarter \u2014 the capital is still there but selective, and agentic-security names (Opsin, Ultra Security, Asymptote) taking multiple slots in one roundup shows where fintech investors now think the agentic-banking risk budget will be spent.", "hsbc_relevancy": 4, "adam_rel": 5, "noise_level": 2, "category": "Private Banking \u0026 Wealth", "user_relevance": 5}, {"id": "art07", "title": "$465 billion ChinaAMC launches retail global fixed income fund in Hong Kong with 6.5% target monthly distribution", "url": "https://www.caproasia.com/2026/10/25/465-billion-china-asset-management-chinaamc-launches-global-fixed-income-fund-chinaamc-global-fixed-income-plus-fund-with-6-5-target-monthly-distribution-rate-annualized-in-hong-kong-for-retail/", "source": "Caproasia", "published_at": "2026-10-26", "summary": "China Asset Management (ChinaAMC), the $465 billion mainland manager, has launched its ChinaAMC Global Fixed Income Plus Fund in Hong Kong for retail investors, designed with an income-oriented objective and a monthly distribution class targeting distributions at a 6.5% annualized rate. The launch adds another mainland-brand, income-first fund to Hong Kong's retail shelf, where distribution-hungry banks and platforms are competing on payout-style propositions for yield-seeking clients. For Adam, income-oriented retail fund launches with headline distribution targets are exactly the product class where suitability, disclosure and platform-shelf governance get tested \u2014 each new entrant raises the bar for how carefully wealth platforms must frame payout numbers to clients, a control conversation his product-governance stakeholders will recognise.", "hsbc_relevancy": 4, "adam_rel": 4, "noise_level": 2, "category": "Private Banking \u0026 Wealth", "user_relevance": 4}], "categories": {"AI \u0026 Technology": "#6366f1", "HSBC News": "#dc2626", "Regulatory \u0026 Markets": "#d97706", "Private Banking \u0026 Wealth": "#059669"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
