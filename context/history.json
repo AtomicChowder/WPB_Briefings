@@ -1,21 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-10-28",
+    "last_updated": "2026-10-29",
     "daily": [
-      {
-        "date": "2026-10-22",
-        "urls": [
-          "https://asianbankingandfinance.net/news/sea-limited-plans-list-fintech-arm-monee",
-          "https://www.americanbanker.com/payments/news/hsbc-develops-new-ai-tools-to-lure-corporate-clients",
-          "https://www.apec.org/meeting-papers/sectoral-ministerial-meetings/finance/2026-apec-finance-ministers'-meeting",
-          "https://www.avaloq.com/insights/blog/from-ai-pilots-to-everyday-practice-in-the-middle-east",
-          "https://www.finews.asia/finance/45146-first-swiss-bitcoin-etf-bit-asset-management-singapore-backed-dominik-oggenfuss-ceo-interview",
-          "https://www.paminsight.com/twn/news/hr-&-talent-management?region=asia-and-pacific",
-          "https://www.symphonyai.com/resources/risk-radar-apac-financial-crime-october-2026?portfolio=financial-services",
-          "https://www.wealthbriefing.com/html/article.php/ing-uses-ai-to-give-relationship-managers-more-time-for-clients-"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-10-24",
         "urls": [
@@ -66,14 +52,19 @@
           "https://fintechnews.sg/139692/fintech/nasdaq-andrew-murray-asia-pacific",
           "https://sg.finance.yahoo.com/news/banks-locking-ai-agents-hashgraph-011423812.html"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-10-29",
+        "urls": [
+          "https://fintechnews.sg/139830/ai/ai-agents-will-enter-finance-gradually-uob-report"
+        ],
         "topics": [
-          "AI infrastructure could become a more distinct lending segment",
-          "Auditability is one proposed response to external-agent risk"
+          "Agentic finance may progress from bounded tasks to more consequential decisions"
         ]
       }
     ],
     "covered_urls": [
-      "https://asianbankingandfinance.net/news/sea-limited-plans-list-fintech-arm-monee",
       "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
       "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
       "https://english.news.cn/20261023/af0dc1262cb6465b86a157d7b041da2e/c.html",
@@ -83,36 +74,29 @@
       "https://fintech.global/2026/10/25/a-total-of-541m-was-raised-this-week-across-16-fintech-deals/",
       "https://fintechnews.sg/139515/wealthtech/singapore-wealth-citi-report-ai-hnw/",
       "https://fintechnews.sg/139692/fintech/nasdaq-andrew-murray-asia-pacific",
+      "https://fintechnews.sg/139830/ai/ai-agents-will-enter-finance-gradually-uob-report",
       "https://gulfnews.com/business/hsbc-uae-wealth-investment-summit-2026-live-from-dubai-1.500719264",
       "https://hubbis.com/article/choosing-the-role-of-people-and-ai-in-wealth-management",
       "https://investinglive.com/cryptocurrency/hsbc-s-redcoin-stablecoin-goes-live-in-hong-kong-what-the-launch-answers-and-what-it-still-doesn-t/",
       "https://seekingalpha.com/news/4656691-berkshire-hathaway-blackstone-in-gainers-hsbc-globe-life-among-losers-weeks-financials-wrap",
       "https://sg.finance.yahoo.com/news/banks-locking-ai-agents-hashgraph-011423812.html",
-      "https://www.americanbanker.com/payments/news/hsbc-develops-new-ai-tools-to-lure-corporate-clients",
-      "https://www.apec.org/meeting-papers/sectoral-ministerial-meetings/finance/2026-apec-finance-ministers'-meeting",
       "https://www.asiaasset.com/ceo/principal-600-billion-aum-asia-pacific-middle-east/",
-      "https://www.avaloq.com/insights/blog/from-ai-pilots-to-everyday-practice-in-the-middle-east",
       "https://www.bankofengland.co.uk/report/2026/artificial-intelligence-in-uk-financial-services-2026",
       "https://www.caproasia.com/2026/10/25/465-billion-china-asset-management-chinaamc-launches-global-fixed-income-fund-chinaamc-global-fixed-income-plus-fund-with-6-5-target-monthly-distribution-rate-annualized-in-hong-kong-for-retail/",
       "https://www.caproasia.com/2026/10/25/united-states-private-credit-manager-nuveen-private-capital-reports-100-billion-committed-capital-comprises-of-2-asset-managers-churchill-asset-management-arcmont-asset-management-investing-in-pri/",
-      "https://www.finews.asia/finance/45146-first-swiss-bitcoin-etf-bit-asset-management-singapore-backed-dominik-oggenfuss-ceo-interview",
       "https://www.fool.com/earnings/call-transcripts/2026/10/22/ssc-technologies-ssnc-q3-2026-earnings-call-transcript/",
       "https://www.globaltimes.cn/page/202610/1372793.shtml",
       "https://www.hk-lawyer.org/content/nansha-flagship-financial-innovation-zone-%E2%80%93-implications-hong-kong-legal-practitioners",
       "https://www.investmentnews.com/transformation/ai-poses-moderate-disruption-risk-to-wealth-managers-and-retail-banks-fitch-says/268717",
       "https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/",
-      "https://www.paminsight.com/twn/news/hr-&-talent-management?region=asia-and-pacific",
-      "https://www.symphonyai.com/resources/risk-radar-apac-financial-crime-october-2026?portfolio=financial-services",
       "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-26-october-2026/article71622964.ece/amp/",
       "https://www.unite.ai/anthropic-files-s-1-registration-statement-for-nasdaq-ipo/",
       "https://www.unlock-bc.com/en/uk-crypto-banking-restrictions-spark-10000-complaints",
       "https://www.wealthbriefing.com/html/article.php/deutsche-bank-uses-ai-for-source-of-wealth-reviews",
-      "https://www.wealthbriefing.com/html/article.php/hsbc-private-bank-names-global-marketing-head",
-      "https://www.wealthbriefing.com/html/article.php/ing-uses-ai-to-give-relationship-managers-more-time-for-clients-"
+      "https://www.wealthbriefing.com/html/article.php/hsbc-private-bank-names-global-marketing-head"
     ],
     "covered_topics": [
-      "AI infrastructure could become a more distinct lending segment",
-      "Auditability is one proposed response to external-agent risk"
+      "Agentic finance may progress from bounded tasks to more consequential decisions"
     ]
   }
 }

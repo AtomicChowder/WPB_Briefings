@@ -3,162 +3,61 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 28 October 2026",
-  "date_str": "2026-10-28",
-  "generated_at": "2026-10-28T07:00:01.596216+08:00",
-  "total_articles": 4,
+  "briefing_date": "Thursday, 29 October 2026",
+  "date_str": "2026-10-29",
+  "generated_at": "2026-10-29T07:00:03.168428+08:00",
+  "total_articles": 1,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "AI infrastructure could become a more distinct lending segment",
-      "context_html": "The ECB reports banks expect gradual, sustained demand growth for financing AI infrastructure, particularly data centres, while lending standards have tightened. This suggests attention to borrower assessment and financing conditions may matter alongside the technology opportunity.",
+      "headline": "Agentic finance may progress from bounded tasks to more consequential decisions",
+      "context_html": "The UOB report’s respondents expect structured machine-to-machine payments and controlled enterprise workflows to precede consumer applications and autonomous credit decisioning. This is a forecast from a small respondent group, but highlights why change plans should distinguish execution of delegated tasks from autonomous financial decision-making.",
       "source_links": [
         {
-          "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
-          "title": "October 2026 euro area bank lending survey"
-        }
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "Auditability is one proposed response to external-agent risk",
-      "context_html": "A Hashgraph executive argues that blockchain records could make agent activity more auditable, while the article describes restrictions at JPMorgan and Charles Schwab on agents moving client money. The argument illustrates a potential control-design discussion, not an established industry solution.",
-      "source_links": [
-        {
-          "url": "https://sg.finance.yahoo.com/news/banks-locking-ai-agents-hashgraph-011423812.html",
-          "title": "Banks are locking AI agents out, Hashgraph CIO Gregg Bell says blockchain is the way back in"
+          "url": "https://fintechnews.sg/139830/ai/ai-agents-will-enter-finance-gradually-uob-report",
+          "title": "AI Agents Will Enter Finance Gradually: UOB Report"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Regulatory & Markets": [
-      {
-        "id": "e94f1826073f1eaf37b6",
-        "title": "October 2026 euro area bank lending survey",
-        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-10-27T01:00:00+01:00",
-        "summary": "The ECB’s October 2026 survey reports that euro area banks tightened lending standards for firms and consumer credit in Q3, while demand for loans declined across segments. Banks also reported an expected gradual, sustained rise in lending demand for AI infrastructure, especially data centres. For banks, this points to a need to track both changing credit conditions and the financing needs and risk assessment of AI infrastructure borrowers.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "0b51209d87f66b5fe98e",
-        "title": "Taking action for nature – investing in economic resilience and prosperity",
-        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-10-26T06:00:00+01:00",
-        "summary": "In a COP17 speech on 26 October, ECB Executive Board member Frank Elderson said ecosystem degradation can affect firms, supply chains and financial stability. He cited ECB analysis that 72% of euro area companies depend on at least one ecosystem service and that 75% of euro area corporate lending is to companies highly dependent on at least one such service. The speech reinforces nature-related dependency as a potential consideration for assessing economic and financial risks.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 3,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      }
-    ],
     "AI & Technology": [
       {
-        "id": "a39d4b04b46ccc11c1d7",
-        "title": "Banks are locking AI agents out, Hashgraph CIO Gregg Bell says blockchain is the way back in",
-        "url": "https://sg.finance.yahoo.com/news/banks-locking-ai-agents-hashgraph-011423812.html",
-        "source": "Yahoo Finance Singapore",
-        "published_at": "2026-10-27T01:14:23+00:00",
-        "summary": "In an interview at Money20/20, Hashgraph CIO Gregg Bell argued that blockchain-based audit trails could help regulators verify AI-agent activity. The article says JPMorgan and Charles Schwab restrict external agents from moving client money, while permitting limited read-only access in some cases. The discussion highlights auditability as one proposed response to concerns about agentic access, but presents an industry argument rather than evidence that banks have adopted the approach.",
+        "id": "d0a59d35df7e1c96a456",
+        "title": "AI Agents Will Enter Finance Gradually: UOB Report",
+        "url": "https://fintechnews.sg/139830/ai/ai-agents-will-enter-finance-gradually-uob-report",
+        "source": "Fintech Singapore",
+        "published_at": "2026-10-28T03:18:56+00:00",
+        "summary": "A UOB report, based on eight respondents across payments, infrastructure and digital assets, describes agentic finance as likely to develop gradually: structured machine-to-machine payments first, followed by enterprise workflows, with consumer uses and autonomous credit decisioning further out. Respondents identify liability, agent identity, interoperability and governance as adoption challenges. For banking change leaders, the report offers a view of potential sequencing and control issues, not evidence of adoption by banks or a settled industry roadmap.",
         "category": "AI & Technology",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
-      }
-    ],
-    "Competitor Intelligence": [
-      {
-        "id": "228808ec01503654cf38",
-        "title": "Nasdaq Appoints Andrew Murray as APAC Financial Technology SVP",
-        "url": "https://fintechnews.sg/139692/fintech/nasdaq-andrew-murray-asia-pacific",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-27T01:50:47+00:00",
-        "summary": "Nasdaq appointed Andrew Murray as APAC Financial Technology SVP, based in Singapore, to strengthen client partnerships and expand its technology business with regional financial institutions. Murray has more than 30 years of experience across banking, payments, trading and capital markets. The appointment reflects continued investment by a financial-technology provider in regional client coverage; the article gives no specific implications for HSBC operations.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 3,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "e94f1826073f1eaf37b6",
-        "title": "October 2026 euro area bank lending survey",
-        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-10-27T01:00:00+01:00",
-        "summary": "The ECB’s October 2026 survey reports that euro area banks tightened lending standards for firms and consumer credit in Q3, while demand for loans declined across segments. Banks also reported an expected gradual, sustained rise in lending demand for AI infrastructure, especially data centres. For banks, this points to a need to track both changing credit conditions and the financing needs and risk assessment of AI infrastructure borrowers.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "a39d4b04b46ccc11c1d7",
-        "title": "Banks are locking AI agents out, Hashgraph CIO Gregg Bell says blockchain is the way back in",
-        "url": "https://sg.finance.yahoo.com/news/banks-locking-ai-agents-hashgraph-011423812.html",
-        "source": "Yahoo Finance Singapore",
-        "published_at": "2026-10-27T01:14:23+00:00",
-        "summary": "In an interview at Money20/20, Hashgraph CIO Gregg Bell argued that blockchain-based audit trails could help regulators verify AI-agent activity. The article says JPMorgan and Charles Schwab restrict external agents from moving client money, while permitting limited read-only access in some cases. The discussion highlights auditability as one proposed response to concerns about agentic access, but presents an industry argument rather than evidence that banks have adopted the approach.",
+        "id": "d0a59d35df7e1c96a456",
+        "title": "AI Agents Will Enter Finance Gradually: UOB Report",
+        "url": "https://fintechnews.sg/139830/ai/ai-agents-will-enter-finance-gradually-uob-report",
+        "source": "Fintech Singapore",
+        "published_at": "2026-10-28T03:18:56+00:00",
+        "summary": "A UOB report, based on eight respondents across payments, infrastructure and digital assets, describes agentic finance as likely to develop gradually: structured machine-to-machine payments first, followed by enterprise workflows, with consumer uses and autonomous credit decisioning further out. Respondents identify liability, agent identity, interoperability and governance as adoption challenges. For banking change leaders, the report offers a view of potential sequencing and control issues, not evidence of adoption by banks or a settled industry roadmap.",
         "category": "AI & Technology",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
-      },
-      {
-        "id": "228808ec01503654cf38",
-        "title": "Nasdaq Appoints Andrew Murray as APAC Financial Technology SVP",
-        "url": "https://fintechnews.sg/139692/fintech/nasdaq-andrew-murray-asia-pacific",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-27T01:50:47+00:00",
-        "summary": "Nasdaq appointed Andrew Murray as APAC Financial Technology SVP, based in Singapore, to strengthen client partnerships and expand its technology business with regional financial institutions. Murray has more than 30 years of experience across banking, payments, trading and capital markets. The appointment reflects continued investment by a financial-technology provider in regional client coverage; the article gives no specific implications for HSBC operations.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 3,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "0b51209d87f66b5fe98e",
-        "title": "Taking action for nature – investing in economic resilience and prosperity",
-        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-10-26T06:00:00+01:00",
-        "summary": "In a COP17 speech on 26 October, ECB Executive Board member Frank Elderson said ecosystem degradation can affect firms, supply chains and financial stability. He cited ECB analysis that 72% of euro area companies depend on at least one ecosystem service and that 75% of euro area corporate lending is to companies highly dependent on at least one such service. The speech reinforces nature-related dependency as a potential consideration for assessing economic and financial risks.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 3,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
       }
     ],
     "categories": {
-      "Regulatory & Markets": "#d97706",
-      "AI & Technology": "#6366f1",
-      "Competitor Intelligence": "#0891b2"
+      "AI & Technology": "#6366f1"
     }
   }
 }
