@@ -6,54 +6,133 @@
   "briefing_date": "Friday, 30 October 2026",
   "date_str": "2026-10-30",
   "generated_at": "2026-10-30T07:00:02.583476+08:00",
-  "total_articles": 4,
+  "total_articles": 8,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "UBS reports broad internal use of AI tools",
-      "context_html": "UBS reported employee use of more than 12,700 personal agents alongside hundreds of AI use cases in production. For banking operations, the figures make it useful to distinguish deployment scale from controlled outcomes: a practical assessment would ask how permissions, monitoring and accountability vary by task. The article gives no detail on those controls or measured benefits.",
+      "headline": "HSBCnio connects treasury channels and controlled AI access",
+      "context_html": "HSBC says HSBCnio combines web and mobile, APIs and read-only access for clients’ AI tools to authorized account and transaction information. For regional delivery, a practical dependency is consistent identity, permissions and data interpretation across channels and client integrations; the article describes capabilities, not rollout results or client uptake. Proposed question: how will access controls and exception handling remain consistent when a client connects its own systems or AI tools?",
       "source_links": [
         {
-          "url": "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
-          "title": "UBS Employees Run 12,700 AI Agents as Bank Automation Accelerates"
+          "url": "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
+          "title": "HSBC debuts AI solution to simplify transaction banking - Asset Publishing and Research"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Singapore payment-scheme governance enters a transition phase",
-      "context_html": "SPaN has appointed its inaugural CEO and plans to begin administering national payment schemes in early 2027, with a stated initial focus on a stable transition from existing administrators. For APAC delivery, continuity depends on clear ownership of scheme operations, handover responsibilities and resilience arrangements; a useful question is how these will be specified for participants. The report does not provide a transition timetable or implementation detail.",
+      "headline": "Coding-agent controls need to test the completed change",
+      "context_html": "In one technologist’s reported experiment, locking a billing-check file did not prevent some agents from changing other code and leaving the bill wrong. For change execution, this suggests file-level restrictions alone may not validate end-to-end behaviour; the author’s proposed independent automated check was not retested in this round. Proposed question: can acceptance controls verify business outcomes, such as calculated totals, independently of the agent and its editable code?",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/139910/payments/derek-chan-singapore-payments-network-ceo",
-          "title": "Singapore Payments Network Names Derek Chan as Inaugural CEO"
-        }
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "Syfe adds senior advisory leadership in Singapore",
-      "context_html": "Syfe appointed Jaclyn Kaur to lead its Singapore wealth advisory team and says technology will support wider access to advice. For wealth delivery, the operating question is how adviser capacity, digital service and suitability controls will be balanced as reach expands. The article reports the stated intent, not evidence of changed service levels or client outcomes.",
-      "source_links": [
-        {
-          "url": "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
-          "title": "Syfe Appoints Jaclyn Kaur as Head of Wealth Advisory in Singapore"
+          "url": "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
+          "title": "A Senior Banking Technologist Locked AI Coding Agents Out of a File. They Broke the Bill Anyway. - AIM Media House"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
+    "HSBC News": [
+      {
+        "id": "dccf44bcbe618801a25b",
+        "title": "HSBC debuts AI solution to simplify transaction banking - Asset Publishing and Research",
+        "url": "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
+        "source": "Asset Publishing and Research (search dated 2026-10-29)",
+        "published_at": "2026-10-29T17:31:39+00:00",
+        "summary": "HSBC announced HSBCnio, an AI-enabled transaction-banking solution for corporate and institutional clients, accessible through web and mobile, APIs and clients’ own AI tools using read-only access to authorized account and transaction data via model context protocol. The report also describes a sandbox, APIs and planned additions including Ask HSBC. The launch points to a connected treasury experience, but the article gives no adoption, performance or implementation results.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "2148ea8f23eac6cc440c",
+        "title": "Shasha Slaughter appointed Vice President of Marketing, South Asia at HSBC Private Bank",
+        "url": "https://exchange4media.com/people-movement-news/shasha-slaughter-appointed-vice-president-of-marketing-south-asia-at-hsbc-private-bank-159650.html",
+        "source": "Exchange4Media",
+        "published_at": "2026-10-29T18:43:23+05:30",
+        "summary": "Exchange4Media reports that Shasha Slaughter became Vice President of Marketing, South Asia, at HSBC Private Bank, effective October 2026, with responsibilities including regional strategy, communications, campaigns and events. The appointment indicates a regional marketing leadership change; the article does not describe any resulting business or operating changes.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "c99da18967717dd1158a",
+        "title": "MAS Tells Banks to Scrutinise Clients Linked to Haze",
+        "url": "https://fintechnews.sg/139995/fintech/mas-banks-haze-environmental-risk",
+        "source": "Fintech Singapore",
+        "published_at": "2026-10-29T08:08:48+00:00",
+        "summary": "MAS reinforced expectations that banks assess environmental risks associated with haze, engage potentially linked customers, and consider measures ranging from revised financing terms to limiting exposure or ending relationships where environmental laws are clearly breached. The guidance makes customer due diligence, escalation and relationship decisions relevant execution areas; the article says the expectations build on existing guidelines and that transition-planning guidelines take effect in September 2027.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 7
+      }
+    ],
     "Competitor Intelligence": [
       {
-        "id": "778fb46f34a36dee0199",
-        "title": "UBS Employees Run 12,700 AI Agents as Bank Automation Accelerates",
-        "url": "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
-        "source": "PYMNTS.com",
-        "published_at": "2026-10-29T15:53:38+00:00",
-        "summary": "UBS reported more than 12,700 personal AI agents in employee use, 608 AI use cases in production and more than 1,090 in development; its STAAT tool has generated more than 30 million insights for financial-adviser teams. These reported figures illustrate the range of employee and adviser-facing AI activity at a competitor, but the article does not detail controls, outcomes or deployment by business area beyond the examples given.",
+        "id": "2603100bfcece514b4db",
+        "title": "Bank of Singapore names two new relationship managers in Dubai - Fund Selector Asia",
+        "url": "https://fundselectorasia.com/bank-of-singapore-names-two-new-relationship-managers-in-dubai-2",
+        "source": "Fund Selector Asia",
+        "published_at": "2026-10-28T05:36:15+00:00",
+        "summary": "Bank of Singapore appointed Yasser Soliman and Amit Bhasin as relationship managers in Dubai, covering high-net-worth and ultra-high-net-worth clients across the Middle East and South Asia. The hires add client-coverage capacity to a franchise that has made other Dubai appointments in 2026; the article does not quantify expected business impact.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 6,
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "b9223e56da7a3cb7b7d9",
+        "title": "IIFL Capital Hires Four Barclays Bankers to Expand Wealth Business",
+        "url": "https://hubbis.com/news/iifl-capital-hires-four-barclays-bankers-to-expand-wealth-business",
+        "source": "Hubbis (search dated 2026-10-29)",
+        "published_at": "2026-10-29T06:14:59+00:00",
+        "summary": "IIFL Capital hired four senior bankers from Barclays to expand its domestic wealth business and Global Indian division. The report says wealth-management and financial-product-distribution revenue rose 12% to INR5.72 billion in FY2026; it does not establish that the hires caused that change. The recruitment signals a competitor’s expansion, with no detail on integration or client-transfer outcomes.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "4239c94b7d246a38b649",
+        "title": "DBS Indonesia and Bank Central Asia Deny Merger Rumours",
+        "url": "https://fintechnews.sg/139992/indonesia/dbs-bca-merger",
+        "source": "Fintech Singapore",
+        "published_at": "2026-10-29T07:33:09+00:00",
+        "summary": "DBS Indonesia and BCA representatives denied social-media claims that the banks could merge through a share exchange. BCA shares rose 7.65% on October 28, but the report says the effect of the speculation on the share price is unclear. The denials may help distinguish market rumour from confirmed corporate action; the article provides no evidence of a proposed transaction.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 4,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 3
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "0489a07d490d79037484",
+        "title": "A Senior Banking Technologist Locked AI Coding Agents Out of a File. They Broke the Bill Anyway. - AIM Media House",
+        "url": "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
+        "source": "AIM Media House",
+        "published_at": "2026-10-28T05:15:40.424000+00:00",
+        "summary": "A banking technologist reported October tests of 11 coding agents from eight companies: although a locked billing-check file was not changed, agents sometimes altered other code in ways that left the bill wrong. The author argues for automated checks of the finished change that agents cannot see or edit, but notes that this final-check approach was not retested in this round; the results are the author’s experiments, not broad evidence of production performance.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 3,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
@@ -62,63 +141,45 @@
     ],
     "Private Banking & Wealth": [
       {
-        "id": "3a27a250caeb229cefc0",
-        "title": "Syfe Appoints Jaclyn Kaur as Head of Wealth Advisory in Singapore",
-        "url": "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-28T02:31:10+00:00",
-        "summary": "Syfe appointed Jaclyn Kaur as Head of Wealth Advisory in Singapore. The company said she will lead its advisory team and focus on expanding access to advice through technology; the appointment signals a competitor’s investment in combining advisory expertise and digital delivery, though the article provides no results or operating model detail.",
+        "id": "0978b98e14bb20d4dcd9",
+        "title": "What&#x27;s New In Investments, Funds? – Bank Of Singapore - Wealth Briefing Asia",
+        "url": "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Bank-Of-Singapore?id=209224",
+        "source": "Wealth Briefing Asia (search dated 2026-10-29)",
+        "published_at": "2026-10-29T20:35:53+00:00",
+        "summary": "Bank of Singapore closed a limited subscription period for an access fund investing in Keppel Data Centre Fund III, distributed exclusively through the bank; it described the offering as among its most successful closed-ended products in years, without disclosing the amount raised. The offering illustrates private-bank distribution of infrastructure exposure, but the article provides no subscription figures or client-allocation detail.",
         "category": "Private Banking & Wealth",
         "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "AI & Technology": [
-      {
-        "id": "53d750f86ec4972dbdb3",
-        "title": "Meta’s Muse AI Agent Arrives in Singapore With Grab, Shopee and More",
-        "url": "https://fintechnews.sg/139860/ai/meta-muse-ai-agent-singapore",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-28T02:52:35+00:00",
-        "summary": "Meta launched its Muse personal AI agent in Singapore, with integrations for selected email, calendar, social, shopping and travel services. Meta says users control connected-service access and must approve sensitive actions such as purchases or sending emails; for banking change leaders, this raises practical questions about consent, delegated access and customer expectations, but the article does not describe banking integrations.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 3,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 5
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "0e6deb8d3cd5f20008bf",
-        "title": "Singapore Payments Network Names Derek Chan as Inaugural CEO",
-        "url": "https://fintechnews.sg/139910/payments/derek-chan-singapore-payments-network-ceo",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-28T08:48:14+00:00",
-        "summary": "The Singapore Payments Network appointed Derek Chan as its inaugural CEO and formed an 11-member board chaired by MAS Deputy Managing Director Jacqueline Loh. SPaN is expected to administer and govern national payment schemes when it begins operations in early 2027, initially focusing on a stable transition from current administrators; this makes transition governance and operational continuity relevant considerations for participants, although the article gives no detailed migration plan.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 5,
-        "adam_rel": 8,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 8
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "778fb46f34a36dee0199",
-        "title": "UBS Employees Run 12,700 AI Agents as Bank Automation Accelerates",
-        "url": "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
-        "source": "PYMNTS.com",
-        "published_at": "2026-10-29T15:53:38+00:00",
-        "summary": "UBS reported more than 12,700 personal AI agents in employee use, 608 AI use cases in production and more than 1,090 in development; its STAAT tool has generated more than 30 million insights for financial-adviser teams. These reported figures illustrate the range of employee and adviser-facing AI activity at a competitor, but the article does not detail controls, outcomes or deployment by business area beyond the examples given.",
-        "category": "Competitor Intelligence",
+        "id": "dccf44bcbe618801a25b",
+        "title": "HSBC debuts AI solution to simplify transaction banking - Asset Publishing and Research",
+        "url": "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
+        "source": "Asset Publishing and Research (search dated 2026-10-29)",
+        "published_at": "2026-10-29T17:31:39+00:00",
+        "summary": "HSBC announced HSBCnio, an AI-enabled transaction-banking solution for corporate and institutional clients, accessible through web and mobile, APIs and clients’ own AI tools using read-only access to authorized account and transaction data via model context protocol. The report also describes a sandbox, APIs and planned additions including Ask HSBC. The launch points to a connected treasury experience, but the article gives no adoption, performance or implementation results.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "c99da18967717dd1158a",
+        "title": "MAS Tells Banks to Scrutinise Clients Linked to Haze",
+        "url": "https://fintechnews.sg/139995/fintech/mas-banks-haze-environmental-risk",
+        "source": "Fintech Singapore",
+        "published_at": "2026-10-29T08:08:48+00:00",
+        "summary": "MAS reinforced expectations that banks assess environmental risks associated with haze, engage potentially linked customers, and consider measures ranging from revised financing terms to limiting exposure or ending relationships where environmental laws are clearly breached. The guidance makes customer due diligence, escalation and relationship decisions relevant execution areas; the article says the expectations build on existing guidelines and that transition-planning guidelines take effect in September 2027.",
+        "category": "Regulatory & Markets",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
         "noise_level": 1,
@@ -126,53 +187,96 @@
         "user_relevance": 7
       },
       {
-        "id": "3a27a250caeb229cefc0",
-        "title": "Syfe Appoints Jaclyn Kaur as Head of Wealth Advisory in Singapore",
-        "url": "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-28T02:31:10+00:00",
-        "summary": "Syfe appointed Jaclyn Kaur as Head of Wealth Advisory in Singapore. The company said she will lead its advisory team and focus on expanding access to advice through technology; the appointment signals a competitor’s investment in combining advisory expertise and digital delivery, though the article provides no results or operating model detail.",
-        "category": "Private Banking & Wealth",
+        "id": "2603100bfcece514b4db",
+        "title": "Bank of Singapore names two new relationship managers in Dubai - Fund Selector Asia",
+        "url": "https://fundselectorasia.com/bank-of-singapore-names-two-new-relationship-managers-in-dubai-2",
+        "source": "Fund Selector Asia",
+        "published_at": "2026-10-28T05:36:15+00:00",
+        "summary": "Bank of Singapore appointed Yasser Soliman and Amit Bhasin as relationship managers in Dubai, covering high-net-worth and ultra-high-net-worth clients across the Middle East and South Asia. The hires add client-coverage capacity to a franchise that has made other Dubai appointments in 2026; the article does not quantify expected business impact.",
+        "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "0489a07d490d79037484",
+        "title": "A Senior Banking Technologist Locked AI Coding Agents Out of a File. They Broke the Bill Anyway. - AIM Media House",
+        "url": "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
+        "source": "AIM Media House",
+        "published_at": "2026-10-28T05:15:40.424000+00:00",
+        "summary": "A banking technologist reported October tests of 11 coding agents from eight companies: although a locked billing-check file was not changed, agents sometimes altered other code in ways that left the bill wrong. The author argues for automated checks of the finished change that agents cannot see or edit, but notes that this final-check approach was not retested in this round; the results are the author’s experiments, not broad evidence of production performance.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 3,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
       },
       {
-        "id": "53d750f86ec4972dbdb3",
-        "title": "Meta’s Muse AI Agent Arrives in Singapore With Grab, Shopee and More",
-        "url": "https://fintechnews.sg/139860/ai/meta-muse-ai-agent-singapore",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-28T02:52:35+00:00",
-        "summary": "Meta launched its Muse personal AI agent in Singapore, with integrations for selected email, calendar, social, shopping and travel services. Meta says users control connected-service access and must approve sensitive actions such as purchases or sending emails; for banking change leaders, this raises practical questions about consent, delegated access and customer expectations, but the article does not describe banking integrations.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 3,
+        "id": "0978b98e14bb20d4dcd9",
+        "title": "What&#x27;s New In Investments, Funds? – Bank Of Singapore - Wealth Briefing Asia",
+        "url": "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Bank-Of-Singapore?id=209224",
+        "source": "Wealth Briefing Asia (search dated 2026-10-29)",
+        "published_at": "2026-10-29T20:35:53+00:00",
+        "summary": "Bank of Singapore closed a limited subscription period for an access fund investing in Keppel Data Centre Fund III, distributed exclusively through the bank; it described the offering as among its most successful closed-ended products in years, without disclosing the amount raised. The offering illustrates private-bank distribution of infrastructure exposure, but the article provides no subscription figures or client-allocation detail.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 5,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 5
       },
       {
-        "id": "0e6deb8d3cd5f20008bf",
-        "title": "Singapore Payments Network Names Derek Chan as Inaugural CEO",
-        "url": "https://fintechnews.sg/139910/payments/derek-chan-singapore-payments-network-ceo",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-28T08:48:14+00:00",
-        "summary": "The Singapore Payments Network appointed Derek Chan as its inaugural CEO and formed an 11-member board chaired by MAS Deputy Managing Director Jacqueline Loh. SPaN is expected to administer and govern national payment schemes when it begins operations in early 2027, initially focusing on a stable transition from current administrators; this makes transition governance and operational continuity relevant considerations for participants, although the article gives no detailed migration plan.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 5,
-        "adam_rel": 8,
+        "id": "2148ea8f23eac6cc440c",
+        "title": "Shasha Slaughter appointed Vice President of Marketing, South Asia at HSBC Private Bank",
+        "url": "https://exchange4media.com/people-movement-news/shasha-slaughter-appointed-vice-president-of-marketing-south-asia-at-hsbc-private-bank-159650.html",
+        "source": "Exchange4Media",
+        "published_at": "2026-10-29T18:43:23+05:30",
+        "summary": "Exchange4Media reports that Shasha Slaughter became Vice President of Marketing, South Asia, at HSBC Private Bank, effective October 2026, with responsibilities including regional strategy, communications, campaigns and events. The appointment indicates a regional marketing leadership change; the article does not describe any resulting business or operating changes.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 4
+      },
+      {
+        "id": "b9223e56da7a3cb7b7d9",
+        "title": "IIFL Capital Hires Four Barclays Bankers to Expand Wealth Business",
+        "url": "https://hubbis.com/news/iifl-capital-hires-four-barclays-bankers-to-expand-wealth-business",
+        "source": "Hubbis (search dated 2026-10-29)",
+        "published_at": "2026-10-29T06:14:59+00:00",
+        "summary": "IIFL Capital hired four senior bankers from Barclays to expand its domestic wealth business and Global Indian division. The report says wealth-management and financial-product-distribution revenue rose 12% to INR5.72 billion in FY2026; it does not establish that the hires caused that change. The recruitment signals a competitor’s expansion, with no detail on integration or client-transfer outcomes.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "4239c94b7d246a38b649",
+        "title": "DBS Indonesia and Bank Central Asia Deny Merger Rumours",
+        "url": "https://fintechnews.sg/139992/indonesia/dbs-bca-merger",
+        "source": "Fintech Singapore",
+        "published_at": "2026-10-29T07:33:09+00:00",
+        "summary": "DBS Indonesia and BCA representatives denied social-media claims that the banks could merge through a share exchange. BCA shares rose 7.65% on October 28, but the report says the effect of the speculation on the share price is unclear. The denials may help distinguish market rumour from confirmed corporate action; the article provides no evidence of a proposed transaction.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 4,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 3
       }
     ],
     "categories": {
+      "HSBC News": "#dc2626",
+      "Regulatory & Markets": "#d97706",
       "Competitor Intelligence": "#0891b2",
-      "Private Banking & Wealth": "#059669",
       "AI & Technology": "#6366f1",
-      "Regulatory & Markets": "#d97706"
+      "Private Banking & Wealth": "#059669"
     }
   }
 }
