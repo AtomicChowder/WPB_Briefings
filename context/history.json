@@ -1,6 +1,6 @@
 {
   "adam": {
-    "last_updated": "2026-10-29",
+    "last_updated": "2026-10-30",
     "daily": [
       {
         "date": "2026-10-24",
@@ -59,8 +59,20 @@
         "urls": [
           "https://fintechnews.sg/139830/ai/ai-agents-will-enter-finance-gradually-uob-report"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-10-30",
+        "urls": [
+          "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
+          "https://fintechnews.sg/139860/ai/meta-muse-ai-agent-singapore",
+          "https://fintechnews.sg/139910/payments/derek-chan-singapore-payments-network-ceo",
+          "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates"
+        ],
         "topics": [
-          "Agentic finance may progress from bounded tasks to more consequential decisions"
+          "UBS reports broad internal use of AI tools",
+          "Singapore payment-scheme governance enters a transition phase",
+          "Syfe adds senior advisory leadership in Singapore"
         ]
       }
     ],
@@ -75,9 +87,13 @@
       "https://fintechnews.sg/139515/wealthtech/singapore-wealth-citi-report-ai-hnw/",
       "https://fintechnews.sg/139692/fintech/nasdaq-andrew-murray-asia-pacific",
       "https://fintechnews.sg/139830/ai/ai-agents-will-enter-finance-gradually-uob-report",
+      "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
+      "https://fintechnews.sg/139860/ai/meta-muse-ai-agent-singapore",
+      "https://fintechnews.sg/139910/payments/derek-chan-singapore-payments-network-ceo",
       "https://gulfnews.com/business/hsbc-uae-wealth-investment-summit-2026-live-from-dubai-1.500719264",
       "https://hubbis.com/article/choosing-the-role-of-people-and-ai-in-wealth-management",
       "https://investinglive.com/cryptocurrency/hsbc-s-redcoin-stablecoin-goes-live-in-hong-kong-what-the-launch-answers-and-what-it-still-doesn-t/",
+      "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
       "https://seekingalpha.com/news/4656691-berkshire-hathaway-blackstone-in-gainers-hsbc-globe-life-among-losers-weeks-financials-wrap",
       "https://sg.finance.yahoo.com/news/banks-locking-ai-agents-hashgraph-011423812.html",
       "https://www.asiaasset.com/ceo/principal-600-billion-aum-asia-pacific-middle-east/",
@@ -96,7 +112,9 @@
       "https://www.wealthbriefing.com/html/article.php/hsbc-private-bank-names-global-marketing-head"
     ],
     "covered_topics": [
-      "Agentic finance may progress from bounded tasks to more consequential decisions"
+      "Singapore payment-scheme governance enters a transition phase",
+      "Syfe adds senior advisory leadership in Singapore",
+      "UBS reports broad internal use of AI tools"
     ]
   }
 }
