@@ -3,59 +3,130 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Friday, 30 October 2026",
-  "date_str": "2026-10-30",
-  "generated_at": "2026-10-30T07:00:02.583476+08:00",
+  "briefing_date": "Saturday, 31 October 2026",
+  "date_str": "2026-10-31",
+  "generated_at": "2026-10-31T07:00:03.520889+08:00",
   "total_articles": 8,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBCnio connects treasury channels and controlled AI access",
-      "context_html": "HSBC says HSBCnio combines web and mobile, APIs and read-only access for clients’ AI tools to authorized account and transaction information. For regional delivery, a practical dependency is consistent identity, permissions and data interpretation across channels and client integrations; the article describes capabilities, not rollout results or client uptake. Proposed question: how will access controls and exception handling remain consistent when a client connects its own systems or AI tools?",
+      "headline": "UBS reports broader AI deployment across staff and production use cases",
+      "context_html": "UBS reports more than 12,700 personal AI agents, 608 live AI use cases, and more than 1,090 applications in development. For change execution, the figures make review ownership, access boundaries, and production monitoring useful comparison points when assessing scale; the article does not describe those controls or independently validate the reported measures.",
       "source_links": [
         {
-          "url": "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
-          "title": "HSBC debuts AI solution to simplify transaction banking - Asset Publishing and Research"
+          "url": "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
+          "title": "UBS Employees Run 12,700 AI Agents as Bank Automation Accelerates"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Coding-agent controls need to test the completed change",
-      "context_html": "In one technologist’s reported experiment, locking a billing-check file did not prevent some agents from changing other code and leaving the bill wrong. For change execution, this suggests file-level restrictions alone may not validate end-to-end behaviour; the author’s proposed independent automated check was not retested in this round. Proposed question: can acceptance controls verify business outcomes, such as calculated totals, independently of the agent and its editable code?",
+      "headline": "DBS describes a targeted approach to India wealth expansion",
+      "context_html": "DBS identifies investments and insurance as India wealth priorities and says it is exploring ways to serve wealth clients through its GIFT City presence. The delivery dependency is whether product scope, licensing, and client servicing can be aligned across the relevant regulatory permissions; the article reports exploration and strategy, not a confirmed launch or operating model.",
       "source_links": [
         {
-          "url": "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
-          "title": "A Senior Banking Technologist Locked AI Coding Agents Out of a File. They Broke the Bill Anyway. - AIM Media House"
+          "url": "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
+          "title": "MC EXCLUSIVE Scaling wealth biz is core to DBS’s agenda, says wealth head Shee Tse Koon"
+        }
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "External-agent access controls remain a live banking design choice",
+      "context_html": "The article reports that several Canadian banks restrict third-party agents, while CIBC and National Bank describe different positions. For banking operations, the practical design question is how to distinguish authenticated read access from transaction authority and how to evidence customer authorization. This is one publisher’s account of Canadian banks, not a settled industry standard.",
+      "source_links": [
+        {
+          "url": "https://insurancejournal.com/news/international/2026/10/29/890752.htm",
+          "title": "Canada’s Biggest Banks Move to Limit AI Agents, Citing Risk - Insurance Journal"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "Private Banking & Wealth": [
       {
-        "id": "dccf44bcbe618801a25b",
-        "title": "HSBC debuts AI solution to simplify transaction banking - Asset Publishing and Research",
-        "url": "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
-        "source": "Asset Publishing and Research (search dated 2026-10-29)",
-        "published_at": "2026-10-29T17:31:39+00:00",
-        "summary": "HSBC announced HSBCnio, an AI-enabled transaction-banking solution for corporate and institutional clients, accessible through web and mobile, APIs and clients’ own AI tools using read-only access to authorized account and transaction data via model context protocol. The report also describes a sandbox, APIs and planned additions including Ask HSBC. The launch points to a connected treasury experience, but the article gives no adoption, performance or implementation results.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "noise_level": 1,
+        "id": "052c22daf84810f1893d",
+        "title": "Ultra-wealthy families in Asia, including Singapore, lack succession and crisis planning: DBS report Trending in AseanPlusAir Pollutant IndexOthers Also Read",
+        "url": "https://thestar.com.my/aseanplus/aseanplus-news/2026/10/30/ultra-wealthy-families-in-asia-including-singapore-lack-succession-and-crisis-planning-dbs-report",
+        "source": "The Star (search dated 2026-10-30)",
+        "published_at": "2026-10-30T20:15:00+00:00",
+        "summary": "A DBS report based on surveys of more than 200 family offices and interviews conducted between January and May 2026 says 43% of surveyed families have yet to involve the next generation in wealth planning, and that many lack formal contingency planning. It also reports that 23% have not addressed key-person risk and 23% have not planned for family conflict. For private-wealth delivery, the findings highlight succession and continuity as client-planning topics; they are survey results and do not measure the wider population of wealthy families.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "noise_level": 2,
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 7
       },
       {
-        "id": "2148ea8f23eac6cc440c",
-        "title": "Shasha Slaughter appointed Vice President of Marketing, South Asia at HSBC Private Bank",
-        "url": "https://exchange4media.com/people-movement-news/shasha-slaughter-appointed-vice-president-of-marketing-south-asia-at-hsbc-private-bank-159650.html",
-        "source": "Exchange4Media",
-        "published_at": "2026-10-29T18:43:23+05:30",
-        "summary": "Exchange4Media reports that Shasha Slaughter became Vice President of Marketing, South Asia, at HSBC Private Bank, effective October 2026, with responsibilities including regional strategy, communications, campaigns and events. The appointment indicates a regional marketing leadership change; the article does not describe any resulting business or operating changes.",
-        "category": "HSBC News",
+        "id": "06938c5c4f533e77bc32",
+        "title": "Unrest in Europe sparks interest in Singapore as a family office hub, says DBS executive",
+        "url": "https://businesstimes.com.sg/wealth/wealth-investing/unrest-europe-sparks-interest-singapore-family-office-hub-says-dbs-executive",
+        "source": "The Business Times",
+        "published_at": "2026-10-30T09:09:08+00:00",
+        "summary": "DBS wealth executive Lee Woon Shiu said unrest in France has prompted enquiries from established European family offices interested in deploying capital in Singapore as a way to mitigate geopolitical risk. He described Singapore as a credible “Plan B” for these families. This suggests potential demand for cross-border wealth services, but the article reports an executive’s account of enquiries, not confirmed relocations or capital flows.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "1815b3927cab7db6ef6e",
+        "title": "Canada’s Biggest Banks Move to Limit AI Agents, Citing Risk - Insurance Journal",
+        "url": "https://insurancejournal.com/news/international/2026/10/29/890752.htm",
+        "source": "Insurance Journal",
+        "published_at": "2026-10-29T13:55:49+00:00",
+        "summary": "The article reports that RBC, BMO, TD and Scotiabank are blocking or restricting third-party personal AI agents from direct access to digital banking, citing security and liability concerns; CIBC does not support agents directly opening or accessing accounts, while National Bank says it is still assessing the issue. The measures illustrate differing access and authorization positions among Canadian banks; the report does not establish a common standard or a regulatory requirement.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "noise_level": 2,
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "778fb46f34a36dee0199",
+        "title": "UBS Employees Run 12,700 AI Agents as Bank Automation Accelerates",
+        "url": "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
+        "source": "PYMNTS.com",
+        "published_at": "2026-10-29T15:53:38+00:00",
+        "summary": "UBS reported more than 12,700 personal AI agents in use by employees, 608 AI use cases in production, and more than 1,090 applications in development. The report also says its STAAT tool for financial-advisor teams has generated more than 30 million insights. These figures offer a competitor example of AI deployment at scale, but the article does not establish the controls, benefits, or quality of the reported outputs.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "168c514eda71a2111ddf",
+        "title": "AI adoption in Europe",
+        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-10-30T17:10:00+01:00",
+        "summary": "ECB Executive Board member Philip Lane said euro-area digital investment has increased since 2014 and that AI-related demand is supporting activity; the ECB’s corporate survey indicates AI added about 10% to firms’ capital-expenditure plans this year. The speech also describes European participation in the global AI supply chain. For banking change execution, the figures provide macroeconomic context for AI investment, but they do not establish bank-level adoption or returns.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "7170ec84fcdbb28ed6ac",
+        "title": "Deutsche Bank Gets HKMA Nod for Offshore RMB",
+        "url": "https://thefullfx.com/deutsche-bank-gets-hkma-nod-for-offshore-rmb",
+        "source": "The Full FX (search dated 2026-10-30)",
+        "published_at": "2026-10-27T07:06:31+00:00",
+        "summary": "The HKMA designated Deutsche Bank as a Primary Liquidity Provider for the offshore renminbi market for two years from 27 October 2026, bringing the list to 12 institutions, including HSBC. The HKMA also increased the total RMB repo facility available to designated providers from RMB 20 billion to RMB 22 billion. This is a market-liquidity development relevant to Hong Kong RMB activity; the article does not set out implications for individual banks’ operations.",
+        "category": "Regulatory & Markets",
         "hsbc_relevancy": 7,
         "adam_rel": 4,
         "noise_level": 1,
@@ -63,92 +134,32 @@
         "user_relevance": 4
       }
     ],
-    "Regulatory & Markets": [
-      {
-        "id": "c99da18967717dd1158a",
-        "title": "MAS Tells Banks to Scrutinise Clients Linked to Haze",
-        "url": "https://fintechnews.sg/139995/fintech/mas-banks-haze-environmental-risk",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-29T08:08:48+00:00",
-        "summary": "MAS reinforced expectations that banks assess environmental risks associated with haze, engage potentially linked customers, and consider measures ranging from revised financing terms to limiting exposure or ending relationships where environmental laws are clearly breached. The guidance makes customer due diligence, escalation and relationship decisions relevant execution areas; the article says the expectations build on existing guidelines and that transition-planning guidelines take effect in September 2027.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
     "Competitor Intelligence": [
       {
-        "id": "2603100bfcece514b4db",
-        "title": "Bank of Singapore names two new relationship managers in Dubai - Fund Selector Asia",
-        "url": "https://fundselectorasia.com/bank-of-singapore-names-two-new-relationship-managers-in-dubai-2",
-        "source": "Fund Selector Asia",
-        "published_at": "2026-10-28T05:36:15+00:00",
-        "summary": "Bank of Singapore appointed Yasser Soliman and Amit Bhasin as relationship managers in Dubai, covering high-net-worth and ultra-high-net-worth clients across the Middle East and South Asia. The hires add client-coverage capacity to a franchise that has made other Dubai appointments in 2026; the article does not quantify expected business impact.",
+        "id": "7184c8d866ed4e8ab3ee",
+        "title": "MC EXCLUSIVE Scaling wealth biz is core to DBS’s agenda, says wealth head Shee Tse Koon",
+        "url": "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
+        "source": "Moneycontrol.com (search dated 2026-10-29)",
+        "published_at": "2026-10-29T05:37:59+00:00",
+        "summary": "DBS says it plans to grow its India wealth business with a targeted focus on investments and insurance, while navigating a fragmented regulatory landscape. It is also exploring how its GIFT City presence could serve wealth clients, and says its existing branch there mainly serves institutional clients. The report describes strategic intent rather than a confirmed new wealth service or implementation timetable.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
-      },
-      {
-        "id": "b9223e56da7a3cb7b7d9",
-        "title": "IIFL Capital Hires Four Barclays Bankers to Expand Wealth Business",
-        "url": "https://hubbis.com/news/iifl-capital-hires-four-barclays-bankers-to-expand-wealth-business",
-        "source": "Hubbis (search dated 2026-10-29)",
-        "published_at": "2026-10-29T06:14:59+00:00",
-        "summary": "IIFL Capital hired four senior bankers from Barclays to expand its domestic wealth business and Global Indian division. The report says wealth-management and financial-product-distribution revenue rose 12% to INR5.72 billion in FY2026; it does not establish that the hires caused that change. The recruitment signals a competitor’s expansion, with no detail on integration or client-transfer outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "4239c94b7d246a38b649",
-        "title": "DBS Indonesia and Bank Central Asia Deny Merger Rumours",
-        "url": "https://fintechnews.sg/139992/indonesia/dbs-bca-merger",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-29T07:33:09+00:00",
-        "summary": "DBS Indonesia and BCA representatives denied social-media claims that the banks could merge through a share exchange. BCA shares rose 7.65% on October 28, but the report says the effect of the speculation on the share price is unclear. The denials may help distinguish market rumour from confirmed corporate action; the article provides no evidence of a proposed transaction.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 4,
-        "adam_rel": 3,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 3
       }
     ],
-    "AI & Technology": [
+    "Operations & Change": [
       {
-        "id": "0489a07d490d79037484",
-        "title": "A Senior Banking Technologist Locked AI Coding Agents Out of a File. They Broke the Bill Anyway. - AIM Media House",
-        "url": "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
-        "source": "AIM Media House",
-        "published_at": "2026-10-28T05:15:40.424000+00:00",
-        "summary": "A banking technologist reported October tests of 11 coding agents from eight companies: although a locked billing-check file was not changed, agents sometimes altered other code in ways that left the bill wrong. The author argues for automated checks of the finished change that agents cannot see or edit, but notes that this final-check approach was not retested in this round; the results are the author’s experiments, not broad evidence of production performance.",
-        "category": "AI & Technology",
+        "id": "da5d99faba910092891f",
+        "title": "IDFC FIRST Bank: Appoints Hardik Thaker as Chief Information Security Officer",
+        "url": "https://investywise.com/idfc-first-bank-chief-information-security-officer-appointment-resignation",
+        "source": "InvestyWise",
+        "published_at": "2026-10-30T13:34:12+00:00",
+        "summary": "IDFC FIRST Bank appointed Hardik Thaker as Chief Information Security Officer and Senior Management Personnel, effective 30 October 2026, following the resignation of Nitin Chauhan. Thaker is described as the bank’s deputy CISO and as having experience in cybersecurity transformation, risk, and resilience. The appointment is a security-leadership change; the article does not report changes to the bank’s security programme.",
+        "category": "Operations & Change",
         "hsbc_relevancy": 3,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "0978b98e14bb20d4dcd9",
-        "title": "What's New In Investments, Funds? – Bank Of Singapore - Wealth Briefing Asia",
-        "url": "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Bank-Of-Singapore?id=209224",
-        "source": "Wealth Briefing Asia (search dated 2026-10-29)",
-        "published_at": "2026-10-29T20:35:53+00:00",
-        "summary": "Bank of Singapore closed a limited subscription period for an access fund investing in Keppel Data Centre Fund III, distributed exclusively through the bank; it described the offering as among its most successful closed-ended products in years, without disclosing the amount raised. The offering illustrates private-bank distribution of infrastructure exposure, but the article provides no subscription figures or client-allocation detail.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
@@ -159,40 +170,54 @@
   "chart_data": {
     "articles": [
       {
-        "id": "dccf44bcbe618801a25b",
-        "title": "HSBC debuts AI solution to simplify transaction banking - Asset Publishing and Research",
-        "url": "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
-        "source": "Asset Publishing and Research (search dated 2026-10-29)",
-        "published_at": "2026-10-29T17:31:39+00:00",
-        "summary": "HSBC announced HSBCnio, an AI-enabled transaction-banking solution for corporate and institutional clients, accessible through web and mobile, APIs and clients’ own AI tools using read-only access to authorized account and transaction data via model context protocol. The report also describes a sandbox, APIs and planned additions including Ask HSBC. The launch points to a connected treasury experience, but the article gives no adoption, performance or implementation results.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 9,
-        "adam_rel": 8,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "c99da18967717dd1158a",
-        "title": "MAS Tells Banks to Scrutinise Clients Linked to Haze",
-        "url": "https://fintechnews.sg/139995/fintech/mas-banks-haze-environmental-risk",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-29T08:08:48+00:00",
-        "summary": "MAS reinforced expectations that banks assess environmental risks associated with haze, engage potentially linked customers, and consider measures ranging from revised financing terms to limiting exposure or ending relationships where environmental laws are clearly breached. The guidance makes customer due diligence, escalation and relationship decisions relevant execution areas; the article says the expectations build on existing guidelines and that transition-planning guidelines take effect in September 2027.",
-        "category": "Regulatory & Markets",
+        "id": "052c22daf84810f1893d",
+        "title": "Ultra-wealthy families in Asia, including Singapore, lack succession and crisis planning: DBS report Trending in AseanPlusAir Pollutant IndexOthers Also Read",
+        "url": "https://thestar.com.my/aseanplus/aseanplus-news/2026/10/30/ultra-wealthy-families-in-asia-including-singapore-lack-succession-and-crisis-planning-dbs-report",
+        "source": "The Star (search dated 2026-10-30)",
+        "published_at": "2026-10-30T20:15:00+00:00",
+        "summary": "A DBS report based on surveys of more than 200 family offices and interviews conducted between January and May 2026 says 43% of surveyed families have yet to involve the next generation in wealth planning, and that many lack formal contingency planning. It also reports that 23% have not addressed key-person risk and 23% have not planned for family conflict. For private-wealth delivery, the findings highlight succession and continuity as client-planning topics; they are survey results and do not measure the wider population of wealthy families.",
+        "category": "Private Banking & Wealth",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
-        "noise_level": 1,
+        "noise_level": 2,
         "is_update": false,
         "user_relevance": 7
       },
       {
-        "id": "2603100bfcece514b4db",
-        "title": "Bank of Singapore names two new relationship managers in Dubai - Fund Selector Asia",
-        "url": "https://fundselectorasia.com/bank-of-singapore-names-two-new-relationship-managers-in-dubai-2",
-        "source": "Fund Selector Asia",
-        "published_at": "2026-10-28T05:36:15+00:00",
-        "summary": "Bank of Singapore appointed Yasser Soliman and Amit Bhasin as relationship managers in Dubai, covering high-net-worth and ultra-high-net-worth clients across the Middle East and South Asia. The hires add client-coverage capacity to a franchise that has made other Dubai appointments in 2026; the article does not quantify expected business impact.",
+        "id": "1815b3927cab7db6ef6e",
+        "title": "Canada’s Biggest Banks Move to Limit AI Agents, Citing Risk - Insurance Journal",
+        "url": "https://insurancejournal.com/news/international/2026/10/29/890752.htm",
+        "source": "Insurance Journal",
+        "published_at": "2026-10-29T13:55:49+00:00",
+        "summary": "The article reports that RBC, BMO, TD and Scotiabank are blocking or restricting third-party personal AI agents from direct access to digital banking, citing security and liability concerns; CIBC does not support agents directly opening or accessing accounts, while National Bank says it is still assessing the issue. The measures illustrate differing access and authorization positions among Canadian banks; the report does not establish a common standard or a regulatory requirement.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 6,
+        "adam_rel": 7,
+        "noise_level": 2,
+        "is_update": true,
+        "user_relevance": 7
+      },
+      {
+        "id": "7170ec84fcdbb28ed6ac",
+        "title": "Deutsche Bank Gets HKMA Nod for Offshore RMB",
+        "url": "https://thefullfx.com/deutsche-bank-gets-hkma-nod-for-offshore-rmb",
+        "source": "The Full FX (search dated 2026-10-30)",
+        "published_at": "2026-10-27T07:06:31+00:00",
+        "summary": "The HKMA designated Deutsche Bank as a Primary Liquidity Provider for the offshore renminbi market for two years from 27 October 2026, bringing the list to 12 institutions, including HSBC. The HKMA also increased the total RMB repo facility available to designated providers from RMB 20 billion to RMB 22 billion. This is a market-liquidity development relevant to Hong Kong RMB activity; the article does not set out implications for individual banks’ operations.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 7,
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
+      },
+      {
+        "id": "7184c8d866ed4e8ab3ee",
+        "title": "MC EXCLUSIVE Scaling wealth biz is core to DBS’s agenda, says wealth head Shee Tse Koon",
+        "url": "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
+        "source": "Moneycontrol.com (search dated 2026-10-29)",
+        "published_at": "2026-10-29T05:37:59+00:00",
+        "summary": "DBS says it plans to grow its India wealth business with a targeted focus on investments and insurance, while navigating a fragmented regulatory landscape. It is also exploring how its GIFT City presence could serve wealth clients, and says its existing branch there mainly serves institutional clients. The report describes strategic intent rather than a confirmed new wealth service or implementation timetable.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
@@ -201,82 +226,68 @@
         "user_relevance": 6
       },
       {
-        "id": "0489a07d490d79037484",
-        "title": "A Senior Banking Technologist Locked AI Coding Agents Out of a File. They Broke the Bill Anyway. - AIM Media House",
-        "url": "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
-        "source": "AIM Media House",
-        "published_at": "2026-10-28T05:15:40.424000+00:00",
-        "summary": "A banking technologist reported October tests of 11 coding agents from eight companies: although a locked billing-check file was not changed, agents sometimes altered other code in ways that left the bill wrong. The author argues for automated checks of the finished change that agents cannot see or edit, but notes that this final-check approach was not retested in this round; the results are the author’s experiments, not broad evidence of production performance.",
-        "category": "AI & Technology",
+        "id": "da5d99faba910092891f",
+        "title": "IDFC FIRST Bank: Appoints Hardik Thaker as Chief Information Security Officer",
+        "url": "https://investywise.com/idfc-first-bank-chief-information-security-officer-appointment-resignation",
+        "source": "InvestyWise",
+        "published_at": "2026-10-30T13:34:12+00:00",
+        "summary": "IDFC FIRST Bank appointed Hardik Thaker as Chief Information Security Officer and Senior Management Personnel, effective 30 October 2026, following the resignation of Nitin Chauhan. Thaker is described as the bank’s deputy CISO and as having experience in cybersecurity transformation, risk, and resilience. The appointment is a security-leadership change; the article does not report changes to the bank’s security programme.",
+        "category": "Operations & Change",
         "hsbc_relevancy": 3,
-        "adam_rel": 7,
+        "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "778fb46f34a36dee0199",
+        "title": "UBS Employees Run 12,700 AI Agents as Bank Automation Accelerates",
+        "url": "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
+        "source": "PYMNTS.com",
+        "published_at": "2026-10-29T15:53:38+00:00",
+        "summary": "UBS reported more than 12,700 personal AI agents in use by employees, 608 AI use cases in production, and more than 1,090 applications in development. The report also says its STAAT tool for financial-advisor teams has generated more than 30 million insights. These figures offer a competitor example of AI deployment at scale, but the article does not establish the controls, benefits, or quality of the reported outputs.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": true,
         "user_relevance": 7
       },
       {
-        "id": "0978b98e14bb20d4dcd9",
-        "title": "What's New In Investments, Funds? – Bank Of Singapore - Wealth Briefing Asia",
-        "url": "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Bank-Of-Singapore?id=209224",
-        "source": "Wealth Briefing Asia (search dated 2026-10-29)",
-        "published_at": "2026-10-29T20:35:53+00:00",
-        "summary": "Bank of Singapore closed a limited subscription period for an access fund investing in Keppel Data Centre Fund III, distributed exclusively through the bank; it described the offering as among its most successful closed-ended products in years, without disclosing the amount raised. The offering illustrates private-bank distribution of infrastructure exposure, but the article provides no subscription figures or client-allocation detail.",
+        "id": "06938c5c4f533e77bc32",
+        "title": "Unrest in Europe sparks interest in Singapore as a family office hub, says DBS executive",
+        "url": "https://businesstimes.com.sg/wealth/wealth-investing/unrest-europe-sparks-interest-singapore-family-office-hub-says-dbs-executive",
+        "source": "The Business Times",
+        "published_at": "2026-10-30T09:09:08+00:00",
+        "summary": "DBS wealth executive Lee Woon Shiu said unrest in France has prompted enquiries from established European family offices interested in deploying capital in Singapore as a way to mitigate geopolitical risk. He described Singapore as a credible “Plan B” for these families. This suggests potential demand for cross-border wealth services, but the article reports an executive’s account of enquiries, not confirmed relocations or capital flows.",
         "category": "Private Banking & Wealth",
         "hsbc_relevancy": 5,
-        "adam_rel": 5,
+        "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 6
       },
       {
-        "id": "2148ea8f23eac6cc440c",
-        "title": "Shasha Slaughter appointed Vice President of Marketing, South Asia at HSBC Private Bank",
-        "url": "https://exchange4media.com/people-movement-news/shasha-slaughter-appointed-vice-president-of-marketing-south-asia-at-hsbc-private-bank-159650.html",
-        "source": "Exchange4Media",
-        "published_at": "2026-10-29T18:43:23+05:30",
-        "summary": "Exchange4Media reports that Shasha Slaughter became Vice President of Marketing, South Asia, at HSBC Private Bank, effective October 2026, with responsibilities including regional strategy, communications, campaigns and events. The appointment indicates a regional marketing leadership change; the article does not describe any resulting business or operating changes.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 7,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "b9223e56da7a3cb7b7d9",
-        "title": "IIFL Capital Hires Four Barclays Bankers to Expand Wealth Business",
-        "url": "https://hubbis.com/news/iifl-capital-hires-four-barclays-bankers-to-expand-wealth-business",
-        "source": "Hubbis (search dated 2026-10-29)",
-        "published_at": "2026-10-29T06:14:59+00:00",
-        "summary": "IIFL Capital hired four senior bankers from Barclays to expand its domestic wealth business and Global Indian division. The report says wealth-management and financial-product-distribution revenue rose 12% to INR5.72 billion in FY2026; it does not establish that the hires caused that change. The recruitment signals a competitor’s expansion, with no detail on integration or client-transfer outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "4239c94b7d246a38b649",
-        "title": "DBS Indonesia and Bank Central Asia Deny Merger Rumours",
-        "url": "https://fintechnews.sg/139992/indonesia/dbs-bca-merger",
-        "source": "Fintech Singapore",
-        "published_at": "2026-10-29T07:33:09+00:00",
-        "summary": "DBS Indonesia and BCA representatives denied social-media claims that the banks could merge through a share exchange. BCA shares rose 7.65% on October 28, but the report says the effect of the speculation on the share price is unclear. The denials may help distinguish market rumour from confirmed corporate action; the article provides no evidence of a proposed transaction.",
-        "category": "Competitor Intelligence",
+        "id": "168c514eda71a2111ddf",
+        "title": "AI adoption in Europe",
+        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-10-30T17:10:00+01:00",
+        "summary": "ECB Executive Board member Philip Lane said euro-area digital investment has increased since 2014 and that AI-related demand is supporting activity; the ECB’s corporate survey indicates AI added about 10% to firms’ capital-expenditure plans this year. The speech also describes European participation in the global AI supply chain. For banking change execution, the figures provide macroeconomic context for AI investment, but they do not establish bank-level adoption or returns.",
+        "category": "AI & Technology",
         "hsbc_relevancy": 4,
-        "adam_rel": 3,
+        "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 5
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
+      "Private Banking & Wealth": "#059669",
+      "AI & Technology": "#6366f1",
       "Regulatory & Markets": "#d97706",
       "Competitor Intelligence": "#0891b2",
-      "AI & Technology": "#6366f1",
-      "Private Banking & Wealth": "#059669"
+      "Operations & Change": "#7c3aed"
     }
   }
 }

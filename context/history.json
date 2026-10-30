@@ -1,22 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-10-30",
+    "last_updated": "2026-10-31",
     "daily": [
-      {
-        "date": "2026-10-24",
-        "urls": [
-          "https://english.news.cn/20261023/af0dc1262cb6465b86a157d7b041da2e/c.html",
-          "https://finance.yahoo.com/economy/policy/articles/historic-apec-finance-ministers-meeting-121500685.html",
-          "https://fintechnews.sg/139515/wealthtech/singapore-wealth-citi-report-ai-hnw/",
-          "https://gulfnews.com/business/hsbc-uae-wealth-investment-summit-2026-live-from-dubai-1.500719264",
-          "https://investinglive.com/cryptocurrency/hsbc-s-redcoin-stablecoin-goes-live-in-hong-kong-what-the-launch-answers-and-what-it-still-doesn-t/",
-          "https://www.fool.com/earnings/call-transcripts/2026/10/22/ssc-technologies-ssnc-q3-2026-earnings-call-transcript/",
-          "https://www.globaltimes.cn/page/202610/1372793.shtml",
-          "https://www.hk-lawyer.org/content/nansha-flagship-financial-innovation-zone-%E2%80%93-implications-hong-kong-legal-practitioners",
-          "https://www.investmentnews.com/transformation/ai-poses-moderate-disruption-risk-to-wealth-managers-and-retail-banks-fitch-says/268717"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-10-26",
         "urls": [
@@ -81,9 +66,24 @@
           "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
           "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Bank-Of-Singapore?id=209224"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-10-31",
+        "urls": [
+          "https://businesstimes.com.sg/wealth/wealth-investing/unrest-europe-sparks-interest-singapore-family-office-hub-says-dbs-executive",
+          "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+          "https://insurancejournal.com/news/international/2026/10/29/890752.htm",
+          "https://investywise.com/idfc-first-bank-chief-information-security-officer-appointment-resignation",
+          "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
+          "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
+          "https://thefullfx.com/deutsche-bank-gets-hkma-nod-for-offshore-rmb",
+          "https://thestar.com.my/aseanplus/aseanplus-news/2026/10/30/ultra-wealthy-families-in-asia-including-singapore-lack-succession-and-crisis-planning-dbs-report"
+        ],
         "topics": [
-          "HSBCnio connects treasury channels and controlled AI access",
-          "Coding-agent controls need to test the completed change"
+          "UBS reports broader AI deployment across staff and production use cases",
+          "DBS describes a targeted approach to India wealth expansion",
+          "External-agent access controls remain a live banking design choice"
         ]
       }
     ],
@@ -91,42 +91,41 @@
       "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
       "https://asianbankingandfinance.net/news/dbs-maybank-and-ifc-team-77b-johor-solar-project-financing",
       "https://asianbankingandfinance.net/news/wealth-and-capital-markets-lift-standard-chartered-hk-profits",
+      "https://businesstimes.com.sg/wealth/wealth-investing/unrest-europe-sparks-interest-singapore-family-office-hub-says-dbs-executive",
       "https://ca.finance.yahoo.com/news/bmos-ceo-warns-canadians-share-110000547.html",
+      "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
       "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
-      "https://english.news.cn/20261023/af0dc1262cb6465b86a157d7b041da2e/c.html",
       "https://exchange4media.com/people-movement-news/shasha-slaughter-appointed-vice-president-of-marketing-south-asia-at-hsbc-private-bank-159650.html",
       "https://finance.yahoo.com/economy/articles/asia-focused-banks-face-capital-102452325.html",
-      "https://finance.yahoo.com/economy/policy/articles/historic-apec-finance-ministers-meeting-121500685.html",
       "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-hsbc-holdings-plc-131537350.html",
       "https://financialpost.com/fp-finance/banking/rbc-block-personal-ai-agents-from-online-banking",
       "https://fintech.global/2026/10/25/a-total-of-541m-was-raised-this-week-across-16-fintech-deals/",
-      "https://fintechnews.sg/139515/wealthtech/singapore-wealth-citi-report-ai-hnw/",
       "https://fintechnews.sg/139804/ai/backbase-delivery-factory-ai-agents-banking",
       "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
       "https://fintechnews.sg/139860/ai/meta-muse-ai-agent-singapore",
       "https://fintechnews.sg/139992/indonesia/dbs-bca-merger",
       "https://fintechnews.sg/139995/fintech/mas-banks-haze-environmental-risk",
       "https://fundselectorasia.com/bank-of-singapore-names-two-new-relationship-managers-in-dubai-2",
-      "https://gulfnews.com/business/hsbc-uae-wealth-investment-summit-2026-live-from-dubai-1.500719264",
       "https://hubbis.com/article/choosing-the-role-of-people-and-ai-in-wealth-management",
       "https://hubbis.com/news/iifl-capital-hires-four-barclays-bankers-to-expand-wealth-business",
-      "https://investinglive.com/cryptocurrency/hsbc-s-redcoin-stablecoin-goes-live-in-hong-kong-what-the-launch-answers-and-what-it-still-doesn-t/",
+      "https://insurancejournal.com/news/international/2026/10/29/890752.htm",
+      "https://investywise.com/idfc-first-bank-chief-information-security-officer-appointment-resignation",
       "https://markets.ft.com/data/announce/detail?dockey=600-202610280145BIZWIRE_USPRX____20261027_BW135620-1",
+      "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
       "https://morganstanley.com/press-releases/bank-of-america--blackstone--citi-and-morgan-stanley-announce-la",
       "https://privatebankerinternational.com/news/hsbc-absorb-hang-seng-investment-unit",
       "https://pulse2.com/wells-fargo-names-kleber-santos-as-ceo-of-consumer-banking-and-lending-and-saul-van-beurden-as-head-of-ai",
+      "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
       "https://seekingalpha.com/news/4656691-berkshire-hathaway-blackstone-in-gainers-hsbc-globe-life-among-losers-weeks-financials-wrap",
       "https://techtrendske.co.ke/2026/10/27/standard-chartered-kenya-strategy",
       "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
+      "https://thefullfx.com/deutsche-bank-gets-hkma-nod-for-offshore-rmb",
+      "https://thestar.com.my/aseanplus/aseanplus-news/2026/10/30/ultra-wealthy-families-in-asia-including-singapore-lack-succession-and-crisis-planning-dbs-report",
       "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Bank-Of-Singapore?id=209224",
       "https://www.asiaasset.com/ceo/principal-600-billion-aum-asia-pacific-middle-east/",
       "https://www.bankofengland.co.uk/report/2026/artificial-intelligence-in-uk-financial-services-2026",
       "https://www.caproasia.com/2026/10/25/465-billion-china-asset-management-chinaamc-launches-global-fixed-income-fund-chinaamc-global-fixed-income-plus-fund-with-6-5-target-monthly-distribution-rate-annualized-in-hong-kong-for-retail/",
       "https://www.caproasia.com/2026/10/25/united-states-private-credit-manager-nuveen-private-capital-reports-100-billion-committed-capital-comprises-of-2-asset-managers-churchill-asset-management-arcmont-asset-management-investing-in-pri/",
-      "https://www.fool.com/earnings/call-transcripts/2026/10/22/ssc-technologies-ssnc-q3-2026-earnings-call-transcript/",
-      "https://www.globaltimes.cn/page/202610/1372793.shtml",
-      "https://www.hk-lawyer.org/content/nansha-flagship-financial-innovation-zone-%E2%80%93-implications-hong-kong-legal-practitioners",
-      "https://www.investmentnews.com/transformation/ai-poses-moderate-disruption-risk-to-wealth-managers-and-retail-banks-fitch-says/268717",
       "https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/",
       "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-26-october-2026/article71622964.ece/amp/",
       "https://www.unite.ai/anthropic-files-s-1-registration-statement-for-nasdaq-ipo/",
@@ -135,8 +134,9 @@
       "https://www.wealthbriefing.com/html/article.php/hsbc-private-bank-names-global-marketing-head"
     ],
     "covered_topics": [
-      "Coding-agent controls need to test the completed change",
-      "HSBCnio connects treasury channels and controlled AI access"
+      "DBS describes a targeted approach to India wealth expansion",
+      "External-agent access controls remain a live banking design choice",
+      "UBS reports broader AI deployment across staff and production use cases"
     ]
   }
 }
