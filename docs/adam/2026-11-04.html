@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Wednesday, 04 November 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Wednesday, 04 November 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-11-03.html">‹ 3 Nov 2026</a>
+    
+    <span class="nav-current">Wednesday, 04 November 2026</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">9 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">HSBC describes a Hong Kong institute with a broad technology remit</h3>
+          <p class="tp-context">HSBC’s planned institute is expected to begin in early 2027, with initial work spanning AI upskilling and safety, fraud detection, post-quantum cryptography and blockchain, and HKUST as anchor academic partner. A delivery consideration is how research priorities translate into accountable operational use cases and skilled capacity; the article does not provide resourcing, governance or deployment detail.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud" target="_blank" rel="noopener" class="tp-source-link" title="HSBC to launch teck institute to tackle agentic AI fraud">HSBC to launch teck institute to tackle agentic AI fraud</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">HSBC’s Hong Kong AI institute adds a workforce-readiness dimension</h3>
+          <p class="tp-context">HSBC plans a Hong Kong institute and reports AI training for its global workforce, while the HKMA’s Project SAGE will seek industry input on agent governance and accountability. For execution, a practical dependency is aligning training with clear role-based controls and escalation paths rather than treating training as a standalone capability. The report gives no institute staffing plan or detail on how training will be assessed.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute" target="_blank" rel="noopener" class="tp-source-link" title="HSBC to open Hong Kong AI and emerging technology institute in 2027 - Retail Banker International">HSBC to open Hong Kong AI and emerging technology institute in 2027 - Retail Banker International</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">RedCoin’s early user count is not yet evidence of sustained usage</h3>
+          <p class="tp-context">Serrari reports 50,000 users shortly after RedCoin’s PayMe launch and plans for wider app access and tokenized investments. A useful delivery criterion would be to distinguish registrations from completed transactions and repeat use before judging capacity or service readiness. The article itself says active use and transaction frequency have not been disclosed.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans" target="_blank" rel="noopener" class="tp-source-link" title="HSBC RedCoin Reaches 50,000 Users as Bank Expands Hong Kong AI Plans">HSBC RedCoin Reaches 50,000 Users as Bank Expands Hong Kong AI Plans</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (9)</button>
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (3)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (4)
+      </button>
+      
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
+        Private Banking &amp; Wealth (2)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-1161cfe1cefe246642e7" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute" target="_blank" rel="noopener">HSBC to open Hong Kong AI and emerging technology institute in 2027 - Retail Banker International</a>
+          </div>
+          <p class="article-summary">HSBC plans to establish an AI and emerging technology institute in Hong Kong, with operations expected to begin in Q1 2027 and HKUST as anchor academic partner. The report also says HSBC is introducing AI training for its global workforce and that the HKMA plans Project SAGE to consider agent identity, governance and accountability. These developments make skills, governance and coordination relevant execution considerations; the article does not disclose institute staffing or detailed operating plans.</p>
+          <div class="article-footer">
+            <span class="article-source">Retail Banker International</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-37ab61d05740453954fa" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud" target="_blank" rel="noopener">HSBC to launch teck institute to tackle agentic AI fraud</a>
+          </div>
+          <p class="article-summary">Asian Banking &amp; Finance reports that HSBC plans a Hong Kong-based global AI and emerging technology institute, expected to begin operations in early 2027, with initial areas including AI upskilling, safety, fraud detection, post-quantum cryptography and blockchain. HKUST is named as anchor academic partner, and the report places the institute in the Northern Metropolis. This is a proposed capability-building initiative with potential links to future operational research and skills; the article does not detail governance, resourcing or deployment plans.</p>
+          <div class="article-footer">
+            <span class="article-source">Asian Banking &amp; Finance</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-2ccbae25b12a575e999f" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans" target="_blank" rel="noopener">HSBC RedCoin Reaches 50,000 Users as Bank Expands Hong Kong AI Plans</a>
+          </div>
+          <p class="article-summary">Serrari Group reports that HSBC’s Hong Kong dollar-backed RedCoin reached 50,000 users just over a week after its October 23 launch through PayMe, and says HSBC plans to extend access through its mobile banking app and support tokenized investment subscriptions. The article notes that user numbers do not establish active transactions and that HSBC has not provided a detailed wider-access timetable. For delivery, scaling through existing channels makes customer eligibility, transaction monitoring and service readiness relevant questions; the report does not provide usage frequency or operational performance.</p>
+          <div class="article-footer">
+            <span class="article-source">Serrari Group</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-9037f8748c2f0d11e128" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://cryptonews.net/news/blockchain/33689570" target="_blank" rel="noopener">Standard Chartered Launches Tokenized Deposits in Hong Kong via HKMA Project Ensemble</a>
+          </div>
+          <p class="article-summary">Standard Chartered has launched a Hong Kong tokenized-deposit service for corporate clients, enabling transfers between participating banks using HKMA EnsembleTX infrastructure. The report says China AMC, Finloop and Panther Trade have executed live transactions and describes 24/7 settlement support, including central-bank money. For banking operations, this points to dependencies across settlement infrastructure, participant connectivity and treasury workflows; the article relies on secondary reporting and does not detail operating controls or transaction volumes.</p>
+          <div class="article-footer">
+            <span class="article-source">Cryptonews.net</span>
+            <span>2 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-b18c009eb7a89439dc4e" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://livelawbiz.com/amp/competition-law/cci/competition-commission-of-india-approves-kotak-mahindra-bank-acquire-deutsche-bank-retail-wealth-management-business-557168" target="_blank" rel="noopener">Kotak Mahindra Bank Gets CCI Nod To Acquire Deutsche Bank&#39;s Retail, Wealth Management Business</a>
+          </div>
+          <p class="article-summary">India’s Competition Commission approved Kotak Mahindra Bank’s proposed acquisition of Deutsche Bank’s Indian retail, private banking and wealth-management business, operated through its Indian branches, as a going concern. The parties also propose customer referrals for certain investment-advisory and portfolio-management services. For change execution, the approval is a transaction milestone, but the supplied report says a detailed order is pending and gives no completion timetable or integration plan.</p>
+          <div class="article-footer">
+            <span class="article-source">LiveLawBiz</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-c8d1f620771cc92de966" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528" target="_blank" rel="noopener">Capital.com appoints Standard Chartered as global banking partner for virtual assets</a>
+          </div>
+          <p class="article-summary">Zawya reports that Standard Chartered has an operational global banking partnership with Capital.com across MENA and Europe, providing services including fiat settlement and client money accounts for regulated virtual-asset affiliates. The arrangement uses a single banking relationship for the affiliates’ settlement and client-fund activity within applicable jurisdictional controls; it illustrates a competitor infrastructure model, but the release supplies no operational or client-outcome evidence.</p>
+          <div class="article-footer">
+            <span class="article-source">Zawya</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-ed0f8c77d3b3904a64d3" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://media-outreach.com/news/hong-kong/2026/11/03/498598/citi-wealth-ai-pulse-survey-hong-kong-consumers-embrace-ai-but-still-want-humans-in-the-drivers-seat" target="_blank" rel="noopener">Citi Wealth AI Pulse Survey: Hong Kong Consumers Embrace AI, But Still Want Humans in the Driver&#39;s Seat #citibank - Media OutReach Newswire</a>
+          </div>
+          <p class="article-summary">Citi Hong Kong’s 2026 Wealth AI Pulse Survey is presented as finding that consumers use AI in daily life while many remain concerned about keeping pace, including a reported concern among Gen Z. The supplied text does not include survey figures, methodology or detailed findings. For wealth-service design, the title’s human-in-the-driver’s-seat framing raises a question about how to preserve adviser involvement; the available release excerpt is insufficient to assess the survey’s strength or representativeness.</p>
+          <div class="article-footer">
+            <span class="article-source">Media OutReach Newswire</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #059669"></span>
+        Private Banking &amp; Wealth
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-3da1865410b8680f725d" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1" target="_blank" rel="noopener">Singapore’s rise as a wealth hub mirrors Asia’s changing fortunes: Julius Baer Asia head</a>
+          </div>
+          <p class="article-summary">Julius Baer’s Asia head said Singapore has become the bank’s second-largest global hub, with more than 1,350 employees, and described client interest in diversification, succession planning and family governance. The article also reports that Singapore cross-border wealth is forecast to grow at 9% annually through 2030, citing the bank’s account of the market. For APAC wealth delivery, the reported client priorities suggest demand for coordinated investment and generational-planning services; the growth figure is a forecast, not a measured outcome.</p>
+          <div class="article-footer">
+            <span class="article-source">The Straits Times</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-ab130321cd3319ff5f9e" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://finews.com/news/english-news/74272-lombard-odier-hires-ubs-veteran-christina-staeger-ernst-to-lead-swiss-uhnw-business" target="_blank" rel="noopener">Lombard Odier hires longtime UBS banker for ultra-wealthy businessGeneva asset manager taps former Coutts investment chief for board</a>
+          </div>
+          <p class="article-summary">finews.com reports that Lombard Odier appointed Christina Stäger Ernst to lead its UHNWI and Single Family Offices segment for German-speaking Switzerland from 1 January 2027. The report describes the move as part of an expansion in that market and notes her prior UBS leadership experience; it signals competitor investment in specialist coverage, but does not describe expected scale or outcomes.</p>
+          <div class="article-footer">
+            <span class="article-source">finews.com</span>
+            <span>3 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 2026-11-04T07:00:02.928600+08:00 &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "1161cfe1cefe246642e7", "title": "HSBC to open Hong Kong AI and emerging technology institute in 2027 - Retail Banker International", "url": "https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute", "source": "Retail Banker International", "published_at": "2026-11-03T10:52:31+00:00", "summary": "HSBC plans to establish an AI and emerging technology institute in Hong Kong, with operations expected to begin in Q1 2027 and HKUST as anchor academic partner. The report also says HSBC is introducing AI training for its global workforce and that the HKMA plans Project SAGE to consider agent identity, governance and accountability. These developments make skills, governance and coordination relevant execution considerations; the article does not disclose institute staffing or detailed operating plans.", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 8, "noise_level": 2, "is_update": true, "user_relevance": 8}, {"id": "9037f8748c2f0d11e128", "title": "Standard Chartered Launches Tokenized Deposits in Hong Kong via HKMA Project Ensemble", "url": "https://cryptonews.net/news/blockchain/33689570", "source": "Cryptonews.net", "published_at": "2026-11-02T15:23:00+00:00", "summary": "Standard Chartered has launched a Hong Kong tokenized-deposit service for corporate clients, enabling transfers between participating banks using HKMA EnsembleTX infrastructure. The report says China AMC, Finloop and Panther Trade have executed live transactions and describes 24/7 settlement support, including central-bank money. For banking operations, this points to dependencies across settlement infrastructure, participant connectivity and treasury workflows; the article relies on secondary reporting and does not detail operating controls or transaction volumes.", "category": "Competitor Intelligence", "hsbc_relevancy": 6, "adam_rel": 7, "noise_level": 1, "is_update": false, "user_relevance": 7}, {"id": "3da1865410b8680f725d", "title": "Singapore\u2019s rise as a wealth hub mirrors Asia\u2019s changing fortunes: Julius Baer Asia head", "url": "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1", "source": "The Straits Times", "published_at": "2026-11-03T22:00:00+00:00", "summary": "Julius Baer\u2019s Asia head said Singapore has become the bank\u2019s second-largest global hub, with more than 1,350 employees, and described client interest in diversification, succession planning and family governance. The article also reports that Singapore cross-border wealth is forecast to grow at 9% annually through 2030, citing the bank\u2019s account of the market. For APAC wealth delivery, the reported client priorities suggest demand for coordinated investment and generational-planning services; the growth figure is a forecast, not a measured outcome.", "category": "Private Banking \u0026 Wealth", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 1, "is_update": false, "user_relevance": 6}, {"id": "37ab61d05740453954fa", "title": "HSBC to launch teck institute to tackle agentic AI fraud", "url": "https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud", "source": "Asian Banking \u0026amp; Finance", "published_at": "2026-11-03T16:00:08+08:00", "summary": "Asian Banking \u0026amp; Finance reports that HSBC plans a Hong Kong-based global AI and emerging technology institute, expected to begin operations in early 2027, with initial areas including AI upskilling, safety, fraud detection, post-quantum cryptography and blockchain. HKUST is named as anchor academic partner, and the report places the institute in the Northern Metropolis. This is a proposed capability-building initiative with potential links to future operational research and skills; the article does not detail governance, resourcing or deployment plans.", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 8, "noise_level": 1, "is_update": false, "user_relevance": 8}, {"id": "2ccbae25b12a575e999f", "title": "HSBC RedCoin Reaches 50,000 Users as Bank Expands Hong Kong AI Plans", "url": "https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans", "source": "Serrari Group", "published_at": "2026-11-03T07:17:38+00:00", "summary": "Serrari Group reports that HSBC\u2019s Hong Kong dollar-backed RedCoin reached 50,000 users just over a week after its October 23 launch through PayMe, and says HSBC plans to extend access through its mobile banking app and support tokenized investment subscriptions. The article notes that user numbers do not establish active transactions and that HSBC has not provided a detailed wider-access timetable. For delivery, scaling through existing channels makes customer eligibility, transaction monitoring and service readiness relevant questions; the report does not provide usage frequency or operational performance.", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 7, "noise_level": 1, "is_update": false, "user_relevance": 7}, {"id": "b18c009eb7a89439dc4e", "title": "Kotak Mahindra Bank Gets CCI Nod To Acquire Deutsche Bank\u0026#x27;s Retail, Wealth Management Business", "url": "https://livelawbiz.com/amp/competition-law/cci/competition-commission-of-india-approves-kotak-mahindra-bank-acquire-deutsche-bank-retail-wealth-management-business-557168", "source": "LiveLawBiz", "published_at": "2026-11-03T20:06:57+05:30", "summary": "India\u2019s Competition Commission approved Kotak Mahindra Bank\u2019s proposed acquisition of Deutsche Bank\u2019s Indian retail, private banking and wealth-management business, operated through its Indian branches, as a going concern. The parties also propose customer referrals for certain investment-advisory and portfolio-management services. For change execution, the approval is a transaction milestone, but the supplied report says a detailed order is pending and gives no completion timetable or integration plan.", "category": "Competitor Intelligence", "hsbc_relevancy": 6, "adam_rel": 7, "noise_level": 1, "is_update": false, "user_relevance": 7}, {"id": "ab130321cd3319ff5f9e", "title": "Lombard Odier hires longtime UBS banker for ultra-wealthy businessGeneva asset manager taps former Coutts investment chief for board", "url": "https://finews.com/news/english-news/74272-lombard-odier-hires-ubs-veteran-christina-staeger-ernst-to-lead-swiss-uhnw-business", "source": "finews.com", "published_at": "2026-11-03T08:00:00+00:00", "summary": "finews.com reports that Lombard Odier appointed Christina St\u00e4ger Ernst to lead its UHNWI and Single Family Offices segment for German-speaking Switzerland from 1 January 2027. The report describes the move as part of an expansion in that market and notes her prior UBS leadership experience; it signals competitor investment in specialist coverage, but does not describe expected scale or outcomes.", "category": "Private Banking \u0026 Wealth", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}, {"id": "c8d1f620771cc92de966", "title": "Capital.com appoints Standard Chartered as global banking partner for virtual assets", "url": "https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528", "source": "Zawya", "published_at": "2026-11-03T09:17:47.192000+00:00", "summary": "Zawya reports that Standard Chartered has an operational global banking partnership with Capital.com across MENA and Europe, providing services including fiat settlement and client money accounts for regulated virtual-asset affiliates. The arrangement uses a single banking relationship for the affiliates\u2019 settlement and client-fund activity within applicable jurisdictional controls; it illustrates a competitor infrastructure model, but the release supplies no operational or client-outcome evidence.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}, {"id": "ed0f8c77d3b3904a64d3", "title": "Citi Wealth AI Pulse Survey: Hong Kong Consumers Embrace AI, But Still Want Humans in the Driver\u0026#x27;s Seat #citibank - Media OutReach Newswire", "url": "https://media-outreach.com/news/hong-kong/2026/11/03/498598/citi-wealth-ai-pulse-survey-hong-kong-consumers-embrace-ai-but-still-want-humans-in-the-drivers-seat", "source": "Media OutReach Newswire", "published_at": "2026-11-03T09:00:00+08:00", "summary": "Citi Hong Kong\u2019s 2026 Wealth AI Pulse Survey is presented as finding that consumers use AI in daily life while many remain concerned about keeping pace, including a reported concern among Gen Z. The supplied text does not include survey figures, methodology or detailed findings. For wealth-service design, the title\u2019s human-in-the-driver\u2019s-seat framing raises a question about how to preserve adviser involvement; the available release excerpt is insufficient to assess the survey\u2019s strength or representativeness.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}], "categories": {"HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "Private Banking \u0026 Wealth": "#059669"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
