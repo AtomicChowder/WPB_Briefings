@@ -3,45 +3,34 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Thursday, 05 November 2026",
-  "date_str": "2026-11-05",
-  "generated_at": "2026-11-05T08:11:40.580658+08:00",
+  "briefing_date": "Friday, 06 November 2026",
+  "date_str": "2026-11-06",
+  "generated_at": "2026-11-06T07:00:03.314245+08:00",
   "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "MAS begins an industry platform for financial-services AI",
-      "context_html": "MAS says the Future of Finance Institute has begun operations, with initial programmes covering AI knowledge sharing, deployment and risk management. For APAC delivery, a practical question is whether shared tools or guidance can support consistent AI assurance while preserving each bank’s accountability for its own controls. The report describes planned programmes, not binding requirements or proven industry-wide adoption.",
+      "headline": "ADGM adds a digital-asset wealth competitor",
+      "context_html": "Arab Bank Switzerland ME Ltd says it has received ADGM authorization and begun advising institutional and high-net-worth clients on digital assets. This adds a regional competitor offering, making regulatory permissions and the boundaries of advice and asset services relevant comparison criteria for wealth delivery. The supplied announcement does not report client uptake or operational performance.",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
-          "title": "MAS’ Future of Finance Institute Begins Operations with AI Focus"
-        }
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "Standard Chartered presents CRMx as a connected frontline platform",
-      "context_html": "Standard Chartered says CRMx brings client information and workflows together for more than 6,000 colleagues across 53 markets, and describes AI-driven insights as a future direction. For change execution, a concrete dependency is reliable, joined-up client data and a feedback loop that converts frontline issues into platform changes. The interview provides no independently measured productivity or client outcomes.",
-      "source_links": [
-        {
-          "url": "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
-          "title": "Standard Chartered’s CRMx is giving corporate bankers more time for clients"
+          "url": "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
+          "title": "Arab Bank Switzerland opens Abu Dhabi office and names Valérie Noël Chief Executive Officer - ADGM"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Regulatory & Markets": [
+    "AI & Technology": [
       {
-        "id": "6ac9c8689e7899afc257",
-        "title": "MAS’ Future of Finance Institute Begins Operations with AI Focus",
-        "url": "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-04T01:49:04+00:00",
-        "summary": "Singapore’s MAS said the Future of Finance Institute has begun operations, initially focusing on AI adoption through programmes for knowledge sharing, deployment and risk management. The institute plans work on practical tools and standards, including safeguards for agentic AI and enhancements to the MindForge AI Risk Management Toolkit. For banks operating in Singapore, this creates an industry collaboration and resource channel; the report does not establish that its guidance is mandatory or already adopted across firms.",
-        "category": "Regulatory & Markets",
+        "id": "9f918238938eb15dc377",
+        "title": "Major Banks Move to Block or Limit Customer-Directed AI Agents - The National Law Review",
+        "url": "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
+        "source": "The National Law Review (search dated 2026-11-04)",
+        "published_at": "2026-11-04T15:55:34+00:00",
+        "summary": "The article says JPMorgan Chase, Charles Schwab, Citigroup and Wells Fargo moved in October 2026 to block or contractually reallocate risk for third-party AI agents using customers’ credentials to access accounts; it contrasts these restrictions with permitted read-only open-banking connections. It describes security, fraud, deposit and liability concerns, alongside unsettled open-banking rules. For bank change teams, the distinction between credential-based access and controlled, authorized data connections is relevant to access design and accountability; the article’s legal and market characterizations are not evidence of a settled regulatory position.",
+        "category": "AI & Technology",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
         "noise_level": 1,
@@ -51,30 +40,42 @@
     ],
     "Competitor Intelligence": [
       {
-        "id": "33451746f5e349cac3f3",
-        "title": "Standard Chartered’s CRMx is giving corporate bankers more time for clients",
-        "url": "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
-        "source": "The Digital Banker",
-        "published_at": "2026-11-04T12:36:15+08:00",
-        "summary": "A Standard Chartered executive described CRMx as a platform connecting client data, opportunities and workflows, supporting more than 6,000 colleagues across 53 markets. The executive presented AI-powered meeting preparation, insight generation and action prioritisation as future opportunities, while describing frontline feedback as important to platform development. For change execution, the account points to dependencies on connected data and sustained user feedback; projected AI benefits are interview claims, not reported measured outcomes.",
+        "id": "b676419543a19d43bf89",
+        "title": "Error",
+        "url": "https://thelogic.co/news/wealthsimple-launches-ai-assistant",
+        "source": "The Logic",
+        "published_at": "2026-11-05T17:10:59+00:00",
+        "summary": "Wealthsimple announced Penny, an AI assistant that can prepare transfers, payments and trades within its platform, with customer approval required before execution. The company says Penny uses a secure data feed rather than screen scraping or customer banking credentials; it plans to enable access through ChatGPT and Claude in early 2027, also subject to customer approval. This illustrates a fintech approach that combines assistance with transaction approval, but the article leaves responsibility for losses from AI errors unresolved and does not establish customer adoption or performance.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
-      }
-    ],
-    "HSBC News": [
+      },
       {
-        "id": "2c2f8d6a1310542769f0",
-        "title": "ANZ hires HSBC liquidity chief John Hoque as group treasurer",
-        "url": "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-11-04T15:41:20+08:00",
-        "summary": "ANZ appointed John Hoque as group treasurer, reporting to its group CFO; Hoque joins from HSBC, where he was managing director and global head of liquidity, and has more than 20 years of banking and treasury experience. This is a senior treasury move to a competitor, but the report does not describe any change to HSBC’s liquidity operations.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 7,
+        "id": "7e2090b3b22cf1523665",
+        "title": "DBS Profit Misses Estimates on Trading Drop, Names Lim Chair - Bloomberg.com",
+        "url": "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
+        "source": "Bloomberg.com",
+        "published_at": "2026-11-04T22:52:52.750000+00:00",
+        "summary": "Bloomberg reports that DBS’s third-quarter net profit fell 5% year over year to S$2.81 billion for the three months ended 30 September, below the surveyed analyst average, with weaker trading income offsetting gains in lending and wealth. The report also notes DBS announced a new chairman. The results provide a current competitor performance signal, but the excerpt does not give wealth-specific results or explain the causes of the trading-income decline beyond the stated market impact.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
+      },
+      {
+        "id": "a56d0b5e4c81e0d76822",
+        "title": "DBS Names Anthony Lim as Chairman From January 2027",
+        "url": "https://fintechnews.sg/140541/fintech/dbs-chairman",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-05T03:26:50+00:00",
+        "summary": "DBS named Anthony Lim as chairman from 1 January 2027, succeeding Peter Seah, who will leave the boards on 31 December 2026 and serve as senior adviser for one year. Lim has served on DBS’s boards since April 2020 and chaired its Compensation and Management Development Committee. The succession is a governance change at a major regional competitor; the report does not describe a new strategy or operating programme.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
@@ -83,47 +84,31 @@
     ],
     "Private Banking & Wealth": [
       {
-        "id": "3da1865410b8680f725d",
-        "title": "Singapore’s rise as a wealth hub mirrors Asia’s changing fortunes: Julius Baer Asia head",
-        "url": "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
-        "source": "The Straits Times",
-        "published_at": "2026-11-03T22:00:00+00:00",
-        "summary": "Julius Baer’s Asia head said Singapore is the bank’s second-largest global hub, with a workforce of more than 1,350, and described client interest in diversification, succession planning and family governance. The article also reports a forecast that Singapore cross-border wealth will grow 9% annually to US$3.3 trillion by 2030; this is a forecast, not an observed outcome. The article adds that Julius Baer established an innovation lab in Singapore in 2021 and that more than a quarter of its global business originates from Asia, offering context on a competitor’s regional presence and capability-building.",
+        "id": "a36c616c1276e4cbe2a0",
+        "title": "Arab Bank Switzerland opens Abu Dhabi office and names Valérie Noël Chief Executive Officer - ADGM",
+        "url": "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
+        "source": "ADGM (search dated 2026-11-05)",
+        "published_at": "2026-11-05T13:22:10+00:00",
+        "summary": "Arab Bank Switzerland ME Ltd began operations in ADGM after receiving Financial Services Permission from the FSRA and appointed Valérie Noël as CEO. The entity says it will advise institutional, fintech, family-office and high-net-worth clients on digital assets within ADGM’s regulatory framework. This adds a competitor offering in Abu Dhabi’s digital-asset wealth market; the supplied material does not detail its operating model, client uptake or service outcomes.",
         "category": "Private Banking & Wealth",
         "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": true,
-        "user_relevance": 6
-      }
-    ],
-    "AI & Technology": [
-      {
-        "id": "28423fe67842d0e35678",
-        "title": "Tencent Cloud Selected for HKMA's Agentic Finance Expert Group, Showcases WorkBuddy's New Financial Capabilities at Hong Kong FinTech Week",
-        "url": "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-11-03T08:30:00+00:00",
-        "summary": "Tencent Cloud said it was selected for the HKMA’s Agentic Finance Expert Group and described WorkBuddy’s investment-research capabilities, including company research, portfolio assessments using user-provided information and stock screening. The release says professionals retain research judgment and investment decisions, and identifies agent identity, accountability and security as relevant risks. For banking change teams, interoperability and human-review controls are practical considerations, but the vendor’s product claims do not establish independent performance or broad adoption.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 4,
-        "adam_rel": 6,
+        "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 5
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "6ac9c8689e7899afc257",
-        "title": "MAS’ Future of Finance Institute Begins Operations with AI Focus",
-        "url": "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-04T01:49:04+00:00",
-        "summary": "Singapore’s MAS said the Future of Finance Institute has begun operations, initially focusing on AI adoption through programmes for knowledge sharing, deployment and risk management. The institute plans work on practical tools and standards, including safeguards for agentic AI and enhancements to the MindForge AI Risk Management Toolkit. For banks operating in Singapore, this creates an industry collaboration and resource channel; the report does not establish that its guidance is mandatory or already adopted across firms.",
-        "category": "Regulatory & Markets",
+        "id": "9f918238938eb15dc377",
+        "title": "Major Banks Move to Block or Limit Customer-Directed AI Agents - The National Law Review",
+        "url": "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
+        "source": "The National Law Review (search dated 2026-11-04)",
+        "published_at": "2026-11-04T15:55:34+00:00",
+        "summary": "The article says JPMorgan Chase, Charles Schwab, Citigroup and Wells Fargo moved in October 2026 to block or contractually reallocate risk for third-party AI agents using customers’ credentials to access accounts; it contrasts these restrictions with permitted read-only open-banking connections. It describes security, fraud, deposit and liability concerns, alongside unsettled open-banking rules. For bank change teams, the distinction between credential-based access and controlled, authorized data connections is relevant to access design and accountability; the article’s legal and market characterizations are not evidence of a settled regulatory position.",
+        "category": "AI & Technology",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
         "noise_level": 1,
@@ -131,12 +116,12 @@
         "user_relevance": 7
       },
       {
-        "id": "33451746f5e349cac3f3",
-        "title": "Standard Chartered’s CRMx is giving corporate bankers more time for clients",
-        "url": "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
-        "source": "The Digital Banker",
-        "published_at": "2026-11-04T12:36:15+08:00",
-        "summary": "A Standard Chartered executive described CRMx as a platform connecting client data, opportunities and workflows, supporting more than 6,000 colleagues across 53 markets. The executive presented AI-powered meeting preparation, insight generation and action prioritisation as future opportunities, while describing frontline feedback as important to platform development. For change execution, the account points to dependencies on connected data and sustained user feedback; projected AI benefits are interview claims, not reported measured outcomes.",
+        "id": "b676419543a19d43bf89",
+        "title": "Error",
+        "url": "https://thelogic.co/news/wealthsimple-launches-ai-assistant",
+        "source": "The Logic",
+        "published_at": "2026-11-05T17:10:59+00:00",
+        "summary": "Wealthsimple announced Penny, an AI assistant that can prepare transfers, payments and trades within its platform, with customer approval required before execution. The company says Penny uses a secure data feed rather than screen scraping or customer banking credentials; it plans to enable access through ChatGPT and Claude in early 2027, also subject to customer approval. This illustrates a fintech approach that combines assistance with transaction approval, but the article leaves responsibility for losses from AI errors unresolved and does not establish customer adoption or performance.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 7,
@@ -145,54 +130,52 @@
         "user_relevance": 7
       },
       {
-        "id": "2c2f8d6a1310542769f0",
-        "title": "ANZ hires HSBC liquidity chief John Hoque as group treasurer",
-        "url": "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-11-04T15:41:20+08:00",
-        "summary": "ANZ appointed John Hoque as group treasurer, reporting to its group CFO; Hoque joins from HSBC, where he was managing director and global head of liquidity, and has more than 20 years of banking and treasury experience. This is a senior treasury move to a competitor, but the report does not describe any change to HSBC’s liquidity operations.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 7,
+        "id": "a36c616c1276e4cbe2a0",
+        "title": "Arab Bank Switzerland opens Abu Dhabi office and names Valérie Noël Chief Executive Officer - ADGM",
+        "url": "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
+        "source": "ADGM (search dated 2026-11-05)",
+        "published_at": "2026-11-05T13:22:10+00:00",
+        "summary": "Arab Bank Switzerland ME Ltd began operations in ADGM after receiving Financial Services Permission from the FSRA and appointed Valérie Noël as CEO. The entity says it will advise institutional, fintech, family-office and high-net-worth clients on digital assets within ADGM’s regulatory framework. This adds a competitor offering in Abu Dhabi’s digital-asset wealth market; the supplied material does not detail its operating model, client uptake or service outcomes.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "7e2090b3b22cf1523665",
+        "title": "DBS Profit Misses Estimates on Trading Drop, Names Lim Chair - Bloomberg.com",
+        "url": "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
+        "source": "Bloomberg.com",
+        "published_at": "2026-11-04T22:52:52.750000+00:00",
+        "summary": "Bloomberg reports that DBS’s third-quarter net profit fell 5% year over year to S$2.81 billion for the three months ended 30 September, below the surveyed analyst average, with weaker trading income offsetting gains in lending and wealth. The report also notes DBS announced a new chairman. The results provide a current competitor performance signal, but the excerpt does not give wealth-specific results or explain the causes of the trading-income decline beyond the stated market impact.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 4
       },
       {
-        "id": "3da1865410b8680f725d",
-        "title": "Singapore’s rise as a wealth hub mirrors Asia’s changing fortunes: Julius Baer Asia head",
-        "url": "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
-        "source": "The Straits Times",
-        "published_at": "2026-11-03T22:00:00+00:00",
-        "summary": "Julius Baer’s Asia head said Singapore is the bank’s second-largest global hub, with a workforce of more than 1,350, and described client interest in diversification, succession planning and family governance. The article also reports a forecast that Singapore cross-border wealth will grow 9% annually to US$3.3 trillion by 2030; this is a forecast, not an observed outcome. The article adds that Julius Baer established an innovation lab in Singapore in 2021 and that more than a quarter of its global business originates from Asia, offering context on a competitor’s regional presence and capability-building.",
-        "category": "Private Banking & Wealth",
+        "id": "a56d0b5e4c81e0d76822",
+        "title": "DBS Names Anthony Lim as Chairman From January 2027",
+        "url": "https://fintechnews.sg/140541/fintech/dbs-chairman",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-05T03:26:50+00:00",
+        "summary": "DBS named Anthony Lim as chairman from 1 January 2027, succeeding Peter Seah, who will leave the boards on 31 December 2026 and serve as senior adviser for one year. Lim has served on DBS’s boards since April 2020 and chaired its Compensation and Management Development Committee. The succession is a governance change at a major regional competitor; the report does not describe a new strategy or operating programme.",
+        "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "28423fe67842d0e35678",
-        "title": "Tencent Cloud Selected for HKMA's Agentic Finance Expert Group, Showcases WorkBuddy's New Financial Capabilities at Hong Kong FinTech Week",
-        "url": "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-11-03T08:30:00+00:00",
-        "summary": "Tencent Cloud said it was selected for the HKMA’s Agentic Finance Expert Group and described WorkBuddy’s investment-research capabilities, including company research, portfolio assessments using user-provided information and stock screening. The release says professionals retain research judgment and investment decisions, and identifies agent identity, accountability and security as relevant risks. For banking change teams, interoperability and human-review controls are practical considerations, but the vendor’s product claims do not establish independent performance or broad adoption.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 4,
-        "adam_rel": 6,
+        "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 4
       }
     ],
     "categories": {
-      "Regulatory & Markets": "#d97706",
+      "AI & Technology": "#6366f1",
       "Competitor Intelligence": "#0891b2",
-      "HSBC News": "#dc2626",
-      "Private Banking & Wealth": "#059669",
-      "AI & Technology": "#6366f1"
+      "Private Banking & Wealth": "#059669"
     }
   }
 }
