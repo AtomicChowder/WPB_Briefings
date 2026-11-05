@@ -1,18 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-04",
+    "last_updated": "2026-11-05",
     "daily": [
-      {
-        "date": "2026-10-29",
-        "urls": [
-          "https://financialpost.com/fp-finance/banking/rbc-block-personal-ai-agents-from-online-banking",
-          "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
-          "https://fintechnews.sg/139860/ai/meta-muse-ai-agent-singapore",
-          "https://markets.ft.com/data/announce/detail?dockey=600-202610280145BIZWIRE_USPRX____20261027_BW135620-1",
-          "https://pulse2.com/wells-fargo-names-kleber-santos-as-ceo-of-consumer-banking-and-lending-and-saul-van-beurden-as-head-of-ai"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-10-30",
         "urls": [
@@ -79,29 +68,39 @@
           "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
           "https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-05",
+        "urls": [
+          "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
+          "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
+          "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
+          "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
+          "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers"
+        ],
         "topics": [
-          "HSBC describes a Hong Kong institute with a broad technology remit",
-          "HSBC’s Hong Kong AI institute adds a workforce-readiness dimension",
-          "RedCoin’s early user count is not yet evidence of sustained usage"
+          "MAS begins an industry platform for financial-services AI",
+          "Standard Chartered presents CRMx as a connected frontline platform"
         ]
       }
     ],
     "covered_urls": [
       "https://aimmediahouse.com/banking/a-senior-banking-technologist-locked-ai-coding-agents-out-of-a-file-they-broke-the-bill-anyway",
       "https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud",
+      "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
       "https://bastillepost.com/global/article/6314365-chief-executive-welcomes-global-leaders-to-hong-kong-fintech-week-x-startmeuphk-2026",
       "https://businesstimes.com.sg/wealth/wealth-investing/unrest-europe-sparks-interest-singapore-family-office-hub-says-dbs-executive",
       "https://cryptonews.net/news/blockchain/33689570",
       "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
       "https://en.prnasia.com/releases/apac/dbs-named-world-s-best-digital-bank-553950.shtml",
       "https://exchange4media.com/people-movement-news/shasha-slaughter-appointed-vice-president-of-marketing-south-asia-at-hsbc-private-bank-159650.html",
-      "https://financialpost.com/fp-finance/banking/rbc-block-personal-ai-agents-from-online-banking",
+      "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
       "https://finews.com/news/english-news/74272-lombard-odier-hires-ubs-veteran-christina-staeger-ernst-to-lead-swiss-uhnw-business",
-      "https://fintechnews.sg/139855/wealthtech/syfe-head-wealth-advisory-jaclyn-kaur",
-      "https://fintechnews.sg/139860/ai/meta-muse-ai-agent-singapore",
       "https://fintechnews.sg/139992/indonesia/dbs-bca-merger",
       "https://fintechnews.sg/139995/fintech/mas-banks-haze-environmental-risk",
       "https://fintechnews.sg/140160/digital-banking-news-singapore/harikrishnan-raguraman-gxs-bank-cto",
+      "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
       "https://forklog.com/en/hong-kong-prepares-banks-for-quantum-era-and-ai-agents",
       "https://fundselectorasia.com/bank-of-singapore-names-two-new-relationship-managers-in-dubai-2",
       "https://gfmag.com/award/award-ceremonies-and-events/dbs-bank-han-kwee-juan-global-powerhouse",
@@ -111,19 +110,18 @@
       "https://investywise.com/idfc-first-bank-chief-information-security-officer-appointment-resignation",
       "https://investywise.com/karnataka-bank-ltd-appointment-of-chief-technology-officer",
       "https://livelawbiz.com/amp/competition-law/cci/competition-commission-of-india-approves-kotak-mahindra-bank-acquire-deutsche-bank-retail-wealth-management-business-557168",
-      "https://markets.ft.com/data/announce/detail?dockey=600-202610280145BIZWIRE_USPRX____20261027_BW135620-1",
       "https://media-outreach.com/news/hong-kong/2026/11/03/498598/citi-wealth-ai-pulse-survey-hong-kong-consumers-embrace-ai-but-still-want-humans-in-the-drivers-seat",
       "https://mobilesyrup.com/2026/11/02/canadian-banks-blocking-ai-agents-security-concerns",
       "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
       "https://openbankingexpo.com/news/ai-agents-could-render-traditional-payment-authentication-obsolete-warns-dr-ruth-wandhofer",
       "https://privatebankerinternational.com/news/dbs-report-family-offices-underprepared",
-      "https://pulse2.com/wells-fargo-names-kleber-santos-as-ceo-of-consumer-banking-and-lending-and-saul-van-beurden-as-head-of-ai",
       "https://pymnts.com/economy/2026/deutsche-bank-warns-ai-stock-selloff-threatens-dollar-safe-haven-status",
       "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
       "https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute",
       "https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans",
       "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
       "https://theasset.com/article/57402/hsbc-debuts-ai-solution-to-simplify-transaction-banking",
+      "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
       "https://thefullfx.com/deutsche-bank-gets-hkma-nod-for-offshore-rmb",
       "https://thestar.com.my/aseanplus/aseanplus-news/2026/10/30/ultra-wealthy-families-in-asia-including-singapore-lack-succession-and-crisis-planning-dbs-report",
       "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Bank-Of-Singapore?id=209224",
@@ -131,9 +129,8 @@
       "https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528"
     ],
     "covered_topics": [
-      "HSBC describes a Hong Kong institute with a broad technology remit",
-      "HSBC’s Hong Kong AI institute adds a workforce-readiness dimension",
-      "RedCoin’s early user count is not yet evidence of sustained usage"
+      "MAS begins an industry platform for financial-services AI",
+      "Standard Chartered presents CRMx as a connected frontline platform"
     ]
   }
 }

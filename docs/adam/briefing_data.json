@@ -3,85 +3,46 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 04 November 2026",
-  "date_str": "2026-11-04",
-  "generated_at": "2026-11-04T07:00:02.928600+08:00",
-  "total_articles": 9,
+  "briefing_date": "Thursday, 05 November 2026",
+  "date_str": "2026-11-05",
+  "generated_at": "2026-11-05T08:11:40.580658+08:00",
+  "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC describes a Hong Kong institute with a broad technology remit",
-      "context_html": "HSBC’s planned institute is expected to begin in early 2027, with initial work spanning AI upskilling and safety, fraud detection, post-quantum cryptography and blockchain, and HKUST as anchor academic partner. A delivery consideration is how research priorities translate into accountable operational use cases and skilled capacity; the article does not provide resourcing, governance or deployment detail.",
+      "headline": "MAS begins an industry platform for financial-services AI",
+      "context_html": "MAS says the Future of Finance Institute has begun operations, with initial programmes covering AI knowledge sharing, deployment and risk management. For APAC delivery, a practical question is whether shared tools or guidance can support consistent AI assurance while preserving each bank’s accountability for its own controls. The report describes planned programmes, not binding requirements or proven industry-wide adoption.",
       "source_links": [
         {
-          "url": "https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud",
-          "title": "HSBC to launch teck institute to tackle agentic AI fraud"
+          "url": "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
+          "title": "MAS’ Future of Finance Institute Begins Operations with AI Focus"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC’s Hong Kong AI institute adds a workforce-readiness dimension",
-      "context_html": "HSBC plans a Hong Kong institute and reports AI training for its global workforce, while the HKMA’s Project SAGE will seek industry input on agent governance and accountability. For execution, a practical dependency is aligning training with clear role-based controls and escalation paths rather than treating training as a standalone capability. The report gives no institute staffing plan or detail on how training will be assessed.",
+      "headline": "Standard Chartered presents CRMx as a connected frontline platform",
+      "context_html": "Standard Chartered says CRMx brings client information and workflows together for more than 6,000 colleagues across 53 markets, and describes AI-driven insights as a future direction. For change execution, a concrete dependency is reliable, joined-up client data and a feedback loop that converts frontline issues into platform changes. The interview provides no independently measured productivity or client outcomes.",
       "source_links": [
         {
-          "url": "https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute",
-          "title": "HSBC to open Hong Kong AI and emerging technology institute in 2027 - Retail Banker International"
-        }
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "RedCoin’s early user count is not yet evidence of sustained usage",
-      "context_html": "Serrari reports 50,000 users shortly after RedCoin’s PayMe launch and plans for wider app access and tokenized investments. A useful delivery criterion would be to distinguish registrations from completed transactions and repeat use before judging capacity or service readiness. The article itself says active use and transaction frequency have not been disclosed.",
-      "source_links": [
-        {
-          "url": "https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans",
-          "title": "HSBC RedCoin Reaches 50,000 Users as Bank Expands Hong Kong AI Plans"
+          "url": "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
+          "title": "Standard Chartered’s CRMx is giving corporate bankers more time for clients"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "Regulatory & Markets": [
       {
-        "id": "1161cfe1cefe246642e7",
-        "title": "HSBC to open Hong Kong AI and emerging technology institute in 2027 - Retail Banker International",
-        "url": "https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute",
-        "source": "Retail Banker International",
-        "published_at": "2026-11-03T10:52:31+00:00",
-        "summary": "HSBC plans to establish an AI and emerging technology institute in Hong Kong, with operations expected to begin in Q1 2027 and HKUST as anchor academic partner. The report also says HSBC is introducing AI training for its global workforce and that the HKMA plans Project SAGE to consider agent identity, governance and accountability. These developments make skills, governance and coordination relevant execution considerations; the article does not disclose institute staffing or detailed operating plans.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "37ab61d05740453954fa",
-        "title": "HSBC to launch teck institute to tackle agentic AI fraud",
-        "url": "https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-11-03T16:00:08+08:00",
-        "summary": "Asian Banking & Finance reports that HSBC plans a Hong Kong-based global AI and emerging technology institute, expected to begin operations in early 2027, with initial areas including AI upskilling, safety, fraud detection, post-quantum cryptography and blockchain. HKUST is named as anchor academic partner, and the report places the institute in the Northern Metropolis. This is a proposed capability-building initiative with potential links to future operational research and skills; the article does not detail governance, resourcing or deployment plans.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "2ccbae25b12a575e999f",
-        "title": "HSBC RedCoin Reaches 50,000 Users as Bank Expands Hong Kong AI Plans",
-        "url": "https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans",
-        "source": "Serrari Group",
-        "published_at": "2026-11-03T07:17:38+00:00",
-        "summary": "Serrari Group reports that HSBC’s Hong Kong dollar-backed RedCoin reached 50,000 users just over a week after its October 23 launch through PayMe, and says HSBC plans to extend access through its mobile banking app and support tokenized investment subscriptions. The article notes that user numbers do not establish active transactions and that HSBC has not provided a detailed wider-access timetable. For delivery, scaling through existing channels makes customer eligibility, transaction monitoring and service readiness relevant questions; the report does not provide usage frequency or operational performance.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
+        "id": "6ac9c8689e7899afc257",
+        "title": "MAS’ Future of Finance Institute Begins Operations with AI Focus",
+        "url": "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-04T01:49:04+00:00",
+        "summary": "Singapore’s MAS said the Future of Finance Institute has begun operations, initially focusing on AI adoption through programmes for knowledge sharing, deployment and risk management. The institute plans work on practical tools and standards, including safeguards for agentic AI and enhancements to the MindForge AI Risk Management Toolkit. For banks operating in Singapore, this creates an industry collaboration and resource channel; the report does not establish that its guidance is mandatory or already adopted across firms.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 6,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
@@ -90,60 +51,34 @@
     ],
     "Competitor Intelligence": [
       {
-        "id": "9037f8748c2f0d11e128",
-        "title": "Standard Chartered Launches Tokenized Deposits in Hong Kong via HKMA Project Ensemble",
-        "url": "https://cryptonews.net/news/blockchain/33689570",
-        "source": "Cryptonews.net",
-        "published_at": "2026-11-02T15:23:00+00:00",
-        "summary": "Standard Chartered has launched a Hong Kong tokenized-deposit service for corporate clients, enabling transfers between participating banks using HKMA EnsembleTX infrastructure. The report says China AMC, Finloop and Panther Trade have executed live transactions and describes 24/7 settlement support, including central-bank money. For banking operations, this points to dependencies across settlement infrastructure, participant connectivity and treasury workflows; the article relies on secondary reporting and does not detail operating controls or transaction volumes.",
+        "id": "33451746f5e349cac3f3",
+        "title": "Standard Chartered’s CRMx is giving corporate bankers more time for clients",
+        "url": "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
+        "source": "The Digital Banker",
+        "published_at": "2026-11-04T12:36:15+08:00",
+        "summary": "A Standard Chartered executive described CRMx as a platform connecting client data, opportunities and workflows, supporting more than 6,000 colleagues across 53 markets. The executive presented AI-powered meeting preparation, insight generation and action prioritisation as future opportunities, while describing frontline feedback as important to platform development. For change execution, the account points to dependencies on connected data and sustained user feedback; projected AI benefits are interview claims, not reported measured outcomes.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 6,
+        "hsbc_relevancy": 5,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
-      },
+      }
+    ],
+    "HSBC News": [
       {
-        "id": "b18c009eb7a89439dc4e",
-        "title": "Kotak Mahindra Bank Gets CCI Nod To Acquire Deutsche Bank's Retail, Wealth Management Business",
-        "url": "https://livelawbiz.com/amp/competition-law/cci/competition-commission-of-india-approves-kotak-mahindra-bank-acquire-deutsche-bank-retail-wealth-management-business-557168",
-        "source": "LiveLawBiz",
-        "published_at": "2026-11-03T20:06:57+05:30",
-        "summary": "India’s Competition Commission approved Kotak Mahindra Bank’s proposed acquisition of Deutsche Bank’s Indian retail, private banking and wealth-management business, operated through its Indian branches, as a going concern. The parties also propose customer referrals for certain investment-advisory and portfolio-management services. For change execution, the approval is a transaction milestone, but the supplied report says a detailed order is pending and gives no completion timetable or integration plan.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
+        "id": "2c2f8d6a1310542769f0",
+        "title": "ANZ hires HSBC liquidity chief John Hoque as group treasurer",
+        "url": "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-04T15:41:20+08:00",
+        "summary": "ANZ appointed John Hoque as group treasurer, reporting to its group CFO; Hoque joins from HSBC, where he was managing director and global head of liquidity, and has more than 20 years of banking and treasury experience. This is a senior treasury move to a competitor, but the report does not describe any change to HSBC’s liquidity operations.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "c8d1f620771cc92de966",
-        "title": "Capital.com appoints Standard Chartered as global banking partner for virtual assets",
-        "url": "https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528",
-        "source": "Zawya",
-        "published_at": "2026-11-03T09:17:47.192000+00:00",
-        "summary": "Zawya reports that Standard Chartered has an operational global banking partnership with Capital.com across MENA and Europe, providing services including fiat settlement and client money accounts for regulated virtual-asset affiliates. The arrangement uses a single banking relationship for the affiliates’ settlement and client-fund activity within applicable jurisdictional controls; it illustrates a competitor infrastructure model, but the release supplies no operational or client-outcome evidence.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "ed0f8c77d3b3904a64d3",
-        "title": "Citi Wealth AI Pulse Survey: Hong Kong Consumers Embrace AI, But Still Want Humans in the Driver's Seat #citibank - Media OutReach Newswire",
-        "url": "https://media-outreach.com/news/hong-kong/2026/11/03/498598/citi-wealth-ai-pulse-survey-hong-kong-consumers-embrace-ai-but-still-want-humans-in-the-drivers-seat",
-        "source": "Media OutReach Newswire",
-        "published_at": "2026-11-03T09:00:00+08:00",
-        "summary": "Citi Hong Kong’s 2026 Wealth AI Pulse Survey is presented as finding that consumers use AI in daily life while many remain concerned about keeping pace, including a reported concern among Gen Z. The supplied text does not include survey figures, methodology or detailed findings. For wealth-service design, the title’s human-in-the-driver’s-seat framing raises a question about how to preserve adviser involvement; the available release excerpt is insufficient to assess the survey’s strength or representativeness.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 4
       }
     ],
     "Private Banking & Wealth": [
@@ -153,59 +88,75 @@
         "url": "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
         "source": "The Straits Times",
         "published_at": "2026-11-03T22:00:00+00:00",
-        "summary": "Julius Baer’s Asia head said Singapore has become the bank’s second-largest global hub, with more than 1,350 employees, and described client interest in diversification, succession planning and family governance. The article also reports that Singapore cross-border wealth is forecast to grow at 9% annually through 2030, citing the bank’s account of the market. For APAC wealth delivery, the reported client priorities suggest demand for coordinated investment and generational-planning services; the growth figure is a forecast, not a measured outcome.",
+        "summary": "Julius Baer’s Asia head said Singapore is the bank’s second-largest global hub, with a workforce of more than 1,350, and described client interest in diversification, succession planning and family governance. The article also reports a forecast that Singapore cross-border wealth will grow 9% annually to US$3.3 trillion by 2030; this is a forecast, not an observed outcome. The article adds that Julius Baer established an innovation lab in Singapore in 2021 and that more than a quarter of its global business originates from Asia, offering context on a competitor’s regional presence and capability-building.",
         "category": "Private Banking & Wealth",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 1,
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 6
-      },
+      }
+    ],
+    "AI & Technology": [
       {
-        "id": "ab130321cd3319ff5f9e",
-        "title": "Lombard Odier hires longtime UBS banker for ultra-wealthy businessGeneva asset manager taps former Coutts investment chief for board",
-        "url": "https://finews.com/news/english-news/74272-lombard-odier-hires-ubs-veteran-christina-staeger-ernst-to-lead-swiss-uhnw-business",
-        "source": "finews.com",
-        "published_at": "2026-11-03T08:00:00+00:00",
-        "summary": "finews.com reports that Lombard Odier appointed Christina Stäger Ernst to lead its UHNWI and Single Family Offices segment for German-speaking Switzerland from 1 January 2027. The report describes the move as part of an expansion in that market and notes her prior UBS leadership experience; it signals competitor investment in specialist coverage, but does not describe expected scale or outcomes.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
+        "id": "28423fe67842d0e35678",
+        "title": "Tencent Cloud Selected for HKMA's Agentic Finance Expert Group, Showcases WorkBuddy's New Financial Capabilities at Hong Kong FinTech Week",
+        "url": "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-11-03T08:30:00+00:00",
+        "summary": "Tencent Cloud said it was selected for the HKMA’s Agentic Finance Expert Group and described WorkBuddy’s investment-research capabilities, including company research, portfolio assessments using user-provided information and stock screening. The release says professionals retain research judgment and investment decisions, and identifies agent identity, accountability and security as relevant risks. For banking change teams, interoperability and human-review controls are practical considerations, but the vendor’s product claims do not establish independent performance or broad adoption.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 6
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "1161cfe1cefe246642e7",
-        "title": "HSBC to open Hong Kong AI and emerging technology institute in 2027 - Retail Banker International",
-        "url": "https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute",
-        "source": "Retail Banker International",
-        "published_at": "2026-11-03T10:52:31+00:00",
-        "summary": "HSBC plans to establish an AI and emerging technology institute in Hong Kong, with operations expected to begin in Q1 2027 and HKUST as anchor academic partner. The report also says HSBC is introducing AI training for its global workforce and that the HKMA plans Project SAGE to consider agent identity, governance and accountability. These developments make skills, governance and coordination relevant execution considerations; the article does not disclose institute staffing or detailed operating plans.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "9037f8748c2f0d11e128",
-        "title": "Standard Chartered Launches Tokenized Deposits in Hong Kong via HKMA Project Ensemble",
-        "url": "https://cryptonews.net/news/blockchain/33689570",
-        "source": "Cryptonews.net",
-        "published_at": "2026-11-02T15:23:00+00:00",
-        "summary": "Standard Chartered has launched a Hong Kong tokenized-deposit service for corporate clients, enabling transfers between participating banks using HKMA EnsembleTX infrastructure. The report says China AMC, Finloop and Panther Trade have executed live transactions and describes 24/7 settlement support, including central-bank money. For banking operations, this points to dependencies across settlement infrastructure, participant connectivity and treasury workflows; the article relies on secondary reporting and does not detail operating controls or transaction volumes.",
-        "category": "Competitor Intelligence",
+        "id": "6ac9c8689e7899afc257",
+        "title": "MAS’ Future of Finance Institute Begins Operations with AI Focus",
+        "url": "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-04T01:49:04+00:00",
+        "summary": "Singapore’s MAS said the Future of Finance Institute has begun operations, initially focusing on AI adoption through programmes for knowledge sharing, deployment and risk management. The institute plans work on practical tools and standards, including safeguards for agentic AI and enhancements to the MindForge AI Risk Management Toolkit. For banks operating in Singapore, this creates an industry collaboration and resource channel; the report does not establish that its guidance is mandatory or already adopted across firms.",
+        "category": "Regulatory & Markets",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
+      },
+      {
+        "id": "33451746f5e349cac3f3",
+        "title": "Standard Chartered’s CRMx is giving corporate bankers more time for clients",
+        "url": "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
+        "source": "The Digital Banker",
+        "published_at": "2026-11-04T12:36:15+08:00",
+        "summary": "A Standard Chartered executive described CRMx as a platform connecting client data, opportunities and workflows, supporting more than 6,000 colleagues across 53 markets. The executive presented AI-powered meeting preparation, insight generation and action prioritisation as future opportunities, while describing frontline feedback as important to platform development. For change execution, the account points to dependencies on connected data and sustained user feedback; projected AI benefits are interview claims, not reported measured outcomes.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "2c2f8d6a1310542769f0",
+        "title": "ANZ hires HSBC liquidity chief John Hoque as group treasurer",
+        "url": "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-04T15:41:20+08:00",
+        "summary": "ANZ appointed John Hoque as group treasurer, reporting to its group CFO; Hoque joins from HSBC, where he was managing director and global head of liquidity, and has more than 20 years of banking and treasury experience. This is a senior treasury move to a competitor, but the report does not describe any change to HSBC’s liquidity operations.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
       },
       {
         "id": "3da1865410b8680f725d",
@@ -213,103 +164,35 @@
         "url": "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
         "source": "The Straits Times",
         "published_at": "2026-11-03T22:00:00+00:00",
-        "summary": "Julius Baer’s Asia head said Singapore has become the bank’s second-largest global hub, with more than 1,350 employees, and described client interest in diversification, succession planning and family governance. The article also reports that Singapore cross-border wealth is forecast to grow at 9% annually through 2030, citing the bank’s account of the market. For APAC wealth delivery, the reported client priorities suggest demand for coordinated investment and generational-planning services; the growth figure is a forecast, not a measured outcome.",
+        "summary": "Julius Baer’s Asia head said Singapore is the bank’s second-largest global hub, with a workforce of more than 1,350, and described client interest in diversification, succession planning and family governance. The article also reports a forecast that Singapore cross-border wealth will grow 9% annually to US$3.3 trillion by 2030; this is a forecast, not an observed outcome. The article adds that Julius Baer established an innovation lab in Singapore in 2021 and that more than a quarter of its global business originates from Asia, offering context on a competitor’s regional presence and capability-building.",
         "category": "Private Banking & Wealth",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 1,
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 6
       },
       {
-        "id": "37ab61d05740453954fa",
-        "title": "HSBC to launch teck institute to tackle agentic AI fraud",
-        "url": "https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-11-03T16:00:08+08:00",
-        "summary": "Asian Banking & Finance reports that HSBC plans a Hong Kong-based global AI and emerging technology institute, expected to begin operations in early 2027, with initial areas including AI upskilling, safety, fraud detection, post-quantum cryptography and blockchain. HKUST is named as anchor academic partner, and the report places the institute in the Northern Metropolis. This is a proposed capability-building initiative with potential links to future operational research and skills; the article does not detail governance, resourcing or deployment plans.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
+        "id": "28423fe67842d0e35678",
+        "title": "Tencent Cloud Selected for HKMA's Agentic Finance Expert Group, Showcases WorkBuddy's New Financial Capabilities at Hong Kong FinTech Week",
+        "url": "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-11-03T08:30:00+00:00",
+        "summary": "Tencent Cloud said it was selected for the HKMA’s Agentic Finance Expert Group and described WorkBuddy’s investment-research capabilities, including company research, portfolio assessments using user-provided information and stock screening. The release says professionals retain research judgment and investment decisions, and identifies agent identity, accountability and security as relevant risks. For banking change teams, interoperability and human-review controls are practical considerations, but the vendor’s product claims do not establish independent performance or broad adoption.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "2ccbae25b12a575e999f",
-        "title": "HSBC RedCoin Reaches 50,000 Users as Bank Expands Hong Kong AI Plans",
-        "url": "https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans",
-        "source": "Serrari Group",
-        "published_at": "2026-11-03T07:17:38+00:00",
-        "summary": "Serrari Group reports that HSBC’s Hong Kong dollar-backed RedCoin reached 50,000 users just over a week after its October 23 launch through PayMe, and says HSBC plans to extend access through its mobile banking app and support tokenized investment subscriptions. The article notes that user numbers do not establish active transactions and that HSBC has not provided a detailed wider-access timetable. For delivery, scaling through existing channels makes customer eligibility, transaction monitoring and service readiness relevant questions; the report does not provide usage frequency or operational performance.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "b18c009eb7a89439dc4e",
-        "title": "Kotak Mahindra Bank Gets CCI Nod To Acquire Deutsche Bank's Retail, Wealth Management Business",
-        "url": "https://livelawbiz.com/amp/competition-law/cci/competition-commission-of-india-approves-kotak-mahindra-bank-acquire-deutsche-bank-retail-wealth-management-business-557168",
-        "source": "LiveLawBiz",
-        "published_at": "2026-11-03T20:06:57+05:30",
-        "summary": "India’s Competition Commission approved Kotak Mahindra Bank’s proposed acquisition of Deutsche Bank’s Indian retail, private banking and wealth-management business, operated through its Indian branches, as a going concern. The parties also propose customer referrals for certain investment-advisory and portfolio-management services. For change execution, the approval is a transaction milestone, but the supplied report says a detailed order is pending and gives no completion timetable or integration plan.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "ab130321cd3319ff5f9e",
-        "title": "Lombard Odier hires longtime UBS banker for ultra-wealthy businessGeneva asset manager taps former Coutts investment chief for board",
-        "url": "https://finews.com/news/english-news/74272-lombard-odier-hires-ubs-veteran-christina-staeger-ernst-to-lead-swiss-uhnw-business",
-        "source": "finews.com",
-        "published_at": "2026-11-03T08:00:00+00:00",
-        "summary": "finews.com reports that Lombard Odier appointed Christina Stäger Ernst to lead its UHNWI and Single Family Offices segment for German-speaking Switzerland from 1 January 2027. The report describes the move as part of an expansion in that market and notes her prior UBS leadership experience; it signals competitor investment in specialist coverage, but does not describe expected scale or outcomes.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "c8d1f620771cc92de966",
-        "title": "Capital.com appoints Standard Chartered as global banking partner for virtual assets",
-        "url": "https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528",
-        "source": "Zawya",
-        "published_at": "2026-11-03T09:17:47.192000+00:00",
-        "summary": "Zawya reports that Standard Chartered has an operational global banking partnership with Capital.com across MENA and Europe, providing services including fiat settlement and client money accounts for regulated virtual-asset affiliates. The arrangement uses a single banking relationship for the affiliates’ settlement and client-fund activity within applicable jurisdictional controls; it illustrates a competitor infrastructure model, but the release supplies no operational or client-outcome evidence.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "ed0f8c77d3b3904a64d3",
-        "title": "Citi Wealth AI Pulse Survey: Hong Kong Consumers Embrace AI, But Still Want Humans in the Driver's Seat #citibank - Media OutReach Newswire",
-        "url": "https://media-outreach.com/news/hong-kong/2026/11/03/498598/citi-wealth-ai-pulse-survey-hong-kong-consumers-embrace-ai-but-still-want-humans-in-the-drivers-seat",
-        "source": "Media OutReach Newswire",
-        "published_at": "2026-11-03T09:00:00+08:00",
-        "summary": "Citi Hong Kong’s 2026 Wealth AI Pulse Survey is presented as finding that consumers use AI in daily life while many remain concerned about keeping pace, including a reported concern among Gen Z. The supplied text does not include survey figures, methodology or detailed findings. For wealth-service design, the title’s human-in-the-driver’s-seat framing raises a question about how to preserve adviser involvement; the available release excerpt is insufficient to assess the survey’s strength or representativeness.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 6
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
+      "Regulatory & Markets": "#d97706",
       "Competitor Intelligence": "#0891b2",
-      "Private Banking & Wealth": "#059669"
+      "HSBC News": "#dc2626",
+      "Private Banking & Wealth": "#059669",
+      "AI & Technology": "#6366f1"
     }
   }
 }
