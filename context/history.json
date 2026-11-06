@@ -1,21 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-06",
+    "last_updated": "2026-11-07",
     "daily": [
-      {
-        "date": "2026-10-31",
-        "urls": [
-          "https://businesstimes.com.sg/wealth/wealth-investing/unrest-europe-sparks-interest-singapore-family-office-hub-says-dbs-executive",
-          "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
-          "https://insurancejournal.com/news/international/2026/10/29/890752.htm",
-          "https://investywise.com/idfc-first-bank-chief-information-security-officer-appointment-resignation",
-          "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
-          "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
-          "https://thefullfx.com/deutsche-bank-gets-hkma-nod-for-offshore-rmb",
-          "https://thestar.com.my/aseanplus/aseanplus-news/2026/10/30/ultra-wealthy-families-in-asia-including-singapore-lack-succession-and-crisis-planning-dbs-report"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-01",
         "urls": [
@@ -76,53 +62,70 @@
           "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
           "https://thelogic.co/news/wealthsimple-launches-ai-assistant"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-07",
+        "urls": [
+          "https://americanbanker.com/news/occ-banks-need-strong-controls-when-delegating-to-ai-agents",
+          "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+          "https://finance.yahoo.com/news/deutsche-bank-establishes-ai-academy-121244530.html",
+          "https://fintechnews.sg/140548/payments/pyvio-mas-major-payment-institution-license",
+          "https://straitstimes.com/business/dbs-chairman-peter-seah-to-retire-with-effect-from-jan-1-2027-q3-net-profit-at-2-8b",
+          "https://uk.finance.yahoo.com/news/change-business-name-subsidiary-lhv-060000922.html",
+          "https://wealthbriefing.com/html/article.php/whos-moving-where-in-wealth-management--hsbc-private-bank%2C-gallagher%2C-others-"
+        ],
         "topics": [
-          "ADGM adds a digital-asset wealth competitor"
+          "Deutsche Bank is scaling role-based AI training",
+          "HSBC changes UK private-bank leadership and UAE corridor coverage",
+          "Pyvio receives a Singapore payments licence"
         ]
       }
     ],
     "covered_urls": [
       "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
+      "https://americanbanker.com/news/occ-banks-need-strong-controls-when-delegating-to-ai-agents",
       "https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud",
       "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
       "https://bastillepost.com/global/article/6314365-chief-executive-welcomes-global-leaders-to-hong-kong-fintech-week-x-startmeuphk-2026",
       "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
-      "https://businesstimes.com.sg/wealth/wealth-investing/unrest-europe-sparks-interest-singapore-family-office-hub-says-dbs-executive",
       "https://cryptonews.net/news/blockchain/33689570",
-      "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+      "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
       "https://en.prnasia.com/releases/apac/dbs-named-world-s-best-digital-bank-553950.shtml",
+      "https://finance.yahoo.com/news/deutsche-bank-establishes-ai-academy-121244530.html",
       "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
       "https://finews.com/news/english-news/74272-lombard-odier-hires-ubs-veteran-christina-staeger-ernst-to-lead-swiss-uhnw-business",
       "https://fintechnews.sg/140160/digital-banking-news-singapore/harikrishnan-raguraman-gxs-bank-cto",
       "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
       "https://fintechnews.sg/140541/fintech/dbs-chairman",
+      "https://fintechnews.sg/140548/payments/pyvio-mas-major-payment-institution-license",
       "https://forklog.com/en/hong-kong-prepares-banks-for-quantum-era-and-ai-agents",
       "https://gfmag.com/award/award-ceremonies-and-events/dbs-bank-han-kwee-juan-global-powerhouse",
       "https://gtreview.com/news/on-the-move/citi-hires-from-hsbc-for-newly-created-global-trade-role",
-      "https://insurancejournal.com/news/international/2026/10/29/890752.htm",
-      "https://investywise.com/idfc-first-bank-chief-information-security-officer-appointment-resignation",
       "https://investywise.com/karnataka-bank-ltd-appointment-of-chief-technology-officer",
       "https://livelawbiz.com/amp/competition-law/cci/competition-commission-of-india-approves-kotak-mahindra-bank-acquire-deutsche-bank-retail-wealth-management-business-557168",
       "https://media-outreach.com/news/hong-kong/2026/11/03/498598/citi-wealth-ai-pulse-survey-hong-kong-consumers-embrace-ai-but-still-want-humans-in-the-drivers-seat",
       "https://mobilesyrup.com/2026/11/02/canadian-banks-blocking-ai-agents-security-concerns",
-      "https://moneycontrol.com/news/business/banks/scaling-wealth-biz-is-core-to-dbs-s-agenda-says-wealth-head-shee-tse-koon-14063195.html",
       "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
       "https://openbankingexpo.com/news/ai-agents-could-render-traditional-payment-authentication-obsolete-warns-dr-ruth-wandhofer",
       "https://privatebankerinternational.com/news/dbs-report-family-offices-underprepared",
       "https://pymnts.com/economy/2026/deutsche-bank-warns-ai-stock-selloff-threatens-dollar-safe-haven-status",
-      "https://pymnts.com/news/banking/2026/ubs-employees-run-12700-ai-agents-as-bank-automation-accelerates",
       "https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute",
       "https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans",
+      "https://straitstimes.com/business/dbs-chairman-peter-seah-to-retire-with-effect-from-jan-1-2027-q3-net-profit-at-2-8b",
       "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
       "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
-      "https://thefullfx.com/deutsche-bank-gets-hkma-nod-for-offshore-rmb",
       "https://thelogic.co/news/wealthsimple-launches-ai-assistant",
       "https://thestar.com.my/aseanplus/aseanplus-news/2026/10/30/ultra-wealthy-families-in-asia-including-singapore-lack-succession-and-crisis-planning-dbs-report",
+      "https://uk.finance.yahoo.com/news/change-business-name-subsidiary-lhv-060000922.html",
+      "https://wealthbriefing.com/html/article.php/whos-moving-where-in-wealth-management--hsbc-private-bank%2C-gallagher%2C-others-",
       "https://zaobao.com.sg/en/finance/singapore/more-half-wealthy-families-favour-holding-assets-their-own-names-risking-disputes-and-estate-tax-dbs",
       "https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528"
     ],
     "covered_topics": [
-      "ADGM adds a digital-asset wealth competitor"
+      "Deutsche Bank is scaling role-based AI training",
+      "HSBC changes UK private-bank leadership and UAE corridor coverage",
+      "Pyvio receives a Singapore payments licence"
     ]
   }
 }

@@ -3,33 +3,115 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Friday, 06 November 2026",
-  "date_str": "2026-11-06",
-  "generated_at": "2026-11-06T07:00:03.314245+08:00",
-  "total_articles": 5,
+  "briefing_date": "Saturday, 07 November 2026",
+  "date_str": "2026-11-07",
+  "generated_at": "2026-11-07T07:00:03.315795+08:00",
+  "total_articles": 7,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "ADGM adds a digital-asset wealth competitor",
-      "context_html": "Arab Bank Switzerland ME Ltd says it has received ADGM authorization and begun advising institutional and high-net-worth clients on digital assets. This adds a regional competitor offering, making regulatory permissions and the boundaries of advice and asset services relevant comparison criteria for wealth delivery. The supplied announcement does not report client uptake or operational performance.",
+      "headline": "Deutsche Bank is scaling role-based AI training",
+      "context_html": "Deutsche Bank reports that its Private Bank AI Academy combines role-based learning with online study, classes and workshops, and plans to expand beyond its initial 3,500 employees. For change execution, a practical criterion is whether learning routes connect to specific permitted tasks and reinforce responsible use, rather than measuring attendance alone. The report gives no learning or productivity outcomes.",
       "source_links": [
         {
-          "url": "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
-          "title": "Arab Bank Switzerland opens Abu Dhabi office and names Valérie Noël Chief Executive Officer - ADGM"
+          "url": "https://finance.yahoo.com/news/deutsche-bank-establishes-ai-academy-121244530.html",
+          "title": "Deutsche Bank establishes AI academy for private bankers"
+        }
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "HSBC changes UK private-bank leadership and UAE corridor coverage",
+      "context_html": "HSBC Private Bank is combining UK HNW and Special Segments leadership and creating a Dubai-based UK Expat role for the UAE. A delivery question is how client ownership and referral handoffs will work across the UK and UAE teams, particularly where clients need wider banking services. The report describes the appointments and intended client support but gives no process detail or measured outcomes.",
+      "source_links": [
+        {
+          "url": "https://wealthbriefing.com/html/article.php/whos-moving-where-in-wealth-management--hsbc-private-bank%2C-gallagher%2C-others-",
+          "title": "Who’s Moving Where In Wealth Management? – HSBC Private Bank, Gallagher, Others - Wealth Briefing"
+        }
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "Pyvio receives a Singapore payments licence",
+      "context_html": "MAS has licensed Pyvio for five payment services, including cross-border transfers and e-money issuance, effective 1 November. For banking operations in APAC, the concrete question is how a newly licensed provider will establish controls and counterparties for cross-border flows before expanding regionally. Pyvio’s regional growth is stated as an intention; the report provides no evidence of operating scale or customer uptake.",
+      "source_links": [
+        {
+          "url": "https://fintechnews.sg/140548/payments/pyvio-mas-major-payment-institution-license",
+          "title": "Pyvio Secures MAS Major Payment Institution License"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
+    "HSBC News": [
+      {
+        "id": "557747b5c8fba76bb176",
+        "title": "Who’s Moving Where In Wealth Management? – HSBC Private Bank, Gallagher, Others - Wealth Briefing",
+        "url": "https://wealthbriefing.com/html/article.php/whos-moving-where-in-wealth-management--hsbc-private-bank%2C-gallagher%2C-others-",
+        "source": "Wealth Briefing (search dated 2026-11-06)",
+        "published_at": "2026-11-06T08:10:50+00:00",
+        "summary": "HSBC Private Bank is bringing its UK HNW and Special Segments teams under one leadership structure, with Philip Aleppo overseeing the combined teams. Nick Wolf has taken a newly created Dubai-based role leading UK Expat for the UAE, reporting to the head of HSBC Private Bank in the UAE. The changes indicate a stated focus on connected UK coverage and the UK-UAE wealth corridor; the report does not provide implementation detail or client outcomes.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 7
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "707eb2e85a84b7df3303",
+        "title": "OCC: Banks need strong controls when delegating to AI agents",
+        "url": "https://americanbanker.com/news/occ-banks-need-strong-controls-when-delegating-to-ai-agents",
+        "source": "American Banker",
+        "published_at": "2026-11-05T18:42:06.533000+00:00",
+        "summary": "American Banker reports that the OCC issued non-binding guidance for examining banks' AI use, applying existing supervisory criteria rather than treating AI as a separate risk category. The article describes six oversight areas and emphasizes controls proportionate to an AI system's purpose, consequences and autonomy, including human oversight, testing, resilience and third-party risk. For banking change execution, this highlights the need to evidence delegated authority and assign intervention rights; the report concerns OCC supervisory guidance and does not establish requirements in other jurisdictions.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 2,
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "d05178114f1684101ae0",
+        "title": "Pyvio Secures MAS Major Payment Institution License",
+        "url": "https://fintechnews.sg/140548/payments/pyvio-mas-major-payment-institution-license",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-05T03:46:31+00:00",
+        "summary": "Pyvio received a MAS Major Payment Institution licence effective 1 November, covering account issuance, domestic and cross-border transfers, merchant acquisition and e-money issuance. Pyvio says the licence provides a basis for licensed Singapore operations and regional expansion. This adds a newly licensed payments competitor in Singapore; the report does not establish operational scale, customer activity or realized regional reach.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "250ff2c9b52c8beb725d",
+        "title": "ECB publishes consolidated banking data for end-June 2026",
+        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-06T10:00:00+01:00",
+        "summary": "The ECB published consolidated EU banking data for end-June 2026, reporting total assets of €34.99 trillion, an aggregate non-performing-loan ratio of 1.99%, return on equity of 5.31% and a CET1 ratio of 16.43%. The dataset provides sector-level context for market and balance-sheet analysis; the figures are EU aggregates, not indicators of individual banks or APAC conditions.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 3
+      }
+    ],
     "AI & Technology": [
       {
-        "id": "9f918238938eb15dc377",
-        "title": "Major Banks Move to Block or Limit Customer-Directed AI Agents - The National Law Review",
-        "url": "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
-        "source": "The National Law Review (search dated 2026-11-04)",
-        "published_at": "2026-11-04T15:55:34+00:00",
-        "summary": "The article says JPMorgan Chase, Charles Schwab, Citigroup and Wells Fargo moved in October 2026 to block or contractually reallocate risk for third-party AI agents using customers’ credentials to access accounts; it contrasts these restrictions with permitted read-only open-banking connections. It describes security, fraud, deposit and liability concerns, alongside unsettled open-banking rules. For bank change teams, the distinction between credential-based access and controlled, authorized data connections is relevant to access design and accountability; the article’s legal and market characterizations are not evidence of a settled regulatory position.",
+        "id": "25e7f5e9083a7eb1ea2f",
+        "title": "Deutsche Bank establishes AI academy for private bankers",
+        "url": "https://finance.yahoo.com/news/deutsche-bank-establishes-ai-academy-121244530.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-11-06T12:12:44+00:00",
+        "summary": "Deutsche Bank’s Private Bank has introduced the PB AI Academy, a role-based training programme combining self-study, trainer-led classes, workshops and staff communities. It is available to about 3,500 employees in international locations, with planned expansion to more than 20,000 Private Bank employees and a planned German launch in the first half of 2027 after consultation with employee representatives. The programme is a competitor example of structured AI capability-building; the report does not provide evidence of learning outcomes or resulting productivity gains.",
         "category": "AI & Technology",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
@@ -40,74 +122,72 @@
     ],
     "Competitor Intelligence": [
       {
-        "id": "b676419543a19d43bf89",
-        "title": "Error",
-        "url": "https://thelogic.co/news/wealthsimple-launches-ai-assistant",
-        "source": "The Logic",
-        "published_at": "2026-11-05T17:10:59+00:00",
-        "summary": "Wealthsimple announced Penny, an AI assistant that can prepare transfers, payments and trades within its platform, with customer approval required before execution. The company says Penny uses a secure data feed rather than screen scraping or customer banking credentials; it plans to enable access through ChatGPT and Claude in early 2027, also subject to customer approval. This illustrates a fintech approach that combines assistance with transaction approval, but the article leaves responsibility for losses from AI errors unresolved and does not establish customer adoption or performance.",
+        "id": "6c30fc4c64d3a536f1d9",
+        "title": "DBS chairman Peter Seah to hand reins over to Anthony Lim; bank’s Q3 net profit slips 5% to $2.8b",
+        "url": "https://straitstimes.com/business/dbs-chairman-peter-seah-to-retire-with-effect-from-jan-1-2027-q3-net-profit-at-2-8b",
+        "source": "The Straits Times",
+        "published_at": "2026-11-04T23:02:22+00:00",
+        "summary": "DBS said Peter Seah will retire as chairman at the end of 2026 and Anthony Lim will take over on 1 January 2027; the report also says third-quarter net profit fell 5% year on year to S$2.81 billion, while nine-month net profit rose 2% to a record S$8.82 billion. The additional nine-month result provides a broader performance signal alongside the previously reported succession and quarterly profit figures; it does not establish a new strategy or operating programme.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "is_update": true,
+        "user_relevance": 6
       },
       {
-        "id": "7e2090b3b22cf1523665",
-        "title": "DBS Profit Misses Estimates on Trading Drop, Names Lim Chair - Bloomberg.com",
-        "url": "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
-        "source": "Bloomberg.com",
-        "published_at": "2026-11-04T22:52:52.750000+00:00",
-        "summary": "Bloomberg reports that DBS’s third-quarter net profit fell 5% year over year to S$2.81 billion for the three months ended 30 September, below the surveyed analyst average, with weaker trading income offsetting gains in lending and wealth. The report also notes DBS announced a new chairman. The results provide a current competitor performance signal, but the excerpt does not give wealth-specific results or explain the causes of the trading-income decline beyond the stated market impact.",
+        "id": "8661e9af711052a74b27",
+        "title": "Change of business name of subsidiary AS LHV Pank to LHV Bank AS",
+        "url": "https://uk.finance.yahoo.com/news/change-business-name-subsidiary-lhv-060000922.html",
+        "source": "Yahoo Finance UK",
+        "published_at": "2026-11-06T06:00:00+00:00",
+        "summary": "LHV Group said its Estonian subsidiary's name changed from AS LHV Pank to LHV Bank AS on 6 November, following ECB approval and registration. The company says the change aligns its identity with cross-border expansion and does not affect daily operations or existing customer agreements; the report offers limited wider relevance beyond a competitor's corporate identity and registration approach.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "a56d0b5e4c81e0d76822",
-        "title": "DBS Names Anthony Lim as Chairman From January 2027",
-        "url": "https://fintechnews.sg/140541/fintech/dbs-chairman",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-05T03:26:50+00:00",
-        "summary": "DBS named Anthony Lim as chairman from 1 January 2027, succeeding Peter Seah, who will leave the boards on 31 December 2026 and serve as senior adviser for one year. Lim has served on DBS’s boards since April 2020 and chaired its Compensation and Management Development Committee. The succession is a governance change at a major regional competitor; the report does not describe a new strategy or operating programme.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "a36c616c1276e4cbe2a0",
-        "title": "Arab Bank Switzerland opens Abu Dhabi office and names Valérie Noël Chief Executive Officer - ADGM",
-        "url": "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
-        "source": "ADGM (search dated 2026-11-05)",
-        "published_at": "2026-11-05T13:22:10+00:00",
-        "summary": "Arab Bank Switzerland ME Ltd began operations in ADGM after receiving Financial Services Permission from the FSRA and appointed Valérie Noël as CEO. The entity says it will advise institutional, fintech, family-office and high-net-worth clients on digital assets within ADGM’s regulatory framework. This adds a competitor offering in Abu Dhabi’s digital-asset wealth market; the supplied material does not detail its operating model, client uptake or service outcomes.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 3
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "9f918238938eb15dc377",
-        "title": "Major Banks Move to Block or Limit Customer-Directed AI Agents - The National Law Review",
-        "url": "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
-        "source": "The National Law Review (search dated 2026-11-04)",
-        "published_at": "2026-11-04T15:55:34+00:00",
-        "summary": "The article says JPMorgan Chase, Charles Schwab, Citigroup and Wells Fargo moved in October 2026 to block or contractually reallocate risk for third-party AI agents using customers’ credentials to access accounts; it contrasts these restrictions with permitted read-only open-banking connections. It describes security, fraud, deposit and liability concerns, alongside unsettled open-banking rules. For bank change teams, the distinction between credential-based access and controlled, authorized data connections is relevant to access design and accountability; the article’s legal and market characterizations are not evidence of a settled regulatory position.",
+        "id": "557747b5c8fba76bb176",
+        "title": "Who’s Moving Where In Wealth Management? – HSBC Private Bank, Gallagher, Others - Wealth Briefing",
+        "url": "https://wealthbriefing.com/html/article.php/whos-moving-where-in-wealth-management--hsbc-private-bank%2C-gallagher%2C-others-",
+        "source": "Wealth Briefing (search dated 2026-11-06)",
+        "published_at": "2026-11-06T08:10:50+00:00",
+        "summary": "HSBC Private Bank is bringing its UK HNW and Special Segments teams under one leadership structure, with Philip Aleppo overseeing the combined teams. Nick Wolf has taken a newly created Dubai-based role leading UK Expat for the UAE, reporting to the head of HSBC Private Bank in the UAE. The changes indicate a stated focus on connected UK coverage and the UK-UAE wealth corridor; the report does not provide implementation detail or client outcomes.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "707eb2e85a84b7df3303",
+        "title": "OCC: Banks need strong controls when delegating to AI agents",
+        "url": "https://americanbanker.com/news/occ-banks-need-strong-controls-when-delegating-to-ai-agents",
+        "source": "American Banker",
+        "published_at": "2026-11-05T18:42:06.533000+00:00",
+        "summary": "American Banker reports that the OCC issued non-binding guidance for examining banks' AI use, applying existing supervisory criteria rather than treating AI as a separate risk category. The article describes six oversight areas and emphasizes controls proportionate to an AI system's purpose, consequences and autonomy, including human oversight, testing, resilience and third-party risk. For banking change execution, this highlights the need to evidence delegated authority and assign intervention rights; the report concerns OCC supervisory guidance and does not establish requirements in other jurisdictions.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 2,
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "25e7f5e9083a7eb1ea2f",
+        "title": "Deutsche Bank establishes AI academy for private bankers",
+        "url": "https://finance.yahoo.com/news/deutsche-bank-establishes-ai-academy-121244530.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-11-06T12:12:44+00:00",
+        "summary": "Deutsche Bank’s Private Bank has introduced the PB AI Academy, a role-based training programme combining self-study, trainer-led classes, workshops and staff communities. It is available to about 3,500 employees in international locations, with planned expansion to more than 20,000 Private Bank employees and a planned German launch in the first half of 2027 after consultation with employee representatives. The programme is a competitor example of structured AI capability-building; the report does not provide evidence of learning outcomes or resulting productivity gains.",
         "category": "AI & Technology",
         "hsbc_relevancy": 6,
         "adam_rel": 7,
@@ -116,66 +196,67 @@
         "user_relevance": 7
       },
       {
-        "id": "b676419543a19d43bf89",
-        "title": "Error",
-        "url": "https://thelogic.co/news/wealthsimple-launches-ai-assistant",
-        "source": "The Logic",
-        "published_at": "2026-11-05T17:10:59+00:00",
-        "summary": "Wealthsimple announced Penny, an AI assistant that can prepare transfers, payments and trades within its platform, with customer approval required before execution. The company says Penny uses a secure data feed rather than screen scraping or customer banking credentials; it plans to enable access through ChatGPT and Claude in early 2027, also subject to customer approval. This illustrates a fintech approach that combines assistance with transaction approval, but the article leaves responsibility for losses from AI errors unresolved and does not establish customer adoption or performance.",
+        "id": "6c30fc4c64d3a536f1d9",
+        "title": "DBS chairman Peter Seah to hand reins over to Anthony Lim; bank’s Q3 net profit slips 5% to $2.8b",
+        "url": "https://straitstimes.com/business/dbs-chairman-peter-seah-to-retire-with-effect-from-jan-1-2027-q3-net-profit-at-2-8b",
+        "source": "The Straits Times",
+        "published_at": "2026-11-04T23:02:22+00:00",
+        "summary": "DBS said Peter Seah will retire as chairman at the end of 2026 and Anthony Lim will take over on 1 January 2027; the report also says third-quarter net profit fell 5% year on year to S$2.81 billion, while nine-month net profit rose 2% to a record S$8.82 billion. The additional nine-month result provides a broader performance signal alongside the previously reported succession and quarterly profit figures; it does not establish a new strategy or operating programme.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
+        "hsbc_relevancy": 7,
+        "adam_rel": 6,
+        "noise_level": 3,
+        "is_update": true,
+        "user_relevance": 6
       },
       {
-        "id": "a36c616c1276e4cbe2a0",
-        "title": "Arab Bank Switzerland opens Abu Dhabi office and names Valérie Noël Chief Executive Officer - ADGM",
-        "url": "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
-        "source": "ADGM (search dated 2026-11-05)",
-        "published_at": "2026-11-05T13:22:10+00:00",
-        "summary": "Arab Bank Switzerland ME Ltd began operations in ADGM after receiving Financial Services Permission from the FSRA and appointed Valérie Noël as CEO. The entity says it will advise institutional, fintech, family-office and high-net-worth clients on digital assets within ADGM’s regulatory framework. This adds a competitor offering in Abu Dhabi’s digital-asset wealth market; the supplied material does not detail its operating model, client uptake or service outcomes.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
+        "id": "d05178114f1684101ae0",
+        "title": "Pyvio Secures MAS Major Payment Institution License",
+        "url": "https://fintechnews.sg/140548/payments/pyvio-mas-major-payment-institution-license",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-05T03:46:31+00:00",
+        "summary": "Pyvio received a MAS Major Payment Institution licence effective 1 November, covering account issuance, domestic and cross-border transfers, merchant acquisition and e-money issuance. Pyvio says the licence provides a basis for licensed Singapore operations and regional expansion. This adds a newly licensed payments competitor in Singapore; the report does not establish operational scale, customer activity or realized regional reach.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 5
       },
       {
-        "id": "7e2090b3b22cf1523665",
-        "title": "DBS Profit Misses Estimates on Trading Drop, Names Lim Chair - Bloomberg.com",
-        "url": "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
-        "source": "Bloomberg.com",
-        "published_at": "2026-11-04T22:52:52.750000+00:00",
-        "summary": "Bloomberg reports that DBS’s third-quarter net profit fell 5% year over year to S$2.81 billion for the three months ended 30 September, below the surveyed analyst average, with weaker trading income offsetting gains in lending and wealth. The report also notes DBS announced a new chairman. The results provide a current competitor performance signal, but the excerpt does not give wealth-specific results or explain the causes of the trading-income decline beyond the stated market impact.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
+        "id": "250ff2c9b52c8beb725d",
+        "title": "ECB publishes consolidated banking data for end-June 2026",
+        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-06T10:00:00+01:00",
+        "summary": "The ECB published consolidated EU banking data for end-June 2026, reporting total assets of €34.99 trillion, an aggregate non-performing-loan ratio of 1.99%, return on equity of 5.31% and a CET1 ratio of 16.43%. The dataset provides sector-level context for market and balance-sheet analysis; the figures are EU aggregates, not indicators of individual banks or APAC conditions.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 4
+        "user_relevance": 3
       },
       {
-        "id": "a56d0b5e4c81e0d76822",
-        "title": "DBS Names Anthony Lim as Chairman From January 2027",
-        "url": "https://fintechnews.sg/140541/fintech/dbs-chairman",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-05T03:26:50+00:00",
-        "summary": "DBS named Anthony Lim as chairman from 1 January 2027, succeeding Peter Seah, who will leave the boards on 31 December 2026 and serve as senior adviser for one year. Lim has served on DBS’s boards since April 2020 and chaired its Compensation and Management Development Committee. The succession is a governance change at a major regional competitor; the report does not describe a new strategy or operating programme.",
+        "id": "8661e9af711052a74b27",
+        "title": "Change of business name of subsidiary AS LHV Pank to LHV Bank AS",
+        "url": "https://uk.finance.yahoo.com/news/change-business-name-subsidiary-lhv-060000922.html",
+        "source": "Yahoo Finance UK",
+        "published_at": "2026-11-06T06:00:00+00:00",
+        "summary": "LHV Group said its Estonian subsidiary's name changed from AS LHV Pank to LHV Bank AS on 6 November, following ECB approval and registration. The company says the change aligns its identity with cross-border expansion and does not affect daily operations or existing customer agreements; the report offers limited wider relevance beyond a competitor's corporate identity and registration approach.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 4,
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 4
+        "user_relevance": 3
       }
     ],
     "categories": {
+      "HSBC News": "#dc2626",
+      "Regulatory & Markets": "#d97706",
       "AI & Technology": "#6366f1",
-      "Competitor Intelligence": "#0891b2",
-      "Private Banking & Wealth": "#059669"
+      "Competitor Intelligence": "#0891b2"
     }
   }
 }
