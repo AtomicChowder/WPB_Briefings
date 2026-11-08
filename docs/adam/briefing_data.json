@@ -3,138 +3,164 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Sunday, 08 November 2026",
-  "date_str": "2026-11-08",
-  "generated_at": "2026-11-08T07:00:03.353384+08:00",
-  "total_articles": 6,
+  "briefing_date": "Monday, 09 November 2026",
+  "date_str": "2026-11-09",
+  "generated_at": "2026-11-09T07:00:03.169572+08:00",
+  "total_articles": 7,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "DBS wealth growth is paired with a stated capacity build-out",
-      "context_html": "DBS reported record quarterly net new money and plans to open 18 wealth centres while upgrading 36. For APAC wealth delivery, this makes relationship-manager capacity, premises readiness and client-service continuity useful execution questions. The figures are competitor-reported and do not show whether the expansion will improve service or returns.",
+      "headline": "Private-bank onboarding speed is being benchmarked against controls",
+      "context_html": "Citi's Lee reports that nearly half of PBIG member banks' new accounts in June–August opened within a month, against a working-group aim of one month by end-2026. For APAC wealth delivery, a practical question is which document-reuse and exception-handling steps can shorten elapsed time while preserving AML review and clear escalation ownership. The figures are reported by PBIG and do not establish the result for any one bank.",
       "source_links": [
         {
-          "url": "https://theasianbanker.com/updates-and-articles/dbs-s-customer-income-grows-as-weaker-trading-weighs-on-third-quarter-profit",
-          "title": "DBS’s customer income grows as weaker trading weighs on third-quarter profitShare"
+          "url": "https://straitstimes.com/business/private-banks-risk-losing-the-race-for-wealth-clients-before-they-even-come-on-board-citi-singapore",
+          "title": "Private banks risk losing the race for wealthy clients before they even come on board: Citi Singapore chief"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "HSBC Singapore links cross-product activity to savings rewards",
-      "context_html": "Rewards+ recognises qualifying activity across transactions, investments, insurance and home loans, with progress shown in the banking app. A practical delivery dependency is consistent eligibility and activity data across products, with understandable explanations when a customer does not qualify. The report describes the design, not customer response or operating performance.",
+      "headline": "AI-enabled payment threats make API controls and response coordination salient",
+      "context_html": "An Indian advisory, as reported by The Federal, recommends controls such as a complete inventory of payment APIs, limits and rapid incident reporting in response to AI-assisted attacks. For banking operations, a concrete control question is whether ownership across cybersecurity, transaction monitoring and payment teams is clear enough to act at machine speed, including for legacy interfaces. This is a single article's account of the advisory, not evidence of attack prevalence across the region.",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/140689/wealthtech/hsbc-rewards-plus-singapore-savings-interest",
-          "title": "HSBC Introduces Rewards+ with Up to 6.01% Interest on Savings"
+          "url": "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
+          "title": "The new banking risk: AI agents that hack at machine speed"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "On Adam's Desk": [
       {
-        "id": "2fe174cdc9faa9c1d765",
-        "title": "HSBC Introduces Rewards+ with Up to 6.01% Interest on Savings",
-        "url": "https://fintechnews.sg/140689/wealthtech/hsbc-rewards-plus-singapore-savings-interest",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-06T08:15:26+00:00",
-        "summary": "HSBC Singapore launched Rewards+, which offers bonus interest based on qualifying activity across salary crediting, transactions, investments, insurance and home loans, with a dedicated app dashboard tracking progress. The programme links everyday banking and wealth-related activity through one rewards mechanism; operationally, clear eligibility rules and reliable cross-product activity recognition are important dependencies, while the report provides no evidence yet on customer uptake or outcomes.",
+        "id": "f275787f4f11c1fb84a1",
+        "title": "Wealth: HSBC turns RewardCash into ‘life cash’ in flagship banking lifestyle center",
+        "url": "https://thestandard.com.hk/finance/article/347829/Wealth-HSBC-turns-RewardCash-into-life-cash-in-flagship-banking-lifestyle-center",
+        "source": "The Standard (HK)",
+        "published_at": "2026-11-08T12:01:39+08:00",
+        "summary": "HSBC Hong Kong opened a five-storey Causeway Bay flagship branch combining retail banking, wealth services, lifestyle offerings and educational events. The article says it has recorded about 50% more daily footfall than the two locations it replaced since its October 20 soft opening, and describes RewardCash as usable across more settings; the report presents this as part of an omni-channel approach but gives no evidence of longer-term customer or business outcomes.",
         "category": "HSBC News",
         "hsbc_relevancy": 8,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
+      },
+      {
+        "id": "922947a632e39fc744f4",
+        "title": "Private banks risk losing the race for wealthy clients before they even come on board: Citi Singapore chief",
+        "url": "https://straitstimes.com/business/private-banks-risk-losing-the-race-for-wealth-clients-before-they-even-come-on-board-citi-singapore",
+        "source": "The Straits Times",
+        "published_at": "2026-11-08T22:00:00+00:00",
+        "summary": "Citi Singapore chief Lee Lung Nien said lengthy private-banking onboarding can frustrate wealthy clients and drive them elsewhere. A PBIG working group aims for account opening within one month by end-2026, and reported that nearly half of new accounts at member banks from June to August 2026 met that timeframe; the article frames faster processing as needing to remain risk-appropriate.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 6,
+        "adam_rel": 8,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 8
       },
       {
         "id": "552c5ff83d93673da832",
         "title": "Hong Kong is a treasure trove of international wealth, HSBC co-chief executive David Liao says",
         "url": "https://thestandard.com.hk/finance/article/339619/Hong-Kong-is-a-treasure-trove-of-international-wealth-HSBC-co-chief-executive-David-Liao-says",
-        "source": "The Standard (HK) (search dated 2026-11-07)",
+        "source": "The Standard (HK) (search dated 2026-11-08)",
         "published_at": "2026-08-11T16:21:29+08:00",
-        "summary": "HSBC Asia and Middle East co-chief executive David Liao described Hong Kong as a major international wealth centre and said it handles about 75% of global offshore yuan payments and settlements. He said HSBC plans to expand Hong Kong physical gold storage capacity to 200 tons and is planning an AI research institute; these public remarks signal stated ambitions, but provide little detail on delivery plans or timing.",
+        "summary": "HSBC Asia and Middle East co-chief executive David Liao described Hong Kong's international wealth role and said HSBC plans to expand physical gold storage capacity there to 200 tons. He also referred to the Hang Seng Bank privatization and plans to integrate digital assets and digital currency into Hong Kong's financial system; these remarks add stated ambitions but provide limited delivery detail.",
         "category": "HSBC News",
-        "hsbc_relevancy": 8,
+        "hsbc_relevancy": 7,
         "adam_rel": 6,
         "noise_level": 1,
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 6
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "3ca693177e250a80f514",
+        "title": "Banks ban AI from accounts over fears of rogue agents - The Telegraph",
+        "url": "https://telegraph.co.uk/business/2026/11/08/banks-ban-ai-from-accounts-over-fears-of-rogue-agents",
+        "source": "The Telegraph",
+        "published_at": "2026-11-08T06:50:00+00:00",
+        "summary": "The Telegraph reports that HSBC, Nationwide, NatWest, Barclays and Lloyds block AI agents from accessing customer accounts, citing risks including unauthorized transactions, unclear liability and possible coordinated deposit movements. It says the FCA is working with industry and other regulators on rules, while the reported restrictions are pre-emptive and the article says there is no evidence yet of bots accessing UK accounts.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "noise_level": 2,
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "44db1bfdb9a2b4a51e97",
+        "title": "The new banking risk: AI agents that hack at machine speed",
+        "url": "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
+        "source": "The Federal",
+        "published_at": "2026-11-08T17:14:32+05:30",
+        "summary": "The Federal reports that an Indian cybercrime advisory dated November 3 warned of AI-assisted attacks exploiting unpatched systems and payment or disbursement APIs, with reported unauthorized transactions in individual cases. It lists recommended safeguards including API inventories, transaction limits, beneficiary checks, system hardening and incident reporting within six hours; the supplied article is a single publisher's account of the advisory.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
+        "adam_rel": 8,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 8
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "7154ea3ae44124585979",
-        "title": "DBS’s customer income grows as weaker trading weighs on third-quarter profitShare",
-        "url": "https://theasianbanker.com/updates-and-articles/dbs-s-customer-income-grows-as-weaker-trading-weighs-on-third-quarter-profit",
-        "source": "The Asian Banker (search dated 2026-11-06)",
-        "published_at": "2026-11-06T08:29:24+00:00",
-        "summary": "DBS reported third-quarter 2026 net profit down 5% year on year to S$2.81 billion, with weaker trading income offsetting growth in customer businesses. The article also reports record quarterly net new money of S$15 billion, wealth AUM of S$544 billion, and plans to open 18 wealth centres and upgrade 36; these details show the scale and capacity considerations accompanying franchise growth, but do not establish future performance or the results of the expansion.",
+        "id": "87abb1a76ff6c87f95d3",
+        "title": "What's New In Investments, Funds? – Wellington Management - Wealth Briefing Asia",
+        "url": "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Wellington-Management-?id=209296",
+        "source": "Wealth Briefing Asia (search dated 2026-11-08)",
+        "published_at": "2026-11-08T16:45:08+00:00",
+        "summary": "Wealth Briefing Asia reports that Wellington Management extended its Citi Hong Kong partnership to make the Wellington Asia Technology Fund available to Citi retail customers, in addition to private-banking clients. The fund is described as an active, concentrated Asia technology strategy; the excerpt provides no evidence of customer uptake or investment outcomes.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 7
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
       },
       {
-        "id": "697085d633ef3f0ab04a",
-        "title": "Poonawalla Fincorp appoints Ankit Gupta as Head - Digital and Transformation",
-        "url": "https://exchange4media.com/people-movement-news/poonawalla-fincorp-appoints-ankit-gupta-as-head-digital-and-transformation-159990.html",
-        "source": "Exchange4Media",
-        "published_at": "2026-11-07T08:08:33+05:30",
-        "summary": "Poonawalla Fincorp appointed Ankit Gupta as Head of Digital and Transformation, with responsibility for product innovation and digital capabilities across consumer and commercial finance. His prior roles include Godrej Capital, RBL Bank, HSBC and ICICI Bank; this is a competitor leadership move, but the report does not describe a specific programme or expected outcomes.",
+        "id": "0404670a1bb338cea4d9",
+        "title": "Goldman Sachs Names 109 New Partners For 2026, With Appointments Effective January 1, 2027 - Pulse 2.0",
+        "url": "https://pulse2.com/goldman-sachs-names-109-new-partners-for-2026-with-appointments-effective-january-1-2027",
+        "source": "Pulse 2.0",
+        "published_at": "2026-11-08T13:28:01+00:00",
+        "summary": "Goldman Sachs announced 109 new partners, with appointments effective January 1, 2027, across functions including Asset & Wealth Management, engineering and Global Banking & Markets. The class includes professionals in Hong Kong and Singapore among other locations; the report gives no specific strategic or operating changes associated with the appointments.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "hsbc_relevancy": 3,
+        "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 5
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "771dd2fbd4ba20b5b0d2",
-        "title": "Hong Kong regulator advances AI strategy to strengthen insurance sector resilience",
-        "url": "https://asiainsurancereview.com/News/View-NewsLetter-Article?id=97466&Type=eDaily",
-        "source": "Asia Insurance Review (search dated 2026-11-06)",
-        "published_at": "2026-11-06T00:22:30+00:00",
-        "summary": "Hong Kong’s Insurance Authority described an AI strategy covering governance, deployment and talent development, and said its AI Cohort Programme has supported insurers’ AI centres of excellence and incubated more than 800 use cases. The regulator is preparing an insurance-sector AI governance framework; this makes governance and skills relevant delivery considerations for financial firms, but the article does not establish the framework’s final content or that the reported use cases are in production.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 6
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "2fa0da28b3cfc6f1341a",
-        "title": "Chubb Life and DBS Taiwan Expand Wealth Services for High-Net-Worth Clients",
-        "url": "https://hubbis.com/news/chubb-life-and-dbs-taiwan-expand-wealth-services-for-high-net-worth-clients",
-        "source": "Hubbis (search dated 2026-11-05)",
-        "published_at": "2026-11-05T23:26:11+00:00",
-        "summary": "Chubb Life and DBS Bank Taiwan are expanding wealth services for high-net-worth clients, with a reported focus on premium financing, insurance protection and succession planning. Chubb Life also describes a concierge membership programme and dedicated advisory consultations; this is a competitor example of combining insurance and wealth-related services, but the report does not establish client uptake or outcomes.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 4
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "2fe174cdc9faa9c1d765",
-        "title": "HSBC Introduces Rewards+ with Up to 6.01% Interest on Savings",
-        "url": "https://fintechnews.sg/140689/wealthtech/hsbc-rewards-plus-singapore-savings-interest",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-06T08:15:26+00:00",
-        "summary": "HSBC Singapore launched Rewards+, which offers bonus interest based on qualifying activity across salary crediting, transactions, investments, insurance and home loans, with a dedicated app dashboard tracking progress. The programme links everyday banking and wealth-related activity through one rewards mechanism; operationally, clear eligibility rules and reliable cross-product activity recognition are important dependencies, while the report provides no evidence yet on customer uptake or outcomes.",
+        "id": "3ca693177e250a80f514",
+        "title": "Banks ban AI from accounts over fears of rogue agents - The Telegraph",
+        "url": "https://telegraph.co.uk/business/2026/11/08/banks-ban-ai-from-accounts-over-fears-of-rogue-agents",
+        "source": "The Telegraph",
+        "published_at": "2026-11-08T06:50:00+00:00",
+        "summary": "The Telegraph reports that HSBC, Nationwide, NatWest, Barclays and Lloyds block AI agents from accessing customer accounts, citing risks including unauthorized transactions, unclear liability and possible coordinated deposit movements. It says the FCA is working with industry and other regulators on rules, while the reported restrictions are pre-emptive and the article says there is no evidence yet of bots accessing UK accounts.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "noise_level": 2,
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "f275787f4f11c1fb84a1",
+        "title": "Wealth: HSBC turns RewardCash into ‘life cash’ in flagship banking lifestyle center",
+        "url": "https://thestandard.com.hk/finance/article/347829/Wealth-HSBC-turns-RewardCash-into-life-cash-in-flagship-banking-lifestyle-center",
+        "source": "The Standard (HK)",
+        "published_at": "2026-11-08T12:01:39+08:00",
+        "summary": "HSBC Hong Kong opened a five-storey Causeway Bay flagship branch combining retail banking, wealth services, lifestyle offerings and educational events. The article says it has recorded about 50% more daily footfall than the two locations it replaced since its October 20 soft opening, and describes RewardCash as usable across more settings; the report presents this as part of an omni-channel approach but gives no evidence of longer-term customer or business outcomes.",
         "category": "HSBC News",
         "hsbc_relevancy": 8,
         "adam_rel": 7,
@@ -143,41 +169,27 @@
         "user_relevance": 7
       },
       {
-        "id": "7154ea3ae44124585979",
-        "title": "DBS’s customer income grows as weaker trading weighs on third-quarter profitShare",
-        "url": "https://theasianbanker.com/updates-and-articles/dbs-s-customer-income-grows-as-weaker-trading-weighs-on-third-quarter-profit",
-        "source": "The Asian Banker (search dated 2026-11-06)",
-        "published_at": "2026-11-06T08:29:24+00:00",
-        "summary": "DBS reported third-quarter 2026 net profit down 5% year on year to S$2.81 billion, with weaker trading income offsetting growth in customer businesses. The article also reports record quarterly net new money of S$15 billion, wealth AUM of S$544 billion, and plans to open 18 wealth centres and upgrade 36; these details show the scale and capacity considerations accompanying franchise growth, but do not establish future performance or the results of the expansion.",
-        "category": "Competitor Intelligence",
+        "id": "922947a632e39fc744f4",
+        "title": "Private banks risk losing the race for wealthy clients before they even come on board: Citi Singapore chief",
+        "url": "https://straitstimes.com/business/private-banks-risk-losing-the-race-for-wealth-clients-before-they-even-come-on-board-citi-singapore",
+        "source": "The Straits Times",
+        "published_at": "2026-11-08T22:00:00+00:00",
+        "summary": "Citi Singapore chief Lee Lung Nien said lengthy private-banking onboarding can frustrate wealthy clients and drive them elsewhere. A PBIG working group aims for account opening within one month by end-2026, and reported that nearly half of new accounts at member banks from June to August 2026 met that timeframe; the article frames faster processing as needing to remain risk-appropriate.",
+        "category": "Private Banking & Wealth",
         "hsbc_relevancy": 6,
-        "adam_rel": 7,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "771dd2fbd4ba20b5b0d2",
-        "title": "Hong Kong regulator advances AI strategy to strengthen insurance sector resilience",
-        "url": "https://asiainsurancereview.com/News/View-NewsLetter-Article?id=97466&Type=eDaily",
-        "source": "Asia Insurance Review (search dated 2026-11-06)",
-        "published_at": "2026-11-06T00:22:30+00:00",
-        "summary": "Hong Kong’s Insurance Authority described an AI strategy covering governance, deployment and talent development, and said its AI Cohort Programme has supported insurers’ AI centres of excellence and incubated more than 800 use cases. The regulator is preparing an insurance-sector AI governance framework; this makes governance and skills relevant delivery considerations for financial firms, but the article does not establish the framework’s final content or that the reported use cases are in production.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
+        "adam_rel": 8,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 8
       },
       {
-        "id": "2fa0da28b3cfc6f1341a",
-        "title": "Chubb Life and DBS Taiwan Expand Wealth Services for High-Net-Worth Clients",
-        "url": "https://hubbis.com/news/chubb-life-and-dbs-taiwan-expand-wealth-services-for-high-net-worth-clients",
-        "source": "Hubbis (search dated 2026-11-05)",
-        "published_at": "2026-11-05T23:26:11+00:00",
-        "summary": "Chubb Life and DBS Bank Taiwan are expanding wealth services for high-net-worth clients, with a reported focus on premium financing, insurance protection and succession planning. Chubb Life also describes a concierge membership programme and dedicated advisory consultations; this is a competitor example of combining insurance and wealth-related services, but the report does not establish client uptake or outcomes.",
-        "category": "Private Banking & Wealth",
+        "id": "87abb1a76ff6c87f95d3",
+        "title": "What's New In Investments, Funds? – Wellington Management - Wealth Briefing Asia",
+        "url": "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Wellington-Management-?id=209296",
+        "source": "Wealth Briefing Asia (search dated 2026-11-08)",
+        "published_at": "2026-11-08T16:45:08+00:00",
+        "summary": "Wealth Briefing Asia reports that Wellington Management extended its Citi Hong Kong partnership to make the Wellington Asia Technology Fund available to Citi retail customers, in addition to private-banking clients. The fund is described as an active, concentrated Asia technology strategy; the excerpt provides no evidence of customer uptake or investment outcomes.",
+        "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
         "noise_level": 1,
@@ -188,36 +200,49 @@
         "id": "552c5ff83d93673da832",
         "title": "Hong Kong is a treasure trove of international wealth, HSBC co-chief executive David Liao says",
         "url": "https://thestandard.com.hk/finance/article/339619/Hong-Kong-is-a-treasure-trove-of-international-wealth-HSBC-co-chief-executive-David-Liao-says",
-        "source": "The Standard (HK) (search dated 2026-11-07)",
+        "source": "The Standard (HK) (search dated 2026-11-08)",
         "published_at": "2026-08-11T16:21:29+08:00",
-        "summary": "HSBC Asia and Middle East co-chief executive David Liao described Hong Kong as a major international wealth centre and said it handles about 75% of global offshore yuan payments and settlements. He said HSBC plans to expand Hong Kong physical gold storage capacity to 200 tons and is planning an AI research institute; these public remarks signal stated ambitions, but provide little detail on delivery plans or timing.",
+        "summary": "HSBC Asia and Middle East co-chief executive David Liao described Hong Kong's international wealth role and said HSBC plans to expand physical gold storage capacity there to 200 tons. He also referred to the Hang Seng Bank privatization and plans to integrate digital assets and digital currency into Hong Kong's financial system; these remarks add stated ambitions but provide limited delivery detail.",
         "category": "HSBC News",
-        "hsbc_relevancy": 8,
+        "hsbc_relevancy": 7,
         "adam_rel": 6,
         "noise_level": 1,
-        "is_update": false,
+        "is_update": true,
         "user_relevance": 6
       },
       {
-        "id": "697085d633ef3f0ab04a",
-        "title": "Poonawalla Fincorp appoints Ankit Gupta as Head - Digital and Transformation",
-        "url": "https://exchange4media.com/people-movement-news/poonawalla-fincorp-appoints-ankit-gupta-as-head-digital-and-transformation-159990.html",
-        "source": "Exchange4Media",
-        "published_at": "2026-11-07T08:08:33+05:30",
-        "summary": "Poonawalla Fincorp appointed Ankit Gupta as Head of Digital and Transformation, with responsibility for product innovation and digital capabilities across consumer and commercial finance. His prior roles include Godrej Capital, RBL Bank, HSBC and ICICI Bank; this is a competitor leadership move, but the report does not describe a specific programme or expected outcomes.",
-        "category": "Competitor Intelligence",
+        "id": "44db1bfdb9a2b4a51e97",
+        "title": "The new banking risk: AI agents that hack at machine speed",
+        "url": "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
+        "source": "The Federal",
+        "published_at": "2026-11-08T17:14:32+05:30",
+        "summary": "The Federal reports that an Indian cybercrime advisory dated November 3 warned of AI-assisted attacks exploiting unpatched systems and payment or disbursement APIs, with reported unauthorized transactions in individual cases. It lists recommended safeguards including API inventories, transaction limits, beneficiary checks, system hardening and incident reporting within six hours; the supplied article is a single publisher's account of the advisory.",
+        "category": "AI & Technology",
         "hsbc_relevancy": 4,
-        "adam_rel": 5,
+        "adam_rel": 8,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 8
+      },
+      {
+        "id": "0404670a1bb338cea4d9",
+        "title": "Goldman Sachs Names 109 New Partners For 2026, With Appointments Effective January 1, 2027 - Pulse 2.0",
+        "url": "https://pulse2.com/goldman-sachs-names-109-new-partners-for-2026-with-appointments-effective-january-1-2027",
+        "source": "Pulse 2.0",
+        "published_at": "2026-11-08T13:28:01+00:00",
+        "summary": "Goldman Sachs announced 109 new partners, with appointments effective January 1, 2027, across functions including Asset & Wealth Management, engineering and Global Banking & Markets. The class includes professionals in Hong Kong and Singapore among other locations; the report gives no specific strategic or operating changes associated with the appointments.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 3,
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706",
-      "Private Banking & Wealth": "#059669"
+      "On Adam's Desk": "#be123c",
+      "AI & Technology": "#6366f1",
+      "Competitor Intelligence": "#0891b2"
     }
   }
 }
