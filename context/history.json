@@ -1,21 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-09",
+    "last_updated": "2026-11-10",
     "daily": [
-      {
-        "date": "2026-11-03",
-        "urls": [
-          "https://bastillepost.com/global/article/6314365-chief-executive-welcomes-global-leaders-to-hong-kong-fintech-week-x-startmeuphk-2026",
-          "https://fintechnews.sg/140160/digital-banking-news-singapore/harikrishnan-raguraman-gxs-bank-cto",
-          "https://forklog.com/en/hong-kong-prepares-banks-for-quantum-era-and-ai-agents",
-          "https://gfmag.com/award/award-ceremonies-and-events/dbs-bank-han-kwee-juan-global-powerhouse",
-          "https://gtreview.com/news/on-the-move/citi-hires-from-hsbc-for-newly-created-global-trade-role",
-          "https://mobilesyrup.com/2026/11/02/canadian-banks-blocking-ai-agents-security-concerns",
-          "https://openbankingexpo.com/news/ai-agents-could-render-traditional-payment-authentication-obsolete-warns-dr-ruth-wandhofer",
-          "https://privatebankerinternational.com/news/dbs-report-family-offices-underprepared"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-04",
         "urls": [
@@ -89,49 +75,66 @@
           "https://thestandard.com.hk/finance/article/347829/Wealth-HSBC-turns-RewardCash-into-life-cash-in-flagship-banking-lifestyle-center",
           "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Wellington-Management-?id=209296"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-10",
+        "urls": [
+          "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
+          "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
+          "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
+          "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
+          "https://sbr.com.sg/financial-services/in-focus/wealth-and-customer-flows-cushion-banks-trading-income-drops",
+          "https://tabla.com.sg/news/singapore/singapores-wealth-hub-status-mirrors-changing-asia-julius-baer",
+          "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
+          "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
+          "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head"
+        ],
         "topics": [
-          "Private-bank onboarding speed is being benchmarked against controls",
-          "AI-enabled payment threats make API controls and response coordination salient"
+          "MAS proposes staged quantum-safe migration planning",
+          "J.P. Morgan appoints a Taiwan market head based in Hong Kong",
+          "Agent access controls need to separate advice from execution"
         ]
       }
     ],
     "covered_urls": [
+      "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
       "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
       "https://americanbanker.com/news/occ-banks-need-strong-controls-when-delegating-to-ai-agents",
       "https://asiainsurancereview.com/News/View-NewsLetter-Article?id=97466&Type=eDaily",
       "https://asianbankingandfinance.net/news/hsbc-launch-teck-institute-tackle-agentic-ai-fraud",
       "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
-      "https://bastillepost.com/global/article/6314365-chief-executive-welcomes-global-leaders-to-hong-kong-fintech-week-x-startmeuphk-2026",
       "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
       "https://cryptonews.net/news/blockchain/33689570",
       "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
       "https://exchange4media.com/people-movement-news/poonawalla-fincorp-appoints-ankit-gupta-as-head-digital-and-transformation-159990.html",
       "https://finance.yahoo.com/news/deutsche-bank-establishes-ai-academy-121244530.html",
+      "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
       "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
       "https://finews.com/news/english-news/74272-lombard-odier-hires-ubs-veteran-christina-staeger-ernst-to-lead-swiss-uhnw-business",
-      "https://fintechnews.sg/140160/digital-banking-news-singapore/harikrishnan-raguraman-gxs-bank-cto",
       "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
       "https://fintechnews.sg/140541/fintech/dbs-chairman",
       "https://fintechnews.sg/140548/payments/pyvio-mas-major-payment-institution-license",
       "https://fintechnews.sg/140689/wealthtech/hsbc-rewards-plus-singapore-savings-interest",
-      "https://forklog.com/en/hong-kong-prepares-banks-for-quantum-era-and-ai-agents",
-      "https://gfmag.com/award/award-ceremonies-and-events/dbs-bank-han-kwee-juan-global-powerhouse",
-      "https://gtreview.com/news/on-the-move/citi-hires-from-hsbc-for-newly-created-global-trade-role",
+      "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
       "https://hubbis.com/news/chubb-life-and-dbs-taiwan-expand-wealth-services-for-high-net-worth-clients",
       "https://livelawbiz.com/amp/competition-law/cci/competition-commission-of-india-approves-kotak-mahindra-bank-acquire-deutsche-bank-retail-wealth-management-business-557168",
       "https://media-outreach.com/news/hong-kong/2026/11/03/498598/citi-wealth-ai-pulse-survey-hong-kong-consumers-embrace-ai-but-still-want-humans-in-the-drivers-seat",
-      "https://mobilesyrup.com/2026/11/02/canadian-banks-blocking-ai-agents-security-concerns",
       "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
-      "https://openbankingexpo.com/news/ai-agents-could-render-traditional-payment-authentication-obsolete-warns-dr-ruth-wandhofer",
-      "https://privatebankerinternational.com/news/dbs-report-family-offices-underprepared",
       "https://pulse2.com/goldman-sachs-names-109-new-partners-for-2026-with-appointments-effective-january-1-2027",
+      "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
       "https://retailbankerinternational.com/news/hsbc-open-hong-kong-ai-institute",
+      "https://sbr.com.sg/financial-services/in-focus/wealth-and-customer-flows-cushion-banks-trading-income-drops",
       "https://serrarigroup.com/hsbc-redcoin-reaches-50000-users-as-bank-expands-hong-kong-ai-plans",
       "https://straitstimes.com/business/dbs-chairman-peter-seah-to-retire-with-effect-from-jan-1-2027-q3-net-profit-at-2-8b",
       "https://straitstimes.com/business/private-banks-risk-losing-the-race-for-wealth-clients-before-they-even-come-on-board-citi-singapore",
       "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
+      "https://tabla.com.sg/news/singapore/singapores-wealth-hub-status-mirrors-changing-asia-julius-baer",
+      "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
+      "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
       "https://telegraph.co.uk/business/2026/11/08/banks-ban-ai-from-accounts-over-fears-of-rogue-agents",
       "https://theasianbanker.com/updates-and-articles/dbs-s-customer-income-grows-as-weaker-trading-weighs-on-third-quarter-profit",
+      "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head",
       "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
       "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
       "https://thelogic.co/news/wealthsimple-launches-ai-assistant",
@@ -143,8 +146,9 @@
       "https://zawya.com/en/press-release/companies-news/capital.com-appoints-standard-chartered-as-global-banking-partner-for-virtual-assets-1886528"
     ],
     "covered_topics": [
-      "AI-enabled payment threats make API controls and response coordination salient",
-      "Private-bank onboarding speed is being benchmarked against controls"
+      "Agent access controls need to separate advice from execution",
+      "J.P. Morgan appoints a Taiwan market head based in Hong Kong",
+      "MAS proposes staged quantum-safe migration planning"
     ]
   }
 }
