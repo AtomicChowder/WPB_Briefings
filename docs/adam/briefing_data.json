@@ -3,45 +3,30 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Tuesday, 10 November 2026",
-  "date_str": "2026-11-10",
-  "generated_at": "2026-11-10T07:24:31.377747+08:00",
-  "total_articles": 9,
+  "briefing_date": "Wednesday, 11 November 2026",
+  "date_str": "2026-11-11",
+  "generated_at": "2026-11-11T07:00:03.249612+08:00",
+  "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "MAS proposes staged quantum-safe migration planning",
-      "context_html": "MAS’s consultation proposes migration plans by the end of 2027 and broader transition by the end of 2034, with earlier milestones for designated critical institutions. For APAC delivery, the practical dependency is identifying vulnerable systems and mapping vendor and legacy-system constraints before sequencing migration and testing. A useful question is how to evidence prioritisation and interim safeguards across systems that cannot be upgraded promptly; the guidance is proposed, non-binding and may change.",
+      "headline": "The airline-bank offer makes customer eligibility and handoffs central to delivery",
+      "context_html": "Standard Chartered and Air India are linking loyalty benefits for eligible clients with access to wealth services in Singapore and the UAE. A practical delivery question is how eligibility, consent and referrals are handled across the airline and bank, particularly before an expression of interest becomes a completed wealth-client relationship. The offer is expected soon, but uptake, commercial terms and conversion are not reported.",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
-          "title": "MAS Wants Singapore’s Financial Sector Quantum-Safe by 2034"
+          "url": "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
+          "title": "Air India and Standard Chartered Link Loyalty with Wealth Management - The Fintech Times"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "J.P. Morgan appoints a Taiwan market head based in Hong Kong",
-      "context_html": "J.P. Morgan named Keeve Tan to lead its Taiwan market from Hong Kong, succeeding Anita Mak, and cited his Taiwan and Greater China experience. This is a competitor signal of specialist cross-border coverage; delivery will depend in practice on continuity of client relationships and coordination across the locations serving the market. The announcement does not describe a revised coverage model or expected business outcomes.",
+      "headline": "DBS links resilience work with a capacity choice for technology teams",
+      "context_html": "DBS says its multi-year system redesign and AI-enabled work could allow legacy changes to be tackled earlier, and that it has no current plan to reduce its technology team. For change execution, this makes prioritization and specialist capacity a concrete trade-off: efficiency gains may be absorbed by more remediation rather than released as headcount. These are management statements, not reported evidence of realized productivity or delivery acceleration.",
       "source_links": [
         {
-          "url": "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head",
-          "title": "J.P. Morgan Private Bank names Taiwan market head - Asset Publishing and Research"
-        }
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "Agent access controls need to separate advice from execution",
-      "context_html": "The UK bank restrictions and Deutsche Bank’s proposed wholesale architecture both distinguish assistance or order preparation from authorization and settlement. For APAC delivery, a practical control question is how customer consent, revocable mandates and intervention rights would be recorded across each step; neither report establishes broad agent adoption or settled liability rules.",
-      "source_links": [
-        {
-          "url": "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
-          "title": "Britain's biggest banks move to block AI agents from customer accounts - Resultsense"
-        },
-        {
-          "url": "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
-          "title": "Deutsche Bank Pairs a Sector Rally With a Blueprint for Bounded AI - ad-hoc-news.de"
+          "url": "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook",
+          "title": "DBS CIO Eugene Huang: To manage AI agents, give them an employee handbook"
         }
       ],
       "is_update": false
@@ -50,134 +35,78 @@
   "articles_by_category": {
     "On Adam's Desk": [
       {
-        "id": "7f252466fc7366935aa8",
-        "title": "Worlds That Endure: How HSBC Private Bank’s Ida Liu is rethinking inter-generational wealth",
-        "url": "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
-        "source": "Tatler Asia",
-        "published_at": "2026-11-09T03:30:30+00:00",
-        "summary": "Tatler Asia profiles HSBC Private Bank CEO Ida Liu’s views on intergenerational wealth, including starting succession conversations early and addressing family values, governance and structure. It cites HSBC’s 2026 Global Entrepreneurial Wealth Report, saying two thirds of surveyed entrepreneurs have a wealth-transfer plan but 37% have one legally reviewed and approved, with the figure at 25% in mainland China. For private wealth delivery, the article points to a client need that spans family dialogue and legal planning as well as financial transfer; the figures are survey findings and the profile does not describe a new HSBC service or operating change.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 7,
+        "id": "01d84fc2ef906542decb",
+        "title": "Air India and Standard Chartered Link Loyalty with Wealth Management - The Fintech Times",
+        "url": "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
+        "source": "The Fintech Times (search dated 2026-11-10)",
+        "published_at": "2026-11-10T06:00:58+00:00",
+        "summary": "Standard Chartered and Air India announced a loyalty arrangement linking eligible affluent-bank clients to Maharaja Club status and qualifying Air India customers to wealth-centre access in Singapore and the UAE. The article says the offer is expected in the coming weeks but gives no commercial terms or uptake data; for cross-border wealth delivery, eligibility handling and a clear referral-to-account-opening journey are practical execution dependencies.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
       }
     ],
-    "AI & Technology": [
+    "Operations & Change": [
       {
-        "id": "ba6d3553ea786e29ff6f",
-        "title": "Britain's biggest banks move to block AI agents from customer accounts - Resultsense",
-        "url": "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
-        "source": "Resultsense",
-        "published_at": "2026-11-09T08:41:46+00:00",
-        "summary": "Resultsense reports that HSBC and four other major UK banks are restricting AI agents from making transactions in customer accounts without direct customer involvement; it says the restrictions are precautionary and that there is no sign yet of agents accessing UK accounts. The article also cites potential deposit-flow exposure and FCA work on rules for financial agents. For banking change execution, it highlights the need to distinguish read-only access from delegated transaction authority and to define liability and customer authentication controls; the deposit-loss figures are attributed forecasts, not observed flows.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 8,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 8
-      },
-      {
-        "id": "f48fb0509f8f6d4e5127",
-        "title": "Deutsche Bank Pairs a Sector Rally With a Blueprint for Bounded AI - ad-hoc-news.de",
-        "url": "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
-        "source": "ad-hoc-news.de",
-        "published_at": "2026-11-09T17:21:55+01:00",
-        "summary": "Ad-hoc-news.de reports that Deutsche Bank and Ant Digital Technologies published a whitepaper on bounded AI-agent use in wholesale banking, covering treasury and liquidity management, cross-border payments and trade finance. The proposed design separates order coordination, authorization and settlement, and includes limited revocable mandates and agent identity checks. For banking change execution, the separation of preparation from approval and settlement offers a concrete control-design consideration; the article describes a framework and case study, not proven operational outcomes.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "e4f14c65347c17dedad1",
-        "title": "MAS Wants Singapore’s Financial Sector Quantum-Safe by 2034",
-        "url": "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-09T03:47:18+00:00",
-        "summary": "MAS proposed phased quantum-safe migration planning for Singapore financial institutions, including plans by 31 December 2027 and transition of remaining systems by 31 December 2034; earlier proposed milestones apply to designated critical institutions. The proposed guidance calls for prioritising critical systems, considering third-party dependencies, testing solutions and documenting interim safeguards, but is non-binding and subject to change.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 4,
+        "id": "0375f28d3b118ed03380",
+        "title": "DBS CIO Eugene Huang: To manage AI agents, give them an employee handbook",
+        "url": "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook",
+        "source": "联合早报",
+        "published_at": "2026-11-10T08:52:15+08:00",
+        "summary": "DBS CIO Eugene Huang said the bank is revamping important systems from 2025 to 2027 to improve resilience, while applying AI agents in some business processes and reconsidering how work is organized. He said efficiency gains could be used to tackle legacy work sooner rather than reduce technology-team headcount, and stressed prudent governance as agents take actions; these are DBS’s stated plans and views, not evidence of realized results.",
+        "category": "Operations & Change",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 8
-      }
-    ],
-    "Competitor Intelligence": [
-      {
-        "id": "044c733f857629380044",
-        "title": "J.P. Morgan Private Bank names Taiwan market head - Asset Publishing and Research",
-        "url": "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head",
-        "source": "Asset Publishing and Research (search dated 2026-11-09)",
-        "published_at": "2026-11-09T13:18:34+00:00",
-        "summary": "J.P. Morgan Private Bank appointed Keeve Tan as head of its Taiwan market, effective January 2027, based in Hong Kong and succeeding Anita Mak. Tan joins from Bank of Singapore and has experience covering Taiwan and Greater China; the announcement describes a leadership transition but does not specify changes to the business or its operating model.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "9065e066385e11b337ec",
-        "title": "Standard Chartered hires HDFC executive to lead India private banking arm",
-        "url": "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-11-09T11:57:53+00:00",
-        "summary": "Standard Chartered appointed Aditya Deshpande, formerly a senior HDFC Bank executive, as managing director and head of private banking in India. His experience includes wealth management, investment products and regional leadership; the report describes the appointment but gives no details of a new strategy or expected business outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "fde5e474ab4e623301dd",
-        "title": "Wealth and customer flows cushion banks as trading income drops",
-        "url": "https://sbr.com.sg/financial-services/in-focus/wealth-and-customer-flows-cushion-banks-trading-income-drops",
-        "source": "Singapore Business Review",
-        "published_at": "2026-11-10T06:00:00+08:00",
-        "summary": "Singapore Business Review reports that Singapore’s three largest banks recorded combined Q3 net interest income of $8.302 billion, up 2% quarter-on-quarter, while combined non-interest income fell 18.5% as trading, investment, insurance and one-off divestment income weakened. It says customer-related activity and wealth businesses held up better, with differing fee trends across DBS, OCBC and UOB. For APAC wealth delivery, the results indicate that customer flows and wealth fees can provide a different income signal from market-sensitive trading; the report gives no HSBC-specific results.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 6
       }
     ],
     "Private Banking & Wealth": [
       {
-        "id": "5046b1b8fd9ad5934365",
-        "title": "Singapore’s Wealth Hub Status Mirrors Changing Asia: Julius Baer",
-        "url": "https://tabla.com.sg/news/singapore/singapores-wealth-hub-status-mirrors-changing-asia-julius-baer",
-        "source": "https://www.tabla.com.sg/ (search dated 2026-11-09)",
-        "published_at": "2026-11-09T10:09:52+08:00",
-        "summary": "Julius Baer Asia head Jimmy Lee described changing wealth-management priorities in Singapore, including geographic and asset-class diversification, succession planning and family governance. The article also discusses Singapore and Hong Kong as wealth centres with different roles, drawing on a Julius Baer safe-havens report; these are the bank’s views and do not establish customer outcomes or the forecast’s realization.",
+        "id": "e7a9e261c7f2b047757c",
+        "title": "AlRayan Investment Appoints Former J.P. Morgan and UBS Wealth Management Executive Bryan Crawford as Chief Executive",
+        "url": "https://hubbis.com/news/alrayan-investment-appoints-former-j-p-morgan-and-ubs-wealth-management-executive-bryan-crawford-as-chief-executive",
+        "source": "Hubbis (search dated 2026-11-10)",
+        "published_at": "2026-11-10T21:05:48+00:00",
+        "summary": "AlRayan Investment appointed Bryan Crawford as CEO, succeeding acting CEO Akber Khan. Crawford has held senior roles at Quintet, UBS Wealth Management and J.P. Morgan, including Asia-Pacific product-sales leadership; the appointment may shape a Sharia-compliant investment and advisory business, but the announcement gives no specific operating plans or expected outcomes.",
         "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
+        "hsbc_relevancy": 4,
+        "adam_rel": 5,
         "noise_level": 1,
-        "is_update": true,
-        "user_relevance": 6
-      },
+        "is_update": false,
+        "user_relevance": 5
+      }
+    ],
+    "Regulatory & Markets": [
       {
-        "id": "4676c415dfa74b863bae",
-        "title": "Divest launches private banking for the December homecoming",
-        "url": "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
-        "source": "TechCabal",
-        "published_at": "2026-11-09T13:36:53+01:00",
-        "summary": "TechCabal reports that Lagos-based Divest launched Divest Private Banking, an app offering USD, GBP, EUR and naira balances, currency conversion, and payments to accounts or mobile money in Nigeria, Kenya, Ghana and South Africa. The article also describes the service as aimed at returnees, freelancers, families and businesses. For wealth and banking operations, the offering illustrates a cross-border proposition combining currency holding and payments; the supplied article is partner content and its claims about rates, fees and service performance are not independently substantiated.",
-        "category": "Private Banking & Wealth",
+        "id": "a9e1025cca47ebc6a050",
+        "title": "ADGM Issues Alert Concerning Misuse of the ADGM Academy Name in Investment and Trading Activities - ADGM",
+        "url": "https://adgm.com/media/announcements/adgm-issues-alert-concerning-misuse-of-the-adgm-academy-name-in-investment-and-trading-activities",
+        "source": "ADGM (search dated 2026-11-09)",
+        "published_at": "2026-11-09T10:19:09+00:00",
+        "summary": "ADGM’s Registration Authority warned that unaffiliated persons and websites are using ADGM Academy’s name and branding to promote investment or trading services, including through WhatsApp. It advised the public to verify official affiliations and exercise caution with payment or information requests; for banks, the alert highlights impersonation as a customer-protection and fraud-response consideration, but it does not report specific bank losses or incidents.",
+        "category": "Regulatory & Markets",
         "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      }
+    ],
+    "AI & Technology": [
+      {
+        "id": "41151b0762ed713d9334",
+        "title": "Kyiv to Host the Ninth International Fintech Conference, UAFIN.TECH 2026",
+        "url": "https://kyivpost.com/post/89570",
+        "source": "Kyiv Post",
+        "published_at": "2026-11-09T16:26:00+02:00",
+        "summary": "Kyiv is scheduled to host UAFIN.TECH 2026 on 4 December, with the conference theme of agentic banking and planned discussions of AI, cybersecurity, operations and customer experience. The announcement signals industry interest in these topics, but a conference agenda is not evidence of adoption or operational results; its practical value would depend on whether discussion yields actionable control or implementation insights.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 2,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
@@ -188,126 +117,70 @@
   "chart_data": {
     "articles": [
       {
-        "id": "ba6d3553ea786e29ff6f",
-        "title": "Britain's biggest banks move to block AI agents from customer accounts - Resultsense",
-        "url": "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
-        "source": "Resultsense",
-        "published_at": "2026-11-09T08:41:46+00:00",
-        "summary": "Resultsense reports that HSBC and four other major UK banks are restricting AI agents from making transactions in customer accounts without direct customer involvement; it says the restrictions are precautionary and that there is no sign yet of agents accessing UK accounts. The article also cites potential deposit-flow exposure and FCA work on rules for financial agents. For banking change execution, it highlights the need to distinguish read-only access from delegated transaction authority and to define liability and customer authentication controls; the deposit-loss figures are attributed forecasts, not observed flows.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 8,
+        "id": "0375f28d3b118ed03380",
+        "title": "DBS CIO Eugene Huang: To manage AI agents, give them an employee handbook",
+        "url": "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook",
+        "source": "联合早报",
+        "published_at": "2026-11-10T08:52:15+08:00",
+        "summary": "DBS CIO Eugene Huang said the bank is revamping important systems from 2025 to 2027 to improve resilience, while applying AI agents in some business processes and reconsidering how work is organized. He said efficiency gains could be used to tackle legacy work sooner rather than reduce technology-team headcount, and stressed prudent governance as agents take actions; these are DBS’s stated plans and views, not evidence of realized results.",
+        "category": "Operations & Change",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "noise_level": 2,
-        "is_update": true,
+        "noise_level": 1,
+        "is_update": false,
         "user_relevance": 8
       },
       {
-        "id": "7f252466fc7366935aa8",
-        "title": "Worlds That Endure: How HSBC Private Bank’s Ida Liu is rethinking inter-generational wealth",
-        "url": "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
-        "source": "Tatler Asia",
-        "published_at": "2026-11-09T03:30:30+00:00",
-        "summary": "Tatler Asia profiles HSBC Private Bank CEO Ida Liu’s views on intergenerational wealth, including starting succession conversations early and addressing family values, governance and structure. It cites HSBC’s 2026 Global Entrepreneurial Wealth Report, saying two thirds of surveyed entrepreneurs have a wealth-transfer plan but 37% have one legally reviewed and approved, with the figure at 25% in mainland China. For private wealth delivery, the article points to a client need that spans family dialogue and legal planning as well as financial transfer; the figures are survey findings and the profile does not describe a new HSBC service or operating change.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 7,
+        "id": "01d84fc2ef906542decb",
+        "title": "Air India and Standard Chartered Link Loyalty with Wealth Management - The Fintech Times",
+        "url": "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
+        "source": "The Fintech Times (search dated 2026-11-10)",
+        "published_at": "2026-11-10T06:00:58+00:00",
+        "summary": "Standard Chartered and Air India announced a loyalty arrangement linking eligible affluent-bank clients to Maharaja Club status and qualifying Air India customers to wealth-centre access in Singapore and the UAE. The article says the offer is expected in the coming weeks but gives no commercial terms or uptake data; for cross-border wealth delivery, eligibility handling and a clear referral-to-account-opening journey are practical execution dependencies.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 6,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "e4f14c65347c17dedad1",
-        "title": "MAS Wants Singapore’s Financial Sector Quantum-Safe by 2034",
-        "url": "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-09T03:47:18+00:00",
-        "summary": "MAS proposed phased quantum-safe migration planning for Singapore financial institutions, including plans by 31 December 2027 and transition of remaining systems by 31 December 2034; earlier proposed milestones apply to designated critical institutions. The proposed guidance calls for prioritising critical systems, considering third-party dependencies, testing solutions and documenting interim safeguards, but is non-binding and subject to change.",
-        "category": "Regulatory & Markets",
+        "id": "e7a9e261c7f2b047757c",
+        "title": "AlRayan Investment Appoints Former J.P. Morgan and UBS Wealth Management Executive Bryan Crawford as Chief Executive",
+        "url": "https://hubbis.com/news/alrayan-investment-appoints-former-j-p-morgan-and-ubs-wealth-management-executive-bryan-crawford-as-chief-executive",
+        "source": "Hubbis (search dated 2026-11-10)",
+        "published_at": "2026-11-10T21:05:48+00:00",
+        "summary": "AlRayan Investment appointed Bryan Crawford as CEO, succeeding acting CEO Akber Khan. Crawford has held senior roles at Quintet, UBS Wealth Management and J.P. Morgan, including Asia-Pacific product-sales leadership; the appointment may shape a Sharia-compliant investment and advisory business, but the announcement gives no specific operating plans or expected outcomes.",
+        "category": "Private Banking & Wealth",
         "hsbc_relevancy": 4,
-        "adam_rel": 8,
+        "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 5
       },
       {
-        "id": "044c733f857629380044",
-        "title": "J.P. Morgan Private Bank names Taiwan market head - Asset Publishing and Research",
-        "url": "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head",
-        "source": "Asset Publishing and Research (search dated 2026-11-09)",
-        "published_at": "2026-11-09T13:18:34+00:00",
-        "summary": "J.P. Morgan Private Bank appointed Keeve Tan as head of its Taiwan market, effective January 2027, based in Hong Kong and succeeding Anita Mak. Tan joins from Bank of Singapore and has experience covering Taiwan and Greater China; the announcement describes a leadership transition but does not specify changes to the business or its operating model.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "5046b1b8fd9ad5934365",
-        "title": "Singapore’s Wealth Hub Status Mirrors Changing Asia: Julius Baer",
-        "url": "https://tabla.com.sg/news/singapore/singapores-wealth-hub-status-mirrors-changing-asia-julius-baer",
-        "source": "https://www.tabla.com.sg/ (search dated 2026-11-09)",
-        "published_at": "2026-11-09T10:09:52+08:00",
-        "summary": "Julius Baer Asia head Jimmy Lee described changing wealth-management priorities in Singapore, including geographic and asset-class diversification, succession planning and family governance. The article also discusses Singapore and Hong Kong as wealth centres with different roles, drawing on a Julius Baer safe-havens report; these are the bank’s views and do not establish customer outcomes or the forecast’s realization.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": true,
-        "user_relevance": 6
-      },
-      {
-        "id": "f48fb0509f8f6d4e5127",
-        "title": "Deutsche Bank Pairs a Sector Rally With a Blueprint for Bounded AI - ad-hoc-news.de",
-        "url": "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
-        "source": "ad-hoc-news.de",
-        "published_at": "2026-11-09T17:21:55+01:00",
-        "summary": "Ad-hoc-news.de reports that Deutsche Bank and Ant Digital Technologies published a whitepaper on bounded AI-agent use in wholesale banking, covering treasury and liquidity management, cross-border payments and trade finance. The proposed design separates order coordination, authorization and settlement, and includes limited revocable mandates and agent identity checks. For banking change execution, the separation of preparation from approval and settlement offers a concrete control-design consideration; the article describes a framework and case study, not proven operational outcomes.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "9065e066385e11b337ec",
-        "title": "Standard Chartered hires HDFC executive to lead India private banking arm",
-        "url": "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-11-09T11:57:53+00:00",
-        "summary": "Standard Chartered appointed Aditya Deshpande, formerly a senior HDFC Bank executive, as managing director and head of private banking in India. His experience includes wealth management, investment products and regional leadership; the report describes the appointment but gives no details of a new strategy or expected business outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "fde5e474ab4e623301dd",
-        "title": "Wealth and customer flows cushion banks as trading income drops",
-        "url": "https://sbr.com.sg/financial-services/in-focus/wealth-and-customer-flows-cushion-banks-trading-income-drops",
-        "source": "Singapore Business Review",
-        "published_at": "2026-11-10T06:00:00+08:00",
-        "summary": "Singapore Business Review reports that Singapore’s three largest banks recorded combined Q3 net interest income of $8.302 billion, up 2% quarter-on-quarter, while combined non-interest income fell 18.5% as trading, investment, insurance and one-off divestment income weakened. It says customer-related activity and wealth businesses held up better, with differing fee trends across DBS, OCBC and UOB. For APAC wealth delivery, the results indicate that customer flows and wealth fees can provide a different income signal from market-sensitive trading; the report gives no HSBC-specific results.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 6,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "4676c415dfa74b863bae",
-        "title": "Divest launches private banking for the December homecoming",
-        "url": "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
-        "source": "TechCabal",
-        "published_at": "2026-11-09T13:36:53+01:00",
-        "summary": "TechCabal reports that Lagos-based Divest launched Divest Private Banking, an app offering USD, GBP, EUR and naira balances, currency conversion, and payments to accounts or mobile money in Nigeria, Kenya, Ghana and South Africa. The article also describes the service as aimed at returnees, freelancers, families and businesses. For wealth and banking operations, the offering illustrates a cross-border proposition combining currency holding and payments; the supplied article is partner content and its claims about rates, fees and service performance are not independently substantiated.",
-        "category": "Private Banking & Wealth",
+        "id": "a9e1025cca47ebc6a050",
+        "title": "ADGM Issues Alert Concerning Misuse of the ADGM Academy Name in Investment and Trading Activities - ADGM",
+        "url": "https://adgm.com/media/announcements/adgm-issues-alert-concerning-misuse-of-the-adgm-academy-name-in-investment-and-trading-activities",
+        "source": "ADGM (search dated 2026-11-09)",
+        "published_at": "2026-11-09T10:19:09+00:00",
+        "summary": "ADGM’s Registration Authority warned that unaffiliated persons and websites are using ADGM Academy’s name and branding to promote investment or trading services, including through WhatsApp. It advised the public to verify official affiliations and exercise caution with payment or information requests; for banks, the alert highlights impersonation as a customer-protection and fraud-response consideration, but it does not report specific bank losses or incidents.",
+        "category": "Regulatory & Markets",
         "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "41151b0762ed713d9334",
+        "title": "Kyiv to Host the Ninth International Fintech Conference, UAFIN.TECH 2026",
+        "url": "https://kyivpost.com/post/89570",
+        "source": "Kyiv Post",
+        "published_at": "2026-11-09T16:26:00+02:00",
+        "summary": "Kyiv is scheduled to host UAFIN.TECH 2026 on 4 December, with the conference theme of agentic banking and planned discussions of AI, cybersecurity, operations and customer experience. The announcement signals industry interest in these topics, but a conference agenda is not evidence of adoption or operational results; its practical value would depend on whether discussion yields actionable control or implementation insights.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 2,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
@@ -316,10 +189,10 @@
     ],
     "categories": {
       "On Adam's Desk": "#be123c",
-      "AI & Technology": "#6366f1",
+      "Operations & Change": "#7c3aed",
+      "Private Banking & Wealth": "#059669",
       "Regulatory & Markets": "#d97706",
-      "Competitor Intelligence": "#0891b2",
-      "Private Banking & Wealth": "#059669"
+      "AI & Technology": "#6366f1"
     }
   }
 }
