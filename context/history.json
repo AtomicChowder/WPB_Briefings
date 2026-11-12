@@ -1,29 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-11",
+    "last_updated": "2026-11-13",
     "daily": [
-      {
-        "date": "2026-11-05",
-        "urls": [
-          "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
-          "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
-          "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
-          "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
-          "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers"
-        ],
-        "topics": []
-      },
-      {
-        "date": "2026-11-06",
-        "urls": [
-          "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
-          "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
-          "https://fintechnews.sg/140541/fintech/dbs-chairman",
-          "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
-          "https://thelogic.co/news/wealthsimple-launches-ai-assistant"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-07",
         "urls": [
@@ -86,50 +64,57 @@
           "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
           "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-13",
+        "urls": [
+          "https://fintechnews.sg/140918/digital-banking-news-singapore/backbase-two-cto",
+          "https://fintechnews.sg/140926/fintech/mas-gold-vaulting-central-banks-singapore",
+          "https://fintechnews.sg/141050/china/dbs-paylah-china-qr-payments",
+          "https://hubbis.com/news/manulife-investment-management-and-ubs-s-unified-global-alternatives-collaborate-on-japan-private-equity-co-investment-programme",
+          "https://privatebankerinternational.com/news/hsbc-global-private-bank-director"
+        ],
         "topics": [
-          "The airline-bank offer makes customer eligibility and handoffs central to delivery",
-          "DBS links resilience work with a capacity choice for technology teams"
+          "Singapore is building out institutional gold-market infrastructure",
+          "Japan private-equity access announced without programme terms",
+          "Backbase reports AI-supported implementation acceleration"
         ]
       }
     ],
     "covered_urls": [
       "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
       "https://adgm.com/media/announcements/adgm-issues-alert-concerning-misuse-of-the-adgm-academy-name-in-investment-and-trading-activities",
-      "https://adgm.com/media/announcements/arab-bank-switzerland-opens-abu-dhabi-office-and-names-valerie-noel-chief-executive-officer",
       "https://americanbanker.com/news/occ-banks-need-strong-controls-when-delegating-to-ai-agents",
       "https://asiainsurancereview.com/News/View-NewsLetter-Article?id=97466&Type=eDaily",
-      "https://asianbankingandfinance.net/retail-banking/news/anz-hires-hsbc-liquidity-chief-john-hoque-group-treasurer",
-      "https://bloomberg.com/news/articles/2026-11-04/dbs-profit-misses-estimates-on-trading-income-names-lim-chair",
       "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
       "https://exchange4media.com/people-movement-news/poonawalla-fincorp-appoints-ankit-gupta-as-head-digital-and-transformation-159990.html",
       "https://finance.yahoo.com/news/deutsche-bank-establishes-ai-academy-121244530.html",
       "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
-      "https://finance.yahoo.com/technology/ai/articles/tencent-cloud-selected-hkmas-agentic-083000425.html",
-      "https://fintechnews.sg/140394/ai/future-of-finance-institute-mas-ai-operations",
-      "https://fintechnews.sg/140541/fintech/dbs-chairman",
       "https://fintechnews.sg/140548/payments/pyvio-mas-major-payment-institution-license",
       "https://fintechnews.sg/140689/wealthtech/hsbc-rewards-plus-singapore-savings-interest",
       "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
+      "https://fintechnews.sg/140918/digital-banking-news-singapore/backbase-two-cto",
+      "https://fintechnews.sg/140926/fintech/mas-gold-vaulting-central-banks-singapore",
+      "https://fintechnews.sg/141050/china/dbs-paylah-china-qr-payments",
       "https://hubbis.com/news/alrayan-investment-appoints-former-j-p-morgan-and-ubs-wealth-management-executive-bryan-crawford-as-chief-executive",
       "https://hubbis.com/news/chubb-life-and-dbs-taiwan-expand-wealth-services-for-high-net-worth-clients",
+      "https://hubbis.com/news/manulife-investment-management-and-ubs-s-unified-global-alternatives-collaborate-on-japan-private-equity-co-investment-programme",
       "https://kyivpost.com/post/89570",
-      "https://natlawreview.com/article/major-banks-move-block-or-limit-customer-directed-ai-agents",
+      "https://privatebankerinternational.com/news/hsbc-global-private-bank-director",
       "https://pulse2.com/goldman-sachs-names-109-new-partners-for-2026-with-appointments-effective-january-1-2027",
       "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
       "https://sbr.com.sg/financial-services/in-focus/wealth-and-customer-flows-cushion-banks-trading-income-drops",
       "https://straitstimes.com/business/dbs-chairman-peter-seah-to-retire-with-effect-from-jan-1-2027-q3-net-profit-at-2-8b",
       "https://straitstimes.com/business/private-banks-risk-losing-the-race-for-wealth-clients-before-they-even-come-on-board-citi-singapore",
-      "https://straitstimes.com/business/singapores-rise-as-a-wealth-hub-mirrors-asias-changing-fortunes-julius-baer-asia-head?ai-allowed=1",
       "https://tabla.com.sg/news/singapore/singapores-wealth-hub-status-mirrors-changing-asia-julius-baer",
       "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
       "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
       "https://telegraph.co.uk/business/2026/11/08/banks-ban-ai-from-accounts-over-fears-of-rogue-agents",
       "https://theasianbanker.com/updates-and-articles/dbs-s-customer-income-grows-as-weaker-trading-weighs-on-third-quarter-profit",
       "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head",
-      "https://thedigitalbanker.com/standard-chartered-crmx-corporate-bankers",
       "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
       "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
-      "https://thelogic.co/news/wealthsimple-launches-ai-assistant",
       "https://thestandard.com.hk/finance/article/339619/Hong-Kong-is-a-treasure-trove-of-international-wealth-HSBC-co-chief-executive-David-Liao-says",
       "https://thestandard.com.hk/finance/article/347829/Wealth-HSBC-turns-RewardCash-into-life-cash-in-flagship-banking-lifestyle-center",
       "https://uk.finance.yahoo.com/news/change-business-name-subsidiary-lhv-060000922.html",
@@ -138,8 +123,9 @@
       "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook"
     ],
     "covered_topics": [
-      "DBS links resilience work with a capacity choice for technology teams",
-      "The airline-bank offer makes customer eligibility and handoffs central to delivery"
+      "Backbase reports AI-supported implementation acceleration",
+      "Japan private-equity access announced without programme terms",
+      "Singapore is building out institutional gold-market infrastructure"
     ]
   }
 }
