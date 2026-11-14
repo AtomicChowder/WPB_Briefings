@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Sunday, 15 November 2026 — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Sunday, 15 November 2026</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-11-14.html">‹ 14 Nov 2026</a>
+    
+    <span class="nav-current">Sunday, 15 November 2026</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">5 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Singapore entity consolidation raises transition-design questions</h3>
+          <p class="tp-context">HSBC plans to serve individuals, businesses and institutions in Singapore through one banking entity, while retaining its stated regional ownership structure. For delivery, a proposed question is how customer journeys, account servicing and control responsibilities will map across the consolidation; the report provides no timetable or detailed implementation plan.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://fintechnews.sg/141171/fintech/hsbc-singapore-merger" target="_blank" rel="noopener" class="tp-source-link" title="HSBC Plans Retail and Business Banking Merger in Singapore">HSBC Plans Retail and Business Banking Merger in Singapore</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">OCBC automates controlled business-account maintenance</h3>
+          <p class="tp-context">OCBC’s first phase lets business customers request changes to users, approvers and roles through its banking platform, with further request types planned from 2027. A practical delivery criterion is whether authorization changes retain clear review, approval and audit evidence while reducing manual handling; the article reports OCBC’s stated scope and request volume, not realized benefits or adoption.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking" target="_blank" rel="noopener" class="tp-source-link" title="OCBC Launches AI Assistant for Business Account Maintenance">OCBC Launches AI Assistant for Business Account Maintenance</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (5)</button>
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (1)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-503404b443b8951a5a58" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141171/fintech/hsbc-singapore-merger" target="_blank" rel="noopener">HSBC Plans Retail and Business Banking Merger in Singapore</a>
+          </div>
+          <p class="article-summary">HSBC plans to bring its Singapore retail and business banking operations together in one banking entity, according to a statement from Asia and Middle East Co-CEO Surendra Rosha. The report says HSBC has no plans to change its regional structure and that its Hong Kong-based subsidiary will continue to own and manage its Asia-Pacific banking entities. The proposed consolidation makes entity design and the transition of customer-facing operations relevant execution considerations, but the excerpt gives no implementation timetable or detailed operating model.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>13 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-450d19593c49feb25646" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 4/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer" target="_blank" rel="noopener">Canara HSBC Life Insurance announces the elevation of Mr. Indu Swaroop as its Chief Financial Officer</a>
+          </div>
+          <p class="article-summary">Canara HSBC Life Insurance announced the elevation of Indu Swaroop to Chief Financial Officer; the excerpt says he was part of the founding team and most recently served as Financial Controller. The leadership move is relevant to the broader insurance and financial-services landscape, but the supplied excerpt does not specify any resulting operational or strategic change.</p>
+          <div class="article-footer">
+            <span class="article-source">CXO Digitalpulse</span>
+            <span>13 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-24f40472adc1ea77bc57" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking" target="_blank" rel="noopener">OCBC Launches AI Assistant for Business Account Maintenance</a>
+          </div>
+          <p class="article-summary">OCBC launched Velocity Smart Assist for business-banking account maintenance, initially enabling customers to manage account users, approvers and roles and route requests digitally. OCBC said businesses submit 20,000 such requests annually and plans to extend the assistant to other maintenance requests from 2027, with progressive rollout across core markets. This competitor example highlights the operational dependency between digital self-service and controlled authorization changes; the supplied report does not establish adoption or realized efficiency gains.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>13 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-0012cccf8a33d00afee0" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410" target="_blank" rel="noopener">Fino Payments Bank gets RBI nod to appoint Pratap Singh as MD &amp; CEO for three years</a>
+          </div>
+          <p class="article-summary">The Reserve Bank of India approved Pratap Singh’s appointment as Fino Payments Bank’s managing director and CEO for a three-year term beginning November 27 or when he takes charge, whichever is earlier. The article describes his experience in retail and SME banking, digital transformation, branch productivity and operating-model redesign. His background is relevant to execution and transformation leadership, but the appointment report provides no specific plans for Fino or expected outcomes.</p>
+          <div class="article-footer">
+            <span class="article-source">bfsi.economictimes.indiatimes.com</span>
+            <span>13 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-37965d0433764c0ccb2b" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 3/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html" target="_blank" rel="noopener">Made in Europe</a>
+          </div>
+          <p class="article-summary">ECB Executive Board member Isabel Schnabel’s 13 November 2026 speech argues that Europe’s Single Market could provide greater scale for firms and discusses differences in income, productivity, work patterns and social outcomes. The address is broad economic-policy commentary rather than a specific banking rule or change; its relevance to banking operations or APAC wealth delivery is indirect.</p>
+          <div class="article-footer">
+            <span class="article-source">ECB-PRESS</span>
+            <span>13 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 2026-11-15T07:00:03.181138+08:00 &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "503404b443b8951a5a58", "title": "HSBC Plans Retail and Business Banking Merger in Singapore", "url": "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger", "source": "Fintech Singapore", "published_at": "2026-11-13T09:19:52+00:00", "summary": "HSBC plans to bring its Singapore retail and business banking operations together in one banking entity, according to a statement from Asia and Middle East Co-CEO Surendra Rosha. The report says HSBC has no plans to change its regional structure and that its Hong Kong-based subsidiary will continue to own and manage its Asia-Pacific banking entities. The proposed consolidation makes entity design and the transition of customer-facing operations relevant execution considerations, but the excerpt gives no implementation timetable or detailed operating model.", "category": "HSBC News", "hsbc_relevancy": 8, "adam_rel": 7, "noise_level": 1, "is_update": false, "user_relevance": 7}, {"id": "24f40472adc1ea77bc57", "title": "OCBC Launches AI Assistant for Business Account Maintenance", "url": "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking", "source": "Fintech Singapore", "published_at": "2026-11-13T03:14:56+00:00", "summary": "OCBC launched Velocity Smart Assist for business-banking account maintenance, initially enabling customers to manage account users, approvers and roles and route requests digitally. OCBC said businesses submit 20,000 such requests annually and plans to extend the assistant to other maintenance requests from 2027, with progressive rollout across core markets. This competitor example highlights the operational dependency between digital self-service and controlled authorization changes; the supplied report does not establish adoption or realized efficiency gains.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 7, "noise_level": 1, "is_update": false, "user_relevance": 7}, {"id": "37965d0433764c0ccb2b", "title": "Made in Europe", "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html", "source": "ECB-PRESS", "published_at": "2026-11-13T08:20:00+01:00", "summary": "ECB Executive Board member Isabel Schnabel\u2019s 13 November 2026 speech argues that Europe\u2019s Single Market could provide greater scale for firms and discusses differences in income, productivity, work patterns and social outcomes. The address is broad economic-policy commentary rather than a specific banking rule or change; its relevance to banking operations or APAC wealth delivery is indirect.", "category": "Regulatory \u0026 Markets", "hsbc_relevancy": 3, "adam_rel": 3, "noise_level": 1, "is_update": false, "user_relevance": 3}, {"id": "450d19593c49feb25646", "title": "Canara HSBC Life Insurance announces the elevation of Mr. Indu Swaroop as its Chief Financial Officer", "url": "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer", "source": "CXO Digitalpulse", "published_at": "2026-11-13T05:40:07+00:00", "summary": "Canara HSBC Life Insurance announced the elevation of Indu Swaroop to Chief Financial Officer; the excerpt says he was part of the founding team and most recently served as Financial Controller. The leadership move is relevant to the broader insurance and financial-services landscape, but the supplied excerpt does not specify any resulting operational or strategic change.", "category": "HSBC News", "hsbc_relevancy": 5, "adam_rel": 4, "noise_level": 1, "is_update": false, "user_relevance": 4}, {"id": "0012cccf8a33d00afee0", "title": "Fino Payments Bank gets RBI nod to appoint Pratap Singh as MD \u0026amp; CEO for three years", "url": "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410", "source": "bfsi.economictimes.indiatimes.com", "published_at": "2026-11-13T08:36:46+05:30", "summary": "The Reserve Bank of India approved Pratap Singh\u2019s appointment as Fino Payments Bank\u2019s managing director and CEO for a three-year term beginning November 27 or when he takes charge, whichever is earlier. The article describes his experience in retail and SME banking, digital transformation, branch productivity and operating-model redesign. His background is relevant to execution and transformation leadership, but the appointment report provides no specific plans for Fino or expected outcomes.", "category": "Competitor Intelligence", "hsbc_relevancy": 3, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}], "categories": {"HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "Regulatory \u0026 Markets": "#d97706"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>

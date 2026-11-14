@@ -1,19 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-14",
+    "last_updated": "2026-11-15",
     "daily": [
-      {
-        "date": "2026-11-08",
-        "urls": [
-          "https://asiainsurancereview.com/News/View-NewsLetter-Article?id=97466&Type=eDaily",
-          "https://exchange4media.com/people-movement-news/poonawalla-fincorp-appoints-ankit-gupta-as-head-digital-and-transformation-159990.html",
-          "https://fintechnews.sg/140689/wealthtech/hsbc-rewards-plus-singapore-savings-interest",
-          "https://hubbis.com/news/chubb-life-and-dbs-taiwan-expand-wealth-services-for-high-net-worth-clients",
-          "https://theasianbanker.com/updates-and-articles/dbs-s-customer-income-grows-as-weaker-trading-weighs-on-third-quarter-profit",
-          "https://thestandard.com.hk/finance/article/339619/Hong-Kong-is-a-treasure-trove-of-international-wealth-HSBC-co-chief-executive-David-Liao-says"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-09",
         "urls": [
@@ -74,10 +62,20 @@
           "https://hapakenya.com/2026/11/13/standard-chartered-uganda-completes-sale-of-wealth-retail-banking-unit-to-absa",
           "https://straitstimes.com/business/banks-in-singapore-offer-alternative-contact-channels-amid-microsoft-outage-abs"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-15",
+        "urls": [
+          "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
+          "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
+          "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
+          "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
+          "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger"
+        ],
         "topics": [
-          "Singapore banks set boundaries for third-party AI agents",
-          "Email outage tests customer communications fallbacks",
-          "Postbank migration fine highlights customer-service capacity"
+          "Singapore entity consolidation raises transition-design questions",
+          "OCBC automates controlled business-account maintenance"
         ]
       }
     ],
@@ -85,20 +83,21 @@
       "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
       "https://adgm.com/media/announcements/adgm-issues-alert-concerning-misuse-of-the-adgm-academy-name-in-investment-and-trading-activities",
       "https://aimmediahouse.com/banking/ai-agents-are-logging-into-bank-accounts-fraud-vendors-are-watching",
-      "https://asiainsurancereview.com/News/View-NewsLetter-Article?id=97466&Type=eDaily",
+      "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
       "https://bfsi.economictimes.indiatimes.com/articles/sbi-invites-applications-for-chief-ai-officer/135805543",
       "https://businesstimes.com.sg/companies-markets/banking-finance/german-regulator-fines-deutsche-bank-us8-9-million-over-postbank-customer-migration-issues",
       "https://businesstimes.com.sg/companies-markets/fight-ai-ai-singapore-banks-warn-against-third-party-ai-agents-observers-flag-liability-risk",
-      "https://exchange4media.com/people-movement-news/poonawalla-fincorp-appoints-ankit-gupta-as-head-digital-and-transformation-159990.html",
+      "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
+      "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
       "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
-      "https://fintechnews.sg/140689/wealthtech/hsbc-rewards-plus-singapore-savings-interest",
       "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
       "https://fintechnews.sg/140918/digital-banking-news-singapore/backbase-two-cto",
       "https://fintechnews.sg/140926/fintech/mas-gold-vaulting-central-banks-singapore",
       "https://fintechnews.sg/141050/china/dbs-paylah-china-qr-payments",
+      "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
+      "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
       "https://hapakenya.com/2026/11/13/standard-chartered-uganda-completes-sale-of-wealth-retail-banking-unit-to-absa",
       "https://hubbis.com/news/alrayan-investment-appoints-former-j-p-morgan-and-ubs-wealth-management-executive-bryan-crawford-as-chief-executive",
-      "https://hubbis.com/news/chubb-life-and-dbs-taiwan-expand-wealth-services-for-high-net-worth-clients",
       "https://hubbis.com/news/manulife-investment-management-and-ubs-s-unified-global-alternatives-collaborate-on-japan-private-equity-co-investment-programme",
       "https://kyivpost.com/post/89570",
       "https://privatebankerinternational.com/news/hsbc-global-private-bank-director",
@@ -111,7 +110,6 @@
       "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
       "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
       "https://telegraph.co.uk/business/2026/11/08/banks-ban-ai-from-accounts-over-fears-of-rogue-agents",
-      "https://theasianbanker.com/updates-and-articles/dbs-s-customer-income-grows-as-weaker-trading-weighs-on-third-quarter-profit",
       "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head",
       "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
       "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
@@ -121,9 +119,8 @@
       "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook"
     ],
     "covered_topics": [
-      "Email outage tests customer communications fallbacks",
-      "Postbank migration fine highlights customer-service capacity",
-      "Singapore banks set boundaries for third-party AI agents"
+      "OCBC automates controlled business-account maintenance",
+      "Singapore entity consolidation raises transition-design questions"
     ]
   }
 }

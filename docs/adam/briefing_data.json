@@ -3,229 +3,190 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Saturday, 14 November 2026",
-  "date_str": "2026-11-14",
-  "generated_at": "2026-11-14T07:00:02.549441+08:00",
-  "total_articles": 6,
+  "briefing_date": "Sunday, 15 November 2026",
+  "date_str": "2026-11-15",
+  "generated_at": "2026-11-15T07:00:03.181138+08:00",
+  "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Singapore banks set boundaries for third-party AI agents",
-      "context_html": "DBS, UOB and OCBC describe restrictions or caution around third-party agents, with DBS studying possible lower-risk uses. For APAC delivery, a key design dependency is an auditable link between the customer’s permission, the agent’s permitted actions and each transaction; the article says local banks have not yet seen customer use and describes a proposed MAS framework, not settled rules. (Interpretation: a useful control question is how delegated authority could be revoked or interrupted once an agent is operating.)",
+      "headline": "Singapore entity consolidation raises transition-design questions",
+      "context_html": "HSBC plans to serve individuals, businesses and institutions in Singapore through one banking entity, while retaining its stated regional ownership structure. For delivery, a proposed question is how customer journeys, account servicing and control responsibilities will map across the consolidation; the report provides no timetable or detailed implementation plan.",
       "source_links": [
         {
-          "url": "https://businesstimes.com.sg/companies-markets/fight-ai-ai-singapore-banks-warn-against-third-party-ai-agents-observers-flag-liability-risk",
-          "title": "‘Fight AI with AI’: Singapore banks warn against third-party AI agents as observers flag liability risk"
+          "url": "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
+          "title": "HSBC Plans Retail and Business Banking Merger in Singapore"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Email outage tests customer communications fallbacks",
-      "context_html": "The Microsoft outage affected email at HSBC and other Singapore banks, prompting alternative contact channels and scam warnings. For operational resilience, fallback channels need to remain discoverable and consistent with fraud messaging when customers seek urgent help; the article does not detail HSBC’s specific impact or the duration of disruption. (Interpretation: a useful exercise is to test whether customers can distinguish official outage guidance from impersonation attempts.)",
+      "headline": "OCBC automates controlled business-account maintenance",
+      "context_html": "OCBC’s first phase lets business customers request changes to users, approvers and roles through its banking platform, with further request types planned from 2027. A practical delivery criterion is whether authorization changes retain clear review, approval and audit evidence while reducing manual handling; the article reports OCBC’s stated scope and request volume, not realized benefits or adoption.",
       "source_links": [
         {
-          "url": "https://straitstimes.com/business/banks-in-singapore-offer-alternative-contact-channels-amid-microsoft-outage-abs",
-          "title": "Microsoft outage hits MAS, banks’ e-mails; banks offer customers alternative contact channels"
-        }
-      ],
-      "is_update": false
-    },
-    {
-      "headline": "Postbank migration fine highlights customer-service capacity",
-      "context_html": "BaFin fined Deutsche Bank over complaint handling and delayed securities-transfer orders during the Postbank platform migration. For major migrations, operational readiness must include sufficient capacity to resolve customer issues as well as technical conversion controls, particularly where access to funds or standing payment instructions could be affected; this is a reported Deutsche case, not evidence of a comparable HSBC issue. (Interpretation: a decision criterion is whether service and transaction exception capacity is tested against a migration-volume surge.)",
-      "source_links": [
-        {
-          "url": "https://businesstimes.com.sg/companies-markets/banking-finance/german-regulator-fines-deutsche-bank-us8-9-million-over-postbank-customer-migration-issues",
-          "title": "German regulator fines Deutsche Bank US$8.9 million over Postbank customer migration issues"
+          "url": "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
+          "title": "OCBC Launches AI Assistant for Business Account Maintenance"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "Operations & Change": [
+    "HSBC News": [
       {
-        "id": "b07663993b8280c7bd02",
-        "title": "Microsoft outage hits MAS, banks’ e-mails; banks offer customers alternative contact channels",
-        "url": "https://straitstimes.com/business/banks-in-singapore-offer-alternative-contact-channels-amid-microsoft-outage-abs",
-        "source": "The Straits Times",
-        "published_at": "2026-11-13T07:31:11+00:00",
-        "summary": "A global Microsoft outage disrupted email and communications at several Singapore banks, including HSBC, and at MAS; MAS said its operations remained unaffected. Banks offered alternative customer contact channels and warned about phishing and impersonation, while the article says core DBS banking services remained available. For banking operations, the incident illustrates the importance of tested communications fallbacks and scam-response messaging; the report does not establish the outage’s full duration or HSBC-specific service impact.",
-        "category": "Operations & Change",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "is_update": false,
-        "user_relevance": 8
-      }
-    ],
-    "AI & Technology": [
-      {
-        "id": "1e7ad03c1ddbd42a30fb",
-        "title": "‘Fight AI with AI’: Singapore banks warn against third-party AI agents as observers flag liability risk",
-        "url": "https://businesstimes.com.sg/companies-markets/fight-ai-ai-singapore-banks-warn-against-third-party-ai-agents-observers-flag-liability-risk",
-        "source": "The Business Times",
-        "published_at": "2026-11-12T23:00:00+00:00",
-        "summary": "DBS, UOB and OCBC warned against or restricted third-party AI agents interacting with customer accounts; DBS said it is studying whether some lower-risk uses could be allowed safely. The article says the Singapore banks had not yet seen customer use of such agents, and discusses uncertainty over customer authorization, liability and audit trails, alongside a proposed MAS framework. For APAC banking change execution, the control question is how to evidence agent authority and each consequential action before execution; the article reports current caution and views, not established local customer adoption.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 5,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "f046436d36218db14665",
-        "title": "AI Agents Are Logging Into Bank Accounts. Fraud Vendors Are Watching. - AIM Media House",
-        "url": "https://aimmediahouse.com/banking/ai-agents-are-logging-into-bank-accounts-fraud-vendors-are-watching",
-        "source": "AIM Media House",
-        "published_at": "2026-11-13T11:22:51.703000+00:00",
-        "summary": "The article describes fraud and identity vendors introducing tools to detect AI agents accessing bank accounts or obtain customer approval for agent-initiated transactions. It reports vendor claims about detection performance and deployment, while also citing concerns about authorization, liability and the difficulty of distinguishing legitimate from malicious agents. For banks, the practical implication is that any agent-access control design must define identity, delegated permissions and transaction-level consent; vendor performance claims and forecasts in the report are not independently established.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 4,
+        "id": "503404b443b8951a5a58",
+        "title": "HSBC Plans Retail and Business Banking Merger in Singapore",
+        "url": "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-13T09:19:52+00:00",
+        "summary": "HSBC plans to bring its Singapore retail and business banking operations together in one banking entity, according to a statement from Asia and Middle East Co-CEO Surendra Rosha. The report says HSBC has no plans to change its regional structure and that its Hong Kong-based subsidiary will continue to own and manage its Asia-Pacific banking entities. The proposed consolidation makes entity design and the transition of customer-facing operations relevant execution considerations, but the excerpt gives no implementation timetable or detailed operating model.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 8,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
       },
       {
-        "id": "86eef6490974a4bed4ab",
-        "title": "SBI invites applications for Chief AI Officer",
-        "url": "https://bfsi.economictimes.indiatimes.com/articles/sbi-invites-applications-for-chief-ai-officer/135805543",
-        "source": "bfsi.economictimes.indiatimes.com",
-        "published_at": "2026-11-13T19:17:47+05:30",
-        "summary": "State Bank of India advertised six fixed-term senior AI roles, including a Chief AI Officer and positions covering risk and operational analytics, AI governance and compliance, data engineering and AI operations. The article also notes AI hiring at Axis Bank and Indian Bank. This indicates competitor investment in dedicated AI capability, but the vacancies do not establish that the roles have been filled or that the banks have achieved specific outcomes.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 4,
-        "adam_rel": 6,
+        "id": "450d19593c49feb25646",
+        "title": "Canara HSBC Life Insurance announces the elevation of Mr. Indu Swaroop as its Chief Financial Officer",
+        "url": "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
+        "source": "CXO Digitalpulse",
+        "published_at": "2026-11-13T05:40:07+00:00",
+        "summary": "Canara HSBC Life Insurance announced the elevation of Indu Swaroop to Chief Financial Officer; the excerpt says he was part of the founding team and most recently served as Financial Controller. The leadership move is relevant to the broader insurance and financial-services landscape, but the supplied excerpt does not specify any resulting operational or strategic change.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 5,
+        "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 4
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "e4a4016a0110da8b245d",
-        "title": "German regulator fines Deutsche Bank US$8.9 million over Postbank customer migration issues",
-        "url": "https://businesstimes.com.sg/companies-markets/banking-finance/german-regulator-fines-deutsche-bank-us8-9-million-over-postbank-customer-migration-issues",
-        "source": "The Business Times",
-        "published_at": "2026-11-12T08:28:41+00:00",
-        "summary": "Germany’s BaFin fined Deutsche Bank €8 million over shortcomings in migrating Postbank customers to a shared IT platform, including delayed handling of migration-related complaints and securities-transfer orders. The reported 2023 disruption included customers losing access to funds and rejected direct debits; Deutsche said it had resolved the issues and accepted the regulator’s decision. For large-scale change execution, the case underscores the need to scale complaint handling and protect critical customer transactions during migration; the report concerns Deutsche’s case and does not establish comparable conditions at other banks.",
+        "id": "24f40472adc1ea77bc57",
+        "title": "OCBC Launches AI Assistant for Business Account Maintenance",
+        "url": "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-13T03:14:56+00:00",
+        "summary": "OCBC launched Velocity Smart Assist for business-banking account maintenance, initially enabling customers to manage account users, approvers and roles and route requests digitally. OCBC said businesses submit 20,000 such requests annually and plans to extend the assistant to other maintenance requests from 2027, with progressive rollout across core markets. This competitor example highlights the operational dependency between digital self-service and controlled authorization changes; the supplied report does not establish adoption or realized efficiency gains.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 4,
-        "adam_rel": 8,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "1a856a664b4ffcb5fc61",
-        "title": "Standard Chartered Uganda completes sale of wealth & retail banking unit to Absa",
-        "url": "https://hapakenya.com/2026/11/13/standard-chartered-uganda-completes-sale-of-wealth-retail-banking-unit-to-absa",
-        "source": "HapaKenya -",
-        "published_at": "2026-11-13T13:35:45+00:00",
-        "summary": "Standard Chartered Uganda completed the transfer of its wealth and retail banking business, including clients, products and supporting staff, to Absa Uganda, with the formal handover effective 13 November 2026. Technical migration and integration were scheduled for 13–15 November, with customers expected to use Absa channels from 16 November; Standard Chartered will continue its corporate and investment banking business in Uganda. The transition highlights the execution dependency between client, staff and system migration and continuity of access, but the article describes planned customer access rather than confirmed migration outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 4,
+        "hsbc_relevancy": 5,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
+      },
+      {
+        "id": "0012cccf8a33d00afee0",
+        "title": "Fino Payments Bank gets RBI nod to appoint Pratap Singh as MD & CEO for three years",
+        "url": "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
+        "source": "bfsi.economictimes.indiatimes.com",
+        "published_at": "2026-11-13T08:36:46+05:30",
+        "summary": "The Reserve Bank of India approved Pratap Singh’s appointment as Fino Payments Bank’s managing director and CEO for a three-year term beginning November 27 or when he takes charge, whichever is earlier. The article describes his experience in retail and SME banking, digital transformation, branch productivity and operating-model redesign. His background is relevant to execution and transformation leadership, but the appointment report provides no specific plans for Fino or expected outcomes.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "37965d0433764c0ccb2b",
+        "title": "Made in Europe",
+        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-13T08:20:00+01:00",
+        "summary": "ECB Executive Board member Isabel Schnabel’s 13 November 2026 speech argues that Europe’s Single Market could provide greater scale for firms and discusses differences in income, productivity, work patterns and social outcomes. The address is broad economic-policy commentary rather than a specific banking rule or change; its relevance to banking operations or APAC wealth delivery is indirect.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 3
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "b07663993b8280c7bd02",
-        "title": "Microsoft outage hits MAS, banks’ e-mails; banks offer customers alternative contact channels",
-        "url": "https://straitstimes.com/business/banks-in-singapore-offer-alternative-contact-channels-amid-microsoft-outage-abs",
-        "source": "The Straits Times",
-        "published_at": "2026-11-13T07:31:11+00:00",
-        "summary": "A global Microsoft outage disrupted email and communications at several Singapore banks, including HSBC, and at MAS; MAS said its operations remained unaffected. Banks offered alternative customer contact channels and warned about phishing and impersonation, while the article says core DBS banking services remained available. For banking operations, the incident illustrates the importance of tested communications fallbacks and scam-response messaging; the report does not establish the outage’s full duration or HSBC-specific service impact.",
-        "category": "Operations & Change",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "noise_level": 2,
+        "id": "503404b443b8951a5a58",
+        "title": "HSBC Plans Retail and Business Banking Merger in Singapore",
+        "url": "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-13T09:19:52+00:00",
+        "summary": "HSBC plans to bring its Singapore retail and business banking operations together in one banking entity, according to a statement from Asia and Middle East Co-CEO Surendra Rosha. The report says HSBC has no plans to change its regional structure and that its Hong Kong-based subsidiary will continue to own and manage its Asia-Pacific banking entities. The proposed consolidation makes entity design and the transition of customer-facing operations relevant execution considerations, but the excerpt gives no implementation timetable or detailed operating model.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 8,
+        "adam_rel": 7,
+        "noise_level": 1,
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 7
       },
       {
-        "id": "1e7ad03c1ddbd42a30fb",
-        "title": "‘Fight AI with AI’: Singapore banks warn against third-party AI agents as observers flag liability risk",
-        "url": "https://businesstimes.com.sg/companies-markets/fight-ai-ai-singapore-banks-warn-against-third-party-ai-agents-observers-flag-liability-risk",
-        "source": "The Business Times",
-        "published_at": "2026-11-12T23:00:00+00:00",
-        "summary": "DBS, UOB and OCBC warned against or restricted third-party AI agents interacting with customer accounts; DBS said it is studying whether some lower-risk uses could be allowed safely. The article says the Singapore banks had not yet seen customer use of such agents, and discusses uncertainty over customer authorization, liability and audit trails, alongside a proposed MAS framework. For APAC banking change execution, the control question is how to evidence agent authority and each consequential action before execution; the article reports current caution and views, not established local customer adoption.",
-        "category": "AI & Technology",
+        "id": "24f40472adc1ea77bc57",
+        "title": "OCBC Launches AI Assistant for Business Account Maintenance",
+        "url": "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-13T03:14:56+00:00",
+        "summary": "OCBC launched Velocity Smart Assist for business-banking account maintenance, initially enabling customers to manage account users, approvers and roles and route requests digitally. OCBC said businesses submit 20,000 such requests annually and plans to extend the assistant to other maintenance requests from 2027, with progressive rollout across core markets. This competitor example highlights the operational dependency between digital self-service and controlled authorization changes; the supplied report does not establish adoption or realized efficiency gains.",
+        "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
-        "adam_rel": 8,
-        "noise_level": 2,
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "e4a4016a0110da8b245d",
-        "title": "German regulator fines Deutsche Bank US$8.9 million over Postbank customer migration issues",
-        "url": "https://businesstimes.com.sg/companies-markets/banking-finance/german-regulator-fines-deutsche-bank-us8-9-million-over-postbank-customer-migration-issues",
-        "source": "The Business Times",
-        "published_at": "2026-11-12T08:28:41+00:00",
-        "summary": "Germany’s BaFin fined Deutsche Bank €8 million over shortcomings in migrating Postbank customers to a shared IT platform, including delayed handling of migration-related complaints and securities-transfer orders. The reported 2023 disruption included customers losing access to funds and rejected direct debits; Deutsche said it had resolved the issues and accepted the regulator’s decision. For large-scale change execution, the case underscores the need to scale complaint handling and protect critical customer transactions during migration; the report concerns Deutsche’s case and does not establish comparable conditions at other banks.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 4,
-        "adam_rel": 8,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 8
-      },
-      {
-        "id": "1a856a664b4ffcb5fc61",
-        "title": "Standard Chartered Uganda completes sale of wealth & retail banking unit to Absa",
-        "url": "https://hapakenya.com/2026/11/13/standard-chartered-uganda-completes-sale-of-wealth-retail-banking-unit-to-absa",
-        "source": "HapaKenya -",
-        "published_at": "2026-11-13T13:35:45+00:00",
-        "summary": "Standard Chartered Uganda completed the transfer of its wealth and retail banking business, including clients, products and supporting staff, to Absa Uganda, with the formal handover effective 13 November 2026. Technical migration and integration were scheduled for 13–15 November, with customers expected to use Absa channels from 16 November; Standard Chartered will continue its corporate and investment banking business in Uganda. The transition highlights the execution dependency between client, staff and system migration and continuity of access, but the article describes planned customer access rather than confirmed migration outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 4,
         "adam_rel": 7,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 7
       },
       {
-        "id": "f046436d36218db14665",
-        "title": "AI Agents Are Logging Into Bank Accounts. Fraud Vendors Are Watching. - AIM Media House",
-        "url": "https://aimmediahouse.com/banking/ai-agents-are-logging-into-bank-accounts-fraud-vendors-are-watching",
-        "source": "AIM Media House",
-        "published_at": "2026-11-13T11:22:51.703000+00:00",
-        "summary": "The article describes fraud and identity vendors introducing tools to detect AI agents accessing bank accounts or obtain customer approval for agent-initiated transactions. It reports vendor claims about detection performance and deployment, while also citing concerns about authorization, liability and the difficulty of distinguishing legitimate from malicious agents. For banks, the practical implication is that any agent-access control design must define identity, delegated permissions and transaction-level consent; vendor performance claims and forecasts in the report are not independently established.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 4,
-        "adam_rel": 7,
+        "id": "37965d0433764c0ccb2b",
+        "title": "Made in Europe",
+        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-13T08:20:00+01:00",
+        "summary": "ECB Executive Board member Isabel Schnabel’s 13 November 2026 speech argues that Europe’s Single Market could provide greater scale for firms and discusses differences in income, productivity, work patterns and social outcomes. The address is broad economic-policy commentary rather than a specific banking rule or change; its relevance to banking operations or APAC wealth delivery is indirect.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 7
+        "user_relevance": 3
       },
       {
-        "id": "86eef6490974a4bed4ab",
-        "title": "SBI invites applications for Chief AI Officer",
-        "url": "https://bfsi.economictimes.indiatimes.com/articles/sbi-invites-applications-for-chief-ai-officer/135805543",
+        "id": "450d19593c49feb25646",
+        "title": "Canara HSBC Life Insurance announces the elevation of Mr. Indu Swaroop as its Chief Financial Officer",
+        "url": "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
+        "source": "CXO Digitalpulse",
+        "published_at": "2026-11-13T05:40:07+00:00",
+        "summary": "Canara HSBC Life Insurance announced the elevation of Indu Swaroop to Chief Financial Officer; the excerpt says he was part of the founding team and most recently served as Financial Controller. The leadership move is relevant to the broader insurance and financial-services landscape, but the supplied excerpt does not specify any resulting operational or strategic change.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 5,
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
+      },
+      {
+        "id": "0012cccf8a33d00afee0",
+        "title": "Fino Payments Bank gets RBI nod to appoint Pratap Singh as MD & CEO for three years",
+        "url": "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
         "source": "bfsi.economictimes.indiatimes.com",
-        "published_at": "2026-11-13T19:17:47+05:30",
-        "summary": "State Bank of India advertised six fixed-term senior AI roles, including a Chief AI Officer and positions covering risk and operational analytics, AI governance and compliance, data engineering and AI operations. The article also notes AI hiring at Axis Bank and Indian Bank. This indicates competitor investment in dedicated AI capability, but the vacancies do not establish that the roles have been filled or that the banks have achieved specific outcomes.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 4,
-        "adam_rel": 6,
+        "published_at": "2026-11-13T08:36:46+05:30",
+        "summary": "The Reserve Bank of India approved Pratap Singh’s appointment as Fino Payments Bank’s managing director and CEO for a three-year term beginning November 27 or when he takes charge, whichever is earlier. The article describes his experience in retail and SME banking, digital transformation, branch productivity and operating-model redesign. His background is relevant to execution and transformation leadership, but the appointment report provides no specific plans for Fino or expected outcomes.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 5
       }
     ],
     "categories": {
-      "Operations & Change": "#7c3aed",
-      "AI & Technology": "#6366f1",
-      "Competitor Intelligence": "#0891b2"
+      "HSBC News": "#dc2626",
+      "Competitor Intelligence": "#0891b2",
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
