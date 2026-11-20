@@ -3,75 +3,116 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Sunday, 15 November 2026",
-  "date_str": "2026-11-15",
-  "generated_at": "2026-11-15T07:00:03.181138+08:00",
-  "total_articles": 5,
+  "briefing_date": "Friday, 20 November 2026",
+  "date_str": "2026-11-20",
+  "generated_at": "2026-11-20T07:00:03.394836+08:00",
+  "total_articles": 10,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Singapore entity consolidation raises transition-design questions",
-      "context_html": "HSBC plans to serve individuals, businesses and institutions in Singapore through one banking entity, while retaining its stated regional ownership structure. For delivery, a proposed question is how customer journeys, account servicing and control responsibilities will map across the consolidation; the report provides no timetable or detailed implementation plan.",
+      "headline": "MAS agent protocol puts delegated authority at the center",
+      "context_html": "MAS plans a common “know your agent” protocol and a sandbox for treasury and payment use cases, while warning consumers not to share account credentials. For APAC delivery, a practical design dependency is whether agent identity, mandate, transaction limits and revocation can be checked through a secure channel and recorded for investigation. This is planned work, not a live access standard; proposed question: what minimum evidence should a bank require before accepting an agent instruction?",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
-          "title": "HSBC Plans Retail and Business Banking Merger in Singapore"
+          "url": "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
+          "title": "Don’t give AI agents your financial account login details, warns MAS chief Chia Der Jiun"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "OCBC automates controlled business-account maintenance",
-      "context_html": "OCBC’s first phase lets business customers request changes to users, approvers and roles through its banking platform, with further request types planned from 2027. A practical delivery criterion is whether authorization changes retain clear review, approval and audit evidence while reducing manual handling; the article reports OCBC’s stated scope and request volume, not realized benefits or adoption.",
+      "headline": "Cross-bank scam detection depends on governed data sharing",
+      "context_html": "MAS will study an industry-wide Scam Detection Utility based on a five-bank trial that pools transaction data, with initial focus on Singapore accounts and data. The operational challenge is aligning data permissions, alert ownership and intervention handoffs across institutions, rather than relying on a single-bank view. The report describes a study and trial, not production performance or a settled governance model.",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
-          "title": "OCBC Launches AI Assistant for Business Account Maintenance"
+          "url": "https://fintechnews.sg/141531/security/mas-scam-detection-study",
+          "title": "MAS Plans 2027 Scam Detection Study as Five Banks Pool Data to Test AI"
+        }
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "Agent payment proposals emphasize controls before wider access",
+      "context_html": "AXS, Visa and Mastercard outlined a Singapore bill-payment service with limits, customer approval, biometrics and tokenized credentials; a Grab assistant trial is planned, but no consumer launch date is given. For payment operations, the combination of authorization evidence, transaction-level records and dispute handling will determine whether exceptions can be resolved without weakening customer protections. The service remains proposed, and the article does not report adoption or tested outcomes.",
+      "source_links": [
+        {
+          "url": "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
+          "title": "AXS, Visa and Mastercard partner to let AI agents pay bills without multiple app logins"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "Regulatory & Markets": [
       {
-        "id": "503404b443b8951a5a58",
-        "title": "HSBC Plans Retail and Business Banking Merger in Singapore",
-        "url": "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-13T09:19:52+00:00",
-        "summary": "HSBC plans to bring its Singapore retail and business banking operations together in one banking entity, according to a statement from Asia and Middle East Co-CEO Surendra Rosha. The report says HSBC has no plans to change its regional structure and that its Hong Kong-based subsidiary will continue to own and manage its Asia-Pacific banking entities. The proposed consolidation makes entity design and the transition of customer-facing operations relevant execution considerations, but the excerpt gives no implementation timetable or detailed operating model.",
-        "category": "HSBC News",
+        "id": "fd316b94fb031bf1bc63",
+        "title": "Don’t give AI agents your financial account login details, warns MAS chief Chia Der Jiun",
+        "url": "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
+        "source": "The Straits Times",
+        "published_at": "2026-11-19T03:20:00+00:00",
+        "summary": "MAS managing director Chia Der Jiun warned consumers against giving financial login details to AI agents and said MAS will develop a common “know your agent” protocol and establish a sandbox for agents and programmable money in treasury management and payments. The protocol is intended to share an agent’s identity, representation, authority, mandate, origins and reliability with financial institutions; participating institutions would set acceptance terms and apply controls. The proposal makes delegated authority, secure access channels and escalation rules key design questions, but the protocol and sandbox remain planned work. The article also reports a separate $100 million tokenised MAS Bills issuance on November 6, with HSBC among five participating primary dealers.",
+        "category": "Regulatory & Markets",
         "hsbc_relevancy": 8,
-        "adam_rel": 7,
+        "adam_rel": 9,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 7
+        "user_relevance": 9
       },
       {
-        "id": "450d19593c49feb25646",
-        "title": "Canara HSBC Life Insurance announces the elevation of Mr. Indu Swaroop as its Chief Financial Officer",
-        "url": "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
-        "source": "CXO Digitalpulse",
-        "published_at": "2026-11-13T05:40:07+00:00",
-        "summary": "Canara HSBC Life Insurance announced the elevation of Indu Swaroop to Chief Financial Officer; the excerpt says he was part of the founding team and most recently served as Financial Controller. The leadership move is relevant to the broader insurance and financial-services landscape, but the supplied excerpt does not specify any resulting operational or strategic change.",
+        "id": "adfcee2b75a5f73dddc8",
+        "title": "MAS Plans 2027 Scam Detection Study as Five Banks Pool Data to Test AI",
+        "url": "https://fintechnews.sg/141531/security/mas-scam-detection-study",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-18T14:02:50+08:00",
+        "summary": "MAS said it will begin a study in early 2027 to design an industry-wide Scam Detection Utility, drawing on an ongoing trial in which five banks pool transaction data to test AI detection of cross-bank scam patterns. The study will consider governance and operation, initially focusing on Singapore accounts and data; a synthetic dataset reflecting trial patterns will also be made available to developers. The proposed utility raises concrete questions about data governance, interoperability and intervention processes, but the article describes a study rather than a confirmed production service.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 8
+      }
+    ],
+    "HSBC News": [
+      {
+        "id": "361605369e9b8f7284b2",
+        "title": "TheWealthNet - HSBC PB appoints head of US Western region - Pam Insight",
+        "url": "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
+        "source": "Pam Insight (search dated 2026-11-18)",
+        "published_at": "2026-11-18T10:51:12+00:00",
+        "summary": "HSBC Private Bank appointed Kush Malhotra as head of its Western region in the United States, in a newly created role focused on deepening high- and ultra-high-net-worth client relationships and developing the bank’s regional strategy. He will report to the head of the US private bank; the excerpt provides limited biographical detail and no implementation plans. The appointment signals a change in regional leadership, but its operational or client-service implications are not specified.",
         "category": "HSBC News",
-        "hsbc_relevancy": 5,
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "210f05585ae819be8419",
+        "title": "The 51% Club names HSBC UK as its regional banking partner - Business Matters",
+        "url": "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
+        "source": "Business Matters",
+        "published_at": "2026-11-18T12:36:13+00:00",
+        "summary": "HSBC UK was named Regional Banking Partner to The 51% Club, a network for female founders and leaders with more than 2,500 members. The partnership is intended to provide closer access to HSBC UK’s Women’s Business Growth Initiative and Small Business Growth Programme through the club’s events and programmes; further activity is to be announced. This expands a stated channel for SME support, but the article does not specify delivery volumes, take-up or outcomes.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 4
       }
     ],
-    "Competitor Intelligence": [
+    "AI & Technology": [
       {
-        "id": "24f40472adc1ea77bc57",
-        "title": "OCBC Launches AI Assistant for Business Account Maintenance",
-        "url": "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-13T03:14:56+00:00",
-        "summary": "OCBC launched Velocity Smart Assist for business-banking account maintenance, initially enabling customers to manage account users, approvers and roles and route requests digitally. OCBC said businesses submit 20,000 such requests annually and plans to extend the assistant to other maintenance requests from 2027, with progressive rollout across core markets. This competitor example highlights the operational dependency between digital self-service and controlled authorization changes; the supplied report does not establish adoption or realized efficiency gains.",
-        "category": "Competitor Intelligence",
+        "id": "37393e0fb61cdd52b29c",
+        "title": "AI payment agents promise B2B gains but raise accountability concerns",
+        "url": "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-19T12:09:51+08:00",
+        "summary": "At a Singapore FinTech Festival panel on November 19, Visa, SMBC and Temasek executives discussed prospective AI-agent uses in business payments and treasury alongside concerns about permissions, cybersecurity and accountability. Visa described tokenised credentials and passkeys for constraining agent purchases; SMBC identified potential treasury and cross-border uses, while speakers stressed authentication, monitoring and escalation controls. For banking delivery, the discussion points to the need to define authority and transaction records before automating money movement; these are executive views, not evidence of broad adoption.",
+        "category": "AI & Technology",
         "hsbc_relevancy": 5,
         "adam_rel": 7,
         "noise_level": 1,
@@ -79,104 +120,216 @@
         "user_relevance": 7
       },
       {
-        "id": "0012cccf8a33d00afee0",
-        "title": "Fino Payments Bank gets RBI nod to appoint Pratap Singh as MD & CEO for three years",
-        "url": "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
-        "source": "bfsi.economictimes.indiatimes.com",
-        "published_at": "2026-11-13T08:36:46+05:30",
-        "summary": "The Reserve Bank of India approved Pratap Singh’s appointment as Fino Payments Bank’s managing director and CEO for a three-year term beginning November 27 or when he takes charge, whichever is earlier. The article describes his experience in retail and SME banking, digital transformation, branch productivity and operating-model redesign. His background is relevant to execution and transformation leadership, but the appointment report provides no specific plans for Fino or expected outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 3,
+        "id": "c564b39f967bddf67da9",
+        "title": "AXS, Visa and Mastercard partner to let AI agents pay bills without multiple app logins",
+        "url": "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
+        "source": "The Straits Times",
+        "published_at": "2026-11-19T11:34:56+00:00",
+        "summary": "AXS, Visa and Mastercard plan a Singapore service connecting AI agents to AXS’s network of more than 800 billers, with a planned Grab AI-assistant trial and no consumer launch timeline specified. Described controls include user-set limits, transaction approval, biometric verification and payment tokens; Visa is also considering additional bank checks. The proposal makes authorization, transaction data and dispute handling practical design dependencies, but the article does not establish consumer availability or adoption.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "00585c261e2cd9d0e62a",
+        "title": "Treat AI agents as shoppers, not bankers: Google's Jeremy Goro",
+        "url": "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-19T17:38:36+08:00",
+        "summary": "At a Singapore FinTech Festival panel on November 19, Google’s Jeremy Goro argued that AI agents should operate within established payment rails and consumer protections, with banks and licensed providers retaining payment execution and KYC responsibilities. Panelists also discussed transaction limits, liability and fraud protections; an Ant International executive forecast that agentic AI could account for 50% of payment activity by 2030. The control and liability points are relevant to future payment design, while the adoption figure is a speaker forecast, not established usage.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "8dd736cd972dc9e0bebb",
+        "title": "Arizona Criminal Investigation: OpenAI and Rogue Bank Agents - explainx.ai",
+        "url": "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
+        "source": "explainx.ai",
+        "published_at": "2026-11-19T00:00:00+00:00",
+        "summary": "Arizona Attorney General Kris Mayes said on November 18 that her office had opened a criminal investigation into OpenAI and other AI companies concerning alleged rogue-agent access to banks; the article says no named institution, specific incident, or product under examination was publicly identified. The reported inquiry adds a law-enforcement dimension to questions about agent identity, authorization and responsibility, but the excerpt mixes confirmed remarks with unverified background and is incomplete.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 5
       }
     ],
-    "Regulatory & Markets": [
+    "Competitor Intelligence": [
       {
-        "id": "37965d0433764c0ccb2b",
-        "title": "Made in Europe",
-        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-11-13T08:20:00+01:00",
-        "summary": "ECB Executive Board member Isabel Schnabel’s 13 November 2026 speech argues that Europe’s Single Market could provide greater scale for firms and discusses differences in income, productivity, work patterns and social outcomes. The address is broad economic-policy commentary rather than a specific banking rule or change; its relevance to banking operations or APAC wealth delivery is indirect.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 3,
-        "adam_rel": 3,
+        "id": "f304a672b27d6cef83aa",
+        "title": "DBS Lets Institutions Mint and Redeem USDC Directly in Circle Tie-Up",
+        "url": "https://fintechnews.sg/141489/crypto/dbs-circle-usdc-institutional-access",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-18T02:30:21+00:00",
+        "summary": "DBS partnered with Circle to enable eligible institutional clients to mint and redeem USDC directly through DBS, including round-the-clock USD-USDC settlement. The firms describe the service as an option for treasury, settlement and liquidity management that connects banking and blockchain infrastructure; the article gives no client uptake or realized efficiency results. For competitor intelligence, the arrangement highlights the operational importance of liquidity, settlement availability and interoperability when offering digital-asset services.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 6
+      },
+      {
+        "id": "d6e0415013cf062eca58",
+        "title": "World Bank Group Partners with Citi and Circle on Stablecoin Payments",
+        "url": "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-19T04:38:17+00:00",
+        "summary": "The World Bank Group will work with Citi and Circle to explore whether regulated US-dollar stablecoins and blockchain payment rails can improve its fund-disbursement arrangements. Citi will contribute banking-rail connections and Circle USDC infrastructure; the initial exploration is an intermediated, interoperable model involving borrower countries that permit digital assets. This creates a useful comparison point for cross-border settlement design, but the report describes an exploration and supplies no measured cost, speed or operational results.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "503404b443b8951a5a58",
-        "title": "HSBC Plans Retail and Business Banking Merger in Singapore",
-        "url": "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-13T09:19:52+00:00",
-        "summary": "HSBC plans to bring its Singapore retail and business banking operations together in one banking entity, according to a statement from Asia and Middle East Co-CEO Surendra Rosha. The report says HSBC has no plans to change its regional structure and that its Hong Kong-based subsidiary will continue to own and manage its Asia-Pacific banking entities. The proposed consolidation makes entity design and the transition of customer-facing operations relevant execution considerations, but the excerpt gives no implementation timetable or detailed operating model.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "24f40472adc1ea77bc57",
-        "title": "OCBC Launches AI Assistant for Business Account Maintenance",
-        "url": "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-13T03:14:56+00:00",
-        "summary": "OCBC launched Velocity Smart Assist for business-banking account maintenance, initially enabling customers to manage account users, approvers and roles and route requests digitally. OCBC said businesses submit 20,000 such requests annually and plans to extend the assistant to other maintenance requests from 2027, with progressive rollout across core markets. This competitor example highlights the operational dependency between digital self-service and controlled authorization changes; the supplied report does not establish adoption or realized efficiency gains.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 7,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 7
-      },
-      {
-        "id": "37965d0433764c0ccb2b",
-        "title": "Made in Europe",
-        "url": "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-11-13T08:20:00+01:00",
-        "summary": "ECB Executive Board member Isabel Schnabel’s 13 November 2026 speech argues that Europe’s Single Market could provide greater scale for firms and discusses differences in income, productivity, work patterns and social outcomes. The address is broad economic-policy commentary rather than a specific banking rule or change; its relevance to banking operations or APAC wealth delivery is indirect.",
+        "id": "fd316b94fb031bf1bc63",
+        "title": "Don’t give AI agents your financial account login details, warns MAS chief Chia Der Jiun",
+        "url": "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
+        "source": "The Straits Times",
+        "published_at": "2026-11-19T03:20:00+00:00",
+        "summary": "MAS managing director Chia Der Jiun warned consumers against giving financial login details to AI agents and said MAS will develop a common “know your agent” protocol and establish a sandbox for agents and programmable money in treasury management and payments. The protocol is intended to share an agent’s identity, representation, authority, mandate, origins and reliability with financial institutions; participating institutions would set acceptance terms and apply controls. The proposal makes delegated authority, secure access channels and escalation rules key design questions, but the protocol and sandbox remain planned work. The article also reports a separate $100 million tokenised MAS Bills issuance on November 6, with HSBC among five participating primary dealers.",
         "category": "Regulatory & Markets",
-        "hsbc_relevancy": 3,
-        "adam_rel": 3,
+        "hsbc_relevancy": 8,
+        "adam_rel": 9,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 9
       },
       {
-        "id": "450d19593c49feb25646",
-        "title": "Canara HSBC Life Insurance announces the elevation of Mr. Indu Swaroop as its Chief Financial Officer",
-        "url": "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
-        "source": "CXO Digitalpulse",
-        "published_at": "2026-11-13T05:40:07+00:00",
-        "summary": "Canara HSBC Life Insurance announced the elevation of Indu Swaroop to Chief Financial Officer; the excerpt says he was part of the founding team and most recently served as Financial Controller. The leadership move is relevant to the broader insurance and financial-services landscape, but the supplied excerpt does not specify any resulting operational or strategic change.",
+        "id": "361605369e9b8f7284b2",
+        "title": "TheWealthNet - HSBC PB appoints head of US Western region - Pam Insight",
+        "url": "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
+        "source": "Pam Insight (search dated 2026-11-18)",
+        "published_at": "2026-11-18T10:51:12+00:00",
+        "summary": "HSBC Private Bank appointed Kush Malhotra as head of its Western region in the United States, in a newly created role focused on deepening high- and ultra-high-net-worth client relationships and developing the bank’s regional strategy. He will report to the head of the US private bank; the excerpt provides limited biographical detail and no implementation plans. The appointment signals a change in regional leadership, but its operational or client-service implications are not specified.",
         "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "37393e0fb61cdd52b29c",
+        "title": "AI payment agents promise B2B gains but raise accountability concerns",
+        "url": "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-19T12:09:51+08:00",
+        "summary": "At a Singapore FinTech Festival panel on November 19, Visa, SMBC and Temasek executives discussed prospective AI-agent uses in business payments and treasury alongside concerns about permissions, cybersecurity and accountability. Visa described tokenised credentials and passkeys for constraining agent purchases; SMBC identified potential treasury and cross-border uses, while speakers stressed authentication, monitoring and escalation controls. For banking delivery, the discussion points to the need to define authority and transaction records before automating money movement; these are executive views, not evidence of broad adoption.",
+        "category": "AI & Technology",
         "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "f304a672b27d6cef83aa",
+        "title": "DBS Lets Institutions Mint and Redeem USDC Directly in Circle Tie-Up",
+        "url": "https://fintechnews.sg/141489/crypto/dbs-circle-usdc-institutional-access",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-18T02:30:21+00:00",
+        "summary": "DBS partnered with Circle to enable eligible institutional clients to mint and redeem USDC directly through DBS, including round-the-clock USD-USDC settlement. The firms describe the service as an option for treasury, settlement and liquidity management that connects banking and blockchain infrastructure; the article gives no client uptake or realized efficiency results. For competitor intelligence, the arrangement highlights the operational importance of liquidity, settlement availability and interoperability when offering digital-asset services.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 6,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "adfcee2b75a5f73dddc8",
+        "title": "MAS Plans 2027 Scam Detection Study as Five Banks Pool Data to Test AI",
+        "url": "https://fintechnews.sg/141531/security/mas-scam-detection-study",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-18T14:02:50+08:00",
+        "summary": "MAS said it will begin a study in early 2027 to design an industry-wide Scam Detection Utility, drawing on an ongoing trial in which five banks pool transaction data to test AI detection of cross-bank scam patterns. The study will consider governance and operation, initially focusing on Singapore accounts and data; a synthetic dataset reflecting trial patterns will also be made available to developers. The proposed utility raises concrete questions about data governance, interoperability and intervention processes, but the article describes a study rather than a confirmed production service.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 7,
+        "adam_rel": 8,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 8
+      },
+      {
+        "id": "c564b39f967bddf67da9",
+        "title": "AXS, Visa and Mastercard partner to let AI agents pay bills without multiple app logins",
+        "url": "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
+        "source": "The Straits Times",
+        "published_at": "2026-11-19T11:34:56+00:00",
+        "summary": "AXS, Visa and Mastercard plan a Singapore service connecting AI agents to AXS’s network of more than 800 billers, with a planned Grab AI-assistant trial and no consumer launch timeline specified. Described controls include user-set limits, transaction approval, biometric verification and payment tokens; Visa is also considering additional bank checks. The proposal makes authorization, transaction data and dispute handling practical design dependencies, but the article does not establish consumer availability or adoption.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 5,
+        "adam_rel": 7,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "210f05585ae819be8419",
+        "title": "The 51% Club names HSBC UK as its regional banking partner - Business Matters",
+        "url": "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
+        "source": "Business Matters",
+        "published_at": "2026-11-18T12:36:13+00:00",
+        "summary": "HSBC UK was named Regional Banking Partner to The 51% Club, a network for female founders and leaders with more than 2,500 members. The partnership is intended to provide closer access to HSBC UK’s Women’s Business Growth Initiative and Small Business Growth Programme through the club’s events and programmes; further activity is to be announced. This expands a stated channel for SME support, but the article does not specify delivery volumes, take-up or outcomes.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 4
       },
       {
-        "id": "0012cccf8a33d00afee0",
-        "title": "Fino Payments Bank gets RBI nod to appoint Pratap Singh as MD & CEO for three years",
-        "url": "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
-        "source": "bfsi.economictimes.indiatimes.com",
-        "published_at": "2026-11-13T08:36:46+05:30",
-        "summary": "The Reserve Bank of India approved Pratap Singh’s appointment as Fino Payments Bank’s managing director and CEO for a three-year term beginning November 27 or when he takes charge, whichever is earlier. The article describes his experience in retail and SME banking, digital transformation, branch productivity and operating-model redesign. His background is relevant to execution and transformation leadership, but the appointment report provides no specific plans for Fino or expected outcomes.",
+        "id": "d6e0415013cf062eca58",
+        "title": "World Bank Group Partners with Citi and Circle on Stablecoin Payments",
+        "url": "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-19T04:38:17+00:00",
+        "summary": "The World Bank Group will work with Citi and Circle to explore whether regulated US-dollar stablecoins and blockchain payment rails can improve its fund-disbursement arrangements. Citi will contribute banking-rail connections and Circle USDC infrastructure; the initial exploration is an intermediated, interoperable model involving borrower countries that permit digital assets. This creates a useful comparison point for cross-border settlement design, but the report describes an exploration and supplies no measured cost, speed or operational results.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 3,
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "00585c261e2cd9d0e62a",
+        "title": "Treat AI agents as shoppers, not bankers: Google's Jeremy Goro",
+        "url": "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-19T17:38:36+08:00",
+        "summary": "At a Singapore FinTech Festival panel on November 19, Google’s Jeremy Goro argued that AI agents should operate within established payment rails and consumer protections, with banks and licensed providers retaining payment execution and KYC responsibilities. Panelists also discussed transaction limits, liability and fraud protections; an Ant International executive forecast that agentic AI could account for 50% of payment activity by 2030. The control and liability points are relevant to future payment design, while the adoption figure is a speaker forecast, not established usage.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "8dd736cd972dc9e0bebb",
+        "title": "Arizona Criminal Investigation: OpenAI and Rogue Bank Agents - explainx.ai",
+        "url": "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
+        "source": "explainx.ai",
+        "published_at": "2026-11-19T00:00:00+00:00",
+        "summary": "Arizona Attorney General Kris Mayes said on November 18 that her office had opened a criminal investigation into OpenAI and other AI companies concerning alleged rogue-agent access to banks; the article says no named institution, specific incident, or product under examination was publicly identified. The reported inquiry adds a law-enforcement dimension to questions about agent identity, authorization and responsibility, but the excerpt mixes confirmed remarks with unverified background and is incomplete.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 4,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
@@ -184,9 +337,10 @@
       }
     ],
     "categories": {
+      "Regulatory & Markets": "#d97706",
       "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2",
-      "Regulatory & Markets": "#d97706"
+      "AI & Technology": "#6366f1",
+      "Competitor Intelligence": "#0891b2"
     }
   }
 }

@@ -1,57 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-15",
+    "last_updated": "2026-11-20",
     "daily": [
-      {
-        "date": "2026-11-09",
-        "urls": [
-          "https://pulse2.com/goldman-sachs-names-109-new-partners-for-2026-with-appointments-effective-january-1-2027",
-          "https://straitstimes.com/business/private-banks-risk-losing-the-race-for-wealth-clients-before-they-even-come-on-board-citi-singapore",
-          "https://telegraph.co.uk/business/2026/11/08/banks-ban-ai-from-accounts-over-fears-of-rogue-agents",
-          "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
-          "https://thestandard.com.hk/finance/article/339619/Hong-Kong-is-a-treasure-trove-of-international-wealth-HSBC-co-chief-executive-David-Liao-says",
-          "https://thestandard.com.hk/finance/article/347829/Wealth-HSBC-turns-RewardCash-into-life-cash-in-flagship-banking-lifestyle-center",
-          "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Wellington-Management-?id=209296"
-        ],
-        "topics": []
-      },
-      {
-        "date": "2026-11-10",
-        "urls": [
-          "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
-          "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
-          "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
-          "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
-          "https://sbr.com.sg/financial-services/in-focus/wealth-and-customer-flows-cushion-banks-trading-income-drops",
-          "https://tabla.com.sg/news/singapore/singapores-wealth-hub-status-mirrors-changing-asia-julius-baer",
-          "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
-          "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
-          "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head"
-        ],
-        "topics": []
-      },
-      {
-        "date": "2026-11-11",
-        "urls": [
-          "https://adgm.com/media/announcements/adgm-issues-alert-concerning-misuse-of-the-adgm-academy-name-in-investment-and-trading-activities",
-          "https://hubbis.com/news/alrayan-investment-appoints-former-j-p-morgan-and-ubs-wealth-management-executive-bryan-crawford-as-chief-executive",
-          "https://kyivpost.com/post/89570",
-          "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
-          "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook"
-        ],
-        "topics": []
-      },
-      {
-        "date": "2026-11-13",
-        "urls": [
-          "https://fintechnews.sg/140918/digital-banking-news-singapore/backbase-two-cto",
-          "https://fintechnews.sg/140926/fintech/mas-gold-vaulting-central-banks-singapore",
-          "https://fintechnews.sg/141050/china/dbs-paylah-china-qr-payments",
-          "https://hubbis.com/news/manulife-investment-management-and-ubs-s-unified-global-alternatives-collaborate-on-japan-private-equity-co-investment-programme",
-          "https://privatebankerinternational.com/news/hsbc-global-private-bank-director"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-14",
         "urls": [
@@ -73,54 +23,56 @@
           "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
           "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-20",
+        "urls": [
+          "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
+          "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
+          "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
+          "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
+          "https://fintechnews.sg/141489/crypto/dbs-circle-usdc-institutional-access",
+          "https://fintechnews.sg/141531/security/mas-scam-detection-study",
+          "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
+          "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
+          "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
+          "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest"
+        ],
         "topics": [
-          "Singapore entity consolidation raises transition-design questions",
-          "OCBC automates controlled business-account maintenance"
+          "MAS agent protocol puts delegated authority at the center",
+          "Cross-bank scam detection depends on governed data sharing",
+          "Agent payment proposals emphasize controls before wider access"
         ]
       }
     ],
     "covered_urls": [
-      "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/deutsche-bank-pairs-a-sector-rally-with-a-blueprint-for-bounded-ai/70482223",
-      "https://adgm.com/media/announcements/adgm-issues-alert-concerning-misuse-of-the-adgm-academy-name-in-investment-and-trading-activities",
       "https://aimmediahouse.com/banking/ai-agents-are-logging-into-bank-accounts-fraud-vendors-are-watching",
+      "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
+      "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
       "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
       "https://bfsi.economictimes.indiatimes.com/articles/sbi-invites-applications-for-chief-ai-officer/135805543",
+      "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
       "https://businesstimes.com.sg/companies-markets/banking-finance/german-regulator-fines-deutsche-bank-us8-9-million-over-postbank-customer-migration-issues",
       "https://businesstimes.com.sg/companies-markets/fight-ai-ai-singapore-banks-warn-against-third-party-ai-agents-observers-flag-liability-risk",
       "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
       "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
-      "https://finance.yahoo.com/news/standard-chartered-hires-hdfc-executive-115753321.html",
-      "https://fintechnews.sg/140769/digital-banking-news-singapore/mas-quantum-safe-migration",
-      "https://fintechnews.sg/140918/digital-banking-news-singapore/backbase-two-cto",
-      "https://fintechnews.sg/140926/fintech/mas-gold-vaulting-central-banks-singapore",
-      "https://fintechnews.sg/141050/china/dbs-paylah-china-qr-payments",
+      "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
       "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
       "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
+      "https://fintechnews.sg/141489/crypto/dbs-circle-usdc-institutional-access",
+      "https://fintechnews.sg/141531/security/mas-scam-detection-study",
+      "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
       "https://hapakenya.com/2026/11/13/standard-chartered-uganda-completes-sale-of-wealth-retail-banking-unit-to-absa",
-      "https://hubbis.com/news/alrayan-investment-appoints-former-j-p-morgan-and-ubs-wealth-management-executive-bryan-crawford-as-chief-executive",
-      "https://hubbis.com/news/manulife-investment-management-and-ubs-s-unified-global-alternatives-collaborate-on-japan-private-equity-co-investment-programme",
-      "https://kyivpost.com/post/89570",
-      "https://privatebankerinternational.com/news/hsbc-global-private-bank-director",
-      "https://pulse2.com/goldman-sachs-names-109-new-partners-for-2026-with-appointments-effective-january-1-2027",
-      "https://resultsense.com/news/2026-11-09-uk-banks-block-ai-agents-customer-accounts",
-      "https://sbr.com.sg/financial-services/in-focus/wealth-and-customer-flows-cushion-banks-trading-income-drops",
+      "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
       "https://straitstimes.com/business/banks-in-singapore-offer-alternative-contact-channels-amid-microsoft-outage-abs",
-      "https://straitstimes.com/business/private-banks-risk-losing-the-race-for-wealth-clients-before-they-even-come-on-board-citi-singapore",
-      "https://tabla.com.sg/news/singapore/singapores-wealth-hub-status-mirrors-changing-asia-julius-baer",
-      "https://tatlerasia.com/power-purpose/wealth/forging-a-legacy",
-      "https://techcabal.com/2026/11/09/divest-launches-private-banking-december",
-      "https://telegraph.co.uk/business/2026/11/08/banks-ban-ai-from-accounts-over-fears-of-rogue-agents",
-      "https://theasset.com/article/57488/j-p-morgan-private-bank-names-taiwan-market-head",
-      "https://thefederal.com/category/business/ai-cyberattacks-target-banks-nbfcs-i4c-warning-262227",
-      "https://thefintechtimes.com/air-india-and-standard-chartered-link-loyalty-with-wealth-management",
-      "https://thestandard.com.hk/finance/article/339619/Hong-Kong-is-a-treasure-trove-of-international-wealth-HSBC-co-chief-executive-David-Liao-says",
-      "https://thestandard.com.hk/finance/article/347829/Wealth-HSBC-turns-RewardCash-into-life-cash-in-flagship-banking-lifestyle-center",
-      "https://wealthbriefingasia.com/article.php/What%27s-New-In-Investments%2C-Funds%3F-%E2%80%93-Wellington-Management-?id=209296",
-      "https://zaobao.com.sg/en/finance/singapore/dbs-cio-eugene-huang-manage-ai-agents-give-them-employee-handbook"
+      "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
+      "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest"
     ],
     "covered_topics": [
-      "OCBC automates controlled business-account maintenance",
-      "Singapore entity consolidation raises transition-design questions"
+      "Agent payment proposals emphasize controls before wider access",
+      "Cross-bank scam detection depends on governed data sharing",
+      "MAS agent protocol puts delegated authority at the center"
     ]
   }
 }
