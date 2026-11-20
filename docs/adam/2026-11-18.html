@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Wednesday, 18 November 2026 · Reconstructed from 07:00 HKT evidence — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Wednesday, 18 November 2026 · Reconstructed from 07:00 HKT evidence</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-11-17.html">‹ 17 Nov 2026</a>
+    
+    <span class="nav-current">Wednesday, 18 November 2026 · Reconstructed from 07:00 HKT evidence</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">9 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Agent authority is a control-design question for wealth services</h3>
+          <p class="tp-context">At HSBC’s Singapore Wealth Investment Summit, Ravi Menon proposed staged autonomy, bounded authority, verification and clear accountability for AI agents handling client money. For APAC wealth delivery, a concrete design test is whether delegated actions have explicit limits, reversible outcomes where possible, and a human owner for exceptions. These are public recommendations, not evidence of a regulatory requirement or an adopted HSBC control framework.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks" target="_blank" rel="noopener" class="tp-source-link" title="Ex-MAS chief Ravi Menon: Banks, wealth managers must curb AI agents’ autonomy over clients’ money as risks grow">Ex-MAS chief Ravi Menon: Banks, wealth managers must curb AI agents’ autonomy over clients’ money as risks grow</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Recent outages leave the cause unresolved</h3>
+          <p class="tp-context">A report describes outages affecting US banks alongside Microsoft and other services, while noting authorities had not identified a common cause and an AI explanation was only a suggestion. For continuity planning, the practical question is whether customer contact and critical workflows remain available when shared external services fail. The article does not establish a common incident or confirm AI involvement.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485" target="_blank" rel="noopener" class="tp-source-link" title="Microsoft, banks, airlines hit by outages: DHS chief points to AI, ‘superintelligence’">Microsoft, banks, airlines hit by outages: DHS chief points to AI, ‘superintelligence’</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Competitors are adding specialist capacity and client access points</h3>
+          <p class="tp-context">Bank of Singapore named a North Asia investment-advisory lead, while DBS India opened a wealth branch with relationship managers and specialist support. These are distinct examples of investing in advisory leadership and physical coverage; a useful delivery criterion is how specialist capacity connects to relationship-manager workflows and cross-border client needs. The reports provide no evidence of resulting client outcomes or comparative performance.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory" target="_blank" rel="noopener" class="tp-source-link" title="Bank of Singapore hires new head of North Asia investment advisory - Fund Selector Asia">Bank of Singapore hires new head of North Asia investment advisory - Fund Selector Asia</a>
+            
+            <a href="https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176" target="_blank" rel="noopener" class="tp-source-link" title="DBS Bank India opens new ‘Treasures Wealth Branch’">DBS Bank India opens new ‘Treasures Wealth Branch’</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (9)</button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (4)
+      </button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Operations &amp; Change">
+        Operations &amp; Change (1)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-3d5aa2407e8ae61743e4" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 8/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks" target="_blank" rel="noopener">Ex-MAS chief Ravi Menon: Banks, wealth managers must curb AI agents’ autonomy over clients’ money as risks grow</a>
+          </div>
+          <p class="article-summary">Former MAS chief Ravi Menon called for strict limits on AI agents acting on clients’ money and outlined governance principles covering alignment, authority limits, verification, failure design and accountability. His remarks were made at HSBC’s Singapore Wealth Investment Summit on 17 November; Singapore Minister of State Alvin Tan separately discussed risk-proportionate financial guardrails and AI-related opportunities. For wealth operations, the remarks point to practical control questions around delegated authority, transaction reversibility, independent review and accountable human ownership; these are recommendations, not evidence of adopted policy.</p>
+          <div class="article-footer">
+            <span class="article-source">The Business Times</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-3f1400b56a61fc7b73ec" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141238/ai/chatgpt-wallet" target="_blank" rel="noopener">ChatGPT Wallet Lets AI Agents Pay Without Seeing Your Card Details</a>
+          </div>
+          <p class="article-summary">OpenAI is rolling out ChatGPT Wallet to eligible US ChatGPT Pro subscribers, with card purchases requiring user approval and a security check. The article says the wallet was developed with American Express, Mastercard and Visa, uses payment tokens, and may later support advance approvals with spending or purchase limits. This illustrates an emerging commerce interface, but it is a limited US rollout and does not establish autonomous payment adoption or relevance to bank wealth services; operational questions include authentication, dispute handling and agent-blocking controls.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>16 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-30c24b21f7d1f85427b1" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://familywealthreport.com/article.php/HSBC-Private-Bank-Names-West-Region-Head" target="_blank" rel="noopener">HSBC Private Bank Names West Region Head - Family Wealth Report</a>
+          </div>
+          <p class="article-summary">HSBC Private Bank appointed former Citi Private Bank executive Kush Malhotra to a newly formed role leading client coverage and strategy in the Western US. The move adds a senior regional leadership position to HSBC’s US private-bank organization; the article gives no appointment date.</p>
+          <div class="article-footer">
+            <span class="article-source">Family Wealth Report (search dated 2026-11-17)</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-335fbcd97a5d49951021" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://hubbis.com/news/j-p-morgan-private-bank-names-cameron-chui-head-of-equity-strategy-for-asia" target="_blank" rel="noopener">J.P. Morgan Private Bank Names Cameron Chui Head of Equity Strategy for Asia</a>
+          </div>
+          <p class="article-summary">J.P. Morgan Private Bank named Cameron Chui head of equity strategy for Asia, succeeding Timothy Fung, who has moved to an investor role on the China team. Chui is based in Hong Kong and will lead regional equity views and recommendations. The change may affect continuity and ownership of regional investment advice, although no client or operating changes are reported.</p>
+          <div class="article-footer">
+            <span class="article-source">Hubbis (search dated 2026-11-16)</span>
+            <span>16 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-5b182c11b91e682f96f7" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory" target="_blank" rel="noopener">Bank of Singapore hires new head of North Asia investment advisory - Fund Selector Asia</a>
+          </div>
+          <p class="article-summary">Bank of Singapore appointed Andy Lee as head of investment advisory for Greater China and North Asia, with the role due to begin on 24 November 2026. He will lead the Hong Kong-based advisory team and work with relationship managers serving wealthy clients and family offices. The hire signals a competitor’s investment in regional advisory leadership; the article does not describe changes to products or delivery processes.</p>
+          <div class="article-footer">
+            <span class="article-source">Fund Selector Asia</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-45be1e05f613e0958696" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176" target="_blank" rel="noopener">DBS Bank India opens new ‘Treasures Wealth Branch’</a>
+          </div>
+          <p class="article-summary">DBS Bank India opened a Treasures Wealth Branch in Hyderabad’s Banjara Hills on 16 November, with relationship managers, wealth specialists and NRI experts supporting affluent and high-net-worth customers. The article says the launch is part of a group plan to open 18 wealth branches and upgrade 36 outlets by 2027. This is a competitor example of combining in-person coverage with specialist and cross-border support; the report does not describe service volumes or delivery outcomes.</p>
+          <div class="article-footer">
+            <span class="article-source">https://www.metroindia.net/</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-58740b7107c724cb6a06" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 3/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141368/payments/citi-ultima-world-legend-mastercard-singapore" target="_blank" rel="noopener">Citi ULTIMA Upgraded to World Legend Mastercard in Singapore, Hong Kong</a>
+          </div>
+          <p class="article-summary">Citi and Mastercard upgraded Citi ULTIMA in Singapore and Hong Kong to the World Legend Mastercard tier, adding access to dining, entertainment and travel benefits. The article positions the card as part of Citi’s offer for ultra-high-net-worth clients. For private banks, this is a competitor example of lifestyle benefits complementing wealth relationships; the report does not quantify client take-up or business impact.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-689be737f80373419611" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318" target="_blank" rel="noopener">How Did Jeffrey Epstein Move $582 Million? Deutsche Bank Leak Exposes Payments, Trusts and Wealthy Associates</a>
+          </div>
+          <p class="article-summary">An International Business Times report describes leaked Deutsche Bank records concerning transactions and compliance reviews related to Jeffrey Epstein, including reported suspicious activity filings, onboarding decisions and account closures. It reports that the bank later faced a $150 million penalty in 2020 and a $75 million settlement in 2023. The allegations and historical control findings underscore the consequences of weaknesses in high-risk client onboarding, transaction escalation and account exit; the article is a secondary report and its claims are not independently verified here.</p>
+          <div class="article-footer">
+            <span class="article-source">International Business Times, Singapore Edition</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Operations &amp; Change">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #7c3aed"></span>
+        Operations &amp; Change
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-3c267afbf98aa4196c4f" data-category="Operations &amp; Change">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485" target="_blank" rel="noopener">Microsoft, banks, airlines hit by outages: DHS chief points to AI, ‘superintelligence’</a>
+          </div>
+          <p class="article-summary">The article reports recent outages affecting Microsoft services, US banks and other sectors, and says authorities had not identified a common cause. DHS Secretary Markwayne Mullin suggested AI might have contributed, while also saying a cyberattack was unlikely; the report supplies no confirmed technical cause linking the incidents. For banking continuity, the relevant operational issue is resilience across shared technology and communication dependencies, but the article does not establish that AI caused the outages.</p>
+          <div class="article-footer">
+            <span class="article-source">The American Bazaar</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 2026-11-18T07:00:02.927534+08:00 &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "3d5aa2407e8ae61743e4", "title": "Ex-MAS chief Ravi Menon: Banks, wealth managers must curb AI agents\u2019 autonomy over clients\u2019 money as risks grow", "url": "https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks", "source": "The Business Times", "published_at": "2026-11-17T10:54:40+00:00", "summary": "Former MAS chief Ravi Menon called for strict limits on AI agents acting on clients\u2019 money and outlined governance principles covering alignment, authority limits, verification, failure design and accountability. His remarks were made at HSBC\u2019s Singapore Wealth Investment Summit on 17 November; Singapore Minister of State Alvin Tan separately discussed risk-proportionate financial guardrails and AI-related opportunities. For wealth operations, the remarks point to practical control questions around delegated authority, transaction reversibility, independent review and accountable human ownership; these are recommendations, not evidence of adopted policy.", "category": "AI \u0026 Technology", "hsbc_relevancy": 8, "adam_rel": 8, "noise_level": 2, "is_update": false, "user_relevance": 8}, {"id": "30c24b21f7d1f85427b1", "title": "HSBC Private Bank Names West Region Head - Family Wealth Report", "url": "https://familywealthreport.com/article.php/HSBC-Private-Bank-Names-West-Region-Head", "source": "Family Wealth Report (search dated 2026-11-17)", "published_at": "2026-11-17T12:37:48+00:00", "summary": "HSBC Private Bank appointed former Citi Private Bank executive Kush Malhotra to a newly formed role leading client coverage and strategy in the Western US. The move adds a senior regional leadership position to HSBC\u2019s US private-bank organization; the article gives no appointment date.", "category": "HSBC News", "hsbc_relevancy": 7, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}, {"id": "335fbcd97a5d49951021", "title": "J.P. Morgan Private Bank Names Cameron Chui Head of Equity Strategy for Asia", "url": "https://hubbis.com/news/j-p-morgan-private-bank-names-cameron-chui-head-of-equity-strategy-for-asia", "source": "Hubbis (search dated 2026-11-16)", "published_at": "2026-11-16T21:00:38+00:00", "summary": "J.P. Morgan Private Bank named Cameron Chui head of equity strategy for Asia, succeeding Timothy Fung, who has moved to an investor role on the China team. Chui is based in Hong Kong and will lead regional equity views and recommendations. The change may affect continuity and ownership of regional investment advice, although no client or operating changes are reported.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 1, "is_update": false, "user_relevance": 6}, {"id": "689be737f80373419611", "title": "How Did Jeffrey Epstein Move $582 Million? Deutsche Bank Leak Exposes Payments, Trusts and Wealthy Associates", "url": "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318", "source": "International Business Times, Singapore Edition", "published_at": "2026-11-17T20:08:21+08:00", "summary": "An International Business Times report describes leaked Deutsche Bank records concerning transactions and compliance reviews related to Jeffrey Epstein, including reported suspicious activity filings, onboarding decisions and account closures. It reports that the bank later faced a $150 million penalty in 2020 and a $75 million settlement in 2023. The allegations and historical control findings underscore the consequences of weaknesses in high-risk client onboarding, transaction escalation and account exit; the article is a secondary report and its claims are not independently verified here.", "category": "Regulatory \u0026 Markets", "hsbc_relevancy": 4, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}, {"id": "3c267afbf98aa4196c4f", "title": "Microsoft, banks, airlines hit by outages: DHS chief points to AI, \u2018superintelligence\u2019", "url": "https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485", "source": "The American Bazaar", "published_at": "2026-11-17T17:51:48+00:00", "summary": "The article reports recent outages affecting Microsoft services, US banks and other sectors, and says authorities had not identified a common cause. DHS Secretary Markwayne Mullin suggested AI might have contributed, while also saying a cyberattack was unlikely; the report supplies no confirmed technical cause linking the incidents. For banking continuity, the relevant operational issue is resilience across shared technology and communication dependencies, but the article does not establish that AI caused the outages.", "category": "Operations \u0026 Change", "hsbc_relevancy": 3, "adam_rel": 5, "noise_level": 2, "is_update": false, "user_relevance": 5}, {"id": "5b182c11b91e682f96f7", "title": "Bank of Singapore hires new head of North Asia investment advisory - Fund Selector Asia", "url": "https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory", "source": "Fund Selector Asia", "published_at": "2026-11-17T01:48:00+00:00", "summary": "Bank of Singapore appointed Andy Lee as head of investment advisory for Greater China and North Asia, with the role due to begin on 24 November 2026. He will lead the Hong Kong-based advisory team and work with relationship managers serving wealthy clients and family offices. The hire signals a competitor\u2019s investment in regional advisory leadership; the article does not describe changes to products or delivery processes.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 1, "is_update": false, "user_relevance": 6}, {"id": "45be1e05f613e0958696", "title": "DBS Bank India opens new \u2018Treasures Wealth Branch\u2019", "url": "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176", "source": "https://www.metroindia.net/", "published_at": "2026-11-17T21:21:57+05:30", "summary": "DBS Bank India opened a Treasures Wealth Branch in Hyderabad\u2019s Banjara Hills on 16 November, with relationship managers, wealth specialists and NRI experts supporting affluent and high-net-worth customers. The article says the launch is part of a group plan to open 18 wealth branches and upgrade 36 outlets by 2027. This is a competitor example of combining in-person coverage with specialist and cross-border support; the report does not describe service volumes or delivery outcomes.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}, {"id": "3f1400b56a61fc7b73ec", "title": "ChatGPT Wallet Lets AI Agents Pay Without Seeing Your Card Details", "url": "https://fintechnews.sg/141238/ai/chatgpt-wallet", "source": "Fintech Singapore", "published_at": "2026-11-16T03:07:31+00:00", "summary": "OpenAI is rolling out ChatGPT Wallet to eligible US ChatGPT Pro subscribers, with card purchases requiring user approval and a security check. The article says the wallet was developed with American Express, Mastercard and Visa, uses payment tokens, and may later support advance approvals with spending or purchase limits. This illustrates an emerging commerce interface, but it is a limited US rollout and does not establish autonomous payment adoption or relevance to bank wealth services; operational questions include authentication, dispute handling and agent-blocking controls.", "category": "AI \u0026 Technology", "hsbc_relevancy": 3, "adam_rel": 5, "noise_level": 1, "is_update": false, "user_relevance": 5}, {"id": "58740b7107c724cb6a06", "title": "Citi ULTIMA Upgraded to World Legend Mastercard in Singapore, Hong Kong", "url": "https://fintechnews.sg/141368/payments/citi-ultima-world-legend-mastercard-singapore", "source": "Fintech Singapore", "published_at": "2026-11-17T05:45:58+00:00", "summary": "Citi and Mastercard upgraded Citi ULTIMA in Singapore and Hong Kong to the World Legend Mastercard tier, adding access to dining, entertainment and travel benefits. The article positions the card as part of Citi\u2019s offer for ultra-high-net-worth clients. For private banks, this is a competitor example of lifestyle benefits complementing wealth relationships; the report does not quantify client take-up or business impact.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 3, "noise_level": 1, "is_update": false, "user_relevance": 3}], "categories": {"AI \u0026 Technology": "#6366f1", "HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "Regulatory \u0026 Markets": "#d97706", "Operations \u0026 Change": "#7c3aed"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>

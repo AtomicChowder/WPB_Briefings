@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPB Intelligence Briefing — Thursday, 19 November 2026 · Reconstructed from 18:01 HKT evidence — Adam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --hsbc-red: #DB0011;
+      --hsbc-red-dark: #a80009;
+      --navy: #1a1f36;
+      --navy-dark: #0f1424;
+      --navy-mid: #252b47;
+      --surface: #f4f5f7;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-mid: #6b7280;
+      --text-light: #9ca3af;
+      --chart-bg: #0a0f1e;
+      --chart-grid: #1e2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+    a { color: var(--hsbc-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--navy);
+      border-top: 4px solid var(--hsbc-red);
+      padding: 20px 32px;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    /* Brand mark: a 4px HSBC-red keyline, not a pseudo-logo. To use the official
+       HSBC logo, add the approved SVG from the design kit as docs/assets/hsbc-logo.svg
+       and swap this block for an <img>. Never hand-draw the trademark. */
+    .hsbc-keyline {
+      width: 4px; height: 40px; background: var(--hsbc-red);
+      flex-shrink: 0;
+    }
+    .brand-text h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 12px; color: #8a93b2; margin-top: 1px; }
+    .header-meta { text-align: right; }
+    .header-meta .date { font-size: 14px; font-weight: 600; color: #fff; }
+    .header-meta .user-info { font-size: 12px; color: #8a93b2; margin-top: 3px; }
+    .header-meta .user-name { color: #c9d0e8; font-weight: 500; }
+
+    /* ── Shared layout ── */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 40px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--hsbc-red); margin-bottom: 10px;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--hsbc-red);
+    }
+    .section-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; }
+
+    /* ── Talking Points ── */
+    .talking-points-section { background: var(--surface); }
+    .tp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .tp-grid { grid-template-columns: 1fr; } }
+    .tp-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex; gap: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tp-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--hsbc-red);
+    }
+    .tp-card.is-update::before { background: #d97706; }
+    .tp-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--hsbc-red);
+      color: white; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tp-card.is-update .tp-num { background: #d97706; }
+    .tp-body { flex: 1; min-width: 0; }
+    .tp-update-badge {
+      display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+      background: #fef3c7; color: #92400e; border-radius: 4px; padding: 2px 7px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+    .tp-headline { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+    .tp-context { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 14px; }
+    .tp-context strong { color: var(--text); }
+    .tp-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tp-source-link {
+      font-size: 11px; font-weight: 500;
+      color: var(--hsbc-red); background: #fff0f1; border: 1px solid #fbc4c8;
+      border-radius: 4px; padding: 3px 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
+    }
+    .tp-source-link:hover { background: #ffe0e3; text-decoration: none; }
+
+    /* ── Chart section ── */
+    .chart-section { background: var(--chart-bg); padding: 48px 0; }
+    .chart-section .section-label { color: #e05565; }
+    .chart-section .section-label::before { background: #e05565; }
+    .chart-section .section-title { color: #e2e8f0; }
+    .chart-section .section-sub { color: #64748b; }
+    .chart-layout { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; }
+    @media (max-width: 900px) { .chart-layout { grid-template-columns: 1fr; } }
+    #bubble-chart-container svg { display: block; width: 100%; }
+    .chart-legend { padding-top: 40px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 0; cursor: pointer;
+      font-size: 12px; color: #94a3b8;
+      border-bottom: 1px solid #1e2a3a;
+      transition: color 0.15s;
+    }
+    .legend-item:hover { color: #e2e8f0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .chart-note {
+      margin-top: 14px; font-size: 11px; color: #475569; line-height: 1.6;
+    }
+    .chart-tooltip {
+      position: fixed; display: none;
+      background: #1e293b; color: #f1f5f9;
+      padding: 12px 16px; border-radius: 10px;
+      font-size: 13px; max-width: 300px;
+      pointer-events: none; z-index: 9999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid #334155; line-height: 1.5;
+    }
+
+    /* ── Feed section ── */
+    .feed-section { background: var(--surface); }
+    .category-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .cat-tab {
+      font-size: 12px; font-weight: 500; padding: 6px 14px;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: white; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .cat-tab:hover { border-color: var(--hsbc-red); color: var(--hsbc-red); }
+    .cat-tab.active { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); }
+    .category-section { margin-bottom: 36px; }
+    .category-header {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    .article-card {
+      background: var(--card); border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 18px; display: flex; flex-direction: column; gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #d1d5db; }
+    .article-card.chart-highlighted {
+      border-color: var(--hsbc-red);
+      box-shadow: 0 0 0 2px rgba(219,0,17,0.15), 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .article-scores { display: flex; gap: 8px; flex-wrap: wrap; }
+    .score-badge {
+      font-size: 10px; font-weight: 600; padding: 3px 7px;
+      border-radius: 4px; display: flex; align-items: center; gap: 4px;
+    }
+    .score-badge.hsbc { background: #fff0f1; color: #9b1c1c; }
+    .score-badge.rel  { background: #eff6ff; color: #1e40af; }
+    .score-badge.noise { background: #f0fdf4; color: #166534; letter-spacing: 1px; }
+    .article-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .article-title a { color: var(--navy); }
+    .article-title a:hover { color: var(--hsbc-red); text-decoration: none; }
+    .article-summary { font-size: 12px; color: var(--text-mid); line-height: 1.6; flex: 1; }
+    .article-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-light);
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .article-source { font-weight: 500; color: var(--text-mid); }
+
+    /* ── Briefing navigation ── */
+    .nav-bar { background: var(--navy-mid); border-bottom: 1px solid #1e2640; padding: 8px 32px; }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-btn {
+      font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px;
+      background: rgba(255,255,255,0.07); color: #c9d0e8;
+      border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+    }
+    .nav-btn:hover:not(.nav-disabled) { background: var(--hsbc-red); color: white; border-color: var(--hsbc-red); text-decoration: none; }
+    .nav-btn.nav-disabled { opacity: 0.4; cursor: default; }
+    .nav-current { font-size: 13px; font-weight: 600; color: #fff; text-align: center; flex: 1; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--navy-dark); border-top: 1px solid #1e2640;
+      padding: 20px 32px; text-align: center;
+      font-size: 12px; color: #475569;
+    }
+    .site-footer span { color: #64748b; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="hsbc-keyline"></div>
+      <div class="brand-text">
+        <h1>WPB Market Intelligence</h1>
+        <p>Private Banking &amp; Wealth Solutions · Asia Pacific</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="date">Thursday, 19 November 2026 · Reconstructed from 18:01 HKT evidence</div>
+      <div class="user-info">
+        Prepared for <span class="user-name">Adam Chow</span>
+      </div>
+      <div class="user-info">Head of Change Execution, WPB Private Banking &amp; Wealth Solutions, Asia Pacific</div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    
+    <a class="nav-btn nav-prev" href="./2026-11-18.html">‹ 18 Nov 2026</a>
+    
+    <span class="nav-current">Thursday, 19 November 2026 · Reconstructed from 18:01 HKT evidence</span>
+    <a class="nav-btn nav-latest" href="./index.html">Latest ›</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — KEY TALKING POINTS
+════════════════════════════════════════════ -->
+<section class="talking-points-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Summary</div>
+    <h2 class="section-title">Today's Key Talking Points</h2>
+    <p class="section-sub">10 articles analysed · Top 3 insights ranked by strategic relevance to your role</p>
+    <div class="tp-grid">
+      
+      <div class="tp-card">
+        <div class="tp-num">1</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Singapore’s AI-agent payment tests centre on identity and authority</h3>
+          <p class="tp-context">MAS’s planned sandbox will test agent identity, permissions and transactions across systems, while NETS and Ant are exploring merchant payments and interoperable Know-Your-Agent frameworks. A practical delivery question is how authorisation, limits and evidence of consent would be carried across the customer, agent and payment rail; the reports describe trials and exploration, not live-scale adoption.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://fintechnews.sg/141547/payments/singapore-ai-agent-payments-trials" target="_blank" rel="noopener" class="tp-source-link" title="Singapore Plans Sandbox to Test AI Agent Payments Before Live Use">Singapore Plans Sandbox to Test AI Agent Payments Before Live Use</a>
+            
+            <a href="https://fintechnews.sg/141909/payments/nets-ai-agent-payments" target="_blank" rel="noopener" class="tp-source-link" title="NETS Explores a Way for AI Agents to Pay at Singapore Shops">NETS Explores a Way for AI Agents to Pay at Singapore Shops</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">2</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Competitors are extending digital-asset payment options</h3>
+          <p class="tp-context">DBS and Circle announced direct institutional USDC minting and redemption with round-the-clock settlement, while the World Bank Group, Citi and Circle are exploring stablecoin-based disbursements. For operations, a key decision criterion is how settlement availability, interoperability and permitted use differ by transaction and jurisdiction; the World Bank initiative remains exploratory and the DBS report does not specify all service controls.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://fintechnews.sg/141489/blockchain/dbs-circle-usdc-institutional-access" target="_blank" rel="noopener" class="tp-source-link" title="DBS Lets Institutions Mint and Redeem USDC Directly in Circle Tie-Up">DBS Lets Institutions Mint and Redeem USDC Directly in Circle Tie-Up</a>
+            
+            <a href="https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle" target="_blank" rel="noopener" class="tp-source-link" title="World Bank Group Partners with Citi and Circle on Stablecoin Payments">World Bank Group Partners with Citi and Circle on Stablecoin Payments</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="tp-card">
+        <div class="tp-num">3</div>
+        <div class="tp-body">
+          
+          <h3 class="tp-headline">Visa’s agent-payment programme pairs partner readiness with fraud tooling</h3>
+          <p class="tp-context">Visa says more than 50 partners will join its expanding Agentic Ready programme and is bringing its threat-intelligence platform to the region. For change execution, a concrete dependency is whether participating payment and fraud controls can identify and handle agent-initiated activity consistently; the article reports planned expansion and a Visa-funded survey, not proven consumer demand or operating outcomes.</p>
+          
+          <div class="tp-sources">
+            
+            <a href="https://fintechnews.sg/141553/singapore-fintech-festival-2026/visa-singapore-fintech-festival-2026" target="_blank" rel="noopener" class="tp-source-link" title="Visa Taps Over 50 Partners to Prepare for AI Agent Payments">Visa Taps Over 50 Partners to Prepare for AI Agent Payments</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — INTELLIGENCE RADAR (BUBBLE CHART)
+════════════════════════════════════════════ -->
+<section class="chart-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Radar</div>
+    <h2 class="section-title">Article Signal Map</h2>
+    <p class="section-sub">Y-axis: HSBC relevancy · X-axis: Relevance to your role · Bubble size: media noise level · Click any bubble to open article</p>
+    <div class="chart-layout">
+      <div id="bubble-chart-container"></div>
+      <div>
+        <div class="chart-legend" id="chart-legend"></div>
+        <div class="chart-note">
+          Bubble size reflects how many sources are covering a story (noise level 1–5).<br><br>
+          Top-right zone = highest strategic priority.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-tooltip" id="chart-tooltip"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — INTELLIGENCE FEED
+════════════════════════════════════════════ -->
+<section class="feed-section">
+  <div class="section-wrap">
+    <div class="section-label">Intelligence Feed</div>
+    <h2 class="section-title">Articles by Category</h2>
+    <p class="section-sub">Up to 5 articles per category · Scores reflect HSBC relevancy and personal relevance</p>
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-cat="all">All (10)</button>
+      
+      <button class="cat-tab" data-cat="Regulatory &amp; Markets">
+        Regulatory &amp; Markets (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="AI &amp; Technology">
+        AI &amp; Technology (2)
+      </button>
+      
+      <button class="cat-tab" data-cat="HSBC News">
+        HSBC News (1)
+      </button>
+      
+      <button class="cat-tab" data-cat="Competitor Intelligence">
+        Competitor Intelligence (4)
+      </button>
+      
+      <button class="cat-tab" data-cat="Private Banking &amp; Wealth">
+        Private Banking &amp; Wealth (1)
+      </button>
+      
+    </div>
+    
+    <div class="category-section" data-category-group="Regulatory &amp; Markets">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #d97706"></span>
+        Regulatory &amp; Markets
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-04ac006120046452e1c8" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141547/payments/singapore-ai-agent-payments-trials" target="_blank" rel="noopener">Singapore Plans Sandbox to Test AI Agent Payments Before Live Use</a>
+          </div>
+          <p class="article-summary">Singapore announced controlled trials of AI agents using purpose-bound digital money for payments, including payments triggered when contract terms are verified. MAS and the Future of Finance Institute announced an Agentic Money Sandbox to test agent identity, permissions, cross-system transactions and safeguards before live use. For banks, this points to a test-and-control agenda for delegated transactions, while the report describes planned trials rather than deployed services.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>18 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-d6e0415013cf062eca58" data-category="Regulatory &amp; Markets">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle" target="_blank" rel="noopener">World Bank Group Partners with Citi and Circle on Stablecoin Payments</a>
+          </div>
+          <p class="article-summary">The World Bank Group is working with Citi and Circle to examine whether regulated stablecoins and blockchain payment rails could complement or improve its existing correspondent-banking-based disbursements. The initial exploration is an intermediated, interoperable model involving borrower countries that permit digital assets; the article says the work is exploratory, not a confirmed replacement of current arrangements. Any eventual operating model would need to address interoperability and country-level permission, but the report provides no implementation timetable.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>19 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="AI &amp; Technology">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #6366f1"></span>
+        AI &amp; Technology
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-56665b90ddbbd0dd5536" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 8/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141553/singapore-fintech-festival-2026/visa-singapore-fintech-festival-2026" target="_blank" rel="noopener">Visa Taps Over 50 Partners to Prepare for AI Agent Payments</a>
+          </div>
+          <p class="article-summary">Visa outlined work on AI-agent payments, stablecoin-prefunded cross-border payouts and regional threat intelligence at Singapore Fintech Festival 2026. Its Agentic Ready programme is expanding to more than 50 partners, while its survey found low consumer trust in AI purchasing despite high reported generative-AI use in the surveyed markets. For banks, partner readiness and fraud controls are relevant delivery considerations; the survey is commissioned by Visa and does not establish broad adoption of agent-led payments.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>18 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-1ebabc74a1233fd1ee5e" data-category="AI &amp; Technology">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 4/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 7/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141909/payments/nets-ai-agent-payments" target="_blank" rel="noopener">NETS Explores a Way for AI Agents to Pay at Singapore Shops</a>
+          </div>
+          <p class="article-summary">NETS and Ant International signed a memorandum to explore AI-agent payments at Singapore merchants, including user authorisation, protocol integration and compatibility between their Know-Your-Agent frameworks. The announcement also covers other merchant payment and service initiatives. For payment operations, the proposal raises practical questions about agent identity and merchant acceptance, but the work is exploratory and no launch or adoption is reported.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>19 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="HSBC News">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #dc2626"></span>
+        HSBC News
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-361605369e9b8f7284b2" data-category="HSBC News">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 7/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 4/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region" target="_blank" rel="noopener">TheWealthNet - HSBC PB appoints head of US Western region - Pam Insight</a>
+          </div>
+          <p class="article-summary">HSBC Private Bank appointed Kush Malhotra to a newly created role leading its Western US region, reporting to the head of the US private bank. The role is described as focused on client relationships and developing the bank’s regional strategy; this indicates an expansion of regional leadership, but the supplied excerpt gives no appointment date or further implementation detail.</p>
+          <div class="article-footer">
+            <span class="article-source">Pam Insight (search dated 2026-11-18)</span>
+            <span>18 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Competitor Intelligence">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #0891b2"></span>
+        Competitor Intelligence
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-405d70cc212092f4529d" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio" target="_blank" rel="noopener">EFG International appoints Tuan Huynh as Asia CIO and DPM head - Private Banker International</a>
+          </div>
+          <p class="article-summary">EFG International named Tuan Huynh Asia CIO and head of Asia discretionary portfolio management, based in Singapore, with regional and functional reporting lines. The appointment adds senior investment leadership at a private-banking competitor in APAC; the article does not describe any change to client services or operating arrangements.</p>
+          <div class="article-footer">
+            <span class="article-source">Private Banker International</span>
+            <span>18 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-4e6a2653fb23b95b7b84" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141489/blockchain/dbs-circle-usdc-institutional-access" target="_blank" rel="noopener">DBS Lets Institutions Mint and Redeem USDC Directly in Circle Tie-Up</a>
+          </div>
+          <p class="article-summary">DBS partnered with Circle to let eligible institutional clients mint and redeem USDC directly through the bank, with round-the-clock USD-USDC settlement. The firms said the service is intended for institutional treasury, settlement and liquidity management and builds on their participation in MAS’s Project BLOOM. This is a competitor development in digital-asset payments; the article does not detail eligibility criteria or operational controls.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>18 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-a08e53b3348db4a3a548" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 6/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 5/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●●●○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments" target="_blank" rel="noopener">Deutsche Bank leak reveals nearly $600M in Epstein payments - Asia Times</a>
+          </div>
+          <p class="article-summary">Asia Times reports on leaked Deutsche Bank records and investigations alleging past suspicious transactions, internal warnings and compliance failures, including nearly US$600 million in Epstein-related payments flagged in suspicious activity reports. The account cites other media investigations and describes allegations and reported records, not adjudicated findings. For banking control functions, the reporting underscores the potential reputational and supervisory consequences of escalation and monitoring failures, but the supplied article is not a regulator’s determination.</p>
+          <div class="article-footer">
+            <span class="article-source">Asia Times</span>
+            <span>18 Nov 2026</span>
+          </div>
+        </article>
+        
+        <article class="article-card" id="article-0f0b711c64bf2ac046f0" data-category="Competitor Intelligence">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 3/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 3/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://fintechnews.sg/141826/payments/aci-worldwide-interim-ceo-robert-leibrock" target="_blank" rel="noopener">ACI Worldwide Names Finance Chief Robert Leibrock Interim CEO</a>
+          </div>
+          <p class="article-summary">Payments software company ACI Worldwide named CFO Robert Leibrock interim president and CEO while its board searches for a permanent successor; outgoing CEO Thomas Warsop is to support the handover through December 18. The leadership transition is relevant as a vendor-sector development, but the article gives no indication of changes to ACI’s products or customer services.</p>
+          <div class="article-footer">
+            <span class="article-source">Fintech Singapore</span>
+            <span>19 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div class="category-section" data-category-group="Private Banking &amp; Wealth">
+      <h3 class="category-header">
+        <span class="cat-dot" style="background: #059669"></span>
+        Private Banking &amp; Wealth
+      </h3>
+      <div class="articles-grid">
+        
+        <article class="article-card" id="article-45be1e05f613e0958696" data-category="Private Banking &amp; Wealth">
+          <div class="article-scores">
+            <span class="score-badge hsbc" title="HSBC Relevancy">HSBC 5/10</span>
+            <span class="score-badge rel" title="Relevance to Role">Rel. 6/10</span>
+            <span class="score-badge noise" title="Media Noise Level">●○○○○</span>
+          </div>
+          <div class="article-title">
+            <a href="https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176" target="_blank" rel="noopener">DBS Bank India opens new ‘Treasures Wealth Branch’</a>
+          </div>
+          <p class="article-summary">DBS Bank India opened a Treasures Wealth Branch in Hyderabad on November 16, serving affluent, high-net-worth and ultra-high-net-worth customers with banking and wealth services and dedicated relationship, wealth and NRI specialists. The article places the opening within DBS Group’s stated plan to open 18 wealth branches and upgrade 36 outlets by 2027. It illustrates a competitor’s physical wealth-channel expansion, though the article does not specify branch economics or client uptake.</p>
+          <div class="article-footer">
+            <span class="article-source">https://www.metroindia.net/</span>
+            <span>17 Nov 2026</span>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="site-footer">
+  Generated 2026-11-19T18:01:21.763815+08:00 &nbsp;·&nbsp;
+  <span>HSBC WPB Market Intelligence</span> &nbsp;·&nbsp;
+  Powered by Claude AI (Anthropic)
+</footer>
+
+<!-- ══════════════════════════════════════════
+     D3.js BUBBLE CHART
+════════════════════════════════════════════ -->
+<script>
+const CHART_DATA = {"articles": [{"id": "04ac006120046452e1c8", "title": "Singapore Plans Sandbox to Test AI Agent Payments Before Live Use", "url": "https://fintechnews.sg/141547/payments/singapore-ai-agent-payments-trials", "source": "Fintech Singapore", "published_at": "2026-11-18T06:05:28+00:00", "summary": "Singapore announced controlled trials of AI agents using purpose-bound digital money for payments, including payments triggered when contract terms are verified. MAS and the Future of Finance Institute announced an Agentic Money Sandbox to test agent identity, permissions, cross-system transactions and safeguards before live use. For banks, this points to a test-and-control agenda for delegated transactions, while the report describes planned trials rather than deployed services.", "category": "Regulatory \u0026 Markets", "hsbc_relevancy": 6, "adam_rel": 8, "noise_level": 2, "is_update": false, "user_relevance": 8}, {"id": "56665b90ddbbd0dd5536", "title": "Visa Taps Over 50 Partners to Prepare for AI Agent Payments", "url": "https://fintechnews.sg/141553/singapore-fintech-festival-2026/visa-singapore-fintech-festival-2026", "source": "Fintech Singapore", "published_at": "2026-11-18T06:17:06+00:00", "summary": "Visa outlined work on AI-agent payments, stablecoin-prefunded cross-border payouts and regional threat intelligence at Singapore Fintech Festival 2026. Its Agentic Ready programme is expanding to more than 50 partners, while its survey found low consumer trust in AI purchasing despite high reported generative-AI use in the surveyed markets. For banks, partner readiness and fraud controls are relevant delivery considerations; the survey is commissioned by Visa and does not establish broad adoption of agent-led payments.", "category": "AI \u0026 Technology", "hsbc_relevancy": 5, "adam_rel": 8, "noise_level": 2, "is_update": false, "user_relevance": 8}, {"id": "361605369e9b8f7284b2", "title": "TheWealthNet - HSBC PB appoints head of US Western region - Pam Insight", "url": "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region", "source": "Pam Insight (search dated 2026-11-18)", "published_at": "2026-11-18T10:51:12+00:00", "summary": "HSBC Private Bank appointed Kush Malhotra to a newly created role leading its Western US region, reporting to the head of the US private bank. The role is described as focused on client relationships and developing the bank\u2019s regional strategy; this indicates an expansion of regional leadership, but the supplied excerpt gives no appointment date or further implementation detail.", "category": "HSBC News", "hsbc_relevancy": 7, "adam_rel": 4, "noise_level": 1, "is_update": false, "user_relevance": 4}, {"id": "405d70cc212092f4529d", "title": "EFG International appoints Tuan Huynh as Asia CIO and DPM head - Private Banker International", "url": "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio", "source": "Private Banker International", "published_at": "2026-11-18T10:55:55+00:00", "summary": "EFG International named Tuan Huynh Asia CIO and head of Asia discretionary portfolio management, based in Singapore, with regional and functional reporting lines. The appointment adds senior investment leadership at a private-banking competitor in APAC; the article does not describe any change to client services or operating arrangements.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 1, "is_update": false, "user_relevance": 6}, {"id": "45be1e05f613e0958696", "title": "DBS Bank India opens new \u2018Treasures Wealth Branch\u2019", "url": "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176", "source": "https://www.metroindia.net/", "published_at": "2026-11-17T21:21:57+05:30", "summary": "DBS Bank India opened a Treasures Wealth Branch in Hyderabad on November 16, serving affluent, high-net-worth and ultra-high-net-worth customers with banking and wealth services and dedicated relationship, wealth and NRI specialists. The article places the opening within DBS Group\u2019s stated plan to open 18 wealth branches and upgrade 36 outlets by 2027. It illustrates a competitor\u2019s physical wealth-channel expansion, though the article does not specify branch economics or client uptake.", "category": "Private Banking \u0026 Wealth", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 1, "is_update": false, "user_relevance": 6}, {"id": "1ebabc74a1233fd1ee5e", "title": "NETS Explores a Way for AI Agents to Pay at Singapore Shops", "url": "https://fintechnews.sg/141909/payments/nets-ai-agent-payments", "source": "Fintech Singapore", "published_at": "2026-11-19T09:11:26+00:00", "summary": "NETS and Ant International signed a memorandum to explore AI-agent payments at Singapore merchants, including user authorisation, protocol integration and compatibility between their Know-Your-Agent frameworks. The announcement also covers other merchant payment and service initiatives. For payment operations, the proposal raises practical questions about agent identity and merchant acceptance, but the work is exploratory and no launch or adoption is reported.", "category": "AI \u0026 Technology", "hsbc_relevancy": 4, "adam_rel": 7, "noise_level": 2, "is_update": false, "user_relevance": 7}, {"id": "4e6a2653fb23b95b7b84", "title": "DBS Lets Institutions Mint and Redeem USDC Directly in Circle Tie-Up", "url": "https://fintechnews.sg/141489/blockchain/dbs-circle-usdc-institutional-access", "source": "Fintech Singapore", "published_at": "2026-11-18T10:30:21+08:00", "summary": "DBS partnered with Circle to let eligible institutional clients mint and redeem USDC directly through the bank, with round-the-clock USD-USDC settlement. The firms said the service is intended for institutional treasury, settlement and liquidity management and builds on their participation in MAS\u2019s Project BLOOM. This is a competitor development in digital-asset payments; the article does not detail eligibility criteria or operational controls.", "category": "Competitor Intelligence", "hsbc_relevancy": 5, "adam_rel": 6, "noise_level": 2, "is_update": false, "user_relevance": 6}, {"id": "a08e53b3348db4a3a548", "title": "Deutsche Bank leak reveals nearly $600M in Epstein payments - Asia Times", "url": "https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments", "source": "Asia Times", "published_at": "2026-11-18T02:36:45+00:00", "summary": "Asia Times reports on leaked Deutsche Bank records and investigations alleging past suspicious transactions, internal warnings and compliance failures, including nearly US$600 million in Epstein-related payments flagged in suspicious activity reports. The account cites other media investigations and describes allegations and reported records, not adjudicated findings. For banking control functions, the reporting underscores the potential reputational and supervisory consequences of escalation and monitoring failures, but the supplied article is not a regulator\u2019s determination.", "category": "Competitor Intelligence", "hsbc_relevancy": 6, "adam_rel": 5, "noise_level": 3, "is_update": false, "user_relevance": 5}, {"id": "d6e0415013cf062eca58", "title": "World Bank Group Partners with Citi and Circle on Stablecoin Payments", "url": "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle", "source": "Fintech Singapore", "published_at": "2026-11-19T04:38:17+00:00", "summary": "The World Bank Group is working with Citi and Circle to examine whether regulated stablecoins and blockchain payment rails could complement or improve its existing correspondent-banking-based disbursements. The initial exploration is an intermediated, interoperable model involving borrower countries that permit digital assets; the article says the work is exploratory, not a confirmed replacement of current arrangements. Any eventual operating model would need to address interoperability and country-level permission, but the report provides no implementation timetable.", "category": "Regulatory \u0026 Markets", "hsbc_relevancy": 4, "adam_rel": 5, "noise_level": 2, "is_update": false, "user_relevance": 5}, {"id": "0f0b711c64bf2ac046f0", "title": "ACI Worldwide Names Finance Chief Robert Leibrock Interim CEO", "url": "https://fintechnews.sg/141826/payments/aci-worldwide-interim-ceo-robert-leibrock", "source": "Fintech Singapore", "published_at": "2026-11-19T04:40:15+00:00", "summary": "Payments software company ACI Worldwide named CFO Robert Leibrock interim president and CEO while its board searches for a permanent successor; outgoing CEO Thomas Warsop is to support the handover through December 18. The leadership transition is relevant as a vendor-sector development, but the article gives no indication of changes to ACI\u2019s products or customer services.", "category": "Competitor Intelligence", "hsbc_relevancy": 3, "adam_rel": 3, "noise_level": 1, "is_update": false, "user_relevance": 3}], "categories": {"Regulatory \u0026 Markets": "#d97706", "AI \u0026 Technology": "#6366f1", "HSBC News": "#dc2626", "Competitor Intelligence": "#0891b2", "Private Banking \u0026 Wealth": "#059669"}};
+
+function renderChart() {
+  const container = document.getElementById('bubble-chart-container');
+  container.innerHTML = '';
+  const totalW = container.offsetWidth || 800;
+  const margin = { top: 30, right: 20, bottom: 60, left: 60 };
+  const svgH = 480;
+  const W = totalW - margin.left - margin.right;
+  const H = svgH - margin.top - margin.bottom;
+
+  const svg = d3.select('#bubble-chart-container')
+    .append('svg')
+    .attr('width', totalW)
+    .attr('height', svgH)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Background
+  svg.append('rect').attr('width', W).attr('height', H)
+    .attr('fill', '#0a0f1e').attr('rx', 4);
+
+  const x = d3.scaleLinear().domain([0, 10]).range([0, W]);
+  const y = d3.scaleLinear().domain([0, 10]).range([H, 0]);
+  const r = d3.scaleLinear().domain([1, 5]).range([9, 30]);
+
+  // Grid
+  [2,4,6,8].forEach(v => {
+    svg.append('line').attr('x1', x(v)).attr('x2', x(v))
+      .attr('y1', 0).attr('y2', H)
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+    svg.append('line').attr('x1', 0).attr('x2', W)
+      .attr('y1', y(v)).attr('y2', y(v))
+      .attr('stroke', '#1e2a3a').attr('stroke-dasharray', '3,3');
+  });
+
+  // High-priority zone (top-right)
+  svg.append('rect')
+    .attr('x', x(6)).attr('y', y(10))
+    .attr('width', x(10) - x(6)).attr('height', y(6) - y(10))
+    .attr('fill', 'rgba(219,0,17,0.07)')
+    .attr('stroke', 'rgba(219,0,17,0.2)').attr('stroke-dasharray', '4,4');
+  svg.append('text')
+    .attr('x', x(8)).attr('y', y(9.6))
+    .attr('text-anchor', 'middle').attr('fill', 'rgba(219,0,17,0.45)')
+    .attr('font-size', '10px').attr('font-family', 'Inter,sans-serif')
+    .attr('font-weight', '600').attr('letter-spacing', '1px')
+    .text('HIGH PRIORITY');
+
+  // Axes
+  const xAxis = svg.append('g').attr('transform', `translate(0,${H})`)
+    .call(d3.axisBottom(x).ticks(10));
+  const yAxis = svg.append('g').call(d3.axisLeft(y).ticks(10));
+  [xAxis, yAxis].forEach(ax => {
+    ax.select('.domain').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick line').attr('stroke', '#2d3f55');
+    ax.selectAll('.tick text').attr('fill', '#64748b').attr('font-size', '11px');
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H + 46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('Relevance to Role →');
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -H / 2).attr('y', -46)
+    .attr('text-anchor', 'middle').attr('fill', '#64748b')
+    .attr('font-size', '12px').attr('font-family', 'Inter,sans-serif')
+    .text('↑ HSBC Relevancy');
+
+  const tooltip = document.getElementById('chart-tooltip');
+
+  // Bubble groups
+  const groups = svg.selectAll('.bubble-g')
+    .data(CHART_DATA.articles)
+    .enter().append('g')
+    .attr('class', 'bubble-g')
+    .attr('transform', d => `translate(${x(d.user_relevance)},${y(d.hsbc_relevancy)})`)
+    .style('cursor', 'pointer');
+
+  groups.append('circle')
+    .attr('r', d => r(d.noise_level))
+    .attr('data-base-r', d => r(d.noise_level))
+    .attr('fill', d => (CHART_DATA.categories[d.category] || '#64748b') + 'b0')
+    .attr('stroke', d => CHART_DATA.categories[d.category] || '#64748b')
+    .attr('stroke-width', 1.5);
+
+  groups.append('text')
+    .attr('text-anchor', 'middle').attr('dy', '0.35em')
+    .attr('fill', 'white').attr('pointer-events', 'none')
+    .attr('font-family', 'Inter,sans-serif').attr('font-weight', '700')
+    .attr('font-size', d => r(d.noise_level) > 17 ? '11px' : '9px')
+    .text((d, i) => i + 1);
+
+  groups
+    .on('mouseover', function(event, d) {
+      const i = CHART_DATA.articles.indexOf(d);
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'ff').attr('stroke-width', 2.5)
+        .attr('r', baseR * 1.18);
+
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `
+        <div style="font-weight:600;margin-bottom:5px;line-height:1.35">#${i+1} — ${d.title}</div>
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:10px">${d.source}</div>
+        <div style="display:flex;gap:12px;font-size:12px">
+          <span>HSBC <strong style="color:#f87171">${d.hsbc_relevancy}/10</strong></span>
+          <span>Rel. <strong style="color:#60a5fa">${d.user_relevance}/10</strong></span>
+          <span>Noise <strong style="color:#fbbf24">${'●'.repeat(d.noise_level)}</strong></span>
+        </div>`;
+
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+      const card = document.getElementById('article-' + d.id);
+      if (card) card.classList.add('chart-highlighted');
+    })
+    .on('mousemove', function(event) {
+      tooltip.style.left = (event.clientX + 14) + 'px';
+      tooltip.style.top  = (event.clientY - 12) + 'px';
+    })
+    .on('mouseout', function(event, d) {
+      const color = CHART_DATA.categories[d.category] || '#64748b';
+      const baseR = +d3.select(this).select('circle').attr('data-base-r');
+      d3.select(this).select('circle')
+        .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      tooltip.style.display = 'none';
+      document.querySelectorAll('.article-card').forEach(c => c.classList.remove('chart-highlighted'));
+    })
+    .on('click', (event, d) => window.open(d.url, '_blank'));
+
+  // Legend
+  const legendEl = document.getElementById('chart-legend');
+  legendEl.innerHTML = Object.entries(CHART_DATA.categories).map(([cat, color]) =>
+    `<div class="legend-item" data-cat="${cat}">
+       <span class="legend-dot" style="background:${color}"></span>
+       <span>${cat}</span>
+     </div>`
+  ).join('');
+}
+
+// Category tab filtering
+document.addEventListener('DOMContentLoaded', () => {
+  renderChart();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(renderChart, 180);
+  });
+
+  document.getElementById('category-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-tab');
+    if (!btn) return;
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-section').forEach(sec => {
+      sec.style.display = (cat === 'all' || sec.dataset.categoryGroup === cat) ? '' : 'none';
+    });
+  });
+
+  // Article card hover → highlight bubble
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const id = card.id.replace('article-', '');
+      d3.selectAll('.bubble-g').each(function(d) {
+        if (d.id === id) {
+          const color = CHART_DATA.categories[d.category] || '#64748b';
+          const baseR = +d3.select(this).select('circle').attr('data-base-r');
+          d3.select(this).select('circle')
+            .attr('fill', color + 'ff').attr('stroke-width', 2.5).attr('r', baseR * 1.18);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      d3.selectAll('.bubble-g').each(function(d) {
+        const color = CHART_DATA.categories[d.category] || '#64748b';
+        const baseR = +d3.select(this).select('circle').attr('data-base-r');
+        d3.select(this).select('circle')
+          .attr('fill', color + 'b0').attr('stroke-width', 1.5).attr('r', baseR);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
