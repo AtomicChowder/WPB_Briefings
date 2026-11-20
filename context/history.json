@@ -1,19 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-20",
+    "last_updated": "2026-11-21",
     "daily": [
-      {
-        "date": "2026-11-14",
-        "urls": [
-          "https://aimmediahouse.com/banking/ai-agents-are-logging-into-bank-accounts-fraud-vendors-are-watching",
-          "https://bfsi.economictimes.indiatimes.com/articles/sbi-invites-applications-for-chief-ai-officer/135805543",
-          "https://businesstimes.com.sg/companies-markets/banking-finance/german-regulator-fines-deutsche-bank-us8-9-million-over-postbank-customer-migration-issues",
-          "https://businesstimes.com.sg/companies-markets/fight-ai-ai-singapore-banks-warn-against-third-party-ai-agents-observers-flag-liability-risk",
-          "https://hapakenya.com/2026/11/13/standard-chartered-uganda-completes-sale-of-wealth-retail-banking-unit-to-absa",
-          "https://straitstimes.com/business/banks-in-singapore-offer-alternative-contact-channels-amid-microsoft-outage-abs"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-15",
         "urls": [
@@ -34,10 +22,7 @@
           "https://kpmg.com/de/en/insights/data-and-technology/new-ways-banking-magazine-regulation-ai-cyber-risks.html",
           "https://philstar.com/business/2026/11/15/2570124/security-bank-trains-more-staff-develops-ai-agents"
         ],
-        "topics": [
-          "External AI-agent access depends on bounded authority and traceability",
-          "Staff AI enablement is paired with human accountability at Security Bank"
-        ]
+        "topics": []
       },
       {
         "date": "2026-11-17",
@@ -48,11 +33,7 @@
           "https://fintechnews.sg/141238/ai/chatgpt-wallet",
           "https://qa-financial.com/hsbc-puts-ai-testing-at-heart-of-new-hong-kong-institute"
         ],
-        "topics": [
-          "HSBC’s planned institute puts agent authority into the testing agenda",
-          "Agentic payments depend on bounded permissions and ecosystem acceptance",
-          "Tokenized dollar transfers are live, with a disclosed legacy-account gap"
-        ]
+        "topics": []
       },
       {
         "date": "2026-11-18",
@@ -67,11 +48,7 @@
           "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318",
           "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176"
         ],
-        "topics": [
-          "Agent authority is a control-design question for wealth services",
-          "Recent outages leave the cause unresolved",
-          "Competitors are adding specialist capacity and client access points"
-        ]
+        "topics": []
       },
       {
         "date": "2026-11-19",
@@ -87,11 +64,7 @@
           "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
           "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio"
         ],
-        "topics": [
-          "Singapore’s AI-agent payment tests centre on identity and authority",
-          "Competitors are extending digital-asset payment options",
-          "Visa’s agent-payment programme pairs partner readiness with fraud tooling"
-        ]
+        "topics": []
       },
       {
         "date": "2026-11-20",
@@ -107,15 +80,24 @@
           "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
           "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-21",
+        "urls": [
+          "https://decrypt.co/383677/citi-customers-responsible-ai-banking-agents-rogue-hack",
+          "https://fintechnews.sg/142031/blockchain/dbs-digital-vouchers-paylah",
+          "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
+          "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
+          "https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not",
+          "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
+        ],
         "topics": [
-          "MAS agent protocol puts delegated authority at the center",
-          "Cross-bank scam detection depends on governed data sharing",
-          "Agent payment proposals emphasize controls before wider access"
+          "Agent access terms underline authorization and liability questions"
         ]
       }
     ],
     "covered_urls": [
-      "https://aimmediahouse.com/banking/ai-agents-are-logging-into-bank-accounts-fraud-vendors-are-watching",
       "https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485",
       "https://asianbankingandfinance.net/cards-payments/exclusive/mastercard-urges-controls-build-trust-in-ai-agents",
       "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
@@ -123,12 +105,10 @@
       "https://asianbankingandfinance.net/news/welab-bank-names-ernest-leung-chief-executive",
       "https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments",
       "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
-      "https://bfsi.economictimes.indiatimes.com/articles/sbi-invites-applications-for-chief-ai-officer/135805543",
       "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
-      "https://businesstimes.com.sg/companies-markets/banking-finance/german-regulator-fines-deutsche-bank-us8-9-million-over-postbank-customer-migration-issues",
       "https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks",
-      "https://businesstimes.com.sg/companies-markets/fight-ai-ai-singapore-banks-warn-against-third-party-ai-agents-observers-flag-liability-risk",
       "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
+      "https://decrypt.co/383677/citi-customers-responsible-ai-banking-agents-rogue-hack",
       "https://disruptionbanking.com/2026/11/16/dbs-and-jpmorgan-link-tokenized-deposit-networks-for-24-7-dollar-transfers",
       "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
       "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
@@ -145,37 +125,27 @@
       "https://fintechnews.sg/141826/payments/aci-worldwide-interim-ceo-robert-leibrock",
       "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
       "https://fintechnews.sg/141909/payments/nets-ai-agent-payments",
+      "https://fintechnews.sg/142031/blockchain/dbs-digital-vouchers-paylah",
       "https://fool.com/investing/2026/11/14/jamie-dimon-just-said-5-words-blocking-outside-ai",
       "https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory",
-      "https://hapakenya.com/2026/11/13/standard-chartered-uganda-completes-sale-of-wealth-retail-banking-unit-to-absa",
       "https://hi-tech.ua/en/french-bank-drained-of-e100m-in-potential-ai-powered-heist",
       "https://hubbis.com/news/j-p-morgan-private-bank-names-cameron-chui-head-of-equity-strategy-for-asia",
       "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318",
+      "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
       "https://kpmg.com/de/en/insights/data-and-technology/new-ways-banking-magazine-regulation-ai-cyber-risks.html",
+      "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
       "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176",
       "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
       "https://philstar.com/business/2026/11/15/2570124/security-bank-trains-more-staff-develops-ai-agents",
       "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio",
       "https://qa-financial.com/hsbc-puts-ai-testing-at-heart-of-new-hong-kong-institute",
-      "https://straitstimes.com/business/banks-in-singapore-offer-alternative-contact-channels-amid-microsoft-outage-abs",
       "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
-      "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest"
+      "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
+      "https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not",
+      "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
     ],
     "covered_topics": [
-      "Agent authority is a control-design question for wealth services",
-      "Agent payment proposals emphasize controls before wider access",
-      "Agentic payments depend on bounded permissions and ecosystem acceptance",
-      "Competitors are adding specialist capacity and client access points",
-      "Competitors are extending digital-asset payment options",
-      "Cross-bank scam detection depends on governed data sharing",
-      "External AI-agent access depends on bounded authority and traceability",
-      "HSBC’s planned institute puts agent authority into the testing agenda",
-      "MAS agent protocol puts delegated authority at the center",
-      "Recent outages leave the cause unresolved",
-      "Singapore’s AI-agent payment tests centre on identity and authority",
-      "Staff AI enablement is paired with human accountability at Security Bank",
-      "Tokenized dollar transfers are live, with a disclosed legacy-account gap",
-      "Visa’s agent-payment programme pairs partner readiness with fraud tooling"
+      "Agent access terms underline authorization and liability questions"
     ]
   }
 }
