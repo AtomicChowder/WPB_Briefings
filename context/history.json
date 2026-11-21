@@ -1,18 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-21",
+    "last_updated": "2026-11-22",
     "daily": [
-      {
-        "date": "2026-11-15",
-        "urls": [
-          "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
-          "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
-          "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
-          "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
-          "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-16",
         "urls": [
@@ -92,10 +81,20 @@
           "https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not",
           "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-22",
+        "urls": [
+          "https://disruptionbanking.com/2026/11/20/why-did-an-hsbc-whistleblower-urge-a-probe-of-correspondent-banking-after-the-deutsche-bank-leak",
+          "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
+          "https://hubbis.com/news/singapore-assets-under-management-reach-sgd7-trillion-minister-of-state-alvin-tan-tells-hsbc-wealth-summit",
+          "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
+          "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19"
+        ],
         "topics": [
-          "Agent access terms underline authorization and liability questions",
-          "HSBC links Asian wealth growth and AI to its strategy",
-          "MAS sets out agent verification and tokenised collateral plans"
+          "HSBC’s deposit mix figures add context to wealth and funding choices",
+          "Ebury’s proposed Singapore expansion depends on licensing and operating readiness"
         ]
       }
     ],
@@ -106,17 +105,13 @@
       "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
       "https://asianbankingandfinance.net/news/welab-bank-names-ernest-leung-chief-executive",
       "https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments",
-      "https://bfsi.economictimes.indiatimes.com/articles/fino-payments-bank-gets-rbi-nod-to-appoint-pratap-singh-as-md-ceo-for-three-years/135787410",
       "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
       "https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks",
-      "https://cxodigitalpulse.com/canara-hsbc-life-insurance-announces-the-elevation-of-mr-indu-swaroop-as-its-chief-financial-officer",
       "https://decrypt.co/383677/citi-customers-responsible-ai-banking-agents-rogue-hack",
       "https://disruptionbanking.com/2026/11/16/dbs-and-jpmorgan-link-tokenized-deposit-networks-for-24-7-dollar-transfers",
-      "https://ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
+      "https://disruptionbanking.com/2026/11/20/why-did-an-hsbc-whistleblower-urge-a-probe-of-correspondent-banking-after-the-deutsche-bank-leak",
       "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
       "https://familywealthreport.com/article.php/HSBC-Private-Bank-Names-West-Region-Head",
-      "https://fintechnews.sg/141119/ai/ocbc-velocity-smart-assist-ai-business-banking",
-      "https://fintechnews.sg/141171/fintech/hsbc-singapore-merger",
       "https://fintechnews.sg/141238/ai/chatgpt-wallet",
       "https://fintechnews.sg/141368/payments/citi-ultima-world-legend-mastercard-singapore",
       "https://fintechnews.sg/141489/blockchain/dbs-circle-usdc-institutional-access",
@@ -128,10 +123,12 @@
       "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
       "https://fintechnews.sg/141909/payments/nets-ai-agent-payments",
       "https://fintechnews.sg/142031/blockchain/dbs-digital-vouchers-paylah",
+      "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
       "https://fool.com/investing/2026/11/14/jamie-dimon-just-said-5-words-blocking-outside-ai",
       "https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory",
       "https://hi-tech.ua/en/french-bank-drained-of-e100m-in-potential-ai-powered-heist",
       "https://hubbis.com/news/j-p-morgan-private-bank-names-cameron-chui-head-of-equity-strategy-for-asia",
+      "https://hubbis.com/news/singapore-assets-under-management-reach-sgd7-trillion-minister-of-state-alvin-tan-tells-hsbc-wealth-summit",
       "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318",
       "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
       "https://kpmg.com/de/en/insights/data-and-technology/new-ways-banking-magazine-regulation-ai-cyber-risks.html",
@@ -147,7 +144,8 @@
       "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
     ],
     "covered_topics": [
-      "Agent access terms underline authorization and liability questions"
+      "Ebury’s proposed Singapore expansion depends on licensing and operating readiness",
+      "HSBC’s deposit mix figures add context to wealth and funding choices"
     ]
   }
 }
