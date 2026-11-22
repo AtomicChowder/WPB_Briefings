@@ -1,18 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-22",
+    "last_updated": "2026-11-23",
     "daily": [
-      {
-        "date": "2026-11-16",
-        "urls": [
-          "https://asianbankingandfinance.net/cards-payments/exclusive/mastercard-urges-controls-build-trust-in-ai-agents",
-          "https://fool.com/investing/2026/11/14/jamie-dimon-just-said-5-words-blocking-outside-ai",
-          "https://hi-tech.ua/en/french-bank-drained-of-e100m-in-potential-ai-powered-heist",
-          "https://kpmg.com/de/en/insights/data-and-technology/new-ways-banking-magazine-regulation-ai-cyber-risks.html",
-          "https://philstar.com/business/2026/11/15/2570124/security-bank-trains-more-staff-develops-ai-agents"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-17",
         "urls": [
@@ -92,13 +81,25 @@
           "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
           "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-23",
+        "urls": [
+          "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
+          "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
+          "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
+          "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
+          "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner"
+        ],
         "topics": [
-          "HSBC’s deposit mix figures add context to wealth and funding choices",
-          "Ebury’s proposed Singapore expansion depends on licensing and operating readiness"
+          "HSBC links stablecoin access to a tokenised wealth fund unit",
+          "Deutsche Bank presents process redesign alongside cost targets"
         ]
       }
     ],
     "covered_urls": [
+      "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
       "https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485",
       "https://asianbankingandfinance.net/cards-payments/exclusive/mastercard-urges-controls-build-trust-in-ai-agents",
       "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
@@ -124,28 +125,28 @@
       "https://fintechnews.sg/141909/payments/nets-ai-agent-payments",
       "https://fintechnews.sg/142031/blockchain/dbs-digital-vouchers-paylah",
       "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
-      "https://fool.com/investing/2026/11/14/jamie-dimon-just-said-5-words-blocking-outside-ai",
       "https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory",
-      "https://hi-tech.ua/en/french-bank-drained-of-e100m-in-potential-ai-powered-heist",
+      "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
+      "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
       "https://hubbis.com/news/j-p-morgan-private-bank-names-cameron-chui-head-of-equity-strategy-for-asia",
       "https://hubbis.com/news/singapore-assets-under-management-reach-sgd7-trillion-minister-of-state-alvin-tan-tells-hsbc-wealth-summit",
       "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318",
       "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
-      "https://kpmg.com/de/en/insights/data-and-technology/new-ways-banking-magazine-regulation-ai-cyber-risks.html",
       "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
       "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176",
       "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
-      "https://philstar.com/business/2026/11/15/2570124/security-bank-trains-more-staff-develops-ai-agents",
       "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio",
       "https://qa-financial.com/hsbc-puts-ai-testing-at-heart-of-new-hong-kong-institute",
       "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
       "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
       "https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not",
+      "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
+      "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner",
       "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
     ],
     "covered_topics": [
-      "Ebury’s proposed Singapore expansion depends on licensing and operating readiness",
-      "HSBC’s deposit mix figures add context to wealth and funding choices"
+      "Deutsche Bank presents process redesign alongside cost targets",
+      "HSBC links stablecoin access to a tokenised wealth fund unit"
     ]
   }
 }

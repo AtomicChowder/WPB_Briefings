@@ -3,194 +3,188 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Sunday, 22 November 2026",
-  "date_str": "2026-11-22",
-  "generated_at": "2026-11-22T07:00:03.260954+08:00",
+  "briefing_date": "Monday, 23 November 2026",
+  "date_str": "2026-11-23",
+  "generated_at": "2026-11-23T07:00:02.931584+08:00",
   "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC’s deposit mix figures add context to wealth and funding choices",
-      "context_html": "Elhedery said Hong Kong term deposits rose to 38% of the deposit mix from 36%, largely on new deposits, while he also described Asian wealth as an investment priority. A useful change-execution question is how client journeys and service capacity would accommodate customers moving between deposit and wealth needs. The article does not specify the period for the deposit figures or detail any resulting internal work.",
+      "headline": "HSBC links stablecoin access to a tokenised wealth fund unit",
+      "context_html": "HSBC has opened an in-app route for eligible Hong Kong customers to use RedCoin to subscribe to a tokenised unit class of an existing money market fund. A delivery question is how eligibility, wallet funding, fund subscription and custody controls operate end to end, including exception handling when steps do not complete together. The source reports the launch and service roles but provides no adoption, operational performance or realised customer-benefit data.",
       "source_links": [
         {
-          "url": "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
-          "title": "HSBC CEO Sees Deposit Growth and Asian Wealth as Bank Bets on AI"
+          "url": "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
+          "title": "HSBC Expands RedCoin into Wealth Management with Tokenised Fund Access in Hong Kong"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Ebury’s proposed Singapore expansion depends on licensing and operating readiness",
-      "context_html": "Ebury has in-principle approvals for expanded payment services and corporate FX hedging, subject to MAS conditions and final approval expected in the first half of 2027. If those services proceed, local compliance and operations staffing will be dependencies alongside product build and client onboarding. The report describes planned capabilities, not a currently available service.",
+      "headline": "Deutsche Bank presents process redesign alongside cost targets",
+      "context_html": "Deutsche Bank’s CEO cited process investment and a German mid-market credit process that reportedly cut average approval time from 30 days to under one day without changing underwriting standards. For change execution, the comparison raises a useful criterion: whether faster decisions come from removing hand-offs and redesigning workflow while preserving documented controls, rather than simply increasing automation. This is a management account without independently reported outcomes, and the credit example is Germany-specific.",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
-          "title": "Ebury Secures Two In-Principle Approvals from MAS for Singapore Expansion"
+          "url": "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
+          "title": "Deutsche Bank Sees 2026 Revenue Above €33 Billion, Reaffirms Cost Target"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "HSBC News": [
+    "On Adam's Desk": [
       {
-        "id": "27ade76f8f7d000c6992",
-        "title": "HSBC CEO Sees Deposit Growth and Asian Wealth as Bank Bets on AI",
-        "url": "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
-        "source": "MarketBeat (search dated 2026-11-20)",
-        "published_at": "2026-11-20T01:16:49+00:00",
-        "summary": "HSBC CEO Georges Elhedery discussed deposit competition, Asian wealth investment, AI and organizational simplification at a JPMorgan conference. The report adds figures including Hong Kong deposits growing about 10% ($68 billion) and term deposits rising to 38% of the deposit mix from 36%; these details sharpen the competitive and delivery context, but the article does not specify the period for several deposit and lending figures or describe implementation plans.",
+        "id": "7380c01468d88b5f7170",
+        "title": "HSBC Expands RedCoin into Wealth Management with Tokenised Fund Access in Hong Kong",
+        "url": "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
+        "source": "Hubbis (search dated 2026-11-22)",
+        "published_at": "2026-11-22T21:13:16+00:00",
+        "summary": "HSBC made its Hong Kong dollar-denominated RedCoin available in the HSBC HK Mobile Banking App for eligible customers to subscribe to a tokenised unit class of an existing Hong Kong dollar money market fund. Customers can fund the subscription with RedCoin, with a reported minimum of HKD100; HSBC Securities Services tokenises the units and HSBC Digital Assets Custody safeguards the stablecoin and units. The launch creates a direct wealth-delivery use case spanning app access, stablecoin funding, fund servicing and custody. Operationally, the product depends on coordinated eligibility, wallet, subscription and safekeeping controls; the article does not report customer uptake or realised settlement benefits.",
         "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 7
-      }
-    ],
-    "Private Banking & Wealth": [
-      {
-        "id": "32744c8a5f6ca56fa286",
-        "title": "Singapore Assets Under Management Reach SGD7 Trillion, Minister of State Alvin Tan Tells HSBC Wealth Summit",
-        "url": "https://hubbis.com/news/singapore-assets-under-management-reach-sgd7-trillion-minister-of-state-alvin-tan-tells-hsbc-wealth-summit",
-        "source": "Hubbis (search dated 2026-11-20)",
-        "published_at": "2026-11-20T00:43:06+00:00",
-        "summary": "At the inaugural HSBC Singapore Wealth Investment Summit, Minister of State Alvin Tan said Singapore assets under management had reached SGD7 trillion and private-banking client assets had grown about 50% over five years. He also highlighted trust, innovation and philanthropy as priorities for the wealth centre and said AI could reduce time spent gathering information and preparing investment recommendations; this signals a public policy and market context for wealth delivery, not a specific HSBC commitment or implementation plan.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
         "noise_level": 2,
         "is_update": false,
-        "user_relevance": 7
-      }
-    ],
-    "Regulatory & Markets": [
-      {
-        "id": "2f2177ca1317a76f5e4d",
-        "title": "Why Did an HSBC Whistleblower Urge a Probe of Correspondent Banking After the Deutsche Bank Leak?",
-        "url": "https://disruptionbanking.com/2026/11/20/why-did-an-hsbc-whistleblower-urge-a-probe-of-correspondent-banking-after-the-deutsche-bank-leak",
-        "source": "Disruption Banking",
-        "published_at": "2026-11-20T13:14:09+00:00",
-        "summary": "A former HSBC compliance officer, Everett Stern, urged US officials to investigate correspondent-banking flows after the publication of Deutsche Bank documents, alleging that HSBC may have carried some related funds through its correspondent division in 2010. The report describes allegations and historical material, not a finding against HSBC; the practical control question is how institutions maintain visibility across multi-bank payment chains, while the article does not establish HSBC’s involvement in the activity described.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 7,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "is_update": false,
-        "user_relevance": 6
+        "user_relevance": 8
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "15eb9273fa2477147868",
-        "title": "Ebury Secures Two In-Principle Approvals from MAS for Singapore Expansion",
-        "url": "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-20T09:19:55+00:00",
-        "summary": "Ebury received two in-principle MAS approvals for an expanded Singapore payment scope and a Capital Markets Services licence, subject to final approval expected in the first half of 2027. The proposed permissions would support corporate FX hedging, multi-currency e-wallets and virtual collection accounts; any launch would depend on satisfying MAS conditions and building local compliance and operations capacity.",
+        "id": "6331b8961a26a6c7d6b8",
+        "title": "Deutsche Bank Sees 2026 Revenue Above €33 Billion, Reaffirms Cost Target",
+        "url": "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
+        "source": "TradingView",
+        "published_at": "2026-11-21T16:12:07+00:00",
+        "summary": "Deutsche Bank CEO Christian Sewing said the bank expects 2026 revenue above €33 billion, reaffirmed its €21.3 billion cost guidance and expressed confidence in a return on tangible equity above 13% in 2028. He cited process investment, automation opportunities in compliance and financial crime, and a German mid-market credit process said to reduce average approval time from 30 days to under one day without changing underwriting standards. He also reported stronger-than-expected private-bank investment inflows and plans to hire 200–250 wealth managers globally. For change leaders, this is a competitor example linking process redesign and cost work with faster credit decisions; the report provides management statements rather than independently verified implementation outcomes, and gives no APAC-specific detail.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
-        "noise_level": 2,
+        "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
+      },
+      {
+        "id": "07a50b3c9bd977f1c78b",
+        "title": "NatWest stock: Private Banking spotlight set for November 25 - ad-hoc-news.de",
+        "url": "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
+        "source": "ad-hoc-news.de",
+        "published_at": "2026-11-22T17:53:42+01:00",
+        "summary": "NatWest scheduled a Private Banking and Wealth Management Investor Spotlight for 25 November 2026. The article cites Q3 net AUM inflows of GBP1.0 billion and says integration of Evelyn Partners was progressing, alongside recent Targeted Support regulatory approval and a Digital Investing and Financial Planning leadership appointment. For competitor analysis, the event may provide further information on integration and wealth growth, but the article's expectations about what investors will focus on are its own interpretation, not confirmed agenda details.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "0d7100f9cf3cd35650b6",
+        "title": "Standard Chartered Becomes F1 Global Partner - Wealth Briefing",
+        "url": "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner",
+        "source": "Wealth Briefing (search dated 2026-11-22)",
+        "published_at": "2026-11-22T12:28:32+00:00",
+        "summary": "Standard Chartered announced it will become a global Formula 1 partner in 2027, extending its sports sponsorship activity; it will also partner F1 Grid Kids and continue supporting F1 ACADEMY. The report describes a brand and relationship platform, not a change to banking or wealth services, so any competitive implication for wealth delivery is limited.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 3
       }
     ],
     "AI & Technology": [
       {
-        "id": "3c1db5cc9476e3c0dde6",
-        "title": "MAS and SFA Name 11 Winners of 2026 FinTech Awards at Singapore FinTech Festival",
-        "url": "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
-        "source": "INDiplomacy (search dated 2026-11-20)",
-        "published_at": "2026-11-20T08:40:32+00:00",
-        "summary": "MAS and the Singapore FinTech Association announced 11 winners across the 2026 Global FinTech Hackcelerator and SFF FinTech Excellence Awards. This report adds that the Hackcelerator drew 195 applications from 52 jurisdictions; the awards offer examples for technology and compliance delivery, but recognition and possible pilot opportunities do not establish broad deployment or proven outcomes.",
+        "id": "13e86f72cbe2bf8a5c75",
+        "title": "Coinbase CEO Brian Armstrong Reveals AI Agent Management Structure With Multiple Layers of Autonomous Agents",
+        "url": "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
+        "source": "Hokanews (search dated 2026-11-22)",
+        "published_at": "2026-11-21T20:06:00-08:00",
+        "summary": "Coinbase CEO Brian Armstrong described a layered team of AI agents, with lead agents directing specialist sub-agents under a central coordinator. For banks, this is an example of executive use of agent orchestration, but the report does not establish its reliability, business outcomes or applicability to regulated banking processes.",
         "category": "AI & Technology",
         "hsbc_relevancy": 3,
-        "adam_rel": 5,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 5
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "27ade76f8f7d000c6992",
-        "title": "HSBC CEO Sees Deposit Growth and Asian Wealth as Bank Bets on AI",
-        "url": "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
-        "source": "MarketBeat (search dated 2026-11-20)",
-        "published_at": "2026-11-20T01:16:49+00:00",
-        "summary": "HSBC CEO Georges Elhedery discussed deposit competition, Asian wealth investment, AI and organizational simplification at a JPMorgan conference. The report adds figures including Hong Kong deposits growing about 10% ($68 billion) and term deposits rising to 38% of the deposit mix from 36%; these details sharpen the competitive and delivery context, but the article does not specify the period for several deposit and lending figures or describe implementation plans.",
+        "id": "7380c01468d88b5f7170",
+        "title": "HSBC Expands RedCoin into Wealth Management with Tokenised Fund Access in Hong Kong",
+        "url": "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
+        "source": "Hubbis (search dated 2026-11-22)",
+        "published_at": "2026-11-22T21:13:16+00:00",
+        "summary": "HSBC made its Hong Kong dollar-denominated RedCoin available in the HSBC HK Mobile Banking App for eligible customers to subscribe to a tokenised unit class of an existing Hong Kong dollar money market fund. Customers can fund the subscription with RedCoin, with a reported minimum of HKD100; HSBC Securities Services tokenises the units and HSBC Digital Assets Custody safeguards the stablecoin and units. The launch creates a direct wealth-delivery use case spanning app access, stablecoin funding, fund servicing and custody. Operationally, the product depends on coordinated eligibility, wallet, subscription and safekeeping controls; the article does not report customer uptake or realised settlement benefits.",
         "category": "HSBC News",
-        "hsbc_relevancy": 8,
-        "adam_rel": 7,
-        "noise_level": 2,
-        "is_update": true,
-        "user_relevance": 7
-      },
-      {
-        "id": "32744c8a5f6ca56fa286",
-        "title": "Singapore Assets Under Management Reach SGD7 Trillion, Minister of State Alvin Tan Tells HSBC Wealth Summit",
-        "url": "https://hubbis.com/news/singapore-assets-under-management-reach-sgd7-trillion-minister-of-state-alvin-tan-tells-hsbc-wealth-summit",
-        "source": "Hubbis (search dated 2026-11-20)",
-        "published_at": "2026-11-20T00:43:06+00:00",
-        "summary": "At the inaugural HSBC Singapore Wealth Investment Summit, Minister of State Alvin Tan said Singapore assets under management had reached SGD7 trillion and private-banking client assets had grown about 50% over five years. He also highlighted trust, innovation and philanthropy as priorities for the wealth centre and said AI could reduce time spent gathering information and preparing investment recommendations; this signals a public policy and market context for wealth delivery, not a specific HSBC commitment or implementation plan.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 7,
-        "adam_rel": 7,
+        "hsbc_relevancy": 9,
+        "adam_rel": 8,
         "noise_level": 2,
         "is_update": false,
-        "user_relevance": 7
+        "user_relevance": 8
       },
       {
-        "id": "2f2177ca1317a76f5e4d",
-        "title": "Why Did an HSBC Whistleblower Urge a Probe of Correspondent Banking After the Deutsche Bank Leak?",
-        "url": "https://disruptionbanking.com/2026/11/20/why-did-an-hsbc-whistleblower-urge-a-probe-of-correspondent-banking-after-the-deutsche-bank-leak",
-        "source": "Disruption Banking",
-        "published_at": "2026-11-20T13:14:09+00:00",
-        "summary": "A former HSBC compliance officer, Everett Stern, urged US officials to investigate correspondent-banking flows after the publication of Deutsche Bank documents, alleging that HSBC may have carried some related funds through its correspondent division in 2010. The report describes allegations and historical material, not a finding against HSBC; the practical control question is how institutions maintain visibility across multi-bank payment chains, while the article does not establish HSBC’s involvement in the activity described.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 7,
-        "adam_rel": 6,
-        "noise_level": 2,
-        "is_update": false,
-        "user_relevance": 6
-      },
-      {
-        "id": "15eb9273fa2477147868",
-        "title": "Ebury Secures Two In-Principle Approvals from MAS for Singapore Expansion",
-        "url": "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-20T09:19:55+00:00",
-        "summary": "Ebury received two in-principle MAS approvals for an expanded Singapore payment scope and a Capital Markets Services licence, subject to final approval expected in the first half of 2027. The proposed permissions would support corporate FX hedging, multi-currency e-wallets and virtual collection accounts; any launch would depend on satisfying MAS conditions and building local compliance and operations capacity.",
+        "id": "6331b8961a26a6c7d6b8",
+        "title": "Deutsche Bank Sees 2026 Revenue Above €33 Billion, Reaffirms Cost Target",
+        "url": "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
+        "source": "TradingView",
+        "published_at": "2026-11-21T16:12:07+00:00",
+        "summary": "Deutsche Bank CEO Christian Sewing said the bank expects 2026 revenue above €33 billion, reaffirmed its €21.3 billion cost guidance and expressed confidence in a return on tangible equity above 13% in 2028. He cited process investment, automation opportunities in compliance and financial crime, and a German mid-market credit process said to reduce average approval time from 30 days to under one day without changing underwriting standards. He also reported stronger-than-expected private-bank investment inflows and plans to hire 200–250 wealth managers globally. For change leaders, this is a competitor example linking process redesign and cost work with faster credit decisions; the report provides management statements rather than independently verified implementation outcomes, and gives no APAC-specific detail.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
-        "noise_level": 2,
+        "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "3c1db5cc9476e3c0dde6",
-        "title": "MAS and SFA Name 11 Winners of 2026 FinTech Awards at Singapore FinTech Festival",
-        "url": "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
-        "source": "INDiplomacy (search dated 2026-11-20)",
-        "published_at": "2026-11-20T08:40:32+00:00",
-        "summary": "MAS and the Singapore FinTech Association announced 11 winners across the 2026 Global FinTech Hackcelerator and SFF FinTech Excellence Awards. This report adds that the Hackcelerator drew 195 applications from 52 jurisdictions; the awards offer examples for technology and compliance delivery, but recognition and possible pilot opportunities do not establish broad deployment or proven outcomes.",
+        "id": "13e86f72cbe2bf8a5c75",
+        "title": "Coinbase CEO Brian Armstrong Reveals AI Agent Management Structure With Multiple Layers of Autonomous Agents",
+        "url": "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
+        "source": "Hokanews (search dated 2026-11-22)",
+        "published_at": "2026-11-21T20:06:00-08:00",
+        "summary": "Coinbase CEO Brian Armstrong described a layered team of AI agents, with lead agents directing specialist sub-agents under a central coordinator. For banks, this is an example of executive use of agent orchestration, but the report does not establish its reliability, business outcomes or applicability to regulated banking processes.",
         "category": "AI & Technology",
         "hsbc_relevancy": 3,
+        "adam_rel": 4,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 4
+      },
+      {
+        "id": "07a50b3c9bd977f1c78b",
+        "title": "NatWest stock: Private Banking spotlight set for November 25 - ad-hoc-news.de",
+        "url": "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
+        "source": "ad-hoc-news.de",
+        "published_at": "2026-11-22T17:53:42+01:00",
+        "summary": "NatWest scheduled a Private Banking and Wealth Management Investor Spotlight for 25 November 2026. The article cites Q3 net AUM inflows of GBP1.0 billion and says integration of Evelyn Partners was progressing, alongside recent Targeted Support regulatory approval and a Digital Investing and Financial Planning leadership appointment. For competitor analysis, the event may provide further information on integration and wealth growth, but the article's expectations about what investors will focus on are its own interpretation, not confirmed agenda details.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 5,
         "adam_rel": 5,
-        "noise_level": 2,
-        "is_update": true,
+        "noise_level": 1,
+        "is_update": false,
         "user_relevance": 5
+      },
+      {
+        "id": "0d7100f9cf3cd35650b6",
+        "title": "Standard Chartered Becomes F1 Global Partner - Wealth Briefing",
+        "url": "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner",
+        "source": "Wealth Briefing (search dated 2026-11-22)",
+        "published_at": "2026-11-22T12:28:32+00:00",
+        "summary": "Standard Chartered announced it will become a global Formula 1 partner in 2027, extending its sports sponsorship activity; it will also partner F1 Grid Kids and continue supporting F1 ACADEMY. The report describes a brand and relationship platform, not a change to banking or wealth services, so any competitive implication for wealth delivery is limited.",
+        "category": "Competitor Intelligence",
+        "hsbc_relevancy": 3,
+        "adam_rel": 3,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 3
       }
     ],
     "categories": {
-      "HSBC News": "#dc2626",
-      "Private Banking & Wealth": "#059669",
-      "Regulatory & Markets": "#d97706",
+      "On Adam's Desk": "#be123c",
       "Competitor Intelligence": "#0891b2",
       "AI & Technology": "#6366f1"
     }
