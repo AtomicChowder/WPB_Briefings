@@ -1,18 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-23",
+    "last_updated": "2026-11-24",
     "daily": [
-      {
-        "date": "2026-11-17",
-        "urls": [
-          "https://asianbankingandfinance.net/cards-payments/exclusive/mastercard-urges-controls-build-trust-in-ai-agents",
-          "https://asianbankingandfinance.net/news/welab-bank-names-ernest-leung-chief-executive",
-          "https://disruptionbanking.com/2026/11/16/dbs-and-jpmorgan-link-tokenized-deposit-networks-for-24-7-dollar-transfers",
-          "https://fintechnews.sg/141238/ai/chatgpt-wallet",
-          "https://qa-financial.com/hsbc-puts-ai-testing-at-heart-of-new-hong-kong-institute"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-18",
         "urls": [
@@ -92,25 +81,38 @@
           "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
           "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-24",
+        "urls": [
+          "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
+          "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+          "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
+          "https://ndtvprofit.com/markets/ubs-overweight-on-indian-banks-hdfc-bank-icici-bank-axis-bank-remain-top-picks-12363914",
+          "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
+          "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
+          "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--"
+        ],
         "topics": [
-          "HSBC links stablecoin access to a tokenised wealth fund unit",
-          "Deutsche Bank presents process redesign alongside cost targets"
+          "US-bank agent controls emphasise containment and continuity",
+          "ECB sets conditions for DLT collateral eligibility",
+          "Standard Chartered describes a targeted India wealth strategy"
         ]
       }
     ],
     "covered_urls": [
       "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
       "https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485",
-      "https://asianbankingandfinance.net/cards-payments/exclusive/mastercard-urges-controls-build-trust-in-ai-agents",
       "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
+      "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
       "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
-      "https://asianbankingandfinance.net/news/welab-bank-names-ernest-leung-chief-executive",
       "https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments",
       "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
       "https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks",
       "https://decrypt.co/383677/citi-customers-responsible-ai-banking-agents-rogue-hack",
-      "https://disruptionbanking.com/2026/11/16/dbs-and-jpmorgan-link-tokenized-deposit-networks-for-24-7-dollar-transfers",
       "https://disruptionbanking.com/2026/11/20/why-did-an-hsbc-whistleblower-urge-a-probe-of-correspondent-banking-after-the-deutsche-bank-leak",
+      "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
       "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
       "https://familywealthreport.com/article.php/HSBC-Private-Bank-Names-West-Region-Head",
       "https://fintechnews.sg/141238/ai/chatgpt-wallet",
@@ -132,21 +134,26 @@
       "https://hubbis.com/news/singapore-assets-under-management-reach-sgd7-trillion-minister-of-state-alvin-tan-tells-hsbc-wealth-summit",
       "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318",
       "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
+      "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
       "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
       "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176",
+      "https://ndtvprofit.com/markets/ubs-overweight-on-indian-banks-hdfc-bank-icici-bank-axis-bank-remain-top-picks-12363914",
       "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
       "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio",
-      "https://qa-financial.com/hsbc-puts-ai-testing-at-heart-of-new-hong-kong-institute",
       "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
       "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
       "https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not",
+      "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
+      "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
       "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
       "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner",
+      "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--",
       "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
     ],
     "covered_topics": [
-      "Deutsche Bank presents process redesign alongside cost targets",
-      "HSBC links stablecoin access to a tokenised wealth fund unit"
+      "ECB sets conditions for DLT collateral eligibility",
+      "Standard Chartered describes a targeted India wealth strategy",
+      "US-bank agent controls emphasise containment and continuity"
     ]
   }
 }

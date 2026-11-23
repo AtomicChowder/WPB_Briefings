@@ -3,60 +3,71 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Monday, 23 November 2026",
-  "date_str": "2026-11-23",
-  "generated_at": "2026-11-23T07:00:02.931584+08:00",
-  "total_articles": 5,
+  "briefing_date": "Tuesday, 24 November 2026",
+  "date_str": "2026-11-24",
+  "generated_at": "2026-11-24T07:00:02.757008+08:00",
+  "total_articles": 7,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "HSBC links stablecoin access to a tokenised wealth fund unit",
-      "context_html": "HSBC has opened an in-app route for eligible Hong Kong customers to use RedCoin to subscribe to a tokenised unit class of an existing money market fund. A delivery question is how eligibility, wallet funding, fund subscription and custody controls operate end to end, including exception handling when steps do not complete together. The source reports the launch and service roles but provides no adoption, operational performance or realised customer-benefit data.",
+      "headline": "US-bank agent controls emphasise containment and continuity",
+      "context_html": "The report says some US banks are tightening agent permissions, preserving activity records, reviewing kill switches and preparing backup processes, while reporting no bank incidents of this kind to date. A practical change criterion is whether a shutdown can preserve evidence and hand work to a tested fallback for functions such as loan processing or financial-crime review. The detail comes largely from unnamed sources and does not establish how widely or effectively the controls are in use.",
       "source_links": [
         {
-          "url": "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
-          "title": "HSBC Expands RedCoin into Wealth Management with Tokenised Fund Access in Hong Kong"
+          "url": "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
+          "title": "Some US banks tighten AI-agent controls on concern about models escaping safeguards"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Deutsche Bank presents process redesign alongside cost targets",
-      "context_html": "Deutsche Bank’s CEO cited process investment and a German mid-market credit process that reportedly cut average approval time from 30 days to under one day without changing underwriting standards. For change execution, the comparison raises a useful criterion: whether faster decisions come from removing hand-offs and redesigning workflow while preserving documented controls, rather than simply increasing automation. This is a management account without independently reported outcomes, and the credit example is Germany-specific.",
+      "headline": "ECB sets conditions for DLT collateral eligibility",
+      "context_html": "The ECB approved eligibility for certain DLT-issued assets subject to standard collateral criteria and added operational requirements, with details expected in spring 2027 and implementation planned for June 2027. For banking operations, a key delivery dependency is demonstrating a compliant route through an eligible CSD and TARGET2-Securities, alongside legal certainty and safe handling of critical functions. This is a European collateral-framework development; the article does not indicate direct APAC implementation requirements.",
       "source_links": [
         {
-          "url": "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
-          "title": "Deutsche Bank Sees 2026 Revenue Above €33 Billion, Reaffirms Cost Target"
+          "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+          "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral"
+        }
+      ],
+      "is_update": false
+    },
+    {
+      "headline": "Standard Chartered describes a targeted India wealth strategy",
+      "context_html": "Standard Chartered India’s CEO said the bank is deepening relationships with target retail clients and continuing to invest in wealth offerings. For wealth delivery, the stated segmentation implies a capacity trade-off between serving a fuller range of needs for selected clients and maintaining relationships outside that target; the interview gives no operational detail or evidence of outcomes. These are management statements about India, not evidence of a region-wide change.",
+      "source_links": [
+        {
+          "url": "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
+          "title": "Every Indian today is a global Indian: PD Singh of Standard Chartered Bank"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "On Adam's Desk": [
+    "AI & Technology": [
       {
-        "id": "7380c01468d88b5f7170",
-        "title": "HSBC Expands RedCoin into Wealth Management with Tokenised Fund Access in Hong Kong",
-        "url": "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
-        "source": "Hubbis (search dated 2026-11-22)",
-        "published_at": "2026-11-22T21:13:16+00:00",
-        "summary": "HSBC made its Hong Kong dollar-denominated RedCoin available in the HSBC HK Mobile Banking App for eligible customers to subscribe to a tokenised unit class of an existing Hong Kong dollar money market fund. Customers can fund the subscription with RedCoin, with a reported minimum of HKD100; HSBC Securities Services tokenises the units and HSBC Digital Assets Custody safeguards the stablecoin and units. The launch creates a direct wealth-delivery use case spanning app access, stablecoin funding, fund servicing and custody. Operationally, the product depends on coordinated eligibility, wallet, subscription and safekeeping controls; the article does not report customer uptake or realised settlement benefits.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 9,
+        "id": "54b0d38748912245f449",
+        "title": "Some US banks tighten AI-agent controls on concern about models escaping safeguards",
+        "url": "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
+        "source": "The Economic Times",
+        "published_at": "2026-11-23T15:35:00+05:30",
+        "summary": "The Economic Times reports, citing banking and industry sources, that several US banks are tightening controls on internal AI agents, including restricting system access and credentials, isolating test environments, recording agent actions, reviewing kill switches and preparing backup processes. Sources describe these measures as responses to concerns about models bypassing safeguards; the report says no banks had yet been affected by such incidents. For banking operations, the measures highlight dependencies between agent permissions, auditability and continuity when an agent is stopped; the article is based substantially on unnamed sources and does not establish the prevalence or effectiveness of the controls.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "noise_level": 2,
+        "noise_level": 3,
         "is_update": false,
         "user_relevance": 8
       }
     ],
     "Competitor Intelligence": [
       {
-        "id": "6331b8961a26a6c7d6b8",
-        "title": "Deutsche Bank Sees 2026 Revenue Above €33 Billion, Reaffirms Cost Target",
-        "url": "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
-        "source": "TradingView",
-        "published_at": "2026-11-21T16:12:07+00:00",
-        "summary": "Deutsche Bank CEO Christian Sewing said the bank expects 2026 revenue above €33 billion, reaffirmed its €21.3 billion cost guidance and expressed confidence in a return on tangible equity above 13% in 2028. He cited process investment, automation opportunities in compliance and financial crime, and a German mid-market credit process said to reduce average approval time from 30 days to under one day without changing underwriting standards. He also reported stronger-than-expected private-bank investment inflows and plans to hire 200–250 wealth managers globally. For change leaders, this is a competitor example linking process redesign and cost work with faster credit decisions; the report provides management statements rather than independently verified implementation outcomes, and gives no APAC-specific detail.",
+        "id": "273663a24adff5f5c4a1",
+        "title": "SBI Chief AI Officer: Bank Offers Up to Rs 1.6 Crore Salary for Top AI Role",
+        "url": "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
+        "source": "theopenpress.in",
+        "published_at": "2026-11-23T17:45:00+05:30",
+        "summary": "The Open Press reports that State Bank of India is recruiting a chief AI officer to oversee its enterprise AI platform and agentic AI work, alongside five other senior technology appointments covering governance, compliance, data engineering, operations and architecture. SBI says the chief AI officer’s annual compensation is negotiable up to Rs 1.6 crore, not guaranteed. The hiring plan highlights the range of specialist capabilities a bank may assemble for AI delivery, but the article does not establish that SBI has filled the roles or deployed new capabilities.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
@@ -65,12 +76,12 @@
         "user_relevance": 6
       },
       {
-        "id": "07a50b3c9bd977f1c78b",
-        "title": "NatWest stock: Private Banking spotlight set for November 25 - ad-hoc-news.de",
-        "url": "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
-        "source": "ad-hoc-news.de",
-        "published_at": "2026-11-22T17:53:42+01:00",
-        "summary": "NatWest scheduled a Private Banking and Wealth Management Investor Spotlight for 25 November 2026. The article cites Q3 net AUM inflows of GBP1.0 billion and says integration of Evelyn Partners was progressing, alongside recent Targeted Support regulatory approval and a Digital Investing and Financial Planning leadership appointment. For competitor analysis, the event may provide further information on integration and wealth growth, but the article's expectations about what investors will focus on are its own interpretation, not confirmed agenda details.",
+        "id": "09307562831d6bd79880",
+        "title": "DBS new retail multi-asset fund raises $200m in two weeks",
+        "url": "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-23T10:59:01+08:00",
+        "summary": "Asian Banking & Finance reports that DBS launched a retail multi-asset fund which raised more than S$200 million during its two-week initial offer period, with subscriptions continuing through the bank’s digital app. DBS says the fund is managed by its discretionary portfolio management team and actively allocated and rebalanced to its CIO’s house view. The launch illustrates a digital distribution and managed-investment proposition for retail clients; the reported fundraising and historical strategy returns do not establish future performance or ongoing client demand.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
@@ -79,60 +90,90 @@
         "user_relevance": 5
       },
       {
-        "id": "0d7100f9cf3cd35650b6",
-        "title": "Standard Chartered Becomes F1 Global Partner - Wealth Briefing",
-        "url": "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner",
-        "source": "Wealth Briefing (search dated 2026-11-22)",
-        "published_at": "2026-11-22T12:28:32+00:00",
-        "summary": "Standard Chartered announced it will become a global Formula 1 partner in 2027, extending its sports sponsorship activity; it will also partner F1 Grid Kids and continue supporting F1 ACADEMY. The report describes a brand and relationship platform, not a change to banking or wealth services, so any competitive implication for wealth delivery is limited.",
+        "id": "38265017dbd6ae1509cb",
+        "title": "Every Indian today is a global Indian: PD Singh of Standard Chartered Bank",
+        "url": "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
+        "source": "BusinessLine",
+        "published_at": "2026-11-22T19:00:00+05:30",
+        "summary": "Standard Chartered India CEO PD Singh described the bank’s focus on deeper relationships with target retail customers, including continued investment in wealth management, Signature Funds in GIFT City and SC Autograph. He also cited cross-border and corporate activity as opportunities for the franchise. The remarks provide competitor context on positioning and client segmentation; they do not specify implementation plans, operating results for the named offerings, or APAC-wide service changes.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 3,
-        "adam_rel": 3,
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 5
       }
     ],
-    "AI & Technology": [
+    "Private Banking & Wealth": [
       {
-        "id": "13e86f72cbe2bf8a5c75",
-        "title": "Coinbase CEO Brian Armstrong Reveals AI Agent Management Structure With Multiple Layers of Autonomous Agents",
-        "url": "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
-        "source": "Hokanews (search dated 2026-11-22)",
-        "published_at": "2026-11-21T20:06:00-08:00",
-        "summary": "Coinbase CEO Brian Armstrong described a layered team of AI agents, with lead agents directing specialist sub-agents under a central coordinator. For banks, this is an example of executive use of agent orchestration, but the report does not establish its reliability, business outcomes or applicability to regulated banking processes.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 3,
+        "id": "b439a319be9e9bc6e38c",
+        "title": "Bank Of Singapore Adds To ASEAN Private Banking Team - Wealth Briefing Asia",
+        "url": "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--",
+        "source": "Wealth Briefing Asia (search dated 2026-11-23)",
+        "published_at": "2026-11-23T19:58:09+00:00",
+        "summary": "Bank of Singapore appointed Veronica Darwin as ASEAN cluster head for Indonesia and Minda Melinda as a relationship manager, both based in Singapore, to strengthen its HNW and UHNW capabilities. The appointments indicate competitor investment in ASEAN private-banking coverage; the report gives no detail on service or operating-model changes.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      }
+    ],
+    "Regulatory & Markets": [
+      {
+        "id": "19b6f9861ec994a1c309",
+        "title": "UBS Overweight On Indian Banks; HDFC Bank, ICICI Bank, Axis Bank Remain Top Picks",
+        "url": "https://ndtvprofit.com/markets/ubs-overweight-on-indian-banks-hdfc-bank-icici-bank-axis-bank-remain-top-picks-12363914",
+        "source": "NDTV Profit",
+        "published_at": "2026-11-23T08:11:44+05:30",
+        "summary": "UBS remains overweight on Indian banks and identifies HDFC Bank, ICICI Bank and Axis Bank as preferred picks, citing loan growth and earnings fundamentals while noting increased early delinquencies in gold loans relative to June. The analysis offers a market and credit-risk perspective relevant to regional competitor intelligence; it is a brokerage assessment, not evidence of future performance.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 4,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 4
+      },
+      {
+        "id": "c2d64f5890eec2e12ffe",
+        "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-23T11:00:00+01:00",
+        "summary": "On 23 November 2026, the ECB approved eligibility as Eurosystem collateral for certain marketable assets issued on DLT platforms licensed under the EU DLT Pilot Regime, provided standard criteria and operational requirements are met. The ECB expects to communicate detailed requirements in spring 2027 and plans implementation for June 2027. For banking change execution, this makes legal certainty, settlement-system links and operational safety concrete delivery dependencies; the decision concerns eligible collateral in the Eurosystem, not broad acceptance of all on-chain assets.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "7380c01468d88b5f7170",
-        "title": "HSBC Expands RedCoin into Wealth Management with Tokenised Fund Access in Hong Kong",
-        "url": "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
-        "source": "Hubbis (search dated 2026-11-22)",
-        "published_at": "2026-11-22T21:13:16+00:00",
-        "summary": "HSBC made its Hong Kong dollar-denominated RedCoin available in the HSBC HK Mobile Banking App for eligible customers to subscribe to a tokenised unit class of an existing Hong Kong dollar money market fund. Customers can fund the subscription with RedCoin, with a reported minimum of HKD100; HSBC Securities Services tokenises the units and HSBC Digital Assets Custody safeguards the stablecoin and units. The launch creates a direct wealth-delivery use case spanning app access, stablecoin funding, fund servicing and custody. Operationally, the product depends on coordinated eligibility, wallet, subscription and safekeeping controls; the article does not report customer uptake or realised settlement benefits.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 9,
+        "id": "54b0d38748912245f449",
+        "title": "Some US banks tighten AI-agent controls on concern about models escaping safeguards",
+        "url": "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
+        "source": "The Economic Times",
+        "published_at": "2026-11-23T15:35:00+05:30",
+        "summary": "The Economic Times reports, citing banking and industry sources, that several US banks are tightening controls on internal AI agents, including restricting system access and credentials, isolating test environments, recording agent actions, reviewing kill switches and preparing backup processes. Sources describe these measures as responses to concerns about models bypassing safeguards; the report says no banks had yet been affected by such incidents. For banking operations, the measures highlight dependencies between agent permissions, auditability and continuity when an agent is stopped; the article is based substantially on unnamed sources and does not establish the prevalence or effectiveness of the controls.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 6,
         "adam_rel": 8,
-        "noise_level": 2,
+        "noise_level": 3,
         "is_update": false,
         "user_relevance": 8
       },
       {
-        "id": "6331b8961a26a6c7d6b8",
-        "title": "Deutsche Bank Sees 2026 Revenue Above €33 Billion, Reaffirms Cost Target",
-        "url": "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
-        "source": "TradingView",
-        "published_at": "2026-11-21T16:12:07+00:00",
-        "summary": "Deutsche Bank CEO Christian Sewing said the bank expects 2026 revenue above €33 billion, reaffirmed its €21.3 billion cost guidance and expressed confidence in a return on tangible equity above 13% in 2028. He cited process investment, automation opportunities in compliance and financial crime, and a German mid-market credit process said to reduce average approval time from 30 days to under one day without changing underwriting standards. He also reported stronger-than-expected private-bank investment inflows and plans to hire 200–250 wealth managers globally. For change leaders, this is a competitor example linking process redesign and cost work with faster credit decisions; the report provides management statements rather than independently verified implementation outcomes, and gives no APAC-specific detail.",
+        "id": "273663a24adff5f5c4a1",
+        "title": "SBI Chief AI Officer: Bank Offers Up to Rs 1.6 Crore Salary for Top AI Role",
+        "url": "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
+        "source": "theopenpress.in",
+        "published_at": "2026-11-23T17:45:00+05:30",
+        "summary": "The Open Press reports that State Bank of India is recruiting a chief AI officer to oversee its enterprise AI platform and agentic AI work, alongside five other senior technology appointments covering governance, compliance, data engineering, operations and architecture. SBI says the chief AI officer’s annual compensation is negotiable up to Rs 1.6 crore, not guaranteed. The hiring plan highlights the range of specialist capabilities a bank may assemble for AI delivery, but the article does not establish that SBI has filled the roles or deployed new capabilities.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 6,
@@ -141,26 +182,40 @@
         "user_relevance": 6
       },
       {
-        "id": "13e86f72cbe2bf8a5c75",
-        "title": "Coinbase CEO Brian Armstrong Reveals AI Agent Management Structure With Multiple Layers of Autonomous Agents",
-        "url": "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
-        "source": "Hokanews (search dated 2026-11-22)",
-        "published_at": "2026-11-21T20:06:00-08:00",
-        "summary": "Coinbase CEO Brian Armstrong described a layered team of AI agents, with lead agents directing specialist sub-agents under a central coordinator. For banks, this is an example of executive use of agent orchestration, but the report does not establish its reliability, business outcomes or applicability to regulated banking processes.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 3,
+        "id": "b439a319be9e9bc6e38c",
+        "title": "Bank Of Singapore Adds To ASEAN Private Banking Team - Wealth Briefing Asia",
+        "url": "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--",
+        "source": "Wealth Briefing Asia (search dated 2026-11-23)",
+        "published_at": "2026-11-23T19:58:09+00:00",
+        "summary": "Bank of Singapore appointed Veronica Darwin as ASEAN cluster head for Indonesia and Minda Melinda as a relationship manager, both based in Singapore, to strengthen its HNW and UHNW capabilities. The appointments indicate competitor investment in ASEAN private-banking coverage; the report gives no detail on service or operating-model changes.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "19b6f9861ec994a1c309",
+        "title": "UBS Overweight On Indian Banks; HDFC Bank, ICICI Bank, Axis Bank Remain Top Picks",
+        "url": "https://ndtvprofit.com/markets/ubs-overweight-on-indian-banks-hdfc-bank-icici-bank-axis-bank-remain-top-picks-12363914",
+        "source": "NDTV Profit",
+        "published_at": "2026-11-23T08:11:44+05:30",
+        "summary": "UBS remains overweight on Indian banks and identifies HDFC Bank, ICICI Bank and Axis Bank as preferred picks, citing loan growth and earnings fundamentals while noting increased early delinquencies in gold loans relative to June. The analysis offers a market and credit-risk perspective relevant to regional competitor intelligence; it is a brokerage assessment, not evidence of future performance.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 4,
         "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 4
       },
       {
-        "id": "07a50b3c9bd977f1c78b",
-        "title": "NatWest stock: Private Banking spotlight set for November 25 - ad-hoc-news.de",
-        "url": "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
-        "source": "ad-hoc-news.de",
-        "published_at": "2026-11-22T17:53:42+01:00",
-        "summary": "NatWest scheduled a Private Banking and Wealth Management Investor Spotlight for 25 November 2026. The article cites Q3 net AUM inflows of GBP1.0 billion and says integration of Evelyn Partners was progressing, alongside recent Targeted Support regulatory approval and a Digital Investing and Financial Planning leadership appointment. For competitor analysis, the event may provide further information on integration and wealth growth, but the article's expectations about what investors will focus on are its own interpretation, not confirmed agenda details.",
+        "id": "09307562831d6bd79880",
+        "title": "DBS new retail multi-asset fund raises $200m in two weeks",
+        "url": "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
+        "source": "Asian Banking & Finance",
+        "published_at": "2026-11-23T10:59:01+08:00",
+        "summary": "Asian Banking & Finance reports that DBS launched a retail multi-asset fund which raised more than S$200 million during its two-week initial offer period, with subscriptions continuing through the bank’s digital app. DBS says the fund is managed by its discretionary portfolio management team and actively allocated and rebalanced to its CIO’s house view. The launch illustrates a digital distribution and managed-investment proposition for retail clients; the reported fundraising and historical strategy returns do not establish future performance or ongoing client demand.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
@@ -169,24 +224,39 @@
         "user_relevance": 5
       },
       {
-        "id": "0d7100f9cf3cd35650b6",
-        "title": "Standard Chartered Becomes F1 Global Partner - Wealth Briefing",
-        "url": "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner",
-        "source": "Wealth Briefing (search dated 2026-11-22)",
-        "published_at": "2026-11-22T12:28:32+00:00",
-        "summary": "Standard Chartered announced it will become a global Formula 1 partner in 2027, extending its sports sponsorship activity; it will also partner F1 Grid Kids and continue supporting F1 ACADEMY. The report describes a brand and relationship platform, not a change to banking or wealth services, so any competitive implication for wealth delivery is limited.",
+        "id": "38265017dbd6ae1509cb",
+        "title": "Every Indian today is a global Indian: PD Singh of Standard Chartered Bank",
+        "url": "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
+        "source": "BusinessLine",
+        "published_at": "2026-11-22T19:00:00+05:30",
+        "summary": "Standard Chartered India CEO PD Singh described the bank’s focus on deeper relationships with target retail customers, including continued investment in wealth management, Signature Funds in GIFT City and SC Autograph. He also cited cross-border and corporate activity as opportunities for the franchise. The remarks provide competitor context on positioning and client segmentation; they do not specify implementation plans, operating results for the named offerings, or APAC-wide service changes.",
         "category": "Competitor Intelligence",
-        "hsbc_relevancy": 3,
-        "adam_rel": 3,
+        "hsbc_relevancy": 5,
+        "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 3
+        "user_relevance": 5
+      },
+      {
+        "id": "c2d64f5890eec2e12ffe",
+        "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-23T11:00:00+01:00",
+        "summary": "On 23 November 2026, the ECB approved eligibility as Eurosystem collateral for certain marketable assets issued on DLT platforms licensed under the EU DLT Pilot Regime, provided standard criteria and operational requirements are met. The ECB expects to communicate detailed requirements in spring 2027 and plans implementation for June 2027. For banking change execution, this makes legal certainty, settlement-system links and operational safety concrete delivery dependencies; the decision concerns eligible collateral in the Eurosystem, not broad acceptance of all on-chain assets.",
+        "category": "Regulatory & Markets",
+        "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
       }
     ],
     "categories": {
-      "On Adam's Desk": "#be123c",
+      "AI & Technology": "#6366f1",
       "Competitor Intelligence": "#0891b2",
-      "AI & Technology": "#6366f1"
+      "Private Banking & Wealth": "#059669",
+      "Regulatory & Markets": "#d97706"
     }
   }
 }
