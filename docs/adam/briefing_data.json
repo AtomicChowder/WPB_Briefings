@@ -3,152 +3,176 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Wednesday, 25 November 2026",
-  "date_str": "2026-11-25",
-  "generated_at": "2026-11-25T08:44:49.466886+08:00",
-  "total_articles": 5,
+  "briefing_date": "Thursday, 26 November 2026",
+  "date_str": "2026-11-26",
+  "generated_at": "2026-11-26T07:00:02.336894+08:00",
+  "total_articles": 7,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "Singapore proof of concept tests agent authority controls",
-      "context_html": "HSBC Singapore participated in a controlled PathFin.ai payment proof of concept testing agent identity, authority, mandate checks and auditable decisions. For APAC payment delivery, a key dependency is whether mandate checks and customer confirmation can be applied consistently before instructions enter existing payment rails. The article describes testing, not a launched customer service or autonomous payments.",
+      "headline": "External AI-agent access raises authorization and liability questions",
+      "context_html": "The KSNV report describes consumer hesitation, survey findings and US banks blocking some third-party agents that use customer credentials. For banking operations, a key control question is whether customers can authorize constrained agent actions without sharing passwords, and how disputed or mistaken actions would be handled. The evidence combines one local news report, survey results and expert commentary, so it should not be treated as a measure of APAC customer adoption or risk.",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
-          "title": "PathFin.ai Trial Tests How Banks and Payment Providers Verify AI Agents"
+          "url": "https://news3lv.com/news/local/consumers-weigh-risks-as-banks-warn-ai-agent-mistakes-could-be-customers-liability",
+          "title": "Consumers weigh risks as banks warn AI agent mistakes could be customers’ liability"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Hong Kong plan addresses multigenerational protection needs",
-      "context_html": "HSBC Life launched a whole-of-life savings and protection plan in Hong Kong with features aimed at family and later-life needs. A practical delivery question is how branch-based distribution explains the conditions and third-party care arrangements alongside the plan’s insurance benefits. The article reports product features and survey findings, not customer demand or outcomes.",
+      "headline": "Survey points to Asian interest in collecting as a wealth conversation",
+      "context_html": "HSBC Private Bank’s report says surveyed wealthy entrepreneurs in mainland China, Singapore and India show substantial fine-wine collecting, with many Singapore respondents expecting to spend more for enjoyment. For wealth delivery, this may inform client conversations and specialist-content needs, while any service decision would depend on validated client demand and the suitability of the offering. The findings are survey-based and do not demonstrate a change in client behaviour beyond the reported responses.",
       "source_links": [
         {
-          "url": "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
-          "title": "HSBC Life Launches Multi-Generation Savings Plan as Hong Kong Affluent Investors’ Retirement Target Rises to USD1.19 Million"
+          "url": "https://fundselectorasia.com/asias-wealthy-are-leading-the-world-in-fine-wine-collecting-hsbc-private-bank",
+          "title": "Asia’s wealthy are leading the world in fine wine collecting – HSBC Private Bank - Fund Selector Asia"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "OCBC reshapes wholesale banking around client segments",
-      "context_html": "OCBC is dividing wholesale banking into three units, with leadership assignments across large corporates, institutional and transaction banking, and SMEs. For change execution, the transition will depend on clear ownership where product and client responsibilities cross divisions; the report does not describe implementation arrangements or expected results.",
+      "headline": "Screen privacy and transaction authority are separate control questions",
+      "context_html": "Signal says operating-system agents may read displayed app content and is adding platform-specific screen protections, while acknowledging residual access paths. For wealth and banking delivery, a useful design question is whether controls cover only visible information or also data access, delegated permissions and actions; the article describes one app’s measures, not a tested banking standard.",
       "source_links": [
         {
-          "url": "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
-          "title": "OCBC Taps China Chief Ang Eng Siong to Lead Global Corporate Banking"
+          "url": "https://cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+          "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks - CNBC"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
-    "On Adam's Desk": [
+    "AI & Technology": [
       {
-        "id": "94098692aa7c9f2ac095",
-        "title": "HSBC Holdings (LSE:HSBA) Appoints Neha Ghai To Global Private Bank Role",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-appoints-161150554.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-11-24T16:11:50+00:00",
-        "summary": "HSBC appointed Neha Ghai as a director in its Global Private Bank; the article describes her experience in India, Singapore and China and places the move within a series of regional leadership reshuffles. The report suggests continuity in HSBC’s Asian and cross-border wealth focus, but does not specify changes to the operating model or client service.",
-        "category": "HSBC News",
+        "id": "37796e6934adc2961acd",
+        "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks - CNBC",
+        "url": "https://cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+        "source": "CNBC",
+        "published_at": "2026-11-24T07:25:41+00:00",
+        "summary": "Signal says it will block screenshots in its iOS app and enable screen security on Android when it detects an AI assistant trying to read the screen, citing the possibility that agents could capture app data beyond its control. It also says these measures do not close every access route, including data already stored on a device. The report notes that banks including JPMorgan Chase and OCBC restrict some third-party agent access; for banking change execution, the distinction between screen access, stored data and transaction authority is a practical control-design issue, not evidence of a common industry standard.",
+        "category": "AI & Technology",
         "hsbc_relevancy": 7,
+        "adam_rel": 7,
+        "noise_level": 4,
+        "is_update": false,
+        "user_relevance": 7
+      },
+      {
+        "id": "1ed30ea83bd78c0a2c3b",
+        "title": "Consumers weigh risks as banks warn AI agent mistakes could be customers’ liability",
+        "url": "https://news3lv.com/news/local/consumers-weigh-risks-as-banks-warn-ai-agent-mistakes-could-be-customers-liability",
+        "source": "KSNV",
+        "published_at": "2026-11-25T02:30:01+00:00",
+        "summary": "A KSNV report cites an ABA survey in which 27% of respondents said they were likely to let an AI agent autonomously manage their bank accounts in the next 12 months, while 20% said an agent had already requested login credentials or a card number. The report also describes consumer concerns, expert warnings about excessive permissions and manipulation, and several US banks blocking external agents from logging in with customer credentials. For banking delivery, the coverage underlines the need to distinguish authorized access from credential sharing and to define liability and escalation controls; the survey and expert views do not establish adoption or risk rates across markets.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "6e2cce54c23bc41d688a",
+        "title": "SFF 2026 Hackcelerator Winner LinqAlpha Names New Chief Product Officer",
+        "url": "https://fintechnews.sg/142339/ai/linqalpha-jae-leeholland-chief-product-officer",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-25T07:27:09+00:00",
+        "summary": "AI investment-research firm LinqAlpha appointed Jae Leeholland as chief product officer to lead global product strategy and platform development for institutional investors. The company previously launched an AI Lab and raised US$22 million in Series A funding, according to the article. The appointment is a limited competitor signal on AI product leadership; the report does not establish product outcomes or adoption by financial institutions.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 3,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 5
       }
     ],
-    "AI & Technology": [
+    "Private Banking & Wealth": [
       {
-        "id": "b25fed9f3d68a21c3f5b",
-        "title": "PathFin.ai Trial Tests How Banks and Payment Providers Verify AI Agents",
-        "url": "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-24T02:40:40+00:00",
-        "summary": "Green Link Digital Bank, AXS, Terminal 3 and HSBC Singapore conducted a controlled proof of concept under MAS’s PathFin.ai initiative, testing agent identity and authority checks, request controls, runtime decisions and audit records in two payment scenarios. The work points to practical dependencies for any future agent-enabled payments, including mandate verification, confirmation and traceable decisions; the article explicitly says the scenarios are not a customer proposition or autonomous payment service.",
-        "category": "AI & Technology",
-        "hsbc_relevancy": 7,
-        "adam_rel": 8,
+        "id": "fe8326bcd332ed0fcbcb",
+        "title": "Asia’s wealthy are leading the world in fine wine collecting – HSBC Private Bank - Fund Selector Asia",
+        "url": "https://fundselectorasia.com/asias-wealthy-are-leading-the-world-in-fine-wine-collecting-hsbc-private-bank",
+        "source": "Fund Selector Asia",
+        "published_at": "2026-11-25T12:36:19+00:00",
+        "summary": "HSBC Private Bank and Justerini & Brooks published a survey-based report on fine wine and rare whisky collecting, drawing on more than 3,000 HNW and UHNW entrepreneurs. It says 54% of mainland China respondents collect fine wine, compared with 36% in Singapore and India, and 43% of Singapore respondents expect to spend more on their collections for enjoyment over the next 12 months. The findings offer public evidence of collecting interests among surveyed wealthy clients in Asia, but they do not establish broader market demand or specify any change to HSBC’s wealth services.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 8,
+        "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 8
-      }
-    ],
-    "HSBC News": [
+        "user_relevance": 6
+      },
       {
-        "id": "e4e47ec9757ac839a1cf",
-        "title": "HSBC Life Launches Multi-Generation Savings Plan as Hong Kong Affluent Investors’ Retirement Target Rises to USD1.19 Million",
-        "url": "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
-        "source": "Hubbis (search dated 2026-11-24)",
-        "published_at": "2026-11-24T21:09:05+00:00",
-        "summary": "HSBC Life (International) launched the HSBC Astra Goal Insurance Plan in Hong Kong on 23 November, a whole-of-life savings and protection plan with features described for family, medical liquidity and dementia-care support. The accompanying survey reports a Hong Kong retirement savings target of USD1.19 million and average savings equal to 45% of that target. The launch is relevant to multigenerational wealth and protection delivery, but the article does not report customer uptake or outcomes for the plan.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 8,
+        "id": "3a1f94a607a3e26a9250",
+        "title": "Fine Wine, Whisky Buyers Widen Horizons For Tasty Results – HSBC - Wealth Briefing",
+        "url": "https://wealthbriefing.com/html/article.php/fine-wine%2C-whisky-buyers-widen-horizons-for-tasty-results--hsbc",
+        "source": "Wealth Briefing (search dated 2026-11-24)",
+        "published_at": "2026-11-24T19:08:43+00:00",
+        "summary": "HSBC Private Bank and Justerini & Brooks published the A Taste for Time report on fine-wine and rare-whisky collecting, based on a survey of more than 3,000 HNW and UHNW entrepreneurs. The article repeats previously reported survey findings on collecting and expected spending, and adds that Scotland exports 43 bottles of whisky every second to more than 160 markets. The coverage reinforces the public profile of passion assets in wealth discussions, but survey responses do not establish broader market demand or a change to HSBC services.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "is_update": true,
+        "user_relevance": 5
+      },
+      {
+        "id": "f2a015d7f7952732de25",
+        "title": "UBP hires senior wealth planner in HK - Fund Selector Asia",
+        "url": "https://fundselectorasia.com/ubp-hires-senior-wealth-planner-in-hk",
+        "source": "Fund Selector Asia",
+        "published_at": "2026-11-24T00:01:00+00:00",
+        "summary": "UBP appointed Don Lai as senior wealth planner in Hong Kong, effective 23 November 2026, to support its North Asia wealth-planning business. The article says Lai previously held wealth-planning roles at UBS and DBS and earlier roles at Standard Chartered and HSBC. The hire is competitor context for Hong Kong wealth-planning capacity; the report provides no detail on client volumes or changes to service delivery.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 5,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
       }
     ],
-    "Competitor Intelligence": [
-      {
-        "id": "b0db910cc96dd84e24a9",
-        "title": "OCBC Taps China Chief Ang Eng Siong to Lead Global Corporate Banking",
-        "url": "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-24T05:26:58+00:00",
-        "summary": "OCBC appointed its China CEO, Ang Eng Siong, to lead Global Corporate Banking from 1 January 2027, as it reorganises wholesale banking into three divisions. The reported structure separates large corporates, global institutional/investment/transaction banking, and commercial banking for SMEs. This provides competitor context on segment-based accountability; the article gives no detail on implementation steps, transition controls or expected outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      }
-    ],
     "Regulatory & Markets": [
       {
-        "id": "1fd968e78b8cc5e007b3",
-        "title": "AI Could Make Banking Cyberattacks More Dangerous, Nigeria’s Financial Regulators Warn - The 420.in",
-        "url": "https://the420.in/nigeria-banks-ai-cybersecurity-risks",
-        "source": "The 420.in",
-        "published_at": "2026-11-23T12:51:46+05:30",
-        "summary": "Nigeria’s central bank and NIBSS representatives urged financial institutions to strengthen cybersecurity and oversight as AI use expands, including testing and monitoring emerging technology, human oversight and board-level accountability. The article also reports a 24-hour cyberattack reporting requirement to the CBN and says compliance has been inadequate. For change execution, the remarks emphasize coordinating technology controls with incident reporting and staff practices; the article reports conference statements rather than a new regulatory measure.",
+        "id": "e83963f227eb897e6d33",
+        "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-25T18:30:00+01:00",
+        "summary": "The ECB and Sveriges Riksbank signed an agreement for Sweden to join T2 for large-value payments in Swedish kronor, with migration targeted for February 2030. The move would replace Sweden’s national settlement platform with shared European infrastructure while retaining settlement in central bank money. For banking operations, the long lead time makes migration planning and coordination with market participants relevant, but the announcement gives no detailed implementation plan or immediate service change.",
         "category": "Regulatory & Markets",
         "hsbc_relevancy": 3,
-        "adam_rel": 5,
+        "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
-        "user_relevance": 5
+        "user_relevance": 4
       }
     ]
   },
   "chart_data": {
     "articles": [
       {
-        "id": "b25fed9f3d68a21c3f5b",
-        "title": "PathFin.ai Trial Tests How Banks and Payment Providers Verify AI Agents",
-        "url": "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-24T02:40:40+00:00",
-        "summary": "Green Link Digital Bank, AXS, Terminal 3 and HSBC Singapore conducted a controlled proof of concept under MAS’s PathFin.ai initiative, testing agent identity and authority checks, request controls, runtime decisions and audit records in two payment scenarios. The work points to practical dependencies for any future agent-enabled payments, including mandate verification, confirmation and traceable decisions; the article explicitly says the scenarios are not a customer proposition or autonomous payment service.",
+        "id": "37796e6934adc2961acd",
+        "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks - CNBC",
+        "url": "https://cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+        "source": "CNBC",
+        "published_at": "2026-11-24T07:25:41+00:00",
+        "summary": "Signal says it will block screenshots in its iOS app and enable screen security on Android when it detects an AI assistant trying to read the screen, citing the possibility that agents could capture app data beyond its control. It also says these measures do not close every access route, including data already stored on a device. The report notes that banks including JPMorgan Chase and OCBC restrict some third-party agent access; for banking change execution, the distinction between screen access, stored data and transaction authority is a practical control-design issue, not evidence of a common industry standard.",
         "category": "AI & Technology",
         "hsbc_relevancy": 7,
-        "adam_rel": 8,
-        "noise_level": 1,
+        "adam_rel": 7,
+        "noise_level": 4,
         "is_update": false,
-        "user_relevance": 8
+        "user_relevance": 7
       },
       {
-        "id": "e4e47ec9757ac839a1cf",
-        "title": "HSBC Life Launches Multi-Generation Savings Plan as Hong Kong Affluent Investors’ Retirement Target Rises to USD1.19 Million",
-        "url": "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
-        "source": "Hubbis (search dated 2026-11-24)",
-        "published_at": "2026-11-24T21:09:05+00:00",
-        "summary": "HSBC Life (International) launched the HSBC Astra Goal Insurance Plan in Hong Kong on 23 November, a whole-of-life savings and protection plan with features described for family, medical liquidity and dementia-care support. The accompanying survey reports a Hong Kong retirement savings target of USD1.19 million and average savings equal to 45% of that target. The launch is relevant to multigenerational wealth and protection delivery, but the article does not report customer uptake or outcomes for the plan.",
-        "category": "HSBC News",
+        "id": "fe8326bcd332ed0fcbcb",
+        "title": "Asia’s wealthy are leading the world in fine wine collecting – HSBC Private Bank - Fund Selector Asia",
+        "url": "https://fundselectorasia.com/asias-wealthy-are-leading-the-world-in-fine-wine-collecting-hsbc-private-bank",
+        "source": "Fund Selector Asia",
+        "published_at": "2026-11-25T12:36:19+00:00",
+        "summary": "HSBC Private Bank and Justerini & Brooks published a survey-based report on fine wine and rare whisky collecting, drawing on more than 3,000 HNW and UHNW entrepreneurs. It says 54% of mainland China respondents collect fine wine, compared with 36% in Singapore and India, and 43% of Singapore respondents expect to spend more on their collections for enjoyment over the next 12 months. The findings offer public evidence of collecting interests among surveyed wealthy clients in Asia, but they do not establish broader market demand or specify any change to HSBC’s wealth services.",
+        "category": "Private Banking & Wealth",
         "hsbc_relevancy": 8,
         "adam_rel": 6,
         "noise_level": 1,
@@ -156,42 +180,70 @@
         "user_relevance": 6
       },
       {
-        "id": "b0db910cc96dd84e24a9",
-        "title": "OCBC Taps China Chief Ang Eng Siong to Lead Global Corporate Banking",
-        "url": "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
-        "source": "Fintech Singapore",
-        "published_at": "2026-11-24T05:26:58+00:00",
-        "summary": "OCBC appointed its China CEO, Ang Eng Siong, to lead Global Corporate Banking from 1 January 2027, as it reorganises wholesale banking into three divisions. The reported structure separates large corporates, global institutional/investment/transaction banking, and commercial banking for SMEs. This provides competitor context on segment-based accountability; the article gives no detail on implementation steps, transition controls or expected outcomes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "1fd968e78b8cc5e007b3",
-        "title": "AI Could Make Banking Cyberattacks More Dangerous, Nigeria’s Financial Regulators Warn - The 420.in",
-        "url": "https://the420.in/nigeria-banks-ai-cybersecurity-risks",
-        "source": "The 420.in",
-        "published_at": "2026-11-23T12:51:46+05:30",
-        "summary": "Nigeria’s central bank and NIBSS representatives urged financial institutions to strengthen cybersecurity and oversight as AI use expands, including testing and monitoring emerging technology, human oversight and board-level accountability. The article also reports a 24-hour cyberattack reporting requirement to the CBN and says compliance has been inadequate. For change execution, the remarks emphasize coordinating technology controls with incident reporting and staff practices; the article reports conference statements rather than a new regulatory measure.",
+        "id": "e83963f227eb897e6d33",
+        "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+        "source": "ECB-PRESS",
+        "published_at": "2026-11-25T18:30:00+01:00",
+        "summary": "The ECB and Sveriges Riksbank signed an agreement for Sweden to join T2 for large-value payments in Swedish kronor, with migration targeted for February 2030. The move would replace Sweden’s national settlement platform with shared European infrastructure while retaining settlement in central bank money. For banking operations, the long lead time makes migration planning and coordination with market participants relevant, but the announcement gives no detailed implementation plan or immediate service change.",
         "category": "Regulatory & Markets",
         "hsbc_relevancy": 3,
-        "adam_rel": 5,
+        "adam_rel": 4,
         "noise_level": 1,
         "is_update": false,
+        "user_relevance": 4
+      },
+      {
+        "id": "3a1f94a607a3e26a9250",
+        "title": "Fine Wine, Whisky Buyers Widen Horizons For Tasty Results – HSBC - Wealth Briefing",
+        "url": "https://wealthbriefing.com/html/article.php/fine-wine%2C-whisky-buyers-widen-horizons-for-tasty-results--hsbc",
+        "source": "Wealth Briefing (search dated 2026-11-24)",
+        "published_at": "2026-11-24T19:08:43+00:00",
+        "summary": "HSBC Private Bank and Justerini & Brooks published the A Taste for Time report on fine-wine and rare-whisky collecting, based on a survey of more than 3,000 HNW and UHNW entrepreneurs. The article repeats previously reported survey findings on collecting and expected spending, and adds that Scotland exports 43 bottles of whisky every second to more than 160 markets. The coverage reinforces the public profile of passion assets in wealth discussions, but survey responses do not establish broader market demand or a change to HSBC services.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 2,
+        "is_update": true,
         "user_relevance": 5
       },
       {
-        "id": "94098692aa7c9f2ac095",
-        "title": "HSBC Holdings (LSE:HSBA) Appoints Neha Ghai To Global Private Bank Role",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-appoints-161150554.html",
-        "source": "Yahoo Finance",
-        "published_at": "2026-11-24T16:11:50+00:00",
-        "summary": "HSBC appointed Neha Ghai as a director in its Global Private Bank; the article describes her experience in India, Singapore and China and places the move within a series of regional leadership reshuffles. The report suggests continuity in HSBC’s Asian and cross-border wealth focus, but does not specify changes to the operating model or client service.",
-        "category": "HSBC News",
-        "hsbc_relevancy": 7,
+        "id": "1ed30ea83bd78c0a2c3b",
+        "title": "Consumers weigh risks as banks warn AI agent mistakes could be customers’ liability",
+        "url": "https://news3lv.com/news/local/consumers-weigh-risks-as-banks-warn-ai-agent-mistakes-could-be-customers-liability",
+        "source": "KSNV",
+        "published_at": "2026-11-25T02:30:01+00:00",
+        "summary": "A KSNV report cites an ABA survey in which 27% of respondents said they were likely to let an AI agent autonomously manage their bank accounts in the next 12 months, while 20% said an agent had already requested login credentials or a card number. The report also describes consumer concerns, expert warnings about excessive permissions and manipulation, and several US banks blocking external agents from logging in with customer credentials. For banking delivery, the coverage underlines the need to distinguish authorized access from credential sharing and to define liability and escalation controls; the survey and expert views do not establish adoption or risk rates across markets.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "f2a015d7f7952732de25",
+        "title": "UBP hires senior wealth planner in HK - Fund Selector Asia",
+        "url": "https://fundselectorasia.com/ubp-hires-senior-wealth-planner-in-hk",
+        "source": "Fund Selector Asia",
+        "published_at": "2026-11-24T00:01:00+00:00",
+        "summary": "UBP appointed Don Lai as senior wealth planner in Hong Kong, effective 23 November 2026, to support its North Asia wealth-planning business. The article says Lai previously held wealth-planning roles at UBS and DBS and earlier roles at Standard Chartered and HSBC. The hire is competitor context for Hong Kong wealth-planning capacity; the report provides no detail on client volumes or changes to service delivery.",
+        "category": "Private Banking & Wealth",
+        "hsbc_relevancy": 5,
+        "adam_rel": 6,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 6
+      },
+      {
+        "id": "6e2cce54c23bc41d688a",
+        "title": "SFF 2026 Hackcelerator Winner LinqAlpha Names New Chief Product Officer",
+        "url": "https://fintechnews.sg/142339/ai/linqalpha-jae-leeholland-chief-product-officer",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-25T07:27:09+00:00",
+        "summary": "AI investment-research firm LinqAlpha appointed Jae Leeholland as chief product officer to lead global product strategy and platform development for institutional investors. The company previously launched an AI Lab and raised US$22 million in Series A funding, according to the article. The appointment is a limited competitor signal on AI product leadership; the report does not establish product outcomes or adoption by financial institutions.",
+        "category": "AI & Technology",
+        "hsbc_relevancy": 3,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
@@ -199,10 +251,8 @@
       }
     ],
     "categories": {
-      "On Adam's Desk": "#be123c",
       "AI & Technology": "#6366f1",
-      "HSBC News": "#dc2626",
-      "Competitor Intelligence": "#0891b2",
+      "Private Banking & Wealth": "#059669",
       "Regulatory & Markets": "#d97706"
     }
   }

@@ -1,23 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-25",
+    "last_updated": "2026-11-26",
     "daily": [
-      {
-        "date": "2026-11-19",
-        "urls": [
-          "https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments",
-          "https://fintechnews.sg/141489/blockchain/dbs-circle-usdc-institutional-access",
-          "https://fintechnews.sg/141547/payments/singapore-ai-agent-payments-trials",
-          "https://fintechnews.sg/141553/singapore-fintech-festival-2026/visa-singapore-fintech-festival-2026",
-          "https://fintechnews.sg/141826/payments/aci-worldwide-interim-ceo-robert-leibrock",
-          "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
-          "https://fintechnews.sg/141909/payments/nets-ai-agent-payments",
-          "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176",
-          "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
-          "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-20",
         "urls": [
@@ -90,10 +74,23 @@
           "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
           "https://the420.in/nigeria-banks-ai-cybersecurity-risks"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-26",
+        "urls": [
+          "https://cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+          "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+          "https://fintechnews.sg/142339/ai/linqalpha-jae-leeholland-chief-product-officer",
+          "https://fundselectorasia.com/asias-wealthy-are-leading-the-world-in-fine-wine-collecting-hsbc-private-bank",
+          "https://fundselectorasia.com/ubp-hires-senior-wealth-planner-in-hk",
+          "https://news3lv.com/news/local/consumers-weigh-risks-as-banks-warn-ai-agent-mistakes-could-be-customers-liability",
+          "https://wealthbriefing.com/html/article.php/fine-wine%2C-whisky-buyers-widen-horizons-for-tasty-results--hsbc"
+        ],
         "topics": [
-          "Singapore proof of concept tests agent authority controls",
-          "Hong Kong plan addresses multigenerational protection needs",
-          "OCBC reshapes wholesale banking around client segments"
+          "External AI-agent access raises authorization and liability questions",
+          "Survey points to Asian interest in collecting as a wealth conversation",
+          "Screen privacy and transaction authority are separate control questions"
         ]
       }
     ],
@@ -102,25 +99,24 @@
       "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
       "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
       "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
-      "https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments",
       "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
+      "https://cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
       "https://decrypt.co/383677/citi-customers-responsible-ai-banking-agents-rogue-hack",
       "https://disruptionbanking.com/2026/11/20/why-did-an-hsbc-whistleblower-urge-a-probe-of-correspondent-banking-after-the-deutsche-bank-leak",
       "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+      "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
       "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
       "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-appoints-161150554.html",
-      "https://fintechnews.sg/141489/blockchain/dbs-circle-usdc-institutional-access",
       "https://fintechnews.sg/141489/crypto/dbs-circle-usdc-institutional-access",
       "https://fintechnews.sg/141531/security/mas-scam-detection-study",
-      "https://fintechnews.sg/141547/payments/singapore-ai-agent-payments-trials",
-      "https://fintechnews.sg/141553/singapore-fintech-festival-2026/visa-singapore-fintech-festival-2026",
-      "https://fintechnews.sg/141826/payments/aci-worldwide-interim-ceo-robert-leibrock",
       "https://fintechnews.sg/141830/digitalassets/world-bank-stablecoin-usdc-citi-circle",
-      "https://fintechnews.sg/141909/payments/nets-ai-agent-payments",
       "https://fintechnews.sg/142031/blockchain/dbs-digital-vouchers-paylah",
       "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
       "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
       "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
+      "https://fintechnews.sg/142339/ai/linqalpha-jae-leeholland-chief-product-officer",
+      "https://fundselectorasia.com/asias-wealthy-are-leading-the-world-in-fine-wine-collecting-hsbc-private-bank",
+      "https://fundselectorasia.com/ubp-hires-senior-wealth-planner-in-hk",
       "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
       "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
       "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
@@ -128,10 +124,9 @@
       "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
       "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
       "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
-      "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176",
       "https://ndtvprofit.com/markets/ubs-overweight-on-indian-banks-hdfc-bank-icici-bank-axis-bank-remain-top-picks-12363914",
+      "https://news3lv.com/news/local/consumers-weigh-risks-as-banks-warn-ai-agent-mistakes-could-be-customers-liability",
       "https://paminsight.com/twn/article/hsbc-pb-appoints-head-of-us-western-region",
-      "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio",
       "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
       "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
       "https://the420.in/nigeria-banks-ai-cybersecurity-risks",
@@ -139,14 +134,15 @@
       "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
       "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
       "https://tradingview.com/news/marketbeat:6eebc7713094b:0-deutsche-bank-sees-2026-revenue-above-33-billion-reaffirms-cost-target",
+      "https://wealthbriefing.com/html/article.php/fine-wine%2C-whisky-buyers-widen-horizons-for-tasty-results--hsbc",
       "https://wealthbriefing.com/html/article.php/standard-chartered-becomes-f1-global-partner",
       "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--",
       "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
     ],
     "covered_topics": [
-      "Hong Kong plan addresses multigenerational protection needs",
-      "OCBC reshapes wholesale banking around client segments",
-      "Singapore proof of concept tests agent authority controls"
+      "External AI-agent access raises authorization and liability questions",
+      "Screen privacy and transaction authority are separate control questions",
+      "Survey points to Asian interest in collecting as a wealth conversation"
     ]
   }
 }
