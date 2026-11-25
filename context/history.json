@@ -1,22 +1,7 @@
 {
   "adam": {
-    "last_updated": "2026-11-24",
+    "last_updated": "2026-11-25",
     "daily": [
-      {
-        "date": "2026-11-18",
-        "urls": [
-          "https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485",
-          "https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks",
-          "https://familywealthreport.com/article.php/HSBC-Private-Bank-Names-West-Region-Head",
-          "https://fintechnews.sg/141238/ai/chatgpt-wallet",
-          "https://fintechnews.sg/141368/payments/citi-ultima-world-legend-mastercard-singapore",
-          "https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory",
-          "https://hubbis.com/news/j-p-morgan-private-bank-names-cameron-chui-head-of-equity-strategy-for-asia",
-          "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318",
-          "https://metroindia.net/news/articlenews/dbs-bank-india-opens-new-treasures-wealth-branch-47176"
-        ],
-        "topics": []
-      },
       {
         "date": "2026-11-19",
         "urls": [
@@ -94,29 +79,36 @@
           "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
           "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--"
         ],
+        "topics": []
+      },
+      {
+        "date": "2026-11-25",
+        "urls": [
+          "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-appoints-161150554.html",
+          "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
+          "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
+          "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
+          "https://the420.in/nigeria-banks-ai-cybersecurity-risks"
+        ],
         "topics": [
-          "US-bank agent controls emphasise containment and continuity",
-          "ECB sets conditions for DLT collateral eligibility",
-          "Standard Chartered describes a targeted India wealth strategy"
+          "Singapore proof of concept tests agent authority controls",
+          "Hong Kong plan addresses multigenerational protection needs",
+          "OCBC reshapes wholesale banking around client segments"
         ]
       }
     ],
     "covered_urls": [
       "https://ad-hoc-news.de/boerse/news/corporate-news/natwest-stock-private-banking-spotlight-set-for-november-25/70544696",
-      "https://americanbazaaronline.com/2026/11/17/microsoft-banks-airlines-hit-by-outages-dhs-chief-points-to-ai-492485",
       "https://asianbankingandfinance.net/news/ai-payment-agents-promise-b2b-gains-raise-accountability-concerns",
       "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
       "https://asianbankingandfinance.net/news/treat-ai-agents-shoppers-not-bankers-googles-jeremy-goro",
       "https://asiatimes.com/2026/11/deutsche-bank-leak-reveals-nearly-600m-in-epstein-payments",
       "https://bmmagazine.co.uk/in-business/51-club-hsbc-uk-partnership-midlands",
-      "https://businesstimes.com.sg/companies-markets/ex-mas-chief-ravi-menon-banks-wealth-managers-must-curb-ai-agents-autonomy-over-clients-money-risks",
       "https://decrypt.co/383677/citi-customers-responsible-ai-banking-agents-rogue-hack",
       "https://disruptionbanking.com/2026/11/20/why-did-an-hsbc-whistleblower-urge-a-probe-of-correspondent-banking-after-the-deutsche-bank-leak",
       "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
       "https://explainx.ai/blog/arizona-ag-criminal-investigation-openai-rogue-bank-agents-november-2026",
-      "https://familywealthreport.com/article.php/HSBC-Private-Bank-Names-West-Region-Head",
-      "https://fintechnews.sg/141238/ai/chatgpt-wallet",
-      "https://fintechnews.sg/141368/payments/citi-ultima-world-legend-mastercard-singapore",
+      "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-appoints-161150554.html",
       "https://fintechnews.sg/141489/blockchain/dbs-circle-usdc-institutional-access",
       "https://fintechnews.sg/141489/crypto/dbs-circle-usdc-institutional-access",
       "https://fintechnews.sg/141531/security/mas-scam-detection-study",
@@ -127,12 +119,12 @@
       "https://fintechnews.sg/141909/payments/nets-ai-agent-payments",
       "https://fintechnews.sg/142031/blockchain/dbs-digital-vouchers-paylah",
       "https://fintechnews.sg/142069/payments/ebury-mas-in-principle-approval-singapore",
-      "https://fundselectorasia.com/bank-of-singapore-hires-new-head-of-north-asia-investment-advisory",
+      "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
+      "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
       "https://hokanews.com/2026/11/coinbase-ceo-brian-armstrong-reveals-ai.html",
       "https://hubbis.com/news/hsbc-expands-redcoin-into-wealth-management-with-tokenised-fund-access-in-hong-kong",
-      "https://hubbis.com/news/j-p-morgan-private-bank-names-cameron-chui-head-of-equity-strategy-for-asia",
+      "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
       "https://hubbis.com/news/singapore-assets-under-management-reach-sgd7-trillion-minister-of-state-alvin-tan-tells-hsbc-wealth-summit",
-      "https://ibtimes.sg/how-did-jeffrey-epstein-move-582-million-deutsche-bank-leak-exposes-payments-trusts-wealthy-96318",
       "https://indiplomacy.com/2026/11/20/mas-and-sfa-name-11-winners-of-2026-fintech-awards-at-singapore-fintech-festival",
       "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
       "https://marketbeat.com/instant-alerts/event-hsbc-ceo-sees-deposit-growth-and-asian-wealth-as-bank-bets-on-ai-2026-11-19",
@@ -142,6 +134,7 @@
       "https://privatebankerinternational.com/news/efg-international-tuan-huynh-asia-cio",
       "https://straitstimes.com/business/dont-give-ai-agents-your-financial-accounts-login-details-warns-mas-chief-chia-der-jiun",
       "https://straitstimes.com/tech/axs-visa-and-mastercard-partner-to-let-ai-agents-pay-bills-without-multiple-app-log-ins?ref=latest",
+      "https://the420.in/nigeria-banks-ai-cybersecurity-risks",
       "https://thefintechtimes.com/sff-day-two-the-money-is-ready-the-agents-are-not",
       "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
       "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
@@ -151,9 +144,9 @@
       "https://worldbusinessoutlook.com/mas-explores-ai-agent-protocol-and-tokenisation-framework"
     ],
     "covered_topics": [
-      "ECB sets conditions for DLT collateral eligibility",
-      "Standard Chartered describes a targeted India wealth strategy",
-      "US-bank agent controls emphasise containment and continuity"
+      "Hong Kong plan addresses multigenerational protection needs",
+      "OCBC reshapes wholesale banking around client segments",
+      "Singapore proof of concept tests agent authority controls"
     ]
   }
 }

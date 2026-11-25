@@ -3,116 +3,104 @@
   "user_name": "Adam Chow",
   "user_display_name": "Adam",
   "user_title": "Head of Change Execution, WPB Private Banking & Wealth Solutions, Asia Pacific",
-  "briefing_date": "Tuesday, 24 November 2026",
-  "date_str": "2026-11-24",
-  "generated_at": "2026-11-24T07:00:02.757008+08:00",
-  "total_articles": 7,
+  "briefing_date": "Wednesday, 25 November 2026",
+  "date_str": "2026-11-25",
+  "generated_at": "2026-11-25T08:44:49.466886+08:00",
+  "total_articles": 5,
   "breaking_news": [],
   "talking_points": [
     {
-      "headline": "US-bank agent controls emphasise containment and continuity",
-      "context_html": "The report says some US banks are tightening agent permissions, preserving activity records, reviewing kill switches and preparing backup processes, while reporting no bank incidents of this kind to date. A practical change criterion is whether a shutdown can preserve evidence and hand work to a tested fallback for functions such as loan processing or financial-crime review. The detail comes largely from unnamed sources and does not establish how widely or effectively the controls are in use.",
+      "headline": "Singapore proof of concept tests agent authority controls",
+      "context_html": "HSBC Singapore participated in a controlled PathFin.ai payment proof of concept testing agent identity, authority, mandate checks and auditable decisions. For APAC payment delivery, a key dependency is whether mandate checks and customer confirmation can be applied consistently before instructions enter existing payment rails. The article describes testing, not a launched customer service or autonomous payments.",
       "source_links": [
         {
-          "url": "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
-          "title": "Some US banks tighten AI-agent controls on concern about models escaping safeguards"
+          "url": "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
+          "title": "PathFin.ai Trial Tests How Banks and Payment Providers Verify AI Agents"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "ECB sets conditions for DLT collateral eligibility",
-      "context_html": "The ECB approved eligibility for certain DLT-issued assets subject to standard collateral criteria and added operational requirements, with details expected in spring 2027 and implementation planned for June 2027. For banking operations, a key delivery dependency is demonstrating a compliant route through an eligible CSD and TARGET2-Securities, alongside legal certainty and safe handling of critical functions. This is a European collateral-framework development; the article does not indicate direct APAC implementation requirements.",
+      "headline": "Hong Kong plan addresses multigenerational protection needs",
+      "context_html": "HSBC Life launched a whole-of-life savings and protection plan in Hong Kong with features aimed at family and later-life needs. A practical delivery question is how branch-based distribution explains the conditions and third-party care arrangements alongside the plan’s insurance benefits. The article reports product features and survey findings, not customer demand or outcomes.",
       "source_links": [
         {
-          "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
-          "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral"
+          "url": "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
+          "title": "HSBC Life Launches Multi-Generation Savings Plan as Hong Kong Affluent Investors’ Retirement Target Rises to USD1.19 Million"
         }
       ],
       "is_update": false
     },
     {
-      "headline": "Standard Chartered describes a targeted India wealth strategy",
-      "context_html": "Standard Chartered India’s CEO said the bank is deepening relationships with target retail clients and continuing to invest in wealth offerings. For wealth delivery, the stated segmentation implies a capacity trade-off between serving a fuller range of needs for selected clients and maintaining relationships outside that target; the interview gives no operational detail or evidence of outcomes. These are management statements about India, not evidence of a region-wide change.",
+      "headline": "OCBC reshapes wholesale banking around client segments",
+      "context_html": "OCBC is dividing wholesale banking into three units, with leadership assignments across large corporates, institutional and transaction banking, and SMEs. For change execution, the transition will depend on clear ownership where product and client responsibilities cross divisions; the report does not describe implementation arrangements or expected results.",
       "source_links": [
         {
-          "url": "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
-          "title": "Every Indian today is a global Indian: PD Singh of Standard Chartered Bank"
+          "url": "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
+          "title": "OCBC Taps China Chief Ang Eng Siong to Lead Global Corporate Banking"
         }
       ],
       "is_update": false
     }
   ],
   "articles_by_category": {
+    "On Adam's Desk": [
+      {
+        "id": "94098692aa7c9f2ac095",
+        "title": "HSBC Holdings (LSE:HSBA) Appoints Neha Ghai To Global Private Bank Role",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-appoints-161150554.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-11-24T16:11:50+00:00",
+        "summary": "HSBC appointed Neha Ghai as a director in its Global Private Bank; the article describes her experience in India, Singapore and China and places the move within a series of regional leadership reshuffles. The report suggests continuity in HSBC’s Asian and cross-border wealth focus, but does not specify changes to the operating model or client service.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      }
+    ],
     "AI & Technology": [
       {
-        "id": "54b0d38748912245f449",
-        "title": "Some US banks tighten AI-agent controls on concern about models escaping safeguards",
-        "url": "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
-        "source": "The Economic Times",
-        "published_at": "2026-11-23T15:35:00+05:30",
-        "summary": "The Economic Times reports, citing banking and industry sources, that several US banks are tightening controls on internal AI agents, including restricting system access and credentials, isolating test environments, recording agent actions, reviewing kill switches and preparing backup processes. Sources describe these measures as responses to concerns about models bypassing safeguards; the report says no banks had yet been affected by such incidents. For banking operations, the measures highlight dependencies between agent permissions, auditability and continuity when an agent is stopped; the article is based substantially on unnamed sources and does not establish the prevalence or effectiveness of the controls.",
+        "id": "b25fed9f3d68a21c3f5b",
+        "title": "PathFin.ai Trial Tests How Banks and Payment Providers Verify AI Agents",
+        "url": "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-24T02:40:40+00:00",
+        "summary": "Green Link Digital Bank, AXS, Terminal 3 and HSBC Singapore conducted a controlled proof of concept under MAS’s PathFin.ai initiative, testing agent identity and authority checks, request controls, runtime decisions and audit records in two payment scenarios. The work points to practical dependencies for any future agent-enabled payments, including mandate verification, confirmation and traceable decisions; the article explicitly says the scenarios are not a customer proposition or autonomous payment service.",
         "category": "AI & Technology",
-        "hsbc_relevancy": 6,
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
-        "noise_level": 3,
+        "noise_level": 1,
         "is_update": false,
         "user_relevance": 8
       }
     ],
-    "Competitor Intelligence": [
+    "HSBC News": [
       {
-        "id": "273663a24adff5f5c4a1",
-        "title": "SBI Chief AI Officer: Bank Offers Up to Rs 1.6 Crore Salary for Top AI Role",
-        "url": "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
-        "source": "theopenpress.in",
-        "published_at": "2026-11-23T17:45:00+05:30",
-        "summary": "The Open Press reports that State Bank of India is recruiting a chief AI officer to oversee its enterprise AI platform and agentic AI work, alongside five other senior technology appointments covering governance, compliance, data engineering, operations and architecture. SBI says the chief AI officer’s annual compensation is negotiable up to Rs 1.6 crore, not guaranteed. The hiring plan highlights the range of specialist capabilities a bank may assemble for AI delivery, but the article does not establish that SBI has filled the roles or deployed new capabilities.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
+        "id": "e4e47ec9757ac839a1cf",
+        "title": "HSBC Life Launches Multi-Generation Savings Plan as Hong Kong Affluent Investors’ Retirement Target Rises to USD1.19 Million",
+        "url": "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
+        "source": "Hubbis (search dated 2026-11-24)",
+        "published_at": "2026-11-24T21:09:05+00:00",
+        "summary": "HSBC Life (International) launched the HSBC Astra Goal Insurance Plan in Hong Kong on 23 November, a whole-of-life savings and protection plan with features described for family, medical liquidity and dementia-care support. The accompanying survey reports a Hong Kong retirement savings target of USD1.19 million and average savings equal to 45% of that target. The launch is relevant to multigenerational wealth and protection delivery, but the article does not report customer uptake or outcomes for the plan.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 8,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
-      },
-      {
-        "id": "09307562831d6bd79880",
-        "title": "DBS new retail multi-asset fund raises $200m in two weeks",
-        "url": "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-11-23T10:59:01+08:00",
-        "summary": "Asian Banking & Finance reports that DBS launched a retail multi-asset fund which raised more than S$200 million during its two-week initial offer period, with subscriptions continuing through the bank’s digital app. DBS says the fund is managed by its discretionary portfolio management team and actively allocated and rebalanced to its CIO’s house view. The launch illustrates a digital distribution and managed-investment proposition for retail clients; the reported fundraising and historical strategy returns do not establish future performance or ongoing client demand.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "38265017dbd6ae1509cb",
-        "title": "Every Indian today is a global Indian: PD Singh of Standard Chartered Bank",
-        "url": "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
-        "source": "BusinessLine",
-        "published_at": "2026-11-22T19:00:00+05:30",
-        "summary": "Standard Chartered India CEO PD Singh described the bank’s focus on deeper relationships with target retail customers, including continued investment in wealth management, Signature Funds in GIFT City and SC Autograph. He also cited cross-border and corporate activity as opportunities for the franchise. The remarks provide competitor context on positioning and client segmentation; they do not specify implementation plans, operating results for the named offerings, or APAC-wide service changes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
       }
     ],
-    "Private Banking & Wealth": [
+    "Competitor Intelligence": [
       {
-        "id": "b439a319be9e9bc6e38c",
-        "title": "Bank Of Singapore Adds To ASEAN Private Banking Team - Wealth Briefing Asia",
-        "url": "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--",
-        "source": "Wealth Briefing Asia (search dated 2026-11-23)",
-        "published_at": "2026-11-23T19:58:09+00:00",
-        "summary": "Bank of Singapore appointed Veronica Darwin as ASEAN cluster head for Indonesia and Minda Melinda as a relationship manager, both based in Singapore, to strengthen its HNW and UHNW capabilities. The appointments indicate competitor investment in ASEAN private-banking coverage; the report gives no detail on service or operating-model changes.",
-        "category": "Private Banking & Wealth",
+        "id": "b0db910cc96dd84e24a9",
+        "title": "OCBC Taps China Chief Ang Eng Siong to Lead Global Corporate Banking",
+        "url": "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-24T05:26:58+00:00",
+        "summary": "OCBC appointed its China CEO, Ang Eng Siong, to lead Global Corporate Banking from 1 January 2027, as it reorganises wholesale banking into three divisions. The reported structure separates large corporates, global institutional/investment/transaction banking, and commercial banking for SMEs. This provides competitor context on segment-based accountability; the article gives no detail on implementation steps, transition controls or expected outcomes.",
+        "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
         "noise_level": 1,
@@ -122,26 +110,12 @@
     ],
     "Regulatory & Markets": [
       {
-        "id": "19b6f9861ec994a1c309",
-        "title": "UBS Overweight On Indian Banks; HDFC Bank, ICICI Bank, Axis Bank Remain Top Picks",
-        "url": "https://ndtvprofit.com/markets/ubs-overweight-on-indian-banks-hdfc-bank-icici-bank-axis-bank-remain-top-picks-12363914",
-        "source": "NDTV Profit",
-        "published_at": "2026-11-23T08:11:44+05:30",
-        "summary": "UBS remains overweight on Indian banks and identifies HDFC Bank, ICICI Bank and Axis Bank as preferred picks, citing loan growth and earnings fundamentals while noting increased early delinquencies in gold loans relative to June. The analysis offers a market and credit-risk perspective relevant to regional competitor intelligence; it is a brokerage assessment, not evidence of future performance.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "c2d64f5890eec2e12ffe",
-        "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
-        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-11-23T11:00:00+01:00",
-        "summary": "On 23 November 2026, the ECB approved eligibility as Eurosystem collateral for certain marketable assets issued on DLT platforms licensed under the EU DLT Pilot Regime, provided standard criteria and operational requirements are met. The ECB expects to communicate detailed requirements in spring 2027 and plans implementation for June 2027. For banking change execution, this makes legal certainty, settlement-system links and operational safety concrete delivery dependencies; the decision concerns eligible collateral in the Eurosystem, not broad acceptance of all on-chain assets.",
+        "id": "1fd968e78b8cc5e007b3",
+        "title": "AI Could Make Banking Cyberattacks More Dangerous, Nigeria’s Financial Regulators Warn - The 420.in",
+        "url": "https://the420.in/nigeria-banks-ai-cybersecurity-risks",
+        "source": "The 420.in",
+        "published_at": "2026-11-23T12:51:46+05:30",
+        "summary": "Nigeria’s central bank and NIBSS representatives urged financial institutions to strengthen cybersecurity and oversight as AI use expands, including testing and monitoring emerging technology, human oversight and board-level accountability. The article also reports a 24-hour cyberattack reporting requirement to the CBN and says compliance has been inadequate. For change execution, the remarks emphasize coordinating technology controls with incident reporting and staff practices; the article reports conference statements rather than a new regulatory measure.",
         "category": "Regulatory & Markets",
         "hsbc_relevancy": 3,
         "adam_rel": 5,
@@ -154,68 +128,40 @@
   "chart_data": {
     "articles": [
       {
-        "id": "54b0d38748912245f449",
-        "title": "Some US banks tighten AI-agent controls on concern about models escaping safeguards",
-        "url": "https://m.economictimes.com/tech/artificial-intelligence/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards/amp_articleshow/136097707.cms",
-        "source": "The Economic Times",
-        "published_at": "2026-11-23T15:35:00+05:30",
-        "summary": "The Economic Times reports, citing banking and industry sources, that several US banks are tightening controls on internal AI agents, including restricting system access and credentials, isolating test environments, recording agent actions, reviewing kill switches and preparing backup processes. Sources describe these measures as responses to concerns about models bypassing safeguards; the report says no banks had yet been affected by such incidents. For banking operations, the measures highlight dependencies between agent permissions, auditability and continuity when an agent is stopped; the article is based substantially on unnamed sources and does not establish the prevalence or effectiveness of the controls.",
+        "id": "b25fed9f3d68a21c3f5b",
+        "title": "PathFin.ai Trial Tests How Banks and Payment Providers Verify AI Agents",
+        "url": "https://fintechnews.sg/142186/ai/pathfin-ai-agentic-payments-safeguards-mas",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-24T02:40:40+00:00",
+        "summary": "Green Link Digital Bank, AXS, Terminal 3 and HSBC Singapore conducted a controlled proof of concept under MAS’s PathFin.ai initiative, testing agent identity and authority checks, request controls, runtime decisions and audit records in two payment scenarios. The work points to practical dependencies for any future agent-enabled payments, including mandate verification, confirmation and traceable decisions; the article explicitly says the scenarios are not a customer proposition or autonomous payment service.",
         "category": "AI & Technology",
-        "hsbc_relevancy": 6,
+        "hsbc_relevancy": 7,
         "adam_rel": 8,
-        "noise_level": 3,
+        "noise_level": 1,
         "is_update": false,
         "user_relevance": 8
       },
       {
-        "id": "273663a24adff5f5c4a1",
-        "title": "SBI Chief AI Officer: Bank Offers Up to Rs 1.6 Crore Salary for Top AI Role",
-        "url": "https://theopenpress.in/article/sbi-chief-ai-officer-16-crore-salary",
-        "source": "theopenpress.in",
-        "published_at": "2026-11-23T17:45:00+05:30",
-        "summary": "The Open Press reports that State Bank of India is recruiting a chief AI officer to oversee its enterprise AI platform and agentic AI work, alongside five other senior technology appointments covering governance, compliance, data engineering, operations and architecture. SBI says the chief AI officer’s annual compensation is negotiable up to Rs 1.6 crore, not guaranteed. The hiring plan highlights the range of specialist capabilities a bank may assemble for AI delivery, but the article does not establish that SBI has filled the roles or deployed new capabilities.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
+        "id": "e4e47ec9757ac839a1cf",
+        "title": "HSBC Life Launches Multi-Generation Savings Plan as Hong Kong Affluent Investors’ Retirement Target Rises to USD1.19 Million",
+        "url": "https://hubbis.com/news/hsbc-life-launches-multi-generation-savings-plan-as-hong-kong-affluent-investors-retirement-target-rises-to-usd1-19-million",
+        "source": "Hubbis (search dated 2026-11-24)",
+        "published_at": "2026-11-24T21:09:05+00:00",
+        "summary": "HSBC Life (International) launched the HSBC Astra Goal Insurance Plan in Hong Kong on 23 November, a whole-of-life savings and protection plan with features described for family, medical liquidity and dementia-care support. The accompanying survey reports a Hong Kong retirement savings target of USD1.19 million and average savings equal to 45% of that target. The launch is relevant to multigenerational wealth and protection delivery, but the article does not report customer uptake or outcomes for the plan.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 8,
         "adam_rel": 6,
         "noise_level": 1,
         "is_update": false,
         "user_relevance": 6
       },
       {
-        "id": "b439a319be9e9bc6e38c",
-        "title": "Bank Of Singapore Adds To ASEAN Private Banking Team - Wealth Briefing Asia",
-        "url": "https://wealthbriefingasia.com/article.php/Bank-Of-Singapore-Adds-To-ASEAN-Private-Banking-Team--",
-        "source": "Wealth Briefing Asia (search dated 2026-11-23)",
-        "published_at": "2026-11-23T19:58:09+00:00",
-        "summary": "Bank of Singapore appointed Veronica Darwin as ASEAN cluster head for Indonesia and Minda Melinda as a relationship manager, both based in Singapore, to strengthen its HNW and UHNW capabilities. The appointments indicate competitor investment in ASEAN private-banking coverage; the report gives no detail on service or operating-model changes.",
-        "category": "Private Banking & Wealth",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "19b6f9861ec994a1c309",
-        "title": "UBS Overweight On Indian Banks; HDFC Bank, ICICI Bank, Axis Bank Remain Top Picks",
-        "url": "https://ndtvprofit.com/markets/ubs-overweight-on-indian-banks-hdfc-bank-icici-bank-axis-bank-remain-top-picks-12363914",
-        "source": "NDTV Profit",
-        "published_at": "2026-11-23T08:11:44+05:30",
-        "summary": "UBS remains overweight on Indian banks and identifies HDFC Bank, ICICI Bank and Axis Bank as preferred picks, citing loan growth and earnings fundamentals while noting increased early delinquencies in gold loans relative to June. The analysis offers a market and credit-risk perspective relevant to regional competitor intelligence; it is a brokerage assessment, not evidence of future performance.",
-        "category": "Regulatory & Markets",
-        "hsbc_relevancy": 4,
-        "adam_rel": 4,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 4
-      },
-      {
-        "id": "09307562831d6bd79880",
-        "title": "DBS new retail multi-asset fund raises $200m in two weeks",
-        "url": "https://asianbankingandfinance.net/news/dbs-new-retail-multi-asset-fund-raises-200m-in-two-weeks",
-        "source": "Asian Banking & Finance",
-        "published_at": "2026-11-23T10:59:01+08:00",
-        "summary": "Asian Banking & Finance reports that DBS launched a retail multi-asset fund which raised more than S$200 million during its two-week initial offer period, with subscriptions continuing through the bank’s digital app. DBS says the fund is managed by its discretionary portfolio management team and actively allocated and rebalanced to its CIO’s house view. The launch illustrates a digital distribution and managed-investment proposition for retail clients; the reported fundraising and historical strategy returns do not establish future performance or ongoing client demand.",
+        "id": "b0db910cc96dd84e24a9",
+        "title": "OCBC Taps China Chief Ang Eng Siong to Lead Global Corporate Banking",
+        "url": "https://fintechnews.sg/142234/fintech/ang-eng-siong-ocbc-global-corporate-banking",
+        "source": "Fintech Singapore",
+        "published_at": "2026-11-24T05:26:58+00:00",
+        "summary": "OCBC appointed its China CEO, Ang Eng Siong, to lead Global Corporate Banking from 1 January 2027, as it reorganises wholesale banking into three divisions. The reported structure separates large corporates, global institutional/investment/transaction banking, and commercial banking for SMEs. This provides competitor context on segment-based accountability; the article gives no detail on implementation steps, transition controls or expected outcomes.",
         "category": "Competitor Intelligence",
         "hsbc_relevancy": 5,
         "adam_rel": 5,
@@ -224,28 +170,28 @@
         "user_relevance": 5
       },
       {
-        "id": "38265017dbd6ae1509cb",
-        "title": "Every Indian today is a global Indian: PD Singh of Standard Chartered Bank",
-        "url": "https://thehindubusinessline.com/money-and-banking/every-indian-today-is-a-global-indian-pd-singh-of-standard-chartered-bank/article71730983.ece",
-        "source": "BusinessLine",
-        "published_at": "2026-11-22T19:00:00+05:30",
-        "summary": "Standard Chartered India CEO PD Singh described the bank’s focus on deeper relationships with target retail customers, including continued investment in wealth management, Signature Funds in GIFT City and SC Autograph. He also cited cross-border and corporate activity as opportunities for the franchise. The remarks provide competitor context on positioning and client segmentation; they do not specify implementation plans, operating results for the named offerings, or APAC-wide service changes.",
-        "category": "Competitor Intelligence",
-        "hsbc_relevancy": 5,
-        "adam_rel": 5,
-        "noise_level": 1,
-        "is_update": false,
-        "user_relevance": 5
-      },
-      {
-        "id": "c2d64f5890eec2e12ffe",
-        "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
-        "url": "https://ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
-        "source": "ECB-PRESS",
-        "published_at": "2026-11-23T11:00:00+01:00",
-        "summary": "On 23 November 2026, the ECB approved eligibility as Eurosystem collateral for certain marketable assets issued on DLT platforms licensed under the EU DLT Pilot Regime, provided standard criteria and operational requirements are met. The ECB expects to communicate detailed requirements in spring 2027 and plans implementation for June 2027. For banking change execution, this makes legal certainty, settlement-system links and operational safety concrete delivery dependencies; the decision concerns eligible collateral in the Eurosystem, not broad acceptance of all on-chain assets.",
+        "id": "1fd968e78b8cc5e007b3",
+        "title": "AI Could Make Banking Cyberattacks More Dangerous, Nigeria’s Financial Regulators Warn - The 420.in",
+        "url": "https://the420.in/nigeria-banks-ai-cybersecurity-risks",
+        "source": "The 420.in",
+        "published_at": "2026-11-23T12:51:46+05:30",
+        "summary": "Nigeria’s central bank and NIBSS representatives urged financial institutions to strengthen cybersecurity and oversight as AI use expands, including testing and monitoring emerging technology, human oversight and board-level accountability. The article also reports a 24-hour cyberattack reporting requirement to the CBN and says compliance has been inadequate. For change execution, the remarks emphasize coordinating technology controls with incident reporting and staff practices; the article reports conference statements rather than a new regulatory measure.",
         "category": "Regulatory & Markets",
         "hsbc_relevancy": 3,
+        "adam_rel": 5,
+        "noise_level": 1,
+        "is_update": false,
+        "user_relevance": 5
+      },
+      {
+        "id": "94098692aa7c9f2ac095",
+        "title": "HSBC Holdings (LSE:HSBA) Appoints Neha Ghai To Global Private Bank Role",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-lse-hsba-appoints-161150554.html",
+        "source": "Yahoo Finance",
+        "published_at": "2026-11-24T16:11:50+00:00",
+        "summary": "HSBC appointed Neha Ghai as a director in its Global Private Bank; the article describes her experience in India, Singapore and China and places the move within a series of regional leadership reshuffles. The report suggests continuity in HSBC’s Asian and cross-border wealth focus, but does not specify changes to the operating model or client service.",
+        "category": "HSBC News",
+        "hsbc_relevancy": 7,
         "adam_rel": 5,
         "noise_level": 1,
         "is_update": false,
@@ -253,9 +199,10 @@
       }
     ],
     "categories": {
+      "On Adam's Desk": "#be123c",
       "AI & Technology": "#6366f1",
+      "HSBC News": "#dc2626",
       "Competitor Intelligence": "#0891b2",
-      "Private Banking & Wealth": "#059669",
       "Regulatory & Markets": "#d97706"
     }
   }
